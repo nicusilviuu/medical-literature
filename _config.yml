@@ -1,0 +1,44 @@
+url: "https://nicusilviuu.github.io"
+baseurl: "/medical-literature"
+
+title: Medical Literature Brief
+tagline: Anesthesiology · Intensive care · Cardiothoracic · Cardiology · ID
+description: >-
+  Daily literature brief and society-guideline watch across anesthesiology,
+  intensive care, resuscitation, cardiothoracic surgery, cardiology and
+  infectious disease.
+
+# Set by GitHub Pages automatically, but harmless to leave explicit.
+timezone: Europe/Paris
+
+collections:
+  briefs:
+    output: true
+    permalink: /brief/:path/
+  guidelines:
+    output: true
+    permalink: /guidelines/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: briefs
+    values:
+      layout: entry
+      kind: Literature brief
+      kind_slug: brief
+  - scope:
+      path: ""
+      type: guidelines
+    values:
+      layout: entry
+      kind: Guidelines watch
+      kind_slug: guidelines
+
+exclude:
+  - .claude/
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

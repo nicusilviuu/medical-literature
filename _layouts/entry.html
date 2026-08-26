@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% assign coll = site[page.collection] | sort: 'date' %}
+{% assign idx = 0 %}
+{% assign lastidx = 0 %}
+{% for e in coll %}{% if e.url == page.url %}{% assign idx = forloop.index0 %}{% assign lastidx = forloop.length | minus: 1 %}{% endif %}{% endfor %}
+{% assign olderidx = idx | minus: 1 %}
+{% assign neweridx = idx | plus: 1 %}
+{% assign older = nil %}
+{% assign newer = nil %}
+{% if idx > 0 %}{% assign older = coll[olderidx] %}{% endif %}
+{% if idx < lastidx %}{% assign newer = coll[neweridx] %}{% endif %}
+<article class="entry">
+  <p class="entry-meta">
+    <span class="chip chip-{{ page.kind_slug }}">{{ page.kind }}</span>
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%A %-d %B %Y" }}</time>
+  </p>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}<p class="entry-summary">{{ page.summary }}</p>{% endif %}
+  {% if page.imported %}<p class="imported-note">Imported from the original Cowork run log. Days before 2026-08-20 were recorded as titles and links only, so those entries are shorter than the ones written since.</p>{% endif %}
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>
+<nav class="entry-nav">
+  {% if older %}<a class="nav-side" href="{{ older.url | relative_url }}">← {{ older.date | date: "%-d %b %Y" }}</a>{% else %}<span class="nav-side"></span>{% endif %}
+  <a class="nav-home" href="{{ '/' | relative_url }}">All days</a>
+  {% if newer %}<a class="nav-side nav-right" href="{{ newer.url | relative_url }}">{{ newer.date | date: "%-d %b %Y" }} →</a>{% else %}<span class="nav-side"></span>{% endif %}
+</nav>

@@ -1,0 +1,76 @@
+---
+layout: default
+---
+{% assign entries = site.briefs | concat: site.guidelines | sort: 'date' | reverse %}
+
+{% if entries.size == 0 %}
+<div class="empty">
+  <h1>No entries yet</h1>
+  <p>The first daily brief will appear here once the scheduled task runs.</p>
+</div>
+{% else %}
+
+<div class="toolbar">
+  <input id="filter" type="search" placeholder="Filter by paper, journal, topic…" autocomplete="off" aria-label="Filter entries">
+  <p class="count"><span id="shown">{{ entries.size }}</span> of {{ entries.size }} days</p>
+</div>
+
+<div id="days">
+{% assign months = entries | group_by_exp: "e", "e.date | date: '%Y-%m'" %}
+{% for month in months %}
+  <section class="month">
+    <h2>{{ month.items.first.date | date: "%B %Y" }}</h2>
+    <ul class="day-list">
+      {% for e in month.items %}
+      {% capture haystack %}{{ e.title }} {{ e.summary }}{% for i in e.items %} {{ i.title }} {{ i.journal }} {{ i.society }}{% endfor %}{% endcapture %}
+      <li class="day-item" data-search="{{ haystack | strip_newlines | downcase | escape }}">
+        <a href="{{ e.url | relative_url }}">
+          <span class="day-date"><time datetime="{{ e.date | date: '%Y-%m-%d' }}">{{ e.date | date: "%a %-d %b" }}</time></span>
+          <span class="day-body">
+            <span class="day-title">{{ e.title }}</span>
+            {% if e.items and e.items.size > 0 %}
+            <span class="day-items">
+              {% for i in e.items limit: 4 %}<span class="day-paper">{{ i.title }}{% if i.journal %} <em>· {{ i.journal }}</em>{% elsif i.society %} <em>· {{ i.society }}</em>{% endif %}</span>{% endfor %}
+              {% if e.items.size > 4 %}<span class="day-paper more">+{{ e.items.size | minus: 4 }} more</span>{% endif %}
+            </span>
+            {% elsif e.summary %}
+            <span class="day-items"><span class="day-paper">{{ e.summary }}</span></span>
+            {% endif %}
+          </span>
+          <span class="chip chip-{{ e.kind_slug }}">{{ e.kind }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
+</div>
+
+<p id="noresults" class="empty" hidden>Nothing matches that filter.</p>
+
+<script>
+(function () {
+  var input = document.getElementById('filter');
+  var items = Array.prototype.slice.call(document.querySelectorAll('.day-item'));
+  var months = Array.prototype.slice.call(document.querySelectorAll('.month'));
+  var shown = document.getElementById('shown');
+  var none = document.getElementById('noresults');
+  if (!input) return;
+  input.addEventListener('input', function () {
+    var q = input.value.trim().toLowerCase();
+    var n = 0;
+    items.forEach(function (li) {
+      var hit = !q || li.getAttribute('data-search').indexOf(q) !== -1;
+      li.hidden = !hit;
+      if (hit) n++;
+    });
+    months.forEach(function (m) {
+      var any = m.querySelectorAll('.day-item:not([hidden])').length > 0;
+      m.hidden = !any;
+    });
+    shown.textContent = n;
+    none.hidden = n !== 0;
+  });
+})();
+</script>
+{% endif %}

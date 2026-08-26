@@ -1,0 +1,95 @@
+# Source & access notes
+
+Carried over from the Cowork run log (2026-08-17 → 2026-08-25) and appended to by
+each run. Read this before searching; add what you learn at the bottom.
+
+## First-line sources
+
+- **`link.springer.com/journal/134/online-first`** — *best source found.* Full
+  Intensive Care Medicine online-first listing with titles, authors and exact
+  dates, and WebFetch can be asked to pull the DOI/hyperlink out of the HTML
+  source for a named article. **More current than criticalcarereviews.com
+  journal-watch.** Use it every run. It 429s on a first attempt fairly often and
+  works on a retry ~2 minutes later — retry once before giving up.
+  `link.springer.com/search?...` is robots.txt-disallowed; go via the journal
+  online-first page instead.
+- **`criticalcarereviews.com/latest-evidence/journal-watch`** and **`/hot-trials`**
+  — good coverage across anaesthesia, regional anaesthesia, cardiothoracic, ICU,
+  cardiology and ID. Two caveats below.
+- **`academic.oup.com`** advance-article listings — reliable across EHJ, EJCTS,
+  AJRCCM and CID.
+- Targeted WebSearch per journal / topic / society, then fetch the specific
+  article page that turns up.
+
+## Two things journal-watch will catch you out on
+
+1. **It runs 2–4 days behind.** (Found 2026-08-25.) The Aug 21/22/23 listings were
+   completely absent on 2026-08-24 and appeared overnight. A "quiet" journal-watch
+   result on any given day does **not** mean a quiet week — it may just mean the
+   aggregator hasn't posted yet. **Always re-check the 3–4 days preceding today,
+   not just today**, and expect to retro-catch items.
+2. **Its listing dates are not publication dates.** PediCAP, a JAMA Cardiology
+   DAPT meta-analysis, and CLEANSE (surfaced Aug 17, actually published Jun 11)
+   all appeared under dates that didn't match true first-online publication.
+   Always cross-check via WebSearch or press coverage before calling something
+   "new this week."
+
+Also: journal-watch entries carry a DOI in the underlying HTML even when the
+rendered summary doesn't show it — ask WebFetch explicitly to check the HTML
+source and hyperlinks if no DOI appears on the first pass.
+
+## Fallback rotation when the publisher blocks
+
+- **`scimex.org/newsfeed`** — excellent. Gave the full ITACS primary-outcome
+  numbers *and* the authors' own caveat about effect size, which every other press
+  release omitted.
+- **`acc.org` Journal Scans** (`acc.org/Latest-in-Cardiology/Journal-Scans/…`) —
+  gave complete MERCURI-2 numbers.
+- **`rebelem.com`** and **`icureach.com/criticalcaretrials/<trial>`** — both gave
+  complete EVERDAC design and numbers including the noninferiority margin.
+- Institutional press releases (amsterdamumc.org, monash.edu, bmjgroup.com,
+  radcliffecardiology.com news, ou.edu news) — useful, but see the warning below.
+- Springer article pages often return a full abstract via WebFetch (append the
+  `?code=…&error=cookies_not_supported` redirect URL if 302'd).
+
+**Warning on press releases (learned 2026-08-25).** Cross-check framing against
+the actual numbers. BMJ Group's own release, Monash's and Nursing Times all
+headlined ITACS as *"reduces complications and boosts recovery"* — but the primary
+outcome was 81 vs 80 days alive-and-at-home and no complication endpoint moved.
+Only scimex.org carried the authors' admission of *"a very small treatment
+effect."* Institutional press releases overstate. Find a second, more neutral
+summary before repeating a headline claim.
+
+## Frequently blocked
+
+- `journals.lww.com` — 402. `ovid.com` — 402, LWW-gated.
+- `bjanaesthesia.org` and `bjanaesthesia.org.uk` — 403 on every attempt, article
+  and comment pages alike.
+- `pubmed.ncbi.nlm.nih.gov` — 429, and article pages have returned a reCAPTCHA
+  wall rather than content. Don't rely on direct PubMed fetches; use WebSearch
+  snippets, PMC, or journal-site mirrors.
+- `sciencedirect` / `linkinghub` — robots.txt disallowed.
+- `medscape.com` — 402. `jcvaonline.com` — 403. `bmj.com` article pages — 429.
+  `medicalxpress.com` — 429. NEJM, JAMA, Lancet current-issue pages — CAPTCHA/403.
+- `europepmc` REST API — repeated 429 rate-limits.
+- `byolacademy.com` — returned unrelated content on a search hit. Ignore that
+  domain.
+
+## Unattended-run access
+
+In headless/scheduled runs, WebFetch to some normally-working domains has failed
+with `PROVENANCE_REQUIRED` — there's no user present to approve a fetch permission
+prompt (seen 2026-08-21 and 2026-08-23 for doi.org redirects, link.springer.com,
+PubMed, JAMA, thelancet.com, NEJM, bjanaesthesia.org). **Retrying the identical
+URL later in the same run has succeeded** (2026-08-23, criticalcarereviews.com) —
+always retry once before giving up on a source.
+
+## Standing rule
+
+When a result stays paywalled, send design plus literature context and **say so**
+rather than fabricating numbers. The user can often supply the PDF directly — that
+happened with the Sicova BJA intraoperative-hypotension paper on 2026-08-20 and is
+the most reliable path when a publisher blocks WebFetch entirely.
+
+## Notes added by later runs
+<!-- Append new access findings below, dated. -->
