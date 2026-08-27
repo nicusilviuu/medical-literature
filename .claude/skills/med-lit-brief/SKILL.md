@@ -120,14 +120,24 @@ updated it. The site rebuilds within about a minute.
 
 ## Mirror to the private workspace
 
-After the entry is committed here, copy it into the private repo
-`nicusilviuu/agent-workspace` at `projects/medical-literature/_briefs/YYYY-MM-DD.md`
-and commit it there, so the private workspace keeps a record of the project.
+After the entry is committed here, refresh the mirror in the private repo
+`nicusilviuu/agent-workspace` so its copy of this project stays current — it is
+the backup of the whole project, not just of the briefs:
+
+```bash
+git clone https://github.com/nicusilviuu/agent-workspace /home/user/agent-workspace
+cd /home/user/agent-workspace
+scripts/mirror-project.sh medical-literature nicusilviuu/medical-literature
+git commit -m "Mirror: refresh medical-literature" && git push origin main
+```
+
+If the private repo can't be reached, say so in your reply and carry on — the
+entry is already published here, and the mirror can be refreshed later.
 
 **One-way only.** Content flows public → private. Never copy, quote, or push
-anything from `agent-workspace` into this repo, the site, or a notification —
-in particular never anything from a `PRIVATE-NOTES.md`. A commit to this public
-repo is permanent, so the check happens before the write.
+anything from `agent-workspace` into this repo, the site, or a notification — in
+particular never anything from a `PRIVATE-NOTES.md`. A commit to this public repo
+is permanent, so the check happens before the write.
 
 ## 5. Deliver
 
