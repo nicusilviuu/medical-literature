@@ -38,6 +38,39 @@ Also: journal-watch entries carry a DOI in the underlying HTML even when the
 rendered summary doesn't show it — ask WebFetch explicitly to check the HTML
 source and hyperlinks if no DOI appears on the first pass.
 
+## Europe PMC REST — try this FIRST for a blocked abstract
+
+Found 2026-08-27. This unblocked two papers that had been blocked for over a week
+(OFACAR behind LWW, and the BJA paravertebral-vs-ESP trial behind a 403). An
+earlier run recorded europepmc as rate-limited and stopped using it — that was a
+transient 429, not a closed door. **Retry it.**
+
+By PMID:
+
+```bash
+curl -s "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:<pmid>&resultType=core&format=json"
+```
+
+By title words, when the citation is wrong or unknown:
+
+```bash
+curl -s -G "https://www.ebi.ac.uk/europepmc/webservices/rest/search" \
+  --data-urlencode 'query=TITLE:"median sternotomy" AND TITLE:"noninferiority"' \
+  --data-urlencode 'resultType=core' --data-urlencode 'format=json'
+```
+
+`resultType=core` returns the full abstract in `abstractText` (with `<h4>` section
+headers), plus the true DOI, PMID, journal, volume, pages and
+`firstPublicationDate`. It reaches abstracts whose publisher pages 402/403,
+because the abstract is deposited independently of the paywalled full text.
+
+It is also the reliable way to **correct a citation**: the run log had the BJA
+block trial as 2025;135:764–71; Europe PMC gives 2026;136:687–694, DOI
+10.1016/j.bja.2025.10.039. Verify volume and pages here before quoting them.
+
+Note: `JOURNAL:"..." AND VOLUME:n AND PAGE:n` returned nothing while a TITLE
+search found the paper — prefer title-word queries over citation-field queries.
+
 ## Fallback rotation when the publisher blocks
 
 - **`scimex.org/newsfeed`** — excellent. Gave the full ITACS primary-outcome
