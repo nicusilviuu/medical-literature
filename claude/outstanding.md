@@ -12,10 +12,6 @@ it has gone out in a brief.
   journals.lww.com 402, Ovid gated, PubMed unusable. The user has been told it's
   blocked and offered to supply the PDF — **check for a user-supplied PDF** or
   retry.
-- **Gan et al. — Fifth Consensus Guidelines for the Management of Postoperative
-  Nausea and Vomiting: Executive Summary** — Anesth Analg 2026;143(3):497–513,
-  online ~Nov 2025, PMID 41237407, DOI 10.1213/ANE.0000000000007816. Supersedes
-  the 4th consensus (2020). Strong candidate for the next quiet run.
 - **Ultrasound-guided thoracic paravertebral block vs erector spinae plane block
   for cardiac surgery with median sternotomy** (noninferiority RCT) — Br J Anaesth
   2025;135:764–71. Regional anaesthesia plus cardiothoracic, squarely on scope.
