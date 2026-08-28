@@ -136,3 +136,13 @@ is now the default first stop and has not rate-limited across ~8 queries.
 `idp.springer.com` authorize URL rather than serving the listing — the ICM
 online-first page may no longer work unauthenticated; journal-watch covered ICM
 adequately this run.
+
+**2026-08-28 (guidelines run).** ESC Congress items published the same day are not
+yet in Europe PMC — fell back to escardio.org guideline pages and news-medical.net
+coverage, which carried concrete detail (the two HF phenotypes, the three new MI
+categories, the Mills quote). Flag secondary sourcing on the page when doing this.
+The AJRCCM/ATS noninvasive respiratory support guideline is another aggregator
+date mismatch: listed 27 Aug, actually published 29 June. French societies (SFAR,
+SRLF, SPILF) had nothing in the window — the most recent SFAR RFE is April 2026;
+searching them in French ("recommandations formalisées d'experts") works, but their
+own sites are better reached through search results than fetched directly.
