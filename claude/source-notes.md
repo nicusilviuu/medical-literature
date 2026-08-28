@@ -126,3 +126,13 @@ the most reliable path when a publisher blocks WebFetch entirely.
 
 ## Notes added by later runs
 <!-- Append new access findings below, dated. -->
+
+**2026-08-28.** criticalcarereviews.com journal-watch was current through today and
+listed the Drop ICU-VR RCT under 27 Aug; its actual first publication was 24 July —
+the listing-date mismatch again. Checked via Europe PMC, which also supplied the
+Bohula Circulation primer and the Grün videolaryngoscopy review cleanly. Europe PMC
+is now the default first stop and has not rate-limited across ~8 queries.
+`link.springer.com/journal/134/online-first` now 303-redirects to an
+`idp.springer.com` authorize URL rather than serving the listing — the ICM
+online-first page may no longer work unauthenticated; journal-watch covered ICM
+adequately this run.
