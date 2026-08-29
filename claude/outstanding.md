@@ -11,13 +11,6 @@ trial were both sent on 2026-08-27 after Europe PMC served their abstracts.*
 
 ## Worth retrying
 
-- **Pittaway et al. — Extracorporeal haemoadsorption in cardiac surgery**
-  (systematic review) — Br J Anaesth 2026;137(3):676–689.
-- **McDougall et al. — Induction agents network meta-analysis** — Chest 2026,
-  epub 18 Aug. Would pair with the RSI ketamine/etomidate trial sent 2026-08-22.
-  Searches keep returning the adjacent Crit Care 2026 NMA (DOI
-  10.1186/s13054-026-06067-w) and the BJA ketamine meta-analysis
-  (S0007-0912(26)00132-7) instead.
 - **Wang — renal resistive index-guided MAP titration in sepsis** — Nat Commun
   2026;17:8759. Interesting personalised-MAP angle against SEPSISPAM and 65.
 - **Ma — vasopressin/steroids/epinephrine in in-hospital cardiac arrest** and
@@ -29,6 +22,14 @@ trial were both sent on 2026-08-27 after Europe PMC served their abstracts.*
   10.1007/s00134-026-08575-3. Secondary scope.
 
 ## Calendar
+
+- **ESC Congress 2026 (Munich) is running now, 28–31 August.** Day one delivered
+  POET-II, CARDIO-TTRansform, ACACIA-HCM, SINGLE-AF and CMR GUIDE, plus the ESC
+  heart failure guidelines and the Fifth Universal Definition of MI. 59 trials
+  across 12 Hot Line sessions in total — **check the remaining days**: ACACIA-HCM
+  (aficamten in non-obstructive HCM, NEJM) is not yet sent, and Hot Lines continue
+  through 31 August.
+
 
 - **ESC Congress 2026 (Munich), 28–31 August 2026** — expect a wave of Hot Line
   readouts around and after that week: LIBREXIA ACS, H-HeFT, PVI-SHAM-AF,

@@ -146,3 +146,18 @@ date mismatch: listed 27 Aug, actually published 29 June. French societies (SFAR
 SRLF, SPILF) had nothing in the window — the most recent SFAR RFE is April 2026;
 searching them in French ("recommandations formalisées d'experts") works, but their
 own sites are better reached through search results than fetched directly.
+
+**2026-08-29.** Europe PMC resolved both remaining "worth retrying" leads that had
+defeated earlier runs — the McDougall induction-agent NMA (Chest, DOI
+10.1016/j.chest.2026.07.5239) and the Pittaway haemoadsorption meta-analysis (BJA,
+DOI 10.1016/j.bja.2026.06.005). Title-word queries found them where citation-field
+queries and general WebSearch had failed for a week. Two lessons: query Europe PMC
+by distinctive title words, and pull the full `abstractText` — the Results section
+sits well past the first 1500 characters, so a truncated read looks like a paper
+with no findings.
+
+ESC Congress items presented the same day are not in Europe PMC and often not
+fetchable at the journal either; escardio.org press releases and news-medical.net
+carried complete trial numbers (POET-II design and endpoints, CARDIO-TTRansform
+event counts and rate ratio) within hours of presentation. Use those, and say on
+the page that the numbers are from the release rather than the paper.
