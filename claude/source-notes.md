@@ -161,3 +161,15 @@ fetchable at the journal either; escardio.org press releases and news-medical.ne
 carried complete trial numbers (POET-II design and endpoints, CARDIO-TTRansform
 event counts and rate ratio) within hours of presentation. Use those, and say on
 the page that the numbers are from the release rather than the paper.
+
+**2026-08-29 (guidelines run).** The aggregator's guidelines listing needs the same
+date scepticism as its research listing — two of today's five items were far older
+than the listing date: the EACVI/ACVC/EACTAIC cardiac ultrasound consensus is from
+October 2025 (~11 months), and the Second Universal Definition of Heart Failure from
+about June 2026, appearing now only because the EHJ print issue carries it. Check
+`firstPublicationDate` in Europe PMC for every guideline before calling it new.
+
+Some guidelines have no abstract deposited in Europe PMC (the JTACS empyema and
+chylothorax algorithm, the cardiac ultrasound consensus). When the full text is also
+unreachable, record the item as a pointer and say plainly that the content was not
+seen — do not summarise a guideline from its title.
