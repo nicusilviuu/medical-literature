@@ -173,3 +173,33 @@ Some guidelines have no abstract deposited in Europe PMC (the JTACS empyema and
 chylothorax algorithm, the cardiac ultrasound consensus). When the full text is also
 unreachable, record the item as a pointer and say plainly that the content was not
 seen — do not summarise a guideline from its title.
+
+**2026-08-30 — BEST TECHNIQUE FOUND SO FAR.** Query Europe PMC by journal and date
+range directly, instead of waiting for the aggregator:
+
+```bash
+curl -s -G "https://www.ebi.ac.uk/europepmc/webservices/rest/search" \
+  --data-urlencode 'query=JOURNAL:"British journal of anaesthesia" AND FIRST_PDATE:[2026-08-24 TO 2026-08-31]' \
+  --data-urlencode 'resultType=lite' --data-urlencode 'format=json' --data-urlencode 'pageSize=12'
+```
+
+Run it across the priority journals — "Intensive care medicine", "British journal of
+anaesthesia", "Anesthesiology", "Critical care medicine", "The Annals of thoracic
+surgery", "Circulation", "European heart journal", "Clinical infectious diseases",
+"The Journal of thoracic and cardiovascular surgery", "Regional anesthesia and pain
+medicine". It found three items journal-watch never listed, including the Annals of
+Thoracic Surgery CABG-vs-PCI paper and the Anesthesiology off-pump tissue-oxygenation
+study — both squarely on primary scope. **Do this before the aggregator, not after:
+journal-watch skews toward critical care and misses anaesthesia and cardiothoracic
+surgery.** `resultType=lite` for the listing, then `core` for the full abstract of
+whatever looks relevant.
+
+Also: `link.springer.com` article pages now 303-redirect to `idp.springer.com`, so
+the Springer route is gone for both listings and individual articles. Europe PMC
+covers ICM well enough to replace it, but items published the same day are not yet
+indexed there — for those, conference reporting (tctmd.com worked well for
+ACACIA-HCM, with more detail and more scepticism than the sponsor's release) is the
+fallback.
+
+Note some Europe PMC abstracts are truncated mid-sentence in the deposit itself (the
+CABG-vs-PCI abstract stops at the p-value). Say so rather than filling the gap.
