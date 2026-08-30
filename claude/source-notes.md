@@ -203,3 +203,20 @@ fallback.
 
 Note some Europe PMC abstracts are truncated mid-sentence in the deposit itself (the
 CABG-vs-PCI abstract stops at the p-value). Say so rather than filling the gap.
+
+**2026-08-30 (guidelines run).** The Europe PMC date-range sweep also works for
+guidelines — add title filters:
+`JOURNAL:"..." AND FIRST_PDATE:[a TO b] AND (TITLE:"guideline" OR TITLE:"consensus"
+OR TITLE:"recommendations" OR TITLE:"position" OR TITLE:"statement" OR
+TITLE:"criteria")`. Returned zero for 27–31 Aug across six journals, which is a
+useful negative: it confirms a quiet day rather than leaving it unknown.
+
+`doi.org` 302s to `academic.oup.com`, and **the OUP article page then fetches fine** —
+that is how the cardiogenic shock criteria were retrieved when Europe PMC had not
+yet indexed them. For anything in an OUP journal (EHJ, EHJACC, EHJCI, CID, AJRCCM,
+EJCTS) published in the last day or two, go doi.org → follow the redirect → fetch
+the OUP page.
+
+French society sites: their own pages announce guidelines without carrying the
+content (sfpc.eu gave date, societies and journal but no recommendations). Treat
+them as pointers and chase the journal publication.

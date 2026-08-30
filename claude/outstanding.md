@@ -21,6 +21,20 @@ trial were both sent on 2026-08-27 after Europe PMC served their abstracts.*
   shock** (target trial emulation) — Intensive Care Med, 14 Aug 2026, DOI
   10.1007/s00134-026-08575-3. Secondary scope.
 
+## French society guidelines never surfaced here
+
+Spotted 2026-08-30 while checking the French societies. Both are older than the
+watch window but on scope and never reported; content not yet retrieved, so they
+need a proper read before being written up.
+
+- **SPILF/SFPC/SRLF/SFAR/Stabilis/RESOMEDIT — intravenous administration of
+  antibiotics by prolonged and continuous infusion**, *Infectious Diseases Now*,
+  February 2025. Directly complements the IDSA multisociety position paper sent
+  2026-08-29, which recommends defaulting antipseudomonal β-lactams to prolonged
+  infusion — the French societies got there 18 months earlier. Worth a side-by-side.
+- **SPILF/SPLF update on community-acquired pneumonia in adults**, with SRLF, SFM,
+  SFR and SFMU. Antibiotic therapy, biomarkers, microbiological investigation.
+
 ## Calendar
 
 - **ESC Congress 2026 (Munich) is running now, 28–31 August.** Day one delivered
