@@ -241,3 +241,15 @@ JTCVS is well covered by the sweep and was the most productive journal today; th
 aggregator had listed none of its four papers. Annals of Thoracic Surgery, EJCTS,
 Anesthesia & Analgesia, ICM and Critical Care Medicine all returned zero for the
 same window, so the sweep is cheap to run across the full journal list.
+
+**2026-08-31 (guidelines run).** For French society output, search Europe PMC with
+`AUTH:"SPILF" OR TITLE:"SPILF"` — it lists their recent guidelines cleanly with DOIs
+and dates, which the society websites do not. *Infectious Diseases Now* is where
+SPILF/SFAR/SRLF joint work is published. Note their guidelines frequently have **no
+abstract deposited**, so Europe PMC pins the citation but not the content; the full
+text is still needed for a write-up.
+
+Confirmed-negative days are worth recording as such. Today: nine journals swept with
+guideline title filters for 29–31 August returning zero, plus nothing on journal-watch
+dated 31 August, plus the society checks. That is a different statement from "found
+nothing", and the archive should show which one it was.
