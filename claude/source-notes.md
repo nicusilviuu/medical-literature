@@ -220,3 +220,24 @@ the OUP page.
 French society sites: their own pages announce guidelines without carrying the
 content (sfpc.eu gave date, societies and journal but no recommendations). Treat
 them as pointers and chase the journal publication.
+
+**2026-08-31.** Two refinements to the date-range sweep, both learned the hard way
+today:
+
+1. **The FIRST_PDATE filter is not reliable on its own.** A query filtered to
+   28–31 August returned the Reizine candidemia paper whose own
+   `firstPublicationDate` is 28 June. Always re-check each item's date in the `core`
+   record before calling it new; the filter is a net, not a guarantee.
+2. **Many hits are commentaries and editorials, not the paper.** The BJA
+   "individualised PEEP… Holy grail of protective ventilation?" hit is an editorial
+   with no abstract, and the RAPM GLP-1 gastric ultrasound hit is a correspondence
+   letter. Both point at original articles that the sweep did not surface. When a
+   title reads like commentary (a question mark, "Comment", "Reply", "Commentary:",
+   "a case for"), search for the underlying original before spending effort on it —
+   and if the original cannot be found, drop it rather than writing up the
+   commentary as though it were the study.
+
+JTCVS is well covered by the sweep and was the most productive journal today; the
+aggregator had listed none of its four papers. Annals of Thoracic Surgery, EJCTS,
+Anesthesia & Analgesia, ICM and Critical Care Medicine all returned zero for the
+same window, so the sweep is cheap to run across the full journal list.
