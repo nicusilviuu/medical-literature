@@ -51,7 +51,13 @@ full text was reachable, so all still need a proper read before being written up
   CARDIO-TTRansform, ACACIA-HCM, the ESC heart failure guidelines, the Fifth
   Universal Definition of MI, and the cardiogenic shock diagnostic criteria. **Not
   yet sent, worth checking as they publish:** SINGLE-AF, CMR GUIDE, MAPLE-HCM,
-  LIBREXIA ACS, H-HeFT, PVI-SHAM-AF. Simultaneous publications from Hot Lines often
+  LIBREXIA ACS, H-HeFT, PVI-SHAM-AF. The simultaneous NEJM publications began
+  appearing in Europe PMC on 29–31 August — still unsent from that batch and
+  secondary-scope cardiology: prasugrel vs ticagrelor in ACS, clopidogrel vs DAPT in
+  high-ischaemic-risk patients, milvexian after ACS, tricuspid-valve intervention in
+  heart failure, pulmonary denervation for HF-related pulmonary hypertension,
+  targeted CT coronary angiography in acute chest pain, and ambulatory ECG monitoring
+  in syncope. Pick from these on a quiet day. Simultaneous publications from Hot Lines often
   appear in Europe PMC a few days after presentation — re-sweep NEJM, Lancet, JAMA
   and EHJ in early September.
 

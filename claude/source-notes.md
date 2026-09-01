@@ -253,3 +253,21 @@ Confirmed-negative days are worth recording as such. Today: nine journals swept 
 guideline title filters for 29–31 August returning zero, plus nothing on journal-watch
 dated 31 August, plus the society checks. That is a different statement from "found
 nothing", and the archive should show which one it was.
+
+**2026-09-01 — Europe PMC outage, and the retry rule proving itself.** Every query in
+the morning sweep returned empty. The cause was **HTTP 503 from nginx**, a service
+outage rather than a rate limit — and it recovered on the **second** attempt about 25
+seconds later. Two practical lessons:
+
+1. **Always check the HTTP status before concluding "no results".** The failure mode
+   is silent: `json.load` on an HTML error page throws, and a sloppy handler turns a
+   503 into "zero hits", which would have been reported as a quiet day. Add
+   `-o file -w "%{http_code}"` to the curl and branch on it.
+2. Retry with backoff up to ~6 times before believing Europe PMC is unavailable.
+
+Also today: ESC Hot Line simultaneous publications reached Europe PMC 1–3 days after
+presentation, exactly as the calendar note predicted — the NEJM query for 29 Aug–1 Sep
+returned 18 items. **Re-sweep the big four journals for a few days after any major
+congress.** Items published the same day still are not indexed; PRAGUE-26 (31 Aug) had
+to come from press coverage, which carried the full numbers including the bleeding
+breakdown.
