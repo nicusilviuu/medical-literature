@@ -271,3 +271,32 @@ returned 18 items. **Re-sweep the big four journals for a few days after any maj
 congress.** Items published the same day still are not indexed; PRAGUE-26 (31 Aug) had
 to come from press coverage, which carried the full numbers including the bleeding
 breakdown.
+
+**2026-09-01 (guidelines run).** Wrote the retry-with-status-check as a shell
+function and used it for the whole sweep — worth reusing verbatim:
+
+```bash
+epmc() {  # $1 = query, $2 = resultType (default lite)
+  local q="$1" rt="${2:-lite}" code
+  for i in 1 2 3 4 5 6; do
+    code=$(curl -s -o /tmp/epmc.json -w "%{http_code}" -G \
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search" \
+      --data-urlencode "query=$q" --data-urlencode "resultType=$rt" \
+      --data-urlencode 'format=json' --data-urlencode 'pageSize=10')
+    [ "$code" = "200" ] && return 0
+    sleep 20
+  done
+  echo "HTTP $code — FAILED after retries" >&2; return 1
+}
+```
+A failed query then prints "QUERY FAILED — not a negative result" rather than being
+counted as zero hits.
+
+**A gap this exposed:** the archive had never covered the 2026 Surviving Sepsis
+Campaign guidelines, published March 2026 — arguably the most consequential critical
+care guideline of the year. The daily watch only looks at the last 7–10 days, so
+anything major that predates the archive's start on 2026-08-17 is invisible to it.
+**On a quiet day, search for landmark guidelines from earlier in the year rather than
+only reporting the absence of new ones.** Candidates still unchecked: ESICM fluid
+therapy guideline (part 3), recent ESAIC and EACTS output, ASA guidelines other than
+the January 2026 regional analgesia one.
