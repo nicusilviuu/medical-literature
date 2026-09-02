@@ -9,6 +9,27 @@ it has gone out in a brief.
 *Nothing outstanding at high priority — OFACAR and the BJA paravertebral-vs-ESP
 trial were both sent on 2026-08-27 after Europe PMC served their abstracts.*
 
+## Landmark guidelines predating the archive, not yet covered
+
+The daily watch only looks back 7-10 days, so major guidelines published before
+2026-08-17 are invisible to it. Work this list on quiet days. Covered so far: the
+2026 Surviving Sepsis Campaign guidelines (2026-09-01) and the three-part ESICM fluid
+therapy guideline (2026-09-02).
+
+- **2025 ESC/EACTS Guidelines for the management of valvular heart disease** — Eur
+  Heart J, 2025-11-01, DOI 10.1093/eurheartj/ehaf194, PMID 40878295. No abstract
+  deposited. **Primary scope and a major gap.** Two companion pieces that may be more
+  readable and are arguably more useful: "Surgical Implications of the 2025 ESC/EACTS
+  Guidelines" (EJCTS, 2026-05-01, DOI 10.1093/ejcts/ezag158) and "The 'ten
+  commandments' for the 2025 ESC/EACTS guidelines" (Eur Heart J, 2026-06-01, DOI
+  10.1093/eurheartj/ehag096).
+- **EACTS/STS Guidelines for Diagnosing and Treating Acute and Chronic Syndromes of
+  the Aortic Organ** — EJCTS. Corrigenda exist from 2024-06 and 2026-07; the original
+  needs locating. Primary scope, and directly relevant to the type A dissection work
+  sent 2026-08-31.
+- Still unchecked for landmark output: ESAIC, ASA (beyond the January 2026 regional
+  analgesia guideline), STS (beyond the 2026 POAF guideline), IACTS, ESPEN.
+
 ## Worth retrying
 
 - **Huber & Wuethrich — Revisiting the Efficacy of Goal-Directed Hemodynamic Therapy:

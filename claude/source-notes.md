@@ -300,3 +300,16 @@ anything major that predates the archive's start on 2026-08-17 is invisible to i
 only reporting the absence of new ones.** Candidates still unchecked: ESICM fluid
 therapy guideline (part 3), recent ESAIC and EACTS output, ASA guidelines other than
 the January 2026 regional analgesia one.
+
+**2026-09-02 (guidelines run).** The backward search on a quiet day paid off twice
+over — it found the three-part ESICM fluid therapy guideline (all abstracts deposited,
+so coverable first-hand) and two major cardiothoracic guidelines the archive had
+missed entirely: the 2025 ESC/EACTS valvular heart disease guidelines and the
+EACTS/STS aortic organ guidelines. Both are now on the outstanding list.
+
+Two search notes. Guideline title filters produce **false positives**: today's only
+two hits were research papers that matched "practice" and "criteria". Read the titles
+before counting a hit. And when a guideline's own abstract is absent, look for its
+**companion commentaries** — "ten commandments", "surgical implications", "key
+recommendations" pieces often carry the substance and do have abstracts. Searching the
+guideline's title words without restricting to the original journal surfaces them.
