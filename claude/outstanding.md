@@ -11,6 +11,13 @@ trial were both sent on 2026-08-27 after Europe PMC served their abstracts.*
 
 ## Worth retrying
 
+- **Huber & Wuethrich — Revisiting the Efficacy of Goal-Directed Hemodynamic Therapy:
+  A Simulation Study Investigating Small-Study Effects Using Bayesian Updating** —
+  Anesth Analg, 2026-09-01, DOI 10.1213/ane.0000000000008286, PMID 42678757. No
+  abstract deposited and A&A is LWW-gated. Directly on scope and methodologically
+  interesting — small-study effects are the standing criticism of the GDHT
+  literature. Worth a PDF request or a retry once indexed.
+
 - **Wang — renal resistive index-guided MAP titration in sepsis** — Nat Commun
   2026;17:8759. Interesting personalised-MAP angle against SEPSISPAM and 65.
 - **Ma — vasopressin/steroids/epinephrine in in-hospital cardiac arrest** and
@@ -53,11 +60,11 @@ full text was reachable, so all still need a proper read before being written up
   yet sent, worth checking as they publish:** SINGLE-AF, CMR GUIDE, MAPLE-HCM,
   LIBREXIA ACS, H-HeFT, PVI-SHAM-AF. The simultaneous NEJM publications began
   appearing in Europe PMC on 29–31 August — still unsent from that batch and
-  secondary-scope cardiology: prasugrel vs ticagrelor in ACS, clopidogrel vs DAPT in
-  high-ischaemic-risk patients, milvexian after ACS, tricuspid-valve intervention in
-  heart failure, pulmonary denervation for HF-related pulmonary hypertension,
-  targeted CT coronary angiography in acute chest pain, and ambulatory ECG monitoring
-  in syncope. Pick from these on a quiet day. Simultaneous publications from Hot Lines often
+  secondary-scope cardiology: clopidogrel vs DAPT in high-ischaemic-risk patients,
+  milvexian after ACS, pulmonary denervation for HF-related pulmonary hypertension,
+  targeted CT coronary angiography in acute chest pain, ambulatory ECG monitoring in
+  syncope, and prevalence of silent atherosclerosis across adult life. Pick from these
+  on a quiet day. (SWITCH-SWEDEHEART and TRIC-I-HF sent 2026-09-02.) Simultaneous publications from Hot Lines often
   appear in Europe PMC a few days after presentation — re-sweep NEJM, Lancet, JAMA
   and EHJ in early September.
 
