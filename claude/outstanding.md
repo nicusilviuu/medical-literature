@@ -18,7 +18,10 @@ therapy guideline (2026-09-02).
 
 - **2025 ESC/EACTS Guidelines for the management of valvular heart disease** — Eur
   Heart J, 2025-11-01, DOI 10.1093/eurheartj/ehaf194, PMID 40878295. No abstract
-  deposited. **Primary scope and a major gap.** Two companion pieces that may be more
+  deposited. **Primary scope and a major gap. Partially covered 2026-09-03** via the
+  EACTS surgical-implications companion, but only its abstract and introduction were
+  reachable — two of ten key messages. Still needs the primary document or the "ten
+  commandments" paper. Two companion pieces that may be more
   readable and are arguably more useful: "Surgical Implications of the 2025 ESC/EACTS
   Guidelines" (EJCTS, 2026-05-01, DOI 10.1093/ejcts/ezag158) and "The 'ten
   commandments' for the 2025 ESC/EACTS guidelines" (Eur Heart J, 2026-06-01, DOI

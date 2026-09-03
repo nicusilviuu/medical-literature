@@ -326,3 +326,13 @@ it has affected at least six items across two weeks.
 The Europe PMC journal sweep does not have this problem, because `FIRST_PDATE`
 filters on first publication. That is another reason to run the sweep first and treat
 the aggregator as a supplement for journals outside the priority list.
+
+**2026-09-03 (guidelines run).** The doi.org → academic.oup.com route retrieved the
+abstract *and introduction* of a restricted EJCTS paper — more than Europe PMC held
+(which had no abstract at all for it). Worth trying for any OUP journal when Europe
+PMC comes back empty. It does not get past the paywall for the body of the paper, so
+say clearly how much of the document was actually seen.
+
+Note on partial coverage: when a companion paper says it presents "ten key messages"
+and only two are visible, report the two and say the other eight were not read. Do
+not infer the rest from the guideline's reputation.
