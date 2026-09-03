@@ -313,3 +313,16 @@ before counting a hit. And when a guideline's own abstract is absent, look for i
 **companion commentaries** — "ten commandments", "surgical implications", "key
 recommendations" pieces often carry the substance and do have abstracts. Searching the
 guideline's title words without restricting to the original journal surfaces them.
+
+**2026-09-03.** Two of today's three items were months older than the aggregator's
+listing date — the Molnar haemoadsorption position statement (listed 2 Sep, actually
+13 June) and the Al-Husinat weaning review (listed 1 Sep, actually 20 March). The
+pattern is now clear enough to name: **criticalcarereviews.com lists the issue
+version, not first online publication.** For anything that appears there in a journal
+with print issues, assume the listing date is the issue date and check
+`firstPublicationDate` in Europe PMC before calling it new. This is not occasional —
+it has affected at least six items across two weeks.
+
+The Europe PMC journal sweep does not have this problem, because `FIRST_PDATE`
+filters on first publication. That is another reason to run the sweep first and treat
+the aggregator as a supplement for journals outside the priority list.
