@@ -26,10 +26,14 @@ therapy guideline (2026-09-02).
   Guidelines" (EJCTS, 2026-05-01, DOI 10.1093/ejcts/ezag158) and "The 'ten
   commandments' for the 2025 ESC/EACTS guidelines" (Eur Heart J, 2026-06-01, DOI
   10.1093/eurheartj/ehag096).
-- **EACTS/STS Guidelines for Diagnosing and Treating Acute and Chronic Syndromes of
-  the Aortic Organ** — EJCTS. Corrigenda exist from 2024-06 and 2026-07; the original
-  needs locating. Primary scope, and directly relevant to the type A dissection work
-  sent 2026-08-31.
+- **EACTS/STS Guidelines for diagnosing and treating acute and chronic syndromes of
+  the aortic organ** — EJCTS 2024-02-26, DOI 10.1093/ejcts/ezad426, PMID 38408364;
+  parallel publication in Ann Thorac Surg, DOI 10.1016/j.athoracsur.2024.01.021.
+  Corrigenda 2024-06 (10.1093/ejcts/ezae235) and 2026-07 (10.1093/ejcts/ezag194).
+  **Partially covered 2026-09-04** — the aortic organ concept, TEM classification,
+  Ishimaru zones, GERAADA score, BAV phenotypes and the 45 mm threshold, all from the
+  publisher's visible page. **Still needs the full text** for the recommendation
+  tables and BAV phenotype definitions.
 - Still unchecked for landmark output: ESAIC, ASA (beyond the January 2026 regional
   analgesia guideline), STS (beyond the 2026 POAF guideline), IACTS, ESPEN.
 

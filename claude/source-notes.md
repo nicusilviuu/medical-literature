@@ -336,3 +336,15 @@ say clearly how much of the document was actually seen.
 Note on partial coverage: when a companion paper says it presents "ten key messages"
 and only two are visible, report the two and say the other eight were not read. Do
 not infer the rest from the guideline's reputation.
+
+**2026-09-04 (guidelines run).** The doi.org → academic.oup.com route worked again, and
+better than yesterday: for the EACTS/STS aortic organ guidelines it returned the
+concept framing, all four major changes and the diameter thresholds, where Europe PMC
+had no abstract at all. **This is now the standard move for any OUP-published guideline
+Europe PMC cannot serve** (EJCTS, EHJ, EHJACC, EHJCI, CID, AJRCCM). It does not reach
+the recommendation tables, so say how much of the document was actually seen.
+
+Note also that major guidelines are often published **in parallel** in two societies'
+journals — the aortic organ guidelines are in both EJCTS and Annals of Thoracic
+Surgery. If one publisher blocks, try the other. And check for corrigenda before
+quoting a specific figure: this one has two, from 2024 and 2026.
