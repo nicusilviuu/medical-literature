@@ -348,3 +348,18 @@ Note also that major guidelines are often published **in parallel** in two socie
 journals — the aortic organ guidelines are in both EJCTS and Annals of Thoracic
 Surgery. If one publisher blocks, try the other. And check for corrigenda before
 quoting a specific figure: this one has two, from 2024 and 2026.
+
+**2026-09-05 (guidelines run).** Searching Europe PMC by **society acronym in the
+title** is the productive way to find a society's landmark output:
+`TITLE:"ESPEN" AND (TITLE:"guideline" OR TITLE:"practical guideline")`,
+`TITLE:"ESAIC" AND (TITLE:"guideline" OR TITLE:"recommendation")`. It found two
+directly on-scope perioperative guidelines the daily watch had never seen, both with
+deposited abstracts. Run it per society when working the landmark backlog: SFAR,
+SRLF, SPILF, ESAIC, ESRA, ESICM, ESPEN, SCCM, EACTS, STS, IACTS, ASA.
+
+Two cautions from today's results. Society guidelines are often **re-published in
+translation** — the ESPEN ICU guideline surfaced as a Spanish version in Nutr Hosp
+with its own DOI and a 2026 date, which would read as new if taken at face value.
+And **endorsement papers** (one society endorsing another's guideline, e.g. the
+Scandinavian endorsement of the ESAIC biomarker guideline in Acta Anaesthesiol
+Scand) are separate records with separate dates; cite the original.

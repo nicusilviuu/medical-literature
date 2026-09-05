@@ -34,8 +34,21 @@ therapy guideline (2026-09-02).
   Ishimaru zones, GERAADA score, BAV phenotypes and the 45 mm threshold, all from the
   publisher's visible page. **Still needs the full text** for the recommendation
   tables and BAV phenotype definitions.
-- Still unchecked for landmark output: ESAIC, ASA (beyond the January 2026 regional
-  analgesia guideline), STS (beyond the 2026 POAF guideline), IACTS, ESPEN.
+- **ESAIC/ESRA joint guideline: regional anaesthesia in patients on antithrombotic
+  drugs** — Acta Anaesthesiol Scand endorsement 2022-05-30, DOI 10.1111/aas.14093.
+  Primary scope. Locate the original ESAIC/ESRA publication.
+- **STS Clinical Practice Guideline on Surgical Management of Oligometastatic
+  [disease]** — Ann Thorac Surg, 2025-01-10, DOI 10.1016/j.athoracsur.2024.11.010,
+  PMID 39797869. Thoracic oncology, primary scope.
+- **ESPEN practical and partially revised guideline: clinical nutrition in the
+  intensive care unit** — a Spanish translation appeared in Nutr Hosp 2026-07-17
+  (DOI 10.20960/nh.06943); find and cover the original ESPEN ICU guideline.
+- Still unchecked for landmark output: ASA (beyond the January 2026 regional
+  analgesia guideline), IACTS.
+- Covered from this list: 2026 Surviving Sepsis Campaign (2026-09-01), ESICM fluid
+  therapy parts 1-3 (2026-09-02), EACTS/STS aortic organ partially (2026-09-04),
+  2025 ESC/EACTS valvular partially (2026-09-03), ESPEN surgery and ESAIC cardiac
+  biomarkers (2026-09-05).
 
 ## Worth retrying
 
