@@ -363,3 +363,14 @@ with its own DOI and a 2026 date, which would read as new if taken at face value
 And **endorsement papers** (one society endorsing another's guideline, e.g. the
 Scandinavian endorsement of the ESAIC biomarker guideline in Acta Anaesthesiol
 Scand) are separate records with separate dates; cite the original.
+
+**2026-09-06 (guidelines run).** When searching for a named joint guideline, the first
+hits are often **correspondence about it** rather than the guideline — searching the
+guideline's title phrase returned two reply letters before the document itself. Search
+by **both society acronyms** instead (`TITLE:"ESAIC" AND TITLE:"ESRA"`), which surfaced
+the original alongside its replies and its Scandinavian endorsement, and check the
+`abstract: yes/no` flag to spot the real document quickly.
+
+Sunday sweeps return nothing. Both weekend runs so far have been genuine zeros across
+all fourteen journals with zero query failures — worth expecting rather than
+investigating, and worth spending on the landmark backlog instead.
