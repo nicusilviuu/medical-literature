@@ -103,8 +103,8 @@ full text was reachable, so all still need a proper read before being written up
   appearing in Europe PMC on 29–31 August — still unsent from that batch and
   secondary-scope cardiology: clopidogrel vs DAPT in high-ischaemic-risk patients,
   milvexian after ACS, pulmonary denervation for HF-related pulmonary hypertension,
-  targeted CT coronary angiography in acute chest pain, ambulatory ECG monitoring in
-  syncope, and prevalence of silent atherosclerosis across adult life. Pick from these
+  ambulatory ECG monitoring in syncope, and prevalence of silent atherosclerosis
+  across adult life. (TARGET-CTCA sent 2026-09-06.) Pick from these
   on a quiet day. (SWITCH-SWEDEHEART and TRIC-I-HF sent 2026-09-02.) Simultaneous publications from Hot Lines often
   appear in Europe PMC a few days after presentation — re-sweep NEJM, Lancet, JAMA
   and EHJ in early September.
