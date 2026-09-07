@@ -374,3 +374,26 @@ the original alongside its replies and its Scandinavian endorsement, and check t
 Sunday sweeps return nothing. Both weekend runs so far have been genuine zeros across
 all fourteen journals with zero query failures — worth expecting rather than
 investigating, and worth spending on the landmark backlog instead.
+
+**2026-09-07 — IMPORTANT SEARCH ADDITION.** The named-journal sweep came back with two
+editorials and a correspondence letter. A **topic search across all journals** for the
+same window then found both of the day's real items — a randomised MAP-target
+feasibility trial in Acta Anaesthesiologica Scandinavica and a CPB rewarming/delirium
+cohort in Perfusion, **neither journal on the priority list**. Run this whenever the
+named-journal sweep is thin:
+
+```
+FIRST_PDATE:[a TO b] AND (TITLE:"cardiac surgery" OR TITLE:"cardiopulmonary bypass"
+  OR TITLE:"anaesthesia" OR TITLE:"anesthesia" OR TITLE:"intensive care"
+  OR TITLE:"critically ill") AND (TITLE:"randomized" OR TITLE:"randomised"
+  OR TITLE:"trial" OR TITLE:"cohort")
+```
+
+Good work appears in Perfusion, Acta Anaesthesiologica Scandinavica, J Cardiothorac
+Vasc Anesth and Anaesth Crit Care Pain Med — a priority-journal list alone misses it.
+
+The same search re-surfaced MERCURI-2 and ITACS carrying September dates: these were
+the **issue versions** of papers sent in August. Another instance of the issue-date
+trap, this time from Europe PMC rather than the aggregator — `FIRST_PDATE` filters on
+first publication, but a paper can legitimately re-appear if the record was updated.
+The `items:` dedupe in the archive caught both; keep checking titles against it.
