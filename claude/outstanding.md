@@ -34,16 +34,16 @@ therapy guideline (2026-09-02).
   Ishimaru zones, GERAADA score, BAV phenotypes and the 45 mm threshold, all from the
   publisher's visible page. **Still needs the full text** for the recommendation
   tables and BAV phenotype definitions.
-- **ESPEN practical and partially revised guideline: clinical nutrition in the
-  intensive care unit** — a Spanish translation appeared in Nutr Hosp 2026-07-17
-  (DOI 10.20960/nh.06943); find and cover the original ESPEN ICU guideline.
-- Still unchecked for landmark output: ASA (beyond the January 2026 regional
-  analgesia guideline), IACTS.
+- All tracked societies have now been checked for landmark output at least once.
+  Remaining known gaps are the **full texts** of the two partially covered
+  cardiothoracic guidelines above, and the **2019 ESPEN scientific ICU guideline**
+  behind the 2023 practical version.
 - Covered from this list: 2026 Surviving Sepsis Campaign (2026-09-01), ESICM fluid
   therapy parts 1-3 (2026-09-02), EACTS/STS aortic organ partially (2026-09-04),
   2025 ESC/EACTS valvular partially (2026-09-03), ESPEN surgery and ESAIC cardiac
   biomarkers (2026-09-05), ESAIC/ESRA antithrombotic and STS oligometastatic NSCLC
-  (2026-09-06).
+  (2026-09-06), ASA older adults advisory, IACTS revascularization position statement
+  and ESPEN ICU nutrition (2026-09-07).
 
 ## Worth retrying
 

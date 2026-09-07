@@ -397,3 +397,20 @@ the **issue versions** of papers sent in August. Another instance of the issue-d
 trap, this time from Europe PMC rather than the aggregator — `FIRST_PDATE` filters on
 first publication, but a paper can legitimately re-appear if the record was updated.
 The `items:` dedupe in the archive caught both; keep checking titles against it.
+
+**2026-09-07 (guidelines run).** The topic-wide search works for guidelines too — run
+it alongside the named-journal sweep:
+`FIRST_PDATE:[a TO b] AND (TITLE:"guideline" OR TITLE:"consensus statement" OR
+TITLE:"position statement" OR TITLE:"recommendations") AND (TITLE:"cardiac" OR
+TITLE:"thoracic" OR TITLE:"anaesthesia" OR TITLE:"anesthesia" OR TITLE:"intensive care"
+OR TITLE:"critically ill" OR TITLE:"sepsis" OR TITLE:"perioperative" OR TITLE:"airway"
+OR TITLE:"ventilation")`. Two empty sweeps rather than one make a quiet day a much
+firmer negative.
+
+**The landmark backlog is now worked through** — every tracked society has been checked
+at least once. IACTS output lives in the *Indian Journal of Thoracic and Cardiovascular
+Surgery* (Springer) and is findable with `TITLE:"IACTS"`; much of what that search
+returns is conference abstracts, so filter by eye. What remains outstanding is full
+texts, not discovery: the 2025 ESC/EACTS valvular guidelines, the EACTS/STS aortic
+organ guidelines, and the 2019 ESPEN scientific ICU guideline behind the 2023 practical
+version.
