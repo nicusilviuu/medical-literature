@@ -56,6 +56,11 @@ therapy guideline (2026-09-02).
 
 - **Wang — renal resistive index-guided MAP titration in sepsis** — Nat Commun
   2026;17:8759. Interesting personalised-MAP angle against SEPSISPAM and 65.
+  **Read it against the Shock renal perfusion phenotype cohort sent 2026-09-08**, in
+  which RRI trajectories did *not* discriminate renal outcomes while a
+  semi-quantitative perfusion score did. If RRI does not track recovery, titrating
+  pressure to it is a weaker proposition — worth making that the frame when this is
+  written up.
 - **Ma — vasopressin/steroids/epinephrine in in-hospital cardiac arrest** and
   **Assimakopoulos — newer beta-lactams for carbapenem-resistant Gram-negatives**
   — both narrative reviews from the CCR Aug 20 list, flagged as the two worth
