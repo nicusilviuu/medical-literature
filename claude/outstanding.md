@@ -84,6 +84,10 @@ full text was reachable, so all still need a proper read before being written up
   **Highest value of these** — the IDSA multisociety sepsis position paper (sent
   2026-08-29) recommends default prolonged-infusion antipseudomonal β-lactams; the
   French societies got there 20 months earlier. Do the side-by-side.
+  **Update 2026-09-08:** the international focused update (Hong et al., Pharmacotherapy,
+  1 Sep 2026) has now re-graded the mortality evidence from *very low* to *moderate*
+  certainty and was sent that day. The French document is now the only leg of this
+  thread still unread in full — the side-by-side is worth doing against the new grade.
 - **SPILF-AEPEI position statement: antibiotic therapy and prophylaxis of infective
   endocarditis** — *Infect Dis Now*, 2024-11-17, DOI 10.1016/j.idnow.2024.105011.
   Directly adjacent to POET-II (sent 2026-08-29).

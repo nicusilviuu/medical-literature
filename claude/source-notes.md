@@ -414,3 +414,29 @@ returns is conference abstracts, so filter by eye. What remains outstanding is f
 texts, not discovery: the 2025 ESC/EACTS valvular guidelines, the EACTS/STS aortic
 organ guidelines, and the 2019 ESPEN scientific ICU guideline behind the 2023 practical
 version.
+
+## Recovering items missed during a Europe PMC outage (added 2026-09-08)
+
+The 1 September HTTP 503 outage produced a false quiet day, and two guideline documents
+published that day (the AHA paediatric-cardiac-surgery residual lesions statement and
+the international prolonged-infusion β-lactam focused update) were not found until a
+sweep a week later. **After any day where a query failure or an unexplained zero was
+recorded, re-sweep that date range once the service recovers.** A widened date window on
+the next run is cheap; the alternative is a permanent gap.
+
+## Society-acronym sweep is worth running every day, not just on quiet days
+
+The prolonged-infusion focused update surfaced only in the
+`TITLE:"SCCM" OR TITLE:"ESICM" ...` acronym sweep — the named-journal sweep missed it
+because it was published in *Pharmacotherapy*, and the topic-wide title sweep missed it
+because it was ranked below the cut. Endorsing-society names in the title are a reliable
+handle on multisociety documents that appear in journals outside the tracked list.
+
+## A lead recorded as "noted but not pursued" is not a reported item
+
+The same focused update appeared on a 23 August journal-watch list and was logged in the
+25 August brief as a lead not pursued. It then sat unreported for two weeks while three
+separate entries discussed the recommendation it updates. **Grep `claude/outstanding.md`
+and the "noted but not pursued" tails of recent briefs at the start of each guidelines
+run**, not just the `items:` blocks — the `items:` dedupe only catches what was actually
+sent.
