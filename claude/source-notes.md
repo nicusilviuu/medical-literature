@@ -440,3 +440,13 @@ separate entries discussed the recommendation it updates. **Grep `claude/outstan
 and the "noted but not pursued" tails of recent briefs at the start of each guidelines
 run**, not just the `items:` blocks — the `items:` dedupe only catches what was actually
 sent.
+
+## Europe PMC first-publication dates can lag the original release by weeks (added 2026-09-09)
+
+ITACS surfaced in the BMJ sweep with `firstPublicationDate` **2026-09-07**, though the
+trial was released and reported here on **25 August**. The Europe PMC date tracked the
+BMJ *print* issue, not the online-first release. This is the same failure mode as the
+aggregator's issue-date habit, in a new place — and the `items:` dedupe caught it only
+because the title matched. **Before writing up anything that looks like a major trial,
+grep `_briefs/` for its acronym and its distinctive title words**, not just its DOI: the
+DOI can differ between the online-first and print records.

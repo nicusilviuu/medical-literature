@@ -9,6 +9,16 @@ it has gone out in a brief.
 *Nothing outstanding at high priority — OFACAR and the BJA paravertebral-vs-ESP
 trial were both sent on 2026-08-27 after Europe PMC served their abstracts.*
 
+## Worth a slot on a quiet day
+
+- **Jenkinson et al. — "Implanted intrathecal drug delivery systems: a narrative review
+  for the perioperative, obstetric, and intensive care anesthesiologist"** — Reg Anesth
+  Pain Med, 8 Sep 2026, DOI 10.1136/rapm-2025-107458, PMID 42710951. Abstract deposited
+  and read. Squarely on scope: neuraxial access precautions in patients with an IDDS,
+  intrathecal baclofen withdrawal, MRI behaviour of the devices. From the 8 September
+  RAPM themed issue on intrathecal drug delivery (fourteen papers, the rest chronic
+  pain).
+
 ## Landmark guidelines predating the archive, not yet covered
 
 The daily watch only looks back 7-10 days, so major guidelines published before
