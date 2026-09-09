@@ -450,3 +450,12 @@ aggregator's issue-date habit, in a new place — and the `items:` dedupe caught
 because the title matched. **Before writing up anything that looks like a major trial,
 grep `_briefs/` for its acronym and its distinctive title words**, not just its DOI: the
 DOI can differ between the online-first and print records.
+
+## Long-form AHA/ACC scientific statements deposit only the abstract (added 2026-09-09)
+
+Both the AHA paediatric residual-lesions statement (sent 2026-09-08) and the AHA
+infective endocarditis statement (sent 2026-09-09) deposit a framing abstract in Europe
+PMC and nothing else — the recommendation tables, which are the substance, sit behind
+Circulation. **Write these up from the framing and say so explicitly**, rather than
+implying the recommendations were read. The abstracts of these statements are unusually
+informative about *what changed and why*, which is often the reportable part anyway.

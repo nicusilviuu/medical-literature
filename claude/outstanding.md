@@ -100,7 +100,11 @@ full text was reachable, so all still need a proper read before being written up
   thread still unread in full — the side-by-side is worth doing against the new grade.
 - **SPILF-AEPEI position statement: antibiotic therapy and prophylaxis of infective
   endocarditis** — *Infect Dis Now*, 2024-11-17, DOI 10.1016/j.idnow.2024.105011.
-  Directly adjacent to POET-II (sent 2026-08-29).
+  Directly adjacent to POET-II (sent 2026-08-29). **Priority raised 2026-09-09:** the
+  AHA published its first infective endocarditis scientific statement since 2015 on
+  8 September (sent that day). The French and American traditions have differed on
+  *prophylaxis* for fifteen years — do that side-by-side, and note that the AHA
+  document's own framing leans heavily on POET.
 - **SPILF 2026 guidelines: community-acquired urinary tract infections in adult men**
   — *Infect Dis Now*, 2026-06-18, DOI 10.1016/j.idnow.2026.105312, with rationale
   paper 2026-06-25, DOI 10.1016/j.idnow.2026.105319.
