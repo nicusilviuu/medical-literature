@@ -11,6 +11,19 @@ trial were both sent on 2026-08-27 after Europe PMC served their abstracts.*
 
 ## Worth a slot on a quiet day
 
+- **Matsumoto et al. — early antithrombin depletion after trauma** — *Shock*, 9 Sep 2026,
+  DOI 10.1097/shk.0000000000002935, PMID 42713784. Abstract read. 100 patients, reduced AT
+  in 32%, adjusted OR 9.42 for shock and 12.20 for DIC; AT tracked albumin and syndecan-1
+  rather than thrombin-antithrombin complex. Mechanism interesting, estimates weak (shock
+  OR reaches 109).
+- **Nguyenová et al. — anti-Xa activity and global haemostatic response after prophylactic
+  enoxaparin in term pregnancy** — *Anesth Analg*, 9 Sep 2026, DOI
+  10.1213/ane.0000000000008296, PMID 42715360. **No abstract deposited — retry in a few
+  days.** Directly relevant to the neuraxial timing intervals in the ESAIC/ESRA
+  antithrombotic guideline (sent 2026-09-06).
+- **A&A J-PEDIA registry — extreme weight-for-age and airway adverse events at induction**
+  — *Anesth Analg*, 9 Sep 2026. No abstract deposited; retry.
+
 - **Jenkinson et al. — "Implanted intrathecal drug delivery systems: a narrative review
   for the perioperative, obstetric, and intensive care anesthesiologist"** — Reg Anesth
   Pain Med, 8 Sep 2026, DOI 10.1136/rapm-2025-107458, PMID 42710951. Abstract deposited
