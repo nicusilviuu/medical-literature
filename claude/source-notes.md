@@ -459,3 +459,11 @@ PMC and nothing else — the recommendation tables, which are the substance, sit
 Circulation. **Write these up from the framing and say so explicitly**, rather than
 implying the recommendations were read. The abstracts of these statements are unusually
 informative about *what changed and why*, which is often the reportable part anyway.
+
+## The French societies have gone quiet (added 2026-09-10)
+
+Confirmed zeros on the French-society sweep for 1–9 and 1–10 September: SFAR, SPILF, SRLF
+and *Infectious Diseases Now* have published nothing in guideline form this month. This is
+a real negative, not a query failure — the sweep returns hits for non-guideline content in
+the same journals. Keep running it daily, but do not treat the repeated zero as a sign the
+query is broken.

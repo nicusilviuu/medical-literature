@@ -145,3 +145,11 @@ full text was reachable, so all still need a proper read before being written up
   readouts around and after that week: LIBREXIA ACS, H-HeFT, PVI-SHAM-AF,
   CARDIO-TTRansform and others. The quiet stretch through Aug 21–24 was attributed
   to the pre-ESC lull; prioritise these readouts once they land.
+
+## Full texts needed (added 2026-09-10)
+
+- **DESTINE 2.0 driveline infection staging** — Artif Organs, 9 Sep 2026, DOI
+  10.1111/aor.70237, PMID 42717402. Sent 2026-09-10 from the abstract. **The five staging
+  criteria themselves are not in the abstract and the full text was not reachable** —
+  what distinguishes stage 2 from stage 3 is the operative content. Retry, or it needs a
+  PDF.
