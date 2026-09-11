@@ -11,6 +11,15 @@ trial were both sent on 2026-08-27 after Europe PMC served their abstracts.*
 
 ## Worth a slot on a quiet day
 
+- **Savic/SAPPHIRE follow-up thought:** the drug allergy label cohort (sent 2026-09-11)
+  found OR 3.00 for *actual* allergic drug reactions in labelled patients. If a
+  de-labelling or perioperative allergy-testing trial surfaces, that is the number to read
+  it against — the labels are not pure noise.
+- **Reg Anesth Pain Med, 4 Sep 2026 — "Do-not-resuscitate status and regional analgesia
+  utilization for fracture pain: a comfort paradox?"** Noted in the 2026-09-11 brief
+  alongside the Annals of Surgery code-status cohort but never written up on its own.
+  Retrieve the abstract and pair the two if a quiet day allows.
+
 - **Matsumoto et al. — early antithrombin depletion after trauma** — *Shock*, 9 Sep 2026,
   DOI 10.1097/shk.0000000000002935, PMID 42713784. Abstract read. 100 patients, reduced AT
   in 32%, adjusted OR 9.42 for shock and 12.20 for DIC; AT tracked albumin and syndecan-1
