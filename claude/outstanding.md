@@ -157,6 +157,18 @@ full text was reachable, so all still need a proper read before being written up
 
 ## Full texts needed (added 2026-09-10)
 
+- **ADQI XXXVI / ELSO consensus statements on AKI and CRRT in ECMO** — Blood Purif, 10 Sep
+  2026, DOI 10.1159/bpu/abpag013, PMID 42721066. Sent 2026-09-11 from the abstract. **The
+  numbered consensus statements are not in the abstract and the full text was not
+  reachable.** Also: this is the epidemiology/risk-factor workgroup only — a search of
+  July–September finds no companion papers yet. **Watch for the prevention, fluid management
+  and CRRT-strategy workgroups over the coming weeks**; query
+  `TITLE:"ELSO" OR TITLE:"Acute Disease Quality Initiative"`.
+- **Annals of Thoracic Surgery, 9 Sep 2026 — "Comparison of Two Forms of Pulsatility: A
+  Critical Perspective on Perfusion Modalities."** Surfaced in the 9 September sweep, not
+  written up. Worth retrieving now that ADQI XXXVI names non-pulsatile flow as a mechanistic
+  driver of AKI on ECMO.
+
 - **DESTINE 2.0 driveline infection staging** — Artif Organs, 9 Sep 2026, DOI
   10.1111/aor.70237, PMID 42717402. Sent 2026-09-10 from the abstract. **The five staging
   criteria themselves are not in the abstract and the full text was not reachable** —
