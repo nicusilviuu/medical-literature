@@ -9,6 +9,42 @@ it has gone out in a brief.
 *Nothing outstanding at high priority — OFACAR and the BJA paravertebral-vs-ESP
 trial were both sent on 2026-08-27 after Europe PMC served their abstracts.*
 
+## ERC 2025 resuscitation guidelines — nine sections still uncovered
+
+Sent 2026-09-12: Executive Summary (110770), Adult ALS (110769), ERC/ESICM Post-Resuscitation
+Care (110809). All from abstracts that list topics only — **the recommendation tables for ALS
+and post-resuscitation care are still needed.**
+
+Remaining sections, all *Resuscitation* October 2025, all with abstracts deposited. Priority
+order for quiet days:
+
+1. **Special Circumstances in Resuscitation** — DOI 10.1016/j.resuscitation.2025.110753 (most
+   relevant to cardiothoracic and perioperative arrest)
+2. **Paediatric Life Support** — DOI 10.1016/j.resuscitation.2025.110767
+3. **Adult Basic Life Support** — DOI 10.1016/j.resuscitation.2025.110771
+4. **Systems Saving Lives** — DOI 10.1016/j.resuscitation.2025.110821
+5. **Ethics in Resuscitation** — DOI 10.1016/j.resuscitation.2025.110734 (pairs with the
+   code-status papers sent 2026-09-11 and 2026-09-12)
+6. Newborn (110766), Epidemiology (110733), Education (110739), First Aid (110752)
+
+Also: **2024 ILCOR International Consensus on CPR and Emergency Cardiovascular Care Science
+With Treatment Recommendations** — Circulation DOI 10.1161/cir.0000000000001288 and
+Resuscitation DOI 10.1016/j.resuscitation.2024.110414, abstracts deposited.
+
+## Resuscitation papers seen in sweeps but never written up
+
+- ***Resuscitation*, 4 Sep 2026 — "Trends in the incidence and outcomes of cardiopulmonary
+  resuscitation-induced consciousness in out-of-hospital cardiac arrest."** Newly relevant:
+  ERC 2025 introduces a role for sedation during CPR.
+- ***Resuscitation*, 5 Sep 2026 — "Under-reporting of hypoxic-ischaemic brain injury on routine
+  CT and MRI during neuroprognostication after out-of-hospital cardiac arrest."** Pairs with
+  the ERC/ESICM post-resuscitation care prognostication section.
+- ***Resuscitation*, 5 Sep 2026 — "Assessing Global Cerebral Hemodynamics after Cardiac
+  Arrest"**; **4 Sep — "High-Quality CPR: From Process to Perfusion."**
+
+Abstracts not yet retrieved for any of these four. **Still open: ISHLT** — zero documents in
+the archive, heart and lung transplantation never swept.
+
 ## Worth a slot on a quiet day
 
 - **Savic/SAPPHIRE follow-up thought:** the drug allergy label cohort (sent 2026-09-11)

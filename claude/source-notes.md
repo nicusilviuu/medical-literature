@@ -492,3 +492,27 @@ The 11 September dexmedetomidine-vs-propofol CABG trial came back with `source: 
 surface in ordinary topic sweeps. **Check `source` (PPR = preprint) and the DOI prefix before
 writing anything up, and label a preprint as a preprint on the page** — front matter, heading
 and interpretation. Useful for a quiet day; never presented as peer-reviewed.
+
+## The tracked-society list had a hole: resuscitation bodies (added 2026-09-12)
+
+**Resuscitation is named in this project's primary scope, but ERC and ILCOR were never on the
+society list, and no ERC or ILCOR document appeared in the first 27 daily guidelines entries.**
+The ERC Guidelines 2025 — twelve sections in *Resuscitation*, October 2025, the current
+European standard — were therefore invisible to both the 7-10 day daily watch and the landmark
+backlog. Closed on 2026-09-12 with the executive summary, adult ALS, and ERC/ESICM
+post-resuscitation care.
+
+**Add to the society sweep: ERC, ILCOR, AHA ECC, ISHLT, ELSO, SCA/EACTAIC.** And the general
+lesson: **audit scope coverage against the stated scope, not against the existing society
+list** — grep the archive for each named specialty area and check something has actually
+appeared for it. ISHLT (heart and lung transplantation) also returned zero and is still open.
+
+## ERC section abstracts describe structure, not recommendations
+
+Every ERC 2025 section abstract states the ILCOR basis and lists topics; none contains a
+recommendation. Same pattern as the AHA/ACC long-form statements. The substantive changes had
+to be taken from a **peer-reviewed review** (Rott, Reinsch, Böttiger, *Pol Arch Intern Med*,
+DOI 10.20452/pamw.17251) and **attributed to that review on the page**, not to the guidelines.
+Useful route for any future guideline whose own abstract is contentless: search for a
+"most important changes" or "ten commandments" companion — but check it has an abstract, since
+the ESC/EACTS "ten commandments" papers (2017, 2021, 2025) all deposit none.
