@@ -467,3 +467,28 @@ and *Infectious Diseases Now* have published nothing in guideline form this mont
 a real negative, not a query failure — the sweep returns hits for non-guideline content in
 the same journals. Keep running it daily, but do not treat the repeated zero as a sign the
 query is broken.
+
+## Europe PMC indexing lags by a day or more — distinguish lag from a quiet day (added 2026-09-12)
+
+On 12 September the tracked-journal sweep returned zero. Controls established why:
+
+```
+same journal list, 2026-09-10..09-11   -> 12 hits      (query works)
+all of Europe PMC, 2026-09-11 alone    -> 1035 records (index has that day)
+all of Europe PMC, 2026-09-12 alone    -> 0 records    (nothing indexed at all)
+```
+
+**A zero for *today* is usually an indexing lag, not an empty day.** Distinguish the two with
+`FIRST_PDATE:[<today> TO <today>]` with no other terms: if the whole database returns zero for
+that date, the index has not caught up and no topic query can succeed. **Always re-sweep a
+2-3 day trailing window rather than only the new date**, or that day's papers are lost
+permanently — they appear in the index retrospectively, after the run that should have caught
+them.
+
+## Preprints appear in Europe PMC alongside journal articles — check the source field
+
+The 11 September dexmedetomidine-vs-propofol CABG trial came back with `source: PPR`, a
+`10.21203/rs.3.rs-` DOI (Research Square) and no PMID. Europe PMC indexes preprints and they
+surface in ordinary topic sweeps. **Check `source` (PPR = preprint) and the DOI prefix before
+writing anything up, and label a preprint as a preprint on the page** — front matter, heading
+and interpretation. Useful for a quiet day; never presented as peer-reviewed.

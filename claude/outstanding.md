@@ -165,9 +165,16 @@ full text was reachable, so all still need a proper read before being written up
   and CRRT-strategy workgroups over the coming weeks**; query
   `TITLE:"ELSO" OR TITLE:"Acute Disease Quality Initiative"`.
 - **Annals of Thoracic Surgery, 9 Sep 2026 — "Comparison of Two Forms of Pulsatility: A
-  Critical Perspective on Perfusion Modalities."** Surfaced in the 9 September sweep, not
-  written up. Worth retrieving now that ADQI XXXVI names non-pulsatile flow as a mechanistic
-  driver of AKI on ECMO.
+  Critical Perspective on Perfusion Modalities"** (Ündar, DOI
+  10.1016/j.athoracsur.2026.08.020, PMID 42716270). **No abstract deposited — three attempts
+  (9, 11, 12 Sep).** Needs a PDF. Relevant to both the ADQI XXXVI non-pulsatile flow statement
+  and the MiECC meta-analysis sent 2026-09-12, which found no AKI difference between
+  minimally invasive and conventional circuits. Do not characterise it from the title.
+
+- **Cleared 2026-09-12:** the RAPM do-not-resuscitate / regional analgesia paper has been
+  sent. Its frailty stratification (OR 0.34 in the *least* frail) is the counterexample to the
+  Annals of Surgery code-status cohort sent 2026-09-11 — keep the pair in mind if a third
+  code-status paper appears.
 
 - **DESTINE 2.0 driveline infection staging** — Artif Organs, 9 Sep 2026, DOI
   10.1111/aor.70237, PMID 42717402. Sent 2026-09-10 from the abstract. **The five staging
