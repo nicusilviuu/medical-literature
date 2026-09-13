@@ -31,6 +31,30 @@ Also: **2024 ILCOR International Consensus on CPR and Emergency Cardiovascular C
 With Treatment Recommendations** — Circulation DOI 10.1161/cir.0000000000001288 and
 Resuscitation DOI 10.1016/j.resuscitation.2024.110414, abstracts deposited.
 
+## Resuscitation and critical care papers seen 11 Sep 2026, not written up
+
+All in tracked journals, all dated 2026-09-11, surfaced by the trailing-window sweep on
+2026-09-13. Titles only — abstracts not retrieved.
+
+- *Resuscitation*: **in-hospital cardiac arrest in Impella-supported cardiogenic shock (J-PVAD
+  registry)**; **first post-resuscitation PaCO2 and neurologic outcome in children**;
+  **hypotension burden from intermittently documented blood pressures after paediatric arrest**;
+  **prognostication after paediatric arrest with reduced EEG electrodes**; **prehospital
+  critical care for cardiac arrest — which clinicians and what training**.
+- *Critical Care Medicine*: **systematic evidence map of biomarker use for AKI in the critically
+  ill**; **comprehensive driving assessment to enable driving resumption after critical illness**
+  (two linked papers); **operationalizing alternatives to prospective consent in critical care
+  trials**.
+- *ICVTS*: **six-minute walk distance and long-term outcomes in LVAD recipients, ELEVATE
+  Registry** — pairs with DESTINE 2.0 (sent 2026-09-10); **digital patient-centred carepath with
+  continuous remote monitoring for cardiac surgery**.
+- *Shock*: **phenotype-guided polymyxin B haemoadsorption in abdominal septic shock, 2015-2026
+  evidence synthesis and proposed pathway**.
+- *Perfusion*: **del Nido cardioplegia in paediatric cardiac surgery — qualitative sub-study of
+  the DESTINY trial**; **leukocyte removal by blood filters in autologous cell salvage**.
+- *Reg Anesth Pain Med*: **caudal versus penile block and urethrocutaneous fistula after
+  hypospadias repair in children under 2, multicentre RCT**.
+
 ## Resuscitation papers seen in sweeps but never written up
 
 - ***Resuscitation*, 4 Sep 2026 — "Trends in the incidence and outcomes of cardiopulmonary

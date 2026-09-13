@@ -478,6 +478,12 @@ all of Europe PMC, 2026-09-11 alone    -> 1035 records (index has that day)
 all of Europe PMC, 2026-09-12 alone    -> 0 records    (nothing indexed at all)
 ```
 
+**Confirmed 2026-09-13, one day later:** 11 Sep went 1,035 -> **3,805** records, 12 Sep went
+0 -> **1,147**, and 13 Sep stood at 48. **All four items in the 13 September brief were dated
+11 September and none was visible on the 12th.** The trailing window is not optional — without
+it a day's output is lost permanently. Sweep the **last three days** every run and expect the
+two most recent to be incomplete.
+
 **A zero for *today* is usually an indexing lag, not an empty day.** Distinguish the two with
 `FIRST_PDATE:[<today> TO <today>]` with no other terms: if the whole database returns zero for
 that date, the index has not caught up and no topic query can succeed. **Always re-sweep a
