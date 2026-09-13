@@ -215,6 +215,18 @@ full text was reachable, so all still need a proper read before being written up
   CARDIO-TTRansform and others. The quiet stretch through Aug 21–24 was attributed
   to the pre-ESC lull; prioritise these readouts once they land.
 
+## Blocked / no abstract (added 2026-09-13)
+
+- ***Eur Heart J Cardiovasc Imaging*, 12 Sep 2026 — "Novel Insights into Sex-Differences for
+  Bicuspid Valvulo-Aortopathy within the Contemporary International Classification Consensus"**
+  (Michelena & Evangelista, DOI 10.1093/ehjci/jeag253, PMID 42728840). **No abstract deposited**;
+  appears to be editorial commentary. **Directly relevant to a named gap** — BAV phenotype
+  definitions in the partially-covered EACTS/STS aortic organ guidelines. Needs a PDF. Do not
+  characterise from the title.
+- ***Thorac Cardiovasc Surg*, 11 Sep 2026 — German Heart Surgery Report 2025**, the annual
+  registry of the German Society for Thoracic and Cardiovascular Surgery. Registry report, not a
+  guideline; worth a quiet-day look for national volume and outcome denominators.
+
 ## Full texts needed (added 2026-09-10)
 
 - **ADQI XXXVI / ELSO consensus statements on AKI and CRRT in ECMO** — Blood Purif, 10 Sep
