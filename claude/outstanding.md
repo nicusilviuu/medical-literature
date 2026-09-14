@@ -18,14 +18,17 @@ and post-resuscitation care are still needed.**
 Remaining sections, all *Resuscitation* October 2025, all with abstracts deposited. Priority
 order for quiet days:
 
-1. **Special Circumstances in Resuscitation** — DOI 10.1016/j.resuscitation.2025.110753 (most
-   relevant to cardiothoracic and perioperative arrest)
-2. **Paediatric Life Support** — DOI 10.1016/j.resuscitation.2025.110767
-3. **Adult Basic Life Support** — DOI 10.1016/j.resuscitation.2025.110771
-4. **Systems Saving Lives** — DOI 10.1016/j.resuscitation.2025.110821
-5. **Ethics in Resuscitation** — DOI 10.1016/j.resuscitation.2025.110734 (pairs with the
-   code-status papers sent 2026-09-11 and 2026-09-12)
-6. Newborn (110766), Epidemiology (110733), Education (110739), First Aid (110752)
+**Sent 2026-09-14:** Special Circumstances (110753) and Ethics in Resuscitation (110734). Both
+abstracts were scope-only except Ethics, which carries real content. **Full texts still needed
+for both** — in particular the perioperative-arrest content of Special Circumstances and the
+termination-of-resuscitation section of Ethics.
+
+Remaining:
+
+1. **Paediatric Life Support** — DOI 10.1016/j.resuscitation.2025.110767
+2. **Adult Basic Life Support** — DOI 10.1016/j.resuscitation.2025.110771
+3. **Systems Saving Lives** — DOI 10.1016/j.resuscitation.2025.110821
+4. Newborn (110766), Epidemiology (110733), Education (110739), First Aid (110752)
 
 Also: **2024 ILCOR International Consensus on CPR and Emergency Cardiovascular Care Science
 With Treatment Recommendations** — Circulation DOI 10.1161/cir.0000000000001288 and
@@ -66,8 +69,17 @@ All in tracked journals, all dated 2026-09-11, surfaced by the trailing-window s
 - ***Resuscitation*, 5 Sep 2026 — "Assessing Global Cerebral Hemodynamics after Cardiac
   Arrest"**; **4 Sep — "High-Quality CPR: From Process to Perfusion."**
 
-Abstracts not yet retrieved for any of these four. **Still open: ISHLT** — zero documents in
-the archive, heart and lung transplantation never swept.
+Abstracts not yet retrieved for any of these four. **ISHLT gap closed 2026-09-14** with the three-part perioperative ECLS consensus. The first
+ISHLT sweep returned **134 consensus statements and guidelines** — a large seam. Others with
+abstracts deposited, worth working on quiet days: **Assessing and Addressing Frailty in
+Candidates for Lung Transplantation** (10.1016/j.healun.2026.05.033); **ISHLT Consensus
+Conference on Graft Dysfunction** summary (10.1016/j.healun.2025.12.029, 1,773-char abstract);
+**Scientific Statement on pulmonary antibody-mediated rejection** (10.1016/j.healun.2026.04.019);
+**Referral and Selection of Pediatric Lung transplant candidates** (10.1016/j.healun.2025.08.005);
+**Short Telomere Syndrome and Lung Transplantation** (10.1016/j.healun.2025.10.028); **Guidelines
+for the Management of Pediatric Heart Failure, 2025 update** (10.1016/j.healun.2025.06.003).
+Several major ISHLT documents deposit **no abstract** — cardiac xenotransplantation 2026,
+transplant ethics, ALAD, baseline lung allograft dysfunction, PAH risk stratification.
 
 ## Worth a slot on a quiet day
 
@@ -227,6 +239,21 @@ full text was reachable, so all still need a proper read before being written up
   ill patients**, international survey.
 - ***Catheter Cardiovasc Interv*, 13 Sep — balloon-expandable TAVR in patients with prior
   endovascular aortic stent grafts.** Niche, squarely cardiothoracic.
+
+## Blocked / no abstract (added 2026-09-14)
+
+- **Brazilian Thoracic Society guidelines for the pharmacological treatment of pulmonary
+  hypertension** — *Respiratory Research & Clinical Practice*, 13 Sep 2026, two companion papers,
+  GRADE-based. **No abstract, no DOI indexed, no PMID.** In scope for perioperative and ICU
+  management of pulmonary hypertension. Needs a PDF.
+- **Clinical practice guidelines on liver transplantation for extended criteria donor grafts in
+  China (2025 edition)** — *Chin Med J*, 14 Sep 2026, DOI 10.1097/cm9.0000000000004232,
+  PMID 42733301. **No abstract deposited.** Transplant anaesthesia and critical care.
+- **ISHLT perioperative ECLS trilogy** — sent 2026-09-14 from abstracts that give scope, method
+  and recommendation counts only. **The 111 recommendations themselves need the full texts.**
+  The anaesthetist-facing companion (Wanar & Weiner, *J Cardiothorac Vasc Anesth*, DOI
+  10.1053/j.jvca.2026.02.026, PMID 41826200) is the best entry point and also has a contentless
+  abstract.
 
 ## Blocked / no abstract (added 2026-09-13)
 
