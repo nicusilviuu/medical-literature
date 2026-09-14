@@ -215,6 +215,19 @@ full text was reachable, so all still need a proper read before being written up
   CARDIO-TTRansform and others. The quiet stretch through Aug 21–24 was attributed
   to the pre-ESC lull; prioritise these readouts once they land.
 
+## Worth a slot — seen 12-14 Sep 2026, not pursued
+
+- ***Heart & Lung*, 12 Sep — "Core components of transitional care for ECMO survivors after ICU
+  discharge: a three-round modified Delphi study."** Pairs with the CRRT-on-ECMO cohort sent
+  2026-09-14 (71% RRT dependence at discharge after VA-ECMO + CRRT), DESTINE 2.0 (2026-09-10),
+  and ADQI XXXVI (2026-09-11). The strongest quiet-day candidate.
+- ***J Burn Care Res*, 12 Sep — predicting unplanned CRRT interruptions in critically ill burn
+  patients**, stacked ensemble machine learning.
+- ***Eur J Nucl Med Mol Imaging*, 12 Sep — practices and barriers in PET/CT use for critically
+  ill patients**, international survey.
+- ***Catheter Cardiovasc Interv*, 13 Sep — balloon-expandable TAVR in patients with prior
+  endovascular aortic stent grafts.** Niche, squarely cardiothoracic.
+
 ## Blocked / no abstract (added 2026-09-13)
 
 - ***Eur Heart J Cardiovasc Imaging*, 12 Sep 2026 — "Novel Insights into Sex-Differences for
