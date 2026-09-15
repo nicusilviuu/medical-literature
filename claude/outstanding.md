@@ -227,6 +227,20 @@ full text was reachable, so all still need a proper read before being written up
   CARDIO-TTRansform and others. The quiet stretch through Aug 21–24 was attributed
   to the pre-ESC lull; prioritise these readouts once they land.
 
+## Worth a slot — seen 14 Sep 2026, not pursued
+
+- ***Resuscitation*, 14 Sep — "Structured diagnostic strategies for psychological problems in
+  cardiac arrest survivors: an important knowledge gap."** Pairs with the post-intensive care
+  syndrome and driving-resumption papers already logged, and with ERC 2025 post-resuscitation
+  care (rehabilitation and long-term outcome are named topics).
+- ***Shock*, 14 Sep — admission whole-blood transcriptomics showing a neutrophil-predominant
+  systemic immune response in acute traumatic brain injury.**
+- ***Ann Thorac Surg*, 14 Sep — "The Heart as a Unit: Interactions with Pericardium and
+  Implications in Constrictive Pericarditis and Pericardiectomy."**
+- ***JTCVS*, 14 Sep — commentary on dynamic risk assessment in thoracic endovascular aortic
+  repair.** Relevant to the EACTS/STS aortic organ guidelines gap, but a commentary (see the
+  source-notes rule on Ann Thorac Surg / JTCVS commentaries and abstracts).
+
 ## Worth a slot — seen 12-14 Sep 2026, not pursued
 
 - ***Heart & Lung*, 12 Sep — "Core components of transitional care for ECMO survivors after ICU

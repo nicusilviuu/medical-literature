@@ -522,3 +522,13 @@ DOI 10.20452/pamw.17251) and **attributed to that review on the page**, not to t
 Useful route for any future guideline whose own abstract is contentless: search for a
 "most important changes" or "ten commandments" companion — but check it has an abstract, since
 the ESC/EACTS "ten commandments" papers (2017, 2021, 2025) all deposit none.
+
+## Annals of Thoracic Surgery commentaries never deposit abstracts (added 2026-09-15)
+
+Four in ten days — the pulsatility commentary (PMID 42716270, five retry attempts), the sternal
+wound infection bundle piece, the TAVI-in-low-risk review's companion, and now "The Role of
+Guideline-Directed Medical Therapy on Outcomes after CABG" (PMID 42735886). **Invited
+commentaries and editorials in this journal deposit title and authors only.** Recognise the
+pattern from the title shape (a question, a colon-and-theme construction, two or three authors,
+no numbers) and log it once rather than retrying across successive runs. The same holds for
+*Eur Heart J Cardiovasc Imaging* editorials.
