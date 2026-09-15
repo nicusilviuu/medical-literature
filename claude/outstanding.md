@@ -254,6 +254,42 @@ full text was reachable, so all still need a proper read before being written up
 - ***Catheter Cardiovasc Interv*, 13 Sep — balloon-expandable TAVR in patients with prior
   endovascular aortic stent grafts.** Niche, squarely cardiothoracic.
 
+## Blocked / no abstract (added 2026-09-15)
+
+- **"The Bucharest international (ESOT) consensus on controlled donation after circulatory
+  determination of death"** — *Transplant International*, 28 Aug 2026, DOI 10.3389/ti.2026.17566,
+  PMID 42730223 (Cillo & Oniscu). **No abstract deposited.** This is the European society-level
+  consensus the DIVI position paper (sent 2026-09-15) sits under, and the better document to have
+  led with. **High priority — needs a PDF.**
+- **"Disclosure Without Context: The Case for More Transparent Clinical Practice Guidelines"** —
+  *Ann Intern Med*, 15 Sep 2026, PMID 42735409. No abstract; commentary pattern. Relevant to the
+  guideline-quality thread (SENTINEL 2026-09-09, prehospital appraisal 2026-09-13).
+
+## Worth a slot — DCD / organ donation seam (added 2026-09-15)
+
+The cDCD sweep returned 44 hits in 60 days; this is an active field. With abstracts deposited:
+
+- **Englbrecht et al. — potential for DCD in Germany**, 7 university hospitals, *Transplant Int*,
+  21 Aug 2026, DOI 10.3389/ti.2026.17199. **Already quoted in the 2026-09-15 guidelines entry**;
+  could carry a brief slot of its own.
+- **"Death Determination, the Dying Process and the Dead Donor Rule: A Critical Analysis of the
+  Italian 20-Minute No-Touch Period"** — *Bioethics*, 17 Jul 2026, DOI 10.1111/bioe.70163.
+  Abstract deposited, not yet read. The no-touch period is the contested technical core of cDCD.
+- **Normothermic regional perfusion (NRP) in cDCD** — 22 Jul 2026, abstract deposited.
+- **UNOS analysis: heart transplant practice changes with recent evolutions in DCD** — 11 Aug
+  2026, 2,285-char abstract. Companion to the DCD heart paper sent 2026-09-15.
+- **Kidney DCD and sustained graft function** — 9 Sep 2026, 1,804-char abstract.
+
+## Worth a slot — sent to the brief rather than the guidelines watch (added 2026-09-15)
+
+- ***Med Klin Intensivmed Notfmed*, 14 Sep 2026 — "Left ventricular assist devices in emergency
+  medicine: case-based analysis for EMS and emergency departments"** (Solf et al., DOI
+  10.1007/s00063-026-01490-x, PMID 42734655). Abstract read. **Pulse palpation, NIBP and pulse
+  oximetry all unreliable in continuous-flow support**; the reported deterioration was
+  *S. aureus* bacteraemia with RRT-dependent renal failure, not pump malfunction. Pairs with
+  DESTINE 2.0 (2026-09-10) and the ELEVATE registry paper. A case analysis, not a society
+  document — belongs in a brief.
+
 ## Blocked / no abstract (added 2026-09-14)
 
 - **Brazilian Thoracic Society guidelines for the pharmacological treatment of pulmonary
