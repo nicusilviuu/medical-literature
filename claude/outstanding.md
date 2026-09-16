@@ -23,12 +23,13 @@ abstracts were scope-only except Ethics, which carries real content. **Full text
 for both** — in particular the perioperative-arrest content of Special Circumstances and the
 termination-of-resuscitation section of Ethics.
 
+**Sent 2026-09-16:** Systems Saving Lives (110821). **Six of twelve sections now covered.**
+
 Remaining:
 
 1. **Paediatric Life Support** — DOI 10.1016/j.resuscitation.2025.110767
 2. **Adult Basic Life Support** — DOI 10.1016/j.resuscitation.2025.110771
-3. **Systems Saving Lives** — DOI 10.1016/j.resuscitation.2025.110821
-4. Newborn (110766), Epidemiology (110733), Education (110739), First Aid (110752)
+3. Newborn (110766), Epidemiology (110733), Education (110739), First Aid (110752)
 
 Also: **2024 ILCOR International Consensus on CPR and Emergency Cardiovascular Care Science
 With Treatment Recommendations** — Circulation DOI 10.1161/cir.0000000000001288 and
@@ -70,10 +71,10 @@ All in tracked journals, all dated 2026-09-11, surfaced by the trailing-window s
   Arrest"**; **4 Sep — "High-Quality CPR: From Process to Perfusion."**
 
 Abstracts not yet retrieved for any of these four. **ISHLT gap closed 2026-09-14** with the three-part perioperative ECLS consensus. The first
-ISHLT sweep returned **134 consensus statements and guidelines** — a large seam. Others with
-abstracts deposited, worth working on quiet days: **Assessing and Addressing Frailty in
-Candidates for Lung Transplantation** (10.1016/j.healun.2026.05.033); **ISHLT Consensus
-Conference on Graft Dysfunction** summary (10.1016/j.healun.2025.12.029, 1,773-char abstract);
+ISHLT sweep returned **134 consensus statements and guidelines** — a large seam. **Sent 2026-09-16:** the graft dysfunction 10-year update (10.1016/j.healun.2025.12.029) and the
+lung transplant frailty consensus (10.1016/j.healun.2026.05.033) — both from abstracts; **neither
+document's actual recommendations are in its abstract and both need full texts.** Others with
+abstracts deposited, worth working on quiet days:
 **Scientific Statement on pulmonary antibody-mediated rejection** (10.1016/j.healun.2026.04.019);
 **Referral and Selection of Pediatric Lung transplant candidates** (10.1016/j.healun.2025.08.005);
 **Short Telomere Syndrome and Lung Transplantation** (10.1016/j.healun.2025.10.028); **Guidelines
@@ -253,6 +254,22 @@ full text was reachable, so all still need a proper read before being written up
   ill patients**, international survey.
 - ***Catheter Cardiovasc Interv*, 13 Sep — balloon-expandable TAVR in patients with prior
   endovascular aortic stent grafts.** Niche, squarely cardiothoracic.
+
+## Blocked / no abstract (added 2026-09-16)
+
+- **"Expert consensus on nutritional assessment and support for pediatric extracorporeal membrane
+  oxygenation patients (2026)"** — *Zhonghua Er Ke Za Zhi*, 15 Sep 2026, DOI
+  10.3760/cma.j.cn112140-20260601-00425, PMID 42742012. Society of Pediatric Critical Care,
+  Chinese Medical Doctor Association. **No abstract deposited.** ECMO plus nutrition — sits across
+  two active threads here (ADQI/ELSO, ESPEN). Chinese language; needs a PDF.
+
+## Noted, out of operative scope (added 2026-09-16)
+
+- **AHA scientific statement: "State of Cardiovascular Disease and Stroke in Hispanic/Latino Adults
+  in the United States"** — *Circulation*, 15 Sep 2026, DOI 10.1161/cir.0000000000001463,
+  PMID 42741845. Full abstract read. AHA is tracked, but this is population cardiovascular
+  epidemiology and health equity rather than perioperative or critical care. Reported in the
+  2026-09-16 entry as a noted item, not written up.
 
 ## Blocked / no abstract (added 2026-09-15)
 
