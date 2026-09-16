@@ -528,7 +528,14 @@ the ESC/EACTS "ten commandments" papers (2017, 2021, 2025) all deposit none.
 Four in ten days — the pulsatility commentary (PMID 42716270, five retry attempts), the sternal
 wound infection bundle piece, the TAVI-in-low-risk review's companion, and now "The Role of
 Guideline-Directed Medical Therapy on Outcomes after CABG" (PMID 42735886). **Invited
-commentaries and editorials in this journal deposit title and authors only.** Recognise the
+commentaries and editorials in this journal deposit title and authors only.**
+
+**Extended 2026-09-16: *Anaesthesia* correspondence behaves identically.** A batch of roughly
+fifteen letters on 14-15 September deposited **no abstract on any of them** — including several on
+live topics (GLP-1 agonists and retained gastric content, fibreoptic intubation in the
+videolaryngoscopy era, POGO score reliability, postoperative anaemia after cardiac surgery). One-
+or two-author *Anaesthesia* items with a discursive title are correspondence; log them, do not
+retry them. Recognise the
 pattern from the title shape (a question, a colon-and-theme construction, two or three authors,
 no numbers) and log it once rather than retrying across successive runs. The same holds for
 *Eur Heart J Cardiovasc Imaging* editorials.
