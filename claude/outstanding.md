@@ -255,6 +255,43 @@ full text was reachable, so all still need a proper read before being written up
 - ***Catheter Cardiovasc Interv*, 13 Sep — balloon-expandable TAVR in patients with prior
   endovascular aortic stent grafts.** Niche, squarely cardiothoracic.
 
+## SCOPE GAPS to search in the guidelines watch (added 2026-09-17)
+
+Two holes found by the 17 September brief. Both are primary scope and both need a targeted search,
+not a date-window sweep:
+
+1. **Perioperative GLP-1 receptor agonist management.** This archive has **never covered a society
+   guideline on it** — not ASA, not any multisociety statement. GLIMPSE (sent 2026-09-17) found
+   **1 in 36 UK surgical patients on a GLP-1 RA and an aspiration/regurgitation OR of 11.39**.
+   Search: `TITLE:"glucagon-like" AND (TITLE:"guideline" OR TITLE:"consensus" OR TITLE:"guidance")`.
+2. **A 2026 ATS guideline containing preoxygenation recommendations.** Inferred from an AJRCCM
+   correspondence title of 15 Sep 2026 ("Preoxygenation Recommendations in the 2026 ATS Guideline:
+   Concerns About Trial Characterization and Evidence Asymmetry"). The archive covered an **ATS
+   noninvasive respiratory support guideline on 2026-08-28** but nothing on preoxygenation.
+   Preoxygenation is squarely primary scope.
+
+## Blocked / no abstract (added 2026-09-17)
+
+- ***Anaesthesia*, 16 Sep 2026 — "Peri-operative pulmonary aspiration of gastric contents: a review
+  of NHS Resolution claims"** (Majumdar et al., DOI 10.1111/anae.70383, PMID 42746965). **No
+  abstract.** Would pair directly with GLIMPSE. **High value — needs a PDF.**
+- ***AJRCCM*, 16 Sep 2026 — "Body Mass Index as an Effect Modifier of the Association Between
+  Driving Pressure and Mortality"** (DOI 10.1093/ajrccm/aamag480, PMID 42750133). No abstract;
+  four authors, likely correspondence.
+
+## Worth a slot — seen 15-17 Sep 2026 (added 2026-09-17)
+
+- ***Critical Care*, 16 Sep — "Rate control in septic shock-associated atrial fibrillation: flow,
+  not heart rate alone, should define haemodynamic success."** Title alone puts it in the
+  perfusion-not-pressure thread. **Check whether it is a commentary before spending a retry.**
+- ***Anaesthesia*, 16 Sep — "Existential and spiritual dimensions of dying well in intensive
+  care."** Pairs with ERC 2025 Ethics and the code-status thread.
+- ***Anaesthesia*, 16 Sep — "Evaluating the ability of large language models to assess obstetric
+  anaesthetic care using simulated medical records."**
+- ***Perfusion*, 16 Sep — propensity-matched on-pump vs off-pump LIMA-to-LAD grafting.**
+- ***ICVTS*, 16 Sep — stent graft landing zone angle and aneurysm remodelling after total arch
+  replacement with frozen elephant trunk.** Relevant to the aortic guidelines gap.
+
 ## Blocked / no abstract (added 2026-09-16)
 
 - **"Expert consensus on nutritional assessment and support for pediatric extracorporeal membrane
