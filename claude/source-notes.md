@@ -539,3 +539,16 @@ retry them. Recognise the
 pattern from the title shape (a question, a colon-and-theme construction, two or three authors,
 no numbers) and log it once rather than retrying across successive runs. The same holds for
 *Eur Heart J Cardiovasc Imaging* editorials.
+
+## Gaps are old documents, not missed new ones (added 2026-09-17)
+
+Three times this month the archive has been found missing an entire body of guidance — ERC/ILCOR
+resuscitation (closed 09-12), ISHLT (closed 09-14), perioperative GLP-1 management (closed 09-17).
+**In every case the documents were older than the 7-10 day daily window**, so no amount of sweeping
+would have found them; and in every case a literature thread had been running here for days or
+weeks without the corresponding guideline appearing.
+
+**Rule: when a topic recurs in the briefs for more than about three days with no guideline behind
+it, run a targeted guideline search on that topic** — `TITLE:"<topic>" AND (TITLE:"guideline" OR
+TITLE:"consensus" OR TITLE:"recommendations")`, no date filter. That is how all three were closed,
+each within a day of the gap being noticed.

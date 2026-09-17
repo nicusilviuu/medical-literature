@@ -255,20 +255,38 @@ full text was reachable, so all still need a proper read before being written up
 - ***Catheter Cardiovasc Interv*, 13 Sep — balloon-expandable TAVR in patients with prior
   endovascular aortic stent grafts.** Niche, squarely cardiothoracic.
 
-## SCOPE GAPS to search in the guidelines watch (added 2026-09-17)
+## SCOPE GAPS — both CLOSED 2026-09-17, same day they were found
 
-Two holes found by the 17 September brief. Both are primary scope and both need a targeted search,
-not a date-window sweep:
+1. **Perioperative GLP-1 management — CLOSED.** Two anaesthesia-society documents found and sent
+   2026-09-17: the **2025 ADS/ANZCA/GESA/NACOS recommendations** (Anaesth Intensive Care,
+   14 Aug 2025, DOI 10.1177/0310057x251355288 — abstract contains the actual recommendations) and
+   the **Korean Society of Anesthesiologists consensus on preanesthetic gastric ultrasound**
+   (Korean J Anesthesiol, 30 Jul 2026, DOI 10.4097/kja.26655). **Both predate the daily watch
+   window**, which is why they were never seen. Both rest on surrogate evidence and are due for
+   revision now that GLIMPSE has supplied aspiration events.
+2. **ATS preoxygenation — CLOSED, nothing was missing.** The "2026 ATS Guideline" in the AJRCCM
+   correspondence title is the **noninvasive respiratory support guideline already covered
+   2026-08-28** (DOI 10.1093/ajrccm/aamag302). Preoxygenation falls inside its scope.
 
-1. **Perioperative GLP-1 receptor agonist management.** This archive has **never covered a society
-   guideline on it** — not ASA, not any multisociety statement. GLIMPSE (sent 2026-09-17) found
-   **1 in 36 UK surgical patients on a GLP-1 RA and an aspiration/regurgitation OR of 11.39**.
-   Search: `TITLE:"glucagon-like" AND (TITLE:"guideline" OR TITLE:"consensus" OR TITLE:"guidance")`.
-2. **A 2026 ATS guideline containing preoxygenation recommendations.** Inferred from an AJRCCM
-   correspondence title of 15 Sep 2026 ("Preoxygenation Recommendations in the 2026 ATS Guideline:
-   Concerns About Trial Characterization and Evidence Asymmetry"). The archive covered an **ATS
-   noninvasive respiratory support guideline on 2026-08-28** but nothing on preoxygenation.
-   Preoxygenation is squarely primary scope.
+**The general lesson, third instance this month:** the gaps in this archive are not recent
+documents missed by the sweep — they are **documents older than the 7-10 day window** that the
+landmark backlog never thought to look for. ERC/ILCOR, ISHLT, and now perioperative GLP-1 guidance
+all failed the same way. **When a literature thread runs for more than a few days without a
+guideline appearing, search for the guideline directly rather than waiting for it.**
+
+## Blocked / no abstract — GLP-1 seam (added 2026-09-17)
+
+- ***BJA*, 24 Feb 2026 — "Perioperative management of glucagon-like peptide-1 receptor agonists:
+  international guidance and variability in recommendations"** (DOI 10.1016/j.bja.2026.01.028,
+  PMID 41741283). **No abstract deposited.** Exactly the comparative overview the 2026-09-17 entry
+  needed. **High priority — needs a PDF.**
+- **AGA guidance: "GLP-1 Receptor Agonists and Upper Endoscopy: Guidance for Periprocedural
+  Management"** — *Gastroenterology*, 4 May 2026, DOI 10.1053/j.gastro.2026.04.031. No abstract.
+- **Comment and response pair on the ANZCA recommendations** — *Anaesth Intensive Care*,
+  14 Aug 2026, DOIs 10.1177/0310057x261460073 and ...074. Neither has an abstract; together they
+  are a live dispute about the college position.
+- **With abstracts, worth a slot:** *Turkish J Anaesthesiol* practical review on perioperative
+  GLP-1 management (23 Jun 2026, DOI 10.4274/tjar.2026.262459, 1,783-char abstract).
 
 ## Blocked / no abstract (added 2026-09-17)
 
