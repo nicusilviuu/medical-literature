@@ -552,3 +552,31 @@ weeks without the corresponding guideline appearing.
 it, run a targeted guideline search on that topic** — `TITLE:"<topic>" AND (TITLE:"guideline" OR
 TITLE:"consensus" OR TITLE:"recommendations")`, no date filter. That is how all three were closed,
 each within a day of the gap being noticed.
+
+## Never take result[0] from a title search — check date and pubType (added 2026-09-18)
+
+**Near-miss on 18 September.** Two BJA papers surfaced in the 16-18 Sep sweep and both looked like
+ideal material: cumulative fluid balance trajectories in circulatory failure, and the PADDI
+dexamethasone/glycaemia substudy. Both abstracts were read in full and both were being drafted.
+**Both papers are old** — first published 2025-12-02 and 2026-06-16. What the sweep had actually
+found were **Letters** responding to them, with near-identical titles and no abstracts.
+
+The failure: searching `TITLE:"<distinctive words>"` and using the first result. These titles return
+**2-4 distinct DOIs and PMIDs** — original article, print-issue record, and one or more letters.
+
+**Required check before writing up anything found by title search:**
+
+```
+epmc "TITLE:\"<words>\" AND (FIRST_PDATE:[<window start> TO <window end>])" core
+```
+
+then read two fields on the returned record:
+- **`firstPublicationDate`** — must be inside the sweep window
+- **`pubTypeList.pubType`** — `Journal Article` is original research; **`Letter`, `Comment`,
+  `Editorial` are not**
+
+The same check removed three further candidates the same day: the *Resuscitation* AED-density
+"framework", the *Critical Care* "rate control in septic shock-associated AF" piece (which had been
+sitting on the outstanding list purely because its title was appealing), and confirmed the BJA
+hypotension/atelectasis item as a comment. **BJA, Critical Care, Resuscitation and Anaesthesia all
+publish letters titled almost identically to the article they respond to.**

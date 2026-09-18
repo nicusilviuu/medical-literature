@@ -299,9 +299,9 @@ guideline appearing, search for the guideline directly rather than waiting for i
 
 ## Worth a slot — seen 15-17 Sep 2026 (added 2026-09-17)
 
-- ***Critical Care*, 16 Sep — "Rate control in septic shock-associated atrial fibrillation: flow,
-  not heart rate alone, should define haemodynamic success."** Title alone puts it in the
-  perfusion-not-pressure thread. **Check whether it is a commentary before spending a retry.**
+- ~~*Critical Care*, 16 Sep — "Rate control in septic shock-associated atrial fibrillation"~~ —
+  **REMOVED 2026-09-18: it is a single-author Letter with no abstract** (PMID 42750058). Logged
+  here only because the title was appealing; exactly the trap the new pubType check exists for.
 - ***Anaesthesia*, 16 Sep — "Existential and spiritual dimensions of dying well in intensive
   care."** Pairs with ERC 2025 Ethics and the code-status thread.
 - ***Anaesthesia*, 16 Sep — "Evaluating the ability of large language models to assess obstetric
