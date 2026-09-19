@@ -274,6 +274,43 @@ landmark backlog never thought to look for. ERC/ILCOR, ISHLT, and now perioperat
 all failed the same way. **When a literature thread runs for more than a few days without a
 guideline appearing, search for the guideline directly rather than waiting for it.**
 
+## Aortic arch / cerebral protection seam (added 2026-09-19)
+
+Opened by a targeted search prompted by the cannula paper in the 2026-09-19 brief. **Fourth instance
+of the same structural gap** (after ERC/ILCOR, ISHLT, GLP-1) — and the first caught prospectively
+rather than after it became visible.
+
+**HIGHEST PRIORITY full text on this whole list:**
+
+- **SECTCV/SEDAR anaesthetic-surgical consensus on ascending aorta and aortic arch surgery** —
+  *Rev Esp Anestesiol Reanim*, 12 Mar 2022, DOI 10.1016/j.redare.2021.02.010, PMID 35288050. Sent
+  2026-09-19 from the abstract. **The only joint anaesthesia-and-cardiac-surgery consensus on arch
+  surgery located.** The abstract gives the aortic team framing; **the anaesthetic protocols are not
+  in it.** Obtain this one first.
+
+Also found, with abstracts:
+
+- **"Management of Ascending Aorta and Aortic Arch: Similarities and Differences Among Cardiovascular
+  Guidelines"** — 7 Dec 2021, DOI 10.1177/15266028211061271, 2,403-char abstract. A
+  guideline-divergence analysis; belongs with the ESC-vs-ACC/AHA comparison sent 2026-09-18.
+- **"Consensus on hypothermia in aortic arch surgery"** — 2013, DOI
+  10.3978/j.issn.2225-319x.2013.03.03, 572 chars.
+- **Chinese consensus on cerebral protection in cardiac surgery (2019)** — sent 2026-09-19; abstract
+  lists topics only, including **intraoperative cerebral function monitoring**, which is where a NIRS
+  asymmetry threshold would live. Seven years old; needs the full text or a newer replacement.
+
+**No abstract deposited:**
+
+- **EACTS/ESVS expert consensus on thoracic aortic pathologies involving the aortic arch** (2019) —
+  three parallel publications (DOIs 10.1093/ejcts/ezy313, 10.1016/j.ejvs.2018.09.016, plus clinical
+  cases companions), **none with an abstract.**
+- **International Aortic Arch Surgery Study Group consensus on standardizing clinical end points** —
+  2014, DOI 10.1161/circulationaha.113.006421.
+
+**Open question worth a targeted search later:** is there any guidance anywhere on a **NIRS asymmetry
+threshold during selective antegrade cerebral perfusion**? The 2026-09-19 cannula paper predicts
+14-23 mmHg pressure laterality; nothing found so far says what to do about it.
+
 ## Blocked / no abstract — GLP-1 seam (added 2026-09-17)
 
 - ***BJA*, 24 Feb 2026 — "Perioperative management of glucagon-like peptide-1 receptor agonists:
