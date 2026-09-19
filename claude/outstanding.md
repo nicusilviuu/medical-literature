@@ -297,6 +297,32 @@ guideline appearing, search for the guideline directly rather than waiting for i
   Driving Pressure and Mortality"** (DOI 10.1093/ajrccm/aamag480, PMID 42750133). No abstract;
   four authors, likely correspondence.
 
+## Worth a slot — seen 17-19 Sep 2026 (added 2026-09-19)
+
+All verified `Journal Article` in-window with abstracts deposited:
+
+- ***Ann Thorac Surg*, 18 Sep — "Association Between N1 Nodal Assessment, Upstaging, and Survival in
+  Resected Non-Small Cell Lung Cancer"** (1,682-char abstract). Pairs with the STS oligometastatic
+  NSCLC guideline (sent 2026-09-06), which left extent of nodal dissection explicitly in equipoise.
+- ***Ann Thorac Surg*, 18 Sep — lung cancer screening uptake under the 2023 American Cancer Society
+  guideline** (2,095 chars).
+- ***JTCVS*, 18 Sep — reduced invasiveness of lobe-specific lymph node dissection in lung cancer
+  surgery**, propensity matched (1,758 chars). Same nodal-dissection question from the other side.
+- ***Anesthesiology*, 17 Sep — randomised comparison of electromyographic neuromuscular responses at
+  the adductor pollicis vs abductor digiti minimi** (1,971 chars). Primary scope; neuromuscular
+  monitoring.
+- ***Perfusion*, 18 Sep — alpha-amino oleic acid as anticalcification agent for porcine
+  bioprosthetic valves**, narrative review (1,831 chars).
+- ***ICVTS*, 18 Sep — electrophysiological remodelling in chronic mitral regurgitation as substrate
+  for AF** (1,700 chars).
+- ***ICVTS*, 17 Sep — robotic bronchial restapling after inadvertent stapling of an endobronchial
+  suction tube**, with a proposed **prestapling time-out** (1,142 chars). Airway safety.
+
+**Live dispute to watch:** *Ann Thorac Surg*, 18 Sep — **"Does the size of the annuloplasty band or
+ring affect the durability of the mitral valve repair?"** No abstract, so uncharacterised, but it
+responds directly to the ring-size paper sent 2026-09-10 (rings >34 mm associated with late repair
+failure). If a reply appears with an abstract, the pair is worth a slot.
+
 ## Worth a slot — seen 15-17 Sep 2026 (added 2026-09-17)
 
 - ~~*Critical Care*, 16 Sep — "Rate control in septic shock-associated atrial fibrillation"~~ —
