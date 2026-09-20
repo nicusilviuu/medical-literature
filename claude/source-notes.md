@@ -580,3 +580,38 @@ The same check removed three further candidates the same day: the *Resuscitation
 sitting on the outstanding list purely because its title was appealing), and confirmed the BJA
 hypotension/atelectasis item as a comment. **BJA, Critical Care, Resuscitation and Anaesthesia all
 publish letters titled almost identically to the article they respond to.**
+
+## A review that characterises a meta-analysis is not the meta-analysis (added 2026-09-20)
+
+The *Current Opinion in Critical Care* ECPR review (18 Sep 2026) states that *"pooled randomized
+data confirms a clinically meaningful survival advantage."* The pooled data is a **Bayesian**
+meta-analysis (Critical Care, 2024) whose actual result is a **75.8% posterior probability** of an
+absolute risk difference >5% in shockable rhythms, with a credible interval of **0.79-3.71** on the
+relative risk. The review's lead author is an author of the meta-analysis and of one of its three
+trials.
+
+**Rule: when a narrative review characterises an underlying study in a sentence worth quoting,
+retrieve the underlying study before quoting the characterisation.** Review abstracts compress, and
+the compression is directional — it hardens toward the authors' position at each step. The
+underlying paper is usually one DOI search away and its abstract carries the actual numbers.
+
+The same check is what makes an older paper worth a slot: the review is new, the evidence it rests
+on is two years old, and reporting both together is more informative than either alone.
+
+## Narrow confidence intervals on a small cohort mean the unit of analysis is not the patient
+
+The JAHA post-arrest seizure HRV model (18 Sep 2026) reports **AUROC 0.812 (95% CI 0.792-0.832)**
+from **36 patients**. A two-point interval is impossible from 36 patients; it comes from counting
+**five-minute segments**, of which there are thousands, and segments from one patient are not
+independent. **Whenever a confidence interval looks too tight for the stated n, find the unit of
+analysis** — and check whether the train/test split separated patients or only segments. The
+abstract often does not say, which is itself the reportable fact.
+
+## The topic-wide sweep found all four of today's items; the named-journal sweep found none
+
+On 20 September the named-journal sweep returned 36 hits of which every abstract-carrying item had
+already been sent. The topic-wide `FIRST_PDATE ... AND (TITLE:...)` sweep returned the day's entire
+brief — *Diabetes & Metabolism*, *Liver Transplantation*, *JAHA* and *Current Opinion in Critical
+Care*, **none of them on the priority journal list**. Third time this month the journal list alone
+would have produced a false quiet day. **Run both sweeps every day, and treat the journal list as a
+supplement to the topic sweep rather than the other way round.**

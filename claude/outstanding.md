@@ -478,3 +478,42 @@ The cDCD sweep returned 44 hits in 60 days; this is an active field. With abstra
   criteria themselves are not in the abstract and the full text was not reachable** —
   what distinguishes stage 2 from stage 3 is the operative content. Retry, or it needs a
   PDF.
+
+## Current Opinion in Critical Care resuscitation issue, September 2026 (added 2026-09-20)
+
+The 18 September issue carries a themed set, all with abstracts deposited. One written up
+(the ECPR review, 10.1097/mcc.0000000000001432). Remaining:
+
+- **"Defibrillation in refractory cardiac arrest: knowledge gaps and future priorities"** —
+  Babini, Cucino, Ristagno, DOI 10.1097/mcc.0000000000001435, PMID 42757492. Abstract read:
+  VF phenotyping (true shock-refractory vs recurrent vs mixed), vector-change defibrillation
+  with antero-posterior pads, DSED, amplitude spectrum area, transthoracic impedance. Argues
+  against shock-count-based escalation. **Good item for a quiet day; pairs with the ERC 2025
+  adult ALS section.**
+- **"Therapeutic hypercapnia after cardiac arrest: still promising or time to move on?"** —
+  abstract deposited, not retrieved.
+- **"Endovascular resuscitation: an expert practice review"** — abstract deposited (1,185
+  chars), not retrieved.
+
+## Seen 18-20 Sep 2026, not written up
+
+- *Critical Care* — **protocol for in-situ exploration of endothelial function in vasoplegic
+  syndrome after cardiac surgery with CPB** (1,809-char abstract). Protocol only, no results.
+- Research Square **preprint**, 19 Sep — **regional citrate vs systemic heparin during CRRT with
+  MG350 haemoadsorption**, RCT protocol, DOI 10.21203/rs.3.rs-11067877/v1. Protocol; primary
+  outcome IL-6 mass removal over 6 h. Registration listed as *pending*. Revisit when results
+  appear.
+- Preprint, 18 Sep — **general versus neuraxial anaesthesia and postoperative pneumonia after hip
+  fracture surgery**, systematic review/meta-analysis. Preprint; check for the journal version.
+- *Curr Opin* / misc — **"Artificial intelligence in onco-anaesthesia"** (20 Sep, 1,709 chars);
+  **"Perioperative management of SGLT2 inhibitors"** sent 20 Sep.
+
+## Open question carried forward
+
+From the 19 September guidelines watch: **is there any guidance anywhere on a NIRS asymmetry
+threshold during selective antegrade cerebral perfusion?** One partially relevant lead found
+today while searching ECPR meta-analyses: **"Regional Cerebral Oxygen Saturation to Predict
+Favorable Outcome in Extracorporeal Cardiopulmonary Resuscitation: A Systematic Review and
+Meta-Analysis"** — *J Cardiothorac Vasc Anesth*, 9 Jan 2023, DOI 10.1053/j.jvca.2023.01.007,
+1,972-char abstract deposited. Different setting (ECPR, not SACP) and about absolute rSO2 rather
+than asymmetry, but it is the nearest thing to a threshold paper located so far.
