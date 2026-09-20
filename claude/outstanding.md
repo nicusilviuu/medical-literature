@@ -517,3 +517,46 @@ Favorable Outcome in Extracorporeal Cardiopulmonary Resuscitation: A Systematic 
 Meta-Analysis"** — *J Cardiothorac Vasc Anesth*, 9 Jan 2023, DOI 10.1053/j.jvca.2023.01.007,
 1,972-char abstract deposited. Different setting (ECPR, not SACP) and about absolute rSO2 rather
 than asymmetry, but it is the nearest thing to a threshold paper located so far.
+
+## Perioperative diabetes and glycaemic management — new seam (added 2026-09-20)
+
+Opened by the targeted SGLT2 search. **This archive has never covered perioperative glycaemic
+management as a topic.** Sent 2026-09-20: the SPAQI SGLT2 consensus (10.1016/j.bja.2026.02.031)
+and the *Anaesthesia* multidisciplinary consensus (10.1111/anae.16541). Remaining, all with
+abstracts deposited unless noted:
+
+- **Society for Ambulatory Anesthesia (SAMBA) updated consensus statement on perioperative blood
+  glucose management in ambulatory surgery** — Anesth Analg, 22 Mar 2024,
+  10.1213/ane.0000000000006791, 2,670-char abstract. **Best next item in this seam.**
+- **SPAQI consensus: perioperative management of adults with diabetes wearing devices** (CGMs,
+  pumps) — J Clin Anesth, 10 Oct 2024, 10.1016/j.jclinane.2024.111627, 964-char abstract.
+- **Diabetes management in people undergoing metabolic-bariatric surgery** — Joint British Diabetes
+  Societies, Diabet Med, 16 Mar 2026, 10.1111/dme.70281, Practice Guideline, 1,796 chars.
+- **Perioperative screening and management of hyperglycaemia: joint position statement from the
+  Brazilian Diabetes Society** — 27 Feb 2026, 10.1186/s13098-025-02060-5.
+- **Practical management of diabetes patients before, during and after surgery: joint French
+  diabetology and anaesthesia guideline** — Diabetes & Metabolism, 3 Feb 2018,
+  10.1016/j.diabet.2018.01.014. **No abstract deposited.** Note this is an SFAR-adjacent French
+  document, relevant to the twenty-day French silence.
+- **Perioperative management of paediatric patients with type 1 diabetes, updated recommendations**
+  — Anesth Analg, Apr 2020, 10.1213/ane.0000000000004491, indexed Guideline.
+
+## Highest-priority full texts (updated 2026-09-20)
+
+1. **SECTCV/SEDAR anaesthetic-surgical consensus on ascending aorta and arch surgery** —
+   10.1016/j.redare.2021.02.010. Anaesthetic protocols not in the abstract.
+2. **SPAQI SGLT2 consensus** — 10.1016/j.bja.2026.02.031. **The stratification table is the usable
+   output and has not been read.** Only an editorial's characterisation is available.
+
+## Research articles queued for a brief (added 2026-09-20)
+
+- **Snel, Li, Jamaludin et al. — systematic review and expert evaluation of perioperative SGLT2
+  inhibitor-associated ketoacidosis case reports** — *Acta Anaesthesiologica Scandinavica*, 1 Jul
+  2026, DOI 10.1111/aas.70254, PMID 42130079. Abstract read in full: **128 case reports from 93
+  papers**; expert panel judged SAPKA **'likely' in 53 (41%), 'possible' in 38 (30%), 'unlikely' in
+  27 (21%)**, 10 unvalidatable — **likely or possible in 71%**. Common factors: T2D (n=115),
+  impaired perioperative intake (n=30), insufficient insulin (n=10). All surviving patients resolved
+  with insulin, but substantial ICU admission. Authors propose **early recognition and treatment as
+  an alternative to routine preoperative discontinuation.** This is the case-report literature the
+  blanket rule was built on, finally assessed — a strong brief item, and it pairs with the Basel
+  cohort and the SPAQI consensus.

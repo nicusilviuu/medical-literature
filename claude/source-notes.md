@@ -615,3 +615,35 @@ brief — *Diabetes & Metabolism*, *Liver Transplantation*, *JAHA* and *Current 
 Care*, **none of them on the priority journal list**. Third time this month the journal list alone
 would have produced a false quiet day. **Run both sweeps every day, and treat the journal list as a
 supplement to the topic sweep rather than the other way round.**
+
+## A gap declared closed after one targeted search is a gap searched once (added 2026-09-20)
+
+The 17 September entry announced the perioperative GLP-1 guideline gap closed, with the
+ADS/ANZCA/GESA/NACOS recommendations and the Korean Society of Anaesthesiologists document. **It was
+not closed.** A multidisciplinary consensus statement in *Anaesthesia* (El-Boghdadly, Dhatariya et
+al., 9 Jan 2025, **84 citations**, indexed as both Practice Guideline and Consensus Statement)
+covers the same question, is eight months older, and sits in a **priority-list journal**. It was
+missed because the 17 September search was built on the string "GLP-1", while this document's title
+uses the full drug-class names and pairs them with SGLT2 inhibitors. It surfaced three days later
+only through a search about a different drug.
+
+**When closing a scope gap, search the topic at least three ways before declaring it closed:**
+the abbreviation (GLP-1), the full term (glucagon-like peptide-1 receptor agonist), and the adjacent
+drug class or clinical problem the document is likely to be filed with. **And grep the priority
+journals directly for the topic** — a document in *Anaesthesia* or *BJA* should never be found by
+accident a week later.
+
+## Perioperative SGLT2 inhibitors: what the guidance actually is (added 2026-09-20)
+
+Established on 20 September after four weeks of discussing "the guidelines" without naming one:
+
+- **US FDA label**: stop 3-4 days before surgery, irrespective of diabetes diagnosis.
+- **Consensus in *Anaesthesia*, Jan 2025** (10.1111/anae.16541): omit **the day before and the day
+  of** the procedure. Same document says GLP-1/GIP agonists should be **continued**.
+- **SPAQI consensus, BJA, May 2026** (10.1016/j.bja.2026.02.031): **tailored** by diabetes status,
+  comorbidity, surgical type and fasting duration. Recommendations **not in the abstract**; the only
+  available characterisation is a BJA **editorial** (10.1016/j.bja.2026.05.005).
+
+**Third kind of guideline divergence catalogued here: a regulator's label instruction against the
+specialty societies implementing it.** Harder than society-versus-society, because a label is what a
+complaint or claim is measured against.
