@@ -550,6 +550,8 @@ abstracts deposited unless noted:
 
 ## Research articles queued for a brief (added 2026-09-20)
 
+**SENT 2026-09-21:** the Snel SAPKA systematic review below.
+
 - **Snel, Li, Jamaludin et al. — systematic review and expert evaluation of perioperative SGLT2
   inhibitor-associated ketoacidosis case reports** — *Acta Anaesthesiologica Scandinavica*, 1 Jul
   2026, DOI 10.1111/aas.70254, PMID 42130079. Abstract read in full: **128 case reports from 93
@@ -560,3 +562,29 @@ abstracts deposited unless noted:
   an alternative to routine preoperative discontinuation.** This is the case-report literature the
   blanket rule was built on, finally assessed — a strong brief item, and it pairs with the Basel
   cohort and the SPAQI consensus.
+
+## Seen 19-21 Sep 2026, not written up (added 2026-09-21)
+
+- *Chest*, 19 Sep — **thoracentesis with pleural fluid cytology versus thoracoscopy with pleural
+  biopsy for malignant pleural effusion** (2,274-char abstract) and **multicomponent pulmonary
+  rehabilitation for prolonged mechanical ventilation in patients aged 80+** (2,319 chars). Both
+  on scope for the ICU end; abstracts deposited, not retrieved.
+- *Journal of Critical Care*, 19 Sep — **lymphopenia and mortality in adult sepsis**, systematic
+  review and focused meta-analysis (1,974 chars); and **"Engaging youth in end-of-life care: The
+  3 Wishes Project experience"** (1,968 chars). **The 3 Wishes paper belongs with the code-status
+  and end-of-life thread** (Annals of Surgery cohort 09-11, RAPM DNR/regional analgesia paper).
+- *Intensive Care Medicine Experimental*, 20 Sep — **closed-loop automated system titrating
+  noradrenaline, vasopressin and fluid in endotoxin shock**, DOI 10.1186/s40635-026-00977-3.
+  **Eight dogs, proof-of-concept** — not clinical, but it is the logical endpoint of the
+  monitors-and-algorithms thread and worth a slot when a clinical version appears.
+- *J Diabetes Sci Technol*, 21 Sep — **accuracy of an interstitial continuous glucose management
+  system in critically ill patients**, prospective observational (1,799 chars). Pairs with the
+  ketone- and glucose-monitoring requirement in the SPAQI stratified approach.
+- *Medicina Intensiva*, 19 Sep — narrative review of **paediatric sepsis and septic shock:
+  ultrasound-guided monitoring and diagnostic criteria** (1,081 chars).
+
+## Do not re-report (issue-date trap)
+
+- *JTCVS* — **prior cardiac surgery and outcomes after acute type A aortic dissection repair**,
+  10.1016/j.jtcvs.2026.08.017, PMID 42665038. **Sent 2026-08-31.** Re-surfaced 2026-09-21 with a
+  first-publication date of 19 September.

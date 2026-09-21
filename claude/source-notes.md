@@ -647,3 +647,27 @@ Established on 20 September after four weeks of discussing "the guidelines" with
 **Third kind of guideline divergence catalogued here: a regulator's label instruction against the
 specialty societies implementing it.** Harder than society-versus-society, because a label is what a
 complaint or claim is measured against.
+
+## The issue-date trap caught a fourth time (added 2026-09-21)
+
+The *JTCVS* paper on prior cardiac surgery and acute type A dissection repair (10.1016/j.jtcvs.2026.08.017,
+PMID 42665038) surfaced in the 19-21 September sweep with `firstPublicationDate` **2026-09-19**. It
+was sent on **31 August**. Same DOI, same PMID — the record's date moved when the issue version
+appeared. Previous instances: MERCURI-2 and ITACS.
+
+**The `items:` dedupe is what catches this, and it only works if every item ever sent is in an
+`items:` block with its link.** Keep writing them, including for items mentioned only in a tail note
+if they were genuinely reported. A DOI-level grep of `_briefs/` and `_guidelines/` before writing up
+anything is two seconds and catches it regardless of what the date says.
+
+## Derived physiological quantities can restate their own inputs (added 2026-09-21)
+
+The *Anesthesiology* beach-chair trial reports **rCMRO₂ rising 70% over 30 minutes** under general
+anaesthesia with phenylephrine — which is not physiologically expected, since anaesthesia suppresses
+cerebral metabolism. In hybrid TR-NIRS/DCS, rCMRO₂ is **derived** from a blood-flow index and an
+oxygen-extraction term, so a fall in flow with a compensatory rise in extraction can raise the
+computed metabolic rate without metabolism changing.
+
+**Rule: when an abstract reports a derived index moving in a direction physiology does not predict,
+say what the index is computed from and flag the alternative reading as your own inference, not the
+paper's.** Do not assert the artefact either — the full text settles it and the abstract does not.
