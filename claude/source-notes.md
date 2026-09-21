@@ -671,3 +671,36 @@ computed metabolic rate without metabolism changing.
 **Rule: when an abstract reports a derived index moving in a direction physiology does not predict,
 say what the index is computed from and flag the alternative reading as your own inference, not the
 paper's.** Do not assert the artefact either — the full text settles it and the abstract does not.
+
+## Airway management was a structural gap, and the society list was again the cause (added 2026-09-21)
+
+**Sixth structural gap of the month.** Airway management is central to this project's primary scope;
+before today the archive held exactly two airway documents (PUMA extubation and the ATS noninvasive
+respiratory support guideline, both late August). A general search for airway guidelines since 2022
+returned **167 records**. Missing and now sent: **DAS 2025** (BJA, 7 Nov 2025, 65 recommendations,
+**cited 70 times**), the **SEDAR/SEMES/FLAME videolaryngoscopy implementation guidelines** (EJA, Jun
+2025) and the **SOBA obesity airway recommendations** (Anaesthesia, Jun 2025). All three sit in
+priority-list journals.
+
+**SEDAR is the repeat offender and the lesson.** It produced the aortic arch consensus found on
+19 September (4.5 years late) and the videolaryngoscopy guidelines found today (15 months late) —
+both squarely in primary scope, both found only by targeted search. **National anaesthesia societies
+outside the English-speaking core publish primary-scope guidance that no acronym sweep built on
+ESAIC/ASA/ANZCA will ever return.** Added to the sweep: **SEDAR, SOBA, DAS, SEMES**.
+
+**Method note that worked:** the audit started from a *correspondence title* naming a guideline.
+Correspondence contesting a guideline is a reliable signal that the guideline exists and matters;
+chase the guideline even when the correspondence has no abstract, and then widen to the whole topic
+rather than stopping at the one document.
+
+## A guideline can be strong consensus on admittedly weak evidence (added 2026-09-21)
+
+The videolaryngoscopy implementation guidelines state in their own results: *"Due to the low quality
+of available evidence, most recommendations were formulated based on expert opinion,"* alongside
+**strong consensus** and an explicit declaration of independence from industry funding. **Report
+that sentence when a guideline includes it** — it is the document telling the reader how much weight
+to give it, and it is rarer than it should be.
+
+**Fourth pattern in the guideline-divergence thread:** societies disagreeing (ESC vs ACC/AHA, 09-18);
+societies diverging on management (aortic arch, 09-19); a regulator against the societies (SGLT2,
+09-20); and now **a field agreeing firmly about something it admits it has not demonstrated.**

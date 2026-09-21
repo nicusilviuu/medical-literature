@@ -588,3 +588,39 @@ abstracts deposited unless noted:
 - *JTCVS* — **prior cardiac surgery and outcomes after acute type A aortic dissection repair**,
   10.1016/j.jtcvs.2026.08.017, PMID 42665038. **Sent 2026-08-31.** Re-surfaced 2026-09-21 with a
   first-publication date of 19 September.
+
+## Airway guidance seam (added 2026-09-21)
+
+Opened by the scope audit. **Sent 2026-09-21:** DAS 2025 (10.1016/j.bja.2025.10.006), the
+SEDAR/SEMES/FLAME videolaryngoscopy guidelines (10.1097/eja.0000000000002210), and the SOBA obesity
+airway recommendations (10.1111/anae.16647). The 167-record search was **not exhausted**.
+
+Remaining, all with abstracts deposited:
+
+- **Recommendations for fast-track extubation in adult cardiac surgery patients: a consensus
+  statement** — Minerva Anestesiologica, Nov 2024, 10.23736/s0375-9393.24.18267-3, 2,167 chars.
+  **Cardiothoracic and squarely on scope — best next item in this seam**, and it pairs with the
+  PUMA extubation guideline (sent 08-28).
+- **Consensus recommendations for paediatric airway topicalisation using lidocaine** — Anaesthesia,
+  27 Jul 2025, 10.1111/anae.16705, 1,067 chars.
+- **International Consensus on Airway Management Procedures for Distance Simulation: A Delphi
+  Study** — Acta Anaesthesiol Scand, 1 Sep 2026, 10.1111/aas.70310, 2,112 chars. Education rather
+  than clinical practice; low priority.
+- **Tracheostomy decannulation process model: interprofessional Latin-American Delphi consensus** —
+  Medicina Intensiva, 2 Mar 2026, 10.1016/j.medine.2026.502437, 2,029 chars. ICU scope.
+
+## Highest-priority full texts (updated 2026-09-21)
+
+1. **SECTCV/SEDAR anaesthetic-surgical consensus on ascending aorta and arch surgery** —
+   10.1016/j.redare.2021.02.010.
+2. **SPAQI SGLT2 consensus** — 10.1016/j.bja.2026.02.031. Stratification table not read.
+3. **DAS 2025 guidelines** — 10.1016/j.bja.2025.10.006. **The 65 recommendations are the document
+   and the abstract contains none of them.**
+
+## Logged as correspondence, never read (added 2026-09-21)
+
+Two *Anaesthesia* letters of 18 Sep 2026 on the same question, neither with an abstract deposited:
+**"Measuring mask ventilation: capnography is better"** and **"Classifying mask ventilation: current
+evidence supports the MASCAN score, not capnography."** Relevant to the DAS 2025 emphasis on
+waveform capnography. **Titles only — nothing has been read, and nothing is claimed about their
+arguments.** Retrieve if the full texts become reachable.
