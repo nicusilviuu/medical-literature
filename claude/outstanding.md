@@ -625,6 +625,17 @@ evidence supports the MASCAN score, not capnography."** Relevant to the DAS 2025
 waveform capnography. **Titles only — nothing has been read, and nothing is claimed about their
 arguments.** Retrieve if the full texts become reachable.
 
+## ERC 2025 corrigenda — CHASED 2026-09-22, unreachable
+
+**Resolved as far as it can be.** All three corrigenda deposit no abstract and no text;
+`isOpenAccess: N`, `inPMC: N`, `hasPDF: N`, full text subscription-only. Reported in the
+[22 September guidelines watch](/medical-literature/guidelines/2026-09-22/), and **correction
+notices have been added to the 12 September and 14 September entries.** Standing item: re-check
+whether the corrigendum text becomes reachable, and read **First Aid** in its corrected form when
+that section is covered.
+
+Original note:
+
 ## ERC 2025 corrigenda — chase for the guidelines watch (added 2026-09-22)
 
 *Resuscitation* published **three corrigenda on 21 September 2026** to ERC 2025 guideline sections.
@@ -659,3 +670,13 @@ needs a note.
   postsurgical pain trajectories to 12 months; PACE2024 surgical postponement definitions; adherence
   to preoperative instructions for renin-angiotensin system inhibitors. The burst-suppression title
   is on the live depth-of-anaesthesia-monitoring question.
+
+## Queued for a brief (added 2026-09-22)
+
+- **Discrepancies in low-value practices across cardiovascular disease prevention guidelines** —
+  narrative review, *European Journal of General Practice*, 21 Sep 2026, 1,986-char abstract.
+  **Squarely in the guideline-divergence thread** — divergence about what *not* to do, which is a
+  fifth variant and arguably the most consequential. Retrieve the abstract in full.
+- **Large Language Models for Automated AGREE II Quality Appraisal of Sepsis Clinical Practice
+  Guidelines** — preprint, 21 Sep 2026, 1,952 chars. Monitors-and-algorithms thread; machine
+  appraisal of guideline quality. Preprint — label as such if used.

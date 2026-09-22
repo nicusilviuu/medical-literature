@@ -762,3 +762,35 @@ identifier, and it is more dangerous than a vague sentence because it looks chec
 
 **Rule: every DOI, PMID and author name that reaches the page comes from a record retrieved in that
 run.** Background knowledge can motivate a claim, but the identifier must be fetched.
+
+## Corrigenda to guidelines deposit nothing — and they are worth reporting anyway (added 2026-09-22)
+
+*Resuscitation* published three corrigenda to ERC 2025 sections on 21 September 2026
+(post-resuscitation care, special circumstances, first aid). **All three deposit no abstract and no
+text**; each Europe PMC record reads `isOpenAccess: N`, `inPMC: N`, `hasPDF: N`, with a single
+full-text link marked "Subscription required". **What was corrected is not establishable.**
+
+**Report them anyway, and say exactly what cannot be established.** A corrigendum to a resuscitation
+guideline can be a typo or a reversed recommendation, and a reader of the original has no way to know
+which. Reporting the existence of the correction is useful even when its content is not reachable.
+
+**And annotate the original entries.** Both affected entries now carry a correction notice linking to
+the corrigendum and stating plainly that nothing reported there is known to be affected *or*
+unaffected. **When this archive reports a document that is later corrected, the correction belongs on
+the original page, not only in the day's entry** — nobody reading the 12 September page would
+otherwise see it.
+
+**Check `isOpenAccess` / `inPMC` / `hasPDF` and `fullTextUrlList` before declaring a text
+unreachable.** One query settles it and turns "I could not get it" into "it is subscription-only and
+not in PMC", which is a different and more useful statement.
+
+## Watch for consensus frameworks validated on almost nobody (added 2026-09-22)
+
+GPR-WEAN (Aust Crit Care, 21 Sep 2026) builds a **0-140 composite score** over 14 Delphi-selected
+variables, stratifies patients into five levels, and **links each level to an explicit prescription
+for ventilator-free time** — piloted in **five patients**, with "100% protocol adherence" as the
+feasibility result.
+
+**100% adherence in five patients means the form can be filled in. It is not validation, and the
+distinction must be made explicitly on the page**, because a prescriptive score outlives its caveats.
+The authors themselves are careful; the danger is in how such an instrument gets cited later.
