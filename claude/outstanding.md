@@ -624,3 +624,38 @@ Two *Anaesthesia* letters of 18 Sep 2026 on the same question, neither with an a
 evidence supports the MASCAN score, not capnography."** Relevant to the DAS 2025 emphasis on
 waveform capnography. **Titles only — nothing has been read, and nothing is claimed about their
 arguments.** Retrieve if the full texts become reachable.
+
+## ERC 2025 corrigenda — chase for the guidelines watch (added 2026-09-22)
+
+*Resuscitation* published **three corrigenda on 21 September 2026** to ERC 2025 guideline sections.
+**None deposits an abstract**, so what was corrected is not visible from the Europe PMC record.
+
+- Corrigendum to **"ERC and ESICM Guidelines 2025: Post-Resuscitation Care"** — section
+  [sent 2026-09-12](/medical-literature/guidelines/2026-09-12/).
+- Corrigendum to **"ERC Guideline 2025: First Aid"** — that section has **not** been covered here;
+  it is still on the remaining-sections list above.
+- Corrigendum to **"ERC Guideline 2025: Special Circumstances in Resuscitation"** — section
+  [sent 2026-09-14](/medical-literature/guidelines/2026-09-14/).
+
+**Two of the three correct documents this archive has already reported.** Chase the corrigendum text
+if it becomes reachable; if a correction changes a recommendation reported here, the original entry
+needs a note.
+
+## Seen 20-22 Sep 2026, not written up (added 2026-09-22)
+
+- *Chest*, 21 Sep — **personalised obesity hypoventilation syndrome risk assessment in bariatric
+  surgery candidates through explainable machine learning** (2,098 chars). Monitors-and-algorithms
+  thread; also pairs with the SOBA obesity airway recommendations sent 09-21.
+- *Anesthesiology*, 22 Sep — **Adolescent Surgery Experience (ASE) prospective cohort: postoperative
+  pain trajectory, opioid use** (2,068 chars). Paediatric perioperative, on scope.
+- *Critical Care Medicine*, 21 Sep — **epilepsy after antipsychotic prescription in TBI survivors**,
+  population-based cohort (1,760 chars).
+- *Interdisciplinary Cardiovascular and Thoracic Surgery*, 21 Sep — **CABG outcomes in patients with
+  prior PCI**, retrospective (1,883 chars).
+- *European Heart Journal*, 21 Sep — **intracranial haemorrhage after tenecteplase fibrinolysis for
+  acute MI** (1,638 chars).
+- *BJA* letters, 21 Sep, **no abstracts, titles only, nothing read**: intraoperative EEG burst
+  suppression as a marker of cognitive vulnerability rather than a cause; neuropathic and chronic
+  postsurgical pain trajectories to 12 months; PACE2024 surgical postponement definitions; adherence
+  to preoperative instructions for renin-angiotensin system inhibitors. The burst-suppression title
+  is on the live depth-of-anaesthesia-monitoring question.

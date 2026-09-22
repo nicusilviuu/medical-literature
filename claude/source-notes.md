@@ -704,3 +704,61 @@ to give it, and it is rarer than it should be.
 **Fourth pattern in the guideline-divergence thread:** societies disagreeing (ESC vs ACC/AHA, 09-18);
 societies diverging on management (aortic arch, 09-19); a regulator against the societies (SGLT2,
 09-20); and now **a field agreeing firmly about something it admits it has not demonstrated.**
+
+## Europe PMC returns HTTP 200 with an empty body — the retry wrapper must check the body (added 2026-09-22)
+
+**This is the most important operational finding in this archive so far.** On 22 September the API
+repeatedly returned **HTTP 200** with the body:
+
+```
+{"version":"6.9"}
+```
+
+Seventeen bytes. No `hitCount`, no `resultList`. **The old `epmc()` wrapper checked only the HTTP
+status code, so it accepted this as a successful response — and any sweep parsing it would have
+reported a quiet day with zero hits.** It happened **five times** during one run, including on the
+day's main named-journal sweep, which really returned 57 hits.
+
+This is worse than the 1 September 503 outage, because a 503 is visible and a 200 is not.
+
+The wrapper now validates the body before accepting a response:
+
+```bash
+epmc() {
+  local q="$1" rt="${2:-lite}" ps="${3:-25}" code
+  for i in 1 2 3 4 5 6; do
+    code=$(curl -s -o /tmp/claude-0/epmc.json -w "%{http_code}" -G \
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search" \
+      --data-urlencode "query=$q" --data-urlencode "resultType=$rt" \
+      --data-urlencode 'format=json' --data-urlencode "pageSize=$ps")
+    if [ "$code" = "200" ]; then
+      if python3 -c "import json,sys; d=json.load(open('/tmp/claude-0/epmc.json')); sys.exit(0 if 'hitCount' in d else 1)" 2>/dev/null; then
+        return 0
+      fi
+      echo "epmc: HTTP 200 but body has no hitCount (attempt $i) — retrying" >&2
+    else
+      echo "epmc: HTTP $code (attempt $i) — retrying" >&2
+    fi
+    sleep 15
+  done
+  echo "epmc: FAILED after 6 attempts — query: $q" >&2; return 1
+}
+```
+
+**Use this version, not the old one.** The general lesson beyond this API: **a success status code is
+not a successful response.** Validate that the payload contains the field the answer depends on
+before treating an empty result as a finding about the world.
+
+**Consequence for the archive's history:** any previously recorded unexplained zero may have been
+this rather than a quiet day. The 12 September zero was proved to be an indexing lag with controls
+and stands. Others were not controlled and should be treated as uncertain.
+
+## Verify a DOI before putting it on the page (added 2026-09-22)
+
+While writing the ilofotase alfa item I drafted a background citation and **wrote a DOI from memory**
+— `10.3389/fmed.2022.905987`. The real one is **10.3389/fmed.2022.931293**. Caught before commit by
+re-querying, but the failure mode is worth naming: a plausible-looking DOI is a fabricated
+identifier, and it is more dangerous than a vague sentence because it looks checkable.
+
+**Rule: every DOI, PMID and author name that reaches the page comes from a record retrieved in that
+run.** Background knowledge can motivate a claim, but the identifier must be fetched.
