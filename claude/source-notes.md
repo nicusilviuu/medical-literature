@@ -794,3 +794,28 @@ feasibility result.
 **100% adherence in five patients means the form can be filled in. It is not validation, and the
 distinction must be made explicitly on the page**, because a prescriptive score outlives its caveats.
 The authors themselves are careful; the danger is in how such an instrument gets cited later.
+
+## A processed index can lag the signal it is derived from (added 2026-09-23)
+
+The BJA lidocaine study (22 Sep 2026) shows **delta-band EEG rising and beta falling 4-6 minutes
+after a lidocaine bolus while BIS and SEF95 do not move**; BIS only changes 12-15 minutes into the
+infusion. This is a distinct criticism from the usual one in this archive. **The usual complaint is
+that a monitor measures accurately and changes nothing. This is that the monitor is slower than its
+own input** — and plausibly because BIS and SEF95 confound periodic (oscillatory) with aperiodic
+(broadband 1/f) EEG components, which the study separates.
+
+**When a paper reports both raw spectral features and a processed index, check whether they move at
+the same time.** A divergence in timing is a property of the algorithm, not of the patient, and it is
+reportable.
+
+## When yesterday's item names a lead, write the lead up (added 2026-09-23)
+
+The 22 September gangrene review named glycocalyx disruption and natural-anticoagulant depletion as
+its mechanism. The *Shock* antithrombin paper — flagged as a lead on **10 September** and left in the
+tail, then carried on the outstanding list — shows exactly that arm of the chain behaving like a leak
+rather than a consumption problem. **Written up on 23 September, two weeks after it was first seen.**
+
+**Rule: when an item written up today names an outstanding lead as supporting it, that lead has just
+become reportable and should go in the next brief** rather than sitting for another fortnight. Two
+independent papers converging on one mechanism is a stronger story than either alone, and the
+convergence is the reason to break the recency preference.

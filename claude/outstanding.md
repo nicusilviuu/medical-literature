@@ -93,7 +93,7 @@ transplant ethics, ALAD, baseline lung allograft dysfunction, PAH risk stratific
   alongside the Annals of Surgery code-status cohort but never written up on its own.
   Retrieve the abstract and pair the two if a quiet day allows.
 
-- **Matsumoto et al. — early antithrombin depletion after trauma** — *Shock*, 9 Sep 2026,
+- **SENT 2026-09-23** (paired with the 22 Sep symmetrical peripheral gangrene review). **Matsumoto et al. — early antithrombin depletion after trauma** — *Shock*, 9 Sep 2026,
   DOI 10.1097/shk.0000000000002935, PMID 42713784. Abstract read. 100 patients, reduced AT
   in 32%, adjusted OR 9.42 for shock and 12.20 for DIC; AT tracked albumin and syndecan-1
   rather than thrombin-antithrombin complex. Mechanism interesting, estimates weak (shock
