@@ -819,3 +819,46 @@ rather than a consumption problem. **Written up on 23 September, two weeks after
 become reportable and should go in the next brief** rather than sitting for another fortnight. Two
 independent papers converging on one mechanism is a stronger story than either alone, and the
 convergence is the reason to break the recency preference.
+
+## Healthcare Infection Society guidance deposits no abstract — a new publisher pattern (added 2026-09-23)
+
+Three HIS records in Europe PMC, spanning fourteen months, **all with zero abstract**:
+
+- Editorial announcing the **operating theatre ventilation consensus guidelines** (22 Sep 2026,
+  10.1016/j.jhin.2026.09.013)
+- **"Microbiological factors in the design, validation and verification of operating theatre
+  ventilation: Healthcare Infection…"** (17 Aug 2026, 10.1016/j.jhin.2026.06.021) — apparently a
+  component of that guidance, inferred from the title only
+- **"Infection prevention and control in burns services: guidance from the Healthcare Infection
+  Society"** (8 Jul 2025, 10.1016/j.jhin.2025.06.008)
+
+**This is more serious than the *Annals of Thoracic Surgery* commentary pattern or *Anaesthesia*
+correspondence.** Those are commentaries, where little is lost. **HIS documents are consensus
+guidelines, and the whole document is invisible** — not even a topic list. Do not retry these
+records; the route is the society's own website, not the literature index.
+
+**General rule this establishes: when a society's records deposit nothing, say so as a finding and
+log the gap, rather than silently omitting the document.** A guideline known to exist and known to be
+unreadable is information; an unmentioned guideline is not.
+
+## Two honest ways to handle a thin evidence base (added 2026-09-23)
+
+Worth recognising both when reading a consensus:
+
+- **Report the disagreement.** The paraconduit herniation Delphi (Surg Endosc, 22 Sep 2026) states
+  that prevention measures and most mesh technical details **reached no concordance in either
+  direction**, and leaves them unresolved.
+- **Report the agreement and warn about it.** The SEDAR/SEMES/FLAME videolaryngoscopy guidelines
+  (sent 09-21) record **strong consensus** while stating that **most recommendations rest on expert
+  opinion because the evidence is of low quality.**
+
+Both are credible. A document that reaches uniform strong recommendations with neither caveat, on a
+comparable evidence base, is the one to distrust.
+
+## Caseload figures in a Delphi tell you what the consensus can be (added 2026-09-23)
+
+The paraconduit consensus reports a median annual caseload of **5 (IQR 5-5) per surgeon and 5 (IQR
+5-10) per institution** among 82 participants. Identical individual and institutional medians imply
+one surgeon per centre does essentially all of them. **That is pooled judgement from low-volume
+experience, not distilled evidence** — which is the reason a Delphi was needed, and also the ceiling
+on what it can establish. **Look for the caseload figure in any surgical Delphi and state it.**

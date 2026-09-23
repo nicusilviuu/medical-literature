@@ -680,3 +680,30 @@ needs a note.
 - **Large Language Models for Automated AGREE II Quality Appraisal of Sepsis Clinical Practice
   Guidelines** — preprint, 21 Sep 2026, 1,952 chars. Monitors-and-algorithms thread; machine
   appraisal of guideline quality. Preprint — label as such if used.
+
+## Open and opaque: HIS operating theatre ventilation guidelines (added 2026-09-23)
+
+**Known to exist, in scope, and completely unreadable by this archive's route.** The Healthcare
+Infection Society has issued **consensus guidelines on operating theatre ventilation**; the
+*Journal of Hospital Infection* editorialised about them on 22 September 2026
+(10.1016/j.jhin.2026.09.013). **No HIS record deposits an abstract** — see source-notes. The likely
+component paper is **"Microbiological factors in the design, validation and verification of operating
+theatre ventilation"** (17 Aug 2026, 10.1016/j.jhin.2026.06.021), also with no abstract.
+
+**Route to close it: the HIS website, not Europe PMC.** Perioperative infrastructure — ultraclean
+air, laminar flow, air-change rates, door discipline — is shared anaesthetic and surgical territory
+and belongs in this archive.
+
+## Perioperative and inpatient glycaemia seam — third document sent (updated 2026-09-23)
+
+**Sent 2026-09-23:** the **International Position Statement on Practical Approaches for Inpatient
+CGM, Insulin Pumps and Automated Insulin Delivery** — dual-published in *Diabetes Care*
+(10.2337/dci26-0091, PMID 42770563) and *Diabetologia* (10.1007/s00125-026-06838-8, PMID 42771181),
+22 Sep 2026. **Abstract is a topic list with no recommendations; the perioperative section, alarm
+settings and glycaemic targets have not been read.** Dhatariya is an author of both this and the
+*Anaesthesia* GLP-1/GIP/SGLT2 consensus sent 09-20.
+
+**Note the scope boundary: non-critically ill hospitalised adults only.** Nothing in this archive yet
+covers glucose technology in the ICU, where sensor accuracy is most doubtful. The
+*J Diabetes Sci Technol* accuracy study of 21 Sep (logged above) is the obvious next item and would
+open that question.
