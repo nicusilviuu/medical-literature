@@ -862,3 +862,66 @@ The paraconduit consensus reports a median annual caseload of **5 (IQR 5-5) per 
 one surgeon per centre does essentially all of them. **That is pooled judgement from low-volume
 experience, not distilled evidence** — which is the reason a Delphi was needed, and also the ceiling
 on what it can establish. **Look for the caseload figure in any surgical Delphi and state it.**
+
+## THIRD Europe PMC failure mode: a well-formed 200 with a wrong hit count (added 2026-09-24)
+
+**The most dangerous of the three, because no wrapper can detect it.**
+
+On 24 September the control queries showed date buckets **shrinking**, which is impossible for an
+index that only accumulates:
+
+```
+bucket        23 Sep      24 Sep
+18 Sep         3,370  ->   3,987   grew (normal)
+19 Sep         1,189  ->   1,212   grew (normal)
+20 Sep         1,119  ->   1,385   grew (normal)
+21 Sep         3,938  ->   3,878   fell slightly
+22 Sep         3,847  ->   2,036   FELL 47%
+23 Sep           206  ->       7   COLLAPSED
+```
+
+Repeated three times, identical each time — not flakiness. Decisive test: **three records retrieved
+in full the previous day returned zero hits by DOI, by PMID and by title** (BJA lidocaine/BIS
+10.1016/j.bja.2026.07.058; A&A hoarseness 10.1213/ane.0000000000008300; paraconduit consensus
+10.1007/s00464-026-13338-8). Older records (DAS 2025, the 2024 ECPR meta-analysis, SOBA) retrieved
+normally. **Diagnosis: a partially rebuilt index covering roughly the last 2-3 days.**
+
+The three failure modes now on record:
+
+1. **HTTP 503** (1 Sep 2026) — visible, caught by a status check.
+2. **HTTP 200 with body `{"version":"6.9"}`** (22 Sep 2026) — invisible to a status check; caught by
+   the payload validation added that day.
+3. **HTTP 200, well-formed body, valid `hitCount` that is simply wrong** (24 Sep 2026) — **no wrapper
+   can catch this.**
+
+**The only defence against mode 3 is the control query.** Record the whole-database
+`FIRST_PDATE:[d TO d]` counts for the trailing window in every entry, and **compare them against the
+previous day's recorded numbers before trusting a sweep.** A bucket that shrinks means the index is
+degraded and the day's sweep must not be reported as a quiet day. This is why those counts belong at
+the foot of every brief — they are not decoration, they are the audit trail.
+
+**When mode 3 is detected:** run the sweep anyway and record it as degraded, then build the entry
+from records **individually verified retrievable during that run** (DOI and PMID), and say so on the
+page. Re-sweep the affected window on each of the next two days.
+
+## A "Research Summary" stub is a lead, like a corrigendum or a correspondence (added 2026-09-24)
+
+Today's lead item — the JAMA pragmatic RCT of TIVA vs volatile anaesthesia in 2,508 patients
+(10.1001/jama.2026.11065, 1 Sep 2026) — surfaced only because a **JAMA "Research Summary" stub with
+no abstract** appeared in the degraded sweep. Chasing the stub found the trial.
+
+**Same pattern, third time this month:** the ATS preoxygenation correspondence led to the ATS
+noninvasive respiratory support guideline; the *J Hosp Infect* editorial led to the HIS ventilation
+guidelines; a JAMA summary stub led to this trial. **A zero-abstract stub that names a study is not
+noise — it is a pointer. Always chase it.**
+
+## The 1 September re-sweep was incomplete — and cost 23 days (added 2026-09-24)
+
+The rule written after the 1 September 503 outage was to re-sweep any date range where a failure was
+logged. **That re-sweep recovered two guideline documents and missed a JAMA pragmatic RCT** — 2,508
+patients, 49 NHS hospitals — which then sat unreported for **23 days** until a stub surfaced it.
+
+**A re-sweep after an outage must be verified, not merely run.** For a known outage date, sweep the
+priority journals **individually** for that date rather than relying on one combined query, and check
+the big five (NEJM, Lancet, JAMA, BMJ, JACC/Circulation) by name. A single combined JOURNAL:(...)
+query that returns plausibly-many hits can still be missing an entire journal's output.

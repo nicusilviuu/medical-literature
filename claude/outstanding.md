@@ -484,7 +484,7 @@ The cDCD sweep returned 44 hits in 60 days; this is an active field. With abstra
 The 18 September issue carries a themed set, all with abstracts deposited. One written up
 (the ECPR review, 10.1097/mcc.0000000000001432). Remaining:
 
-- **"Defibrillation in refractory cardiac arrest: knowledge gaps and future priorities"** —
+- **SENT 2026-09-24.** **"Defibrillation in refractory cardiac arrest: knowledge gaps and future priorities"** —
   Babini, Cucino, Ristagno, DOI 10.1097/mcc.0000000000001435, PMID 42757492. Abstract read:
   VF phenotyping (true shock-refractory vs recurrent vs mixed), vector-change defibrillation
   with antero-posterior pads, DSED, amplitude spectrum area, transthoracic impedance. Argues
@@ -577,7 +577,7 @@ abstracts deposited unless noted:
   noradrenaline, vasopressin and fluid in endotoxin shock**, DOI 10.1186/s40635-026-00977-3.
   **Eight dogs, proof-of-concept** — not clinical, but it is the logical endpoint of the
   monitors-and-algorithms thread and worth a slot when a clinical version appears.
-- *J Diabetes Sci Technol*, 21 Sep — **accuracy of an interstitial continuous glucose management
+- **SENT 2026-09-24.** *J Diabetes Sci Technol*, 21 Sep — **accuracy of an interstitial continuous glucose management
   system in critically ill patients**, prospective observational (1,799 chars). Pairs with the
   ketone- and glucose-monitoring requirement in the SPAQI stratified approach.
 - *Medicina Intensiva*, 19 Sep — narrative review of **paediatric sepsis and septic shock:
@@ -707,3 +707,15 @@ settings and glycaemic targets have not been read.** Dhatariya is an author of b
 covers glucose technology in the ICU, where sensor accuracy is most doubtful. The
 *J Diabetes Sci Technol* accuracy study of 21 Sep (logged above) is the obvious next item and would
 open that question.
+
+## Re-sweep required (added 2026-09-24)
+
+**22-24 September 2026 must be re-swept on 25 and 26 September.** Europe PMC served a partially
+rebuilt index on the 24th (failure mode 3 — see source-notes); the trailing sweep returned 19 hits
+and is not trustworthy. Records known to exist but unreachable on the 24th include the BJA
+lidocaine/BIS study, the A&A hoarseness series and the paraconduit herniation consensus — all three
+already written up, so the risk is **missed items, not duplicates.**
+
+**Also re-verify 1 September again.** The JAMA TIVA vs volatile RCT (10.1001/jama.2026.11065) was
+published that day, missed by the post-outage re-sweep, and only found on 24 September — 23 days
+late. Sweep the priority journals individually for 1 September rather than as one combined query.
