@@ -925,3 +925,35 @@ patients, 49 NHS hospitals — which then sat unreported for **23 days** until a
 priority journals **individually** for that date rather than relying on one combined query, and check
 the big five (NEJM, Lancet, JAMA, BMJ, JACC/Circulation) by name. A single combined JOURNAL:(...)
 query that returns plausibly-many hits can still be missing an entire journal's output.
+
+## National anaesthesia societies outside the English-speaking core are a systematic blind spot (added 2026-09-24)
+
+Three instances in six days, each found only by targeted search, each squarely in primary scope:
+
+- **SEDAR** (Spain) — the SECTCV/SEDAR aortic arch consensus (found 19 Sep, **4.5 years late**) and
+  the SEDAR/SEMES/FLAME videolaryngoscopy guidelines (found 21 Sep, **15 months late**).
+- **ITACTAIC** (Italy) — the first society consensus anywhere on fast-track extubation after adult
+  cardiac surgery (found 24 Sep, **22 months late**), built on a systematic review of 60 RCTs.
+- **SOBA** (UK, but a subspecialty society rather than a national college) — obesity airway
+  recommendations, found 21 Sep, 15 months late.
+
+**An acronym sweep built on ESAIC / ASA / ANZCA / ESICM will never return these.** They publish in
+*Revista Española de Anestesiología*, *Minerva Anestesiologica*, *European Journal of
+Anaesthesiology* — and their society acronyms are not ones an English-language list thinks to
+include.
+
+**Added to the sweep: SEDAR, SEMES, SOBA, DAS, ITACTAIC.** And the standing method: **when a seam is
+opened, search the topic without any society or journal filter at all**, then read the society names
+off the results. That is how all four of these were found.
+
+## Working a degraded index: use the stable region (added 2026-09-24)
+
+When failure mode 3 is active (a partially rebuilt index — see above), the **recent** window is
+untrustworthy but the **back catalogue retrieves normally**. Verified on 24 September: DAS 2025
+(Nov 2025), the 2024 ECPR meta-analysis, SOBA (Jun 2025), SAMBA (Mar 2024), SPAQI devices (Oct 2024)
+and ITACTAIC (Nov 2024) all retrieved cleanly while three papers from 21-22 September returned zero.
+
+**So a degraded day is a backlog day.** Run the trailing sweep, record it as degraded, then spend the
+run on `outstanding.md` items that predate the affected window — and say on the page why. This
+converts an outage from a lost day into a productive one, and it is the reason to keep the
+outstanding list stocked with dated, DOI-bearing leads.

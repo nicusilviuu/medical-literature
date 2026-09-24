@@ -525,10 +525,10 @@ management as a topic.** Sent 2026-09-20: the SPAQI SGLT2 consensus (10.1016/j.b
 and the *Anaesthesia* multidisciplinary consensus (10.1111/anae.16541). Remaining, all with
 abstracts deposited unless noted:
 
-- **Society for Ambulatory Anesthesia (SAMBA) updated consensus statement on perioperative blood
+- **SENT 2026-09-24.** **Society for Ambulatory Anesthesia (SAMBA) updated consensus statement on perioperative blood
   glucose management in ambulatory surgery** — Anesth Analg, 22 Mar 2024,
   10.1213/ane.0000000000006791, 2,670-char abstract. **Best next item in this seam.**
-- **SPAQI consensus: perioperative management of adults with diabetes wearing devices** (CGMs,
+- **SENT 2026-09-24.** **SPAQI consensus: perioperative management of adults with diabetes wearing devices** (CGMs,
   pumps) — J Clin Anesth, 10 Oct 2024, 10.1016/j.jclinane.2024.111627, 964-char abstract.
 - **Diabetes management in people undergoing metabolic-bariatric surgery** — Joint British Diabetes
   Societies, Diabet Med, 16 Mar 2026, 10.1111/dme.70281, Practice Guideline, 1,796 chars.
@@ -597,7 +597,7 @@ airway recommendations (10.1111/anae.16647). The 167-record search was **not exh
 
 Remaining, all with abstracts deposited:
 
-- **Recommendations for fast-track extubation in adult cardiac surgery patients: a consensus
+- **SENT 2026-09-24.** **Recommendations for fast-track extubation in adult cardiac surgery patients: a consensus
   statement** — Minerva Anestesiologica, Nov 2024, 10.23736/s0375-9393.24.18267-3, 2,167 chars.
   **Cardiothoracic and squarely on scope — best next item in this seam**, and it pairs with the
   PUMA extubation guideline (sent 08-28).
