@@ -957,3 +957,50 @@ and ITACTAIC (Nov 2024) all retrieved cleanly while three papers from 21-22 Sept
 run on `outstanding.md` items that predate the affected window — and say on the page why. This
 converts an outage from a lost day into a productive one, and it is the reason to keep the
 outstanding list stocked with dated, DOI-bearing leads.
+
+## Failure mode 3 resolved — records were never lost (added 2026-09-25)
+
+The partial index rebuild of 24 September resolved within 24 hours:
+
+```
+bucket        23 Sep    24 Sep (degraded)   25 Sep
+21 Sep         3,938  ->  3,878          ->  4,021
+22 Sep         3,847  ->  2,036          ->  4,241
+23 Sep           206  ->      7          ->  1,684
+```
+
+All three canary DOIs (BJA lidocaine/BIS, A&A hoarseness, paraconduit consensus) return again.
+**Confirms the diagnosis: a temporary partial rebuild, not data loss.** The response that worked —
+record it as degraded, build the entry from individually verified records, queue the window for
+re-sweep — is now validated and should be the standard response.
+
+**The re-sweep recovered exactly one missed item**, the *Anesthesiology* adolescent surgery cohort
+(10.1097/aln.0000000000006304), sent 25 September. Everything else substantive in the degraded
+window had already been reported. **So the cost of failure mode 3 was one paper, because the entry
+was built from verified records rather than from the sweep.**
+
+## Keep the canary list (added 2026-09-25)
+
+Three DOIs retrieved in full on a known-good day make a cheap daily integrity check. When any of them
+returns zero, the index is degraded regardless of what the hit counts say. **Rotate them forward
+every few days** so they stay inside the window most likely to be affected by a rebuild — old records
+never go missing, so an old canary tests nothing.
+
+## A container can be wiped between runs (added 2026-09-25)
+
+On 25 September the session resumed with `/home/user/medical-literature` gone entirely and
+`/home/user/agent-workspace` present but reset to an **old commit** (a fresh shallow clone at the
+branch's historical head, not the pushed mirror head). The scratch helper `epmc.sh` was also gone.
+
+**Recovery sequence that worked:**
+
+1. `add_repo` (owner nicusilviuu, repo medical-literature, access push) — reported `already_present`,
+   but the directory did not exist, so `git clone --depth 1` with a generous timeout.
+2. `register_repo_root` so the repo's CLAUDE.md and skills reload.
+3. For the workspace repo: **`git fetch origin <branch> && git reset --hard origin/<branch>`** before
+   doing any mirror work — otherwise the mirror commit is built on stale history and the push fails
+   or rewrites.
+4. Recreate `/tmp/claude-0/epmc.sh` from the hardened version recorded above.
+
+**Check `git log --oneline -1` against the last commit recorded in the previous entry** before
+trusting a working copy that was not created in this run.
