@@ -27,6 +27,9 @@ termination-of-resuscitation section of Ethics.
 
 Remaining:
 
+**SENT 2026-09-25:** First Aid (110752) and Adult Basic Life Support (110771). **Eight of twelve
+sections now covered.**
+
 1. **Paediatric Life Support** — DOI 10.1016/j.resuscitation.2025.110767
 2. **Adult Basic Life Support** — DOI 10.1016/j.resuscitation.2025.110771
 3. Newborn (110766), Epidemiology (110733), Education (110739), First Aid (110752)
@@ -673,7 +676,7 @@ needs a note.
 
 ## Queued for a brief (added 2026-09-22)
 
-- **Discrepancies in low-value practices across cardiovascular disease prevention guidelines** —
+- **SENT 2026-09-25.** **Discrepancies in low-value practices across cardiovascular disease prevention guidelines** —
   narrative review, *European Journal of General Practice*, 21 Sep 2026, 1,986-char abstract.
   **Squarely in the guideline-divergence thread** — divergence about what *not* to do, which is a
   fifth variant and arguably the most consequential. Retrieve the abstract in full.

@@ -1004,3 +1004,46 @@ branch's historical head, not the pushed mirror head). The scratch helper `epmc.
 
 **Check `git log --oneline -1` against the last commit recorded in the previous entry** before
 trusting a working copy that was not created in this run.
+
+## Prove a zero before reporting it as a negative (added 2026-09-25)
+
+The French sweep returned **zero** for 19–25 September. A zero is indistinguishable from a broken
+query, so a control was run over a wider window: the **same query returned 6 hits for 10–25
+September**, most recent 18 September. **That converts an ambiguous zero into a reportable finding**
+— the French journals have published nothing at all for seven days, not merely no guidelines.
+
+**Rule: never report a zero as a negative without a control that makes the same query return
+something.** Widening the date range is the cheapest control; it tests the query, the journal names
+and the index in one call. This matters more since failure mode 3, where the index itself can return
+a confident wrong zero.
+
+## ERC First Aid has the one informative section abstract (added 2026-09-25)
+
+Every other ERC 2025 section abstract states the ILCOR basis and lists topic headings. **The First
+Aid section (10.1016/j.resuscitation.2025.110752) lists its actual contents** across four categories
+— general, medical, trauma, environmental — naming individual conditions. Still no recommendations,
+but far more retrievable content than the rest. Worth knowing when deciding which sections repay a
+full-text chase: the others need one, this one partly documents itself.
+
+**ERC 2025 status: eight of twelve sections covered.** Remaining: Paediatric Life Support
+(110767, priority), Newborn (110766), Epidemiology (110733), Education (110739).
+
+## Fifth variety of guideline divergence: disagreement about what NOT to do (added 2026-09-25)
+
+The catalogue now runs:
+
+1. **Societies disagreeing on the same evidence** — ESC vs ACC/AHA imaging (09-18).
+2. **Societies diverging on management** — aortic arch (09-19).
+3. **A regulator against the societies implementing it** — FDA vs SPAQI on SGLT2 (09-20).
+4. **Strong consensus on admittedly weak evidence** — videolaryngoscopy (09-21).
+5. **Disagreement about low-value practices** — CVD prevention (09-25).
+
+**Number 5 is asymmetric in a way the others are not.** A disagreement about whether to *do*
+something resolves toward doing it; a disagreement about whether something is *low-value* also
+resolves toward doing it. **De-adoption requires near-unanimity that adoption does not.** Worth
+watching for in perioperative guidance specifically — routine preoperative tests, prolonged fasting,
+blanket drug-withholding rules are all de-adoption questions.
+
+**Also diagnostic:** the review found controversy concentrated where recommendations rested on
+non-randomised data or expert opinion, so **inter-guideline disagreement is itself a readable signal
+about evidence grade.**
