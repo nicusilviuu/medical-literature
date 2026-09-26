@@ -1047,3 +1047,46 @@ blanket drug-withholding rules are all de-adoption questions.
 **Also diagnostic:** the review found controversy concentrated where recommendations rested on
 non-randomised data or expert opinion, so **inter-guideline disagreement is itself a readable signal
 about evidence grade.**
+
+## Fourth Europe PMC fault pattern: an ingest stall, not an index fault (added 2026-09-26)
+
+On 26 September the index held **6 records for 24 Sep, 4 for the 25th, 0 for the 26th**, against 4,241
+for the 22nd and 1,684 for the 23rd. **Distinguishing this from failure mode 3 matters:**
+
+|  | Mode 3 (24 Sep) — index rebuild | Mode 4 (26 Sep) — ingest stall |
+|---|---|---|
+| Older buckets | **shrank** (22 Sep 3,847 → 2,036) | **stable or grew** (20 Sep 1,385 → 1,420) |
+| Canary DOIs | **returned zero** | **all retrieve normally** |
+| Cause | index being rebuilt | little or nothing being deposited |
+| Response | build from verified records, re-sweep later | work the backlog, re-sweep when deposits resume |
+
+**Check the canaries and the older buckets before diagnosing.** If the old window is healthy and the
+canaries are fine, the index is working and the recent emptiness is real — nothing to re-sweep yet,
+but the window still needs one once deposits resume.
+
+**Benchmark for "is this just lag?":** 23 September held **206** records two days after the fact and
+reached 1,684 two days later. **24 September held 6 at the same age** — about thirty-five times lower.
+A quiet weekend does not explain a Thursday with six records. **Record the equivalent-age comparison,
+not just the raw count.**
+
+## Confirmed non-depositor: A&A enoxaparin-in-pregnancy paper (added 2026-09-26)
+
+**"Anti-Xa Activity and Global Hemostatic Response After Prophylactic Enoxaparin in Term Pregnancy"**
+(Nguyenová et al., *Anesth Analg*, 9 Sep 2026, PMID 42715360) **still deposits no abstract after
+seventeen days**, across retries on 10, 19 and 26 September. **Logged as a non-depositor — stop
+retrying.** Relevant to the neuraxial timing intervals in the ESAIC/ESRA antithrombotic guideline
+(sent 09-06); needs its full text.
+
+**General rule: three retries over two weeks is enough.** Record the paper as a non-depositor with
+its PMID and why it matters, and stop spending calls on it.
+
+## A logged sweep hit is still not a reported item (added 2026-09-26)
+
+Caught while drafting today's brief: I had written that the *Journal of Critical Care* 3 Wishes
+Project report was one of four code-status papers "in this archive". **It was logged from a sweep on
+19 September and never written up.** Corrected before commit to say exactly that.
+
+This is the same failure the source notes already record for the prolonged-infusion focused update and
+for the mask-ventilation letters. **It recurs because `outstanding.md` reads like coverage.** Before
+citing any item as previously covered, grep `_briefs/` and `_guidelines/` for its DOI or distinctive
+title words — presence in `outstanding.md` is evidence of the opposite.
