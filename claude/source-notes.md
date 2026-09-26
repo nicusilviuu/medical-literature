@@ -1090,3 +1090,56 @@ This is the same failure the source notes already record for the prolonged-infus
 for the mask-ventilation letters. **It recurs because `outstanding.md` reads like coverage.** Before
 citing any item as previously covered, grep `_briefs/` and `_guidelines/` for its DOI or distinctive
 title words — presence in `outstanding.md` is evidence of the opposite.
+
+## A zero from an empty window is not a negative (added 2026-09-26)
+
+During the ingest stall, all three guidelines sweeps returned **zero**. With only ten records
+deposited across 24–26 September, **a sweep of an empty window returns zero regardless of what was
+published.** Reporting that as "no new guidelines" would be a false negative dressed as a finding.
+
+**Rule: before reporting any sweep result during a stall, check whether the window has content at
+all.** If it does not, say the sweep is uninformative and re-sweep later. The complement of
+yesterday's rule: a zero needs either a control that makes the query return something, or an
+acknowledgement that the window is empty.
+
+**What can still be stated is the part of the window the index holds fully.** The French negative was
+reported for **19–23 September only** (zero, with a control returning 13 over 1–23 September), and the
+page said explicitly that the period after the 23rd is unknowable. **Split the window at the boundary
+of index health rather than abandoning the question.**
+
+## ISHLT deposits scope-only abstracts — five for five (added 2026-09-26)
+
+Every ISHLT document this archive has covered gives scope and withholds recommendations:
+
+- Three-part perioperative ECLS consensus (sent 09-14)
+- Graft dysfunction 10-year update and lung transplant frailty consensus (sent 09-16)
+- **Paediatric heart failure guidelines, update from 2014** (sent 09-26) — **a two-sentence abstract
+  for an eleven-year update**, saying only that "interval advancements" were incorporated
+
+**This is a property of the society's output, not bad luck.** Add ISHLT to the list of bodies whose
+abstracts never carry recommendations: ERC sections, AHA/ACC long-form statements, SECTCV/SEDAR, SPAQI,
+DAS 2025, and — worse still, depositing nothing at all — the Healthcare Infection Society.
+
+**Practical consequence: for ISHLT, budget a full-text attempt from the outset** rather than expecting
+the abstract to carry anything, and write the entry around what the document covers and why the gap
+mattered.
+
+## The good version of strong-consensus-on-weak-evidence (added 2026-09-26)
+
+The paediatric lidocaine topicalisation consensus (Anaesthesia, Jul 2025) reports **evidence mainly
+grades C and D** alongside **consensus strength mainly moderate (65-79%) and strong (>=80%)** — both
+numbers, in the same results sentence.
+
+**When a document publishes its evidence grade and its consensus strength together, quote both.** It
+lets the reader see the gap, and for a **dosing** recommendation it is essential: a clinician needs to
+know the number is expert opinion rather than pharmacokinetic data. Contrast with a document that
+reports only the consensus percentage.
+
+## Airway-seam authorship concentration confirmed (added 2026-09-26)
+
+**Iliff** appears in DAS 2025, the SOBA obesity airway recommendations, and now the paediatric
+lidocaine topicalisation consensus — three of the four documents in this archive's airway seam. With
+**Oprea** leading two SPAQI documents, **Duggan** and **Abdelmalak** in both perioperative diabetes
+statements, and **Dhatariya** in two more, the concentration is now documented across eight documents
+in two seams. **Useful for discovery: when a seam opens, search the recurring authors' names as well as
+the topic.**

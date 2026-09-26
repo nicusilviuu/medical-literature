@@ -30,7 +30,7 @@ Remaining:
 **SENT 2026-09-25:** First Aid (110752) and Adult Basic Life Support (110771). **Eight of twelve
 sections now covered.**
 
-1. **Paediatric Life Support** — DOI 10.1016/j.resuscitation.2025.110767
+1. **SENT 2026-09-26.** **Paediatric Life Support** — DOI 10.1016/j.resuscitation.2025.110767
 2. **Adult Basic Life Support** — DOI 10.1016/j.resuscitation.2025.110771
 3. Newborn (110766), Epidemiology (110733), Education (110739), First Aid (110752)
 
@@ -80,7 +80,7 @@ document's actual recommendations are in its abstract and both need full texts.*
 abstracts deposited, worth working on quiet days:
 **Scientific Statement on pulmonary antibody-mediated rejection** (10.1016/j.healun.2026.04.019);
 **Referral and Selection of Pediatric Lung transplant candidates** (10.1016/j.healun.2025.08.005);
-**Short Telomere Syndrome and Lung Transplantation** (10.1016/j.healun.2025.10.028); **Guidelines
+**Short Telomere Syndrome and Lung Transplantation** (10.1016/j.healun.2025.10.028); **SENT 2026-09-26: Guidelines
 for the Management of Pediatric Heart Failure, 2025 update** (10.1016/j.healun.2025.06.003).
 Several major ISHLT documents deposit **no abstract** — cardiac xenotransplantation 2026,
 transplant ethics, ALAD, baseline lung allograft dysfunction, PAH risk stratification.
@@ -604,7 +604,7 @@ Remaining, all with abstracts deposited:
   statement** — Minerva Anestesiologica, Nov 2024, 10.23736/s0375-9393.24.18267-3, 2,167 chars.
   **Cardiothoracic and squarely on scope — best next item in this seam**, and it pairs with the
   PUMA extubation guideline (sent 08-28).
-- **Consensus recommendations for paediatric airway topicalisation using lidocaine** — Anaesthesia,
+- **SENT 2026-09-26.** **Consensus recommendations for paediatric airway topicalisation using lidocaine** — Anaesthesia,
   27 Jul 2025, 10.1111/anae.16705, 1,067 chars.
 - **International Consensus on Airway Management Procedures for Distance Simulation: A Delphi
   Study** — Acta Anaesthesiol Scand, 1 Sep 2026, 10.1111/aas.70310, 2,112 chars. Education rather
