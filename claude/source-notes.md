@@ -1186,3 +1186,55 @@ the page and in `outstanding.md`.
 **When adding to `outstanding.md`, take journal, date and DOI from the record**, not from the position
 of a line in sweep output. A wrong journal name in the backlog becomes a wrong journal name on the
 published page a week later.
+
+## Sixth variety of divergence: context-dependent, and it reads as conflict (added 2026-09-27)
+
+The JBDS-IP metabolic-bariatric surgery guideline says **SGLT2 inhibitors should be discontinued**,
+while SPAQI, the *Anaesthesia* multidisciplinary consensus and the Basel cohort all push **away** from
+blanket discontinuation. **Both are right.** Bariatric patients spend pre-operative weeks on a **liver
+reduction diet** — a deliberately ketogenic, carbohydrate-restricted state — and then fast for surgery
+on top of it. **SGLT2 inhibitor plus sustained carbohydrate restriction is the textbook euglycaemic
+ketoacidosis setup**, which is not comparable to a single pre-operative fast.
+
+**Rule: before reporting two guidelines as contradictory, check whether the populations differ in a way
+that changes the physiology.** A clinician holding only the headline ("don't stop SGLT2 inhibitors")
+would get the bariatric case wrong. The divergence catalogue now runs: same evidence (09-18), management
+(09-19), regulator vs societies (09-20), strong consensus on weak evidence (09-21), low-value practices
+(09-25), and **context-dependent (09-27)**.
+
+## When a stated rationale does not match the real one (added 2026-09-27)
+
+The same JBDS-IP abstract groups SGLT2 inhibitors with sulfonylureas and meglitinides and gives the
+rationale for all three as **"to reduce the risk of hypoglycaemia."** Sulfonylureas and meglitinides do
+cause hypoglycaemia; **SGLT2 inhibitors characteristically do not, and their perioperative hazard is
+euglycaemic ketoacidosis** — which the same abstract invokes for type 1 diabetes.
+
+**Most likely a compression in the abstract, not an error in the guideline** — and reported that way.
+**Flag the mismatch as an observation, quote the recommendation, and do not quote the rationale as
+though it were the mechanism.**
+
+## Process consensus is achievable where physiological consensus is not (added 2026-09-27)
+
+Two consensus documents facing the same class of problem, opposite choices:
+
+- **Tracheostomy decannulation Delphi** (Medicina Intensiva, Mar 2026): 15 activities, seven
+  subprocesses, explicit role assignment, conditional decision nodes — and **no consensus on any
+  physiological threshold (e.g. cough peak flow)**, published as a finding.
+- **GPR-WEAN** (Aust Crit Care, Sep 2026, sent 09-22): a **0-140 score, five strata, prescribed
+  ventilator-free time — piloted on five patients.**
+
+**The first is more trustworthy and less usable; the second is the reverse.** When reading a consensus
+framework, look for whether it declined to produce a number it could not support. Declining is a mark
+of quality and should be said on the page.
+
+**Also worth noting the notation:** the decannulation panel modelled the pathway in **BPMN**, a
+software/business-process notation, which forces every decision node and role to be explicit — you
+cannot leave "the team decides" as a step. For a process whose real ambiguity is *who may act*, not
+*what the criteria are*, that is the right tool.
+
+## Regional non-Anglophone societies: fourth instance (added 2026-09-27)
+
+SEDAR (twice), ITACTAIC, and now a **Latin-American interprofessional panel** (Chile, Argentina, Mexico,
+Ecuador) — all found only by targeted search, all in primary scope. **Latin-American critical care
+societies added to the sweep.** The method that keeps working: search the topic with **no society or
+journal filter**, then read the society names off the results.

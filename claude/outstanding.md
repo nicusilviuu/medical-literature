@@ -534,9 +534,9 @@ abstracts deposited unless noted:
   10.1213/ane.0000000000006791, 2,670-char abstract. **Best next item in this seam.**
 - **SENT 2026-09-24.** **SPAQI consensus: perioperative management of adults with diabetes wearing devices** (CGMs,
   pumps) — J Clin Anesth, 10 Oct 2024, 10.1016/j.jclinane.2024.111627, 964-char abstract.
-- **Diabetes management in people undergoing metabolic-bariatric surgery** — Joint British Diabetes
+- **SENT 2026-09-27.** **Diabetes management in people undergoing metabolic-bariatric surgery** — Joint British Diabetes
   Societies, Diabet Med, 16 Mar 2026, 10.1111/dme.70281, Practice Guideline, 1,796 chars.
-- **Perioperative screening and management of hyperglycaemia: joint position statement from the
+- **SENT 2026-09-27.** **Perioperative screening and management of hyperglycaemia: joint position statement from the
   Brazilian Diabetes Society** — 27 Feb 2026, 10.1186/s13098-025-02060-5.
 - **Practical management of diabetes patients before, during and after surgery: joint French
   diabetology and anaesthesia guideline** — Diabetes & Metabolism, 3 Feb 2018,
@@ -610,7 +610,7 @@ Remaining, all with abstracts deposited:
 - **International Consensus on Airway Management Procedures for Distance Simulation: A Delphi
   Study** — Acta Anaesthesiol Scand, 1 Sep 2026, 10.1111/aas.70310, 2,112 chars. Education rather
   than clinical practice; low priority.
-- **Tracheostomy decannulation process model: interprofessional Latin-American Delphi consensus** —
+- **SENT 2026-09-27.** **Tracheostomy decannulation process model: interprofessional Latin-American Delphi consensus** —
   Medicina Intensiva, 2 Mar 2026, 10.1016/j.medine.2026.502437, 2,029 chars. ICU scope.
 
 ## Highest-priority full texts (updated 2026-09-21)
@@ -747,3 +747,26 @@ Logged on 13 September as "titles only". **Five now have abstracts:**
 1. **Re-sweep 24-27 September** — the window has essentially no content and was never surveyed.
 2. **Widen the sweep window well beyond three days on the first day deposits resume**, since a backlog
    of several days will arrive at once.
+
+## Seam status after 2026-09-27
+
+**Perioperative and inpatient glycaemia seam: CLOSED.** All seven catalogued documents reported
+(SPAQI SGLT2, Anaesthesia GLP-1/GIP/SGLT2, international inpatient CGM position statement, SAMBA
+ambulatory, SPAQI devices, JBDS-IP metabolic-bariatric, Brazilian SBD/SBA/ABESO joint statement).
+**Only unreachable item: the 2018 joint French diabetology-anaesthesia guideline** (no abstract
+deposited).
+
+**Airway and extubation seam: effectively closed.** DAS 2025, SEDAR/SEMES videolaryngoscopy, SOBA
+obesity, ITACTAIC fast-track extubation, paediatric lidocaine topicalisation, and the Latin-American
+tracheostomy decannulation consensus all reported. Remaining: the **distance-simulation airway Delphi**
+(Acta Anaesthesiol Scand, Sep 2026) — education rather than practice, low priority.
+
+**Remaining guidelines backlog:**
+
+1. **ERC 2025** — Newborn Life Support (110766), Epidemiology (110733), Education (110739). Three of
+   twelve. Newborn is arguably outside primary scope.
+2. **ISHLT** — pulmonary antibody-mediated rejection scientific statement (10.1016/j.healun.2026.04.019),
+   paediatric lung transplant candidate selection (10.1016/j.healun.2025.08.005), short telomere
+   syndrome and lung transplantation (10.1016/j.healun.2025.10.028). **All will deposit scope only on
+   this society's five-for-five record — budget a full-text attempt.**
+3. **HIS operating theatre ventilation guidelines** — deposit nothing; route is the society website.
