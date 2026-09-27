@@ -1143,3 +1143,46 @@ lidocaine topicalisation consensus — three of the four documents in this archi
 statements, and **Dhatariya** in two more, the concentration is now documented across eight documents
 in two seams. **Useful for discovery: when a seam opens, search the recurring authors' names as well as
 the topic.**
+
+## Locating an ingest stall by source (added 2026-09-27)
+
+Day four of the stall. **Test MED against PPR separately** — they arrive from unrelated providers:
+
+| Source | 22 Sep | 24 Sep | 26 Sep |
+|---|---|---|---|
+| **MED** (PubMed-derived) | 2,892 | 5 | 0 |
+| **PPR** (preprint servers) | 883 | 0 | 0 |
+
+**Both stopped on the same date.** Publishers and preprint servers do not coordinate, so a
+simultaneous stop across independent feeds is **a property of the aggregator, not of the sources.**
+That distinguishes a real publishing lull from an infrastructure fault, and it takes two queries.
+
+**Baseline recorded for future comparison (none existed before): whole-database total on 2026-09-27 is
+48,938,549 records** (`*:*`). A later run can compare to test whether global ingestion has resumed, not
+just recent dates.
+
+**Stall benchmark reconfirmed:** 24 September held 6 records at 24h and **still holds 6 at 72h**. A
+bucket that does not grow at all over two days is stalled, not lagging — lagging buckets grow (23 Sep
+went 206 → 1,684 in two days).
+
+## Abstracts appear weeks after the record (added 2026-09-27)
+
+Five of the eight *Resuscitation* papers from 11 September, logged on 13 September as **"titles only,
+abstracts not retrieved"**, now have abstracts deposited — sixteen days later. One
+("Prehospital critical care for cardiac arrest: which clinicians and what training?") still has none.
+
+**So a batch logged as abstract-less is worth re-querying after two to three weeks, not abandoned.**
+This is the opposite failure from the confirmed non-depositors: some records simply acquire their
+abstracts late. **Distinguish them by retry history** — three retries over two weeks with nothing is a
+non-depositor (see the A&A enoxaparin paper); a single early check is not evidence of anything.
+
+## Do not log a journal name from a sweep line (added 2026-09-27)
+
+The endovascular resuscitation review was logged on the outstanding list as being in *Current Opinion
+in Critical Care*. **It is in the *Emergency Medicine Journal*.** The error came from recording it off a
+sweep line that sat alongside two genuine *Current Opinion* papers, without re-checking. Corrected on
+the page and in `outstanding.md`.
+
+**When adding to `outstanding.md`, take journal, date and DOI from the record**, not from the position
+of a line in sweep output. A wrong journal name in the backlog becomes a wrong journal name on the
+published page a week later.

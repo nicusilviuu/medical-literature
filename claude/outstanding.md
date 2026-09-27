@@ -43,8 +43,8 @@ Resuscitation DOI 10.1016/j.resuscitation.2024.110414, abstracts deposited.
 All in tracked journals, all dated 2026-09-11, surfaced by the trailing-window sweep on
 2026-09-13. Titles only — abstracts not retrieved.
 
-- *Resuscitation*: **in-hospital cardiac arrest in Impella-supported cardiogenic shock (J-PVAD
-  registry)**; **first post-resuscitation PaCO2 and neurologic outcome in children**;
+- *Resuscitation*: **SENT 2026-09-27 — in-hospital cardiac arrest in Impella-supported cardiogenic
+  shock (J-PVAD registry)** (10.1016/j.resuscitation.2026.111310); **first post-resuscitation PaCO2 and neurologic outcome in children**;
   **hypotension burden from intermittently documented blood pressures after paediatric arrest**;
   **prognostication after paediatric arrest with reduced EEG electrodes**; **prehospital
   critical care for cardiac arrest — which clinicians and what training**.
@@ -59,8 +59,8 @@ All in tracked journals, all dated 2026-09-11, surfaced by the trailing-window s
   evidence synthesis and proposed pathway**.
 - *Perfusion*: **del Nido cardioplegia in paediatric cardiac surgery — qualitative sub-study of
   the DESTINY trial**; **leukocyte removal by blood filters in autologous cell salvage**.
-- *Reg Anesth Pain Med*: **caudal versus penile block and urethrocutaneous fistula after
-  hypospadias repair in children under 2, multicentre RCT**.
+- **SENT 2026-09-27.** *Reg Anesth Pain Med*: **caudal versus penile block and urethrocutaneous
+  fistula after hypospadias repair in children under 2, multicentre RCT** (10.1136/rapm-2026-108027).
 
 ## Resuscitation papers seen in sweeps but never written up
 
@@ -495,8 +495,9 @@ The 18 September issue carries a themed set, all with abstracts deposited. One w
   adult ALS section.**
 - **"Therapeutic hypercapnia after cardiac arrest: still promising or time to move on?"** —
   abstract deposited, not retrieved.
-- **"Endovascular resuscitation: an expert practice review"** — abstract deposited (1,185
-  chars), not retrieved.
+- **SENT 2026-09-27.** **"Endovascular resuscitation: an expert practice review"** — **corrected:
+  this is in the *Emergency Medicine Journal*, 18 Sep 2026, DOI 10.1136/emermed-2025-215376, PMID
+  42062049 — NOT Current Opinion in Critical Care as originally logged.**
 
 ## Seen 18-20 Sep 2026, not written up
 
@@ -722,3 +723,27 @@ already written up, so the risk is **missed items, not duplicates.**
 **Also re-verify 1 September again.** The JAMA TIVA vs volatile RCT (10.1001/jama.2026.11065) was
 published that day, missed by the post-outage re-sweep, and only found on 24 September — 23 days
 late. Sweep the priority journals individually for 1 September rather than as one combined query.
+
+## Resuscitation 11 Sep batch — abstract status rechecked 2026-09-27
+
+Logged on 13 September as "titles only". **Five now have abstracts:**
+
+- **SENT 2026-09-27:** Impella / J-PVAD in-hospital cardiac arrest (111310).
+- **Still to write up — a natural paediatric post-arrest set:**
+  - **First post-resuscitation PaCO2 and neurological outcome in children** (111306, 1,842 chars)
+  - **Hypotension burden from intermittently documented blood pressures after paediatric arrest**
+    (111308, 1,939 chars)
+  - **Feasibility of neurological prognostication after paediatric arrest with a reduced number of
+    EEG electrodes** (111307, 1,851 chars)
+- **World Restart a Heart initiative impact report** (111303, 1,079 chars) — advocacy, low priority.
+- **Already sent 2026-09-13:** intravenous versus intraosseous access IPD meta-analysis (111304) and
+  dispatcher-assisted CPR barriers (111305).
+- **Still no abstract:** "Prehospital critical care for cardiac arrest: which clinicians and what
+  training?" (111302) — first checked 13 Sep, second check 27 Sep. One more retry then log as a
+  non-depositor.
+
+## Queued once the ingest stall ends (added 2026-09-27)
+
+1. **Re-sweep 24-27 September** — the window has essentially no content and was never surveyed.
+2. **Widen the sweep window well beyond three days on the first day deposits resume**, since a backlog
+   of several days will arrive at once.
