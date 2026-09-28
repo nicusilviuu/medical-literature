@@ -1303,3 +1303,45 @@ Two papers, five days apart, different populations and methods, same conclusion:
 is weak evidence of absence. **The convergence is the argument.** Secondary finding worth keeping:
 factor-concentrate algorithms with almost no plasma and **no routine AT supplementation did not appear
 to increase risk.**
+
+## Fifth society-list gap: AATS (added 2026-09-28)
+
+The tracked cardiothoracic societies were **STS, EACTS, IACTS**. The **American Association for
+Thoracic Surgery** was not among them — and it publishes practice guidelines in *JTCVS*, one of this
+project's priority journals. Found on 28 September when its **2026 revised recommendations on
+early-stage NSCLC** surfaced in a topic sweep rather than a society sweep.
+
+**Fifth gap of this kind in a month**, after ERC/ILCOR, ISHLT, SEDAR and ITACTAIC — **and the first
+that is not a non-Anglophone or subspecialty body.** AATS is large, central and English-language, which
+makes the lesson sharper: **an acronym list assembled once decays, regardless of how obvious its
+members seem.**
+
+**AATS added to the sweep.** Standing method unchanged: when a seam opens, search the topic with **no
+society or journal filter** and read the society names off the results.
+
+## Name the panels that refuse to answer (added 2026-09-28)
+
+The NCS/SCCM focused update on antithrombotic-associated intracranial haemorrhage ran **five PICO
+questions under GRADE**, issued **eight conditional recommendations**, and **explicitly declined to
+recommend on three questions** — desmopressin, platelet transfusion in traumatic ICH, and treating
+anticoagulant effects in small intraparenchymal haemorrhage.
+
+**Record refusals as a quality marker, the same way the archive records evidence grades.** The
+behaviour now has several instances: this document; the Latin-American tracheostomy decannulation panel
+declining a cough peak flow threshold (09-27); the paraconduit herniation Delphi reporting
+non-concordance (09-23). **Against:** videolaryngoscopy guidelines reaching strong consensus on
+low-quality evidence (09-21), GPR-WEAN generating a 0-140 score from five patients (09-22).
+
+**Practical note:** a guideline recommending the *older, cheaper, non-specific* agent over the licensed
+purpose-built one (4F-PCC over andexanet alfa) is making a strong claim in a conditional wrapper.
+Quote both the direction and the grade.
+
+## A guideline may exist as a preprint months before publication (added 2026-09-28)
+
+The NCS/SCCM guideline was posted as a **preprint on 4 March 2026** (10.21203/rs.3.rs-8928593/v1) with
+an identical abstract, and published **24 September 2026** — nearly seven months apart.
+
+**Do not report the preprint and the published version as two documents**, and do not treat the
+publication date as the date the recommendations became available. **When a guideline surfaces, a quick
+DOI/title search for a preprint version is worth one call** — it dates the content, and occasionally
+the preprint is reachable when the published version is not.

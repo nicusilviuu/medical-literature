@@ -807,3 +807,27 @@ Four items sent in the 28 Sep brief. Logged from the same sweep:
 - *A&A*, 24-25 Sep — barriers to quality perioperative care and postoperative mortality variation in
   elective abdominal surgery; autonomic dysfunction in breast cancer patients and post-induction
   haemodynamics; "schedule gridlock" and combinatorial optimisation of resident rosters.
+
+## Society sweep list — current (updated 2026-09-28)
+
+Base list from the routine: SFAR, SPILF, SRLF, ESAIC, ESC, ESPEN, ESICM, SCCM, IACTS, EACTS, STS, ASA.
+
+**Added after structural gaps were found:** ERC, ILCOR, AHA ECC, ISHLT, ELSO, SCA/EACTAIC (12 Sep);
+SEDAR, SEMES, SOBA, DAS (21 Sep); ITACTAIC (24 Sep); Latin-American critical care societies (27 Sep);
+**AATS (28 Sep)**.
+
+**Also worth adding on the same logic, not yet gap-confirmed:** NCS (Neurocritical Care Society — it
+co-authored the 24 Sep ICH update with SCCM and would otherwise have been found only via SCCM), SAMBA,
+SPAQI, JBDS-IP.
+
+## Logged from the 24-28 Sep wide guideline sweep, out of scope (added 2026-09-28)
+
+ESGE curriculum position statement on endoscopic treatment of oesophageal neoplasia; ASGE guideline on
+oesophageal and gastric management (no abstract); ERJ clinical practice guideline on
+granulomatous-lymphocytic interstitial lung disease; AO Spine recommendations on mild degenerative
+cervical myelopathy; Nature Reviews Nephrology consensus on frailty in CKD; the Global ACLF "Istanbul
+Document"; EUROSTAR consensus on symptoms after oesophago-gastric resection.
+
+**Borderline, logged not pursued:** Society of Interventional Radiology proceedings on interventions in
+acute venous thrombosis (J Vasc Interv Radiol, 24 Sep) — indexed as a Letter but carries a
+1,918-character abstract, and acute thrombosis intervention has ICU overlap.
