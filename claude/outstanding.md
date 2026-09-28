@@ -770,3 +770,40 @@ tracheostomy decannulation consensus all reported. Remaining: the **distance-sim
    syndrome and lung transplantation (10.1016/j.healun.2025.10.028). **All will deposit scope only on
    this society's five-for-five record — budget a full-text attempt.**
 3. **HIS operating theatre ventilation guidelines** — deposit nothing; route is the society website.
+
+## Recovered in the 24-28 Sep wide re-sweep, not yet written up (added 2026-09-28)
+
+The window was never surveyed during the stall and proved unusually rich (113 priority-journal hits).
+Four items sent in the 28 Sep brief. Logged from the same sweep:
+
+**Highest priority — write up next:**
+- *Resuscitation*, 25 Sep — **intraosseous versus intravenous access in adult OHCA: a Bayesian
+  secondary analysis** (1,950 chars). Follows the IPD meta-analysis sent 13 Sep; a Bayesian re-analysis
+  of the same question is a natural pairing.
+- *Chest*, 24 Sep — **"Continuing ECMO without Potential Recovery, Transplant, or Device"** (1,107
+  chars). Belongs with the ECMO candidacy thread (regret study 22 Sep, planned-vs-standby 25 Sep).
+
+**Also logged:**
+- *Resuscitation*, 25 Sep — rescue-breathing versus compression-only bystander CPR in non-cardiac
+  OHCA; sex differences in OHCA epidemiology and care in China; a conceptual framework for sex
+  differences after cardiac arrest; the post-ROSC ECG in non-ST-elevation occlusion; EMS agency-level
+  variation in non-initiation and termination of resuscitation.
+- *Anesthesiology*, 25 Sep — **randomised blinded trial of preoperative crystalloid bolus and
+  post-induction blood pressure** (1,861 chars); anterior chest wall loading, lung mechanics and
+  regional ventilation (2,354 chars).
+- *Anaesthesia*, 24 Sep — chronic postsurgical pain after caesarean delivery (systematic review);
+  ultrasound-guided internal jugular compression to prevent catheter malposition; MCID and
+  psychometrics of the Obstetric Quality of Recovery score.
+- *ICVTS*, 24-26 Sep — percutaneous versus open decannulation after peripheral ECMO; distal
+  anastomotic new entries after type A dissection repair; postoperative AF and long-term outcomes
+  after isolated CABG; unwarranted variation in UK CABG training.
+- *Critical Care*, 24-25 Sep — anti-infective dosing during therapeutic plasma exchange; increased
+  ureagenesis and metabolic intolerance to enhanced nutrition in the PICU.
+- *J Crit Care*, 24-27 Sep — enhanced nighttime/continuous intensivist coverage (systematic review);
+  plasma copper and endothelial injury markers in sepsis; cerebral autoregulation and optimal CPP
+  after hypertensive intracerebral haemorrhage.
+- *Reg Anesth Pain Med*, 24 Sep — **crystal precipitates of local anaesthetic and adjuvant mixtures
+  visualised by ultrahigh-resolution imaging** (1,808 chars). Unusual and directly practical.
+- *A&A*, 24-25 Sep — barriers to quality perioperative care and postoperative mortality variation in
+  elective abdominal surgery; autonomic dysfunction in breast cancer patients and post-induction
+  haemodynamics; "schedule gridlock" and combinatorial optimisation of resident rosters.

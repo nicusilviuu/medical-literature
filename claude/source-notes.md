@@ -1238,3 +1238,68 @@ SEDAR (twice), ITACTAIC, and now a **Latin-American interprofessional panel** (C
 Ecuador) — all found only by targeted search, all in primary scope. **Latin-American critical care
 societies added to the sweep.** The method that keeps working: search the topic with **no society or
 journal filter**, then read the society names off the results.
+
+## The stall broke: response validated (added 2026-09-28)
+
+Five-day ingest stall (24-28 Sep) resolved overnight with a large catch-up:
+
+```
+bucket      27 Sep     28 Sep
+23 Sep       1,684  ->  4,449
+24 Sep           6  ->  4,195
+25 Sep           4  ->  4,247
+26 Sep           0  ->  1,589
+27 Sep           0  ->    940
+total   48,938,549  -> 48,976,111   (+37,562 overnight)
+```
+
+**The baseline total recorded on 27 September made this measurable** — without it, "the stall broke"
+would have been an impression. **Keep recording the `*:*` total whenever something looks wrong.**
+
+**Both queued actions paid off.** The named-journal sweep was widened from three days to **five
+(24-28 Sep)** and returned **113 hits** from a window never surveyed; all four items in the 28 Sep brief
+came from it, spanning four separate running threads. **The prescribed response to a stall — work the
+backlog, queue the window, widen the sweep on resumption — is now validated end to end.**
+
+*Europe PMC returned five consecutive 503s on the first query during the catch-up. Expect the service
+to be slow while it backfills; the hardened wrapper handles it.*
+
+## A null is the credible half of an observational drug study (added 2026-09-28)
+
+The Anesthesiology GLP-1 analysis reports **no increased aspiration risk** (credible) alongside a
+**56% relative reduction in 14-day mortality vs metformin** (not plausible as a treatment effect).
+**Confounding by indication almost always manufactures benefit; it rarely erases a specific harm.**
+
+**So in an observational comparison of drug classes, weight the null on the mechanistically specific
+harm far more heavily than the mortality benefit** — especially where the exposure tracked access to
+care, as GLP-1 prescribing did in 2013-2023. **Say which half you believe and why.**
+
+**Also worth quoting when a paper does it:** that analysis reported MACE with a confidence interval
+excluding 1 (0.60-0.98) but an adjusted p of 0.13, and called it a *numerical difference*. **That is
+multiplicity correction being honoured rather than quietly dropped.**
+
+## The fragility number for perioperative guidelines (added 2026-09-28)
+
+*Anesthesiology*, 25 Sep 2026: of RCTs cited in North American and European perioperative guidelines
+2012-2022, **161 superiority trials had a median sample size of 120 and a median Fragility Index of 4**
+— **paediatric median 1**. Single-centre trials were *more* fragile than multicentre (IRR 0.52).
+
+**This is the quantitative version of what this archive kept observing qualitatively all month** —
+strong consensus on grade C/D evidence, narrative-review methods, expert opinion standing in for data.
+**Cite it when a guideline's evidence base is the issue.** But carry the authors' caveat: **the FI is a
+function of sample size and p-value, measures numerical instability rather than bias, and should
+complement rather than replace evidence-certainty measures.**
+
+## Thread closed: antithrombin is a marker, not a driver (added 2026-09-28)
+
+Two papers, five days apart, different populations and methods, same conclusion:
+
+- **Trauma** (*Shock*, 9 Sep, sent 23 Sep): early AT depletion tracked **albumin and syndecan-1**, not
+  thrombin-antithrombin complex — a leak/endothelial signature rather than consumption.
+- **Cardiac surgery** (*JCVA*, 24 Sep, sent 28 Sep): low AT marked more AKI, more vasopressor use and
+  longer stay, **but was not an independent predictor after adjustment.**
+
+**Neither is decisive alone** — the cardiac study has 103 patients, so absence of independent prediction
+is weak evidence of absence. **The convergence is the argument.** Secondary finding worth keeping:
+factor-concentrate algorithms with almost no plasma and **no routine AT supplementation did not appear
+to increase risk.**
