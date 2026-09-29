@@ -1345,3 +1345,64 @@ an identical abstract, and published **24 September 2026** — nearly seven mont
 publication date as the date the recommendations became available. **When a guideline surfaces, a quick
 DOI/title search for a preprint version is worth one call** — it dates the content, and occasionally
 the preprint is reachable when the published version is not.
+
+## A hypothesis reported here was tested and answered (added 2026-09-29)
+
+The clearest instance yet of this archive following a question to its resolution:
+
+- **10 Sep** — *Anesthesiology* meta-research (Vistisen et al.): HPI trials may be comparing **two MAP
+  thresholds** rather than prediction against no prediction, because **HPI alerts fire at MAP ~70-75
+  mmHg** while controls wait for 65. Of 13 trials reducing hypotension, 9 gave significantly more
+  haemodynamic treatment in the HPI arm; of 5 that failed, none did.
+- **29 Sep** — randomised trial (Wu et al.) comparing **HPI ≥85** against **MAP ≤73 mmHg**, both on
+  the same protocol. **Comparator set inside the 70-75 window the earlier paper identified.** Result:
+  **no demonstrated superiority** for HPI.
+
+**The authors' wording is the model: "no demonstrated superiority rather than clinical equivalence."**
+With n=100 and P=0.119, and point estimates numerically favouring HPI, that is the only defensible
+claim. **Never upgrade a failed superiority test to equivalence** — a rule worth applying to every
+negative trial this archive reports.
+
+## Quote the Bayesian prediction interval, not just the credible interval (added 2026-09-29)
+
+The 28 Sep meta-analysis of intraoperative pressure targeting reports mortality **OR 1.00 (95% CrI
+0.73-1.38)** and, separately, a **prediction interval of 0.56-1.78**. The credible interval describes
+the pooled mean; **the prediction interval describes what a future trial might find** — here, anything
+from a 44% reduction to a 78% increase.
+
+**Where a meta-analysis reports one, quote it**: it measures heterogeneity in a way readers grasp
+immediately, and it is usually the more honest number. **Pooling trials whose true effects differ that
+much yields an average that may describe no actual patient.**
+
+**Also a template worth naming:** that paper attached three separate cautions to its own most
+favourable result (AKI) — compatible with no benefit, moderate heterogeneity, sensitive to
+leave-one-out exclusion. Contrast with papers that quote a favourable interval and stop.
+
+## Delivery variables behave where pressure variables do not (added 2026-09-29)
+
+Three papers within two days made the contrast explicit:
+
+- **Noncardiac surgery, pressure:** protocolised arterial pressure targeting shows **OR 1.00 for
+  mortality across 15 RCTs**; HPI shows no superiority over a MAP threshold.
+- **Cardiac surgery, delivery:** **DO2i on bypass** (flow x haemoglobin x saturation) — each 10
+  ml/min/m2 decrease carries **adjusted OR 1.16 for 30-day mortality**, 4,358 patients.
+
+**This is the quantitative form of the perfusion-not-pressure thread.** But the DO2i study is
+retrospective with **75 deaths**, and two features constrain it: **DO2i is partly a haemoglobin
+measurement**, and preoperative anaemia independently predicts death after cardiac surgery; and the
+**stroke association is flat (OR 1.00)**, which is what you would expect if DO2i marks patient
+substrate rather than driving hypoperfusive injury. **Report the contrast; do not report it as
+causal.**
+
+## Check emphasis markers balance before commit (added 2026-09-29)
+
+An entry was written with an unbalanced `**` — an italic block whose closing marker had been typed as
+bold, nesting incorrectly and leaving the count odd. Caught pre-commit by:
+
+```bash
+python3 -c "s=open('FILE').read(); print(s.count('**'))"   # must be even
+```
+
+**Add this to the pre-commit checks alongside internal-link verification.** Nested emphasis inside a
+long italic tail note is where it happens; the rendered page would have shown a whole paragraph in the
+wrong style.
