@@ -831,3 +831,35 @@ Document"; EUROSTAR consensus on symptoms after oesophago-gastric resection.
 **Borderline, logged not pursued:** Society of Interventional Radiology proceedings on interventions in
 acute venous thrombosis (J Vasc Interv Radiol, 24 Sep) — indexed as a Letter but carries a
 1,918-character abstract, and acute thrombosis intervention has ICU overlap.
+
+## ISHLT seam CLOSED 2026-09-29
+
+All catalogued ISHLT documents with abstracts have been reported: three-part perioperative ECLS
+consensus (09-14), graft dysfunction 10-year update and lung transplant frailty consensus (09-16),
+paediatric heart failure guidelines (09-26), and **sent 09-29** — pulmonary antibody-mediated
+rejection / GAP definition (10.1016/j.healun.2026.04.019, **full text in PMC**), referral and selection
+of paediatric lung transplant candidates (10.1016/j.healun.2025.08.005), short telomere syndrome
+(10.1016/j.healun.2025.10.028).
+
+**Not reachable by this route — deposit no abstract at all:** cardiac xenotransplantation 2026,
+transplant ethics, ALAD, baseline lung allograft dysfunction, PAH risk stratification.
+
+**Worth one full-text attempt:** the pulmonary AMR statement is in PMC with a PDF. It is the only
+ISHLT document here that can actually be read, and the GAP definition's three axes are what an ICU
+would need to know to send the right tests.
+
+## Guidelines backlog after 2026-09-29 — thinnest since it was catalogued
+
+1. **ERC 2025** — Newborn Life Support (110766), Epidemiology (110733), Education (110739). Three of
+   twelve; all lower priority, and Newborn is arguably outside primary scope.
+2. **HIS operating theatre ventilation guidelines** — deposit nothing; route is the society website.
+3. **Distance-simulation airway Delphi** (Acta Anaesthesiol Scand, Sep 2026) — education, low priority.
+
+## Preprint to re-check for a journal version (added 2026-09-29)
+
+**CDH haemodynamic management consensus** — CHNC CDH Focus Group, Research Square preprint
+10.21203/rs.3.rs-10757450/v1, 28 Sep 2026, PPR1328952. **20 statements** on baseline physiological
+assessment, echocardiographic parameters, haemodynamic monitoring, **physiology-based phenotyping and
+phenotype-based vasoactive management.** GRADE where evidence existed, **national practice survey where
+it did not** — so some statements describe prevailing practice, and the abstract does not say which.
+Sent 09-29 **labelled as a preprint**; re-check in a few months for the peer-reviewed version.

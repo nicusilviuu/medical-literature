@@ -1116,8 +1116,16 @@ Every ISHLT document this archive has covered gives scope and withholds recommen
 - **Paediatric heart failure guidelines, update from 2014** (sent 09-26) — **a two-sentence abstract
   for an eleven-year update**, saying only that "interval advancements" were incorporated
 
-**This is a property of the society's output, not bad luck.** Add ISHLT to the list of bodies whose
-abstracts never carry recommendations: ERC sections, AHA/ACC long-form statements, SECTCV/SEDAR, SPAQI,
+**AMENDED 2026-09-29 — this was too strong.** The **pulmonary antibody-mediated rejection scientific
+statement** (10.1016/j.healun.2026.04.019, sent 09-29) breaks the pattern twice: its abstract carries
+**real content** (2-year survival of 20%, the three axes of the GAP definition, the method), and its
+record shows **`inPMC: Y` and `hasPDF: Y`** — **the first ISHLT document in this archive whose full text
+is reachable.** So: **most ISHLT abstracts are scope-only, but check `inPMC`/`hasPDF` on every one
+rather than assuming.** The other two sent that day (paediatric lung transplant referral, short telomere
+syndrome) were both `inPMC: N`, so the tendency is real — it is just not absolute.
+
+**The original note, which still holds as a tendency:** add ISHLT to the list of bodies whose
+abstracts usually do not carry recommendations: ERC sections, AHA/ACC long-form statements, SECTCV/SEDAR, SPAQI,
 DAS 2025, and — worse still, depositing nothing at all — the Healthcare Infection Society.
 
 **Practical consequence: for ISHLT, budget a full-text attempt from the outset** rather than expecting
@@ -1406,3 +1414,29 @@ python3 -c "s=open('FILE').read(); print(s.count('**'))"   # must be even
 **Add this to the pre-commit checks alongside internal-link verification.** Nested emphasis inside a
 long italic tail note is where it happens; the rendered page would have shown a whole paragraph in the
 wrong style.
+
+## Check inPMC/hasPDF before declaring a society unreachable (added 2026-09-29)
+
+Generalised from the ISHLT correction above. **One `core` query already returns `isOpenAccess`, `inPMC`,
+`hasPDF` and `fullTextUrlList`** — so reachability costs nothing extra, and recording a society as
+"deposits nothing usable" on the basis of abstracts alone is a mistake that then propagates into later
+runs as an excuse not to try.
+
+**Rule: when a seam is catalogued, record reachability per document at the same time as the abstract
+length.** "Abstract is scope-only" and "full text is unreachable" are two different findings and the
+second is the one that decides whether the document can be used.
+
+## A field that cannot treat something redescribes it precisely (added 2026-09-29)
+
+Pattern now seen several times, and it is a legitimate stage rather than an evasion:
+
+- **Pulmonary AMR**: 2-year survival **20%**; the society's deliverable is the **GAP definition**
+  (graft dysfunction / antibody characteristics / pathology), explicitly offered as *"a platform for
+  testing and developing new therapies"* (09-29).
+- **Refractory VF** split into three phenotypes rather than defined by shock count (09-24).
+- **The "aortic organ" concept and TEM classification** in the EACTS/STS guidelines (09-04).
+
+**You cannot run a trial without a case definition**, so redescription is the precondition for
+treatment rather than a substitute. **The test is whether trials follow** — worth revisiting AMR in a
+year to see whether they did. **Report the deliverable honestly: a definition is infrastructure, not
+therapy.**
