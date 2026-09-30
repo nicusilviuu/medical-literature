@@ -863,3 +863,84 @@ assessment, echocardiographic parameters, haemodynamic monitoring, **physiology-
 phenotype-based vasoactive management.** GRADE where evidence existed, **national practice survey where
 it did not** — so some statements describe prevailing practice, and the abstract does not say which.
 Sent 09-29 **labelled as a preprint**; re-check in a few months for the peer-reviewed version.
+
+## Greenhouse-gas seam OPENED and largely worked, 2026-09-30
+
+The two papers flagged on the 29 Sep page were **sent 2026-09-30**, together with an older-but-popular
+anchor: *Anesthesiology* sevoflurane vs carrier gas and absorbent across the FGF spectrum
+(10.1097/aln.0000000000006238), *Anesth Analg* central N2O deactivation ITS
+(10.1213/ane.0000000000008319), and **BJA Bernat et al., 4 Apr 2025** — TIVA vs TCIA vs manually
+optimised sevoflurane across 35,242 procedures (10.1016/j.bja.2025.01.043, 24 citations, **inPMC Y,
+hasPDF Y**).
+
+**Also retrieved and quoted in that entry, not itself an item:** Elson et al., *Anaesthesia*, 14 Oct
+2025, modelling study, 10.1111/anae.70023 — the **22-minute crossover** and consumables at 50.9-60.4%
+of the TIVA footprint. Worth a slot of its own if the topic recurs.
+
+**Still open on this topic, worth a quiet day:**
+- *BJA*, 24 Sep 2024 — **"Hospital action plan for mitigating anaesthetic nitrous oxide emissions"**
+  (no abstract deposited; route is the full text). Directly complements the NYC Health + Hospitals
+  paper, which is an audit rather than a plan.
+- *BJA*, 25 Sep 2025 — "Abandoning desflurane is just part of the solution to anaesthesia
+  sustainability" (922-char abstract).
+- *Med J Aust*, 8 Sep 2025 — **greenhouse gas emissions of anaesthetic gases in Australia, 2002-2022**,
+  retrospective, 2,296-char abstract. A national time series; pairs with the 11-hospital ITS.
+- *Curr Opin Anaesthesiol*, 3 Dec 2025 — the case **for** desflurane in specific circumstances
+  (1,621 chars). Worth reporting as a dissent rather than ignoring it.
+- *JMIR Perioper Med*, 9 Jan 2025 — **modifying N2O delivery at Stanford** (2,982 chars). A second
+  institutional N2O intervention; the pair would test whether the NYC leakage figure generalises.
+
+## Logged from the 27-30 Sep sweep, not yet written up (added 2026-09-30)
+
+The window held **97 priority-journal records** after both backfills landed. Four items sent.
+
+**Highest priority — write up next:**
+- *BJA*, 29 Sep — **supraglottic airway device vs tracheal intubation at induction in children with
+  airway hyperresponsiveness, J-PEDIA registry** (10.1016/j.bja.2026.07.046, PMID 42810867, 1,968-char
+  abstract **already retrieved in full**). 12 tertiary centres, Jul 2022-Feb 2025; 4,878 of 27,844
+  encounters analysed after propensity-score IPTW; **aRR 0.41 (0.19-0.62)** for respiratory adverse
+  events, 0.32 for airway-management-related events, 0.47 for severe desaturation. Authors themselves
+  flag **potential residual confounding**. Note: outstanding.md has carried a *different* J-PEDIA paper
+  (extreme weight-for-age, *Anesth Analg*, 9 Sep) with no abstract deposited — **two papers, one
+  registry; do not conflate them.**
+- *Intensive Care Med*, 28 Sep — **volatile anaesthetic sedation in ARDS.** Bears on the
+  TIVA-versus-volatile thread (24 Sep) from the sedation rather than the theatre end.
+
+**Also logged:**
+- *Crit Care*, 28 Sep — **lower limits of CRRT dose-intensity: what does the evidence support?**
+  (CRRT thread); interpreting viral SARI in immunocompromised patients, phenotypes.
+- *J Crit Care*, 29 Sep — **agreement between central venous pressure and right atrial pressure**
+  (monitors-that-measure-without-helping thread); tracheal intubation in ICU past/present/future
+  (28 Sep).
+- *AJRCCM*, 29 Sep — **duration of antibiotic therapy in sepsis and severe infections.**
+- *Crit Care*, 29 Sep — **tele-ICU after cardiac surgery, TELESCOPE trial experience.**
+- *Chest*, 29 Sep — pharmacist medication management and ICU mortality; ondansetron and respiratory
+  drive in ARDS; 28 Sep — biological phenotypes of alveolar injury in non-HIV PCP.
+- *Anaesthesia*, 29 Sep — renal oxygenation and histopathology in an ovine heart-failure CPB model.
+- *BJA*, 28-29 Sep — antiemetic-dose dexamethasone and pulmonary complications (matched cohort);
+  preoperative anaemia and iron deficiency in Wales, national cohort; prolonged preoperative clear
+  fluid fasting in children; continuous superficial parasternal intercostal plane block after cardiac
+  surgery (systematic review); adherence to NMBA guidelines, French survey; automated ML postoperative
+  mortality model, prospective validation.
+- *Anesthesiology*, 29 Sep — extended-release opioids and persistent postoperative opioid use after
+  hip/knee arthroplasty; CARES-RSA perioperative neurodiversity screening tool.
+- *JAMA*, 28 Sep — intra-arterial tenecteplase after thrombectomy, one-year ANGEL-type outcomes.
+- *Eur Heart J*, 29 Sep — HEARTBiT transcriptomic biomarker for acute cellular rejection after heart
+  transplantation (validation); post-TAVI FFR.
+
+## For the guidelines watch, found by the brief sweep (added 2026-09-30)
+
+**2026 AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM Guideline for Perioperative Cardiovascular Management for
+Noncardiac Surgery** — *Circulation*, **28 September 2026**, 10.1161/cir.0000000000001472, PMID
+42804570, pubType **Practice Guideline**, 1,214-char abstract, **inPMC N, hasPDF N**.
+
+**Large and squarely in primary scope.** Two things to check when writing it up:
+
+1. The **2024 edition** of the same guideline (10.1161/cir.0000000000001285, 24 Sep 2024) has an
+   abstract of **exactly the same length, 1,214 characters.** Verify the 2026 abstract is not the 2024
+   boilerplate re-deposited before quoting anything from it as new.
+2. The 2024 edition also carries a **Correction** (10.1161/cir.0000000000001298, 18 Nov 2024, no
+   abstract) — the corrigendum problem seen with the ERC sections.
+
+A 2026 major revision two years after the 2024 edition is itself worth a sentence: that is a fast
+re-issue for a document of this size.

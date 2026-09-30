@@ -1440,3 +1440,78 @@ Pattern now seen several times, and it is a legitimate stage rather than an evas
 treatment rather than a substitute. **The test is whether trials follow** — worth revisiting AMR in a
 year to see whether they did. **Report the deliverable honestly: a definition is infrastructure, not
 therapy.**
+
+## `firstIndexDate` is the cheap detector for the issue-date trap (added 2026-09-30)
+
+**Fifth instance, and the first caught before the paper was ever sent.** The *Anesthesiology*
+sevoflurane emissions paper (10.1097/aln.0000000000006238) came back with `firstPublicationDate`
+**2026-09-29** — apparently published today — but `firstIndexDate` **2026-07-17**. A record cannot be
+indexed 74 days before it is published. It was online in mid-July and has been re-dated to an issue.
+
+**This is a strictly better detector than the one recorded on 21 September.** The `items:` dedupe
+catches the trap only for papers *already sent*; `firstIndexDate` catches it on **first encounter**,
+which is the case that matters when deciding whether to call something "new this week."
+
+**Rule: compare `firstPublicationDate` with `firstIndexDate` on every item before writing a date on
+the page.** Normal records index one to two days *after* first publication. A `firstIndexDate`
+materially *earlier* than `firstPublicationDate` means the publication date shown is an issue date.
+Verified against the four other items in the same entry, all of which indexed +1 day:
+
+| DOI | firstPublicationDate | firstIndexDate | Verdict |
+| --- | --- | --- | --- |
+| 10.1097/aln.0000000000006238 | 2026-09-29 | **2026-07-17** | **re-dated; online since July** |
+| 10.1213/ane.0000000000008319 | 2026-09-28 | 2026-09-29 | genuinely new |
+| 10.1001/jama.2026.19747 | 2026-09-28 | 2026-09-29 | genuinely new |
+| 10.1016/j.bja.2026.07.046 | 2026-09-29 | 2026-09-30 | genuinely new |
+| 10.1016/j.bja.2025.01.043 | 2025-04-04 | 2025-04-07 | genuinely older |
+
+**Report the discrepancy rather than resolving it silently.** The publisher's page for the sevoflurane
+paper returns **HTTP 402 (payment required)**, so the true online date could not be confirmed; the
+entry says exactly that instead of picking a date.
+
+## pubType caught a Letter dressed as a follow-up study (added 2026-09-30)
+
+A *BJA* record dated 29 September, titled **"Restrictive versus liberal perioperative intravenous fluid
+therapy and long-term renal function after major abdominal surgery: handling of missing data and shift
+in target estimand"**, reads like a substantial secondary analysis. `pubTypeList` is **['Letter', 'IM']**
+and `abstractText` is empty: it is a correspondence item on an earlier paper, and the title only
+reveals this at the colon.
+
+**The existing rule held, and this is the case it was written for.** Commentary on a trial often carries
+the trial's own title verbatim before the colon, so **a title that begins exactly like a known paper is
+a reason to check pubType, not a reason to trust the record.** Same run, same journal, adjacent PMIDs
+(42810866 Letter, 42810867 research article) — the position in sweep output says nothing.
+
+## Search older-but-popular items by citation count, not by memory (added 2026-09-30)
+
+The recency rule asks for one or two older-but-popular items alongside new ones, and **the last five
+briefs (25-29 Sep) carried none** — every item was from the current month. That drift is easy to miss
+because a rich recent window always supplies enough material.
+
+**Method used to fix it, which is repeatable and avoids fabricating a citation from memory:** query the
+topic over a `FIRST_PDATE:[2021-01-01 TO <~3 months ago>]` window with `resultType=core`, then sort the
+returned records locally by `citedByCount`. This satisfies "popular or still actively discussed and
+cited" with a number off the record rather than an impression. It surfaced Bernat et al. (24 citations,
+inPMC) immediately.
+
+Three cautions learned in the same query, each isolated by re-running one change at a time rather than
+assumed from the first failure:
+- **`SORT_CITED:y` inside the query string returns `hitCount 0`.** Verified directly: a baseline query
+  returning **74** hits drops to **0** on appending `AND SORT_CITED:y`. It is not a valid query term
+  here. Sort locally instead.
+- **There is no implicit truncation on a quoted `TITLE:` term.** `TITLE:"sustainab"` returns **0**;
+  `TITLE:"sustainable"` returns **44,947**. A quoted stem silently matches nothing, so a zero from a
+  multi-term `OR` block may be one malformed term rather than a real absence — **a zero that looks
+  structural is worth bisecting before it is believed.**
+- The naive topic query pulled in **soil, lake, reservoir and wastewater nitrous oxide papers**, which
+  outnumbered the anaesthetic ones. "Nitrous oxide" is an environmental-science term before it is an
+  anaesthetic one; constrain with an anaesthesia term in the same `TITLE:` clause.
+
+## Check a paper's own arithmetic, and say so when it does not close (added 2026-09-30)
+
+Bernat et al. report arm sizes of **7,873 + 15,461 + 10,717 = 34,051**, while the title says **35,242
+procedures**. A 1,191-case gap the abstract does not reconcile.
+
+**Do not silently quote the title figure, and do not assume an error either.** The entry reports both
+numbers and states that the abstract does not explain the difference. Adding the arm sizes is a
+five-second check worth running on any paper whose headline is a total.
