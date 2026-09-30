@@ -944,3 +944,103 @@ Noncardiac Surgery** — *Circulation*, **28 September 2026**, 10.1161/cir.00000
 
 A 2026 major revision two years after the 2024 edition is itself worth a sentence: that is a fast
 re-issue for a document of this size.
+
+## FRENCH SOCIETY SEAM OPENED 2026-09-30 — the largest gap found so far
+
+Three SFAR RFEs sent 30 Sep (airway in theatre; in-hospital life-threatening emergencies / UVIH;
+perioperative and critical care nutrition). **Route is the society website via curl with a browser
+User-Agent — see source-notes; Europe PMC does not hold these documents at all.**
+
+**Next steps, in priority order:**
+
+1. **Sweep the rest of `sfar.org/recommandations/` systematically.** The listing page showed at least
+   these further RFE/RBP documents, none ever reported here — all need a date check and most are in
+   primary scope:
+   - Anesthésie locorégionale en chirurgie pédiatrique (paediatric regional anaesthesia) — **primary
+     scope, high priority**
+   - Prise en charge thérapeutique des infections intra-abdominales de l'adulte — **ID + critical care**
+   - Sédation procédurale en structure de Médecine d'Urgence (SFMU/SFAR)
+   - Gestion des anticoagulants pour une procédure invasive programmée — **pairs with the ESAIC/ESRA
+     antithrombotic guideline sent 2026-09-06**
+   - Prise en charge neurochirurgicale des traumatismes cranio-encéphaliques de l'adulte et de l'enfant
+     à la phase initiale — **neurotrauma, primary scope**
+   - Prise en charge péri-opératoire du patient adulte lors d'une résection hépatique
+   - Place de l'ECBU avant une prise en charge urologique chirurgicale ou interventionnelle
+   - SFAR/SFPC — prévention des erreurs médicamenteuses en anesthésie-réanimation
+   - SFAR/SFA — diagnostic et prise en charge des réactions d'hypersensibilité immédiate en
+     périopératoire — **pairs with the drug-allergy-label cohort sent 2026-09-11**
+2. **SRLF** — `srlf.org/recommandations-referentiels-epp`. Never swept. Root is reachable.
+3. **SPILF** — `infectiologie.com/fr/recommandations.html` (200). Never swept. `spilf.fr` does not resolve.
+4. **SFMU** — `sfmu.org/fr/publications/recommandations-de-la-sfmu/` (200), plus its consensus page.
+
+**Full texts wanted** for all three documents sent today: the airway RFE's 27 recommendations (PDF 3.78 MB
++ argumentaire 3.86 MB + eight algorithms/cognitive aids), the UVIH RFE's 36, and the nutrition RFE's 40.
+The summaries give counts and GRADE levels but **not a single actual recommendation** — same limitation as
+the ERC section abstracts.
+
+**One open question in each:** the nutrition RFE reached strong agreement on 39 of 40 — **which
+recommendation failed after four rounds?** The UVIH RFE's GRADE breakdown sums to 32 of a stated 36.
+The airway RFE declined one question entirely.
+
+## Guidelines backlog after 2026-09-30
+
+1. **2026 AHA/ACC perioperative cardiovascular guideline** (10.1161/cir.0000000000001472) — **top
+   priority, full text needed.** Reported 30 Sep as found-but-unresolved because its abstract is the 2024
+   abstract with the year changed. Publisher page 403. Until the full text is read, **nothing about what
+   changed from 2024 can be stated.** Check also whether the JACC co-publication
+   (10.1016/j.jacc.2026.06.017) becomes indexed.
+2. **STROKE — second structural gap found 30 Sep, archive holds zero stroke guidelines:**
+   - **2026 AHA/ASA Guideline for the Early Management of Patients With Acute Ischemic Stroke** —
+     *Stroke*, 26 Jan 2026, 10.1161/str.0000000000000513, Practice Guideline, 1,724-char abstract.
+     Replaces 2018 + 2019 update. Key changes per its own abstract: thrombolytic choice and eligibility,
+     EVT eligibility, hyperglycaemia and dysphagia, **paediatric recommendations**, modified approach to
+     thrombolysis contraindications. **Two corrections exist** (10.1161/str.0000000000000530, 27 Jul 2026;
+     "Proposed Corrections" 10.1161/strokeaha.126.056478, 31 Jul 2026) — read both with it.
+   - **2025 update to ESO guideline on BP management in acute ischaemic stroke and ICH** — *Eur Stroke J*,
+     1 May 2026, 10.1093/esj/aakag004, **inPMC Y, hasPDF Y** — readable in full. 8 clinical questions,
+     GRADE. Contains a **high-certainty recommendation against intensively lowering SBP <140 mmHg in the
+     first 24 h after successful thrombectomy** — the strongest-graded anti-pressure-target
+     recommendation this archive has seen; belongs with the perfusion-not-pressure thread.
+   - Anaesthesia-facing companion (for the **brief**, not the watch — it is a narrative review):
+     *J Anesth*, 29 Sep, 10.1007/s00540-026-03908-4, peri-thrombectomy practice framework, which flags
+     substantive uncertainty on posterior-circulation anaesthetic technique, paediatric peri-procedural
+     management and intraprocedural neuromonitoring.
+3. **IONM in spine deformity surgery best practice guidelines** — *Spine Deformity*, 28 Sep 2026,
+   10.1007/s43390-026-01559-9, 1,803-char abstract retrieved. 16 experts incl. anaesthesiologists,
+   modified Delphi, 80% threshold, 27 items (AIS) + 25 (high-risk), IONM Timeline Checklists. Updates
+   Vitale et al. 2014 (10.1016/j.jspd.2014.05.003, abstract also retrieved) which addressed **responding
+   to** IONM changes rather than **executing** monitoring. **Write up next.** Connects to the TIVA thread:
+   MEP monitoring requires avoiding halogenated agents and neuromuscular blockade.
+4. **ERC 2025** — Newborn (110766), Epidemiology (110733), Education (110739). Three of twelve, lower
+   priority.
+5. **HIS operating theatre ventilation guidelines** — deposit nothing; route is the society website, and
+   the curl+UA method found today may now make this reachable. **Retry it.**
+6. **Distance-simulation airway Delphi** (Acta Anaesthesiol Scand, Sep 2026) — education, low priority.
+
+## Society sweep list — current (updated 2026-09-30)
+
+Base list from the routine: SFAR, SPILF, SRLF, ESAIC, ESC, ESPEN, ESICM, SCCM, IACTS, EACTS, STS, ASA.
+
+**Added after structural gaps were found:** ERC, ILCOR, AHA ECC, ISHLT, ELSO, SCA/EACTAIC (12 Sep);
+SEDAR, SEMES, SOBA, DAS (21 Sep); ITACTAIC (24 Sep); Latin-American critical care societies (27 Sep);
+AATS (28 Sep); **AHA/ASA, ESO and NCS (30 Sep — stroke gap)**.
+
+**Added as French partner societies encountered on the SFAR documents, worth checking in their own right:**
+SFMU, CARO, CARORL, SFORL, ADARPEF, GFRUP, SFPC, SFNCM, SFCD, AFDN, FHS.
+
+**Still worth adding on the same logic, not yet gap-confirmed:** SAMBA, SPAQI, JBDS-IP.
+
+## Borderline, logged not pursued (added 2026-09-30)
+
+*Stroke*, 28 Sep — **Prehospital Stroke Treatment Trials in Conventional EMS Settings: An Expert Consensus
+Statement** (10.1161/strokeaha.126.056028). Tagged `Consensus Statement` but concerns **trial design
+methodology** — patient identification, consent models, randomisation, endpoints, statistical frameworks.
+Out of scope for a clinical-guideline watch; **relevant if the archive ever covers consent models in
+resuscitation research**, which pairs with the *Critical Care Medicine* paper on alternatives to
+prospective consent logged from the 11 Sep sweep.
+
+CIRSE Standards of Practice for endovascular management of acute lower limb ischaemia (*Cardiovasc
+Intervent Radiol*, 29 Sep, 1,577 chars). Paediatric empyema thoracis evidence-based guideline (*Indian
+Pediatrics*, 28 Sep, **3,824-char abstract** — unusually full; thoracic, paediatric). S2k liver
+transplantation guidelines key facts, German (743 chars). AAP clinical practice guideline on UTI in
+children (28 Sep) plus its companion.

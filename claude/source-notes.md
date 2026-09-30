@@ -1515,3 +1515,110 @@ procedures**. A 1,191-case gap the abstract does not reconcile.
 **Do not silently quote the title figure, and do not assume an error either.** The entry reports both
 numbers and states that the abstract does not explain the difference. Adding the arm sizes is a
 five-second check worth running on any paper whose headline is a total.
+
+## The French societies were unreachable by the wrong tool, for two months (added 2026-09-30)
+
+**The most costly error recorded in these notes so far, and it was a retrieval error mistaken for a fact
+about the world.**
+
+SFAR, SPILF and SRLF are **first** in the routine's society list. Before today the archive contained
+**zero items from any of them** — `grep 'society: "SFAR"' _guidelines/*.md` returned nothing across its
+whole history. The standing explanation was the "non-Anglophone blind spot": French societies publish in
+French and their sites resist retrieval.
+
+**Both halves of that were wrong in a way that compounded.**
+
+1. **Europe PMC genuinely cannot find these documents.** The three RFEs reported on 30 September return
+   **nothing** on their official English titles, and **`Anaesthesia Critical Care & Pain Medicine` —
+   SFAR's own English-language journal — deposited nothing at all for August and September 2026.**
+   French-language journals in the field deposited nothing for the whole month. So no query refinement
+   would ever have found them. **That part of the diagnosis was right.**
+2. **The society site is reachable.** `WebFetch` on sfar.org returns **HTTP 403**; **`curl` with a
+   browser `User-Agent` returns HTTP 200** and the full page.
+
+**Rule: a 403 from `WebFetch` is a statement about `WebFetch`, not about the site.** Retry with:
+
+```bash
+curl -s --max-time 40 -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36" "$URL" -o out.html
+```
+
+**Confirmed routes (checked 30 Sep 2026):**
+
+| Society | Route | Status |
+| --- | --- | --- |
+| SFAR | `sfar.org/recommandations/` then per-document slug | **200 via curl+UA**, 403 via WebFetch |
+| SRLF | `srlf.org/recommandations-referentiels-epp` | root 200; that path is the one linked as "REFERENTIELS" |
+| SPILF | `infectiologie.com/fr/recommandations.html` | **200**; note `spilf.fr` does **not resolve** |
+| SFMU | `sfmu.org/fr/publications/recommandations-de-la-sfmu/` | 200 |
+
+**What an SFAR document page contains**, which is more than Europe PMC would give: the English title, the
+type (RFE / RBP), the **society's own date**, participating societies, the full French résumé with
+**objectif / conception / méthodes / résultats**, the **complete GRADE breakdown** (how many GRADE 1,
+GRADE 2, expert opinion, and how many questions got no recommendation), the table of contents by CHAMP,
+the full author list with each author's discipline, and the downloadable PDFs.
+
+**Two dead sub-terms in the French Europe PMC query, found by bisection** — keep them out of the sweep:
+`ABSTRACT:"recommandations formalisées"` matches **0 records all-time**, and
+`ABSTRACT:"Société Française d*Anesthésie"` matches **1**. The terms that work are the bare acronyms:
+`ABSTRACT:"SFAR"` **278**, `ABSTRACT:"SRLF"` **60**.
+
+**The generalisable lesson, which is the reason this note is long:** the zero was *true*. The query was
+sound, the window was populated (4,107 and 3,979 records on the two preceding days), and the sweep
+correctly reported no French guidelines. **A validated negative from one route was then treated as a
+negative about the world, and it licensed two months of not looking.** When a whole *category* of source
+returns nothing for weeks — not one document, a category — **the retrieval path is the suspect, not the
+category.** Absence across a category is evidence about the method.
+
+## GRADE levels map evidence, not importance (added 2026-09-30)
+
+Three RFEs released by one society on the same date, same methodology, make this unusually clean:
+
+| Document | Recommendations | GRADE 1 (high) | Expert opinion |
+| --- | --- | --- | --- |
+| Clinical nutrition, perioperative and critical care | 40 | **11** | 16 |
+| Adult airway management in theatre | 27 | **1** | 13 |
+| In-hospital life-threatening emergencies (UVIH) | 36 | **0** | 28 |
+
+**Nutrition is allocable at random against hard endpoints, so it has trials. Airway rescue and
+hospital-wide emergency response are not practically randomisable, so they have consensus — however
+central they are.** Report the grading as a map of where evidence exists, and say so explicitly, because
+a reader who takes GRADE level as a ranking of clinical importance gets it exactly backwards.
+
+## An abstract can be the previous edition's with the year changed (added 2026-09-30)
+
+The **2026 AHA/ACC perioperative cardiovascular guideline** (10.1161/cir.0000000000001472, 28 Sep 2026)
+deposits an abstract that is **character-for-character the 2024 edition's** (10.1161/cir.0000000000001285)
+except "2024" → "2026". Both are **1,214 characters**. So the 2026 record still states a literature search
+ending **March 2023** and still says it supersedes the **2014** guideline, never mentioning the 2024
+edition in between.
+
+**This was caught only because the length coincidence was flagged and the previous edition was pulled for
+comparison.** Rule: **when a guideline's title carries a year and an earlier edition exists, retrieve the
+earlier edition and diff the abstracts before quoting either as evidence of what changed.** Equal
+`ABSLEN` between editions is a red flag on its own.
+
+**Report it as unresolved rather than guessing.** Could not be settled: the publisher page returns **HTTP
+403**, the JACC co-publication (10.1016/j.jacc.2026.06.017) is **not in Europe PMC** though the 2024
+edition's JACC record, Guideline-at-a-Glance and November 2024 correction all are. A re-issue, a
+carried-over abstract and a duplicate deposit are all consistent with what is visible.
+
+## pubType does not reliably tag a guideline (added 2026-09-30)
+
+The **IONM in spine deformity surgery best-practice guidelines** (*Spine Deformity*, 28 Sep 2026,
+10.1007/s43390-026-01559-9) is a 16-expert modified Delphi producing 27 + 25 consensus items — and is
+indexed as plain **`Journal Article`**, with no `Practice Guideline` or `Consensus Statement` tag.
+
+**So a pubType-filtered guideline sweep will miss real guidelines.** Keep the sweep on **title words**
+(`guideline`, `consensus`, `recommendations`, `position statement`, `scientific statement`, `standards`)
+and treat pubType as a *confirmatory* field only. The reverse also holds: the *Stroke* prehospital-trials
+document **is** tagged `Consensus Statement` but is a consensus on trial methodology, not patient
+management — tagged and out of scope.
+
+## A preprint shows a blank journal title in sweep output (added 2026-09-30)
+
+The CDH haemodynamic consensus preprint resurfaced in the 30 September sweep printing `?` for its journal,
+which reads like an indexing gap in a real journal article rather than what it is. `source` is **`PPR`**
+and `journalInfo` is absent for preprints.
+
+**Rule: a blank journal in sweep output means check `source` before anything else** — and the DOI dedupe
+catches the rest. It was reported, correctly labelled, the previous day.
