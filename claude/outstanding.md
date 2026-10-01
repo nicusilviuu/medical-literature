@@ -1101,3 +1101,86 @@ Statement"** — *JACC*, 30 September 2026, 10.1016/j.jacc.2026.08.025, 2,083-ch
 **Lands two days after the SFAR perioperative and critical care nutrition RFE (sent 09-30), and ESPEN is a
 tracked society.** A three-way comparison — ACC, SFAR/SFNCM and ESPEN — would be a strong entry, and the
 SFAR document's 11 GRADE 1 recommendations give it something concrete to be compared against.
+
+## SRLF SEAM OPENED 2026-10-01 — and it is reachable via Europe PMC, unlike SFAR
+
+Sent 10-01: **cardiogenic shock** (SRLF/SFC/SFAR/SFCTCV, 31 Mar 2026, 10.1016/j.aicoj.2026.100038, also in
+*Arch Cardiovasc Dis* 23 Mar 2026 as 10.1016/j.acvd.2026.02.001); **ICU nutritional support**
+(SRLF/SFNCM/GFRUP, 15 Jul 2025, 10.1186/s13613-025-01509-0, 19 citations); **renal replacement therapy**
+(SRLF/GFRUP consensus conference Nov 2024, 16 Jul 2025, 10.1186/s13613-025-01517-0, 45 statements). Also
+sent: **2026 ACC Scientific Statement on nutrition and CVD** (10.1016/j.jacc.2026.08.025).
+
+**Route: Europe PMC with a 3-5 year window.** SRLF publishes in *Annals of Intensive Care* — open access,
+in PMC, with PDFs. Yesterday's note claiming Europe PMC cannot find French society documents was **true of
+SFAR and wrong of SRLF**; amended in source-notes.
+
+**SRLF backlog, in priority order — all open access in PMC unless noted:**
+
+1. **Guidelines for the Initial Assessment of Respiratory Distress in the Emergency Department** — *Ann
+   Intensive Care*, 20 Jan 2026, 2,534-char abstract. **Newest SRLF guideline after cardiogenic shock;
+   write up next.**
+2. **Oxygen therapy in acute hypoxaemic respiratory failure, SRLF–SFMU** — 5 Sep 2024, 2,121 chars, **37
+   citations** — the most cited SRLF guideline. Primary scope.
+3. **Formal guidelines from an expert panel: ICU medical staffing and organisation** — 20 Jan 2025, 1,653
+   chars. Pairs with the *J Crit Care* nighttime/continuous intensivist coverage review logged 09-29.
+4. **New antibiotics for Gram-negative infections in intensive care** — 4 Jul 2023, 15 citations, plus
+   companion **rationale and evidence** paper 18 Jul 2023 (**51 citations**). Secondary scope; **the only
+   route yet found into francophone ID guidance** while SPILF remains unswept.
+5. **Community-acquired pneumonia in adults, updated guidelines** — 25 Feb 2025, **not in PMC**.
+6. **Neuromuscular blockade and its monitoring in the ICU** — 22 Oct 2025, 2,977 chars. **Title suggests a
+   multicentre study, not a guideline — check pubType before writing up.**
+7. **Acute encephalopathy in the ICU, expert consensus** — society page dated 28 Mar 2025, **39
+   recommendations**, GRADE, covering clinical scores, EEG and neuromonitoring. **Not found in the Europe
+   PMC sweep — its publication needs locating.** Neurocritical care; would also be the archive's first
+   EEG/neuromonitoring guideline.
+8. **RFE — Drépanocytose (sickle cell disease)** — seen only in a page sidebar; locate it.
+
+**Methodological warning recorded in source-notes:** SRLF's own `/recommandations-referentiels-epp` listing
+is **incomplete** — it showed six documents while an article sidebar surfaced three more, including
+cardiogenic shock. Cross-check index against Europe PMC and vice versa.
+
+## French societies still unswept (added 2026-10-01)
+
+- **SPILF** — `infectiologie.com/fr/recommandations.html` reachable (HTTP 200), **never swept**. Next
+  French priority. Also try a Europe PMC seam audit on `ABSTRACT:"SPILF"` / "Société de Pathologie
+  Infectieuse de Langue Française" over 3-5 years, since the SRLF lesson is that the website may not be
+  the only route.
+- **SFMU** — `sfmu.org` reachable; co-signs several SFAR and SRLF documents, so a seam audit is likely to
+  overlap rather than duplicate.
+- **SFAR** — the remaining catalogue listed on 09-30 is unchanged and still unworked. **Website is the only
+  route**; a Europe PMC seam audit will not help for this society.
+
+## Guidelines backlog after 2026-10-01
+
+1. **2026 AHA/ACC perioperative cardiovascular guideline** (10.1161/cir.0000000000001472) — **still
+   unresolved.** Publisher page 403; the JACC co-publication (10.1016/j.jacc.2026.06.017) has **still not
+   appeared in Europe PMC**. Re-check the index periodically; until the full text is read, nothing about
+   what changed from 2024 can be stated.
+2. **SRLF backlog above**, items 1–3 first.
+3. **STROKE gap, still open** — 2026 AHA/ASA early management guideline (10.1161/str.0000000000000513,
+   with two July 2026 corrections) and the **2025 ESO BP update** (10.1093/esj/aakag004, **in PMC with a
+   PDF** — the easiest of the two to work).
+4. **IONM in spine deformity surgery** (10.1007/s43390-026-01559-9) — abstract in hand since 09-30, now
+   deferred twice. Not tagged as a guideline by pubType.
+5. **SRLF RRT full text** — open access in PMC; the abstract is scope-only, so the 45 statements need a
+   full read. Question 3 (dialysis dose) is live against the *Critical Care* CRRT dose-intensity review
+   logged 09-30; question 6 (circuit thrombosis) against the citrate/PT-APTT item logged 10-01.
+6. **ERC 2025** — Newborn (110766), Epidemiology (110733), Education (110739). Lower priority.
+7. **HIS operating theatre ventilation guidelines** — retry with curl + browser UA.
+8. **Distance-simulation airway Delphi** (Acta Anaesthesiol Scand) — education, low priority.
+
+## Society sweep list — current (updated 2026-10-01)
+
+Base: SFAR, SPILF, SRLF, ESAIC, ESC, ESPEN, ESICM, SCCM, IACTS, EACTS, STS, ASA.
+
+**Added after structural gaps:** ERC, ILCOR, AHA ECC, ISHLT, ELSO, SCA/EACTAIC (12 Sep); SEDAR, SEMES,
+SOBA, DAS (21 Sep); ITACTAIC (24 Sep); Latin-American critical care (27 Sep); AATS (28 Sep); AHA/ASA, ESO,
+NCS (30 Sep).
+
+**French partner societies encountered on SFAR and SRLF documents, worth their own seam audits:** SFMU,
+GFRUP, SFNCM, SFC, SFCTCV, CARO, CARORL, SFORL, ADARPEF, SFPC, SFCD, AFDN, FHS.
+
+**Added 10-01:** **ACC** in its own right (its scientific statements are separate from the AHA/ACC joint
+guidelines already tracked).
+
+**Still worth adding, not gap-confirmed:** SAMBA, SPAQI, JBDS-IP.

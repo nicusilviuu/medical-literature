@@ -1714,3 +1714,124 @@ form (`GABA-A`, `PaO2`, `CO2e`) rather than relying on the renderer:
 ```bash
 python3 -c "s=open('FILE').read(); print('**',s.count('**'), '_',s.count('_'))"   # both even
 ```
+
+## AMENDMENT to yesterday's French-societies note (added 2026-10-01)
+
+**Yesterday's note generalised a true finding about SFAR into a false one about "the French societies."**
+It said Europe PMC "genuinely cannot find these documents." Correct for SFAR. **Wrong for SRLF.**
+
+**SRLF publishes its guideline programme in *Annals of Intensive Care* — open access, in PMC, with PDFs.**
+One query returns **24 SRLF records** over four years, most of them in PMC. The gap was never a deposit
+problem; nobody had queried for it.
+
+**Why yesterday's sweep still returned zero: the window, not the index.** The French sweep ran
+`FIRST_PDATE:[2026-09-27 TO 2026-09-30]`. SRLF's documents are from March 2026, January 2026, July 2025,
+September 2024. **A four-day trailing window cannot find a guideline programme that publishes a handful of
+documents a year.**
+
+**Rule: a trailing-window sweep is the wrong instrument for a society's back catalogue.** Two separate
+sweeps are needed and they answer different questions:
+
+| Sweep | Window | Answers |
+| --- | --- | --- |
+| Daily trailing | 3–4 days | "Did anything new appear?" |
+| Seam audit, per society | **3–5 years** | "What does this society have that we have never reported?" |
+
+**Run the seam audit once per society, not daily.** It is what found everything in the 1 October entry.
+
+**The deeper error is worth naming because it repeated within 24 hours.** Yesterday: a retrieval failure
+read as a fact about the world. Today: a correct finding about one society generalised to three.
+**Both are the same mistake — concluding more than the evidence covers — and the second was committed in
+the very note written to warn about the first.** When writing a rule from one society's behaviour, state
+the society, not the category.
+
+**Per-society routes, as now established:**
+
+| Society | Europe PMC | Website |
+| --- | --- | --- |
+| **SFAR** | **nothing** — RFEs not deposited; ACCPM deposited nothing Aug–Sep 2026 | **required**; curl + browser UA (WebFetch 403) |
+| **SRLF** | **yes, thoroughly** — *Ann Intensive Care*, open access, in PMC | useful cross-check; **its index page is incomplete** (see below) |
+| **SPILF** | not yet tested | `infectiologie.com` reachable (200); `spilf.fr` does not resolve |
+
+## A society index page is not a catalogue (added 2026-10-01)
+
+SRLF's `/recommandations-referentiels-epp` listed **six** documents. The sidebar of an individual article
+("Dans la même catégorie") surfaced **three more** that the listing omitted — cardiogenic shock, nutrition,
+sickle cell — and cardiogenic shock is the society's newest and most important guideline.
+
+**Rule: cross-check the society index against a Europe PMC query and the query against the index.** Today
+each one found documents the other missed. Also read the sidebars and "same category" blocks on individual
+document pages; on a CMS-driven society site they are often generated from a more complete taxonomy than
+the curated listing page.
+
+## The arithmetic gap was a counting convention — flagged 09-30, resolved 10-01
+
+Yesterday's entry flagged the SFAR in-hospital emergencies RFE for stating **36 recommendations** against a
+GRADE breakdown summing to **32**, and declined to guess. With six comparable documents the pattern is
+unambiguous:
+
+| Document | Stated | Graded | No-reco questions | Graded + unanswered |
+| --- | --- | --- | --- | --- |
+| SFAR airway | 27 | **27** | 1 | 28 |
+| SFAR in-hospital emergencies | 36 | 32 | 4 | **36** |
+| SFAR nutrition | 40 | 36 | 3 + 1 regulatory | **40** |
+| SRLF nutrition, adults | 34 | **34** | 0 | 34 |
+| SRLF nutrition, children | 29 | **29** | 0 | 29 |
+| SRLF cardiogenic shock | 41 | 35 | 6 | **41** |
+
+**Where a panel reports questions it could not answer, the stated total includes them.** Every document
+reconciles on that reading.
+
+**Two lessons.** First, **the pre-commit arithmetic check is worth keeping** — it surfaced something real.
+Second, **a flag is not a finding, and publishing one invites a reader to draw the conclusion you
+withheld.** Yesterday's wording was honest but a reader could reasonably have inferred sloppiness that is
+not there. **When flagging an unexplained number, say explicitly what it is not yet evidence of** — and
+revisit it once there is a comparison set. A correction notice has been added to the 30 September entry.
+
+## Two French recommendation methodologies, genuinely different (added 2026-10-01)
+
+Worth recording because guideline methodology is usually skimmed as boilerplate:
+
+- **Modified Delphi among topic experts** (most documents in this archive — ISHLT, ERC, the SFAR RFEs,
+  the spine IONM consensus): the people who know the field write and vote the recommendations.
+- **Conférence de consensus** (SRLF's RRT document): **18 topic experts argue their answers in a public
+  session and are cross-examined by a jury of 14 intensivists and a nurse who are *not* topic experts; the
+  jury then retires for 48 hours to write and vote the recommendations.** The question-setting committee
+  was required to have **no conflict of interest on the subject.**
+
+**The second design deliberately separates expertise from authorship.** Which produces better
+recommendations is not something this archive can answer — **but note the design when reporting, because
+the two embed different assumptions about whose judgement to trust**, and a reader comparing two documents'
+recommendations is also comparing two procedures.
+
+## Abstracts that state recommendations vs abstracts that state scope (added 2026-10-01)
+
+Within one society and one journal, two months apart:
+
+- **SRLF cardiogenic shock (31 Mar 2026): the abstract names the actual recommendations** — norepinephrine
+  first-line, selective inotropes, Impella/VA-ECMO reserved for carefully selected patients after expert
+  team discussion, shock teams and regional networks, early culprit-lesion revascularisation.
+- **SRLF renal replacement therapy (16 Jul 2025): the abstract lists the seven questions and the count (45
+  statements) and not one recommendation.**
+
+**So "this society deposits scope-only abstracts" is not a stable property even within one society and
+journal** — the same lesson as the ISHLT correction on 29 September, now seen in the other direction.
+**Check each document; never carry a society-level expectation forward.** Both of these are open access in
+PMC, so the scope-only one is retrievable rather than lost.
+
+## A scientific statement is a different instrument from a formalised recommendation (added 2026-10-01)
+
+The **2026 ACC Scientific Statement** on nutrition and cardiovascular disease contains **no recommendation
+count, no grading scheme and no evidence-certainty statement** — it says evidence "consistently supports"
+various things. The French RFEs say exactly how many recommendations rest on what quality of evidence and
+how many questions went unanswered.
+
+**Do not compare confident prose in a scientific statement with a GRADE 1 recommendation.** Report which
+instrument a document is, and treat the absence of a grading scheme as a fact about the document rather
+than as weak evidence.
+
+**Related trap avoided in the same entry: a shared word is not a shared subject.** The ACC statement is
+about **diet** (population and outpatient risk over years); the SFAR and SRLF documents are about
+**nutritional support** (feeding a patient who cannot eat). Framing them as "three nutrition guidelines
+this week" would have misled. **Check that documents sharing a topic word share a clinical problem before
+pairing them.**
