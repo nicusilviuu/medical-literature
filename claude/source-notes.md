@@ -1622,3 +1622,95 @@ and `journalInfo` is absent for preprints.
 
 **Rule: a blank journal in sweep output means check `source` before anything else** — and the DOI dedupe
 catches the rest. It was reported, correctly labelled, the previous day.
+
+## Convincing surrogates across independent measures still predicted nothing (added 2026-10-01)
+
+The volatile-sedation-in-ARDS arc is the cleanest surrogate-endpoint failure this archive has documented,
+and it is worth keeping because the surrogates were **not** weakly positive:
+
+| Year | Study | n | Endpoints | Result |
+| --- | --- | --- | --- | --- |
+| 2017 | AJRCCM pilot RCT, sevoflurane vs **midazolam** (10.1164/rccm.201604-0686oc, 137 citations) | 50 | PaO2/FiO2, cytokines, sRAGE | **PaO2/FiO2 205 vs 166, P=0.04**; inflammation and epithelial injury markers down; no SAEs |
+| 2025 | **SESAR**, JAMA, sevoflurane vs **propofol** (10.1001/jama.2025.3169, 38 citations) | 687 | **Ventilator-free days, 90-day survival** | **VFD median difference −2.1**; **90-day survival 47.1% vs 55.7%, HR 1.31**; 7-day mortality 19.4% vs 13.5% |
+| 2026 | *Intensive Care Medicine* review (10.1007/s00134-026-08613-0) | — | — | **Routine use not recommended outside trials** |
+
+**Three mechanistically independent surrogates — gas exchange, inflammatory mediators, a marker of
+epithelial injury — all moved in the direction preclinical work predicted, and the mortality went the
+other way.** Record the pattern, not just the conclusion: breadth of surrogate agreement is not evidence
+of outcome benefit, and "several different measures all improved" is precisely the argument that failed
+here.
+
+**Two details that are easy to lose and change the reading.** The **comparator changed** between the two
+trials (midazolam → propofol): beating midazolam on oxygenation is a much lower bar. And the **exposure
+changed** — SESAR sedated for up to **7 days**, against 48 h in the pilot. When quoting a reversal,
+check whether the comparator or the dose moved before attributing it to the surrogate.
+
+**Companion rule:** when a current review reports a trial result, **retrieve the trial** and quote its own
+numbers. The review here said "reduced ventilator free days and increased mortality," which is true but
+carries none of the magnitude; the archive's rule that every number on the page comes from a record
+retrieved in that run is what turned it into 8.6 percentage points of 90-day survival.
+
+## Note when a null and a harm result come from the same comparison (added 2026-10-01)
+
+Volatile versus intravenous has now been answered twice in this archive with opposite conclusions:
+
+- **Theatre, hours:** JAMA pragmatic RCT, 2,508 patients, TIVA vs volatile — **no difference** in days
+  alive and at home (sent 09-24).
+- **ICU, up to 7 days:** SESAR, 687 patients, sevoflurane vs propofol — **worse survival** (sent 10-01).
+
+**Same drug class, same comparison, opposite results — which is the strongest available argument that dose
+and duration rather than agent class carry the effect.** Report such pairs side by side; a reader who met
+only one would generalise it wrongly in either direction.
+
+## Do not let an environmental argument carry a clinical conclusion (added 2026-10-01)
+
+Yesterday's entry established that sevoflurane dominates anaesthetic CO2e; today's established that
+volatile ICU sedation costs survival. **They agree, and the agreement is a coincidence of direction, not
+evidence.** The entry says so explicitly: the clinical result "would be just as decisive if sevoflurane
+had no warming potential at all."
+
+**Rule: when a sustainability finding and a clinical finding point the same way, say that they do and say
+that it is not an argument.** The reverse case will arrive — a lower-carbon option that is clinically
+worse — and an archive that has been letting the two reinforce each other will have no clean way to
+report it.
+
+## A length-of-stay effect too large for its own mechanism is a confounding flag (added 2026-10-01)
+
+The RAPM paravertebral-vs-ESPB registry study reports, from the same adjusted analysis, **9.4 mg less oral
+morphine equivalent in the PACU** and **1.2 fewer days in hospital**. Those are not reconcilable through
+analgesia: thoracic length of stay is governed by chest drains, air leaks, complications and discharge
+logistics, and 9 mg of morphine equivalent in recovery does not move it by a day.
+
+**Rule: check whether each reported effect is plausible for the mechanism claimed, and size the implied
+causal chain.** Where it is not, name the likely confounder rather than reporting the number. Here the arm
+sizes point at it — **283 ESPB vs 121 TPVB across 2020–2024** means block choice is entangled with
+calendar time, proceduralist and probably case complexity. **Report the proximal endpoint as credible and
+the distal one as a flag.**
+
+## A single journal issue can swamp a trailing-window sweep (added 2026-10-01)
+
+The 30 September – 1 October sweep returned **105 priority-journal records**, a large majority of them
+*AJRCCM* items from an interstitial-lung-disease special section, and most of those **letters, replies and
+corrections with zero-length abstracts.**
+
+**Mechanical consequences to expect and handle:**
+- The `Letter`/`Comment`/`Editorial` pubType filter does most of the work on such a day — print the flag
+  in the sweep output rather than filtering silently, so the distortion is visible.
+- **A high hit count is not a rich window.** Judge the sweep by how many records carry abstracts in
+  scope, not by `hitCount`.
+- A themed issue in one journal can crowd the 200-record page size. **If a single journal exceeds roughly
+  half the returned records, re-run the sweep with that journal excluded** to confirm nothing in-scope was
+  pushed off the page.
+
+## Intra-word underscores are a latent emphasis hazard (added 2026-10-01)
+
+`GABA_A` written five times left the file with an **odd number of underscores**. Kramdown generally
+ignores intra-word underscores, so it would probably have rendered correctly — but it is the same class of
+defect as the unbalanced `**` caught on 29 September, and it is invisible to the `**` check.
+
+**Extend the pre-commit check to underscores, and normalise subscript notation** to a hyphenated or plain
+form (`GABA-A`, `PaO2`, `CO2e`) rather than relying on the renderer:
+
+```bash
+python3 -c "s=open('FILE').read(); print('**',s.count('**'), '_',s.count('_'))"   # both even
+```

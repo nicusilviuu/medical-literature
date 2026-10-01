@@ -1044,3 +1044,60 @@ Intervent Radiol*, 29 Sep, 1,577 chars). Paediatric empyema thoracis evidence-ba
 Pediatrics*, 28 Sep, **3,824-char abstract** — unusually full; thoracic, paediatric). S2k liver
 transplantation guidelines key facts, German (743 chars). AAP clinical practice guideline on UTI in
 children (28 Sep) plus its companion.
+
+## Sent 2026-10-01
+
+- *Intensive Care Medicine* review — volatile anaesthetic sedation in ARDS (10.1007/s00134-026-08613-0).
+  **This clears the ICM volatile-sedation item flagged as highest priority on 09-30.**
+- **SESAR** — JAMA, 1 May 2025, 10.1001/jama.2025.3169, 687 patients, 37 French ICUs (older-but-popular,
+  38 citations). Also quoted from records retrieved the same run: the **2017 AJRCCM pilot**
+  (10.1164/rccm.201604-0686oc, 137 citations).
+- *Reg Anesth Pain Med* — TPVB vs ESPB for minimally invasive thoracic surgery
+  (10.1136/rapm-2026-108183). Also quoted: **JAMA Surgery 2023 surgeon-performed PVB noninferiority RCT**
+  (10.1001/jamasurg.2023.5228, 14 citations) — worth an item of its own if the thread continues.
+- *BJA* — human brain assembloids and propofol (10.1016/j.bja.2026.07.062).
+
+**Still outstanding from the 09-30 list — the J-PEDIA supraglottic airway paper was NOT sent today**
+(10.1016/j.bja.2026.07.046, abstract retrieved in full on 09-30, aRR 0.41). **It stays at the top of the
+queue.**
+
+## Logged from the 30 Sep – 1 Oct sweep, not yet written up (added 2026-10-01)
+
+**Write up next, in order:**
+1. ***BJA* J-PEDIA supraglottic airway vs tracheal intubation in children with airway hyperresponsiveness**
+   — carried over, abstract already in hand. Two runs deferred now; do not defer a third.
+2. ***J Crit Care*, 30 Sep — sedation trajectories and circadian rhythm disruption in critically ill
+   adults** (1,636 chars). Pairs directly with today's sedation pair; the natural follow-on entry.
+3. ***AJRCCM*, 1 Oct — three versus six weeks of corticosteroids for mild immune-related pneumonitis, a
+   randomised trial** (1,849 chars). An actual RCT in the ILD special section.
+
+**Also logged:**
+- *J Crit Care*, 30 Sep — epidemiology of platelet transfusion in critically ill patients, multicentre
+  observational (1,797 chars).
+- *AJRCCM*, 1 Oct — white blood cell count and treatment response to **cefepime vs
+  piperacillin-tazobactam** (2,105 chars) — ID/ICU, and relevant to the antibiotic-duration item also
+  logged (*AJRCCM*, 29 Sep).
+- *AJRCCM*, 1 Oct — a **grading system of dynamic fibrinolysis resistance in sepsis** associated with ICU
+  outcomes. **No abstract deposited — retry.** Would pair with the antithrombin / symmetrical peripheral
+  gangrene coagulopathy thread.
+- *Crit Care Med*, 30 Sep — soluble biomarker association modified by diabetes and atherosclerotic
+  cardiovascular disease (1,937 chars).
+- *Chest*, 30 Sep — oral corticosteroids vs antifungals, real-world effectiveness (1,994 chars).
+- *AJRCCM*, 1 Oct — **acute exacerbation in fibrotic interstitial lung disease: an international working
+  group report** (1,809 chars). Borderline guideline; ILD is outside primary scope but a working-group
+  definition paper may suit the watch.
+- *BJA*, 30 Sep — multimorbidity in patients undergoing day surgery (**no abstract — retry**); population
+  ageing and divergent trends in intensive care utilisation (Letter, 592 chars).
+- *Anesth Analg*, 30 Sep — **conventional PT and APTT mask citrate-induced** coagulopathy (**no abstract —
+  retry**). Potentially practical for CRRT/massive transfusion.
+- *ICVTS*, 30 Sep — preoperative EQ-5D visual analogue score and recurrence-free survival (1,585 chars).
+
+## For the guidelines watch (added 2026-10-01)
+
+**"Food and Health: Nutrition for Prevention and Management of Cardiovascular Disease: 2026 ACC Scientific
+Statement"** — *JACC*, 30 September 2026, 10.1016/j.jacc.2026.08.025, 2,083-char abstract, pubType
+`Review` (**not** tagged as a guideline — the 09-30 note on pubType unreliability applies again).
+
+**Lands two days after the SFAR perioperative and critical care nutrition RFE (sent 09-30), and ESPEN is a
+tracked society.** A three-way comparison — ACC, SFAR/SFNCM and ESPEN — would be a strong entry, and the
+SFAR document's 11 GRADE 1 recommendations give it something concrete to be compared against.
