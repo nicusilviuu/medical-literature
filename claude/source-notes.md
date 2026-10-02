@@ -1835,3 +1835,88 @@ about **diet** (population and outpatient risk over years); the SFAR and SRLF do
 **nutritional support** (feeding a patient who cannot eat). Framing them as "three nutrition guidelines
 this week" would have misled. **Check that documents sharing a topic word share a clinical problem before
 pairing them.**
+
+## A device can improve a measurement and destroy its diagnostic value (added 2026-10-02)
+
+The clearest instance yet of a measurement failing without being wrong, and the mechanism is close to
+arithmetic rather than being a bias or an artefact.
+
+**Paediatric universal videolaryngoscopy** (*Anaesthesia*, 11 Jul 2024, 10.1111/anae.16366, 20 citations),
+904 intubations, same patients assessed both ways:
+
+- Restricted glottic view fell from **117/904 (13%) by direct view to 32/904 (4%) by videolaryngoscopy**.
+  **92%** of previously invisible cords became visible.
+- Cormack-Lehane AUROC for discriminating easy from difficult intubation: **0.68 (0.59–0.78) for the
+  videolaryngoscopic view against 0.80 (0.73–0.87) for the direct view, p = 0.005.**
+
+**The device improved the view and made the view a worse predictor, in the same patients.** The mechanism:
+**a test loses discrimination when the thing it tests for stops varying.** The information lived in the
+failure to see; the camera removed the failure.
+
+Confirmed in adults the same week — **VCISpain** (*Anaesthesia*, 2 Oct 2026, 10.1111/anae.70417), 5,302
+intubations across 44 hospitals: **24.5% of poor views (POGO<25%) were easy; 6.3% of excellent views
+(POGO>75%) were difficult or failed; and 252 of the 527 difficult-or-failed intubations at POGO≥25% —
+nearly half — had an excellent view.**
+
+**Rule: when a new device or technique shifts a measurement's distribution towards one end, re-ask whether
+the measurement still discriminates.** Improvement in a grading scale is not evidence the scale still
+works, and carrying a grade across from the old technique to the new one is not the conservative choice —
+it silently changes what the grade means. **Look for a paper reporting the same scale both ways in the same
+patients; that design is what makes this provable.**
+
+## Two different ways a surrogate fails — name which one (added 2026-10-02)
+
+Two entries on consecutive days, opposite resolutions:
+
+| Case | Surrogates | Hard outcomes | Failure mode |
+| --- | --- | --- | --- |
+| Volatile sedation in ARDS (10-01) | Oxygenation, cytokines, sRAGE — **all improved** | **Survival worse** (47.1% vs 55.7%) | Surrogate pointed the **wrong way** |
+| Videolaryngoscopy (10-02) | Cormack-Lehane 3/4 views — **RR 0.14 to 0.38**, the largest effect in the review | **Improved, but modestly** — failed intubation RR 0.41–0.51 | Surrogate pointed the **right way, at the wrong magnitude, and apparently not causally** |
+
+**The second mode is less dramatic and probably more common**, and it is the one that quietly justifies a
+practice on an inflated effect size. **State which failure mode applies rather than writing "surrogate
+endpoints are unreliable."** The videolaryngoscopy case also shows the two can coexist: the hard outcomes
+genuinely improved, so the intervention is sound and only the measurement around it is not.
+
+## A large effect from a non-randomised device choice is a confounding signal (added 2026-10-02)
+
+The **J-PEDIA** supraglottic-airway study (*BJA*, 29 Sep 2026, 10.1016/j.bja.2026.07.046) reports adjusted
+risk ratios of **0.41 / 0.32 / 0.47** for respiratory adverse events, airway-management events and severe
+desaturation — a **53–68% relative reduction from choosing a device** in children with airway
+hyperresponsiveness.
+
+**Bigger than most interventions in paediatric anaesthesia achieve, from a choice made by clinical
+judgement.** Name the direction of the likely confounding concretely: **an anaesthetist who judges a wheezy
+child safe for a supraglottic airway is encoding information the propensity model cannot capture — the
+healthier children get the SAD.** The authors flag residual confounding themselves. **The honest reading of
+such a study is "direction probably right, magnitude probably inflated"** — which is more useful to a
+reader than either accepting or dismissing it.
+
+**Also check the denominator fraction and the composite's heterogeneity.** Here **4,878 of 27,844
+encounters (17.5%)** were analysed, and the eligibility composite ran from **active upper respiratory
+infection to household smoking exposure** — very different exposures pooled as one phenotype, with no
+subgroup breakdown in the abstract.
+
+## Two papers from one registry are not one paper (added 2026-10-02)
+
+J-PEDIA has produced **two** papers on induction-phase airway events in children, and they were nearly
+conflated here more than once:
+
+- *BJA*, 29 Sep 2026, **supraglottic airway vs tracheal intubation in airway hyperresponsiveness**
+  (10.1016/j.bja.2026.07.046) — **reported 10-02.**
+- *Anesth Analg*, 9 Sep 2026, **extreme weight-for-age and airway adverse events at induction** —
+  **no abstract deposited**, still outstanding.
+
+**Rule: when a registry name appears in `outstanding.md`, check the DOI, not the registry.** A registry
+publishes repeatedly on adjacent questions; "we already have the J-PEDIA paper" is the exact shape of a
+false dedupe. Same hazard applies to MIMIC-IV, eICU-CRD and any large shared dataset.
+
+## An item deferred twice will be deferred forever unless named (added 2026-10-02)
+
+The J-PEDIA supraglottic-airway paper had its abstract retrieved **in full on 30 September** and was then
+left out of three consecutive briefs while fresher material displaced it each day.
+
+**Rule: an item whose abstract has already been retrieved has no remaining cost to report and should go in
+the next entry.** The retrieval was the work. When `outstanding.md` marks something "write up next" and the
+next run does not, say so on the page and state why — and when a thin window arrives, **a fully-prepared
+carry-over is the best thing to reach for**, not a reason to go hunting.

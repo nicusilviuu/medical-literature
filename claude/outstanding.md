@@ -1184,3 +1184,78 @@ GFRUP, SFNCM, SFC, SFCTCV, CARO, CARORL, SFORL, ADARPEF, SFPC, SFCD, AFDN, FHS.
 guidelines already tracked).
 
 **Still worth adding, not gap-confirmed:** SAMBA, SPAQI, JBDS-IP.
+
+## Sent 2026-10-02 — airway entry
+
+- *Anaesthesia*, 2 Oct 2026 — **VCISpain, glottic view vs tracheal tube delivery**, 5,302 intubations, 44
+  hospitals (10.1111/anae.70417). **This is the prospective validation the 26 Aug *Anaesthesia* systematic
+  review of videolaryngoscopy classification tools was calling for** — thread closed, five weeks.
+- *Anaesthesia*, 11 Jul 2024 — **universal paediatric videolaryngoscopy and glottic view grading**
+  (10.1111/anae.16366, 20 citations), older-but-popular. Carries the sharper finding: Cormack-Lehane AUROC
+  **0.68 videolaryngoscopic vs 0.80 direct**, same patients.
+- *BJA*, 9 Jul 2022 — **Cochrane VL vs DL update**, 222 RCTs, 26,149 participants (10.1016/j.bja.2022.05.027,
+  105 citations). Cochrane original 10.1002/14651858.cd011136.pub3 (127 citations) also retrieved — its
+  abstract is 6,807 chars and carries per-design detail the BJA condensation omits. **Use the Cochrane
+  version when numbers are needed.**
+- *BJA*, 29 Sep 2026 — **J-PEDIA supraglottic airway vs tracheal intubation in airway hyperresponsiveness**
+  (10.1016/j.bja.2026.07.046). **Carried for three runs; now cleared.**
+
+**REMOVED from the queue:** the J-PEDIA supraglottic airway item. **STILL OUTSTANDING and not to be
+confused with it:** the *Anesth Analg* J-PEDIA **extreme weight-for-age** paper (9 Sep 2026), which still
+has no abstract deposited — retry.
+
+## Write up next — in order, as of 2026-10-02
+
+1. ***J Crit Care*, 30 Sep — sedation trajectories and circadian rhythm disruption in critically ill
+   adults** (10.1016/j.jcrc.2026.155759). **Abstract retrieved in full on 10-02 — no retrieval cost left,
+   so it goes in the next entry.** MIMIC-IV n=13,592, external validation eICU-CRD n=12,004, DTW clustering
+   into four sedation trajectories, rhythmicity by Lomb-Scargle/wavelet/entropy/cosinor. **Sustained
+   high-dose propofol had the weakest vital-sign rhythmicity.** Exploratory mediation via temperature
+   wavelet power **23.5% (16.9–31.0%)** but **"ranged from 0% to 34% across assumptions"**, and the authors
+   warn the proxies **"should not be interpreted as direct measures of central circadian function."**
+   Unusually candid self-limitation — worth a full slot for that alone.
+2. ***Anesthesiology*, 1 Oct — vigilance recovery in rats after anaesthesia, touchscreen-based cognitive
+   task** (2,154 chars). **The behavioural companion to the human assembloid paper sent 10-01** — two
+   mechanistic anaesthesia models in two days, one in vitro and one behavioural. Pair them.
+3. ***Critical Care*, 1 Oct — plasma ferritin and suPAR as treatable traits** in critical illness (2,200
+   chars). Belongs with the phenotyping thread.
+4. ***J Crit Care*, 1 Oct — lung ultrasound findings in ARDS under the 2023 global definition** (1,397
+   chars). Pairs with the ARDS volatile-sedation pair sent 10-01.
+5. ***AJRCCM*, 1 Oct — three versus six weeks of corticosteroids for mild immune-related pneumonitis**, a
+   randomised trial (1,849 chars). Carried from 10-01.
+6. ***RAPM*, 1 Oct — micro-endoscopy with ultrasound guidance for transversus abdominis plane catheters**
+   (1,328 chars).
+
+**Also still carried:** *AJRCCM* 1 Oct cefepime vs piperacillin-tazobactam and WBC count (2,105 chars);
+*AJRCCM* dynamic fibrinolysis resistance grading in sepsis (**no abstract — retry**); *Anesth Analg* 30 Sep
+PT/APTT masking citrate-induced coagulopathy (**no abstract — retry**); *BJA* 30 Sep multimorbidity in day
+surgery (**no abstract — retry**); *Crit Care Med* 30 Sep soluble biomarker modified by diabetes/ASCVD;
+*ICVTS* 1 Oct stage IA invasive mucinous adenocarcinoma survival (1,879 chars).
+
+## For the guidelines watch (added 2026-10-02)
+
+***Circulation*, 1 October — "Impact of Undertreated Antithrombotic Therapy on Adverse Patient Outcomes: A
+Scientific Statement"** (1,323 chars). **Pairs with the ESAIC/ESRA antithrombotic guideline sent 2026-09-06
+and the SFAR RFE on anticoagulant management for planned invasive procedures** still unworked on the SFAR
+catalogue — a three-way comparison is available there whenever the watch wants it.
+
+## Airway thread — state of coverage as of 2026-10-02
+
+Now unusually well covered, and worth recording so the next run does not re-tread it:
+
+- **Guidelines:** DAS 2025 (09-21); SEDAR/SEMES/FLAME universal videolaryngoscopy, which concedes its own
+  evidence is weak (09-21); obesity-specific airway recommendations (09-21); **SFAR/CARORL/CARO/FHS/SFORL
+  adult airway in theatre, 27 recommendations with a third of the document on human factors (09-30)**;
+  PUMA extubation and the ATS noninvasive respiratory support guideline (late Aug).
+- **Classification:** *Anaesthesia* systematic review of videolaryngoscopy classification tools (08-28) →
+  **VCISpain three-domain validation (10-02)**.
+- **View versus difficulty:** paediatric Cormack-Lehane AUROC study (2024) and VCISpain (2026), both sent
+  10-02.
+- **Evidence base:** Cochrane VL vs DL, 222 RCTs (sent 10-02).
+- **Device choice:** J-PEDIA supraglottic airway in airway hyperresponsiveness (sent 10-02).
+- **Still open:** the **distance-simulation airway Delphi** (Acta Anaesthesiol Scand, Sep 2026, education,
+  low priority); the *Anaesthesia* mask-ventilation letters logged 18 Sep with no abstracts; the
+  *Anesth Analg* J-PEDIA weight-for-age paper (no abstract).
+
+**What the thread now lacks: any hard-outcome paper on the universal-videolaryngoscopy question since the
+2022 Cochrane review.** If a large pragmatic trial of universal VL appears, that is the slot it fills.
