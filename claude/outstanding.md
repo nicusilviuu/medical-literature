@@ -1259,3 +1259,100 @@ Now unusually well covered, and worth recording so the next run does not re-trea
 
 **What the thread now lacks: any hard-outcome paper on the universal-videolaryngoscopy question since the
 2022 Cochrane review.** If a large pragmatic trial of universal VL appears, that is the slot it fills.
+
+## SPILF SEAM OPENED 2026-10-02 — all three French societies now done
+
+Sent 10-02: **SFAR/SFMU procedural sedation in emergency medicine** (society date 25 Jun 2026, website
+route); **Spanish national paediatric procedural sedation Delphi** (10.1111/1742-6723.70344, new);
+**AHA scientific statement on undertreated antithrombotic therapy** (10.1161/cir.0000000000001474, new);
+**SPILF/SPLF community-acquired pneumonia update** (10.1016/j.resmer.2025.101161) — **first SPILF item ever.**
+
+**SPILF route: Europe PMC seam audit, 4-year window.** Behaves like SRLF, not SFAR. 25 records returned,
+five tagged Practice Guideline.
+
+**SPILF backlog — in scope or borderline, none reported:**
+1. **Neurosurgical management of the acute phase of adult and paediatric traumatic brain injury** —
+   *Neuro-Chirurgie*, 23 May 2025, **Practice Guideline**, 1,574 chars. **Neurotrauma is primary scope and
+   the archive has no neurotrauma guideline at all** — likely the highest-value item here.
+2. **Partial Oral Antibiotic Therapy for Infective Endocarditis: A Practical Review** — *Pathogens*, 2 Sep
+   2026, 2,134 chars, **in PMC**. A review not a guideline, but partial oral therapy for IE is a major live
+   practice question with ICU and cardiac surgery overlap.
+3. **Antibiotic treatment of male urinary tract infections: scientific rationale** — *Infect Dis Now*, 25 Jun
+   2026, 1,813 chars. Most recent substantive SPILF document; secondary scope.
+4. **SPILF update on bacterial arthritis in adults and children** — *Infect Dis Now*, 21 Mar 2023, PG.
+   **Borderline** — bone and joint infection.
+5. **2022 SPILF clinical practice guidelines** (*Infect Dis Now*, 21 Jan 2023, PG, 1,216 chars) — **full title
+   not yet retrieved; get it before deciding scope.**
+6. **Clinical practice recommendations for infectious disease management of diabetic foot** — 10 Nov 2023, PG.
+   Out of primary scope.
+7. **Spondylodiscitis: a call for unified guidelines** — *Eur Radiol*, 13 Mar 2026. A call, not a guideline.
+
+**CAP full text wanted.** The abstract is scope-only. **The DOI resolves (HTTP 200)**, unlike the AHA/ACC
+guideline, so this is a realistic read. Three domains to extract: **antibiotic duration** (pairs with the
+*AJRCCM* 29 Sep sepsis-duration paper, still unwritten), **systemic corticosteroids in severe CAP**, and
+**pleuropulmonary ultrasound** (pairs with the *J Crit Care* lung-ultrasound-in-ARDS paper logged 10-01).
+
+## 2026 AHA/ACC perioperative guideline — status as of 2026-10-02
+
+**Narrowed, still unresolved.** The **JACC co-publication appeared in the index today**
+(10.1016/j.jacc.2026.06.017, first publication **1 Sep 2026**, indexed 1 Oct 2026). Its abstract is
+**byte-identical** to the *Circulation* 2026 abstract (MD5 `8d624859f384`), and both differ from 2024
+(`f8ee1aef7cc5`) only by the year.
+
+- **Ruled out:** duplicate deposit of the 2024 record. A real co-publication exists with its own DOI and PMID.
+- **Worse than thought:** the stale abstract went out through **both** journals.
+- **Still open:** whether the recommendations changed. Both publisher pages **HTTP 403**, neither in PMC.
+
+**Next checks:** whether either record enters PMC; whether a "Guideline-at-a-Glance" appears as it did for the
+2024 edition; whether a correction is issued. **Do not state anything about what changed from 2024.**
+
+## Guidelines backlog after 2026-10-02
+
+1. **2026 AHA/ACC perioperative cardiovascular guideline** — above. Top priority, blocked on access.
+2. **SPILF neurotrauma guideline** (*Neuro-Chirurgie*, 23 May 2025) — **no neurotrauma guideline in the
+   archive**; highest-value unblocked item.
+3. **SRLF backlog** (unchanged, six items): ED respiratory distress assessment (20 Jan 2026, newest);
+   SRLF–SFMU oxygen therapy (5 Sep 2024, 37 citations); ICU staffing and organisation (20 Jan 2025); new
+   antibiotics for Gram-negative infections (2023, companion paper 51 citations); CAP (now sent via SPILF);
+   neuromuscular blockade monitoring (**check pubType — may be a study**); acute encephalopathy consensus
+   (**publication still not located**); RFE drépanocytose.
+4. **STROKE gap** — 2026 AHA/ASA early management guideline (two July 2026 corrections) and the **2025 ESO BP
+   update** (in PMC with a PDF — easiest first).
+5. **IONM in spine deformity surgery** (10.1007/s43390-026-01559-9) — abstract in hand since 09-30, deferred
+   three times now. **Per the rule added 10-02, an item with its abstract already retrieved should go next.**
+6. **SFAR remaining catalogue** (website route only): paediatric regional anaesthesia; intra-abdominal
+   infections; anticoagulants for planned invasive procedures (**pairs with the AHA antithrombotic statement
+   sent today and the ESAIC/ESRA guideline sent 09-06 — a three-way comparison is ready**); neurotrauma
+   initial phase; hepatic resection; ECBU before urological procedures; medication-error prevention with
+   SFPC; perioperative immediate hypersensitivity with SFA.
+7. **ERC 2025** — Newborn, Epidemiology, Education. Lower priority.
+8. **HIS operating theatre ventilation** — retry with curl + browser UA.
+
+## New gaps named 2026-10-02
+
+- **Chinese society documents — no route established.** The *Chinese Journal of Pediatrics* **expert consensus
+  on nutritional assessment and support for paediatric ECMO** (1 Oct 2026, tagged Consensus Statement) is
+  squarely in scope — ECMO and nutrition — but **deposits no abstract and is in Chinese.** Two further Chinese
+  consensus documents appeared in the same sweep (radionuclide V/Q protocol; cow's-milk protein allergy
+  nutrition), also abstract-free. **This is now a named structural gap, not an absence.**
+- **Brazilian Society of Surgical Oncology — Bloodless Surgery guideline, Part 3: Postoperative**
+  (*J Surg Oncol*, 30 Sep 2026, 1,583 chars). Perioperative transfusion-free management is in scope.
+  **Locate parts 1 and 2 before reporting any part.**
+- ***J Crit Care*, 1 Oct — "The clinical side of Icarus: hubris, overconfidence, and sepsis guidelines."** No
+  abstract, no type marking it as commentary. **A critique of sepsis guidelines belongs to this watch even
+  though it is not a guideline** — worth a full-text look.
+
+## Society sweep list — current (updated 2026-10-02)
+
+Base: SFAR, SPILF, SRLF, ESAIC, ESC, ESPEN, ESICM, SCCM, IACTS, EACTS, STS, ASA. **All three French base
+societies now opened.**
+
+**Added after structural gaps:** ERC, ILCOR, AHA ECC, ISHLT, ELSO, SCA/EACTAIC (12 Sep); SEDAR, SEMES, SOBA,
+DAS (21 Sep); ITACTAIC (24 Sep); Latin-American critical care (27 Sep); AATS (28 Sep); AHA/ASA, ESO, NCS
+(30 Sep); ACC in its own right (1 Oct).
+
+**French partner societies, seam audits not yet run:** SFMU, SPLF, GFRUP, SFNCM, SFC, SFCTCV, SFM, SFR, CARO,
+CARORL, SFORL, ADARPEF, SFPC, SFCD, AFDN, FHS. **SFMU and SPLF are the highest value** — SFMU co-signs the
+procedural sedation and UVIH documents and SPLF co-authored the CAP update, so both clearly publish.
+
+**Still worth adding, not gap-confirmed:** SAMBA, SPAQI, JBDS-IP.

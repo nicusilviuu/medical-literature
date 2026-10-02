@@ -1920,3 +1920,123 @@ left out of three consecutive briefs while fresher material displaced it each da
 the next entry.** The retrieval was the work. When `outstanding.md` marks something "write up next" and the
 next run does not, say so on the page and state why — and when a thin window arrives, **a fully-prepared
 carry-over is the best thing to reach for**, not a reason to go hunting.
+
+## All three French societies now open — and the seam audit worked first time (added 2026-10-02)
+
+SFAR (09-30), SRLF (10-01), SPILF (10-02). Three days, three societies that had produced **zero** items in
+the archive's history while heading the routine's own priority list.
+
+**The seam-audit rule written yesterday was applied to SPILF today and worked immediately:** a four-year
+Europe PMC window on `ABSTRACT:"SPILF"` and the society's full names returned **25 records, five tagged
+Practice Guideline.** No website scraping was needed. **So SPILF behaves like SRLF, not like SFAR.**
+
+**Final per-society routes:**
+
+| Society | Europe PMC seam audit | Website |
+| --- | --- | --- |
+| **SFAR** | **nothing** — RFEs never deposited | **the only route**; curl + browser UA (WebFetch 403) |
+| **SRLF** | **yes** — *Ann Intensive Care*, open access, in PMC | cross-check; index page incomplete |
+| **SPILF** | **yes** — *Infectious Diseases Now*, *Respir Med Res*; mostly **not** in PMC | not needed so far |
+
+**The generalisable finding across all three: a society's deposit behaviour is a property of the society's
+journal, not of its language or country.** SFAR's RFEs are society publications that never enter a journal;
+SRLF and SPILF publish theirs as journal articles. **"Non-Anglophone blind spot" was never the right frame
+— the question is always: does this society's guidance go out through a journal?**
+
+## A co-published guideline may carry its abstract in only one record (added 2026-10-02)
+
+The SPILF/SPLF community-acquired pneumonia update was published **in two journals on the same day**:
+
+| Record | DOI | Abstract | Citations |
+| --- | --- | --- | --- |
+| *Respiratory Medicine and Research* | 10.1016/j.resmer.2025.101161 | **1,253 chars** | 3 |
+| *Infectious Diseases Now* | 10.1016/j.idnow.2025.105034 | **zero** | **6** |
+
+**The more-cited record is the one with no abstract.** A search that surfaced only the *Infectious Diseases
+Now* version would have concluded the document deposits nothing and filed it as unreachable.
+
+**Rule: when a title indicates co-publication, or a society is known to co-publish, search the title across
+journals and compare abstract lengths before declaring a document scope-only or unreachable.** Same check
+already needed for the SRLF cardiogenic shock recommendations (*Ann Intensive Care* + *Arch Cardiovasc Dis*)
+and the AHA/ACC perioperative guideline (*Circulation* + *JACC*).
+
+## Compare abstracts by checksum, not by eye (added 2026-10-02)
+
+The 2026 AHA/ACC perioperative guideline's newly indexed **JACC** co-publication
+(10.1016/j.jacc.2026.06.017, first publication **1 Sep 2026**, indexed 1 Oct 2026) was compared to the
+*Circulation* 2026 and 2024 records by MD5 of `abstractText`:
+
+| Record | Length | MD5 (first 12) |
+| --- | --- | --- |
+| 2026 *Circulation* | 1,214 | `8d624859f384` |
+| **2026 *JACC*** | 1,214 | **`8d624859f384`** |
+| 2024 *Circulation* | 1,214 | `f8ee1aef7cc5` |
+
+**Byte-identical between the two 2026 records.** Equal length alone had been the flag on 30 September; a
+checksum makes it provable in one line and distinguishes "same length by coincidence" from "same text":
+
+```bash
+python3 -c "import json,hashlib; r=json.load(open('/tmp/claude-0/epmc.json'))['resultList']['result'][0]; a=r.get('abstractText') or ''; print(len(a), hashlib.md5(a.encode()).hexdigest()[:12])"
+```
+
+**What it resolved and what it did not.** Resolved: this is a **real 2026 document**, not a duplicate
+deposit — a deposit artefact does not produce a second journal's co-publication with its own DOI and PMID.
+**Made worse:** the stale abstract went out through **both** journals, so it is not a one-off error at one
+publisher. **Still open:** whether the recommendations changed; both publisher pages return HTTP 403 and
+neither record is in PMC.
+
+**Rule: re-check an open item on a stated schedule and report the narrowing even when it is not a
+resolution.** A question that has moved from three possibilities to two is a result.
+
+## Procedural sedation is the thinnest-evidenced topic yet catalogued (added 2026-10-02)
+
+Ranking every formalised French recommendation set by proportion of expert opinion:
+
+| Document | Recs | High evidence | Expert opinion |
+| --- | --- | --- | --- |
+| **SFAR/SFMU procedural sedation, 25 Jun 2026** | 33 | **1 (3.0%)** | **29 (87.9%)** |
+| SRLF ICU nutrition, children | 29 | 1 (3.4%) | 23 (79.3%) |
+| SFAR in-hospital emergencies | 36 | 0 | 28 (77.8%) |
+| SRLF ICU nutrition, adults | 34 | 3 (8.8%) | 19 (55.9%) |
+| SFAR airway in theatre | 27 | 1 (3.7%) | 13 (48.1%) |
+| SRLF/SFC cardiogenic shock | 41 | 7 (17.1%) | 17 (41.5%) |
+| SFAR perioperative + ICU nutrition | 40 | 11 (27.5%) | 16 (40.0%) |
+
+**A thirty-year literature search produced one high-certainty recommendation.** The pattern across the whole
+table is consistent and now well supported: **the more time-pressured and unselected the clinical situation,
+the less randomised evidence exists** — elective perioperative nutrition at one end, emergency procedural
+sedation at the other, with structured conditions (cardiogenic shock in a shock centre, airway management in
+a theatre) in between.
+
+**Useful diagnostic detail:** three of the French procedural sedation document's four fields are about
+**indication, risk and safety conditions** rather than about the sedation itself, and the second field is
+explicitly *"when to do it and when not to."* **A guideline that spends three-quarters of its structure on
+whether and where rather than on how is telling you the hazard is the setting, not the technique.**
+
+## A Delphi consensus is not a graded recommendation set — say which you are reporting (added 2026-10-02)
+
+Two procedural sedation documents four months apart invite exactly the wrong comparison:
+
+- **SFAR/SFMU, GRADE:** states that **29 of 33** recommendations are expert opinion. Reads cautious.
+- **Spanish national Delphi:** **≥70% agreement** threshold, **no evidence grading at all**. Reads confident
+  ("strong consensus across core domains").
+
+**The one that sounds more confident is the one with less evidence behind it**, because a Delphi measures
+panel agreement and a GRADE process measures literature. **A ≥70% threshold also means a recommendation can
+carry with nearly a third of the panel dissenting.**
+
+**Rule: name the instrument before summarising the content, and never let a Delphi's "strong consensus"
+stand next to a GRADE 1 without saying they are different claims.** Credit where due: this Delphi reported
+**where it failed to converge** (drug choice for less painful and imaging procedures) and stated its own
+single-country limitation — **a consensus study that names its non-convergence is doing the useful half of
+the job.**
+
+## Two documents can agree about where agreement ends (added 2026-10-02)
+
+The French and Spanish procedural sedation documents converge on the same boundary by different methods:
+**both reach agreement on who should be present, what should be monitored, and when not to proceed; neither
+reaches it on which drug to give** — except ketamine for the more painful procedures.
+
+**That is a more useful finding than either document's headline**, and it is only visible by reading them
+together. **Look for the boundary of agreement, not just the content of it**; where two independent national
+panels stop agreeing is a map of what the next trial should randomise.
