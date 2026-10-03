@@ -1430,3 +1430,72 @@ propofol-to-dexmedetomidine transition had **better** vital-sign rhythmicity tha
 **The thread's open question is now specific: has anyone randomised relative against absolute targets?**
 Nothing found so far. **If such a trial appears it is a lead item.** Until then the defensible claim is
 "absolute pressure targeting does not work," not "pressure targeting does not work."
+
+## Sent 2026-10-03 (guidelines) — two named gaps closed
+
+- **SFNC 2025 traumatic brain injury guidelines** (10.1016/j.neuchi.2025.101686) — 45 recommendations, 29
+  experts, **nine societies**, unanimous at round 1, **no GRADE breakdown in the abstract**. **The archive's
+  first neurotrauma guideline.**
+- **ESO 2025 blood pressure update in acute ischaemic stroke and ICH** (10.1093/esj/aakag004) — 8 questions,
+  in PMC with PDF. **Half the stroke gap closed.**
+- **Moyamoya cerebral bypass ERAS consensus** (10.1227/neuprac.0000000000000286) — new 2 Oct; 34 strong
+  recommendations from 32 studies, 7 categories including anaesthesia and IONM.
+- **Spine deformity IONM best practice guidelines** (10.1007/s43390-026-01559-9) — **cleared after three
+  deferrals.**
+
+**CORRECTION to the 10-02 backlog note:** the TBI guideline was filed under SPILF because the SPILF seam audit
+surfaced it. **It is SFNC-led**; SPILF is one of nine co-signatories. A seam audit returns co-signed documents,
+not led ones — recorded in source-notes.
+
+**NEW SOCIETY — ANARLF** (French-speaking Neurocritical Care and Neuro-Anaesthesiology Society). Found only as
+a co-signatory on the TBI document. **Squarely primary scope; ninth society added this way. Seam audit not yet
+run.**
+
+## Write up next — guidelines, as of 2026-10-03
+
+1. **2026 AHA/ASA guideline for early management of acute ischaemic stroke** (10.1161/str.0000000000000513) —
+   **the remaining half of the stroke gap.** Two July 2026 corrections (10.1161/str.0000000000000530 and
+   10.1161/strokeaha.126.056478) must be read with it.
+2. **SRLF — Guidelines for the Initial Assessment of Respiratory Distress in the Emergency Department**
+   (20 Jan 2026, 2,534 chars, in PMC). Newest SRLF guideline unreported.
+3. **SRLF–SFMU oxygen therapy in acute hypoxaemic respiratory failure** (5 Sep 2024, **37 citations**).
+4. **ANARLF seam audit** — never run; likely to surface neurocritical care and neuro-anaesthesia documents
+   the archive has no other route to.
+5. **SFMU and SPLF seam audits** — never run; both demonstrably publish (procedural sedation, UVIH, CAP).
+6. **SFAR remaining catalogue** (website route only): paediatric regional anaesthesia; intra-abdominal
+   infections; **anticoagulants for planned invasive procedures** (three-way comparison ready with the AHA
+   antithrombotic statement sent 10-02 and the ESAIC/ESRA guideline sent 09-06); **neurotrauma initial phase
+   — now partly superseded by the SFNC document sent today, check overlap before reporting**; hepatic
+   resection; ECBU before urological procedures; medication-error prevention with SFPC; perioperative
+   immediate hypersensitivity with SFA.
+7. **SPILF backlog** (corrected): partial oral antibiotic therapy for infective endocarditis (*Pathogens*,
+   2 Sep 2026, in PMC); male UTI antibiotic treatment (25 Jun 2026); bacterial arthritis update (2023, PG);
+   the 2022 SPILF CPG whose **full title is still unretrieved**; diabetic foot (out of primary scope).
+8. **ERC 2025** — Newborn, Epidemiology, Education. Lower priority.
+9. **HIS operating theatre ventilation** — retry with curl + browser UA.
+10. **Chinese society documents** — no route. Named 10-02. Note the archive **already logged a Chinese expert
+    consensus on TBI in mass casualty incidents on 8 Sep** and did not pursue it; worth revisiting now that
+    neurotrauma is covered.
+
+## Routed to the brief 2026-10-03 — write up first
+
+***CJEM*, 2 Oct 2026 — "Brain injury guidelines for the management of traumatic brain injury: a systematic
+review and meta-analysis"** (10.1007/s43678-026-01218-y, 1,927 chars, **abstract retrieved in full**).
+A diagnostic-accuracy meta-analysis of the **BIG decision rule**, not a guideline.
+
+4,733 screened, 47 included, 23 meta-analysed. **Pooled sensitivity for BIG1 to rule out neurological
+deterioration, neurosurgical intervention and death: 98.3% / 98.7% / 98.2%. Pooled specificity: 12.7% /
+14.4% / 12.8%**, with the first interval **1.5–58.7%**. Bias by modified PROBAST.
+
+**A rule used to avoid neurosurgical consultation and repeat imaging that almost never misses and almost never
+reassures.** Abstract already in hand, so per the 10-02 rule it goes in the next brief. **Pairs with the SFNC
+TBI guidelines sent today** — one says when to operate, the other when not to consult.
+
+## Guideline-abstract pattern to watch (added 2026-10-03)
+
+**Three neurosurgical guidelines in one entry, none giving a GRADE breakdown** — SFNC TBI (45 recommendations),
+Moyamoya ERAS (34 strong from 32 studies), spine IONM (27+25 items, no grading at all). Every SFAR and SRLF
+document catalogued 09-30 to 10-02 did give one.
+
+**If this holds across more neurosurgical documents it is a reportable difference in how the specialty writes
+guidelines.** Track it: record "breakdown given / not given" for every guideline from here on.

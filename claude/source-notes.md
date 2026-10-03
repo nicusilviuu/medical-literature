@@ -2153,3 +2153,95 @@ rather than a limitations paragraph.
 
 **Rule: weight a paper partly by what it discloses against itself, and say so on the page** — it is the only
 signal available when both designs are observational and neither can be verified from the abstract.
+
+## Attribute a document to the society that led it, not the one that surfaced it (added 2026-10-03)
+
+The **2025 French traumatic brain injury guidelines** (10.1016/j.neuchi.2025.101686) were filed in the
+backlog on 2 October under "SPILF" because the **SPILF seam audit** surfaced them. **They are led by the
+French Society of Neurosurgery (SFNC)**, with SPILF one of **nine** participating societies.
+
+**Rule: an `ABSTRACT:"<society>"` seam audit returns every document a society *co-signed*, not the ones it
+led.** Read the design or methods section for who convened the panel before recording attribution, and
+correct the backlog when the full record arrives. Corrected in the 3 October entry and in `outstanding.md`.
+
+**The upside of the same mechanism:** co-signature lists are how this watch has found every structural gap.
+**ANARLF** — French-speaking Neurocritical Care and Neuro-Anaesthesiology Society — appeared only as a
+participating society on this document and is squarely in primary scope. **Ninth society added this way.**
+Reading participating-society lists off documents has outperformed every attempt to reason about which
+societies ought to exist.
+
+## Unanimity at the first voting round is a fact about the questions, not the evidence (added 2026-10-03)
+
+The SFNC TBI guidelines reached **strong consensus on all 45 recommendations at the first round of rating.**
+Every other formalised French document catalogued here needed two or more rounds with amendments — the
+procedural sedation RFE two rounds and three amendments, the nutrition guidelines four rounds.
+
+**Do not read first-round unanimity as strength of evidence.** Here it most likely reflects **which questions
+were asked**: the categories are extradural haematoma, acute subdural haematoma, skull-base fracture,
+penetrating injury and post-traumatic CSF disorder — surgical-decision questions with decades of observational
+data. **The document contains nothing on intracranial pressure targets, osmotherapy or decompressive
+craniectomy timing**, which are the disputed areas. **Check the category list before crediting a consensus:
+unanimity plus a narrow scope is a different finding from unanimity on contested ground.**
+
+## Three neurosurgical guidelines, none with a GRADE breakdown (added 2026-10-03)
+
+| Document | Output | Evidence breakdown given? |
+| --- | --- | --- |
+| SFNC TBI guidelines, 2025 | 45 recommendations, unanimous at round 1 | **No** |
+| Moyamoya ERAS protocol, 2 Oct 2026 | **34 strong recommendations from 32 included studies** | **No** |
+| Spine deformity IONM, 28 Sep 2026 | 27 + 25 consensus items, 80% threshold | **No** — no grading at all |
+
+All three used GRADE or a formal Delphi; **none states how many recommendations rest on what quality of
+evidence.** Every SFAR and SRLF document catalogued in the preceding four days did.
+
+**Rule: record the absence of a breakdown as a property of the document.** It is the single most useful thing
+an abstract can carry, and a reader cannot otherwise tell a well-evidenced recommendation from an expert
+opinion. **Specific red flag worth naming: 34 strong recommendations from 32 included studies** is more than
+one strong recommendation per study in a rare disease — either heavy and legitimate extrapolation from other
+ERAS literature, or "strong" applied more loosely than GRADE intends, and the abstract cannot distinguish them.
+
+## The only high-certainty pressure recommendation in this archive is negative (added 2026-10-03)
+
+Across everything this archive has gathered on arterial pressure — a 15-RCT Bayesian meta-analysis, the HPI
+trial, PRESSURE in 1,900 children, and the 151,036-patient threshold study — **the single high-certainty
+graded recommendation anywhere is the ESO's: do not intensively lower systolic BP below 140 mmHg in the first
+24 h after successful thrombectomy** (10.1093/esj/aakag004).
+
+**Not "target this number" but "do not drive it down."** Worth carrying forward as the thread's one firm
+point.
+
+**The same document also shows why a threshold is not a target.** In ischaemic stroke after thrombectomy,
+lowering below 140 is recommended **against** with **high certainty**; in intracerebral haemorrhage, early
+reduction to **below 140** is **supported by expert consensus**. **Same number, opposite directions, in two
+conditions that are indistinguishable until imaging.** Report such pairs together — a reader who meets one
+threshold without its condition has learned something false.
+
+**Also note ESO's self-assessment, which is unusually blunt in prose rather than in a table:** *"most
+recommendations are weak and supported by expert consensus"*, with one high-certainty answer among eight
+clinical questions. **That is the same reality the French documents report as percentages.**
+
+## A gap can be half-visible for a month and still not be acted on (added 2026-10-03)
+
+Before the 3 October entry, traumatic brain injury had appeared here twice: as **one recommendation inside the
+ESICM fluids guideline** (isotonic saline rather than albumin, very low certainty, 2 Sep) and as **a Chinese
+expert consensus on TBI in mass casualty incidents, logged and not pursued** (8 Sep).
+
+**So the absence was detectable a month before it was named, from the archive's own pages.** The lesson is not
+to look harder at society lists but to **re-read the archive's own tail notes periodically**: items logged as
+"out of scope" or "not pursued" cluster around genuine gaps, because the reason they kept appearing is that
+the topic is in scope and uncovered. **A recurring tail-note topic is a gap signal.**
+
+## A title can say "guidelines" and be a research article (added 2026-10-03)
+
+***CJEM*, 2 Oct 2026 — "Brain injury guidelines for the management of traumatic brain injury: a systematic
+review and meta-analysis"** (10.1007/s43678-026-01218-y) is **a diagnostic-accuracy meta-analysis of the
+Brain Injury Guidelines (BIG) decision rule**, not a guideline. Routed to the brief.
+
+**"Guidelines" in a title can name the *object of study* rather than the document type.** Same trap as the
+*Journal of Anesthesia* peri-thrombectomy review (30 Sep) and the *Stroke* prehospital-trials consensus
+(30 Sep), which was tagged `Consensus Statement` but concerned trial methodology. **Read past the colon and
+check what the document *is* before routing it.**
+
+**Worth keeping the finding, which is striking:** pooled sensitivity for BIG1 of **98.2–98.7%** against pooled
+specificity of **12.7–14.4%**, with the first specificity interval running **1.5–58.7%**. A rule used to avoid
+neurosurgical consultation that almost never misses and almost never reassures.
