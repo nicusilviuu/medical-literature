@@ -1356,3 +1356,77 @@ CARORL, SFORL, ADARPEF, SFPC, SFCD, AFDN, FHS. **SFMU and SPLF are the highest v
 procedural sedation and UVIH documents and SPLF co-authored the CAP update, so both clearly publish.
 
 **Still worth adding, not gap-confirmed:** SAMBA, SPAQI, JBDS-IP.
+
+## Sent 2026-10-03
+
+- *Anaesthesia*, 2 Oct — **intra-operative hypotension threshold models and postoperative pneumonia**,
+  151,036 patients (10.1111/anae.70426). **Reframes the pressure-target thread: relative reductions track
+  harm, absolute thresholds do not.**
+- *Anesthesiology*, 1 Oct — **vigilance recovery in rats after four anaesthetics, rodent Continuous
+  Performance Task** (10.1097/aln.0000000000006398). **Clears queue item 2.**
+- *JAMA*, 1 Jul 2025 — **A2B trial**, dexmedetomidine or clonidine vs propofol, 1,404 patients, 41 UK ICUs
+  (10.1001/jama.2025.7200, 43 citations, in PMC). Older-but-popular.
+- *J Crit Care*, 30 Sep — **sedation trajectories and circadian rhythm disruption**
+  (10.1016/j.jcrc.2026.155759). **Clears queue item 1 after three deferrals.**
+
+## Write up next — in order, as of 2026-10-03
+
+1. ***Critical Care*, 1 Oct — plasma ferritin and suPAR as treatable traits** in critical illness (2,200
+   chars). Phenotyping thread. **Abstract not yet retrieved — retrieve first.**
+2. ***J Crit Care*, 1 Oct — lung ultrasound findings in ARDS under the 2023 global definition** (1,397
+   chars). **Now also pairs with the SPILF community-acquired pneumonia guideline (sent 10-02), which
+   reassessed pleuropulmonary ultrasound.**
+3. ***AJRCCM*, 1 Oct — three versus six weeks of corticosteroids for mild immune-related pneumonitis**,
+   randomised (1,849 chars). An actual RCT; carried since 10-01.
+4. ***RAPM*, 1 Oct — micro-endoscopy with ultrasound guidance for transversus abdominis plane catheters**
+   (1,328 chars).
+5. ***AJRCCM*, 1 Oct — white blood cell count and response to cefepime vs piperacillin-tazobactam** (2,105
+   chars). **Pairs with the *AJRCCM* 29 Sep antibiotic-duration paper and the SPILF CAP guideline's
+   duration recommendations.**
+6. ***ICVTS*, 1 Oct — stage IA invasive mucinous adenocarcinoma survival** (1,879 chars).
+7. ***Crit Care Med*, 30 Sep — soluble biomarker association modified by diabetes and ASCVD** (1,937 chars).
+
+**Still depositing no abstract — retried 10-03, all three still empty:**
+- *AJRCCM* — **grading system of dynamic fibrinolysis resistance in sepsis** (10.1093/ajrccm/aamag281).
+  Would pair with the antithrombin / symmetrical peripheral gangrene coagulopathy thread.
+- *Anesth Analg* — **PT and APTT mask citrate-induced coagulopathy** (10.1213/ane.0000000000008326).
+  Practical for CRRT and massive transfusion; **also now relevant to question 6 of the SRLF RRT consensus
+  (circuit thrombosis).**
+- *BJA* — **multimorbidity in patients undergoing day surgery** (10.1016/j.bja.2026.07.074).
+- *Anesth Analg* — **J-PEDIA extreme weight-for-age and airway adverse events** (9 Sep). Four retries now.
+
+## Dexmedetomidine thread — state of coverage as of 2026-10-03
+
+Four documents, four levels of evidence, **none showing the reputed advantage** — but they are **not the same
+phenomenon** and the entry says so:
+
+| Reported | Document | Finding |
+| --- | --- | --- |
+| 7 Sep (guidelines) | ASA 2025 practice advisory, older adults | Consider it, balance against cardiovascular risk |
+| 12 Sep (brief) | RCT **preprint**, 300 CABG patients | Delirium 15.3% vs 20.0%, OR 0.724 — null |
+| 3 Oct (brief) | **A2B**, 1,404 patients, 41 UK ICUs | No extubation benefit; agitation RR 1.54; severe bradycardia RR 1.62 |
+| 3 Oct (brief) | 16 rats, four agents, within-subject | Most prolonged impairment of the four |
+
+**Counterweight in the same entry:** the MIMIC-IV sedation-trajectory paper found the
+propofol-to-dexmedetomidine transition had **better** vital-sign rhythmicity than sustained high-dose propofol.
+
+**What the thread still lacks, and what would settle it:**
+- **A2B's primary outcome was extubation time, not delirium.** The delirium question is unanswered by all of
+  the above. **A large trial with delirium as the primary outcome is the slot to watch for.**
+- The 12 Sep CABG study is still a **preprint** — re-check for the peer-reviewed version.
+- **SUPER-DEX** is cited in the 7 Sep entry from the guideline's own reasoning but has **never been retrieved
+  here.** Worth a full record pull and possibly an item of its own.
+
+## Pressure-target thread — reframed 2026-10-03
+
+| Study | Parameterisation | Result |
+| --- | --- | --- |
+| Bayesian meta-analysis, 15 RCTs (sent 09-29) | Absolute MAP | Mortality OR 1.00 |
+| HPI vs MAP ≤73 RCT (sent 09-29) | Absolute, 73 mmHg | No superiority |
+| PRESSURE, 1,900 children (sent 09-30) | Percentile-for-age (absolute) | No difference |
+| DO2i on bypass (sent 09-29) | Delivery, not pressure | aOR 1.16 per 10 ml/min/m2 |
+| **Hypotension threshold models (sent 10-03)** | **Relative % fall from baseline** | **Relative tracks pneumonia; absolute does not** |
+
+**The thread's open question is now specific: has anyone randomised relative against absolute targets?**
+Nothing found so far. **If such a trial appears it is a lead item.** Until then the defensible claim is
+"absolute pressure targeting does not work," not "pressure targeting does not work."

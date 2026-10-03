@@ -2040,3 +2040,116 @@ reaches it on which drug to give** — except ketamine for the more painful proc
 **That is a more useful finding than either document's headline**, and it is only visible by reading them
 together. **Look for the boundary of agreement, not just the content of it**; where two independent national
 panels stop agreeing is a map of what the next trial should randomise.
+
+## Strip tags before checksumming an abstract (added 2026-10-03)
+
+The 2 October lead item's abstract (10.1111/anae.70417) **grew from 1,730 to 1,799 characters overnight.**
+Re-retrieved and compared: the 69 added characters are **entirely `<h4>` section headings** — Introduction,
+Methods, Results, Discussion — added to a previously unstructured abstract. **Every sentence and number
+quoted was unchanged.**
+
+**This refines the checksum rule from 2 October.** Length and a raw MD5 of `abstractText` can both change
+while the text is identical, because publishers add structural markup after deposit. **Compare the
+tag-stripped text:**
+
+```bash
+python3 -c "
+import json,re,hashlib
+r=json.load(open('/tmp/claude-0/epmc.json'))['resultList']['result'][0]
+a=re.sub(r'<[^>]+>','',r.get('abstractText') or '')
+print(len(a), hashlib.md5(a.encode()).hexdigest()[:12])"
+```
+
+**Rule: an abstract that has changed length since it was quoted must be re-retrieved and compared before the
+next entry, not assumed stable.** Here the answer was benign; the check cost one query and would have caught
+a real revision of a published quote.
+
+## One bucket shrinking while its neighbours grow means re-dating (added 2026-10-03)
+
+Third distinct cause now identified for a falling bucket count:
+
+| Date | Pattern | Diagnosis |
+| --- | --- | --- |
+| 24 Sep | **47% drops**, canaries vanished, several buckets | **Index rebuild (failure mode 3)** |
+| 26 Sep | 1,589 → 1,449, small, isolated, nothing missing | **Churn** |
+| **30 Sep (today)** | **4,663 → 4,398 (−265, 5.7%)** while 26, 28, 29 Sep and 1 Oct all **grew** | **Re-dating** |
+
+**The discriminating test is cheap and should be run every time:** re-query individually several records
+previously retrieved from that day. Today four 30 September DOIs were checked and **all four were present and
+still dated 30 September**, so nothing verifiable was lost.
+
+**Rule: a single bucket falling while its neighbours grow is re-dating, not loss and not a rebuild** — the
+issue-date trap operating on a population rather than on one paper. **Do not re-sweep the window on this
+signal alone**; do spot-check known records, and do record it, because a bucket count quoted in a later entry
+will not match.
+
+## A 26-hour median difference can be statistically indistinguishable from zero (added 2026-10-03)
+
+The **A2B trial** (10.1001/jama.2025.7200, 1,404 patients, 41 UK ICUs) reports median time to extubation of
+**136 h for dexmedetomidine against 162 h for propofol — 26 hours** — and a subdistribution hazard ratio of
+**1.09 (95% CI 0.96–1.25), P = .20.** The medians' own intervals overlap (117–150 against 136–170).
+
+**Medians are not estimates of effect.** A difference between group medians is not a treatment effect
+estimate and carries no inferential weight of its own. **Quote the modelled estimate and its interval; quote
+medians only as description, and when they look impressive next to a null test, say so explicitly** — a
+reader who sees "136 versus 162 hours" and nothing else will take away the opposite of the trial's
+conclusion.
+
+## Do not force a convergence between findings of different kinds (added 2026-10-03)
+
+Four documents in this archive now fail to show dexmedetomidine's reputed advantage:
+
+| Reported | Document | Finding |
+| --- | --- | --- |
+| 7 Sep | ASA 2025 practice advisory | Consider it, **balance against cardiovascular risk** |
+| 12 Sep | RCT preprint, 300 CABG patients | Delirium 15.3% vs 20.0%, OR 0.724 (0.398–1.317) — **null** |
+| 3 Oct | **A2B**, 1,404 patients | No extubation benefit; agitation **RR 1.54**; severe bradycardia **RR 1.62** |
+| 3 Oct | 16 rats, four agents, within-subject | **Most prolonged impairment of the four** |
+
+**It would have been easy and wrong to present these as converging.** More *agitation* implies **inadequate**
+sedation; prolonged impairment in rats implies **residual** drug effect. Those are mechanistically opposite.
+**And the fourth item in the same entry cuts the other way:** the MIMIC-IV sedation-trajectory paper found the
+propofol-to-dexmedetomidine transition had *better* vital-sign rhythmicity than sustained high-dose propofol.
+
+**Rule: state the narrow shared claim — here, none of these studies found the benefit the drug is prescribed
+for — and name the findings that point the other way in the same entry.** Also keep the open question open:
+A2B's primary outcome was extubation time, not delirium, and the 300-patient preprint was underpowered, so
+**the delirium question is not answered by any of this.**
+
+## Parameterisation is a finding, not a detail (added 2026-10-03)
+
+Every negative pressure-targeting result this archive has reported used an **absolute** MAP threshold — the
+15-RCT Bayesian meta-analysis, the HPI-vs-MAP-≤73 trial, and PRESSURE's percentile-for-age. A 151,036-patient
+cohort (10.1111/anae.70426) tested **12 metrics across nine thresholds** and found **relative reductions from
+baseline were consistently associated with postoperative pneumonia while absolute thresholds were not.**
+
+**So "pressure targeting does not work" may be the wrong summary of the week; "absolute pressure targeting
+does not work" is what the evidence supports.** A MAP of 65 is a different insult at a baseline of 75 than at
+110.
+
+**Cautions recorded with it, because the paper does not carry the weight alone:** sHR **1.079** per episode on
+a **2.3%** outcome is a very small effect; **12 × 9 = up to 108 comparisons** with no multiplicity correction
+stated; and **relative reduction is partly a measurement of the baseline**, so untreated hypertension may be
+doing some of the work — the same structural problem as the DO₂i study's haemoglobin component.
+**The dose–response plateau across 20–40% is the strongest argument against pure multiple testing**, since a
+flattening exposure–response curve is hard to generate by chance.
+
+**Rule: when a body of trials is null, check whether they all parameterised the exposure the same way before
+concluding the exposure does not matter.**
+
+## A paper that volunteers its own fragility is the more trustworthy one (added 2026-10-03)
+
+Two large retrospective analyses in the same entry:
+
+- The hypotension cohort runs up to 108 metric–threshold combinations and **states no multiplicity
+  correction** in its abstract.
+- The sedation-trajectory paper reports a mediation proportion of **23.5% (95% CI 16.9–31.0%)** and then
+  volunteers that it **"ranged from 0% to 34% across assumptions"**, adding that its measures **"should not be
+  interpreted as direct measures of central circadian function."**
+
+**The second is the more trustworthy document and it is the one with the weaker headline.** A mediation
+estimate whose plausible range includes zero is a hypothesis, and its authors said so in the conclusion
+rather than a limitations paragraph.
+
+**Rule: weight a paper partly by what it discloses against itself, and say so on the page** — it is the only
+signal available when both designs are observational and neither can be verified from the abstract.
