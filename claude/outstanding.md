@@ -1499,3 +1499,76 @@ document catalogued 09-30 to 10-02 did give one.
 
 **If this holds across more neurosurgical documents it is a reportable difference in how the specialty writes
 guidelines.** Track it: record "breakdown given / not given" for every guideline from here on.
+
+## Sent 2026-10-04
+
+- *CJEM*, 2 Oct — **BIG decision rule meta-analysis** (10.1007/s43678-026-01218-y). **Cleared the item routed
+  from the guidelines watch on 10-03.** 98% sensitivity against 13% specificity; the specificity interval for
+  neurological deterioration runs **1.5-58.7%**.
+- *Chest*, 3 Oct — **TISA-818 phase 2 in ARDS** (10.1016/j.chest.2026.09.095). **First trial here to use the
+  2023 global ARDS definition.**
+- *J Crit Care*, 3 Oct — **protocolised analgosedation scoping review** (10.1016/j.jcrc.2026.155766).
+- *CJEM*, 3 Oct — **team decision-making in high-stakes time-pressured environments**
+  (10.1007/s43678-026-01285-1).
+
+## Write up next — as of 2026-10-04
+
+**All five below are logged with character counts but NOT yet retrieved. Retrieve before writing.**
+
+1. ***J Crit Care*, 1 Oct — lung ultrasound findings in ARDS under the 2023 global definition** (1,397
+   chars). **Promoted to first** — the TISA-818 trial sent today makes the 2023-definition category live, and
+   this is the archive's other document in it.
+2. ***Critical Care*, 1 Oct — plasma ferritin and suPAR as treatable traits** in critical illness (2,200
+   chars). Phenotyping thread.
+3. ***AJRCCM*, 1 Oct — three versus six weeks of corticosteroids for mild immune-related pneumonitis**,
+   randomised (1,849 chars). An actual RCT; carried since 10-01.
+4. ***AJRCCM*, 1 Oct — white blood cell count and response to cefepime vs piperacillin-tazobactam** (2,105
+   chars). Pairs with the *AJRCCM* 29 Sep antibiotic-duration paper and the SPILF CAP guideline.
+5. ***RAPM*, 1 Oct — micro-endoscopy with ultrasound guidance for TAP catheters** (1,328 chars).
+
+**Also logged 10-04, lower priority:** *Chest*, 3 Oct — **CEUS versus US- and CT-guided biopsy for subpleural
+lung lesions**, prospective multicentre (2,294 chars); *Chest*, 3 Oct — sputum cellularity and health services
+use in asthma and COPD (2,274 chars); *Crit Care Med*, 30 Sep — soluble biomarker modified by diabetes/ASCVD
+(1,937 chars); *ICVTS*, 1 Oct — stage IA invasive mucinous adenocarcinoma survival (1,879 chars).
+
+**New topic never covered, worth a slot:** *BJA*, 3 Oct — a **letter on the end of the aerosol-generating
+procedure concept** and its implications for anaesthesia (1,054 chars, correspondence so not eligible as an
+item). **The underlying question — what replaced AGP precautions, and on what evidence — has never been
+covered here.** Look for a non-correspondence paper on it.
+
+**Still depositing no abstract (four-plus retries each):** *AJRCCM* dynamic fibrinolysis resistance grading
+(10.1093/ajrccm/aamag281); *Anesth Analg* PT/APTT masking citrate-induced coagulopathy
+(10.1213/ane.0000000000008326); *BJA* day-surgery multimorbidity (10.1016/j.bja.2026.07.074); *Anesth Analg*
+J-PEDIA extreme weight-for-age (9 Sep).
+
+## New categories and gaps named 2026-10-04
+
+- **2023 global ARDS definition trials.** TISA-818 is the first here. The definition admits non-intubated
+  patients, and that trial's signal sat in its prespecified non-intubated subgroup. **Flag any paper using
+  the 2023 definition on sight** — the first wave tests the definition as much as the therapy.
+- **ECMO analgosedation — a cleanly identified void.** The scoping review searched December 1999 to September
+  2026 across five databases, named ECMO in its objectives, and found **no studies of analgosedation
+  protocols in ECMO patients.** Deep sedation, frequent paralysis, circuit drug sequestration, and the units
+  most likely to have protocols. **If a paper on this appears it is a lead item.**
+- **Protocols lag their own guidelines.** Few analgosedation protocols published 2019-2026 included propofol
+  or dexmedetomidine, multi-modal analgesia, or delirium assessment. Note the irony against the
+  dexmedetomidine thread: **the protocols may be out of step with the guidelines, and the guidelines out of
+  step with the trials.**
+- **Intracranial pressure management remains the uncovered middle of neurotrauma.** The SFNC guidelines
+  (sent 10-03) cover when to operate; the BIG meta-analysis (sent 10-04) covers when not to consult.
+  **Neither addresses ICP targets, osmotherapy or decompressive craniectomy timing.** That is the gap to
+  fill next in this area.
+
+## Human-factors thread — now substantial (added 2026-10-04)
+
+- **SFAR adult airway RFE** (sent 09-30) — one of three fields on human factors, FHS as co-author, cognitive
+  aids for briefing and debriefing shipped with the algorithms.
+- **Spine deformity IONM timeline checklists** (sent 10-03) — the deliverable is a sequence, not a list.
+- **CJEM team decision-making review** (sent 10-04) — five factors: role clarity, hierarchy, information
+  sharing, team cognition, team training. **Independently identifies pre-briefing and debriefing; does not
+  cite SFAR, and arrived five days later.**
+- **Moyamoya ERAS protocol** (sent 10-03) — multidisciplinary development group including anaesthesiology and
+  neurophysiological monitoring.
+
+**What the thread lacks: any outcome study.** Everything here is guidance, consensus or narrative review.
+**A trial of briefing/debriefing or of checklist implementation with a patient outcome would be a lead item.**

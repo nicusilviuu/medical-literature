@@ -2245,3 +2245,103 @@ check what the document *is* before routing it.**
 **Worth keeping the finding, which is striking:** pooled sensitivity for BIG1 of **98.2–98.7%** against pooled
 specificity of **12.7–14.4%**, with the first specificity interval running **1.5–58.7%**. A rule used to avoid
 neurosurgical consultation that almost never misses and almost never reassures.
+
+## Convert an unreferenced percentage back to counts before quoting it (added 2026-10-04)
+
+Two instances in one entry, both of which would have produced misleading quotes.
+
+**Analgosedation scoping review** (10.1016/j.jcrc.2026.155766): 81 included studies, but the headline
+barrier is *"reported in 12 (63%) studies"* and the headline facilitator *"in four (31%) studies."* **Neither
+can be a fraction of 81.** Reconstructed: **12/19 = 63%** and **4/13 = 31%** — so only **19 of 81** studies
+reported barriers at all and only **13** reported facilitators. **The abstract never states those
+denominators.** "The most frequently reported facilitator, 31%" is really **four studies out of eighty-one.**
+
+**TISA-818 phase 2 ARDS trial** (10.1016/j.chest.2026.09.095): 58 randomised 1:1:1, and all figures given as
+percentages only. Every one reconstructs on a denominator of **19** — treatment-related AEs **1, 7 and 4**
+patients; day-28 mortality **1, 2 and 5**. **So "day-28 mortality 5.3% vs 26.3%" is one death against five.**
+
+**Rule: when an abstract gives percentages without counts, divide back out and state the counts on the
+page** — flagging the reconstruction as your own inference, since 58 across three arms cannot divide evenly
+and the paper gives no n per arm. **A percentage with an unstated denominator is the commonest way a small
+study reads as a large one.**
+
+## Treatment-emergent and treatment-related are different denominators in the same sentence (added 2026-10-04)
+
+The TISA-818 abstract reports *"an acceptable safety profile with comparable rates of treatment-emergent
+adverse events"* and, immediately after, *"treatment-related AEs … occurred in 5.3%, 36.8%, and 21.1%"* —
+**a seven-fold difference between placebo and the 6 mg twice-daily arm in the attributable column.**
+
+**Both statements can be true: all-cause events comparable, attributable events not.** **Rule: when a safety
+claim and an adverse-event table seem to disagree, check whether one is treatment-*emergent* and the other
+treatment-*related*** — they are routinely used in the same paragraph to carry opposite impressions. **Quote
+the attributable column, because that is the one that transfers to the next trial.**
+
+## "Consistent across all endpoints" in a small subgroup is what correlated noise looks like (added 2026-10-04)
+
+TISA-818's conclusion rests on *"consistent numerical improvements across all secondary outcomes"* in a
+**prespecified non-intubated subgroup of 27 patients, nine per arm**, where the headline respiratory
+support-free day difference is **6 days (95% CI −3 to 15)**.
+
+**The endpoints were respiratory support-free days, day-14 support-free status, clinical improvement rate and
+length of stay — largely the same measurement reported four ways.** When endpoints are correlated, all moving
+together is uninformative; **it is the expected behaviour of noise, not corroboration.**
+
+**Rule: before crediting consistency across endpoints, ask whether the endpoints are independent.** Count how
+many distinct quantities are really being measured. **Credit where due in this case: the authors did flag
+their own mortality imbalance and did write "cautious interpretation is warranted" — and then the conclusion
+set it aside. Report both halves of that.**
+
+## A defence can be legitimate — check it before dismissing it (added 2026-10-04)
+
+TISA-818's day-28 mortality rose monotonically with dose (**5.3%, 10.5%, 26.3%**), and the authors argue it
+was *"not sustained."* **That argument checks out:** day-60 mortality was **26.3%, 21.1%, 31.6%** — placebo
+rose from 1 death to 5 while the high-dose arm went 5 to 6. **So the day-28 signal was substantially a
+difference in the timing of death rather than the number of deaths.**
+
+**Rule: when authors defend an unfavourable number, test the defence against the data they give rather than
+treating it as spin.** Here it survives, and reporting that is as important as reporting the imbalance. The
+part that does not survive is the separate claim about efficacy consistency.
+
+## The 2023 global ARDS definition is now generating trials (added 2026-10-04)
+
+TISA-818 is **the first trial in this archive to use the 2023 global ARDS definition**, which admits
+non-intubated patients, and the authors state the rationale explicitly: it **"creates an opportunity to
+evaluate therapies earlier in the disease course."** **The trial's own signal, such as it is, sat in the
+prespecified non-intubated subgroup** — which is the hypothesis the definition exists to permit.
+
+**Worth tracking as a category.** Also queued and unwritten: *J Crit Care* on **lung ultrasound findings in
+ARDS under the 2023 global definition** (logged 10-01). **When a definition changes, the first wave of trials
+using it is where the definition gets tested as much as the therapy** — flag such papers on sight.
+
+## Section headings get added to abstracts days after deposit — twice in three days (added 2026-10-04)
+
+| Paper | Length when quoted | Length later | Added characters |
+| --- | --- | --- | --- |
+| Videolaryngoscopy glottic view (10.1111/anae.70417) | 1,730 (2 Oct) | 1,799 (3 Oct) | `<h4>` Introduction/Methods/Results/Discussion |
+| BIG meta-analysis (10.1007/s43678-026-01218-y) | 1,927 (3 Oct) | 1,995 (4 Oct) | `<h4>` Objectives/Methods/Results/Conclusions |
+
+**Both times the text and every number were unchanged; only structural markup was added.** Two instances in
+three days means this is **routine publisher behaviour in the days after deposit**, not coincidence.
+
+**So the tag-stripped comparison written on 3 October is the operative check**, and a growth of 60–70
+characters on a recently deposited abstract is now an expected finding rather than a reason for alarm — **but
+still re-retrieve and compare, because the one time it is a real revision is the time a published quote goes
+wrong.**
+
+## A guideline and an independent review can converge without citing each other (added 2026-10-04)
+
+[SFAR's adult airway recommendations](/medical-literature/guidelines/2026-09-30/) (30 Sep) devoted one of
+three fields to human factors, with a human-factors society as co-author, and shipped **cognitive aids for
+briefing and debriefing.** Five days later a *CJEM* cross-domain review of team decision-making
+(10.1007/s43678-026-01285-1) independently identified **pre-briefing and debriefing** among the training
+approaches that improve decision accuracy under pressure. **Neither cites the other.**
+
+**Worth reporting as a convergence, and worth naming the two findings that cut against standard teaching:**
+*flexible, psychologically safe hierarchies rather than rigid structures, reducing deference-based errors* —
+command clarity and permission to speak up are different variables and only the first is routinely taught;
+and *information sharing required both sufficiency and restraint* — **in a time-pressured resuscitation, more
+communication is not better.**
+
+**Method caveat to carry with it, and it is not a small one:** narrative not systematic review, 25 of 595
+records, and **the thematic analysis was done by a single author** — in a paper arguing for shared cognition.
+**Treat the five factors as a well-organised hypothesis set.**
