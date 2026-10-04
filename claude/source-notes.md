@@ -2345,3 +2345,117 @@ communication is not better.**
 **Method caveat to carry with it, and it is not a small one:** narrative not systematic review, 25 of 595
 records, and **the thematic analysis was done by a single author** — in a paper arguing for shared cognition.
 **Treat the five factors as a well-organised hypothesis set.**
+
+## A panel can downgrade its own document class — the strongest honesty signal yet seen (added 2026-10-04)
+
+The **SFAR/ANARLF/SFNV/SFNR/GFHT peri-thrombectomy anaesthesia guideline** (10.1016/j.accpm.2022.101188,
+2023) states: *"Due to a lack of data in the literature allowing to conclude with high certainty on relevant
+clinical outcomes, the experts decided to formulate these guidelines as **'Professional Practice
+Recommendations' (PPR) rather than 'Formalized Expert Recommendations'**."*
+
+**Nine French documents are now catalogued here with expert-opinion proportions from 40% to 88%. Every other
+one published under the RFE label and disclosed the thinness in a GRADE table. This panel declined the
+stronger label instead.**
+
+**That is a better signal than a GRADE breakdown because it is visible on the cover.** A reader who does not
+reach the methods section still learns the essential fact.
+
+**Rule: record the document class as well as the content, and treat a self-downgraded class as a strong
+positive mark on the panel.** Watch for the distinction in French output specifically — **RFE
+(Recommandations Formalisées d'Experts), RBP (Recommandation de Bonne Pratique) and PPR (Professional
+Practice Recommendations) are not interchangeable**, and the choice carries information the GRADE table
+duplicates only partially.
+
+## SECOND REFINEMENT: SFAR documents published through ACCPM *are* in Europe PMC (added 2026-10-04)
+
+The 30 September note said SFAR's documents are not deposited in Europe PMC and that the society website is
+the only route. **Too strongly stated, and today's lead item disproves it:** the peri-thrombectomy guideline
+is an SFAR document and is indexed, because it went out as a journal article in *Anaesthesia Critical Care &
+Pain Medicine*. So are the 2017 severe-TBI guideline (10.1016/j.accpm.2017.12.001) and the 2017 targeted
+temperature management panel.
+
+**Correct rule, narrower:**
+
+| SFAR output | Route |
+| --- | --- |
+| **RFE / RBP published on sfar.org** | **website only** — curl + browser UA; not deposited |
+| **Documents published as ACCPM journal articles** | **Europe PMC, normally** |
+
+**The 30 September observation that ACCPM deposited nothing for August–September 2026 was true of that
+window and false as a general claim about the journal.**
+
+**This is the third tightening in five days and the same error each time** — 30 Sep (SFAR behaviour
+generalised to "the French societies"), 1 Oct (corrected for SRLF), 2 Oct (attribution of a co-signed
+document), today (deposit behaviour generalised from one window). **A true observation about a sample stated
+as a property of a category. The fix is always the same: say what was observed and over what window.**
+
+## Distinguish a journal erratum from third-party "proposed corrections" (added 2026-10-04)
+
+The 2026 AHA/ASA acute ischaemic stroke guideline (10.1161/str.0000000000000513, 72 citations) has two
+records attached that read alike and are not:
+
+| Record | Date | Indexed as | What it probably is |
+| --- | --- | --- | --- |
+| "Correction to: 2026 Guideline…" (10.1161/str.0000000000000530) | 27 Jul 2026 | **Published Erratum** | the journal correcting its own text |
+| **"Proposed** Corrections to the 2026 Guideline…" (10.1161/strokeaha.126.056478) | 31 Jul 2026 | **Review** | **third-party correspondence arguing the guideline is wrong** |
+
+**Both deposit zero-length abstracts, so neither the correction nor the dispute can be established.** Same
+wall as the ERC corrigenda in September, and the same honest conclusion: **no recommendation is known to be
+affected and none is known to be unaffected.**
+
+**Rule: when a guideline has "correction" records, check the pubType.** `Published Erratum` is the journal;
+anything else carrying "correction" in the title — especially *proposed* corrections indexed as `Review` — is
+somebody's argument, and reporting it as an official correction would be a substantive error.
+
+## Abstract care within one publisher is not uniform (added 2026-10-04)
+
+Two AHA documents four months apart:
+
+- **2026 AHA/ASA acute ischaemic stroke guideline** — states its search window precisely (*September to
+  December 2024, high-impact additions through March 2025*) and **names exactly which editions it replaces**.
+- **2026 AHA/ACC perioperative cardiovascular guideline** — abstract is the 2024 edition's with the year
+  changed; reports a search ending **March 2023**; claims to supersede the **2014** guideline while a 2024
+  edition exists. **Unresolved here for five days.**
+
+**Same publisher, same joint-committee structure. The difference is care in the abstract, not resources.**
+**Rule: do not generalise abstract quality from a publisher or a society — check each document.** Useful
+corollary: a well-written sibling abstract is evidence that the badly-written one is an error rather than a
+house style.
+
+## The GRADE ordering has held across nine documents (added 2026-10-04)
+
+| Document | Recs | High evidence | Expert opinion |
+| --- | --- | --- | --- |
+| SFAR/SFMU procedural sedation | 33 | 1 (3.0%) | 29 (87.9%) |
+| SRLF ICU nutrition, children | 29 | 1 (3.4%) | 23 (79.3%) |
+| SFAR in-hospital emergencies | 36 | 0 | 28 (77.8%) |
+| **SFMU/SRLF ED respiratory distress** | **20** | **2 (10.0%)** | **12 (60.0%)** |
+| SRLF ICU nutrition, adults | 34 | 3 (8.8%) | 19 (55.9%) |
+| SFAR airway in theatre | 27 | 1 (3.7%) | 13 (48.1%) |
+| SRLF/SFC cardiogenic shock | 41 | 7 (17.1%) | 17 (41.5%) |
+| SFAR perioperative + ICU nutrition | 40 | 11 (27.5%) | 16 (40.0%) |
+
+**The prediction made on 1 October has held on every document added since: the more time-pressured and
+unselected the clinical situation, the less randomised evidence exists.** Emergency-department triage of a
+breathless patient landed exactly where predicted, between emergency procedural sedation and elective
+perioperative nutrition.
+
+**Two documents cannot be placed in the table because they give no breakdown** — the SRLF renal replacement
+therapy consensus and the SRLF/SFMU oxygen therapy consensus, both *conférences de consensus*, both open
+access in PMC. **Worth checking whether the conference format systematically omits the breakdown**; if so
+that is a property of the instrument, not of the panels.
+
+## A guideline question about do-not-intubate patients is rare and worth flagging (added 2026-10-04)
+
+The SRLF/SFMU oxygen therapy consensus (10.1186/s13613-024-01367-2, 37 citations) makes its eleventh question:
+***"Which oxygenation device should be preferred for patients for whom a do-not-intubate decision has been
+made?"***
+
+**A technical recommendation set that puts a ceiling-of-care decision inside its own scope.** This archive has
+followed code-status questions since 11 September and this is the first guideline encountered that asks the
+question directly rather than leaving device choice in a DNI patient to improvisation.
+
+**Also worth noting about that document's jury: it includes nurses and physiotherapists, and question 9 asks
+about the role of physiotherapy** — the people who deliver part of the intervention sit on the body writing
+the recommendation about it. **Record panel composition when a recommendation concerns a non-medical
+discipline.**

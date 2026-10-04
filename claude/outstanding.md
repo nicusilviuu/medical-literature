@@ -1572,3 +1572,73 @@ J-PEDIA extreme weight-for-age (9 Sep).
 
 **What the thread lacks: any outcome study.** Everything here is guidance, consensus or narrative review.
 **A trial of briefing/debriefing or of checklist implementation with a patient outcome would be a lead item.**
+
+## Sent 2026-10-04 (guidelines) — no new guidelines from tracked societies; backlog worked
+
+- **SFAR/ANARLF/SFNV/SFNR/GFHT peri-thrombectomy anaesthesia** (10.1016/j.accpm.2022.101188, 2023, 18
+  recommendations). **Found by the ANARLF seam audit, run today for the first time.** The panel issued
+  **"Professional Practice Recommendations" rather than "Formalized Expert Recommendations"** because the
+  evidence would not carry the stronger class — the first such self-downgrade catalogued here.
+- **2026 AHA/ASA early management of acute ischaemic stroke** (10.1161/str.0000000000000513, 72 citations).
+  **STROKE GAP NOW CLOSED** — the ESO half went yesterday.
+- **SFMU/SRLF initial assessment of respiratory distress in the ED** (10.1016/j.aicoj.2025.100005, 20
+  recommendations: 2 GRADE 1, 6 GRADE 2, 12 expert opinion).
+- **SRLF/SFMU oxygen therapy in acute hypoxaemic respiratory failure** (10.1186/s13613-024-01367-2, **37
+  citations**, 22 statements, 11 questions).
+
+## ANARLF seam audit result — complete (5 records all-time)
+
+Two sent (above, and the TBI guideline sent 10-03). **Two remain, both 2017 and both outside the ~5-year
+recency preference — look for successors first:**
+
+1. **Management of severe traumatic brain injury (first 24 hours)** — *ACCPM*, 27 Dec 2017, **Practice
+   Guideline**, 1,643 chars (10.1016/j.accpm.2017.12.001). **The only document found anywhere that addresses
+   the acute *medical* management of severe TBI, so the most direct candidate for the intracranial-pressure
+   gap named in the 10-04 brief.** Nine years old. **Search for a 2023-2026 successor before reporting it;
+   if none exists, that absence is itself the finding.**
+2. **Targeted temperature management in the ICU: guidelines from a French expert panel** — 2017,
+   **co-published *ACCPM* (10.1016/j.accpm.2017.06.003) and *Annals of Intensive Care*
+   (10.1186/s13613-017-0294-1)**. Core resuscitation territory, never covered here. Same instruction: look
+   for a successor, and note that ERC 2025 post-resuscitation care (sent 09-12) partly supersedes it.
+
+## Guidelines backlog after 2026-10-04
+
+1. **2026 AHA/ACC perioperative cardiovascular guideline** — **unresolved for five days.** Both publisher
+   pages HTTP 403, neither record in PMC. **Note for contrast: the AHA/ASA stroke guideline sent today has a
+   precisely written abstract from the same publisher**, which is evidence the perioperative abstract is an
+   error rather than house style. Keep re-checking for PMC entry or a Guideline-at-a-Glance.
+2. **ICP / severe TBI medical management** — see ANARLF item 1 above. **The named gap from the 10-04 brief.**
+3. **Targeted temperature management** — ANARLF item 2 above; check for a successor.
+4. **SRLF backlog remaining:** ICU medical staffing and organisation (20 Jan 2025); new antibiotics for
+   Gram-negative infections (2023, companion paper 51 citations); neuromuscular blockade monitoring (22 Oct
+   2025 — **check pubType, may be a study**); acute encephalopathy consensus (**publication still not
+   located**); RFE drépanocytose.
+5. **SFMU and SPLF seam audits** — still never run. Both demonstrably publish; SFMU now co-signs four
+   documents reported here (procedural sedation, UVIH, ED respiratory distress, oxygen therapy).
+6. **SFAR remaining catalogue** (sfar.org route only — RFEs are not deposited): paediatric regional
+   anaesthesia; intra-abdominal infections; **anticoagulants for planned invasive procedures** (three-way
+   comparison ready with the AHA antithrombotic statement sent 10-02, the ESAIC/ESRA guideline sent 09-06,
+   and now field 3 of the peri-thrombectomy document sent today); hepatic resection; ECBU before urological
+   procedures; medication-error prevention with SFPC; perioperative immediate hypersensitivity with SFA.
+7. **SPILF backlog:** partial oral antibiotic therapy for infective endocarditis (*Pathogens*, 2 Sep 2026, in
+   PMC); male UTI antibiotic treatment (25 Jun 2026); bacterial arthritis update (2023); the 2022 SPILF CPG
+   whose **full title is still unretrieved**.
+8. **ERC 2025** — Newborn, Epidemiology, Education. Lower priority.
+9. **HIS operating theatre ventilation** — retry with curl + browser UA.
+10. **Chinese society documents** — no route established. Includes the TBI mass-casualty consensus logged
+    8 Sep and the paediatric ECMO nutrition consensus logged 10-02.
+
+## Full-text wanted (added 2026-10-04)
+
+**Two documents sent today give no GRADE breakdown and both are open access in PMC, so both are readable:**
+- SRLF/SFMU **oxygen therapy** consensus — 22 statements, no certainty classification.
+- SRLF **renal replacement therapy** consensus (sent 10-01) — 45 statements, no certainty classification.
+
+**Both are *conférences de consensus*. Worth checking whether that format systematically omits the GRADE
+breakdown** — if so it is a property of the instrument rather than of the panels, and should be recorded as
+such.
+
+**Also wanted:** the two AHA/ASA stroke correction records (10.1161/str.0000000000000530, a Published Erratum,
+and 10.1161/strokeaha.126.056478, "Proposed Corrections" indexed as Review). **Both deposit zero-length
+abstracts.** Until read, **no recommendation in that guideline is known to be affected and none is known to be
+unaffected.**
