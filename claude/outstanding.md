@@ -1709,3 +1709,90 @@ Whole-database total crossed **49 million** today: **49,001,729**, against **48,
 series started on 27 September — **about 63,180 records in eight days**, roughly 7,900 a day. Useful as a
 sanity baseline: a daily gain far below that, with buckets flat, is a deposit stall of the kind diagnosed on
 26 September.
+
+## SFMU SEAM OPENED 2026-10-05 — audit complete, 7 of 7 guidelines found
+
+**All seven SFMU Practice Guidelines in the 5-year window are in *ACCPM*.** Four sent today:
+
+- **Emergency intubation of an adult outside the OR and ICU, 2024** (10.1016/j.accpm.2026.101744) — 32
+  recommendations, 5 GRADE 1. **Completes the airway triad with the SFAR in-theatre RFE sent 09-30.**
+- **Anticoagulant management in emergency settings, 2024** (10.1016/j.accpm.2025.101584) — **103
+  recommendations, the largest document catalogued here**; 19 GRADE 1, 48 expert opinion; **strong agreement
+  on only 97 of 103.**
+- **Mild traumatic brain injury 2023** (10.1016/j.accpm.2023.101260, **34 citations**) — 14 recommendations;
+  **RPP format chosen over FER.**
+- **Adult pleural fluid effusion in critical care** (10.1016/j.accpm.2025.101527) — 25 recommendations, **no
+  GRADE breakdown given.**
+
+**Previously sent, also SFMU:** ED respiratory distress and oxygen therapy (both 10-04); SPILF CAP update
+carries SFMU endorsement (10-02).
+
+**Three SFMU documents remain unreported:**
+1. **Urgent obstetric situations in emergency medicine** (*ACCPM*, 5 Aug 2022, 2,131 chars). **Obstetric
+   emergency care outside a delivery suite — never covered here, and obstetric anaesthesia is primary
+   scope.** Highest priority of the three.
+2. **Choice of intravenous fluids for vascular filling** (*ACCPM*, 5 May 2022, 2,352 chars). **Pairs directly
+   with the ESICM fluid guideline sent 09-02**, which gave isotonic saline over albumin in TBI at very low
+   certainty.
+3. **Emergency management of Glanzmann thrombasthenia: consensus** (*Orphanet J Rare Dis*, 29 Jun 2023).
+   Borderline — rare bleeding disorder.
+
+## Routed to the brief 2026-10-05
+
+- **Organisation and communication in critical situations: a national survey** (*Int J Qual Health Care*,
+  1 Jan 2026, 1,887 chars). **Belongs with the human-factors thread** — SFAR airway human factors (09-30),
+  IONM timeline checklists (10-03), CJEM team decision-making (10-04). **The thread still lacks any outcome
+  study; a national survey is not one but is closer to data than the rest.**
+- **C-PIV: peripheral intravenous catheter use in French emergency departments** (*Lancet Reg Health*,
+  10 Apr 2026, in PMC, 1,974 chars). Procedural epidemiology.
+
+## Antithrombotic picture — now four-sided and complete enough to write about
+
+| Document | Decision context |
+| --- | --- |
+| ESAIC/ESRA (sent 09-06) | Stopping antithrombotics for **neuraxial procedures** |
+| AHA scientific statement (sent 10-02) | Harms of **undertreatment** — omission, non-adherence, underdosing |
+| SFAR/ANARLF peri-thrombectomy, field 3 (sent 10-04) | Antiplatelets and anticoagulants **around thrombectomy** |
+| **SFMU/SFAR/SFTH/GIHP emergency management (sent 10-05)** | **Bleeding, asymptomatic overdose, non-elective procedures, and thrombolysis in an anticoagulated stroke patient** |
+
+**Still missing: the SFAR RFE on anticoagulants for planned invasive procedures** (sfar.org, website route
+only). **That would make five and cover the elective case.** Worth doing next on the SFAR catalogue.
+
+**Observation worth keeping:** the AHA statement is about giving too little; three of the four French
+documents are about safely giving less. **Same drug class, opposite institutional anxieties.**
+
+## Guidelines backlog after 2026-10-05
+
+1. **2026 AHA/ACC perioperative cardiovascular guideline** — **unresolved for six days.** Both publisher
+   pages HTTP 403, neither record in PMC. Keep re-checking.
+2. **SPLF seam audit — now clearly warranted.** SPLF has appeared twice as co-signatory (SPILF CAP update
+   10-02; chest drainage 10-05) and has never been audited.
+3. **SFMU remaining three** — obstetric emergencies first.
+4. **ICP / severe TBI medical management** — the ANARLF 2017 document (10.1016/j.accpm.2017.12.001) is still
+   the only candidate; **search for a 2023-2026 successor first, and if none exists that absence is the
+   finding.** Note the mild-TBI document sent today covers the other end of the severity range.
+5. **Targeted temperature management** — ANARLF 2017, co-published ACCPM + Ann Intensive Care; check for a
+   successor; ERC 2025 post-resuscitation care partly supersedes.
+6. **SRLF remaining:** ICU medical staffing (20 Jan 2025); new antibiotics for Gram-negative infections
+   (2023, companion 51 citations); neuromuscular blockade monitoring (**check pubType**); acute encephalopathy
+   consensus (**publication still unlocated**); RFE drépanocytose.
+7. **SFAR remaining catalogue** (website route only): **anticoagulants for planned invasive procedures —
+   promoted, see above**; paediatric regional anaesthesia; intra-abdominal infections; hepatic resection;
+   ECBU before urological procedures; medication-error prevention with SFPC; perioperative immediate
+   hypersensitivity with SFA.
+8. **SPILF remaining:** partial oral antibiotic therapy for infective endocarditis (in PMC); male UTI; the
+   2022 CPG whose **full title is still unretrieved**.
+9. **ERC 2025** — Newborn, Epidemiology, Education.
+10. **HIS operating theatre ventilation**; **Chinese society documents** — no route.
+
+## French society routes — settled as of 2026-10-05
+
+| Society | Route | Audit status |
+| --- | --- | --- |
+| **SFAR** | **ACCPM for journal articles; sfar.org for RFEs** | website catalogued; ACCPM partially |
+| **SRLF** | Europe PMC, *Ann Intensive Care* | **complete** |
+| **SPILF** | Europe PMC, *Infect Dis Now* / *Respir Med Res* | **complete** |
+| **ANARLF** | Europe PMC, *ACCPM* | **complete** (5 records) |
+| **SFMU** | Europe PMC, **ACCPM — 7 of 7** | **complete** |
+| **SPLF** | presumed ACCPM / respiratory journals | **NOT RUN — next** |
+| SFC, SFCTCV, GFRUP, SFNCM, SFTH, GIHP, SFNV, SFNR, CARO, CARORL, SFORL, ADARPEF, SFPC, SFCD, AFDN, FHS, SOFMER | — | not run |

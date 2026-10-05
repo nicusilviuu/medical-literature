@@ -2558,3 +2558,104 @@ against 106 randomised.**
 **Rule: when two candidate denominators both fit and their sum contradicts the stated total, report the
 ambiguity rather than picking one.** The technique is sound when a single denominator satisfies every
 percentage in the paper; it is not when it does not. **Say which case you are in.**
+
+## CORRECTION: the self-downgraded document class is a structural French option, not a rarity (added 2026-10-05)
+
+Yesterday's note called the SFAR/ANARLF peri-thrombectomy document **"the first document in this archive
+whose panel changed the class of thing it was writing"** and said the move was **"rare."** **Both were an
+overreach from a sample of one**, and the second instance turned up within 24 hours:
+
+| Document | Date | Chose | Over |
+| --- | --- | --- | --- |
+| SFAR/ANARLF peri-thrombectomy (10.1016/j.accpm.2022.101188) | 1 Jan 2023 | **PPR** (Professional Practice Recommendations) | RFE |
+| **SFMU/SFAR mild traumatic brain injury** (10.1016/j.accpm.2023.101260) | **5 Jun 2023** | **RPP** (Recommendations for Professional Practice) | **FER** |
+
+Both give the same stated reason — the evidence will not support high-certainty conclusions.
+
+**The correct reading is structural and more useful than the one published: the French system has a
+recognised lower tier (RPP / PPR / RBP) that panels select when the evidence will not carry a Formalized
+Expert Recommendation.** So **the document class carries information about the evidence before a reader
+reaches any GRADE table** — which is still the valuable point, now attached to a mechanism rather than to one
+panel's conscience. **How often the lower tier is used is not something this archive can yet estimate.**
+
+**Rule: record the class of every French document (RFE / RBP / RPP / PPR / conférence de consensus) alongside
+its GRADE profile**, and expect the smaller, more cautiously worded documents to carry the lower-tier label —
+mild TBI produced **14 recommendations from 11 questions**, the smallest French output catalogued here.
+
+**The meta-lesson is the one from 1-4 October again, for the fourth time in six days: a true observation
+about a sample stated as a property of a category.** A correction notice has been added to the 4 October
+entry.
+
+## The counting convention is now DEMONSTRATED, not inferred (added 2026-10-05)
+
+On 1 October I inferred across six documents that **where a French panel reports questions it could not
+answer, the stated recommendation total includes them**, and flagged it as an inference no document states.
+
+**The SFAR/SFMU emergency intubation guidelines state both numbers in one abstract:**
+
+- **Results: "32 recommendations"** — and **5 GRADE 1 + 12 GRADE 2 + 15 expert opinion = 32** exactly.
+- **Conclusion: "strong agreement among experts for 36 recommendations"** — and **32 + 4 questions that "did
+  not find any response in the literature" = 36.**
+
+The anticoagulant document in the same entry does it again: **19 + 35 + 48 = 102 against a stated 103, with
+one unanswerable question.**
+
+**So the convention is real and it is applied inconsistently within a single abstract.** **Rule: when a
+French document gives two different recommendation totals, the smaller is the graded count and the larger
+includes the unanswered questions. Quote the graded count and say what the other number is.**
+
+## The more controlled setting had the thinner airway evidence (added 2026-10-05)
+
+| Document | Setting | Recommendations | GRADE 1 |
+| --- | --- | --- | --- |
+| SFAR airway in theatre (sent 09-30) | **Operating theatre** | 27 | **1 (3.7%)** |
+| SFAR/SFMU emergency intubation (sent 10-05) | **Outside theatre and ICU** | 32 | **5 (15.6%)** |
+
+**This inverts the pattern recorded on 1 October**, where more time-pressured and unselected settings had
+less evidence. **Airway management is the exception, and the reason is instructive: emergency intubation has
+been randomised repeatedly — videolaryngoscopy, preoxygenation, induction agents, bougie use — precisely
+because the event rate is high and the population unselected, while elective theatre airway outcomes are too
+rare to randomise against.**
+
+**Rule: the "time-pressured means less evidence" generalisation holds for management strategies and fails for
+discrete procedures with frequent measurable failures.** Check which kind of question a document asks before
+applying it.
+
+## ACCPM is the deposit route for French society guidance (confirmed 2026-10-05)
+
+The SFMU seam audit returned **seven Practice Guidelines in five years, all seven in *Anaesthesia Critical
+Care & Pain Medicine*.** Combined with the SFAR documents found there on 4 October, the rule from 30
+September is now firmly narrowed:
+
+| Output | Route |
+| --- | --- |
+| French society guidance **published as an ACCPM journal article** | **Europe PMC** — reliable |
+| French guidance **that never reaches a journal** (SFAR's sfar.org RFEs) | **society website only**, curl + browser UA |
+
+**Practical consequence: a seam audit on `ABSTRACT:"<society acronym>"` over a 5-year window plus a check of
+ACCPM finds most of what a French society has published.** SFMU: 7 of 7 guidelines this way, 6 of them never
+previously reported.
+
+## A panel reporting non-unanimity is more informative than one reporting 100% (added 2026-10-05)
+
+The anticoagulant guidelines reached **strong agreement on 97 of 103 recommendations** — so **six did not.**
+Almost every other French document catalogued here reports strong agreement on **100%** of its output.
+
+**Rule: treat a reported non-unanimity as a positive signal and say which count it was.** A document that
+publishes recommendations its own panel did not strongly agree on, and discloses that, is telling the reader
+where the contested ground is. **Worth asking for in the full text: which six.**
+
+## Guidelines written because of practice variation, not new evidence (added 2026-10-05)
+
+The chest drainage guidelines (10.1016/j.accpm.2025.101527) open with their rationale: *"Chest drainage is a
+very common procedure in critical care. It is performed by practitioners from various specialties… However,
+practices regarding chest tube insertion, monitoring, and removal vary considerably between institutions."*
+
+**That is a guideline motivated by variation rather than by new trials**, and it changes how to read it: the
+value is standardisation, not a change in the evidence. **Its four areas run indication → placement →
+monitoring → removal, and removal is the step least often protocolised.**
+
+**Also check exclusions hard on procedural guidelines.** This one excludes **purulent pleurisy, haemothorax
+and malignant effusion** — three of the commonest reasons a critical care patient has a chest drain. **So it
+is guidance on draining simple effusions**, and applying it to empyema or trauma would be outside the
+document.
