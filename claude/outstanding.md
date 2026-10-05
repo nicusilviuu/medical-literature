@@ -1642,3 +1642,70 @@ such.
 and 10.1161/strokeaha.126.056478, "Proposed Corrections" indexed as Review). **Both deposit zero-length
 abstracts.** Until read, **no recommendation in that guideline is known to be affected and none is known to be
 unaffected.**
+
+## Sent 2026-10-05 — the 1 October priority queue is CLEARED
+
+- *Critical Care*, 1 Oct — **REMAP-CAP ferritin and suPAR as treatable traits for anakinra**
+  (10.1186/s13054-026-06311-3). **suPAR's enrichment direction reverses in critical illness.**
+- *AJRCCM*, 1 Oct — **WBC modifies cefepime vs piperacillin-tazobactam effect**, replicated in ACORN and an
+  instrumental-variable study (10.1093/ajrccm/aamag257).
+- *J Crit Care*, 1 Oct — **lung ultrasound under the 2023 global ARDS definition** (10.1016/j.jcrc.2026.155764).
+- *AJRCCM*, 1 Oct — **three vs six weeks of corticosteroids for mild immune-related pneumonitis**
+  (10.1093/ajrccm/aamag349). Secondary scope; reported for the duration answer and the omitted harm.
+
+**Explicitly set aside, not an item:** *RAPM*, 1 Oct — micro-endoscopy plus ultrasound for TAP catheters
+(10.1136/rapm-2026-107967). **A cadaveric feasibility study of four catheters in three anatomical bodies** —
+too preliminary. **Finding worth keeping: for all four catheters the micro-endoscopic vision was necessary to
+get the catheter to advance along the plane**, so the claim is about catheter progression, not needle
+placement. Revisit if a clinical series appears.
+
+## Write up next — as of 2026-10-05
+
+**The priority queue is empty. These four are logged from sweep output with character counts but were never
+retrieved individually — retrieve before writing, and none is strong enough to lead.**
+
+1. ***Chest*, 3 Oct — CEUS versus US- and CT-guided biopsy for subpleural lung lesions**, prospective
+   multicentre (2,294 chars). Procedural; the most in-scope of the four.
+2. ***Crit Care Med*, 30 Sep — soluble biomarker association modified by diabetes and ASCVD** (1,937 chars).
+   **Now more interesting after 10-05** — it is a third effect-modification paper, and the WBC and suPAR
+   items give it company.
+3. ***ICVTS*, 1 Oct — stage IA invasive mucinous adenocarcinoma survival** (1,879 chars). Thoracic surgery.
+4. ***Chest*, 3 Oct — sputum cellularity and health services use in asthma and COPD** (2,274 chars). Weakest
+   scope fit.
+
+**Still depositing no abstract — five-plus retries each:** *AJRCCM* dynamic fibrinolysis resistance grading
+(10.1093/ajrccm/aamag281); *Anesth Analg* PT/APTT masking citrate-induced coagulopathy
+(10.1213/ane.0000000000008326); *BJA* day-surgery multimorbidity (10.1016/j.bja.2026.07.074); *Anesth Analg*
+J-PEDIA extreme weight-for-age (9 Sep). **Consider declaring these four non-depositors and dropping the
+retries** — the three-retry cap recorded in source-notes has been exceeded for all of them.
+
+## Effect-modification thread — new, opened 2026-10-05
+
+Three papers now, and the comparison is the point:
+
+| Paper | Biomarker | Result |
+| --- | --- | --- |
+| REMAP-CAP / anakinra (sent 10-05) | **Ferritin** (n=1,243) | **Does not identify responders**; highest tercile had lowest probability of benefit |
+| REMAP-CAP / anakinra (sent 10-05) | **suPAR** (n=145) | **Direction reverses** vs non-critically-ill trials |
+| ACORN + IV study (sent 10-05) | **WBC** | **Interaction replicates in both cohorts**, OR 0.95 in each; threshold WBC>=16 from ACORN only |
+| *Crit Care Med*, 30 Sep (queued) | soluble biomarker x diabetes/ASCVD | not yet retrieved |
+
+**What the thread needs: a prospective trial that enrolled on a biomarker and reported the interaction it was
+designed to test.** Everything here is post hoc or exploratory. **If one appears it is a lead item.**
+
+## Gaps and pointers added 2026-10-05
+
+- **Anaesthesia for adult congenital heart disease — never covered.** Noticed via *European Heart Journal*,
+  5 Oct, "Congenital heart disease in adults: evolving health systems and lifelong outcomes" (1,738 chars),
+  which is about health systems rather than perioperative care. **A genuine primary-scope topic with zero
+  coverage; look for perioperative ACHD material directly.**
+- **Aerosol-generating procedure precautions — what replaced them and on what evidence.** Flagged 10-04 from
+  a *BJA* letter; still no non-correspondence paper found.
+- **2023 global ARDS definition** remains a live category: two papers in two days. **Flag on sight.**
+
+## Database milestone (added 2026-10-05)
+
+Whole-database total crossed **49 million** today: **49,001,729**, against **48,938,549** when this control
+series started on 27 September — **about 63,180 records in eight days**, roughly 7,900 a day. Useful as a
+sanity baseline: a daily gain far below that, with buckets flat, is a deposit stall of the kind diagnosed on
+26 September.

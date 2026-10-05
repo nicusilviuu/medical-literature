@@ -2459,3 +2459,102 @@ question directly rather than leaving device choice in a DNI patient to improvis
 about the role of physiotherapy** — the people who deliver part of the intervention sit on the body writing
 the recommendation about it. **Record panel composition when a recommendation concerns a non-medical
 discipline.**
+
+## A biomarker validated outside the ICU can carry the opposite sign inside it (added 2026-10-05)
+
+**REMAP-CAP immune modulation domain, exploratory treatable-traits analysis** (10.1186/s13054-026-06311-3):
+
+| Biomarker | n | Finding |
+| --- | --- | --- |
+| **Ferritin** | 1,243 | Posterior probability of anakinra benefit **64%, 71%, 21%** across rising terciles, against **53%** unadjusted — **the highest-ferritin patients had the lowest probability of benefit** |
+| **suPAR** | **145** (85 high, 60 low) | **94.8% (OR 2.28, CrI 0.85-6.06) in LOW suPAR** against **38.6% (OR 0.88, 0.39-2.00) in HIGH suPAR** |
+
+**Outside the ICU, high suPAR has been used as the inclusion criterion for anakinra. Here the direction
+reverses**, and the authors say so: *"These hypothesis-generating findings contrast with the results of
+clinical trials in non-critically ill patients."*
+
+**Rule: a biomarker's enrichment direction is part of what needs re-validating when a drug moves into
+critical illness, not just its threshold.** Both biomarkers here pointed the same way — **the sicker-looking
+inflammatory phenotype did worse with the anti-inflammatory drug.**
+
+**Two reporting points to carry.** A **94.8% posterior probability and a credible interval of 0.85-6.06 are
+the same information stated twice**; quote both, because a reader given only the first will overread it
+badly. And note the **asymmetry of dataset to claim**: ferritin had 1,243 patients because it was measured at
+sites, suPAR had 145 because it needed stored plasma — **so the stronger claim rests on the weaker dataset**,
+which is the opposite of what you would want.
+
+## A subgroup finding that replicates in an independent cohort is a different class of evidence (added 2026-10-05)
+
+**WBC and anti-pseudomonal antibiotic choice** (10.1093/ajrccm/aamag257): post hoc analyses of **the ACORN
+randomised trial** and **a separate instrumental-variable study**. The interaction appears in **both**, with
+nearly identical odds ratios — **0.95 (0.92-0.98) and 0.95 (0.94-0.96)**, both P<.01 — and in both the model
+fits better with the interaction term.
+
+**The framing is the argument: ACORN found no mortality difference, the IV study found cefepime better, and
+the proposal is that they differed because their populations differed on one cheap universally measured
+variable.** If WBC modifies the effect, neither parent study is wrong.
+
+**Rule: when two studies of the same comparison disagree, ask whether an effect modifier reconciles them
+before concluding one is wrong** — and weight a replicated interaction far above a single-cohort subgroup.
+
+**But keep the layers separate:** the **interaction replicated**; the **threshold did not.** WBC >= 16 with
+**OR 0.51 (0.29-0.90)** favouring piperacillin-tazobactam is reported **from ACORN only**. **An interaction
+that reproduces and a cut-point derived once are different findings** — and an interaction OR of 0.95 is
+*per unit*, so the quotable clinical number is always the threshold analysis, which is the less secure one.
+
+## An AUC of 0.617 is not "potential value for bedside risk stratification" (added 2026-10-05)
+
+The lung-ultrasound-in-ARDS study (10.1016/j.jcrc.2026.155764) reports pleural line abnormalities with
+**AUC 0.617 (95% CI 0.550-0.681)** for 28-day mortality and concludes they suggest *"potential value for
+bedside risk stratification."* **0.5 is a coin toss; a lower bound of 0.550 is barely distinguishable from
+one.**
+
+**Rule: convert any reported AUC into plain language before repeating the authors' adjective.** Credit where
+due: this paper's **primary objective was descriptive** and it labels the mortality association
+**"secondary, exploratory"** twice — so the drift is in the conclusion sentence only, and the descriptive
+content is sound.
+
+**Also missing and most needed for an imaging-sign study: inter-rater reliability.** Lung ultrasound is the
+most operator-dependent common ICU investigation and the abstract does not report agreement at all. **Ask for
+that number whenever an imaging sign is proposed as a prognostic marker.**
+
+## A broader case definition buys earlier enrolment and pays in prognostic precision (added 2026-10-05)
+
+Two papers in two days using the **2023 global ARDS definition**, which admits non-intubated patients:
+
+- **TISA-818 phase 2** (sent 10-04): the trial's signal sat in its **prespecified non-intubated subgroup** —
+  which is the hypothesis the definition exists to permit.
+- **Lung ultrasound** (sent 10-05): a bedside sign discriminates mortality at **AUC 0.617** in that
+  population.
+
+**Those are two sides of one trade.** A wider definition enrols earlier and enrols a more heterogeneous
+population, so prognostic signs within it discriminate less well. **Expect both effects from any definition
+change, and look for them explicitly** — the first wave of papers using a new definition tests the definition
+as much as the therapy.
+
+## State what a trial's conclusion leaves out when the harm is in its own results (added 2026-10-05)
+
+The three-versus-six-week corticosteroid trial for immune-related pneumonitis (10.1093/ajrccm/aamag349)
+concludes: *"This study establishes the 6-week corticosteroid regimen as an evidence-based standard."*
+
+**Earned on efficacy** — noninferiority of three weeks not demonstrated (66.7% vs 85.2% success, difference
+−18.5 points, 80% CI −29.0 to −7.9) and a **predefined** exploratory superiority analysis positive at P=.013.
+
+**Omitted, from the same results paragraph: grade >=3 adverse events in 12% versus 24% — the longer course
+doubled them.** *"All were manageable with clinical interventions"* is a mitigation, not grounds for leaving
+the number out of a conclusion that establishes a standard. **The honest summary is: six weeks works better
+and harms more, with equal quality of life and equal survival.**
+
+**Worth crediting the statistical handling, which is this archive's 29 September rule run in reverse and
+run correctly:** a failed noninferiority test plus a **predefined** superiority analysis is a legitimate
+inference, where upgrading a failed *superiority* test to equivalence never is.
+
+## The percentage-to-counts reconstruction has a failure mode (added 2026-10-05)
+
+Yesterday the counts behind a set of percentages were recoverable by division. **Today they are not.** In the
+steroid trial, **85.2% pins one arm at 46/54**, but **66.7% fits 34/51 or 36/54**, and **54 + 54 = 108
+against 106 randomised.**
+
+**Rule: when two candidate denominators both fit and their sum contradicts the stated total, report the
+ambiguity rather than picking one.** The technique is sound when a single denominator satisfies every
+percentage in the paper; it is not when it does not. **Say which case you are in.**
