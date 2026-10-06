@@ -224,7 +224,7 @@ them as pointers and chase the journal publication.
 **2026-08-31.** Two refinements to the date-range sweep, both learned the hard way
 today:
 
-1. **The FIRST_PDATE filter is not reliable on its own.** A query filtered to
+1. **The `FIRST_PDATE` filter is not reliable on its own.** A query filtered to
    28–31 August returned the Reizine candidemia paper whose own
    `firstPublicationDate` is 28 June. Always re-check each item's date in the `core`
    record before calling it new; the filter is a net, not a guarantee.
@@ -2762,3 +2762,116 @@ poll returns 200, grep the rendered HTML for a literal `*`** — there should be
 ```bash
 curl -s "$URL" | grep -o "<p>[^<]*\*[^<]*" | head
 ```
+
+## The route to Chinese society documents (added 2026-10-06)
+
+**Settled, after being carried as "no route established" for weeks.** Chinese Medical Association documents
+are in Europe PMC and the plain guideline-pubType sweep finds them:
+
+```bash
+epmc '(PUB_TYPE:"Practice Guideline" OR PUB_TYPE:"Guideline" OR PUB_TYPE:"Consensus Development Conference") AND FIRST_PDATE:[d1 TO d2]' core 50
+```
+
+**Two appeared in one 7-day window** — a Chinese Thoracic Society consensus on lung biopsy in ILD
+(10.3760/cma.j.cn112147-20260524-00302) and a paediatric epilepsy monotherapy guideline — so this is a route,
+not a one-off.
+
+**What to expect from them:** journal title transliterated (`Zhonghua jie he he hu xi za zhi`), `language:
+chi`, pubType `Practice Guideline` **plus** `Consensus Statement` and `English Abstract`, not open access,
+no PMCID. **And the abstracts are long** — the lung biopsy consensus deposits **9,056 characters including
+all 15 recommendations verbatim with evidence levels**, which is more than most English-language societies
+give. **So a Chinese-language document can be the best-documented item in a sweep.** The `<b>` tags around
+`Recommendation N:` need stripping as usual.
+
+**Practical note: do not infer the sponsoring bodies from the journal.** This one is authored by "Chinese
+Thoracic Society, Chinese Medical Association, Chinese Association of Chest Physicians" in `authorString`
+with no individual names, and the abstract names a fourth body (the Respiratory Physicians Branch of the
+Chinese Medical Doctor Association) that the author string omits. **Read both.**
+
+## A strong recommendation is not a well-evidenced one — now measured inside one document (added 2026-10-06)
+
+The ILD biopsy consensus annotates all 15 recommendations, which allows the cross-tabulation this archive has
+only been able to do across documents before:
+
+| Level | n | What it covers |
+| --- | --- | --- |
+| 1 | 1 | **Contraindications only** |
+| 2 | 7 | Technique selection, acute exacerbation, integrated diagnosis |
+| 3 | 1 | Pre-biopsy multidisciplinary discussion |
+| 4 | 6 | Indication, site selection, shared decision-making, reporting |
+
+**13 of 15 are strong; the 2 conditional ones are not the weakest-evidence ones.** One conditional sits on
+level 2 while **five strong recommendations sit on level 4.**
+
+**Rule: within a document that labels both, check whether strength tracks evidence level. It usually tracks
+indispensability instead** — a panel will not mark "decide where to put the needle" as conditional, because
+the step cannot be skipped. **Say this whenever quoting a "strong" recommendation**, or a reader will hear
+"well evidenced."
+
+**And look for the highest-evidence recommendation specifically, because it is often a prohibition.** Here
+the single level 1 statement is the contraindication list, and it excludes the patient a critical care
+reader is most likely to be holding: acute respiratory failure, haemodynamic instability, severe
+coagulopathy. **Contraindications accumulate harder evidence than indications do, because the harm signal is
+what gets published.**
+
+## Read the whole title: on ISHLT documents the suffix is the document class (added 2026-10-06)
+
+Two Europe PMC records:
+
+| DOI | Title ending | Date |
+| --- | --- | --- |
+| 10.1016/j.healun.2026.05.034 | **"— an ISHLT Consensus Document"** | 11 Aug 2026 |
+| 10.1016/j.healun.2026.05.031 | **"— Perspective on the ISHLT Consensus Document"** | 1 Oct 2026 |
+
+**Same title stem, same 20-plus author list, same pubType `Practice Guideline`, no abstract on either.** A
+sweep that truncates titles for display shows them as a duplicate deposit, and I nearly logged them as one.
+
+**Rule: when two records share a title stem and diverge only after a dash or colon, print the full title
+before concluding anything.** The consensus document and a commentary on it are different documents with
+different standing.
+
+## An Elsevier JS challenge is not the sfar.org case (added 2026-10-06)
+
+Three obstacle classes now distinguished, and the fix differs:
+
+| What comes back | Example | Fix |
+| --- | --- | --- |
+| 403 to `WebFetch`, 200 to `curl` with a browser UA | sfar.org | **browser user-agent** |
+| 200 with a 2.7 KB JavaScript stub | `linkinghub.elsevier.com` | follow to the real host |
+| **403 with `<title>Just a moment...</title>`** | ahajournals.org, jacc.org, sciencedirect.com | **none — this is a JS challenge, not a header check** |
+
+**Rule: read the body of a 403 before retrying.** `Just a moment...` is Cloudflare's interstitial; no
+user-agent, header or retry gets past it from a shell. **Say "it needs the PDF" and stop** rather than
+burning retries. **A 403 is not one thing.**
+
+## Count underscores outside code spans (added 2026-10-06)
+
+`PUB_TYPE:"Practice Guideline"` inside backticks made the underscore count odd and the balance check fire
+falsely. **Code spans legitimately contain unpaired `_` and `*`.** Strip them before counting:
+
+```bash
+python3 -c "import re,sys; b=re.sub(r'\`[^\`]*\`','',open(sys.argv[1]).read().split('---',2)[2]); print(b.count('_'), b.count('**'))" FILE
+```
+
+**And check that every italic-wrapped footer paragraph ends with the right number of asterisks** — a
+paragraph whose last sentence is bold needs `***` to close bold and italic, and `**` leaves the italic open
+to the end of the document. Print the last five characters of each such paragraph and look at them.
+
+## The dedupe log is the `items:` front matter, not the previous entry's lead list (added 2026-10-06)
+
+**A paper was written up twice**: 10.1136/rapm-2026-108372, in full on 12 September as item 2 and again on
+26 September as item 1, the second time with the words *"never written up until now."*
+
+**The failure is traceable.** The 11 September entry had flagged it as a lead; the 26 September run checked
+that lead list, found it unticked, and concluded it had not been covered — **without checking the `items:`
+blocks of the entries in between, where its DOI already sat.**
+
+**Rule: dedupe against every `items:` block, by DOI, before writing. A lead list says what was promised, not
+what was delivered.** One command, and it covers the whole archive at once:
+
+```bash
+grep -h "link:" _guidelines/*.md _briefs/*.md | sort | uniq -d
+```
+
+**Run it as part of the pre-commit suite**, not just for the day's own items — it found this one immediately
+after being added.

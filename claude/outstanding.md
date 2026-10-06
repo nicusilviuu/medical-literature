@@ -1851,3 +1851,79 @@ pattern.
 **Standing action: watch the whole-database figure for a second consecutive low day.** Two in a row changes
 this from an observation to a finding; one is within noise for a database that has posted ~63,000 over eight
 days.
+
+## Guidelines backlog after 2026-10-06
+
+**Closed today:**
+
+- **Chinese society documents** — route established (guideline-pubType sweep; see source-notes). First
+  document reported.
+- **SPLF seam audit** — run and complete. **That is the last French society on the audit list; all six are
+  now audited** (SRLF, SPILF, ANARLF, SFMU, SFAR, SPLF).
+
+**Route table corrections from the SPLF audit** (what was written on 5 October was wrong):
+
+| Society | Route | Note |
+| --- | --- | --- |
+| **SPLF** | <em>Respiratory Medicine and Research</em> + <em>Revue des Maladies Respiratoires</em> | **not ACCPM** — SPLF reaches ACCPM only as a co-signatory on critical-care documents |
+
+**And a general trap found there: the same French document can carry different pubTypes in its two language
+versions.** The 2022 lung transplantation update is `Practice Guideline` in English (`Resp Med Res`,
+28 Nov 2022) and `Review` in French (`Rev Mal Respir`, 10 Nov 2022), and the two abstracts are not identical
+translations. **A pubType filter finds one and misses the other.**
+
+**Open, in priority order:**
+
+1. **2026 AHA/ACC perioperative cardiovascular guideline — seven days unresolved, and now diagnosed.** Both
+   publisher pages serve a **Cloudflare JS challenge**, not a header check, so there is **no shell route**.
+   Abstract unchanged (MD5 `8d624859f384`). **Stop re-checking the pages daily**; re-check PMC monthly, and
+   otherwise this needs the PDF. Downgraded from a daily item to a monthly one.
+2. **Three ISHLT lung-transplant practice guidelines with no deposited abstract** (BLAD consensus
+   10.1016/j.healun.2026.05.034; its perspective 05.031; frailty assessment 05.035). Reported today as
+   title-only. **Re-check PMC in two weeks** — JHLT deposits abstracts inconsistently, and the surrounding
+   research literature on BLAD is fully accessible if the definition needs context.
+3. **SPLF remaining five**, in scope order: **2022 lung transplantation indications and contraindications**
+   (pairs with the ISHLT frailty document — candidate selection from the French side); transcutaneous
+   capnography review (Aug 2026, `Rev Mal Respir`); idiopathic pulmonary fibrosis (2022); residual
+   sleepiness in treated OSA (2024); cancer-associated VTE (2023).
+4. **SFMU remaining three** — urgent obstetric situations first (obstetric anaesthesia is primary scope and
+   the 6 October brief has now covered obstetric team training, so the guidance side is the gap); IV fluids
+   for vascular filling; Glanzmann thrombasthenia.
+5. **ICP / severe TBI medical management** — ANARLF 2017 still the only candidate; search 2023-2026 for a
+   successor first, and if none exists **that absence is the finding.**
+6. **Targeted temperature management** — ANARLF 2017; check for a successor.
+7. **SRLF remaining:** ICU medical staffing; new antibiotics for Gram-negative infections; neuromuscular
+   blockade monitoring (**check pubType**); acute encephalopathy consensus (**still unlocated**); RFE
+   drépanocytose.
+8. **SFAR website catalogue** (sfar.org route, browser UA): **anticoagulants for planned invasive
+   procedures** promoted — would make the antithrombotic picture five-sided; then paediatric regional
+   anaesthesia; intra-abdominal infections; hepatic resection; ECBU before urological procedures;
+   medication-error prevention with SFPC; perioperative immediate hypersensitivity with SFA.
+9. **SPILF remaining:** partial oral antibiotic therapy for infective endocarditis (in PMC); male UTI; the
+   2022 CPG whose full title is still unretrieved.
+10. **ERC 2025** — Newborn, Epidemiology, Education.
+11. **HIS operating theatre ventilation.**
+
+**Logged, not queued:** **SFGM-TC** paediatric HSCT antibiotic recommendations (30 Sep, `Bulletin du
+Cancer`) — French society, ID-adjacent, but paediatric haemato-oncology. Pick up only if a critical-care
+thread needs it.
+
+**Named gaps, unchanged except where noted:** ECMO analgosedation; 2023-ARDS-definition papers; intracranial
+pressure management (see 5 above); **adult congenital heart disease anaesthesia — still open, but now with a
+reason attached: congenital heart disease is one of three areas where French heart-lung transplant experts
+could not reach consensus (10.1016/j.jhlto.2026.100561)**; aerosol-generating-procedure precautions.
+
+## Process defect found and fixed 2026-10-06
+
+**10.1136/rapm-2026-108372 was written up twice** — 12 September (item 2) and 26 September (item 1, saying
+*"never written up until now"*). A duplicate notice is now on the 26 September entry.
+
+**Cause: the 26 September run checked the 11 September entry's lead list instead of the `items:` blocks.**
+**Fix, now part of the pre-commit suite:**
+
+```bash
+grep -h "link:" _guidelines/*.md _briefs/*.md | sort | uniq -d
+```
+
+**This is currently clean apart from that one pair.** Run it every day, over the whole archive, not just the
+day's own items.
