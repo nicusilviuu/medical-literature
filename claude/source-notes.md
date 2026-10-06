@@ -2734,3 +2734,31 @@ modality is the most operator- and contrast-dependent of the three.
 whether ultrasound beats CT, then whether CEUS adds — but ultrasound was the **worst** arm on every
 diagnostic outcome and the headline belongs to the third arm. Nothing is hidden; the ordering still misleads
 a quick reader.
+
+## Never nest markdown italics inside an italic paragraph (added 2026-10-06)
+
+The footer paragraphs of these briefs are wrapped in a single pair of asterisks, and journal names inside
+them were written as `*Chest*`. **Kramdown reads the first nested opening asterisk as the closing one for the
+outer emphasis.** The live page then shows a **literal stray asterisk** and **loses italics for the rest of
+the paragraph**:
+
+```
+source:   *Still logged: *Chest*, 3 October - ...*
+rendered: <em>Still logged: *Chest</em>, 3 October - ...
+```
+
+Only the **first** nested span in each paragraph breaks; later ones render normally, which is why the defect
+survives a casual read of the page.
+
+**This was present on 4, 5 and 6 October and I did not catch it on any of them**, because the pre-commit
+check counted asterisk balance only — and the counts are balanced, which is precisely why they pass. **An
+even asterisk count does not mean the emphasis nests legally.** All three entries are fixed.
+
+**Rule: inside an italic-wrapped paragraph, write nested emphasis as `<em>...</em>`, never `*...*`.**
+
+**Rule for the pre-commit suite: counting characters in the source is not a rendering check. After the Pages
+poll returns 200, grep the rendered HTML for a literal `*`** — there should be none outside code blocks:
+
+```bash
+curl -s "$URL" | grep -o "<p>[^<]*\*[^<]*" | head
+```
