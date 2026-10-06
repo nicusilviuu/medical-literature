@@ -1796,3 +1796,58 @@ documents are about safely giving less. **Same drug class, opposite institutiona
 | **SFMU** | Europe PMC, **ACCPM — 7 of 7** | **complete** |
 | **SPLF** | presumed ACCPM / respiratory journals | **NOT RUN — next** |
 | SFC, SFCTCV, GFRUP, SFNCM, SFTH, GIHP, SFNV, SFNR, CARO, CARORL, SFORL, ADARPEF, SFPC, SFCD, AFDN, FHS, SOFMER | — | not run |
+
+## Brief queue after 2026-10-06
+
+**Written up today:** the *Chest* CEUS biopsy trial and the *Critical Care Medicine* sTNFR1 analysis, both
+from the four lower-priority logged items; plus two retrieved by targeted search (the SFMU/SFAR national
+human-factors survey, routed from the 10-05 watch, and the 2021 obstetric team-training meta-analysis).
+
+**Still logged and not written up:**
+
+1. *Chest*, 3 October — **sputum cellularity and health services utilisation in asthma and COPD** (2,274
+   chars). **The weakest scope fit in the queue** and the last of the 3 October *Chest* pair.
+2. *ICVTS*, 1 October — **stage IA invasive mucinous adenocarcinoma survival** (1,879 chars).
+3. **C-PIV study of peripheral intravenous catheter use in French emergency departments** (*Lancet Regional
+   Health*, 10 April 2026, in PMC) — routed from the 10-05 guidelines watch, not yet retrieved.
+
+## Four non-depositing items — retries stopped 2026-10-06
+
+The *AJRCCM* dynamic fibrinolysis resistance grading system; the *Anesthesia & Analgesia* paper on PT and
+APTT masking citrate-induced coagulopathy; the *BJA* day-surgery multimorbidity cohort; the *Anesthesia &
+Analgesia* J-PEDIA extreme weight-for-age analysis.
+
+**All four queried five or more times over three weeks against a three-retry cap; all four still return
+zero-length abstracts.** **Recorded as non-depositing and removed from the retry list.** If any appears in a
+future sweep carrying an abstract it will be caught by the normal route — no standing action.
+
+## Human-factors thread — the gap named on 2026-10-04 is now closed
+
+The thread held **four guidance documents and no outcome study.** It now holds, in addition:
+
+- **A national survey of practice** (10.1093/intqhc/mzag007): 61% unfamiliar with the national guidelines,
+  closed-loop 31%, **time-outs 16%**, debriefings 35%, 90% with no or under one training session a year, 81%
+  with minimal simulation exposure. Collected Oct-Dec 2023 by the same two societies that later wrote the
+  guidance — **the baseline, not a verdict on it.**
+- **The only patient-outcome synthesis** (10.1111/aogs.14263): 21 studies; the single positive signal
+  reverses in the one RCT; the best-certainty outcome is null. **In situ multi-professional** training is the
+  one modifier that survives, matching the CJEM review independently.
+
+**Where the thread now stands: guidance rests on mechanism, consensus and cross-domain analogy, not
+demonstrated patient benefit, and the trials the 2021 review called for have not arrived in five years.**
+
+**What would advance it next:** any randomised or interrupted-time-series evaluation of structured
+communication tools in adult critical care or anaesthesia **published after 2021** — the obstetric literature
+is the only place this has been synthesised. **If none exists, that absence is the finding** and should be
+stated as one.
+
+## Index-integrity watch item opened 2026-10-06
+
+Whole-database total **49,003,818**, a gain of **2,089** on 5 October against the **~7,900/day** baseline set
+that day — about a quarter of the usual rate. **Not acted on**, because the daily buckets grew normally
+(5 Oct 254 to 1,110) and all three canaries retrieve, so this is **not** the 26 September ingest-stall
+pattern.
+
+**Standing action: watch the whole-database figure for a second consecutive low day.** Two in a row changes
+this from an observation to a finding; one is within noise for a database that has posted ~63,000 over eight
+days.

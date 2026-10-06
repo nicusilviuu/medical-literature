@@ -2659,3 +2659,78 @@ monitoring → removal, and removal is the step least often protocolised.**
 and malignant effusion** — three of the commonest reasons a critical care patient has a chest drain. **So it
 is guidance on draining simple effusions**, and applying it to empyema or trauma would be outside the
 document.
+
+## When cohort studies and the single RCT disagree in direction (added 2026-10-06)
+
+The obstetric team-training meta-analysis (10.1111/aogs.14263) gives, for brachial plexus injury, **six
+cohort studies at OR 0.47 (0.33-0.68) and one RCT at OR 1.30 (0.39-4.33).** The trial interval contains the
+cohort estimate, so this is not a refutation — but the **only** outcome in the review with a positive signal
+is the one where the two designs point opposite ways.
+
+**Rule: when an intervention is an organisational practice, a cohort-versus-RCT divergence in direction is
+the expected signature of confounding by institutional quality, not an anomaly to be averaged away.**
+Hospitals that run annual multi-professional drills are hospitals with staffing, funding and a safety
+culture. A cohort comparison of trained against untrained units is substantially a comparison of good units
+against less good ones.
+
+**Corollary: check which outcome carries the highest certainty grade.** Here it was Apgar below 7 at five
+minutes — null in both designs at **moderate** certainty, the best grade in the review. **The outcome with
+the best evidence showed no effect; the outcome with a signal had conflicting designs.** Say that ordering
+explicitly, because a reader who sees only the brachial plexus line will take the review as positive.
+
+## A self-selected sample can bias a prevalence estimate in the favourable direction (added 2026-10-06)
+
+The French human-factors survey (10.1093/intqhc/mzag007) was voluntary, distributed over social media by
+SFAR and SFMU. The usual move is to call that a convenience sample and discount the prevalence estimate.
+
+**Here the self-selection runs the other way.** Respondents are clinicians engaged enough with their
+societies to answer a questionnaire about human factors, so **61% unfamiliar with the national guidelines is
+an optimistic estimate of the profession, not a pessimistic one.**
+
+**Rule: before discounting a convenience sample, work out which direction the selection pushes the specific
+number being claimed.** When the selection favours the measured attribute and the result is still
+unfavourable, the sampling makes the finding harder to dismiss rather than easier. State the direction;
+never just label the sample.
+
+## Two controls make an interaction believable: replication, or specificity (added 2026-10-06)
+
+Four effect-modification findings in two days, and the ones that hold up have a control:
+
+| Finding | Control | Verdict |
+| --- | --- | --- |
+| Ferritin and anakinra (REMAP-CAP) | 1,243 patients, clean negative | believable null |
+| suPAR direction reversal (REMAP-CAP) | **none** — 145 patients, CI 0.85-6.06 | weakest, despite being the most striking |
+| White cell count and antibiotic choice (ACORN) | **replication** in an independent cohort | believable |
+| sTNFR1 and diabetes/ASCVD (10.1097/ccm.0000000000007374) | **specificity** — absent for IL-6 and angiopoietin-2, absent for obesity and hypertension | believable |
+
+**Rule: what separates a believable interaction from a subgroup artefact is a control, and only two kinds
+work — replication in another cohort, or specificity against markers and modifiers that should not show the
+effect.** A spurious interaction has no reason to be specific in two dimensions at once. **A striking effect
+size with neither control is the weakest item in a set, not the strongest.**
+
+**Related reading rule for a comorbidity-modified biomarker:** if the marker is **higher at baseline in the
+modifying group despite similar illness severity**, and the risk curve **plateaus** above some level in that
+group, the mechanism on offer is a raised floor and a saturated signal. **A biomarker can be ruined as a
+prognostic tool by a comorbidity without ceasing to be biologically real** — which is a different claim from
+the marker being wrong.
+
+## Check complication denominators against the randomised arms (added 2026-10-06)
+
+The CEUS biopsy trial (10.1016/j.chest.2026.09.089) randomised **828 / 829 / 828** and reported complications
+over **828 / 802 / 805.** So **27 CEUS and 23 CT participants are absent from the safety analysis**, which the
+abstract does not explain.
+
+**Rule: on any trial reporting both efficacy and safety, divide the stated percentages back out and compare
+each denominator with its randomised arm.** A mismatch on the safety outcome is worth flagging even when
+small, because the direction of the resulting bias cannot be determined from an abstract.
+
+**And treat an arm that wins on both efficacy and safety as a claim needing extra scrutiny rather than as a
+bonus.** The usual shape of an imaging-guidance comparison is a trade — more diagnostic certainty for more
+risk. When the trade does not appear, the denominators, the blinding, and the operator-dependence of the
+winning technique are the three things to check first. Here blinding is not described, and the winning
+modality is the most operator- and contrast-dependent of the three.
+
+**Also check whether the research question and the results are ordered the same way.** This trial asks first
+whether ultrasound beats CT, then whether CEUS adds — but ultrasound was the **worst** arm on every
+diagnostic outcome and the headline belongs to the third arm. Nothing is hidden; the ordering still misleads
+a quick reader.
