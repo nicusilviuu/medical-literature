@@ -1966,3 +1966,60 @@ worth more than most of the research:
 with no abstract.** It tells you what to look for in the full text and which claim is contested. **Neither of
 these can be read from here** (LWW, 402) — logged so that a future run with PDF access knows exactly what to
 open.
+
+## Guidelines backlog after 2026-10-07
+
+**Closed today:**
+
+- **SFMU urgent obstetric situations** (10.1016/j.accpm.2022.101127) — reported. **Obstetric emergencies were
+  a never-covered area of primary scope; that gap is now open.**
+- **ICP / severe TBI successor** — **resolved as an absence.** No BTF fifth edition; ACS TQIP BPG 2024 is a
+  quality-improvement framework; SFNC 2025 covers the neurosurgical phase. **ANARLF 2017 stands as the most
+  recent French guidance. Do not re-run this search.**
+
+**Open, in priority order:**
+
+1. **Three ISHLT lung-transplant documents** with no deposited abstract (BLAD consensus
+   10.1016/j.healun.2026.05.034, its perspective 05.031, frailty assessment 05.035). **Re-check PubMed Central
+   on or after 20 October** — deliberately not re-queried on 7 October, because a one-day interval tells you
+   nothing about a deposit lag.
+2. **2026 AHA/ACC perioperative cardiovascular guideline** — **monthly interval, next check on or after
+   7 November.** Cloudflare JavaScript challenge on both publisher pages; no shell route; needs the PDF.
+3. **SPLF remaining five**: **2022 lung transplantation indications and contraindications** (promoted — the
+   French counterpart to the ISHLT frailty statement); transcutaneous capnography review (Aug 2026);
+   idiopathic pulmonary fibrosis (2022); residual sleepiness in treated OSA (2024); cancer-associated VTE
+   (2023).
+4. **SFMU remaining two**: IV fluids for vascular filling; Glanzmann thrombasthenia.
+5. **Targeted temperature management** — ANARLF 2017; check for a successor (**and expect the same answer as
+   the ICP search**, so check once and then record it either way).
+6. **SRLF remaining:** ICU medical staffing; new antibiotics for Gram-negative infections; neuromuscular
+   blockade monitoring (**check pubType**); acute encephalopathy consensus (**still unlocated**); RFE
+   drépanocytose.
+7. **SFAR website catalogue** (sfar.org, browser UA): anticoagulants for planned invasive procedures;
+   paediatric regional anaesthesia; intra-abdominal infections; hepatic resection; ECBU before urological
+   procedures; medication-error prevention with SFPC; perioperative immediate hypersensitivity with SFA.
+8. **SPILF remaining:** partial oral antibiotic therapy for infective endocarditis (in PMC); male UTI; the
+   2022 CPG whose full title is still unretrieved.
+9. **ERC 2025** — Newborn, Epidemiology, Education.
+10. **HIS operating theatre ventilation.**
+11. **Chinese maritime-environment TBI guideline** (1 Jul 2026, `10.3760/cma.j.cn112137-20260413-00996`,
+    2,263 chars) — queued rather than written today to avoid three resource-stratified documents in one entry.
+
+**New thread opened today — obstetric emergency care.** The archive now holds the **SFMU/SFAR/CNGOF 2022
+guidelines** (guidance) and the **2021 obstetric team-training meta-analysis** (outcome evidence, reported
+2026-10-06), and **they disagree**: the guideline includes emergency obstetric training as one of eight
+areas; the meta-analysis found the training signal reversed between cohort studies and the single RCT.
+**What would advance it:** CNGOF's own obstetric haemorrhage guidance, and any post-2021 randomised or
+interrupted-time-series evaluation of obstetric emergency training. **And the named hole: the French panel
+could not issue a recommendation on maternal cardiac arrest** — look for ERC or AHA maternal-arrest guidance
+to sit beside that absence.
+
+**Brief queue addition from today's guidelines sweep** (research about guidelines, not guidance):
+
+- **CJEM systematic review of brain injury guidelines** (2 Oct 2026, `10.1007/s43678-026-01218-y`, 1,995
+  chars).
+- **Comparison of recommendations for initial adult TBI management across guidelines** (<em>Brain Injury</em>,
+  1 Oct 2026, `10.1080/02699052.2026.2733594`, 1,685 chars).
+
+**Both bear on the absence resolved today** — a cross-guideline comparison is what a reader needs when the
+canonical document is ten years old. **Write them as a pair.**

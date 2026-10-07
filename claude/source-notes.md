@@ -2970,3 +2970,91 @@ the same sentence (26.5× and 61.8×) check exactly.
 the second transposition of this class caught in six weeks, and both times the error sat in the sentence a
 reader would quote. **It also only becomes checkable because the authors reported absolutes alongside
 ratios** — which is the argument for asking that they do.
+
+## Evidence accumulates on prognosis, not on treatment — two documents in two days (added 2026-10-07)
+
+| Document | Strongest evidence in it | What it was about |
+| --- | --- | --- |
+| Chinese ILD lung-biopsy consensus (2026-10-06) | the **only** level 1 recommendation | **contraindications** |
+| BTF penetrating TBI, 2nd ed. (2026-10-07) | the **only four** moderate-strength key questions | **angiography choice, an anatomical mortality predictor, a prognostic score, infection and CSF fistula** |
+
+**Not one of those five statements is a treatment recommendation**, and the BTF document says so in its own
+conclusion: *"Few moderately strong conclusions on the benefit of specific management strategies."*
+
+**Rule: evidence accumulates fastest on questions answerable by observing patients and slowest on questions
+needing them randomised, so a guideline's strongest statements tend to be about prognosis, diagnosis and who
+not to treat.** A reader who assumes the best evidence sits behind the treatment advice has it backwards.
+**When summarising a guideline, name the evidence level of the treatment recommendations separately from the
+document's headline.**
+
+## The two-document structure: guideline plus labelled consensus companion (added 2026-10-07)
+
+The BTF penetrating-TBI guidelines found **no includable study for 12 of 26 key questions.** Rather than
+issue strong recommendations on case series, they published **a separate same-day companion**
+(10.1227/neu.0000000000003739) built by **blinded Delphi at an ≥80% threshold** — a Master Care Pathway, five
+Toolkits, and a futility assessment — **explicitly labelled as bridging "limitations of published evidence."**
+
+**Worth recording as the good pattern**: the alternative, seen repeatedly in this archive, is one document
+mixing evidence and consensus so the reader cannot tell which they are following. **When a guideline has a
+companion algorithms paper, retrieve both — the companion is where the actual bedside advice is, and its
+consensus threshold is the thing to quote.**
+
+**Also note the evidence-cutoff lag.** That search closed **31 August 2022** and the guideline published
+**16 February 2026** — three and a half years, in a field the document itself says is changing because of
+armed conflict. **Always report a guideline's search cutoff, not just its publication date.**
+
+## The French counting convention is not uniform — and this is the model (added 2026-10-07)
+
+The SFMU/SFAR/CNGOF obstetric emergency guidelines (10.1016/j.accpm.2022.101127) report **three figures
+separately**: **15 recommendations of their own, 4 imported from an earlier RFE, and 2 questions for which no
+recommendation could be made** — and they **name** the two (cardiopulmonary arrest, inter-hospital transfer).
+
+**So the convention inferred on 1 October and demonstrated on 5 October — that a stated total silently
+includes unanswered questions — does not hold everywhere.** A total of 19 or of 21 would both have been
+defensible here and each would have hidden something. **Reporting 15 + 4 + 2 hides nothing.**
+
+**Rule: do not assume the convention. Look for a sentence naming unanswered questions, and if the totals do
+not reconcile, say which reading you are using.** And treat an explicit list of unanswered questions as a
+finding in its own right: **this panel defined cardiopulmonary arrest as one of eight areas and then issued
+nothing gradeable on it**, which is the most useful thing the document says about maternal cardiac arrest.
+
+**The same document also names, in its methods, the hazard recorded here yesterday:** *"The potential
+drawbacks of strong recommendations in the presence of low-level evidence were highlighted"*, and it leaves
+some recommendations **ungraded** rather than forcing them onto a scale.
+
+## Resource-stratified guidance is a distinct document class (added 2026-10-07)
+
+Three documents found today write the recommendation **as a function of what the hospital has**, rather than
+writing for a well-equipped centre and caveating:
+
+- **BOOTStraP 2nd ed.** (Colombia, 12 Apr 2026, open access) — 9 algorithms, interventions **colour-coded by
+  resource requirement** across low, intermediate and high settings; ≥70% subgroup and ≥90% plenary consensus.
+- **EXTRACCT blast-TBI CPG** (31 Aug 2026) — AGREE II; **non-invasive multimodal neuromonitoring written as
+  the primary path when invasive ICP monitoring is unavailable**, not as a compromise.
+- **Chinese maritime-environment TBI guideline** (1 Jul 2026, `10.3760/cma.j.cn112137-20260413-00996`).
+
+**Search term that finds them: `"variable resource"`, `"resource-limited"`, `"low- and middle-income"`
+combined with the clinical topic.** A society-acronym sweep will never return them, because the first two are
+collaborations rather than societies.
+
+**And check the author lists before citing two as agreeing.** **Rubiano AM is first author on both BOOTStraP
+and EXTRACCT** — the same group produces much of this literature, which is why it exists and why the documents
+are not independent of each other.
+
+## Absence as a finding: severe TBI has no current guideline (added 2026-10-07)
+
+The backlog item asking what succeeded ANARLF 2017 on intracranial pressure and severe TBI is **resolved as an
+absence**, verified across 2024-2026:
+
+- **No BTF fifth edition.** BTF's output in that window is the penetrating-TBI second edition plus its
+  algorithms, forewords and executive summary. **Severe-TBI guidance is still the 2016 fourth edition.**
+- **ACS Trauma Quality Improvement Program TBI Best Practice Guidelines updated 2024**, with a de novo early
+  rehabilitation chapter summarised May 2026 (10.1016/j.apmr.2026.05.015) — a quality-improvement framework,
+  not a replacement.
+- **SFNC 2025** covers the acute neurosurgical phase (already reported 2026-10-03).
+- **BOOTStraP 2 and EXTRACCT** cover the same ground stratified by resources.
+
+**A decade after the fourth edition, a clinician asking for current severe-TBI ICP guidance is still pointed
+at a 2016 document.** **Rule: when a successor search comes back empty across a canonical body's whole recent
+output, publish the absence with the list of what was checked** — that is more useful than silence, and it
+stops the question being re-asked every week.
