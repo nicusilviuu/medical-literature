@@ -1927,3 +1927,42 @@ grep -h "link:" _guidelines/*.md _briefs/*.md | sort | uniq -d
 
 **This is currently clean apart from that one pair.** Run it every day, over the whole archive, not just the
 day's own items.
+
+## Brief queue after 2026-10-07
+
+**Cleared today:** the <em>ICVTS</em> stage IA invasive mucinous adenocarcinoma paper (written up), and three
+<em>EJA</em> papers taken from today's print issue but dated to their online-first publication.
+
+**Still queued:**
+
+1. <em>Chest</em>, 3 October — **sputum cellularity and health services utilisation in asthma and COPD**
+   (2,274 chars). **Now the last item on this list**, and the weakest scope fit; write it or retire it.
+2. **<em>EJA</em> intraoperative low-dose dexmedetomidine on postoperative systemic inflammation and
+   cognitive outcomes** (`10.1097/eja.0000000000002523`, online-first `…002299`, 14 Oct 2025). **Both deposits
+   carry a zero-length abstract.** Would make the dexmedetomidine thread five documents. Retry cap: three.
+3. **<em>EJA</em> peri-operative fluid balance and acute kidney injury in elective colorectal surgery**
+   (`10.1097/eja.0000000000002476`, 7 Oct 2026). **No twin record, no abstract anywhere** — the one record in
+   today's issue that is plausibly genuinely new. Retry in a week.
+
+**Needs re-identification, not retrieval: the C-PIV peripheral intravenous catheter study.** Logged on
+5 October as <em>Lancet Regional Health</em>, 10 April 2026, in PMC, 1,974 chars. **Four queries today
+returned nothing matching** — the acronym in abstracts, the journal plus month, title words with a country
+filter, and a two-month window on title words. **The recorded journal or date is wrong.** Do not retry as
+recorded; re-find it from the 5 October guidelines watch sweep output if it is needed.
+
+## Correspondence as a lead source — noted 2026-10-07
+
+Today's <em>EJA</em> issue carried **nine correspondence items with no abstracts**, and two of them were
+worth more than most of the research:
+
+- **"Revisiting the economic conclusions of TIVA versus sevoflurane: the critical impacts of BIS monitoring
+  and propofol wastage"** (`…002484`) — names **two omitted cost inputs** in the paper reported today, and
+  both sit on the side of that paper whose percentages are transposed.
+- **"Universal videolaryngoscopy: universal solution or selective strategy?"** (`…002492`) with a **reply**
+  (`…002440`), continuing an exchange that began with `…002319` (4 Feb 2026). **The videolaryngoscopy thread
+  in this archive has four documents and no account of the dissent**; this exchange is where it is.
+
+**Rule for the backlog: a correspondence title that names a specific methodological objection is a lead, even
+with no abstract.** It tells you what to look for in the full text and which claim is contested. **Neither of
+these can be read from here** (LWW, 402) — logged so that a future run with PDF access knows exactly what to
+open.

@@ -2875,3 +2875,98 @@ grep -h "link:" _guidelines/*.md _briefs/*.md | sort | uniq -d
 
 **Run it as part of the pre-commit suite**, not just for the day's own items — it found this one immediately
 after being added.
+
+## EJA deposits every paper twice, and the print record is the empty one (added 2026-10-07)
+
+**Today's sweep returned 16 records, all <em>European Journal of Anaesthesiology</em>, all with zero-length
+abstracts.** Five were second deposits of research papers already published online months earlier:
+
+| Print DOI (7 Oct 2026, no abstract) | Online-first DOI | Online date | Abstract |
+| --- | --- | --- | --- |
+| `…eja.0000000000002479` | `…002342` | 23 Dec 2025 | 2,275 |
+| `…eja.0000000000002504` | `…002351` | 22 Jan 2026 | 2,298 |
+| `…eja.0000000000002487` | `…002380` | 11 Mar 2026 | 2,337 |
+| `…eja.0000000000002483` | `…002302` | 21 Oct 2025 | 2,116 |
+| `…eja.0000000000002523` | `…002299` | 14 Oct 2025 | **0** |
+
+**Rule: an <em>EJA</em> record with a zero-length abstract is probably a print re-deposit of something
+already published. Before reporting it as new, search a distinctive title phrase with the journal filter and
+read every hit, not just the newest.**
+
+**Two things defeat naive pairing.** The DOIs differ only in their low-order digits, so they do not sort
+adjacently in any useful way; and **the titles differ in punctuation** — "Environmental and economic impacts
+of anaesthesia**.** A simulation study…" against "…anaesthesia**:** A simulation study…" — so an exact-title
+match returns nothing. **Normalise punctuation and case before comparing titles.**
+
+**The consequence if this is missed: five papers up to a year old get reported as today's news.** That is the
+recency rule's central prohibition, and the deposit date is what would have caused it.
+
+**Not every empty record has a twin.** One in today's issue (`…002476`, peri-operative fluid balance and AKI)
+has no earlier record and no abstract anywhere — plausibly genuinely new, and unreportable either way.
+
+## Strip only named tags: `<[^>]+>` eats real text (added 2026-10-07)
+
+**A defect in my own helper, caught before it reached a page.** Abstracts contain bare `<` in statistics —
+`P < 0.001`, `scored <3`, `12 scored >7`. A stripper written as
+
+```python
+re.sub(r'<[^>]+>','',abstract)      # WRONG
+```
+
+**deletes everything from a real `<` to the next `>`.** On the PACU delirium paper
+(10.1097/eja.0000000000002351) this removed the whole span from `(all P <` to the next tag — **every adjusted
+odds ratio in the Results** — leaving an abstract that appeared to stop mid-sentence at `(all P  Conclusion`.
+**I was about to write that the deposit contained no results.**
+
+**Use a named-tag pattern instead:**
+
+```python
+TAG=re.compile(r'</?(?:b|i|em|strong|u|h[1-6]|sub|sup|p|br|span|div|a|ul|ol|li|table|tr|td|th|tbody|thead)(?:\s[^<>]*)?/?>', re.I)
+safe=TAG.sub(' ', abstract).replace(' ',' ')
+```
+
+**And the diagnostic that finds the hazard before it bites:** count `<` that are not followed by `/?[a-zA-Z]`.
+A bare one means the naive stripper will lose text.
+
+**Audit done today:** every abstract quoted in this archive over the past week was re-checked. **Three
+contained a bare `<`** — the CEUS biopsy trial, the sTNFR1 analysis and the French HLTx Delphi — **and in all
+three the text had been read from the raw record, so no published quote lost anything.** The hazard had not
+bitten before today.
+
+**Related discipline, adopted today: mark an elision inside a quotation.** Yesterday's biopsy-trial quote
+dropped three χ² values from inside a quoted sentence without an ellipsis. Nothing was misstated, but a
+blockquote should either be verbatim or show where it is not.
+
+## An underpowered null that grows after adjustment (added 2026-10-07)
+
+The stage IA mucinous adenocarcinoma cohort (10.1093/icvts/ivag272): 5-year recurrence-free survival gap
+**4.8 points before matching, 9.6 points after**, reported as "no significant differences" and concluded as
+**"mucinous histology alone should not be considered an adverse prognostic factor."**
+
+**Rule: when adjustment moves an estimate away from the null, say so — it is the opposite of the usual
+direction and it means the unadjusted comparison was flattered by confounding in the exposed group's
+favour.** Here the mucinous tumours started with smaller whole-tumour size and less lymphovascular invasion;
+balancing on size removed part of that advantage.
+
+**And count the events before accepting an equivalence claim.** 100 patients at roughly 16% recurrence is on
+the order of 16 events — a 9.6-point difference can be neither confirmed nor excluded. **"No significant
+difference" is then a statement about power, not about biology.**
+
+**The useful finding in such a paper is usually the endpoint that was not the headline.** Overall survival
+differed by 2.3 points while recurrence-free survival differed by 9.6: **recurrences are not becoming deaths
+within five years.** That is a real, defensible, patient-facing message, and it does not need the equivalence
+claim the abstract makes.
+
+## Check ratios against the raw numbers in the same abstract (added 2026-10-07)
+
+The TIVA-versus-sevoflurane simulation (10.1097/eja.0000000000002342) gives costs per 1000 procedures of
+**€4300 (TIVA), €6772 (minimal-flow sevoflurane), €11 933 (sevoflurane at 2 l/min)** and then concludes TIVA
+costs **"36% and 63% of sevoflurane anaesthesia costs with minimal flow and 2 l min-1 FGF, respectively."**
+
+**4300/6772 = 63.5% and 4300/11 933 = 36.0%, so the two percentages are transposed.** The emissions ratios in
+the same sentence (26.5× and 61.8×) check exactly.
+
+**Rule: recompute every ratio and percentage from the absolute figures given in the same abstract.** This is
+the second transposition of this class caught in six weeks, and both times the error sat in the sentence a
+reader would quote. **It also only becomes checkable because the authors reported absolutes alongside
+ratios** — which is the argument for asking that they do.
