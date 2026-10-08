@@ -3058,3 +3058,87 @@ absence**, verified across 2024-2026:
 at a 2016 document.** **Rule: when a successor search comes back empty across a canonical body's whole recent
 output, publish the absence with the list of what was checked** — that is more useful than silence, and it
 stops the question being re-asked every week.
+
+## Agreements are qualitative, disagreements are quantitative (added 2026-10-08)
+
+The TBI scoping review (10.1080/02699052.2026.2733594) mapped 16 guidelines and the two lists split cleanly:
+
+| Broad agreement | Heterogeneity |
+| --- | --- |
+| early neurological assessment; airway protection; avoidance of hypotension and hypoxaemia; timely neuroimaging | **blood pressure and CPP targets**; repeat imaging; **definitions of neurological deterioration**; escalation criteria; observation protocols; discharge processes |
+
+**Every agreement is qualitative; every disagreement requires a number.** And "inconsistently addressed" is a
+third category worse than disagreement — anticonvulsant prophylaxis and VTE prevention are **absent** from
+some documents, which is the worst case for a reader using one guideline as their only source.
+
+**Rule: when summarising a set of guidelines, separate what they agree to do from what they disagree about
+how much. The second list is where practice actually varies**, and a set of documents can look concordant
+until you ask for a threshold — which is how a ten-year-old canonical guideline coexists with fifteen others
+without the gap being noticed.
+
+**Also worth recording: blood-based biomarkers appeared in 3 of 16 documents and only for CT
+decision-making.** Same shape as the effect-modification finding of 6 October: **biomarkers are reaching
+guidelines as triage for a test, not as selection for a therapy.**
+
+## Check the authors of a review against the documents it reviews (added 2026-10-08)
+
+The scoping review's last author is **Rubiano-Escobar AM** and **Cardona-Collazos S** is a co-author — and
+both appear on **BOOTStraP** and **EXTRACCT**, two of the resource-stratified documents reported here on
+7 October (Rubiano first author on both; Cardona-Collazos on EXTRACCT).
+
+**So the review mapping the guideline landscape shares two authors with documents inside that landscape, and
+its abstract does not say so.** The heterogeneity it reports is checkable against the source documents, so
+this is not a reason to discard it.
+
+**Rule: on any review, scoping review or guideline comparison, read the author list against the included
+documents.** Inclusion criteria and judgements of "agreement" are not independent when the authors wrote some
+of the inputs. **Note it in one sentence when citing.**
+
+## When the summary statistic hides the effect: ΔPRx versus mean PRx (added 2026-10-08)
+
+COGiTATE (10.1089/neu.2021.0197) found **no difference in grand mean PRx** between autoregulation-guided and
+fixed-target CPP arms. The 2024 secondary analysis (10.1007/s12028-024-02168-y) reanalysed the **same trial
+data** and found:
+
+- **median ΔPRx (PRx minus PRx-at-optimum) significantly lower in the intervention group** (p < 0.001);
+- **within each intervention patient, PRx lower when CPP was within ±5 mmHg of target** (p < 0.001).
+
+**The intervention did what it was designed to do and the trial's own summary statistic could not see it.**
+Comparing group mean PRx asks whether one arm's autoregulation was better overall; the question was whether
+**each patient was nearer their own optimum.**
+
+**This is the parameterisation rule in its sharpest form: the choice of summary measure was the difference
+between a null and a positive mechanistic result on identical data.** **Rule: when an intervention
+individualises a target, the endpoint must be distance-from-individual-optimum, not a group mean** — and when
+a trial of an individualised target reports a null on a group average, look for the within-patient
+reanalysis before believing it.
+
+## A zero-abstract, zero-DOI record is a placeholder, not a paper (added 2026-10-08)
+
+Today's broad in-scope sweep returned 30 records of which **28 had neither an abstract nor a DOI**, nearly all
+from *Frontiers* titles and *Cureus*.
+
+**Distinguish this from the EJA case (7 October).** An EJA print re-deposit has a DOI and a twin record
+carrying the abstract — it is retrievable. **A high-volume-publisher record with no DOI and no abstract has no
+twin and nothing to retrieve**; it is a listing placeholder. **Rule: filter the broad sweep on presence of a
+DOI before counting hits**, or a thin day looks like a busy one.
+
+## Two full-day readings is not three, and a baseline window can contain a backfill (added 2026-10-08)
+
+The whole-database growth watch now has three consecutive full-day differences: **+2,089, +3,873, +2,754** —
+a mean of about **2,900/day against the ~7,900/day baseline** measured over 27 September to 5 October,
+roughly **37%**.
+
+**By the rule set on 6 October, three readings makes it a finding. But state the alternative explanation,
+because this comparison cannot separate them:** either the deposit rate has fallen, or **the eight-day window
+that produced the baseline contained a backfill** and the current rate is nearer normal than the ratio
+implies.
+
+**Rule: a rate anomaly measured against a short baseline is a statement about two windows, not one. Carry a
+longer lookback alongside the daily difference** — from 9 October the record carries a fourteen-day total as
+well.
+
+**And keep the two signals separate.** The reassuring half held throughout: **daily buckets grew normally
+(7 Oct 722 to 1,466 overnight), no bucket decreased, all three canaries retrieved.** **Deposits landing where
+they should with a low aggregate is a different pattern from the 26 September ingest stall**, and conflating
+them would have raised a false alarm three days running.

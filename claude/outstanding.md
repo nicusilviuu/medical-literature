@@ -2023,3 +2023,55 @@ to sit beside that absence.
 
 **Both bear on the absence resolved today** — a cross-guideline comparison is what a reader needs when the
 canonical document is ten years old. **Write them as a pair.**
+
+## Correction to the 2026-10-07 backlog note
+
+**The "pair" queued yesterday was not a pair.** The CJEM meta-analysis of the Brain Injury Guidelines
+(`10.1007/s43678-026-01218-y`) was **already written up as item 1 of the 4 October brief** — same
+98%-sensitivity, 13%-specificity finding, in that entry's title. **Yesterday's guidelines footer queued it
+without checking the DOI against the `items:` blocks**, which is the rule written on 6 October after the
+12-versus-26-September duplicate.
+
+**It was drafted as an item today and removed before publishing, caught by the whole-archive DOI check.** The
+check is two days old and has now caught one live near-duplicate; **keep it in the pre-commit suite and run
+it before writing, not only before committing** — running it earlier would have saved drafting a full item.
+
+**The one genuinely new observation about that paper** — the abstract's "47 … of which 23 … the remaining 2"
+arithmetic, where 47 − 23 = 24 — **is recorded in the 8 October footer with a link back to the 4 October
+item**, not as a second write-up.
+
+**Still live from that queue:** the **scoping review comparing adult TBI recommendations across 16 documents**
+(`10.1080/02699052.2026.2733594`) — **written up today**, so that queue is now empty.
+
+## Brief queue after 2026-10-08
+
+1. **<em>Chest</em>, 3 October — sputum cellularity and health services utilisation in asthma and COPD**
+   (2,274 chars). **The only ordinary backlog item left.** Weakest scope fit in the archive's history of this
+   list; **write it or retire it on the next thin day** rather than carrying it indefinitely.
+2. **<em>EJA</em> dexmedetomidine on postoperative systemic inflammation and cognitive outcomes**
+   (`…002523` / online-first `…002299`). **Retry 2 of 3 done today: both deposits still zero-length.** One
+   retry left; if it fails, record as non-depositing and stop.
+3. **<em>EJA</em> peri-operative fluid balance and acute kidney injury** (`…002476`). **Retry due around
+   14 October** — no twin record, no abstract anywhere.
+
+## Pressure-targeting thread — now four documents and a named hole
+
+| Document | What it contributes |
+| --- | --- |
+| 16-guideline scoping review (1 Oct 2026) | **BP and CPP targets are the first heterogeneity item** across guidelines |
+| <em>Critical Care</em> 187-patient cohort (20 Apr 2026) | **U-shaped PRx-CPP, optimum 70-80 mmHg; the tolerable lower limit tracks autoregulation**; worse tolerance with decompressive craniectomy, focal injury, older age |
+| **COGiTATE** (16 Aug 2021, 179 citations) | Individualised targeting is **feasible and safe**; CPP in target 46.5% of monitored time against a 36% threshold; **no difference in therapeutic intensity** |
+| COGiTATE secondary analysis (2 Dec 2024) | The mechanism **worked** — ΔPRx lower, and lower within-patient when CPP near target — though the grand mean PRx did not differ |
+
+**The hole: no outcome-powered randomised trial, five years after COGiTATE called for one.** Verified
+2026-10-08 by searching `ABSTRACT:"CPPopt" OR ABSTRACT:"autoregulation-guided"` over 2022-2026 restricted to
+randomised or protocol publications — **four records: the secondary analysis, its preprint, a paediatric
+visualisation study, and a cardiac-arrest analogue in design** (`10.1016/j.resplu.2026.101430`, neuro-intact,
+Jul 2026).
+
+**What would advance it:** any registered outcome trial of CPPopt-guided management; and the **neuro-intact
+cardiac arrest study**, which applies the same logic after arrest rather than after trauma and is **not yet
+retrieved** — worth a look as the thread's extension beyond neurotrauma.
+
+**Also unreported and adjacent:** `10.1186/s13054-025-05568-4` — visualisations of autoregulatory insults in
+moderate-to-severe **paediatric** TBI (<em>Critical Care</em>, 4 Aug 2025, multicentre, 4 citations).
