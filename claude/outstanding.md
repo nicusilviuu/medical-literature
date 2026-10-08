@@ -2075,3 +2075,57 @@ retrieved** — worth a look as the thread's extension beyond neurotrauma.
 
 **Also unreported and adjacent:** `10.1186/s13054-025-05568-4` — visualisations of autoregulatory insults in
 moderate-to-severe **paediatric** TBI (<em>Critical Care</em>, 4 Aug 2025, multicentre, 4 citations).
+
+## Guidelines backlog after 2026-10-08
+
+**Reported today**, all from the 1–20 September lagged re-sweep and all confirmed unreported before writing:
+the **Chinese Society of Critical Care Medicine RRT-in-AKI guideline**; the **AmSECT paediatric and congenital
+perfusion standards 2025 update**; the **ACEP procedural sedation Delphi Parts 1 and 2** (abstract is a
+disclaimer); and the **ESPEN practical ICU nutrition guideline** (abstract is provenance only) — **ESPEN's
+first appearance in the archive** despite being on the tracked list since the routine began.
+
+**New queue from the same re-sweep, in priority order:**
+
+1. **ACEP procedural sedation Parts 1 and 2 — full text needed.** Primary scope; **Part 1's oversight chapter
+   is the emergency-medicine/anaesthesiology jurisdictional question.** Board-approved 29 Apr 2026, Green and
+   Roback leading. **No route but the PDF** — abstract field holds a journal disclaimer.
+2. **ESPEN practical ICU nutrition — identify what "partially revised" changed** against the 2019 guideline.
+   The flow-chart version is what clinicians use.
+3. **ACCP/<em>Chest</em> consensus on social media and crisis care in pandemics and disasters** (15 Sep,
+   `10.1016/j.chest.2026.08.049`, 2,548 chars).
+4. **Management of arterial injuries associated with musculoskeletal trauma** (<em>Injury</em>, 2 Sep,
+   `10.1016/j.injury.2026.113648`) — **abstract zero-length**, retry cap three.
+5. **Guidance on engagement of social support systems in advanced heart and lung transplant candidates**
+   (<em>JHLT</em>, 5 Sep, `10.1016/j.healun.2026.07.037`, 1,609 chars) — **fold into the ISHLT group**, which
+   is next due on or after 20 October.
+6. **ESOT CPG on chronic complications after organ transplantation** (18 Sep, `10.3389/ti.2026.16959`).
+7. **Chinese IV-to-oral antibiotic switch guideline** (1 Sep, `10.3760/cma.j.cn112137-20260427-01141`) —
+   antimicrobial stewardship, secondary scope. **Fifth Chinese document; the route is now well established.**
+8. **2026 Swiss SSI <em>C. difficile</em> recommendations** (1 Sep, `10.57187/5395`) and the **EAU urological
+   infections 2026 summary** (1 Sep, `10.1016/j.eururo.2026.04.011`) — secondary scope, low priority.
+
+**Carried unchanged:** the three ISHLT lung-transplant documents (20 Oct); AHA/ACC perioperative (7 Nov,
+monthly — the September re-sweep confirmed the <em>JACC</em> record is indexed and still abstract-only at
+1,214 characters); the five SPLF documents; the two remaining SFMU documents; targeted temperature management;
+the SRLF remainder; the SFAR website catalogue; the SPILF remainder; ERC 2025; HIS theatre ventilation; and the
+Chinese maritime-environment TBI guideline.
+
+## Method note for this routine, 2026-10-08
+
+**The trailing pubType sweep cannot see recent guidelines** (demonstrated today; see source-notes).
+**Order of instruments from now on:**
+
+1. **Targeted society and acronym searches** — the primary instrument. Today's check showed these caught both
+   of September's biggest documents on time, one of them four days before Europe PMC had it.
+2. **Trailing pubType sweep** — retained, but it confirms what has been *indexed*. A quiet result is not
+   evidence that nothing was published, and should not be reported as though it were.
+3. **Lagged re-sweep, window roughly 10–40 days old** — run on quiet days. This is where documents surface,
+   and it is what produced today's five items.
+
+**The skill file is deliberately not edited.** Changing the routine's standing instructions is the user's
+call; this note is read at the start of every run, which is enough to change practice.
+
+**And: run the whole-archive DOI dedupe check BEFORE drafting an item, not only before committing.** It has
+caught something on two consecutive days — a double write-up on 7 October, and on 8 October a false claim that
+the watch had missed an ATS guideline for 37 days when it had reported it on 28 August. **Both catches came
+after a full item had been written.**

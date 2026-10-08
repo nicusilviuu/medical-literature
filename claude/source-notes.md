@@ -3142,3 +3142,89 @@ well.
 (7 Oct 722 to 1,466 overnight), no bucket decreased, all three canaries retrieved.** **Deposits landing where
 they should with a low aggregate is a different pattern from the 26 September ingest stall**, and conflating
 them would have raised a false alarm three days running.
+
+## The guideline-pubType sweep is retrospective by construction (added 2026-10-08)
+
+Per-day counts of guideline-class publication types on 8 October: **28 Sep 2, 29 Sep 1, 30 Sep 7, 1 Oct 10,
+then 0 on every day from 2 to 8 October** — a hard edge at 1 October that had not moved in three days.
+
+**Tested against two other signals to tell a stall from an accrual lag:**
+
+| Signal | Assigned by | 30 Sep | 1 Oct | 3 Oct | 6 Oct | 8 Oct |
+| --- | --- | --- | --- | --- | --- | --- |
+| `PUB_TYPE:"Randomized Controlled Trial"` | **MeSH, post-indexing** | 18 | 127 | 6 | 0 | 0 |
+| `PUB_TYPE:"Review"` | **publisher** | 365 | 979 | 149 | 115 | **142** |
+| `HAS_ABSTRACT:Y` | publisher deposit | 3,987 | 7,407 | 878 | 1,011 | **1** |
+
+**Publisher-supplied types are present every day; MeSH-assigned types decay to zero approaching the present.
+Not a stall — indexing has not reached those records.** Abstracts behave the same way: one abstract-bearing
+record among 760 dated today.
+
+**Rule: a quiet result from the trailing pubType sweep is a statement about the index, not about the world.
+Never report "no new guidelines" on the strength of that sweep alone.** The month-start spike (127 RCTs, 979
+reviews, 7,407 abstracts on 1 October) is the issue-dating artefact: publishers date a month's issue content
+to the first.
+
+**Added instrument: a lagged re-sweep of the same query over a window roughly 10 to 40 days old**, run on
+quiet days. **1–20 September returned 72 guideline-class documents.**
+
+## Check the archive before claiming the archive missed something (added 2026-10-08)
+
+**The entry for 8 October was drafted around the claim that the watch had missed an official ATS clinical
+practice guideline for 37 days.** It had not:
+
+| Document | Europe PMC date | Actually reported |
+| --- | --- | --- |
+| ATS noninvasive respiratory support | 1 Sep 2026 | **28 Aug 2026** — four days before the index date |
+| STS oesophageal perforation | 17 Sep 2026 | **18 Sep 2026** — next day |
+
+**The whole-archive DOI check refuted it before publishing.** On 7 October that check stopped a paper being
+written up twice; **on 8 October it stopped a false claim about this archive's own reliability.**
+
+**Rule: an instrument's structural blindness is not evidence that the system around it failed.** The pubType
+sweep genuinely cannot see recent guidelines — and the targeted society searches caught both headline
+documents on time, one ahead of Europe PMC. **Before writing that something was missed, grep the archive for
+its DOI.** The failure mode is inferring an outcome from a mechanism instead of checking the record.
+
+**And run the dedupe check before drafting, not only before committing** — both catches this week came after
+a full item had been written.
+
+## A non-zero abstract length is not an abstract (added 2026-10-08)
+
+Two `Practice Guideline` records — the ACEP procedural sedation Delphi guidelines Parts 1 and 2
+(10.1016/j.annemergmed.2026.06.038 and .039) — each deposit **362 characters** in the abstract field. The
+content is the journal's policy-statement disclaimer: *"Policy statements and clinical policies are the
+official policies of the American College of Emergency Physicians and, as such, are not subject to the same
+peer review process…"*
+
+**A third case is subtler**: the ESPEN practical ICU nutrition guideline (10.20960/nh.06943) deposits 626
+characters that describe only the document's **provenance** — shortened, reformatted into flow charts,
+"partially revised" — and no recommendation.
+
+**Rule: test abstract content, not length.** Cheap checks: does it contain `Background`, `Methods`, `Results`
+or `Conclusion`; does it contain a digit. **An abstract that names no number and no method is a provenance
+note or a disclaimer**, and the document still needs its PDF.
+
+**And "partially revised" is a phrase to stop on.** It means some recommendations changed and the abstract
+does not say which — which makes the revision list the thing to retrieve, not the document.
+
+## Standards versus guidelines: a document class that can tighten itself (added 2026-10-08)
+
+AmSECT's 2025 paediatric and congenital perfusion update (10.1051/ject/2026012) revises by asking, item by
+item, **whether evidence now supports elevating a guideline to a standard** — a standard being mandatory
+where a guideline is recommended. **Five guidelines were elevated to standards**; three new guidelines and
+one standard were added; and **five patient-safety standards were adopted wholesale from the 2023 adult
+document.**
+
+**This is the mirror image of the French panels catalogued here that downgraded their own document class**
+(peri-thrombectomy, 4 Oct; SFMU/SFAR mild TBI). **Rule: when a document distinguishes mandatory from
+recommended items, the revision history is where the real content is — each promotion converts a
+recommendation into something an audit can fail**, and the abstract usually does not say which items moved.
+
+**Also note the borrowing mechanism:** where evidence cannot be generated in the smaller population, the
+safety floor is **imported from the adult document** rather than left empty. Worth looking for in other
+paediatric guidance.
+
+**And keep the class in mind when summarising: professional practice standards** — who must be present, what
+must be monitored and documented — **are not clinical treatment recommendations**, and a reader looking for
+bypass flow or temperature targets will not find them in a standards document.
