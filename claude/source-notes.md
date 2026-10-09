@@ -3326,3 +3326,78 @@ the actionable form of the finding is one sentence — **if you must miss the op
 **Note also the clarifying exclusion:** children treated with decompressive craniectomy were excluded, and
 yesterday's adult cohort found craniectomy patients tolerate low perfusion pressure *worse*. **Excluding a
 known effect modifier is not the same as hiding one**, and the paper is explicit about it.
+
+## Adjacent guidelines, opposite deposit behaviour (added 2026-10-09)
+
+Lung transplantation, same year, two ends of one timeline:
+
+| Condition | Document | Deposit |
+| --- | --- | --- |
+| **BLAD** — never reaching a normal baseline | three ISHLT `Practice Guideline` records (Aug–Oct 2026) | **zero characters of abstract on all three** |
+| **CLAD** — losing a baseline once achieved | ESOT clinical practice guideline (18 Sep 2026) | **full recommendations in the abstract** |
+
+**Rule: deposit behaviour is a property of the publisher and the society, not of the topic.** An
+abstract-free guideline on a question does not mean the question is undocumented — **look for the adjacent
+condition, the other society, and the other journal.** Here the readable document answers the harder half
+(treatment) while the unreadable ones define the easier half (an endpoint).
+
+**Practical: when a cluster of documents on one organ is half-unreadable, assemble the cluster explicitly and
+list which pieces can be read.** The lung-transplant set now runs candidate selection → early graft function
+→ late graft function, and **only the late one can be read from its deposit.**
+
+## "Suggestions" is a deliberate word (added 2026-10-09)
+
+The Task Force for Mass Critical Care (10.1016/j.chest.2026.08.049) **evaluated 147 evidence statements and
+issued 22 suggestions — 15%** — using the weaker noun throughout, for a field whose evidence base is one
+pandemic plus after-action reviews.
+
+**Rule: record the noun a document chooses for its output.** Recommendation, suggestion, statement, standard,
+guideline and algorithm are not interchangeable, and a panel that downgrades the noun is telling you
+something the GRADE table may not. **Three mechanisms now catalogued for separating evidence from consensus:**
+
+| Mechanism | Example |
+| --- | --- |
+| **Two documents** — guideline plus labelled consensus companion | Brain Trauma Foundation penetrating TBI (7 Oct) |
+| **Vocabulary** — call the output suggestions | TFMCC crisis communication (9 Oct) |
+| **Document class** — standards versus guidelines, with promotion | AmSECT perfusion (8 Oct) |
+
+**And the retention ratio is worth computing when both numbers are given**: 147 → 22 says more about the
+evidence base than any individual suggestion does.
+
+## A guideline that reverses a prohibition needs the denominators (added 2026-10-09)
+
+Brazilian Society of Cardiology on exercise in hypertrophic cardiomyopathy (10.36660/abc.20260423):
+**8 studies, 9,744 participants, "none reported an increased risk"** — and **more than 7,000 of those
+participants are in a single Korean observational cohort**, leaving fewer than 2,744 across the four RCTs and
+three other observational studies.
+
+**Rule: when a pooled participant count is given with the number of studies, look for the largest single
+contributor before quoting the total.** Here the headline count is one cohort with a tail, and **that same
+cohort is the source of the dose-response mortality finding** — the most persuasive-sounding result and the
+one most exposed to confounding.
+
+**Rule: "none reported an increased risk" is an absence-of-signal claim and its value is set by
+person-years.** For an uncommon annual event in a few thousand mostly low-risk patients, a real excess can
+hide inside "none reported". **The defensible reading: a large effect in selected patients is excluded, a
+small one is not, and the excluded patients are not addressed.**
+
+**What makes such a document defensible is the structure, not the evidence:** conditional on individualised
+risk assessment, naming the subgroup the evidence covers, and **saying plainly that the rest is expert
+consensus.** Contrast the Chinese lung-biopsy consensus (6 Oct), five strong recommendations on level 4
+evidence without comment. **This is how to carry weak evidence into a guideline.**
+
+**One methodological flag: it is indexed as both `Systematic Review` and `Practice Guideline`**, so the panel
+graded its own review and wrote recommendations from it. Efficient and auditable in one place, **but there is
+no independent appraisal step.**
+
+## A two-author "Practice Guideline" should be checked, not believed (added 2026-10-09)
+
+`10.1016/j.injury.2026.113648` — "The management of arterial injuries associated with musculoskeletal
+trauma", <em>Injury</em>, 2 Sep 2026 — is indexed `Practice Guideline` with a **zero-length abstract and two
+authors.**
+
+**Rule: panel size is a cheap sanity check on pubType.** Guidelines in this archive run from 7 to 24 named
+experts plus society attribution; **two authors and no abstract suggests a review or editorial mis-typed.**
+This archive has already found the inverse error — the 2022 SPLF lung transplantation update is
+`Practice Guideline` in English and `Review` in French. **pubType is a claim about the record, not about the
+document.**

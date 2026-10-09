@@ -2180,3 +2180,48 @@ an independent replication.
 
 **What would advance the thread:** results from neuro-intact (NCT05679739); any registered outcome trial; and
 **a paediatric prospective test of the thresholds STARSHIP generated**, which its own conclusion asks for.
+
+## Guidelines backlog after 2026-10-09
+
+**Reported today:** ESOT CLAD guideline; TFMCC crisis-communication consensus report; Brazilian Society of
+Cardiology exercise-in-HCM recommendations.
+
+**Lagged-window coverage so far** (the instrument added 8 October):
+
+| Window | Run | Yield |
+| --- | --- | --- |
+| 1–20 Sep 2026 | 8 Oct | 72 documents; 5 reported, 8 queued; 2 already in archive |
+| 21–30 Sep 2026 | 9 Oct | 20 documents; **1 new and in scope**; 1 already in archive (AATS, reported 28 Sep) |
+| **21 Aug – 10 Sep 2026** | **not run — next** | — |
+
+**The August window is the obvious next step on a quiet day**, and after that the instrument has caught up
+with itself and becomes a rolling monthly pass.
+
+**Open queue, in priority order:**
+
+1. **ACEP procedural sedation Parts 1 and 2 — full text needed** (abstract field holds a journal disclaimer).
+   Primary scope; Part 1's oversight chapter is the emergency-medicine/anaesthesiology jurisdictional
+   question. **No route but the PDF.**
+2. **ESPEN practical ICU nutrition — identify what "partially revised" changed** against 2019.
+3. **The lung-transplant set, now four documents and worth doing as one piece:** the three ISHLT records
+   (BLAD consensus, its perspective, frailty in candidates — **all abstract-free**, next PMC check on or
+   after 20 October, **but today's ESOT document argues for trying sooner**), the **JHLT social-support
+   guidance** (5 Sep, `10.1016/j.healun.2026.07.037`, readable), the **SPLF 2022 indications and
+   contraindications** (readable), and **ESOT CLAD** (reported today). **Candidate selection → early graft
+   function → late graft function, with only two of the three readable.**
+4. **Arterial injuries in musculoskeletal trauma** (`10.1016/j.injury.2026.113648`) — **retry 1 of 3**;
+   zero-length abstract, two authors, pubType possibly wrong.
+5. **Chinese IV-to-oral antibiotic switch guideline** (`10.3760/cma.j.cn112137-20260427-01141`).
+6. **2026 Swiss SSI <em>C. difficile</em> recommendations** (`10.57187/5395`); **EAU urological infections
+   2026 summary** (`10.1016/j.eururo.2026.04.011`) — secondary scope, low priority.
+7. **2026 AHA/ACC perioperative guideline** — monthly, on or after 7 November. **Third confirmation today
+   that it is indexed and abstract-only (1,214 chars); the obstacle is the publisher, not the index.**
+8. The standing French and European list, unchanged: five SPLF documents; two SFMU documents; targeted
+   temperature management; the SRLF remainder; the SFAR website catalogue; the SPILF remainder; ERC 2025;
+   HIS theatre ventilation; the Chinese maritime-environment TBI guideline.
+
+**Logged, not queued** (outside primary scope, recorded in case a thread needs them): **ERS guideline on
+diagnosis of granulomatous-lymphocytic interstitial lung disease in primary immunodeficiency** (25 Sep,
+`10.1183/13993003.02224-2025`); **SFGM-TC long-term follow-up after transplantation and cellular therapy**
+(25 Sep, `10.1016/j.bulcan.2026.07.006`) — the second SFGM-TC document, joining the paediatric HSCT
+antibiotic one from 30 September.
