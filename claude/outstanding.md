@@ -2129,3 +2129,54 @@ call; this note is read at the start of every run, which is enough to change pra
 caught something on two consecutive days — a double write-up on 7 October, and on 8 October a false claim that
 the watch had missed an ATS guideline for 37 days when it had reported it on 28 August. **Both catches came
 after a full item had been written.**
+
+## Brief queue after 2026-10-09 — empty for the first time
+
+**Cleared today:** the <em>Chest</em> sputum cellularity paper (written up, scope stretch acknowledged on the
+page), plus the two autoregulation papers queued yesterday.
+
+**Retired today:** the <em>EJA</em> **dexmedetomidine** paper (`…002523` / online-first `…002299`).
+**Third and final retry done; both deposits still zero-length. Recorded as non-depositing**, the fifth such
+item and the first whose online-first twin was also empty. **The dexmedetomidine thread stays at four
+documents.**
+
+**Still live:** the <em>EJA</em> **fluid balance and acute kidney injury** paper (`…002476`) — **retry due
+around 14 October**; no twin record, no abstract anywhere.
+
+**What a thin day should do now that the queue is empty**, in order of preference:
+
+1. **Take a research item from the guidelines backlog** — yesterday's lagged re-sweep left eight, and some are
+   research about guidance rather than guidance (the ACCP/<em>Chest</em> crisis-care consensus is guidance; the
+   arterial-injuries document may be either).
+2. **Run a targeted search on a named thread gap.** The standing ones, with their current status:
+   - **outcome-powered autoregulation trial** — searched 8 Oct, nothing exists;
+   - **ECMO analgosedation protocol study** — nothing across 27 years and 18,457 citations (4 Oct);
+   - **adult congenital heart disease anaesthesia** — open, and now with a reason attached (7 Oct);
+   - **aerosol-generating-procedure precautions** — open, never searched properly;
+   - **2023 ARDS definition papers** — open;
+   - **maternal cardiac arrest guidance** — opened 7 Oct when the French panel could not issue a
+     recommendation; look for ERC or AHA equivalents.
+3. **Run the lagged pubType re-sweep on a research window**, which has not been tried for research articles —
+   the same indexing frontier applies to `PUB_TYPE:"Randomized Controlled Trial"` (18 on 30 Sep, 127 on 1 Oct,
+   0 by 6 Oct), so **a 10–40-day-old window will hold trials the daily sweep never saw.** **This is the most
+   promising untried instrument for the brief.**
+
+## Pressure-targeting thread after 2026-10-09 — five documents, three populations
+
+| Population | Document | Contribution |
+| --- | --- | --- |
+| Adult TBI, 16 guidelines | Scoping review, 1 Oct 2026 | Pressure targets head the heterogeneity list |
+| Adult TBI, 187 patients | <em>Critical Care</em>, 20 Apr 2026 | Tolerable lower limit tracks autoregulation; worse tolerance with craniectomy, focal injury, age |
+| Adult TBI, 60 patients | COGiTATE 2021 + 2024 reanalysis | Feasible and safe; mechanism works; group mean hid it |
+| **Paediatric TBI, 98 children** | STARSHIP secondary analysis, 4 Aug 2025 | **Harm one-sided — below the optimum, not above**; PRx transition at **+0.00** |
+| **Post-arrest, 49 planned** | neuro-intact protocol, 24 Jul 2026 | Same premise reached independently; **MAP actively destabilised to derive MAPopt**; NSE endpoint vs historical controls |
+
+**The hole is unchanged: no outcome-powered trial in any population.** neuro-intact is explicitly a
+feasibility and effect-size study.
+
+**Author concentration to state whenever these are cited together: Smielewski is on four of the five;
+Beqiri on three; ICM+ derives the optimum in all of them.** The cardiac-arrest work is a new application, not
+an independent replication.
+
+**What would advance the thread:** results from neuro-intact (NCT05679739); any registered outcome trial; and
+**a paediatric prospective test of the thresholds STARSHIP generated**, which its own conclusion asks for.

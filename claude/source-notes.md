@@ -3228,3 +3228,101 @@ paediatric guidance.
 **And keep the class in mind when summarising: professional practice standards** — who must be present, what
 must be monitored and documented — **are not clinical treatment recommendations**, and a reader looking for
 bypass flow or temperature targets will not find them in a standards document.
+
+## The growth anomaly was the wrong measurement — resolved 2026-10-09
+
+**Four days were spent on whole-database growth falling to about a third of a ~7,900/day baseline, and it was
+declared a finding on 8 October with the caveat that the baseline window might have contained a backfill. It
+did, and that is the whole explanation.**
+
+The two quantities being compared were not the same thing:
+
+| Measure | What it counts | Baseline window (27 Sep – 5 Oct) | Now |
+| --- | --- | --- | --- |
+| **Whole-database difference** | **every** new record, whatever its publication date | **63,180** total, ~7,900/day | ~3,000/day |
+| **Trailing bucket sum** (`FIRST_PDATE` range) | **newly-dated** records only | **31,154** total, ~3,460/day | 43,217 over 15 days, ~2,880/day |
+
+**In the baseline window about half the database's growth was records dated outside it. Today almost none
+is.** So **the retrospective backfill stream stopped; the current-literature deposit rate did not change.**
+
+**Rule: the whole-database total is not a deposit-rate metric.** It mixes current deposits with retrospective
+ingest of old literature, and the ratio between them moves. **Track the trailing fourteen-day bucket sum as
+the primary number** — it counts newly-dated records only — **and keep the whole-database difference beside it
+as the second number, not the first.**
+
+**Rule: before declaring a rate anomaly, confirm the baseline measures the same quantity as the present.** The
+hedge written on 8 October ("either the rate fell, or the baseline window contained a backfill") was correct
+and the way to settle it was one query — the bucket sum for the baseline window — which should have been run
+on day one rather than day four.
+
+**What was right throughout and should have been trusted: the daily buckets grew normally, no bucket
+decreased, and all three canaries retrieved.** Those three checks were designed to detect the 26 September
+ingest stall and they correctly said nothing was wrong. **A derived aggregate contradicting three direct
+checks is more likely to be the wrong aggregate.**
+
+## Threshold versus dose in a biomarker (added 2026-10-09)
+
+The sputum cellularity cohort (10.1016/j.chest.2026.09.091): asthma emergency visits at **RR 1.92
+(1.49–2.47) for 3–15% eosinophils and RR 1.88 (1.17–3.03) above 15%.** Crossing 3% roughly doubles the rate;
+going higher adds nothing.
+
+**Rule: when a biomarker's strata are reported separately, check whether the point estimates ascend.** A
+dose-response invites titration; **a threshold invites a binary decision and the value above the threshold
+carries no further risk information.** Say which one the data show, because the clinical use differs.
+
+**And watch the denominators behind the top stratum** — the >15% interval here (1.17–3.03) is wide because
+that group is small, so the strata cannot be statistically separated anyway. **The cleaner argument is that
+the point estimates do not even hint at a gradient**, which does not depend on the intervals.
+
+**Same assay, different disease, different cell:** eosinophils predicted asthma-specific utilisation and
+**nothing** in COPD, while **neutrophils** predicted **all-cause** admission in COPD. **An outcome that
+switches from disease-specific to all-cause is a weaker claim about mechanism and a stronger one about
+frailty.**
+
+## Do not name trials from memory (added 2026-10-09)
+
+Drafting today's item 2, I wrote that **"COMACARE, NEUROPROTECT and the Danish BOX trial all compared higher
+against lower MAP targets and all were neutral on neurological outcome."** The protocol's own abstract says
+only that *"randomized trials comparing fixed MAP targets have been uniformly neutral"* and names none.
+
+**The sentence was removed before publishing.** A check found randomised comparisons after cardiac arrest do
+exist — a 2020 double-blind pilot against a 65 mmHg target, and a 2023 analysis of higher versus lower MAP
+and kidney function — **but not the three trials I had named, nor their results.**
+
+**Rule: a trial name, its design and its result are three separate claims and each needs a source.** Quote the
+document's own summary of its background, or verify and cite; **never supply the specifics from memory to make
+a paragraph more concrete.** This is the closest this archive has come to fabricating a result.
+
+## The method travels with its inventors (added 2026-10-09)
+
+Autoregulation-guided targeting, five documents, three populations — and **Smielewski is a co-author on
+COGiTATE, on its 2024 secondary analysis, on the paediatric STARSHIP analysis, and on the cardiac-arrest
+neuro-intact protocol**, with Beqiri on three of them. **The same software (ICM+) derives CPPopt in the
+traumatic brain injury trials and MAPopt in the cardiac-arrest protocol.**
+
+**So the cardiac-arrest application is not an independent replication of the traumatic brain injury work** —
+same instrument, partly the same people, new population. **Rule, now seen twice in three days** (the other
+being Rubiano across BOOTStraP, EXTRACCT and the guideline scoping review): **when two literatures appear to
+converge, check the author lists before calling it convergence.** It is still how a technique spreads; it is
+just not corroboration.
+
+**One genuine convergence survives that check**: the post-arrest protocol's opening premise — fixed pressure
+targets fail because autoregulation is heterogeneous — **is reached from a separate trial programme**, and
+neither field appears to cite the other's trials.
+
+## An asymmetric target: miss it high (added 2026-10-09)
+
+STARSHIP paediatric secondary analysis (10.1186/s13054-025-05568-4), 98 children: **ΔCPPopt below −20 mmHg
+predicts poor outcome; positive ΔCPPopt is tolerated.** Absolute perfusion pressure was harmful **below 40 and
+above 100 mmHg** — a 60-mmHg span, which is a cliff edge either side rather than a target.
+
+**And the PRx threshold is tighter than adult practice assumes: the transition to unfavourable outcome
+occurred when PRx exceeded +0.00**, not the +0.25 to +0.30 commonly quoted. Zero means the vasculature has
+stopped buffering at all.
+
+**Rule: when a target is individualised, ask whether the harm is symmetric around it.** Here it is not, and
+the actionable form of the finding is one sentence — **if you must miss the optimum, miss it high.**
+
+**Note also the clarifying exclusion:** children treated with decompressive craniectomy were excluded, and
+yesterday's adult cohort found craniectomy patients tolerate low perfusion pressure *worse*. **Excluding a
+known effect modifier is not the same as hiding one**, and the paper is explicit about it.
