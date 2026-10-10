@@ -2274,3 +2274,54 @@ an RCT on postoperative nausea versus sevoflurane; a BIS-at-matched-depth study 
 one connects to the archive's airway/monitoring thread** — a drug that changes what a processed EEG index
 reads at the same clinical depth is the same class of problem as a device that improves a measurement while
 destroying its diagnostic value. **Write the three together.**
+
+## Guidelines backlog after 2026-10-10
+
+**Reported today:** ISTH SSC guidance on factor concentrates in perioperative bleeding; the ISHLT expert
+consensus on social support systems; the two-hospital cardio-obstetric integrated care pathway.
+
+**Promoted by today's finding: the three abstract-free ISHLT documents should be retried before 20 October.**
+Yesterday's scheduling rested on the rule that deposit behaviour is a society-level property. **Today's ISHLT
+document deposits a full abstract in the same journal, so that rule is wrong** and the schedule built on it
+has no force. **Retry on the next quiet day.**
+
+**Open queue, in priority order:**
+
+1. **ACEP procedural sedation Parts 1 and 2** — abstract field holds a journal disclaimer. **PDF only.**
+   Primary scope; Part 1's oversight chapter is the emergency-medicine/anaesthesiology jurisdictional
+   question.
+2. **Three abstract-free ISHLT documents** (BLAD consensus `10.1016/j.healun.2026.05.034`, its perspective
+   `…05.031`, frailty `…05.035`) — **promoted, see above.**
+3. **ESPEN practical ICU nutrition** — identify what "partially revised" changed against 2019.
+4. **Arterial injuries in musculoskeletal trauma** (`10.1016/j.injury.2026.113648`) — **retry 2 of 3**;
+   zero-length abstract, two authors, pubType doubtful.
+5. **Spanish report on severe adverse events with halogenated agents in a specific ancestral population**
+   (2 Sep, `10.1016/j.redare.2026.502167`, **673 chars**) — primary scope, deposit too short to read.
+   **Retry 1 of 3.**
+6. **Chinese IV-to-oral antibiotic switch guideline** (`10.3760/cma.j.cn112137-20260427-01141`).
+7. **2026 AHA guideline for adult stroke rehabilitation and recovery** (27 Aug,
+   `10.1161/str.0000000000000536`) — **belongs with the stroke pair of 3 and 4 October**, rehabilitation end.
+8. **Vaccination and safe living strategies for solid organ transplant candidates and recipients** (22 Aug,
+   `10.1016/j.ajt.2026.07.033`) — fits the transplant cluster.
+9. **ACCP/<em>Chest</em> tobacco treatment in the inpatient setting** (2 Sep,
+   `10.1016/j.chest.2026.08.038`).
+10. **2026 Swiss SSI <em>C. difficile</em>** (`10.57187/5395`); **EAU urological infections 2026**
+    (`10.1016/j.eururo.2026.04.011`) — secondary scope.
+11. **AHA/ACC perioperative** — 7 November, monthly. **Fourth confirmation today that the index has it and
+    the publisher is the obstacle.**
+12. The standing French and European list, unchanged: five SPLF documents; two SFMU documents; targeted
+    temperature management; the SRLF remainder; the SFAR website catalogue; the SPILF remainder; ERC 2025;
+    HIS theatre ventilation; the Chinese maritime-environment TBI guideline.
+
+## Lung-transplant set — six pieces, four readable
+
+| Stage | Document | Readable |
+| --- | --- | --- |
+| Candidate selection | ISHLT frailty assessment (1 Oct) | **no** |
+| Candidate selection | **ISHLT social support (5 Sep) — reported 10 Oct** | **yes** |
+| Candidate selection | SPLF indications and contraindications (2022) | yes, **queued** |
+| Early graft function | ISHLT BLAD consensus (11 Aug) + perspective (1 Oct) | **no** |
+| Late graft function | ESOT CLAD (18 Sep) — reported 9 Oct | **yes** |
+
+**Write the set as one piece once the ISHLT retries resolve.** The clinical arc is candidate selection →
+early graft function → late graft function, and it is currently half-documented in public.

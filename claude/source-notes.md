@@ -3482,3 +3482,85 @@ first with a named cause.**
 **24.3 ± 21.4 days in nine control patients** — a standard deviation nearly equal to the mean. **One patient
 ventilated for two months produces both the mean and the p-value; the medians (7.0 vs 16.0) are the honest
 comparison.**
+
+## Correction: deposit behaviour is not even consistent within one society (added 2026-10-10)
+
+**Yesterday's rule was too strong.** It read: *deposit behaviour is a property of the publisher and the
+society, not of the topic.* **Today's ISHLT expert consensus statement on social support
+(10.1016/j.healun.2026.07.037) is in the same journal as the three abstract-free ISHLT records and deposits
+its abstract in full.**
+
+| ISHLT record, <em>J Heart Lung Transplant</em> 2026 | Abstract |
+| --- | --- |
+| BLAD consensus document (11 Aug) | **0 characters** |
+| BLAD perspective (1 Oct) | **0 characters** |
+| Frailty assessment in candidates (1 Oct) | **0 characters** |
+| **Social support systems (5 Sep)** | **1,609 characters, complete** |
+
+**Corrected rule: deposit behaviour varies document by document, not society by society or journal by
+journal. Never infer from one abstract-free record that a society or journal does not deposit — check each
+document.** The practical consequence is unchanged and now better founded: **retry the abstract-free ones,
+and do not wait on a schedule built from an over-generalised rule.**
+
+## The dedupe check's first false positive, and the precise form (added 2026-10-10)
+
+`grep -l "<doi>" _guidelines/*.md _briefs/*.md` matched two entries for the JHLT social-support DOI, which
+would have excluded it as already reported. **It had never been reported: both matches were prose — a queue
+entry in a footer, not an `items:` line.**
+
+**Use the items-block form for exclusion:**
+
+```bash
+grep -h 'link: "' _guidelines/*.md _briefs/*.md | sort | uniq -d     # archive-wide duplicates
+grep -c 'link: "https://doi.org/<doi>"' _guidelines/*.md _briefs/*.md  # one DOI
+```
+
+**Run the loose prose grep afterwards, for context only, never for exclusion.**
+
+**Three days of use: two true catches (a double write-up on 7 October, a false claim about missed documents
+on 8 October) and one false positive today. The false positive is the more dangerous failure** — a duplicate
+is visible on the published page and can be corrected; a suppressed item is invisible and never gets written.
+
+## Overlapping lagged windows is not redundant (added 2026-10-10)
+
+The 1–10 September days were inside the 1–20 September window swept on 8 October. **Sweeping the same days
+again today surfaced two in-scope documents that did not appear on 8 October** — the ISHLT social-support
+statement (5 Sep) and the cardio-obstetric pathway (27 Aug, outside the earlier window, but the 1–10 Sep
+overlap is what caught the first).
+
+**Rule: overlap successive lagged windows by about ten days rather than tiling them.** The frontier keeps
+filling in behind a sweep, so a window swept once is not a window finished. **Coverage so far:** 1–20 Sep
+(8 Oct, 72 docs), 21–30 Sep (9 Oct, 20 docs), 21 Aug–10 Sep (10 Oct, 83 docs). **Next: 1–25 August**, after
+which the instrument becomes a rolling monthly pass.
+
+## pubType gets the document class wrong often enough to check every time (added 2026-10-10)
+
+Three instances in three days, all indexed `Practice Guideline`:
+
+| Document | Why the class is doubtful |
+| --- | --- |
+| Arterial injuries in musculoskeletal trauma (2 Sep) | **two authors**, zero-length abstract |
+| Brazilian HCM exercise recommendations (21 Sep) | simultaneously **`Systematic Review`** |
+| **Cardio-obstetric care pathway (27 Aug)** | **a two-hospital expert care pathway**, self-described as "expert-based" |
+
+**Rule: read the methods sentence for who convened the panel before calling anything a guideline.** A
+national society, a subcommittee of an international society, a two-hospital interdisciplinary panel and two
+authors are four different kinds of authority. **Say which one it is when reporting it** — a local
+implementation pathway can be excellent and is not a society recommendation.
+
+## A growing share of guidance exists to make existing guidance happen (added 2026-10-10)
+
+Four documents in two weeks whose stated rationale is implementation or variation rather than new evidence:
+
+- **French chest drainage guidelines** — "practices vary considerably between institutions" (5 Oct);
+- **Chinese renal replacement therapy guideline** — "lack of unified clinical standards" (8 Oct);
+- **ESPEN practical ICU nutrition** — reformatted into flow charts "to allow the practitioner to implement"
+  (8 Oct);
+- **Cardio-obstetric care pathway** — "implementing existing cardio-obstetric guidelines remains
+  challenging" (10 Oct).
+
+**Rule: when a document's rationale is implementation, its value is the schedule and the division of labour,
+not the recommendations** — and the recommendations will mostly be imported. **Read it for who does what and
+when.** The cardio-obstetric pathway's contribution is that **delivery method, duration of haemodynamic
+monitoring, pain management and fluid restriction are decided in the late second trimester by a named team**,
+not that any of those four is newly evidenced.
