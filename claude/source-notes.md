@@ -3401,3 +3401,84 @@ experts plus society attribution; **two authors and no abstract suggests a revie
 This archive has already found the inverse error — the 2022 SPLF lung transplantation update is
 `Practice Guideline` in English and `Review` in French. **pubType is a claim about the record, not about the
 document.**
+
+## The lagged re-sweep works for research too — and it was hiding JAMA trials (added 2026-10-10)
+
+The frontier demonstrated on 8 October applies to `PUB_TYPE:"Randomized Controlled Trial"` exactly as it does
+to guideline types (18 on 30 Sep, 127 on 1 Oct, 0 by 6 Oct). **Run over 1–25 September with in-scope title
+terms, it returned 84 records, of which ten were in scope and new and three were in <em>JAMA</em>.**
+
+```bash
+epmc '(PUB_TYPE:"Randomized Controlled Trial" OR PUB_TYPE:"Meta-Analysis") AND (TITLE:"anaesthesia" OR TITLE:"anesthesia" OR TITLE:"intensive care" OR TITLE:"critically ill" OR TITLE:"sepsis" OR ...) AND FIRST_PDATE:[d1 TO d2]' core 60
+```
+
+**Rule: on any day the trailing priority-journal sweep returns nothing, run the lagged re-sweep over a window
+10 to 40 days old.** One query produced a week of material. **Overlap successive windows by about ten days**:
+the frontier means the older end of a window keeps filling after it has been swept.
+
+**And the discipline that made it safe: the whole-archive DOI check was run BEFORE drafting**, not after. One
+of the 84 was already in the 7 September brief. **That is the order the routine failed to follow on 7 and
+8 October, both times after a full item had been written.**
+
+## A 52% event rate tells you what the outcome is (added 2026-10-10)
+
+The dapagliflozin cardiac-surgery trial (10.1001/jama.2026.9268) reports AKI in **28% vs 52%**, RR 0.54
+(0.45–0.65), from four oral doses — NNT about 4. Its own opening sentence puts the literature range at
+**2% to 50%**, so **the placebo arm sits at the top of it.**
+
+**Rule: when a placebo event rate sits at or above the top of the range the paper itself quotes, read the
+outcome definition before the effect size.** Here it is KDIGO AKI at maximum sensitivity — a 0.3 mg/dL
+creatinine rise within 48 h, or urine output under 0.5 mL/kg/h for 6–12 h — which captures small transient
+changes and gives enormous power.
+
+**And for an SGLT2 inhibitor specifically, ask for the component breakdown.** The class causes osmotic
+diuresis (bearing on the urine-output criterion) and an early dip in measured renal function (biasing
+*against* the drug). **Without creatinine-defined versus urine-output-defined event counts, renal protection
+and a diuretic moving a diagnostic threshold are indistinguishable.**
+
+**Rule, again: a large effect on a sensitive surrogate with no clinical outcome reported is an unfinished
+claim.** No dialysis, mortality, length of stay or discharge renal function appears in this abstract.
+
+## Reconstruct percentages to find the denominators that moved (added 2026-10-10)
+
+TRICYCLE (10.1186/s13054-026-06323-z), 38 versus 41 randomised:
+
+| Outcome | Reported | Divides exactly into |
+| --- | --- | --- |
+| ICU mortality | 26.3% / 41.5% | **10/38 and 17/41** — the randomised arms |
+| 28-day mortality | 36.8% / 46.3% | **14/38 and 19/41** — the randomised arms |
+| **Tachyarrhythmias** | **15.6% / 68.6%** | **5/32 and 24/35** — **not** the randomised arms |
+
+**So about seven patients are missing from the trial's most dramatic result** (a fifty-three-point
+difference) and the abstract does not say why.
+
+**Rule: divide every reported percentage back out and see which denominator it fits.** Within one abstract,
+some outcomes use the randomised arms and others do not, and the ones that do not are often the headline.
+**Two cases today** — X-COPD reports VAP as "3 patients (37.5%)" where 3 of its 9 evaluable controls is
+33.3% and **37.5% is 3 of 8**, while its bleeding figure (1 patient, 12.5%) fits the 8-patient intervention
+arm. **A single abstract can compute two percentages against two different denominators.**
+
+## A prespecified null beside a post-hoc positive, in the same variable (added 2026-10-10)
+
+TRICYCLE's noradrenaline-equivalent dose fell at **the same rate over 72 hours (p = 0.47)** and
+**significantly faster over the first 24 hours (p < 0.0004)** — both from "additional non-prespecified
+analyses", which the abstract states.
+
+**Rule: when the same variable is null over the planned window and positive over a shorter one, the claim is
+about timing, not about magnitude.** The defensible reading here is **front-loaded weaning without a change
+in total exposure** — narrower than "vasopressor-sparing", which is what will be quoted.
+
+## "Terminated by the sponsor for financial reasons" (added 2026-10-10)
+
+X-COPD (10.1186/s13054-026-06300-6) stopped at **18 of a planned 192 patients — 9% of target — not for
+futility, harm or slow recruitment, but because the money stopped.**
+
+**Rule: record why a trial stopped, because it changes what the absence of evidence means.** This archive has
+catalogued several evidence gaps this fortnight — no outcome trial for autoregulation-guided targeting, no
+ECMO analgosedation protocol study in 27 years, no successor to the 2016 severe-TBI guideline. **This is the
+first with a named cause.**
+
+**And treat a significant p-value from such a trial with the dispersion it carries.** Ventilation duration
+**24.3 ± 21.4 days in nine control patients** — a standard deviation nearly equal to the mean. **One patient
+ventilated for two months produces both the mean and the p-value; the medians (7.0 vs 16.0) are the honest
+comparison.**

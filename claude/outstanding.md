@@ -2225,3 +2225,52 @@ diagnosis of granulomatous-lymphocytic interstitial lung disease in primary immu
 `10.1183/13993003.02224-2025`); **SFGM-TC long-term follow-up after transplantation and cellular therapy**
 (25 Sep, `10.1016/j.bulcan.2026.07.006`) — the second SFGM-TC document, joining the paediatric HSCT
 antibiotic one from 30 September.
+
+## Brief queue after 2026-10-10 — refilled by the lagged RCT re-sweep
+
+**The queue was empty yesterday. One query refilled it with a week of material.**
+
+**Written up today:** the <em>JAMA</em> dapagliflozin cardiac-surgery AKI trial; **TRICYCLE**; **X-COPD**.
+
+**Queued, in priority order** (all found 10 Oct in the 1–25 September lagged window, all dedupe-checked
+against the archive before being listed):
+
+1. **GASTRIC-PICU** — gastric residual volume in critically ill children (<em>JAMA</em>, 1 Sep,
+   `10.1001/jama.2026.10639`, 2,655 chars, 1 citation). Paediatric ICU, primary scope.
+2. **Integrated telehealth rehabilitation in mechanically ventilated adults** (<em>JAMA</em>, 1 Sep,
+   `10.1001/jama.2026.10617`, 2,710 chars, 1 citation).
+3. **Cochrane: semi-recumbent position for preventing ventilator-associated pneumonia** (21 Sep,
+   `10.1002/14651858.cd009946.pub3`, **6,894 chars**). **A universal ICU practice re-examined** — and the
+   longest abstract in the current queue, so budget for it.
+4. **Phenobarbital versus benzodiazepine pathways for alcohol withdrawal in critically ill adults**
+   (<em>Pharmacotherapy</em>, 1 Sep, `10.1002/phar.70197`, 1 citation).
+5. **Remimazolam versus sevoflurane**, meta-analysis with trial sequential analysis (<em>EJA</em>, 4 Sep,
+   `10.1097/eja.0000000000002412`). **Note the overlap:** a separate remimazolam-versus-sevoflurane RCT on
+   postoperative nausea appeared in the same window (`10.1186/s12871-026-04251-7`, 21 Sep) and a
+   remimazolam-versus-propofol BIS study (25 Sep, `10.1080/07853890.2026.2735790`) — **three remimazolam
+   documents, which is a thread rather than three items.**
+6. **Hyperoncotic 20% albumin versus crystalloid in sepsis**, meta-analysis (7 Sep,
+   `10.3390/medsci14050550`).
+7. **Intensive glucose control in the ICU**, meta-analysis (1 Sep, `10.1111/nicc.70611`).
+
+**Also seen in that window and not queued** (noted so the next sweep does not re-surface them as new): the
+<em>Acta Anaesthesiologica Scandinavica</em> blood-pressure-target feasibility trial, **already in the
+7 September brief**; a music-intervention cortisol trial; a mechanical insufflation-exsufflation review; a
+named-caps simulation study; several single-centre regional-block comparisons; and a large number of
+nursing-intervention trials in <em>Nursing in Critical Care</em>, which deposits heavily into this window and
+is **in scope but low yield** — worth a filter rather than a read.
+
+## Method addition, 2026-10-10 — the lagged re-sweep belongs to the brief too
+
+**Trigger:** any day the trailing priority-journal sweep returns zero (three consecutive days now).
+**Query:** `(PUB_TYPE:"Randomized Controlled Trial" OR PUB_TYPE:"Meta-Analysis")` plus in-scope title terms,
+over a window **10 to 40 days old**.
+**Discipline:** run the whole-archive DOI dedupe **before drafting**, not before committing.
+**Next window: 26 August – 15 September**, overlapping today's by ten days on purpose — the indexing frontier
+means the older end of a window keeps filling after it has been swept.
+
+**New thread opened: remimazolam.** Three documents in one window (meta-analysis with TSA versus sevoflurane;
+an RCT on postoperative nausea versus sevoflurane; a BIS-at-matched-depth study versus propofol). **The BIS
+one connects to the archive's airway/monitoring thread** — a drug that changes what a processed EEG index
+reads at the same clinical depth is the same class of problem as a device that improves a measurement while
+destroying its diagnostic value. **Write the three together.**
