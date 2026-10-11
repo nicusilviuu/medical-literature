@@ -2377,3 +2377,68 @@ arithmetic published on 10 October to support it is withdrawn.**
 **What would advance the thread:** the <em>BJA</em> EEG alpha power/PACU delirium papers seen in the 7 October
 title search (`10.1016/j.bja.2025.07.045`, 1,980 chars; `10.1016/j.bja.2025.07.051`, 1,792 chars) — **both
 have abstracts and neither has been retrieved.** Add to the queue.
+
+## Guidelines backlog after 2026-10-11
+
+**Reported today:** SFAR/AFEF/ACHBPT liver resection guidelines; ERS/ESGE/ESTS endosonography guidelines;
+the Chinese perioperative guideline for older patients with lung cancer.
+
+**Closed: SFAR hepatic resection** — found by the ACCPM journal route, not the website route, which confirms
+the 4 October route distinction again.
+
+**ISHLT retry result (promoted to today from 20 October):** all three records **still zero-length, none in
+PubMed Central.** The promotion was correct to run; the answer is unchanged. **Next check 25 October.** And
+**PubMed's web interface is not a usable fallback** — see source-notes for the three obstacle classes.
+
+**Lagged-window coverage is now complete back to 1 August.** The instrument has caught up:
+
+| Window | Run | Documents |
+| --- | --- | --- |
+| 1–25 Aug | 11 Oct | 77 |
+| 21 Aug – 10 Sep | 10 Oct | 83 |
+| 1–20 Sep | 8 Oct | 72 |
+| 21–30 Sep | 9 Oct | 20 |
+
+**Next run should sweep 11 September – 5 October** — entirely inside ground already covered, which makes it a
+direct test of the fill-in-behind effect rather than a hunt for new material. **If it yields nothing new, the
+instrument becomes monthly; if it yields something, the overlap rule needs widening.**
+
+**Open queue, in priority order:**
+
+1. **ACEP procedural sedation Parts 1 and 2** — PDF only (journal disclaimer in the abstract field).
+2. **ESPEN practical ICU nutrition** — what "partially revised" changed.
+3. **Transfusion Clinique et Biologique document** (25 Aug, `10.1016/j.tracli.2026.08.003`, 2,434 chars) —
+   **promoted: transfusion sits directly beside the ISTH factor-concentrate guidance reported 10 October**,
+   and the two should be read together.
+4. **French guidelines for severe asthma management** (19 Aug, `10.1016/j.rmr.2026.07.005`) — **SPLF's
+   seventh document and the first with a zero-length abstract.** Retry 1 of 3.
+5. **Arterial injuries in musculoskeletal trauma** (`10.1016/j.injury.2026.113648`) — retry 2 of 3.
+6. **Spanish halogenated-agents report** (`10.1016/j.redare.2026.502167`, 673 chars) — retry 1 of 3.
+7. **Brazilian pulmonary hypertension pharmacotherapy guidelines** (13 Aug,
+   `10.36416/1806-3756/e20250528`) — **second document from the Brazilian Society route**, after the exercise
+   recommendations of 9 October.
+8. **Chinese IV-to-oral antibiotic switch** (`10.3760/cma.j.cn112137-20260427-01141`).
+9. **AHA stroke rehabilitation 2026** (`10.1161/str.0000000000000536`); **transplant vaccination guidance**
+   (`10.1016/j.ajt.2026.07.033`); **ACCP tobacco treatment inpatient** (`10.1016/j.chest.2026.08.038`).
+10. **French primary CNS vasculitis guidelines** (6 Aug, `10.1016/j.revmed.2026.07.007`, 2,086 chars);
+    **Brazilian Trauma Society splenic injuries** (3 Aug, 625 chars) — logged, marginal scope.
+11. **Swiss <em>C. difficile</em>**; **EAU urological infections** — secondary scope.
+12. **AHA/ACC perioperative** — 7 November, monthly.
+13. The standing list: five SPLF documents plus the asthma one; two SFMU documents; targeted temperature
+    management; the SRLF remainder; **the SFAR website catalogue, now six items** (anticoagulants for planned
+    invasive procedures — promoted; paediatric regional anaesthesia; intra-abdominal infections; ECBU before
+    urological procedures; medication-error prevention with SFPC; perioperative immediate hypersensitivity
+    with SFA); the SPILF remainder; ERC 2025; HIS theatre ventilation; the Chinese maritime TBI guideline.
+
+## Frailty thread opened 2026-10-11
+
+Two frailty-assessment guidelines now in the archive, and **only one is readable**:
+
+| Document | Setting | Readable |
+| --- | --- | --- |
+| ISHLT frailty assessment in lung transplant candidates (1 Oct) | transplant candidacy | **no — zero-length abstract** |
+| **Chinese perioperative guideline for older patients with lung cancer (11 Aug)** | thoracic surgery, with malnutrition and falls | **yes** |
+
+**Both import comprehensive geriatric assessment into an operative specialty.** What would advance the
+thread: the ISHLT abstract, and any outcome evidence that frailty-directed intervention — rather than
+frailty-directed exclusion — changes anything. **That second question is the one neither document answers.**

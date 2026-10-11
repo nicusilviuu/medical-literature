@@ -3661,3 +3661,81 @@ says in Conclusions that the finding **"was not statistically significant in the
 cannot describe one analysis. **Take the conservative section.** Also read **"TSA just confirmed"** literally:
 a sequential analysis that barely crosses its boundary on 12 trials and 739 patients says sufficiency has
 only now been reached.
+
+## Unanimity and evidence strength are independent quantities — now with exact denominators (added 2026-10-11)
+
+The SFAR/AFEF/ACHBPT liver resection guidelines (10.1016/j.accpm.2026.101879) hand you the arithmetic:
+
+| | Count | Share |
+| --- | --- | --- |
+| GRADE 1 (high evidence) | **7** | **17.5%** |
+| GRADE 2 (low evidence) | 23 | 57.5% |
+| Expert opinion | 10 | 25% |
+| **Total** | **40** | — |
+| **Strong agreement achieved** | **40 of 40** | **100%** |
+
+**Rule: when a document reports both an evidence distribution and an agreement figure, quote them together.**
+**Strong agreement on an expert opinion is a statement about the panel, not about the literature**, and a
+reader who sees only "strong agreement for all 40 recommendations" will take the document for something it
+does not claim to be. **A panel transparent enough to publish 7/23/10 is doing the reader a service.**
+
+**Fourth explicit instance of the French counting convention**: 14 questions, 40 recommendations, **four
+questions for which no recommendation could be formulated** — so ten questions produced all forty. Inferred
+across six documents (1 Oct), demonstrated inside one abstract (5 Oct), reported as three separate figures by
+the SFMU/SFAR obstetric guidelines (7 Oct), and **here stated in the same sentence as the evidence grades.**
+
+**Contrast within the same entry:** the Chinese perioperative lung-cancer guideline (10.1111/jebm.70178)
+reports **55 recommendations across 28 issues, GRADE plus the RIGHT checklist, and no grade distribution in
+the abstract.** **Both used GRADE; only one lets a reader see the grades.** The abstract is where most
+clinicians meet a guideline.
+
+## A technique's evidence base is indication-specific (added 2026-10-11)
+
+Two guidelines five weeks apart appear to contradict each other on cryobiopsy:
+
+| Document | Verdict on cryobiopsy |
+| --- | --- |
+| Chinese Thoracic Society ILD lung-biopsy consensus (1 Oct) | **TBLC preferred in expert centres**, GA plus prophylactic occlusion balloon, level 2 / strong |
+| **ERS/ESGE/ESTS endosonography guidelines (6 Aug)** | **"insufficient evidence to support the structural use of… cryobiopsy"** |
+
+**Both are right.** Cryobiopsy for **diffuse interstitial lung disease** is parenchymal sampling; cryobiopsy
+in **mediastinal nodal staging for lung cancer** is a different procedure for a different target.
+
+**Rule: never carry "technique X is recommended" across indications.** Record the indication with the
+recommendation, and when two documents disagree about a technique, check whether they are answering the same
+question before calling it a contradiction.
+
+**Also from that guideline, two sentences worth keeping:** **"Add-on mediastinoscopy after a negative
+endosonography is not recommended"** — a de-implementation recommendation co-signed by the European Society
+of Thoracic Surgeons, i.e. surgeons telling surgeons to stop a confirmatory operation, which carries more
+weight than the same advice from physicians alone. And **21G/22G needles as standard with alternatives
+unsupported** — a procurement-level specification, like the Chinese consensus's balloon requirement. **The
+most usable guideline sentences tell a department what to stock.**
+
+## Three classes of access obstacle, now catalogued (added 2026-10-11)
+
+| What comes back | Example | Defeated by |
+| --- | --- | --- |
+| Plain **403** | sfar.org | **a browser user-agent** |
+| **403** with `<title>Just a moment...</title>` (Cloudflare JS challenge) | ahajournals.org, jacc.org, sciencedirect.com | **nothing available in a shell** |
+| **HTTP 203**, ~5.6 KB, body `visibility: hidden` pending a cookie check | **pubmed.ncbi.nlm.nih.gov** | **nothing — it is a cookie gate, not a block** |
+
+**The PubMed web interface is not scriptable from here**, confirmed today while retrying the ISHLT abstracts;
+the proxy was checked and is healthy, so this is PubMed's own front end. **Rule: read the body and the status
+code together before deciding an obstacle is a block.** A 203 with a hidden body is not an error and not a
+refusal.
+
+**Consequence worth stating: Europe PMC's REST API is the only reliable route and that is why it is this
+archive's spine.** When it has no abstract, the realistic options are PubMed Central (if deposited) or the
+PDF — not the publisher's site and not PubMed's web pages.
+
+## Institutional documents indexed as practice guidelines — fourth instance (added 2026-10-11)
+
+The Chinese perioperative lung-cancer guideline is authored by **one hospital's geriatrics research centre**
+and carries the pubType list **`other`, `Practice Guideline`, `Journal Article`.** With the two-author
+arterial-injuries record (2 Sep), the simultaneously-`Systematic Review` Brazilian document (21 Sep) and
+yesterday's two-hospital cardio-obstetric pathway, that is **four in five days.**
+
+**Rule, restated because it keeps paying: read the methods sentence for who convened the panel before calling
+anything a guideline**, and say which kind it is when reporting it. A national society, an international
+subcommittee, a single hospital's research centre and two authors are four different kinds of authority.
