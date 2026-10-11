@@ -2325,3 +2325,55 @@ has no force. **Retry on the next quiet day.**
 
 **Write the set as one piece once the ISHLT retries resolve.** The clinical arc is candidate selection →
 early graft function → late graft function, and it is currently half-documented in public.
+
+## Brief queue after 2026-10-11
+
+**Written up today:** GASTRIC-PICU; the Cochrane semi-recumbent positioning update; and the remimazolam pair
+(the EJA meta-analysis with TSA and the BIS crossover trial) as one item.
+
+**Remaining from the 10 October lagged sweep:**
+
+1. **<em>JAMA</em> integrated telehealth rehabilitation in mechanically ventilated adults** (1 Sep,
+   `10.1001/jama.2026.10617`, 2,710 chars).
+2. **Phenobarbital versus benzodiazepine pathways for alcohol withdrawal in critically ill adults**
+   (<em>Pharmacotherapy</em>, 1 Sep, `10.1002/phar.70197`).
+3. **Hyperoncotic 20% albumin versus crystalloid in sepsis**, meta-analysis (7 Sep,
+   `10.3390/medsci14050550`).
+4. **Intensive glucose control in the ICU**, meta-analysis (1 Sep, `10.1111/nicc.70611`).
+
+**Demoted:** the third remimazolam document (RCT versus sevoflurane on postoperative nausea,
+`10.1186/s12871-026-04251-7`, 21 Sep) is **redundant to today's item unless it resolves the PONV
+contradiction** between the meta-analysis's Results and Conclusions. **That is the single thing to check when
+it is retrieved**; if it does not resolve it, drop it.
+
+**Next lagged window for the brief: 26 August – 15 September**, overlapping the 10 October sweep by ten days.
+**The overlap is not redundant** — the guidelines watch proved that on 10 October, when re-sweeping days
+already covered on 8 October surfaced two in-scope documents that had not appeared the first time.
+
+## Index metric, corrected 2026-10-11
+
+**The rolling-window decomposition published on 10 October is retired as unsound** (see source-notes: a
+subset of the database appeared to grow by more than the database). **Replacement: fixed-boundary reference
+windows.**
+
+| Fixed window | Measured 11 Oct |
+| --- | --- |
+| 1–30 September 2026 | **148,622** |
+| 1–7 October 2026 | **19,881** |
+
+**Report the growth of those two beside the whole-database difference from tomorrow.** The trailing
+fifteen-day sum may be quoted as a level but **never differenced day to day.** The substantive conclusion of
+9 October stands — the old ~7,900/day baseline mixed current deposits with retrospective ingest — **only the
+arithmetic published on 10 October to support it is withdrawn.**
+
+## Monitoring thread — now three documents
+
+| Document | What it shows |
+| --- | --- |
+| Videolaryngoscopy (reported earlier) | a device that improves a measurement while degrading its diagnostic meaning |
+| **BIS during remimazolam versus propofol (25 Sep, reported 11 Oct)** | **a drug that changes what an established index means without changing the patient's state — 11.1 units at matched depth** |
+| EEG alpha power and PACU delirium (<em>BJA</em>, seen in sweeps, **never retrieved**) | unknown — **retrieve it** |
+
+**What would advance the thread:** the <em>BJA</em> EEG alpha power/PACU delirium papers seen in the 7 October
+title search (`10.1016/j.bja.2025.07.045`, 1,980 chars; `10.1016/j.bja.2025.07.051`, 1,792 chars) — **both
+have abstracts and neither has been retrieved.** Add to the queue.

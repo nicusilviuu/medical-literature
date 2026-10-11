@@ -3564,3 +3564,100 @@ not the recommendations** — and the recommendations will mostly be imported. *
 when.** The cardio-obstetric pathway's contribution is that **delivery method, duration of haemodynamic
 monitoring, pain management and fluid restriction are decided in the late second trimester by a named team**,
 not that any of those four is newly evidenced.
+
+## Retired: the rolling-window decomposition was unsound (added 2026-10-11)
+
+**Yesterday's entry reported that the retained days of the trailing window "gained 1,259 records overnight"
+against whole-database growth of 1,281, and called the agreement the cleanest confirmation yet. The method
+was wrong and today it produced an impossible number.**
+
+Method: yesterday's window total − the bucket that rolled off + the bucket that rolled on, attributing the
+remainder to backfill into the retained days.
+
+| Day | Computation | Implied retained gain | Whole-db growth |
+| --- | --- | --- | --- |
+| 10 Oct | 43,217 − 4,647 + 0 = 38,570 vs 39,829 | +1,259 | +1,281 |
+| **11 Oct** | **39,829 − 1,750 + 6 = 38,085 vs 39,478** | **+1,393** | **+571** |
+
+**A subset of the database cannot grow by more than the database.** The flaw is a date mismatch: **the
+rolled-off bucket is measured today but entered yesterday's total at yesterday's smaller value** — buckets
+keep filling — **so the subtraction removes more than was ever there.** Yesterday's agreement was luck.
+
+**Replacement: fixed-boundary reference windows**, whose edges do not move, so their growth is unambiguously
+backfill into a completed period.
+
+```bash
+epmc 'FIRST_PDATE:[2026-09-01 TO 2026-09-30]' lite 1   # 148,622 on 2026-10-11
+epmc 'FIRST_PDATE:[2026-10-01 TO 2026-10-07]' lite 1   #  19,881 on 2026-10-11
+```
+
+**Report those two beside the whole-database difference.** The trailing-window sum may still be quoted as a
+level, **never differenced day to day.**
+
+**Rule, generally: before differencing two measurements, check that every term was measured at the same
+time.** And **when a derived quantity exceeds what it is a subset of, the method is wrong, not the data** —
+the same lesson as 9 October, where a derived aggregate contradicted three direct checks.
+
+## De-implementation trials: two co-primary outcomes with different frames (added 2026-10-11)
+
+GASTRIC-PICU (10.1001/jama.2026.10639), 4,700 ventilated children in 24 units, used **noninferiority for the
+clinical co-primary** (survival and ventilator-free days — is stopping safe?) and **superiority for the
+nutritional co-primary** (energy requirements met by 72 h — does stopping help?). **Both were met.**
+
+**Rule worth copying: a trial of removing a practice should carry both frames.** One tests safety, the other
+tests benefit, and a trial with only the first has nothing positive to report even when it succeeds.
+
+**Two things to demand from such an abstract and both are missing here.** The **noninferiority margin** — an
+adjusted odds ratio of 0.95 with an upper bound of 1.05 means nothing without it — and the **reason for
+exclusions**: 240 of 4,700 (5.1%) absent from the intention-to-treat analysis, **which matters more on a
+noninferiority trial because losses push toward the null and the null is the claim.**
+
+**And distinguish raw from adjusted differences.** 80.3% versus 76.8% is a raw gap of **3.5** points; the
+reported adjusted estimate is **3.2 (1.3–5.2)**. **Caught in my own draft before publishing** — the two are
+not interchangeable and the adjusted one is the estimate.
+
+## Rank outcomes by how much judgement they require when blinding is impossible (added 2026-10-11)
+
+The Cochrane semi-recumbent positioning update (48 studies, 7,955 participants) finds, against supine:
+
+| Outcome | Effect | Certainty |
+| --- | --- | --- |
+| **Clinically suspected VAP** | **RR 0.42 (0.33–0.52)** | **high** |
+| Microbiologically confirmed VAP | RR 0.57 (0.25–1.27) | low |
+| ICU / hospital mortality | RR 0.80 / 0.86, both null | moderate |
+
+**Bed angle cannot be blinded, and "clinically suspected VAP" is a judgement made by someone who can see the
+bed.** So the strongest evidence attaches to the most judgement-dependent outcome and the outcome that would
+settle it is underpowered.
+
+**Third instance in five days** — the multisensory VR delirium trial (unblindable intervention,
+observer-rated CAM) and the obstetric team-training meta-analysis (signal only in cohort studies).
+**Rule: when an intervention cannot be blinded, rank the outcomes by judgement required and read the most
+objective one first.**
+
+**The dose finding is the actionable part and guidelines do not reflect it:** 30–45° versus < 30° reduces
+suspected VAP (**RR 0.48, high certainty**), while 40–45° versus 30° does **not** (RR 0.91, moderate) and
+**roughly doubles pressure ulcers (RR 2.42, 1.16–5.06)**. **The benefit is at the bottom of the customary
+"30 to 45 degrees" range and the harm is at the top.** And comparison 4 — semi-recumbent **worse** than
+semi-recumbent lateral or lateral rotation (RR 1.99, moderate certainty) — is a hypothesis no guideline
+addresses.
+
+## A monitor inherits the pharmacology of the drug it was calibrated on (added 2026-10-11)
+
+At matched clinical sedation depth (MOAA/S 1) in 16 volunteers, **BIS read 57.6 ± 7.5 on remimazolam versus
+46.5 ± 7.9 on propofol — an adjusted 11.1 units (7.3–14.8)** (10.1080/07853890.2026.2735790). The index was
+derived from propofol electroencephalography, which the trial states in its first sentence.
+
+**Consequence: a clinician titrating to a familiar BIS target will tend to give more remimazolam than the
+patient needs**, because the number the drug produces at adequate depth looks light.
+
+**Rule: a number is interpretable only alongside the conditions under which it was calibrated.** Companion
+to the videolaryngoscopy finding — a device that improved a measurement while degrading its diagnostic
+meaning. **Here a drug changes what an established measurement means without changing the patient's state.**
+
+**And flag an abstract whose Results and Conclusions disagree.** The remimazolam-versus-sevoflurane
+meta-analysis (10.1097/eja.0000000000002412) reports PONV at **RR 0.65 (0.47–0.90), P = 0.01** in Results and
+says in Conclusions that the finding **"was not statistically significant in the primary analysis."** Both
+cannot describe one analysis. **Take the conservative section.** Also read **"TSA just confirmed"** literally:
+a sequential analysis that barely crosses its boundary on 12 trials and 739 patients says sufficiency has
+only now been reached.
