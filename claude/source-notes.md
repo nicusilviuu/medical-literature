@@ -3829,3 +3829,89 @@ phenobarbital-first pathways looked better than adjunctive use, **at very low ce
 analyses.** That lands on the implementation thread — the 4 October analgosedation review found "a protocol
 insufficiently detailed" the commonest barrier, and four guidelines this fortnight existed to make existing
 guidance happen. **What a confirmatory trial would have to randomise is the pathway, not the drug.**
+
+## Retracted: the fill-in-behind-the-sweep effect does not exist (added 2026-10-12)
+
+**On 10 October this archive concluded that "the frontier keeps filling in behind a sweep", because
+re-sweeping days already covered on 8 October surfaced two in-scope documents. That was wrong.** The designated
+test — sweeping 11 September to 5 October, entirely inside covered ground — returned **44 documents, every one
+already seen. Nothing new.**
+
+**The real cause was my own page-size truncation:**
+
+| Sweep | Window | `hitCount` | pageSize requested | Never printed |
+| --- | --- | --- | --- | --- |
+| 8 Oct | 1–20 Sep | **72** | **70** | **2** |
+| 10 Oct | 21 Aug – 10 Sep | **83** | **80** | **3** |
+
+**Decisive test: re-running the 1–20 September query at pageSize 100 returns all 72, and the ISHLT
+social-support statement — reported on 10 October as newly surfaced — is among them, dated 5 September.** It
+was in the window on 8 October and simply not displayed.
+
+**Rule, mechanical: compare `len(resultList.result)` against `hitCount` on every sweep and re-run with a
+larger page size when they differ.** The `epmc` helper takes pageSize as its third argument and **it has been
+set below the hit count repeatedly.** Europe PMC's maximum is 1,000 per page with a cursor for more; **there
+is no reason to request fewer than 100 for a guideline sweep.**
+
+**Both truncated windows were re-run in full today and every DOI checked against the archive.** One in-scope
+document had been lost: **the Korean ICU rehabilitation guidelines (10.4266/acc.006630).** The rest were out
+of scope.
+
+**Consequence for method: overlapping successive lagged windows is no longer justified by a fill-in effect,
+because there is none.** A monthly pass with an adequate page size is enough. **And the general lesson is the
+same one as 9 and 11 October: when a surprising phenomenon appears, test the boring explanation — in this
+archive's own tooling — before publishing the interesting one.** Three self-inflicted artefacts in four days:
+a tag-stripping regex that ate real text, a rolling decomposition that could not add up, and now a page size
+below the hit count.
+
+## The strongest recommendations are about safety — fourth and clearest instance (added 2026-10-12)
+
+The Korean ICU rehabilitation guidelines: **15 recommendations, 13 conditional, and "two were strong, mainly
+because they addressed patient safety."** The panel states the reason rather than leaving it to be inferred.
+
+| Document | Strongest statements | What they were about |
+| --- | --- | --- |
+| Chinese ILD lung biopsy (1 Oct) | the only level 1 recommendation | **contraindications** |
+| BTF penetrating TBI (16 Feb) | the only four moderate-strength questions | **diagnosis and prognosis** |
+| SFAR liver resection (7 Aug) | 7 of 40 at GRADE 1 | — (83% low or opinion) |
+| **Korean ICU rehabilitation (31 Aug)** | **2 of 15 strong** | **"mainly because they addressed patient safety"** |
+
+**Rule: read the strength distribution before the recommendations, and expect the strong ones to be
+prohibitions or safety limits.** A guideline's therapeutic advice is usually its weakest-evidenced part.
+
+**And note the domain most rehabilitation documents omit: "criteria for withholding or discontinuing
+therapy."** A guideline that says when to stop mobilising is more usable than one that only urges starting.
+
+## Consensus thresholds are not comparable across documents (added 2026-10-12)
+
+Catalogue so far, all described as "consensus achieved":
+
+| Threshold | Document |
+| --- | --- |
+| **70%** panel agreement | **Korean ICU rehabilitation (31 Aug)** — lowest recorded |
+| 70% subgroup **and 90% plenary** | BOOTStraP 2nd ed. (12 Apr) |
+| >75% | STS oesophageal perforation (17 Sep) |
+| ≥80%, blinded Delphi | BTF penetrating TBI algorithms (16 Feb) |
+| ICC > 0.8, **not reached** | French heart-lung transplant Delphi (9 Apr) |
+
+**Rule: quote the threshold whenever quoting the agreement.** "Strong agreement for all recommendations" at
+70% and at 90% are different claims, and one document in this list published its failure to reach its own
+threshold.
+
+## A laboratory guideline can be built from a registry of its own failures (added 2026-10-12)
+
+The SFTS recommendations on immunohaematological monitoring in pregnancy
+(10.1016/j.tracli.2026.08.003) rest on GRADE systematic review **plus two national surveys — a practice
+questionnaire and "a registry of cases involving suboptimal management associated with inadequate IH
+monitoring."**
+
+**Rule worth noting as a model: for a question about process rather than treatment effect, documented local
+failures are more direct evidence than any trial.** Look for this design when a guideline's subject is
+workflow.
+
+**And its most transferable recommendation is about the obligation attached to a number:** *"the importance of
+providing expert interpretative comments alongside laboratory results"* and procedures for communicating
+abnormal findings to the right people. **The laboratory's job is not finished when the number is produced.**
+Companion to the 11 October finding from the other direction — a BIS value means something different
+depending on which drug produced it — **a number without its interpretive frame is not usable, and this
+document places that duty on the laboratory rather than the clinician.**

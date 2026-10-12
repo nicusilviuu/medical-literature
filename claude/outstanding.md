@@ -2488,3 +2488,57 @@ meta-analysis.
 
 **This check has moved from the pre-commit suite to the pre-read suite:** divide every reported percentage
 back out before writing a word about the result. **Four for four when looked for.**
+
+## Guidelines backlog after 2026-10-12
+
+**Reported today:** Korean clinical practice guidelines on rehabilitation in critically ill patients and
+post-intensive care syndrome (**recovered from the truncated 10 October sweep**); SFTS recommendations on
+immunohaematological management of pregnancy (**promoted yesterday; first SFTS document in the archive**).
+
+**Method correction — see source-notes.** The fill-in-behind-the-sweep effect claimed on 10 October **does
+not exist**; the cause was **requesting fewer results than the query matched**. **Both truncated windows have
+been re-run at page size 100 and every DOI checked against the archive.** From now on:
+
+- **Compare `len(results)` against `hitCount` on every sweep.** Never request fewer than 100 for a sweep.
+- **Overlapping lagged windows is no longer justified** — a monthly pass with an adequate page size suffices.
+- Lagged coverage is complete and verified back to 1 August: 1–25 Aug (77/77), 21 Aug–10 Sep (83/83 after
+  re-run), 1–20 Sep (72/72 after re-run), 21–30 Sep (20/20), 11 Sep–5 Oct (44/44, nothing new).
+- **Next lagged pass due around 10 November**, window 6 October – 5 November.
+
+**Retries, all still empty:**
+
+| Document | Retry | State |
+| --- | --- | --- |
+| Arterial injuries in musculoskeletal trauma (`10.1016/j.injury.2026.113648`) | **2 of 3** | zero-length |
+| French severe asthma management (`10.1016/j.rmr.2026.07.005`) | **1 of 3** | zero-length |
+| Spanish halogenated agents (`10.1016/j.redare.2026.502167`) | **1 of 3** | **673 chars — may be all there is**, not an absence |
+
+**Open queue, in priority order:**
+
+1. **ACEP procedural sedation Parts 1 and 2** — PDF only.
+2. **ESPEN practical ICU nutrition** — what "partially revised" changed.
+3. **Rehabilitation set, now two documents:** the Korean guidelines (reported today) and the **2026 AHA
+   guideline for adult stroke rehabilitation and recovery** (`10.1161/str.0000000000000536`). **Write the AHA
+   one against the Korean one and against the Brazilian telehealth trial** reported in today's brief — a
+   guideline pair plus the trial that found nothing among survivors.
+4. **Brazilian pulmonary hypertension pharmacotherapy** (`10.36416/1806-3756/e20250528`).
+5. **Chinese IV-to-oral antibiotic switch** (`10.3760/cma.j.cn112137-20260427-01141`).
+6. **Transplant vaccination guidance** (`10.1016/j.ajt.2026.07.033`); **ACCP inpatient tobacco treatment**
+   (`10.1016/j.chest.2026.08.038`); **French primary CNS vasculitis** (`10.1016/j.revmed.2026.07.007`).
+7. **Swiss <em>C. difficile</em>** (`10.57187/5395`); **EAU urological infections**
+   (`10.1016/j.eururo.2026.04.011`) — secondary scope.
+8. **Three abstract-free ISHLT documents** — next check 25 October.
+9. **AHA/ACC perioperative** — 7 November, monthly.
+10. The standing French and European list; **SFAR website catalogue at six items**; **SFTS added to the
+    society list.**
+
+## Obstetric thread after 2026-10-12 — three documents, one hole
+
+| Document | Covers |
+| --- | --- |
+| SFMU/SFAR/CNGOF urgent obstetric situations (7 Oct) | emergencies outside the maternity ward — **and could not recommend on maternal cardiac arrest** |
+| Two-hospital cardio-obstetric care pathway (10 Oct) | elective planning for known cardiac disease |
+| **SFTS immunohaematological monitoring (12 Oct)** | **laboratory surveillance and risk communication** |
+
+**Still nothing on maternal cardiac arrest.** Search ERC and AHA for maternal-arrest guidance; that remains
+the named gap, now against three documents covering everything either side of it.
