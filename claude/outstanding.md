@@ -2442,3 +2442,49 @@ Two frailty-assessment guidelines now in the archive, and **only one is readable
 **Both import comprehensive geriatric assessment into an operative specialty.** What would advance the
 thread: the ISHLT abstract, and any outcome evidence that frailty-directed intervention — rather than
 frailty-directed exclusion — changes anything. **That second question is the one neither document answers.**
+
+## Index event open as of 2026-10-12 — standing action
+
+**Whole database fell 61,746 records (49,015,487 → 48,953,741), verified three times, location unknown.**
+Both fixed windows grew, no bucket decreased, all canaries retrieve.
+
+**Standing action for tomorrow and until resolved:**
+
+1. **Difference the per-source counts** against the 12 October baseline in source-notes. **`PAT` 4,229,296,
+   `AGR` 1,026,549 and `ETH` 176,799 are the non-clinical collections** and together are 5.4 million records
+   — **a withdrawal of one would explain a loss of this size and be invisible in every clinical window.**
+2. **Re-check the 2024 window** (1,797,509 on 12 Oct, down 96 from 9 Oct) — if it keeps falling, the loss is
+   a back-catalogue process rather than a one-off.
+3. **Keep the whole-database figure as the second number**, as 11 October set out. **If the fixed windows keep
+   growing, the archive's working data is unaffected and this is a curiosity to document rather than a
+   problem to solve.**
+
+**Do not report it as resolved without locating it.**
+
+## Brief queue after 2026-10-12
+
+**Written up today:** the <em>JAMA</em> Brazilian telehealth rehabilitation trial; the phenobarbital
+meta-analysis.
+
+**Remaining:**
+
+1. **Hyperoncotic 20% albumin versus crystalloid in sepsis**, meta-analysis (7 Sep,
+   `10.3390/medsci14050550`).
+2. **Intensive glucose control in the ICU**, meta-analysis (1 Sep, `10.1111/nicc.70611`).
+3. **Two <em>BJA</em> EEG alpha power and PACU delirium papers** (`10.1016/j.bja.2025.07.045`, 1,980 chars;
+   `10.1016/j.bja.2025.07.051`, 1,792 chars) — **monitoring thread, which gained the remimazolam BIS finding
+   on 11 October.** Write as a pair with that.
+4. **The brief's own lagged re-sweep is due: window 26 August – 15 September**, never run for trials. **That
+   is the restocking instrument and it should be run before the queue empties, not after.**
+
+## Mismatched-denominator tally — four trials in six days
+
+| Trial | Journal | Mismatch |
+| --- | --- | --- |
+| CEUS vs US vs CT biopsy (6 Oct) | <em>Chest</em> | complications on 828/802/805 against randomised 828/829/828 |
+| TRICYCLE (10 Oct) | <em>Critical Care</em> | tachyarrhythmias on 5/32 and 24/35 against randomised 38 and 41 |
+| X-COPD (10 Oct) | <em>Critical Care</em> | VAP "3 patients (37.5%)" where 3 of 9 evaluable controls is 33.3% |
+| **Telehealth rehabilitation (12 Oct)** | **<em>JAMA</em>** | **mortality on 941 and 746 against randomised 1,063 and 853 — 229 missing** |
+
+**This check has moved from the pre-commit suite to the pre-read suite:** divide every reported percentage
+back out before writing a word about the result. **Four for four when looked for.**

@@ -3739,3 +3739,93 @@ yesterday's two-hospital cardio-obstetric pathway, that is **four in five days.*
 **Rule, restated because it keeps paying: read the methods sentence for who convened the panel before calling
 anything a guideline**, and say which kind it is when reporting it. A national society, an international
 subcommittee, a single hospital's research centre and two authors are four different kinds of authority.
+
+## The first whole-database decrease: −61,746 on 2026-10-12
+
+| Measure | 11 Oct | 12 Oct | Change |
+| --- | --- | --- | --- |
+| **Whole database** | 49,015,487 | **48,953,741** | **−61,746** |
+| Fixed window 1–30 Sep | 148,622 | 148,993 | +371 |
+| Fixed window 1–7 Oct | 19,881 | 20,218 | +337 |
+| 2024 (vs 9 Oct value) | 1,797,605 | 1,797,509 | −96 |
+| 2026 Q1 (vs 9 Oct value) | 516,614 | 517,307 | +693 |
+
+**Verified before being believed: three `*:*` queries all returned 48,953,741**, which rules out failure
+mode 3 (HTTP 200 with a wrong hit count). **All three canaries retrieve with full abstracts. No tracked
+window decreased.**
+
+**Not located.** The missing records are not in any dated window with a prior value; the small 2024 loss
+cannot account for 61,746. **Not the 26 September ingest stall** (deposits are landing), **not the
+24 September rebuild or the 30 September re-dating** (both showed as bucket decreases).
+
+**Per-source baseline recorded 12 Oct, because it never had been** — this is what will localise it:
+
+| `MED` | `PAT` | `PPR` | `PMC` | `AGR` | `ETH` | `CBA` | `CTX` | `HIR` | `NBK` |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 41,178,083 | 4,229,296 | 1,259,436 | 933,789 | 1,026,549 | 176,799 | 142,377 | 3,915 | 2,868 | 5 |
+
+Sum is 48,953,117, **within 624 of the total**, so the composition is complete enough to difference.
+**First two hypotheses to test tomorrow: a deduplication pass, or the withdrawal of one non-biomedical
+collection** (`PAT`, `AGR` and `ETH` together are 5.4 million records and none of them is clinical).
+
+**Rule: a whole-database decrease is only interpretable against per-source and fixed-window counts.** Capture
+a source baseline now rather than at the next event. **And the general lesson repeats for the third time: when
+an aggregate moves against every direct check, trust the direct checks** — the archive's working question is
+whether current literature is arriving and retrievable, and both fixed windows grew while every canary
+returned.
+
+**Method note: the fixed-boundary metric adopted 10 October and corrected 11 October is what made this
+readable.** The retired rolling decomposition would have produced a nonsense figure from a shrinking total.
+
+## EQ-5D assigns death a score of zero (added 2026-10-12)
+
+The Brazilian telehealth rehabilitation trial (10.1001/jama.2026.10617) reports EQ-5D-3L at 90 days:
+
+| Analysis | Intervention | Usual care | Adjusted difference |
+| --- | --- | --- | --- |
+| Whole cohort | 0.16 | 0.12 | **+0.049 (0.0002 to 0.098), P = .04** |
+| **Survivors only** | 0.60 | 0.59 | **−0.045 (−0.138 to 0.045), P = .34** |
+| 90-day mortality | 71.8% | 78.3% | −7.6% (−14.7 to −0.6) |
+
+**A utility scale that scores death as 0 rises whenever mortality falls, without anyone's health improving.**
+The authors say so — *"potentially influenced by reduced mortality."*
+
+**Rule: when a trial reports a utility or composite outcome, find the survivors-only analysis and read it
+first.** Here it is null and numerically negative. **A quality-of-life primary endpoint in a population with
+high mortality is a mortality endpoint with extra steps.**
+
+**And interrogate an implausibly sick control arm.** **78.3% 90-day mortality** in acute hypoxaemic
+respiratory failure is far above the usual range: it marks the population as non-transferable and makes a
+7.6-point absolute reduction from *rehabilitation* a very large claim — **in a stepped-wedge design, which
+attributes to the intervention whatever changed over calendar time.**
+
+**Mismatched denominators, fourth trial in six days.** Randomised 1,063 and 853; mortality analysed on 941
+and 746 — **229 patients missing, unexplained, on the outcome carrying the whole result.** Previous three:
+the CEUS biopsy trial (<em>Chest</em>), TRICYCLE and X-COPD (<em>Critical Care</em>). **Now <em>JAMA</em>.
+This check earns its place in the pre-read, not the pre-commit.**
+
+## I² = 0 across heterogeneous settings is a warning, not a reassurance (added 2026-10-12)
+
+The phenobarbital meta-analysis (10.1002/phar.70197), 16 non-randomised studies:
+
+| Outcome | Estimate | I² |
+| --- | --- | --- |
+| Intubation | OR 0.62 (0.20–1.87) | **73%** |
+| Hospital length of stay | MD −1.75 d (−5.07 to 1.56) | 63% |
+| **ICU length of stay** | **MD −0.60 d (−0.79 to −0.41)** | **0%** |
+
+**The only significant result is 14 hours, and it carries zero heterogeneity across eight observational
+studies.** ICU length of stay is among the most locally determined outcomes in critical care — bed pressure,
+step-down availability, weekend staffing. **Eight ICUs agreeing to within noise is more surprising than the
+difference.** Likeliest explanations: a narrow set of similar centres, or an outcome definition that
+truncates variation.
+
+**Rule: a precise pooled estimate with I² = 0 from settings that should differ is a reason for suspicion.**
+And note the inversion: **the clinically meaningful outcome is undetermined (I² = 73%) and the trivial one is
+precise.**
+
+**The paper's real contribution is a claim about pathways, not drugs:** front-loaded, protocolised
+phenobarbital-first pathways looked better than adjunctive use, **at very low certainty in exploratory
+analyses.** That lands on the implementation thread — the 4 October analgosedation review found "a protocol
+insufficiently detailed" the commonest barrier, and four guidelines this fortnight existed to make existing
+guidance happen. **What a confirmatory trial would have to randomise is the pathway, not the drug.**
