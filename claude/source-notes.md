@@ -3915,3 +3915,112 @@ abnormal findings to the right people. **The laboratory's job is not finished wh
 Companion to the 11 October finding from the other direction — a BIS value means something different
 depending on which drug produced it — **a number without its interpretive frame is not usable, and this
 document places that duty on the laboratory rather than the clinician.**
+
+## The index event located: everything but PubMed Central is frozen (added 2026-10-13)
+
+**Differencing yesterday's per-source baseline gives an unambiguous answer.**
+
+| Source | 12 Oct | 13 Oct | Change |
+| --- | --- | --- | --- |
+| `MED` | 41,178,083 | 41,178,083 | **0** |
+| `PAT` / `PPR` / `AGR` / `ETH` / `CBA` / `CTX` / `HIR` / `NBK` | — | — | **0 each** |
+| **`PMC`** | 933,789 | **953,416** | **+19,627** |
+| Whole database | 48,953,741 | 48,973,368 | +19,627 |
+
+**`MED` identical to the unit across 24 hours is not a plausible live index.** The fixed windows agree:
+1–30 Sep **148,993 → 148,993**, 1–7 Oct **20,218 → 20,218**, 2026 Q1 **517,307 → 517,307** — all unchanged to
+the record. Only 2024 moved (+82).
+
+**And new-literature ingest has stopped.** Trailing priority sweep for 12–13 Oct: **one record, an editorial
+stub with no DOI.** Broad in-scope sweep across twelve clinical title terms: **zero records with a DOI.**
+Buckets: 12 Oct **17**, 13 Oct **8**, against 1,500–1,800 on a normal weekday.
+
+**Working hypothesis: a PubMed Central reload with the daily pipeline suspended while it runs.** PMC implied
+at ~995,535 before the 12 October drop, now 953,416 — **about 32% of the loss restored.**
+**Prediction: PMC keeps rising toward ~995,000 and the frozen sources resume together.** If PMC stalls near
+953,000 with `MED` still frozen, the explanation is wrong and the next check is whether `SRC:` counting has
+changed meaning.
+
+**Retrieval is unaffected, checked rather than assumed:** four PMC-held records cited here in the past week
+(Korean rehabilitation guidelines, STARSHIP paediatric analysis, neuro-intact protocol, phenobarbital
+meta-analysis) **all return full abstracts with PMCIDs intact.**
+
+**Rule: capture a per-source baseline before you need it.** Yesterday's event was unlocalisable because no
+baseline existed; one day later it was localised in a single query set. **Add `SRC:` counts to the daily
+record permanently.**
+
+**And on reporting a changing state: yesterday's entry said "current literature is still arriving", which was
+true of yesterday's data and is false today.** Not a retraction — a state change — **but anyone reading the
+earlier entry alone would be misled, so the newer entry says so in its first section.** When a situation is
+moving, date the claim inside the sentence.
+
+## Three distinct ways a monitored number misleads (added 2026-10-13)
+
+The AlphaMax trial (10.1016/j.bja.2025.07.045 and .051) completes a set:
+
+| Document | Failure mode |
+| --- | --- |
+| Videolaryngoscopy | **the measurement changes** — a device improves a measure while degrading its diagnostic meaning |
+| Remimazolam BIS crossover (11 Oct) | **the calibration changes** — BIS reads 11 units high on a different drug at matched depth |
+| **AlphaMax parts 1 and 2** | **the number is not on the causal path** — alpha power pushed up and down deliberately, delirium flat at 33–37% in all four groups |
+
+**AlphaMax is the cleanest prognostic-marker-versus-treatment-target separation recorded here.** Part 1 raised
+alpha power (transiently, +0.8 dB early only); part 2 lowered it (−3.06 vs −1.82 dB) and doubled burst
+suppression (66% vs 34%). **Delirium: 37%, 33%, 36.7%, 33.3%.** And part 2's exploratory analysis **preserves
+the marker** — disorganised thinking went with lower preoperative MoCA, lower weight, higher NSQIP, **lower
+intraoperative alpha power** and longer stays. **Low alpha power still identifies the vulnerable brain;
+raising it does not protect that brain.**
+
+**Rule: a variable that predicts an outcome is a candidate target, not a target.** Demand a trial that moved
+the variable before believing it is on the causal path — **and note which direction was achieved**: part 2
+achieved *more* burst suppression, which observational data link to delirium, and delirium still did not
+rise. **That null is the stronger of the two.**
+
+**Both arms were underpowered for delirium after a feasibility-driven sample-size reduction**, stated in
+their own Results sections. **Part 1's intervention barely worked** (alpha rose only early), so it is partly
+a failed protocol rather than a tested hypothesis — but it did **abolish the desflurane–alpha correlation**
+(r = −0.020 vs −0.228), so **the titration worked on the physiology and not on the patient.**
+
+## Near-zero heterogeneity destabilises the estimator (added 2026-10-13)
+
+The hyperoncotic albumin meta-analysis (10.3390/medsci14050550), 8 RCTs, n = 3,707, **I² = 0%**, reports the
+same estimate five ways: **significant only under the pre-registered Hartung-Knapp-Sidik-Jonkman correction
+(0.91–0.98), null under standard, truncated-HKSJ and fixed-effects (0.87–1.03, p = 0.17)** — and the authors
+**call their own significant result "a low-heterogeneity artifact."**
+
+**Mechanism: HKSJ adjusts intervals for uncertainty in the between-study variance, and at near-zero
+heterogeneity that adjustment becomes unstable and can give an interval narrower than the standard method.**
+
+**This is the companion to yesterday's rule from the opposite side.** The phenobarbital meta-analysis had a
+precise pooled estimate at I² = 0 that nobody questioned. **Near-zero heterogeneity does not make a result
+solid — it can make the estimator misbehave. Ask which estimator produced the significance, and whether the
+others agree.**
+
+**Worth recording as a model of conduct: pre-registering an estimator, obtaining significance from it, and
+publishing the conclusion that the significance is an artefact.** Rare, and the right way round.
+
+**The subgroup should still be resisted:** septic shock RR 0.90 (0.82–0.99) against sepsis without shock
+1.10, **interaction p = 0.08** — which does not support separate effects. **The 6 October test stands:
+a believable interaction needs replication or specificity; this has neither.**
+
+## A formal published dissent is a document class (added 2026-10-13)
+
+On **15 September 2026**, two papers appeared in different journals: **"The 2026 Surviving Sepsis Campaign
+Guidelines: The dissenting opinion"** (*AJEM*, `Review`, seven authors) and **"What's next in sepsis?
+Controversies and future directions from the 2026 Surviving Sepsis Campaign Guidelines"** (*Pol Arch Intern
+Med*, by the guideline's own methodologists).
+
+**Read side by side they largely agree on direction.** The dissent objects to **"mandated 'bundles'"** and
+**"protocolized, metric-based care"**; the methodologists describe the 2026 edition as **"a more flexible
+approach… a hybrid approach of empiric early treatment alongside a nuanced, personalized stream of care."**
+**Both argue for individualisation and disagree about whether the guidelines have already turned.**
+
+**Rule for reporting such a pair: the question is empirical and narrow — has the bundle loosened, and will the
+quality metrics built on earlier editions follow?** A guideline can recommend individualisation while the
+audit apparatus attached to its predecessor still requires a bundle. **The dissent's strongest point is about
+the apparatus, not the recommendations**, and neither abstract claims the apparatus has changed.
+
+**Add to the document-class catalogue** alongside guidelines, consensus statements, standards, practical
+guidelines, care pathways and algorithm companions: **a formal dissent — a typed rebuttal in another journal,
+not correspondence.** It supplies what no guideline does: the case against, from people treating the same
+patients.

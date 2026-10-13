@@ -2542,3 +2542,65 @@ been re-run at page size 100 and every DOI checked against the archive.** From n
 
 **Still nothing on maternal cardiac arrest.** Search ERC and AHA for maternal-arrest guidance; that remains
 the named gap, now against three documents covering everything either side of it.
+
+## Index event — located 2026-10-13, prediction open
+
+**Located.** Nine of ten sources frozen to the record; **the entire 24-hour movement is `PMC` +19,627**.
+Fixed windows unchanged to the record. **New-literature ingest has stopped**: broad in-scope sweep for
+12–13 October returned **zero records with a DOI**; buckets 17 and 8.
+
+**Hypothesis:** PubMed Central reload with the daily pipeline suspended. PMC implied ~995,535 before the
+drop, now 953,416 — **32% restored.**
+
+**Test tomorrow:**
+
+1. **`PMC` should keep rising toward ~995,000.**
+2. **The frozen sources should resume together.**
+3. **If `PMC` stalls near 953,000 with `MED` still frozen**, the explanation is wrong — check whether `SRC:`
+   counting has changed meaning, and whether the fixed windows resume independently of PMC.
+
+**Permanent change: `SRC:` counts for all ten sources join the daily record.** Yesterday's event was
+unlocalisable because no baseline existed; one day later it took a single query set. **Retrieval is
+unaffected — four PMC-held records cited this week all return full abstracts.**
+
+**Operationally: the archive runs from the queue until the sweeps return records.** That is what the queue is
+for, and the 10 October lagged re-sweep restocked it four days before it was needed.
+
+## Brief queue after 2026-10-13
+
+**Written up today:** the AlphaMax pair; the hyperoncotic albumin meta-analysis; the Surviving Sepsis
+Campaign dissent and its companion.
+
+**Remaining: one item** — **intensive glucose control in the ICU**, meta-analysis (1 Sep,
+`10.1111/nicc.70611`).
+
+**Overdue and now the priority for the next quiet day: the brief's own lagged re-sweep, window 26 August –
+15 September**, never run for trials. **Apply the page-size correction**: request 100 and compare the
+returned count against `hitCount`. **With ingest stopped, the lagged sweep is the only instrument that can
+still find new material**, because it looks at windows that were already indexed before the freeze.
+
+## Monitoring thread — complete at three documents
+
+| Document | Failure mode |
+| --- | --- |
+| Videolaryngoscopy | the measurement changes |
+| Remimazolam BIS crossover (11 Oct) | the calibration changes |
+| **AlphaMax parts 1 and 2 (13 Oct)** | **the number is not on the causal path** |
+
+**What would advance it:** any trial that moved a monitored variable *and* changed an outcome — the positive
+case, which the thread entirely lacks. **Candidates to look for: processed-EEG-guided depth titration with a
+delirium outcome in an adequately powered trial** (AlphaMax was underpowered by design change), and the
+**autoregulation-guided outcome trial** that the pressure-targeting thread has been waiting five years for.
+
+## Sepsis guidance thread opened 2026-10-13
+
+| Document | Position |
+| --- | --- |
+| 2026 Surviving Sepsis Campaign guidelines | already in the archive (reported 29 Aug, 1, 8, 9 Sep) |
+| Hyperoncotic albumin meta-analysis (7 Sep) | **aligns with SSC: no routine albumin, low certainty** |
+| **The dissenting opinion (15 Sep)** | **bundles have become mandates; move beyond metric-based care** |
+| **The methodologists' companion (15 Sep)** | **the 2026 edition is already the flexible, personalised turn** |
+
+**The open empirical question neither side answers: has the bundle loosened, and will the quality metrics
+built on earlier editions follow?** **What would advance it:** any document showing a regulator or
+accreditation body changing a sepsis metric in response to the 2026 edition. **Worth a targeted search.**
