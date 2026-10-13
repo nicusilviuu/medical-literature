@@ -2604,3 +2604,54 @@ delirium outcome in an adequately powered trial** (AlphaMax was underpowered by 
 **The open empirical question neither side answers: has the bundle loosened, and will the quality metrics
 built on earlier editions follow?** **What would advance it:** any document showing a regulator or
 accreditation body changing a sepsis metric in response to the 2026 edition. **Worth a targeted search.**
+
+## Index event after 2026-10-13 guidelines watch — localised in date order
+
+**Baseline, eleven sources measured together (14:32 UTC):** `MED` 41,178,083 · `PMC` 955,023 ·
+`PAT` 4,229,296 · `PPR` 1,259,436 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `CTX` 3,915 ·
+`HIR` 2,868 · `NBK` 5 · **`CIT` 624** · **sum = whole database = 48,974,975, residual 0.**
+
+**Fixed windows, second consecutive day unchanged to the record:** 1–30 Sep **148,993**; 1–7 Oct **20,218**.
+
+**`PMC` era buckets (the new instrument):** before 2000 **469,211** · 2000–2009 **80,577** ·
+2010–2019 **153,334** · 2020–2024 **179,035** · 2025 **38,518** · 2026 **33,899**.
+
+**Standing action tomorrow:** re-measure the six era buckets and the eleven source counts.
+**Prediction: 2010–2019 moves next; 2026 moves last.** **Falsified if the buckets move together, or if 2026
+moves before 2010–2019** — then the restore is not date-ordered and the hypothesis is wrong.
+**`CIT` is permanently part of the source baseline.**
+
+## Guidelines backlog after 2026-10-13
+
+**Cleared today:** AHA/ASA 2026 adult stroke rehabilitation (`10.1161/str.0000000000000536`); Brazilian
+Thoracic Society PH pharmacotherapy (`10.36416/1806-3756/e20250528`); Chinese IVOS
+(`10.3760/cma.j.cn112137-20260427-01141`).
+
+**Readable and still outstanding:** ESPEN "partially revised" diff; ACCP/<em>Chest</em> inpatient tobacco
+treatment (`10.1016/j.chest.2026.08.038`); vaccination and safe living for solid organ transplant candidates
+(`10.1016/j.ajt.2026.07.033`); French CNS vasculitis; Swiss <em>C. difficile</em> (`10.57187/5395`); EAU
+urological infections summary (`10.1016/j.eururo.2026.04.011`).
+
+**Unreadable:** ACEP procedural sedation Parts 1–2, PDF only. **Retries:** arterial injuries (2 of 3), French
+severe asthma (1 of 3), Spanish halogenated agents (1 of 3). **SFAR website catalogue at six items.**
+
+**Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative **7 November**; next
+lagged guidelines pass **~10 November**.
+
+## Rehabilitation set — complete at three documents
+
+| Document | Position |
+| --- | --- |
+| Korean ICU rehabilitation guidelines (31 Aug, reported 12 Oct) | 15 recommendations, 13 conditional, both strong ones about safety |
+| **AHA/ASA 2026 adult stroke rehabilitation (27 Aug, reported today)** | **replaces 2016; key updates include technology-enabled rehabilitation; grades not readable** |
+| Integrated telehealth rehabilitation trial (JAMA, reported 12 Oct brief) | **no difference in survivor quality of life, −0.045 (−0.138 to 0.045)** |
+
+**What would advance it: the AHA guideline's grade for its technology-enabled rehabilitation recommendations.**
+If conditional, the three documents are consistent and the summary is that nobody knows whether it works.
+**Checkable the moment the full text is reachable — AHA journals are Cloudflare-gated in a shell.**
+
+## Acronym sweep window — fix applied 2026-10-13
+
+**The last pass covered 5–12 October, so 1–4 October had never been swept by the acronym route** although the
+stated window is 7–10 days. **Today's pass covered 1–13 October.** **Rule: set the window from the last pass's
+end date, not from the policy.**

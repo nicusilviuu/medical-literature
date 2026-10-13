@@ -4024,3 +4024,82 @@ the apparatus, not the recommendations**, and neither abstract claims the appara
 guidelines, care pathways and algorithm companions: **a formal dissent — a typed rebuttal in another journal,
 not correspondence.** It supplies what no guideline does: the case against, from people treating the same
 patients.
+
+## 2026-10-13 (guidelines watch)
+
+**The eleven-source decomposition is a sound integrity check, and yesterday's ten-source baseline was
+incomplete.** `CIT` — 624 computer-science citation stubs — was never queried. With it, the source counts sum
+**exactly** to the whole-database total when all eleven are measured at the same instant (48,974,975 = 48,974,975,
+residual 0). **This is the decomposition the 11 October retraction was looking for**: sources partition the
+database, so the identity holds instantaneously, whereas the rolling trailing window compared buckets measured
+on different days. **Rule: a whole-database total is not a measurement until it is decomposed into a partition
+measured together.**
+
+**Where a moving count lands is answerable by measuring twice.** PubMed Central was gaining ~60 records/min, so
+counting it by publication era at 14:29 and 14:32 located the movement: **+156 before 2000, +13 in 2000–2009,
+zero in every bucket from 2010 on, total +169 — the whole movement.** **A back-catalogue restore running in date
+order from the oldest end, while current ingest is stopped.** **Rule: when a monitored number moves and you want
+to know what moved, partition it and re-measure the partition minutes later. Two passes beat a day of waiting.**
+
+**Third instance in a week of one number hiding two opposite movements** (whole-db growth = current deposits +
+retrospective backfill, 9 Oct; whole-db change = PMC loss + other-source gain, 12 Oct; PMC rise = 1990s
+returning + present not arriving, 13 Oct). **This is now the archive's most repeated finding and it should be
+assumed rather than rediscovered.**
+
+**A prediction that distinguishes beats one that is merely consistent.** Yesterday's "PMC rises toward 995,000
+and frozen sources resume together" is satisfied by almost any restoration. **Today's — 2010–2019 moves next,
+2026 moves last — is false if the buckets move together or out of order.** **Rule: state the prediction that
+some plausible alternative would fail.**
+
+**The loose-grep dedupe failure was observed, not reasoned about.** The whole-file `grep -l` reported all seven
+of today's candidates as already present; the `items`-block form cleared three. **The loose form would have
+emptied today's entry.** The 10 October note said suppression is the more dangerous failure than duplication;
+that is now demonstrated. **Only the `items`-block form is the dedupe log.**
+
+**A strong recommendation can be extended beyond its trial, by drug class, with national availability as the
+stated reason.** The Brazilian PH guideline grades initial combination therapy strong/high on **one** trial
+(ambrisentan + tadalafil) and says so, then **"expands the concept of combined treatment to other drugs in the
+PDE5i and ERA classes available in the country."** **Honest, defensible, and a distinct thing from the evidence
+grade — the grade belongs to the trial, the scope belongs to the formulary. Separate them when quoting.**
+
+**A guideline's main content for its commonest patient group can be a list of things not to do.** Four of seven
+Brazilian PH recommendations cover PH due to left heart disease and all four are negative or null; the only
+**strong** recommendation in that group is a recommendation **against** (macitentan, moderate certainty) —
+better-founded than three of the four conditional statements beside it. **Count the direction of
+recommendations, not only their number.**
+
+**Consensus-threshold catalogue: a stated threshold is itself a choice some panels decline.** The Brazilian
+panel recorded only that "in situations when there was no consensus, votes were taken and the results were
+recorded" — a procedure with **no percentage anywhere**. Against Korean 70%, BTF blinded 80%, BOOTStraP 70/90%,
+STS >75%. **Absence of a threshold is not evidence of a lower bar.**
+
+**Dual deposit, date form.** The Brazilian PH guideline deposits twice in the same journal/volume/issue: a `MED`
+record with DOI, abstract and `Practice Guideline`, dated **13 August**; a PMC record with the **full text**, no
+DOI, no abstract, type `research-article`, dated **13 September**. **The later date is the deposit, not the
+publication — a FIRST_PDATE sweep sees one guideline twice, a month apart. The record carrying the DOI and the
+pubType is the publication; the richer full text may be the later copy.**
+
+**Control before concluding, again.** PMC-source records in the current window had no DOI and no abstract,
+which looked like a reload restoring shells. **The control — the same query shape over 1–20 September — showed
+5 of 5 PMC records with no DOI and no abstract too.** That is simply what a PMC-only record looks like in
+`core`. **The interesting explanation died in one query.**
+
+**A correction caught in a prose note before it reached a write-up.** The 11 October note paired the Brazilian
+PH guideline with the 9 October Brazilian exercise recommendations as "the second document from that society."
+**Different societies** — Brazilian Thoracic Society vs Brazilian Society of Cardiology. **Prose notes are not
+checked by the dedupe suite; read them against the record when promoting one to an item.**
+
+**A guideline that addresses caregivers directly is making a claim about where the intervention happens.** The
+AHA 2026 stroke rehabilitation guideline names caregivers in its intended audience alongside physicians and
+allied health — and the largest recent trial of remote delivery found nothing in survivors.
+
+**A guideline whose stated problem is inconsistency rather than reluctance implies the behaviour is already
+established.** The Chinese IVOS guideline says switching "has been gradually implemented" and the gap is
+"patient evaluation and switching opportunity" — a different diagnosis from Western stewardship guidance, and
+it explains why the document reads as a procedure (screening, timing, criteria, operational procedures;
+24 recommendations to 18 questions).
+
+**Sweep-window audit.** The acronym route's last pass covered 5–12 October, so **1–4 October had never been
+swept by it.** Covering 1–13 October today surfaced the two documents published on 2 October by this archive —
+no loss, but **the stated window is 7–10 days and the actual window had been shorter. Check the window against
+the last pass, not against the policy.**
