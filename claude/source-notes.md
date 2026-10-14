@@ -4173,3 +4173,14 @@ recovery 63,222 against 61,746 lost. **Since 98.6% of the recovery landed pre-20
 were almost entirely pre-2000** (inference from where they returned, not a direct measurement). **`MED` has not
 moved for four days and preprints have not moved for two — a frozen preprint source is not a PubMed problem,
 which argues for a pipeline-wide suspension.** **The signal to watch is `MED`, not `PMC`.**
+
+**New rendering hazard, found live and fixed the same run: `.***` as a paragraph terminator.** Footer
+paragraphs written as `*… **bold**.***` — italic wrapper closing immediately after a bold run — rendered
+**two literal asterisks** on the published page. The nested-italic check added on 6 October did not catch it,
+because that check looks for single `*` *inside* an italic paragraph and here the collision is at the
+**boundary**: kramdown cannot tell whether `***` closes bold-then-italic or opens something. **Fix: wrap such
+paragraphs in `<em>…</em>` rather than `*…*`.** **Check added to the suite: count asterisks in the rendered
+HTML with tags stripped, not only inside `<p>` elements — the earlier `<p>[^<]*\*` form found one of the two
+and the tag-stripped count found both.** **Note: the 13 October guidelines entry uses the same `.***`
+construction and rendered clean, so the failure is context-dependent and cannot be relied on to show up —
+which is why the rule is to avoid the construction, not to test for it.**
