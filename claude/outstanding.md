@@ -2714,3 +2714,51 @@ published post-mortem rather than an outside critique.**
 changed an outcome; glucose control is it. **The new question: which monitored variables sit on a single causal
 path rather than several opposing ones?** **Candidates to look for: a target whose only plausible downstream
 outcome is the one being measured.**
+
+## Index after 2026-10-14 guidelines watch — every source frozen
+
+**14:22 UTC, identical to 14:02:** `MED` 41,178,083 (4th day) · `PMC` **998,618 and now motionless** ·
+`PAT` 4,229,296 · `PPR` 1,259,436 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `CTX` 3,915 ·
+`HIR` 2,868 · `NBK` 5 · `CIT` 624 · **sum = whole database = 49,018,570, residual 0.**
+
+**All six `PMC` era buckets unchanged** (pre-2000 512,206 · 2000–2009 81,163 · 2010–2019 153,339 ·
+2020–2024 179,040 · 2025 38,521 · 2026 33,900). Fixed windows unchanged. Daily buckets 12 Oct 17 · 13 Oct 8 ·
+14 Oct 0.
+
+**The restore is complete and has stopped; nothing replaced it.** For four days the whole-database total was
+moving and all of the movement was the back catalogue returning. **Now the total is still, and what it was
+masking stands alone: no new literature is entering from any source.**
+
+**Standing action: watch `MED`.** PubMed Central going quiet says the reload ended; **only `MED` moving says
+the pipeline restarted.** Re-measure eleven sources, six era buckets, two fixed windows daily.
+
+## Guidelines backlog after 2026-10-14
+
+**Cleared today:** ACCP/<i>Chest</i> inpatient tobacco treatment (`10.1016/j.chest.2026.08.038`); AST ID
+vaccination and safe living for solid organ transplant (`10.1016/j.ajt.2026.07.033`); Swiss SSI
+<i>C. difficile</i> (`10.57187/5395`).
+
+**Readable and still outstanding:** ESPEN "partially revised" diff; French primary CNS vasculitis
+(`10.1016/j.revmed.2026.07.007`); EAU urological infections 2026 summary (`10.1016/j.eururo.2026.04.011`).
+
+**Needs a PDF:** ACEP procedural sedation Parts 1–2. **And now Swiss <i>C. difficile</i> — its abstract is
+provenance-only, but <i>Swiss Medical Weekly</i> is open access, so a full-text fetch should work. Do that
+before quoting any Swiss recommendation.**
+
+**Retries:** arterial injuries (2 of 3), French severe asthma (1 of 3), Spanish halogenated agents (1 of 3).
+**SFAR website catalogue at six items.** **Dated:** three abstract-free ISHLT documents **25 October**;
+AHA/ACC perioperative **7 November**; next lagged guidelines pass **~10 November**.
+
+## Transplant cluster — four societies, one named gap
+
+| Society | Contribution |
+| --- | --- |
+| ISHLT | perioperative ECLS consensus Parts I–III; lung-transplant frailty statement (16 Sep) |
+| ESOT | chronic lung allograft dysfunction guideline (reported 9 Oct) |
+| **AST ID Community of Practice** | **vaccination and safe living, first update since 2019 (reported today)** |
+| (Brazilian, Korean, Chinese sets) | adjacent national documents |
+
+**Gap: nobody in this cluster writes on the anaesthetic conduct of transplantation except ISHLT, and only for
+lung.** **What would close it: an ESAIC, SFAR or ASA document on anaesthesia for solid organ transplantation —
+worth a targeted search.** **And the live-attenuated-vaccine question — which post-transplant patients, how
+long after — needs the AST full text.**

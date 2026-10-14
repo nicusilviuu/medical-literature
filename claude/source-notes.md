@@ -4184,3 +4184,53 @@ HTML with tags stripped, not only inside `<p>` elements — the earlier `<p>[^<]
 and the tag-stripped count found both.** **Note: the 13 October guidelines entry uses the same `.***`
 construction and rendered clean, so the failure is context-dependent and cannot be relied on to show up —
 which is why the rule is to avoid the construction, not to test for it.**
+
+## 2026-10-14 (guidelines watch)
+
+**The digit test for a provenance-only abstract passes on a year — fix it.** The rule written on the ESPEN
+practical ICU nutrition deposit said: an abstract naming no method and **no digit** is a provenance note. The
+**2026 Swiss Society for Infectious Diseases C. difficile recommendations** contain **"2018" and "2026" and
+nothing else numeric** — no dose, no threshold, no recommendation count, no grading system — and **pass the
+check while containing no clinical content at all.** **Corrected rule: test for a digit that is not a
+four-digit year, and test for `Methods`/`Results` separately rather than as an alternative.** **A clinical
+abstract contains a count, a dose, a percentage or an interval; a provenance note contains dates.**
+
+**Document class to name: the national adaptation.** The Swiss recommendations state that the previous Swiss
+guidance **"were based on the 2018 American guidelines"**, and that this edition synthesises newer European and
+American updates **plus "national organisational and regulatory considerations."** **Its value is not new
+evidence but the mapping of international evidence onto one country's formulary and laboratory capacity.**
+Same class as the Brazilian pulmonary hypertension guideline (13 Oct), which extended a recommendation to the
+drug classes "available in the country." **When reading one, the question is not what the evidence says — it
+is what the country can supply.**
+
+**Read a guideline's funnel and its grades together.** ACCP inpatient tobacco: **9,330 abstracts → 252 full
+texts → 142 studies → 6 PICO → 8 recommendations, and zero high-certainty.** **Eighteen studies per
+recommendation and a moderate ceiling.** **But the qualifier carries it: "no high-certainty evidence *specific
+to inpatient tobacco treatment settings*."** **That is a setting gap, not a therapy gap**, and conflating the
+two would misread one of the better-evidenced interventions in medicine as weak. **Rule: when a guideline
+reports zero high-certainty recommendations, read the qualifier before concluding the therapy is unproven.**
+
+**An opt-out default is a recommendation about who has to act, and it is near the ceiling of what its own
+design can earn.** ACCP's central recommendation is counselling and pharmacotherapy for every inpatient who
+smokes **unless they explicitly decline.** **The comparator for an opt-out design is an organisational state,
+not a placebo**, which caps achievable certainty — so moderate is strong for this shape of recommendation.
+**And it is the answer STOP-Vanc's authors asked for the same day**: not more information for the clinician,
+but a default that proceeds without them. **Availability of a good option is not uptake of it — the brief and
+the watch found the two ends of that on one day.**
+
+**A guideline that moves from a categorical no to "some, in defined patients" is the change worth chasing.**
+AST ID: **"accumulating data that live-attenuated vaccines can also be given to select posttransplant
+pediatric and young adult patients."** Live-attenuated vaccination post-SOT has been near-contraindicated.
+**Stated as a direction of travel rather than a recommendation, which is why the full text is where the
+clinical question lives — which patients, how long after.** **Rule: in a catalogue update, separate the one
+change of principle from the many changes of list; the seven-year gap explains the list.**
+
+**Nested `<em>` is invalid and the inner close ends the outer.** Writing `<em>… <em>C. difficile</em> …</em>`
+in a footer paragraph breaks the wrapper. **Fix: `<i>` for the inner span.** **Check added: walk `<em>`/`</em>`
+and assert nesting depth never exceeds one, and that the tags balance.** Caught before publishing, in the same
+run that found the `.***` terminator — **two markup hazards in one day, both from using markdown emphasis and
+HTML emphasis in the same paragraph. Pick one per paragraph.**
+
+**Window-from-last-pass worked on its first use.** The acronym sweep ran **10–14 October**, set from the
+previous pass's end date (13 Oct) rather than from the 7–10 day policy. **35 hits, 35 returned, no gap left
+behind.**
