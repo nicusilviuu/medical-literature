@@ -2655,3 +2655,62 @@ If conditional, the three documents are consistent and the summary is that nobod
 **The last pass covered 5–12 October, so 1–4 October had never been swept by the acronym route** although the
 stated window is 7–10 days. **Today's pass covered 1–13 October.** **Rule: set the window from the last pass's
 end date, not from the policy.**
+
+## Index after 2026-10-14 — restore complete, ingest still stopped
+
+**Eleven sources (14:02 UTC):** `MED` **41,178,083 (4th day unchanged)** · `PMC` **998,618** ·
+`PAT` 4,229,296 · `PPR` 1,259,436 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `CTX` 3,915 ·
+`HIR` 2,868 · `NBK` 5 · `CIT` 624 · **sum = whole database = 49,018,570, residual 0.**
+
+**`PMC` era buckets:** pre-2000 **512,206** · 2000–2009 **81,163** · 2010–2019 **153,339** ·
+2020–2024 **179,040** · 2025 **38,521** · 2026 **33,900**.
+
+**Fixed windows, third day unchanged:** 1–30 Sep **148,993**; 1–7 Oct **20,218**.
+**Daily buckets:** 11 Oct 455 · 12 Oct 17 · 13 Oct 8 · **14 Oct 0.**
+
+**Prediction result: half wrong.** Mass went to the oldest end (98.6%) but later buckets were **not** frozen.
+**Standing action: re-measure sources and era buckets daily, and watch `MED` — that is the restart signal, not
+`PMC`.** The restore is complete and 3,083 above its reconstructed pre-drop value.
+
+## Brief queue after 2026-10-14 — full again, filled by the lagged sweep
+
+**Written up today:** VICTORY vitamin C in burns; qCRT endotoxemia; intensive glucose control meta-analysis
+(cleared after four days queued); STOP-Vanc.
+
+**Lead for tomorrow — NeoBeat selection bias** (*Resuscitation*, 1 Sep, `10.1016/j.resuscitation.2026.111288`).
+An RCT of continuously displayed ECG heart rate from birth, outcome measured from resuscitation videos. Staff
+were given an **anonymous** route to request video deletion; deletions surged. Before vs after: 7,343/10,362
+(71%) vs 2,566/4,417 (58%) enrolled; cases available for comparison 171 vs 66 after losing 0 and 14. **The
+surviving cases had significantly higher Apgar scores, shorter ventilation and fewer admissions** — so the
+deletions were not random with respect to severity. **Trial terminated halfway without power.** *Not* open
+access; abstract read in full via Europe PMC. **Why it matters here: the archive's monitoring thread is about
+numbers that mislead; this is the act of measuring changing who gets measured — a distinct failure mode, and a
+published post-mortem rather than an outside critique.**
+
+**Also queued, all from the 26 Aug – 15 Sep lagged sweep, all abstract-verified as unseen:**
+
+| Item | DOI |
+| --- | --- |
+| Restrictive vs liberal transfusion in traumatic brain injury (secondary analysis) | `10.1001/jamanetworkopen.2026.32555` |
+| Dexamethasone adjunct, rebound pain and satisfaction in peripheral nerve blocks | `10.1111/aas.70308` |
+| Cefepime and mortality — Bayesian meta-analysis | `10.1001/jamanetworkopen.2026.33017` |
+| Indirect-calorimetry-guided nutrition during weaning from prolonged ventilation | `10.1186/s13054-026-06272-7` |
+| Intrathecal drug delivery systems for chronic pain — SR/MA | `10.1136/rapm-2025-107226` |
+
+**Next lagged window: 16 September – 6 October.** Ten-day overlap with this pass is intentional.
+
+## Monitoring thread after 2026-10-14 — four failure modes and a positive case
+
+| Document | What it shows |
+| --- | --- |
+| Videolaryngoscopy | the measurement changes |
+| Remimazolam BIS crossover (11 Oct) | the calibration changes |
+| AlphaMax parts 1 and 2 (13 Oct) | the number is not on the causal path |
+| **qCRT endotoxemia (today)** | **the number reverses while the disease continues** |
+| **STOP-Vanc (today)** | **an accurate measurement is not an intervention** |
+| **Intensive glucose control (today)** | **POSITIVE CASE: the number moves outcomes — in opposite directions, netting to nothing on mortality** |
+
+**The thread's question is answered and changed.** It asked for a trial that moved a monitored variable and
+changed an outcome; glucose control is it. **The new question: which monitored variables sit on a single causal
+path rather than several opposing ones?** **Candidates to look for: a target whose only plausible downstream
+outcome is the one being measured.**

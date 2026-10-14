@@ -4103,3 +4103,73 @@ it explains why the document reads as a procedure (screening, timing, criteria, 
 swept by it.** Covering 1–13 October today surfaced the two documents published on 2 October by this archive —
 no loss, but **the stated window is 7–10 days and the actual window had been shorter. Check the window against
 the last pass, not against the policy.**
+
+## 2026-10-14 (brief)
+
+**Reconstructing counts from percentages found something bigger than a denominator this time: it found where a
+trial's significance comes from.** VICTORY reports 28-day mortality 15.0% vs 7.6%, adjusted RR 1.96
+(1.32–2.90), P = .001. **15.0% of 120 is exactly 18; 7.6% of 118 is exactly 9 — no other integers round
+there.** Unadjusted that is **RR 1.97, 95% CI 0.92–4.20 — it includes no effect.** Same for hospital mortality
+(28 vs 19; unadjusted 1.45, 0.86–2.45, against adjusted 1.44, 1.03–2.00). **On all three endpoints the adjusted
+point estimate equals the unadjusted one to two decimals, so the covariate model is buying precision, not
+shifting the estimate — and on the mortality endpoints that precision is what makes them significant.**
+**Rule: when an adjusted estimate matches the unadjusted one but the interval is much tighter, the result is
+model-carried. Say so. It is legitimate — prognostic covariates do buy precision — but a reader repeating
+"mortality doubled" should know it rests on 18 events against 9.**
+
+**A composite can hide a hard endpoint as easily as it can manufacture a soft one.** VICTORY's primary
+(death + ventilator/dialysis/vasopressor dependence at day 28) came out P = .06 while 28-day mortality alone
+was P = .001. **Pooling death with organ-support dependence averaged a mortality difference against events the
+drug did not move.** The usual complaint about composites is the opposite direction. **Rule: a composite is not
+neutral; which way it leans depends on where the effect sits inside it. Always look for the mortality component
+reported separately.**
+
+**Monitoring thread, fourth failure mode — the number reverses direction while the disease continues.** qCRT in
+human endotoxemia: baseline ~3.5 s → **8.31 s at 1.5 h** (14/25 hitting the 10-s ceiling) → **1.27 s at 5 h
+while systemic inflammation persisted.** Crossed the 3-s threshold **in both directions inside one episode.**
+**Worse than drift: the error is inverted, not attenuated.**
+
+**A threshold is a between-person instrument, so an ICC near zero invalidates it.** qCRT's between-subject
+variance was a **minority** of total variance (ICC 0.30). **A fixed cut-off asks whether this patient's value is
+abnormal relative to patients in general; if most variance is within people, the cut-off is reading noise.**
+The authors' conclusion — trajectory within a patient informs, single value does not — follows directly.
+**Rule: whenever a paper reports an ICC alongside a clinical threshold, check whether the threshold can
+survive it.**
+
+**Check whether a covariate spans the threshold before trusting the threshold.** Skin temperature moved qCRT
+**1.62 s per SD**, and the 3-s threshold is about two SDs of skin temperature wide. **A cold finger and a warm
+finger sit on opposite sides of the cut-off before perfusion is considered.**
+
+**The monitoring thread's first positive case, and it reframes the thread.** Intensive glucose control (70
+RCTs, 36,502 patients) **moved the monitored variable and moved outcomes**: infection down (adults RR 0.78,
+0.63–0.97), severe hypoglycaemia up (RR 3.55, 2.49–5.07; children 5.70, 2.60–12.51), **mortality 0.99
+(0.93–1.05)**. **So the failure mode is not an inert number. It is that a monitored variable can sit on causal
+paths to several outcomes at once, pointing opposite ways, and net to nothing on the one that justified the
+targeting.** **A protocol targeting the number alone cannot express that trade-off.**
+
+**A measurement is not an intervention, stated as cleanly as it can be.** STOP-Vanc: MRSA nares PCR with
+**98.9% NPV** changed vancomycin-free hours alive by **4 of ~108 (−9.5 to 18.2, P = .458)**. **Accurate,
+available, in the chart, acted on by nobody.** The trial rules out the usual excuses — not inaccurate, not
+missing, not a low-risk population — leaving the behavioural explanation standing. **Rule: diagnostic accuracy
+and clinical effect are separate quantities; a test needs to be attached to something that acts.**
+
+**"Hours alive and free of X" is the honest form of a drug-days endpoint**, because it refuses to let a dead
+patient count as drug-free. Same family as EQ-5D scoring death as zero (12 Oct).
+
+**A cross-reference date quoted from memory was wrong again.** I wrote that the EQ-5D-death-as-zero note was
+11 October; it was **12 October**, in the brief, not a guidelines entry. Caught by grepping before committing.
+**This is the fourth memory-sourced error in six days** (trial names 9 Oct, an event rate 9 Oct, an author
+surname 10 Oct, this). **Rule, restated because it keeps paying: grep the archive for every internal
+cross-reference, including the date, before the sentence ships.**
+
+**Index: a prediction I stated more strongly than the data could support.** Yesterday: "the restore is
+date-ordered — 2010–2019 moves next, 2026 last." Today **98.6% of the movement landed before 2000, and every
+later bucket moved anyway** (+5, +5, +3, +1). **The defensible claim was about where the mass goes; I stated
+one about an order of operations.** **Rule: distinguish a claim about distribution from a claim about sequence.
+The first was supported; the second was not, and only the second was falsifiable in the way I wanted.**
+
+**And the restore has finished and overshot** — PMC 998,618 against a reconstructed pre-drop ~995,535, total
+recovery 63,222 against 61,746 lost. **Since 98.6% of the recovery landed pre-2000, the records that vanished
+were almost entirely pre-2000** (inference from where they returned, not a direct measurement). **`MED` has not
+moved for four days and preprints have not moved for two — a frozen preprint source is not a PubMed problem,
+which argues for a pipeline-wide suspension.** **The signal to watch is `MED`, not `PMC`.**
