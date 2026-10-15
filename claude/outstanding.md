@@ -2820,3 +2820,51 @@ rebound pain substudy; NeoBeat selection bias (the queued lead, placed fourth).
 **The thread is no longer short of material.** **Next step: a single synthesis piece rather than another
 entry.** **Still missing: a trial that moved a monitored variable and improved the outcome it was monitored
 for, with nothing cancelling it.**
+
+## Guidelines watch latency — measured 2026-10-15 for the first time
+
+**Instrument: `FIRST_IDATE` guideline-class sweep.** October indexing: **1 Oct 8 records · 2 Oct 6 · 3 Oct 2 ·
+4–15 Oct ZERO.** Sixteen records = **fourteen distinct documents** (serrated polyposis twice as a
+co-publication with two DOIs; Spanish <i>H. pylori</i> twice under one DOI). **Five in scope.**
+
+| In-scope document | Indexed | Reported | Lag |
+| --- | --- | --- | --- |
+| AHA/ACC/ACS perioperative, noncardiac surgery | 1 Oct | 30 Sep | **−1 day** |
+| ESOT chronic lung allograft dysfunction | 3 Oct | 9 Oct | 6 days |
+| iCARDIO global HF implementation guidelines | 2 Oct | 15 Oct | 13 days |
+| VI Spanish <i>H. pylori</i> consensus | 1 Oct | 15 Oct | 14 days |
+| SFGM-TC paediatric HSCT antibiotics | 1 Oct | 15 Oct | 14 days |
+
+**Nine of fourteen clearly out of scope.** One adjacent and deliberately excluded with a stated reason: Thai
+practice guideline on immunosuppressive therapy for adult kidney transplantation (`10.1111/nep.70268`).
+
+**HIGHEST-PRIORITY METHOD ITEM: re-run the index-date guideline sweep over 1–30 September** to measure latency
+across a full month and find whatever else fell outside the publication-date windows. **Then adopt the
+index-date sweep as the watch's confirmatory instrument in place of the publication-date pubType sweep.**
+
+## Guidelines backlog after 2026-10-15
+
+**Cleared today:** iCARDIO HF implementation guidelines (`10.1016/j.cardfail.2026.09.001`); VI Spanish
+<i>H. pylori</i> consensus (`10.1016/j.gastrohep.2026.502847`); SFGM-TC paediatric HSCT antibiotics
+(`10.1016/j.bulcan.2026.08.007`).
+
+**Readable and still outstanding:** ESPEN "partially revised" diff; French primary CNS vasculitis
+(`10.1016/j.revmed.2026.07.007`); EAU urological infections 2026 summary
+(`10.1016/j.eururo.2026.04.011`).
+
+**Needs a PDF:** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i> (`10.57187/5395`, open access,
+should yield to a full-text fetch).
+
+**Retries:** arterial injuries (2 of 3), French severe asthma (1 of 3), Spanish halogenated agents (1 of 3).
+**SFAR website catalogue at six items.** **Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC
+perioperative monthly re-check **7 November**; next lagged pass **~10 November**.
+
+## Consensus-threshold catalogue — now two kinds
+
+**Agreement thresholds (bind the panel):** Korean ICU rehab **70%** · Brain Trauma Foundation blinded **80%** ·
+BOOTStraP **70% subgroup / 90% plenary** · STS modified Delphi **>75%** · French HLTx Delphi ICC **>0.8 not
+reached** · Brazilian PH **none stated, votes recorded**.
+
+**Efficacy thresholds (bind the recommendation):** **VI Spanish <i>H. pylori</i> consensus — 90% empirical
+cure rate**, treatments admitted only if they clear it. **First of its kind here. Keep the two kinds in
+separate columns; they are not comparable.**

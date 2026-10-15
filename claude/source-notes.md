@@ -4306,3 +4306,69 @@ damage first — 71% before, 58% after — without waiting for the outcome analy
 **Mismatched-denominator tally, fifth trial in two weeks.** TRAIN TBI primary uses 236 + 239 = **475**;
 28-day mortality uses 240 + 244 = **484**. Legitimate (differential missingness at 180 vs 28 days) and
 **unstated in the abstract.** Reconstruction caught it in one pass.
+
+## 2026-10-15 (guidelines watch)
+
+**`FIRST_IDATE` turns the guidelines watch from a retrospective instrument into a direct one, and the first
+use of it should be an audit of the watch.** Guideline-class records entering Europe PMC in October:
+**8 on the 1st, 6 on the 2nd, 2 on the 3rd, and none since — twelve days.** **So the daily zero reported for a
+fortnight was a true zero at the index level, not a window artefact.** That qualifies the 8 October note ("a
+quiet result is not evidence that nothing was published"), which stays correct in general: **with an index-date
+field, a quiet result CAN be evidence that nothing was indexed, which is the thing a sweep can actually see.**
+
+**Latency is now measurable, and it cuts both ways.** Of five in-scope documents indexed 1–3 October:
+**AHA/ACC perioperative reported 30 September — one day BEFORE its JACC record was indexed** (the targeted
+society route found the <i>Circulation</i> co-publication first: the 8 October method decision vindicated);
+ESOT CLAD **6 days**; and **three mid-tier in-scope documents lost for 13–14 days** because their publication
+dates (30 Sep, and one of 13 Oct 2027) fell outside the trailing publication-date windows being swept.
+**Rule: measure the instrument's latency whenever the database gives you a way to.**
+
+**A document with a publication date in the future is permanently invisible to a trailing publication-date
+sweep.** The iCARDIO heart failure guidelines carry **fpd 13 October 2027** — day and month matching the audit
+boundary, so most likely a year typed wrong by one. **This is the single strongest argument for keying
+guideline sweeps on index date.**
+
+**Dedupe on every DOI a co-published guideline has.** I nearly led this entry accusing the archive of missing
+the AHA/ACC perioperative guideline. The `items`-block check was empty **because the item carries the
+<i>Circulation</i> DOI and the sweep returned the <i>JACC</i> one** — two DOIs, one document, dedupe keyed on
+the wrong half. **Third firing of "check the archive before claiming the archive missed something," and the
+first time it prevented a published accusation rather than a published duplicate.**
+
+**New deposit-defect record: three independent defects in one record.** iCARDIO — abstract **6,869 characters
+because the text is repeated three times** (opening sentence appears 3×); **36 PDF hyphenation artefacts**
+("re-source", "in-corporation", "frac-tion", "im- proves", "guide-lines", "man-agement"), 12 in the underlying
+single copy; and a **future publication date.** **Check: count occurrences of the abstract's first sentence
+before quoting length as a sign of substance.**
+
+**Dual-deposit trap, third variant: one DOI, two language records, one abstract-free.** The VI Spanish
+<i>H. pylori</i> consensus deposits twice under the same DOI — Spanish title with **no abstract**, English
+title with the full one. Previous variants were two DOIs with two dates. **Rule: when a guideline record has
+no abstract, look for a sibling record before concluding the deposit is empty — the sibling may share the DOI.**
+
+**Two kinds of threshold, and the catalogue needs two columns.** The Spanish consensus "establishes that the
+recommended treatments should achieve, and preferably exceed, a **90% cure rate** when administered
+empirically," and then admits only regimens that clear it. **That is an efficacy threshold binding the
+recommendation, not an agreement threshold binding the panel** (Korean 70%, BTF blinded 80%, BOOTStraP 70/90%,
+STS >75%, Brazilian none). **It inverts the usual logic: not "what does the evidence support" but "what is the
+minimum acceptable result, and which regimens can deliver it."**
+
+**Document class: resource-tiered recommendations.** iCARDIO issues "economic adjustment" recommendations for
+"Resources are somewhat limited" and "Resources are severely limited" — **the same recommendation graded across
+three resource tiers.** This generalises the national-adaptation class named 14 October: **a recommendation
+here has two coordinates, certainty of evidence and affordability of delivery, the second explicit.** **The
+open objection, stated rather than resolved: a resource-tiered recommendation risks codifying a lower standard
+as acceptable; the counter is that the substitution already happens without guidance.**
+
+**A panel that surveys its own members' practice before reading the literature is treating variation, not
+ignorance, as the problem.** SFGM-TC sent a questionnaire to its paediatric centres first. Same instinct as the
+Chinese IVOS guideline (14 Oct). **The resulting document is a harmonisation instrument, and should be read as
+one.**
+
+**Record what is deliberately not reported, with the reason.** A Thai practice guideline on immunosuppressive
+therapy for adult kidney transplantation was indexed 1 October and sits beside the transplant cluster without
+falling inside anaesthesiology, critical care, cardiology or infectious disease. **Logged as adjacent and
+excluded on purpose — an omission with a stated reason is not a gap.**
+
+**When the front matter cannot carry the real publication date, say so in the entry.** iCARDIO's `items` block
+records the index date because the deposited date is a year out. **Departures from the archive's own
+conventions are declared in the entry, not left to be discovered.**
