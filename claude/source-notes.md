@@ -4234,3 +4234,75 @@ HTML emphasis in the same paragraph. Pick one per paragraph.**
 **Window-from-last-pass worked on its first use.** The acronym sweep ran **10–14 October**, set from the
 previous pass's end date (13 Oct) rather than from the 7–10 day policy. **35 hits, 35 returned, no gap left
 behind.**
+
+## 2026-10-15 (brief)
+
+**`FIRST_IDATE` is the ingest measure, and it was available the whole time.** Europe PMC indexes a
+first-index-date field. Querying it per day settles in one pass what four days of publication-date arithmetic
+could only circle: **normal 2,500–6,500 records/day; 11 Oct 188; 13 Oct 63,473; 14 Oct 2; 15 Oct 1.**
+**Rule: measure the thing, not a proxy for it. Before building an instrument out of arithmetic, check whether
+the database exposes the quantity directly.**
+
+**The restore was one batch, not a two-day process.** **63,473 records with index date 13 October, every one
+`PMC`, zero `MED`, zero preprints.** The count movements I watched across 13 and 14 October were the batch
+becoming countable. **Rule: a count is a lagging indicator of an ingest event; the index date is the event.**
+
+**Identify the record before reporting that a source moved.** `MED` rose by exactly 1 after four static days —
+the signal the standing action named. **The record is a March 2025 American Journal of Nursing news item about
+food labelling.** "MED moved" would have been true and misleading. **Rule: when a monitored total moves by a
+small number, fetch the records. One record is identifiable.**
+
+**The fixed-boundary reference window is not an ingest detector either — third revision of this instrument in
+five days.** Adopted 11 October to replace the retracted rolling decomposition, on the reasoning that fixed
+dates cannot be distorted by moving boundaries. **Correct and incomplete.** Today the database gained **+1**
+while 1–30 September fell **75** and 1–7 October rose **366**, both stable across three reads. **With three
+records indexed in two days, neither movement can be ingest: the first-publication dates were rewritten.**
+**So the window measures window membership, which changes when dates change — ordinary housekeeping for a
+bibliographic database, and a September→October shift is what correcting online-first versus issue dates looks
+like.** **Rule: a publication-date window is a signal about dates. It is not a signal about ingest. Keep both
+instruments and never substitute one for the other.** **Honest summary of the sequence: whole-database total
+retired 9 Oct, rolling decomposition retracted 11 Oct, fixed windows demoted 15 Oct — each from being
+contradicted by data, none from foresight.**
+
+**A Bayesian posterior and a frequentist test on the same data give opposite headlines, and both are correct.**
+Cefepime: pooled **OR 1.10, 95% credible interval 0.98–1.24** — includes no effect — **and a 94.4% posterior
+probability that the OR exceeds 1.** **Rule: when quoting a Bayesian meta-analysis, quote the posterior
+probability AND the interval. A posterior probability is a statement about direction, not magnitude** — here
+6.6% vs 6.2%, an absolute difference of 0.4 points, so a number needed to harm in the hundreds.
+
+**Publication bias can run the other way, and this is the first instance here.** Restricting cefepime to the
+**73 published peer-reviewed trials** (excluding 37 trials, 7,197 patients of registry and grey literature)
+**strengthened** the harm signal: posterior 94.4% → **98.6%**, OR 1.10 → **1.17**, interval now **1.02–1.34**.
+**Rule: do not assume adding unpublished data reveals harm. Say which analysis you are quoting, because the two
+differ on whether the interval excludes no effect.**
+
+**With a common outcome, an odds ratio is not a risk ratio — and the gap can double the apparent effect.**
+TRAIN TBI reports adjusted **OR 0.60 (0.38–0.94)** beside unadjusted **RR 0.86 (0.75–1.00)**. At the
+restrictive arm's 67.4% event rate, OR 0.60 implies risk 55.3%, i.e. **RR 0.82 (0.65–0.98)**. **So adjustment
+moved 0.87 → 0.82 on the risk scale; the rest of 0.60 is the odds scale.** **Rule: convert an OR back through
+the control-arm risk before describing it as a percentage reduction. Reading 0.60 as "40% fewer" overstates
+this result roughly twofold.**
+
+**A self-reported fragility index is a mark of good faith and should be copied.** TRAIN TBI: primary RR 0.86
+(0.75–**1.00**), P = .047, **fragility index = 1** — stated in the abstract, with "inherent uncertainty of the
+estimate" in the conclusion. **One patient changing category flips it.**
+
+**Monitoring thread, sixth failure mode: the instrument is saturated.** The dexamethasone substudy found no
+association between satisfaction and rebound pain, then said why: **"the satisfaction measure exhibited a
+ceiling effect with most participants reporting maximum satisfaction."** **No headroom, so no difference can
+appear.** **Rule: any outcome on a bounded scale whose modal response is the maximum is at risk. A null on a
+saturated measure is not evidence of no difference.** Probably the commonest of the six in practice.
+
+**Monitoring thread, seventh entry and a different kind: the act of measuring changes the sample.** NeoBeat —
+a trial of whether displaying a measured heart rate from birth speeds ventilation — collapsed when **the
+people who could delete the outcome data were the people being evaluated by it.** E-mail deletion requests
+(attributable) changed little; an **anonymous** route produced a surge, and the surviving cases had higher
+Apgar scores, shorter ventilation and fewer admissions. **What the paper establishes is the systematic
+difference; the inference that staff deleted the harder resuscitations is not claimed and should not be
+asserted.** **Two design rules: (1) a retroactive anonymous opt-out from data collection is a missingness
+mechanism, not a privacy feature, and can correlate with the outcome; (2) the enrolment fraction showed the
+damage first — 71% before, 58% after — without waiting for the outcome analysis.**
+
+**Mismatched-denominator tally, fifth trial in two weeks.** TRAIN TBI primary uses 236 + 239 = **475**;
+28-day mortality uses 240 + 244 = **484**. Legitimate (differential missingness at 180 vs 28 days) and
+**unstated in the abstract.** Reconstruction caught it in one pass.

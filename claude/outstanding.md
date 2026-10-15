@@ -2762,3 +2762,61 @@ AHA/ACC perioperative **7 November**; next lagged guidelines pass **~10 November
 lung.** **What would close it: an ESAIC, SFAR or ASA document on anaesthesia for solid organ transplantation —
 worth a targeted search.** **And the live-attenuated-vaccine question — which post-transplant patients, how
 long after — needs the AST full text.**
+
+## Index after 2026-10-15 — FIRST_IDATE adopted, fixed windows demoted
+
+**New primary instrument: `FIRST_IDATE` (first index date).** Per-day ingest:
+1–10 Oct **2,503–6,531** · 11 Oct **188** · 12 Oct **2,877** · **13 Oct 63,473 (all `PMC`)** ·
+**14 Oct 2** · **15 Oct 1**.
+
+**The three records indexed 14–15 Oct:** `MED` 40140033 (AJN news item, fpd 2025-03-27);
+`PMC` PMC1239592 (BJGP 1996); `PMC` PMC1252380 (J Anat 1938). **Nothing recent.**
+
+**Eleven sources (14:02 UTC):** `MED` **41,178,084 (+1)** · `PMC` 998,618 · `PAT` 4,229,296 ·
+`PPR` 1,259,436 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `CTX` 3,915 · `HIR` 2,868 · `NBK` 5 ·
+`CIT` 624 · **sum = whole database = 49,018,571, residual 0.**
+
+**`PMC` era buckets all unchanged:** pre-2000 512,206 · 2000–2009 81,163 · 2010–2019 153,339 ·
+2020–2024 179,040 · 2025 38,521 · 2026 33,900.
+
+**Reference windows moved WITHOUT ingest** (confirmed 3 reads each): 1–30 Sep 148,993 → **148,918 (−75)**;
+1–7 Oct 20,218 → **20,584 (+366)**. **Dates are being rewritten. The windows are demoted to a date signal.**
+
+**2026 decomposition baseline (all sources, measured together):** Jan–Jul **1,195,756** · Aug **150,675** ·
+Sep **148,918** · 1–7 Oct **20,584** · 8 Oct–31 Dec **5,844** · **total 1,521,777 = sum of parts exactly.**
+
+**Standing action: `FIRST_IDATE` per day, every run. A restart is a day with thousands indexed — not a day
+when a window moves.** Keep the eleven-source identity and the era buckets; keep the reference windows as a
+date-rewrite detector only.
+
+## Brief queue after 2026-10-15
+
+**Written up today:** cefepime Bayesian meta-analysis; TRAIN TBI transfusion secondary analysis; dexamethasone
+rebound pain substudy; NeoBeat selection bias (the queued lead, placed fourth).
+
+**Still held, both from the 26 Aug – 15 Sep lagged sweep, verified unseen and readable:**
+
+| Item | DOI |
+| --- | --- |
+| Indirect-calorimetry-guided nutrition during weaning from prolonged ventilation | `10.1186/s13054-026-06272-7` |
+| Intrathecal drug delivery systems for chronic pain — SR/MA | `10.1136/rapm-2025-107226` |
+
+**Two consecutive briefs built entirely from one lagged sweep.** **Next lagged window: 16 September –
+6 October** — due now, since the queue is down to two and ingest is still stopped.
+
+## Monitoring thread — seven entries, time to write it up as one piece
+
+| Entry | Failure mode |
+| --- | --- |
+| Videolaryngoscopy | the measurement changes |
+| Remimazolam BIS crossover (11 Oct) | the calibration changes |
+| AlphaMax (13 Oct) | the number is not on the causal path |
+| Capillary refill, qCRT endotoxemia (14 Oct) | the number reverses while the disease continues |
+| STOP-Vanc (14 Oct) | an accurate measurement is not an intervention |
+| **Dexamethasone satisfaction ceiling (today)** | **the instrument is saturated** |
+| **NeoBeat (today)** | **the act of measuring changes the sample** |
+| Intensive glucose control (14 Oct) | **positive case: moving the number moved two outcomes, in opposite directions** |
+
+**The thread is no longer short of material.** **Next step: a single synthesis piece rather than another
+entry.** **Still missing: a trial that moved a monitored variable and improved the outcome it was monitored
+for, with nothing cancelling it.**
