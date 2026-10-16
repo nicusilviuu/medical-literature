@@ -4445,3 +4445,70 @@ NEUROPROTECT and BOX as all comparing higher against lower MAP targets with neut
 verified and citable** — 63 vs 77 mmHg, and in the cardiogenic shock subgroup mortality, RRT and neurological
 outcome did not differ. **COMACARE and NEUROPROTECT remain unverified and are still not claimed. One third of a
 bad sentence being true is not a reason to have written it.**
+
+## 2026-10-16 (guidelines watch)
+
+**The rollback lasted nineteen minutes, and this morning's brief is a record of a transient.** At 14:03 the
+database held 48,938,549 with everything indexed since 24 September absent; at 14:22 it held **49,018,571**
+again — **every one of the eleven source counts, all six `PMC` era buckets and both reference windows back to
+their 15 October values**, `NBK` restored 0→5, and **all seven DOIs reported lost present again.**
+
+**The error was not the measurement — it was treating a state read once as a condition.** Both states were read
+three times. **Three reads inside ten seconds establish the value and say nothing about its persistence.**
+**Third instance of this error** (9 October growth anomaly, 13 October "current literature is still arriving",
+today). **Rule, and it costs one query: read the headline totals at the END of a run as well as the start.**
+
+**Amending a published entry whose headline has become false: annotate the body, and change the title and
+summary.** The brief's body is left as published with a dated notice at the head of the section; its
+<strong>title and summary were amended</strong>, because a false headline on the archive index is worse than a
+false sentence inside an entry that carries its own correction. **Rule: the notice says which parts were
+amended and which were left.**
+
+**Open residue, recorded rather than explained: 24 September's index-date count read 3,295 rolled back and
+3,284 restored**, three reads each, while the whole-database total matches 15 October exactly. **Eleven records
+unaccounted for. The two states are not simply one nested inside the other.**
+
+**And a word to be more careful with.** The 12 October loss, the 13 October gain and today's rollback **are all
+consistent with brief maintenance transients caught only because the archive measures daily at a fixed time.**
+Had today's run been twenty minutes later it would have seen nothing. **Keep recording them; stop calling them
+"events" as though duration were established.**
+
+**September audit: the society list is the aperture and the index-date sweep sees around it.** 97 guideline-class
+documents indexed 1–30 September, 18 in scope, **10 already reported, 8 not.** **All three of today's items
+reached the index outside the tracked-society list** (SEDAR, Heart Rhythm Society, AAP). **Rule: run the
+index-date month audit monthly, not only when something looks wrong.**
+
+**A length heuristic deferred a document about anaesthetic deaths three times, and the content test would have
+passed it immediately.** The SEDAR mtND4 recommendations have a **673-character** abstract — the exact length
+recorded on 10 October when it was logged "may be all there is" and deferred. **Those 673 characters contain
+the issuing body, the trigger (neurological injury and death), the population (maternal Venezuelan ancestry),
+the mechanism (respiratory chain complex I) and the exact variant (m.11232T>C).** The 14 October content test —
+does the abstract name a method, or a digit that is not a year — **passes it easily.** **The two tests
+disagreed and the length one governed the queue.** **New standing rule: length orders the queue, content
+decides it, and anything typed `Practice Guideline` in primary scope is read on sight whatever its length.**
+
+**A deposit can lose a word from the one clause that matters.** The SEDAR abstract reads "following general in
+adult and patients of maternal Venezuelan ancestry" — "anesthesia" missing after "general". **Quote as
+deposited, flag the gap, do not silently repair it.**
+
+**Document class: the society position statement addressed to a payer rather than a clinician.** HRS on prior
+authorization in cardiac electrophysiology, typed `Practice Guideline` in the index. **Its empirical core is a
+measurement structure worth keeping: a substantial proportion of denied requests meet Medicare's own criteria;
+the majority of appealed denials are overturned; most wrongful denials go uncontested — so the denial rate and
+the appeal rate measure different things and the gap between them is the harm.** **Caution: an interested
+party, co-authored with an advocacy organisation. The federal audit findings are independent; the reading of
+capitation incentives is the society's own, and the abstract does not separate them.**
+
+**A guideline that revises the definition of its disease is "the measurement changes" at population scale.**
+The AAP paediatric UTI guideline's **companion technical report** revises the UTI definition — three domains,
+**pyuria added as a diagnostic criterion** with thresholds by age and by whether culture is available or
+pending, positive-culture definition modified by age and collection method. **Reported incidence after this
+guideline will differ from before it for definitional reasons alone.** **Rule: when a guideline ships a
+definition change, say so, because every rate built on the old definition silently breaks.** And note the
+licence for it, stated by the panel: **"there is no gold standard for its diagnosis"** — a condition with no
+reference standard can only have its definition agreed, and they label the process as consensus.
+
+**Do not allege a GRADE discordance from a range.** The AAP guideline reports **8 Key Action Statements, 2
+strong and 6 conditional, "ranging from low to very low certainty"** — which does **not** establish that the
+strong ones rest on very low certainty. **Third guideline this month with a certainty ceiling well below its
+clinical importance** (ACCP inpatient tobacco, Korean ICU rehabilitation, this).

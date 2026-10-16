@@ -2940,3 +2940,59 @@ substudies.
 shortened time to capnography after a failure, **but first-pass success is a process outcome**, and the only
 patient-level comparison has the denominator problem. **Still missing: a monitored variable moved and a patient
 outcome improved, with nothing cancelling it.** **Next step remains a single synthesis piece.**
+
+## Index event 3 — REVERSED after nineteen minutes (2026-10-16)
+
+**14:03 rolled back (48,938,549, cut-off 24 Sep) → 14:22 restored (49,018,571).** Every one of the eleven
+source counts, all six `PMC` era buckets and both reference windows back to 15 October values exactly;
+`NBK` 0→5; **all seven "lost" DOIs present again**, including the calorimetry nutrition trial, which
+**returns to the queue**.
+
+**Open residue: `FIRST_IDATE` 24 September = 3,295 rolled back, 3,284 restored, three reads each. Eleven
+records unaccounted for.**
+
+**Standing action amended: `FIRST_IDATE` + the eleven source counts + the two reference windows at the START
+and the END of every run.** A state read once is a moment, not a condition.
+
+**Reframing: the 12 Oct loss, 13 Oct gain and today's rollback are all consistent with short maintenance
+transients caught only because the archive measures at a fixed time daily.** Record them; do not assert
+duration.
+
+## Guidelines-watch index-date audits
+
+| Window | Guideline-class indexed | In scope | Already reported | Missed |
+| --- | --- | --- | --- | --- |
+| 1–13 October (run 15 Oct) | 16 records / 14 documents | 5 | 2 | 3 |
+| **1–30 September (run 16 Oct)** | **97** | **18** | **10** | **8** |
+
+**All three of today's published misses reached the index outside the tracked-society list** — SEDAR, Heart
+Rhythm Society, AAP. **The society list is the aperture; the index-date sweep sees around it. Run the month
+audit monthly.** **Next: 1–31 October, to run 1 November.**
+
+**Trailing index-date guideline sweep 8–16 October: zero. Thirteen days with nothing guideline-class
+indexed.**
+
+## Guidelines backlog after 2026-10-16
+
+**Cleared today:** SEDAR halogenated agents / mtND4 (`10.1016/j.redare.2026.502167`) — **retry list closed
+after three deferrals, and the deferrals were wrong**; HRS prior authorization
+(`10.1016/j.hrthm.2026.08.046`); AAP paediatric UTI guideline (`10.1542/peds.2026-078565`) with its diagnosis
+companion (`10.1542/peds.2026-078566`).
+
+**Readable and still outstanding:** ESPEN "partially revised" diff; French primary CNS vasculitis
+(`10.1016/j.revmed.2026.07.007`); EAU urological infections 2026 summary
+(`10.1016/j.eururo.2026.04.011`).
+
+**Needs a PDF:** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i> (`10.57187/5395`).
+**Retries remaining:** arterial injuries (2 of 3), French severe asthma (1 of 3).
+
+**Logged as adjacent and deliberately excluded, with reasons:** ASN cardiovascular–kidney–metabolic guidance
+and its executive summary (`10.1681/asn.0000001230`, `10.1681/asn.0000001231`); SFGM-TC follow-up of long-term
+transplant survivors (`10.1016/j.bulcan.2026.07.006`); agitation in Alzheimer's dementia
+(`10.4088/pcc.haadachi2603`); Thai kidney transplant immunosuppression (`10.1111/nep.70268`).
+
+**NEW STANDING RULE: anything typed `Practice Guideline` in primary scope is read on sight, whatever its
+abstract length. Length orders the queue; content decides it.**
+
+**Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
+**index-date month audit for October: 1 November**; next lagged pass **~10 November**.
