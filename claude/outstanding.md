@@ -2868,3 +2868,75 @@ reached** · Brazilian PH **none stated, votes recorded**.
 **Efficacy thresholds (bind the recommendation):** **VI Spanish <i>H. pylori</i> consensus — 90% empirical
 cure rate**, treatments admitted only if they clear it. **First of its kind here. Keep the two kinds in
 separate columns; they are not comparable.**
+
+## Index event 3 — rollback to 24 September, found 2026-10-16
+
+**Whole database 48,938,549 (−80,022), residual 0 across eleven sources.** `MED` **41,124,565** (−53,519) ·
+`PMC` **985,609** (−13,009) · `PPR` **1,247,001** (−12,435) · `AGR` **1,025,500** (−1,049) · `CTX` **3,910**
+(−5) · `NBK` **0** (−5) · `PAT` 4,229,296 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624 unchanged.
+
+**Boundary (by `FIRST_IDATE`): 24 Sep = 3,295 present; 25 Sep onward = 0; all October = 0.**
+
+**Reference windows:** 1–30 Sep **102,537** (was 148,918) · 1–7 Oct **2,225** (was 20,584).
+**`PMC` eras:** pre-2000 **511,998** (−208) · 2000–09 81,163 · 2010–19 153,337 · 2020–24 179,077 (+37) ·
+2025 **37,034** (−1,487) · 2026 **22,551** (−11,349).
+
+**Records lost that this archive cites:** `10.1016/j.cardfail.2026.09.001` · `10.1016/j.gastrohep.2026.502847` ·
+`10.1016/j.bulcan.2026.08.007` · `10.1016/j.jacc.2026.06.017` · `10.1161/cir.0000000000001472` ·
+`10.57187/5395` · `10.1186/s13054-026-06272-7`. **All confirmed absent in both quoted and unquoted DOI form,
+with two surviving DOIs as controls.**
+
+**Standing action: `FIRST_IDATE` daily — it reports both whether ingest restarts and whether the missing
+fortnight returns. If 25 Sep – 15 Oct repopulates, re-check the seven DOIs above and say so.**
+
+## Brief queue after 2026-10-16
+
+**Written up today:** sodium bicarbonate for in-hospital cardiac arrest; COVALENT video laryngoscopy; the two
+BOX blood-pressure-target substudies (as one item).
+
+**Lost to the rollback, removed from the queue:** indirect-calorimetry-guided nutrition during weaning
+(`10.1186/s13054-026-06272-7`).
+
+**Surviving and queued:**
+
+| Item | DOI |
+| --- | --- |
+| Intrathecal drug delivery systems for chronic pain — SR/MA | `10.1136/rapm-2025-107226` |
+| Rocuronium dose and first-attempt intubation success in the critically ill | `10.1093/ajrccm/aamag203` |
+| High-flow nasal cannula vs non-invasive ventilation to prevent reintubation | `10.1097/cce.0000000000001452` |
+| Transcranial electrical stimulation and postoperative delirium | `10.1001/jamanetworkopen.2026.28284` |
+| Intercostal nerve cryoablation vs thoracic epidural | `10.1093/ejcts/ezag203` |
+| IgM-enriched immunoglobulin in adult sepsis and septic shock | `10.1097/cce.0000000000001451` |
+
+**Working stock: the 1–25 August window, 344 records, 343 unseen.** **This is the archive's material until
+ingest resumes.** Next windows to sweep backwards: **1–31 July**, then **June**.
+
+## Pressure-targeting thread — seven documents, hole unchanged
+
+**Added today:** BOX pulmonary haemodynamics substudy (`10.1111/aas.70294`, 730 patients, PAC 48 h) and BOX
+cardiogenic shock substudy (`10.1093/ehjacc/zuag045`, 258 patients). **Higher MAP raised PAP, PCWP, cardiac
+index 8–19%, SvO2 and RV power output; lactate identical and normalised in both arms within 6 h; mortality,
+RRT and neurological outcome unchanged.**
+
+**The hole is unchanged: every document in the thread measures physiology or reports a neutral outcome, and
+none is an adequately powered trial with an outcome primary endpoint.** BOX is the closest and these are its
+substudies.
+
+## Monitoring thread — eight failure modes
+
+| Entry | Failure mode |
+| --- | --- |
+| Videolaryngoscopy | the measurement changes |
+| Remimazolam BIS crossover (11 Oct) | the calibration changes |
+| AlphaMax (13 Oct) | the number is not on the causal path |
+| qCRT endotoxemia (14 Oct) | the number reverses while the disease continues |
+| STOP-Vanc (14 Oct) | an accurate measurement is not an intervention |
+| Dexamethasone satisfaction ceiling (15 Oct) | the instrument is saturated |
+| NeoBeat (15 Oct) | the act of measuring changes the sample |
+| **BOX calculated PVR (today)** | **the index is a ratio and the intervention changed the denominator** |
+| Intensive glucose control (14 Oct) | positive case: the number moved two outcomes, in opposite directions |
+
+**COVALENT (today) is a near-miss for the positive case:** video laryngoscopy improved first-pass success and
+shortened time to capnography after a failure, **but first-pass success is a process outcome**, and the only
+patient-level comparison has the denominator problem. **Still missing: a monitored variable moved and a patient
+outcome improved, with nothing cancelling it.** **Next step remains a single synthesis piece.**

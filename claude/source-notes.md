@@ -4372,3 +4372,76 @@ excluded on purpose — an omission with a stated reason is not a gap.**
 **When the front matter cannot carry the real publication date, say so in the entry.** iCARDIO's `items` block
 records the index date because the deposited date is a year out. **Departures from the archive's own
 conventions are declared in the entry, not left to be discovered.**
+
+## 2026-10-16 (brief)
+
+**A third index event, and the first with a clean boundary: the database has been rolled back to 24 September.**
+Whole database **49,018,571 → 48,938,549 (−80,022)**, read three times, eleven-source identity closing with
+residual zero. Six sources lost records (`MED` −53,519, `PMC` −13,009, `PPR` −12,435, `AGR` −1,049, `CTX` −5,
+`NBK` 5→0); five unchanged. **`FIRST_IDATE` locates it exactly: 24 September returns 3,295, 25 September
+returns 0, every later date including all of October returns 0, and all 48.9M survivors still carry a
+first-index date.** **So the field is fine and the records are gone: everything first indexed on or after
+25 September is absent.**
+
+**What it cost, checked record by record rather than assumed.** **All three guidelines published in the
+15 October watch are gone** (iCARDIO, VI Spanish <i>H. pylori</i>, SFGM-TC paediatric HSCT antibiotics); **the
+2026 AHA/ACC perioperative guideline is gone in both co-publications**, including the <i>Circulation</i> DOI in
+the 30 September items block, and a title search now returns only 2024–25 records; **Swiss <i>C. difficile</i>
+is gone**; **one of two queue items is gone**. **All four items of the 14 and 15 October briefs survive**
+(published 1 September, indexed long before the cut-off). **Rule: after any index event, re-check the records
+the last few entries cite, one DOI at a time. The archive's citations are not self-verifying.**
+
+**The rollback retrospectively proved the 12–13 October round trip.** The **63,473 PMC records that appeared
+on 13 October survived it** — pre-2000 lost only **208** of 512,206 — so they exist in a pre-24-September
+snapshot, so they were in the database before 12 October. **The 12 October loss and the 13 October gain were
+the same material. It took a third event to settle the first one.** **Rule: an unexplained event can become
+explicable from a later one; keep the unresolved ones written down with their numbers.**
+
+**A publication-date window is not just a date signal — it is destroyed by a rollback in a way that looks like
+publication history changing.** 1–30 September **148,918 → 102,537**; 1–7 October **20,584 → 2,225**. Nothing
+about September's publishing changed; the records indexed since 24 September that carried those dates are gone.
+**`FIRST_IDATE` is the only instrument here that said what actually happened.**
+
+**Quoting breaks `PMCID:` matching in Europe PMC.** `PMCID:"PMC1239592"` → **0**; `PMCID:PMC1239592` → **1**.
+Two records looked deleted for several minutes. `DOI:"…"` and `DOI:…` agree, so this is specific to `PMCID:`.
+**Rule: confirm every claimed absence in two query forms, with a known-present record as a control.** Second
+query-syntax trap in two days, after the co-publication DOI dedupe.
+
+**The lagged sweep can only run backwards now.** 16 Sep – 6 Oct returns **46**; the 26 Aug – 15 Sep window that
+gave 324 on 14 October gives **265** (**59 lost, 18%**); **1–25 Aug gives 344, intact, never swept, 343
+unseen.** **Rule: when the recent index is damaged, the instrument's window moves earlier, not later — that is
+the one direction still available.**
+
+**Published confidence intervals can be wrong by an order of magnitude, and recomputing them takes one line.**
+COVALENT reports risk differences of **4.66 (95% CI 4.45–4.78)**, **9.34 (9.22–9.46)** and **4.68 (4.57–4.79)**
+percentage points. With ~840 per arm and proportions near 0.8 the standard error of a risk difference is
+**1.8–1.9 points**, so the intervals should span about **seven points**: recomputed **0.93–8.47**, **5.84–12.96**,
+**1.32–8.08** — **23 to 31 times wider.** **The point estimates reproduce to within 0.06 points, so only the
+intervals are wrong, and the conclusion survives because the correct intervals still exclude zero.** **Rule:
+when an interval looks too tight for the sample size, recompute it. Report that the finding stands and the
+precision does not.**
+
+**Complication denominators that are not arm sizes are usually a subgroup nobody named.** COVALENT's arms hold
+848/841/843 but its complication rates are over **174/138/101** — close to the computed **failed first
+attempts** (185/144/105). **On the whole-arm denominator the rates are 1.3%, 3.8%, 5.0% rather than 24.1%,
+23.2%, 10.9%:** same ordering, different magnitude, and the abstract never says which. **Sixth trial in two
+weeks caught by dividing percentages back out.**
+
+**Monitoring thread, eighth failure mode: the index is a ratio and the intervention changed the denominator.**
+The BOX pulmonary substudy's calculated PVR fell on the higher MAP target, and the authors say why — **"the
+proportionally greater increase in cardiac output over pulmonary artery pressures resulted in a decreased
+calculated PVR."** **Nothing in the pulmonary vasculature need have changed.** **Rule: for any derived index,
+ask which term the intervention moved before reading the quotient as biology.**
+
+**A monotonic trend across nested outcomes is the shape of both a real small effect and of noise.** Bicarbonate:
+ROSC RR **1.05**, 30-day survival **1.25**, 30-day favourable neurology **1.39** — all non-significant, effect
+growing as events thin. **The trial answered what it was powered for and cannot answer the rest; say both.**
+Also: arms **372 vs 407** in a 1:1 trial after 134 of 913 exclusions, and the published risk ratios sit
+consistently **below** the crude ones (1.05/1.25/1.39 against 1.07/1.33/1.49) — **most likely site adjustment
+in a 21-hospital trial, offered as probable rather than asserted.**
+
+**A loop closed against myself.** On 9 October I wrote and removed an unverified sentence naming COMACARE,
+NEUROPROTECT and BOX as all comparing higher against lower MAP targets with neutral results. **BOX is now
+verified and citable** — 63 vs 77 mmHg, and in the cardiogenic shock subgroup mortality, RRT and neurological
+outcome did not differ. **COMACARE and NEUROPROTECT remain unverified and are still not claimed. One third of a
+bad sentence being true is not a reason to have written it.**
