@@ -4512,3 +4512,77 @@ reference standard can only have its definition agreed, and they label the proce
 strong and 6 conditional, "ranging from low to very low certainty"** — which does **not** establish that the
 strong ones rest on very low certainty. **Third guideline this month with a certainty ceiling well below its
 clinical importance** (ACCP inpatient tobacco, Korean ICU rehabilitation, this).
+
+## 2026-10-17 (brief)
+
+**Ingest restarted after four days, and it corrects the conclusion I drew on 15 October.** 37,260 records
+carry a **16 October** index date against the zero read at 14:22 that day; 3,650 more today. Whole database
+**49,058,472 (+39,901)**, residual zero; `MED` +24,281, `PMC` +10,507 (**past one million at 1,009,125**),
+`PPR` +5,105. The frozen publication days filled in: 12 Oct 17→992, 13 Oct 8→1,069, **14 Oct 0→1,440**,
+15 Oct 0→796.
+
+**But the catch-up was stamped with the day it arrived, not backdated — so `FIRST_IDATE` keeps a permanent
+two-day hole that corresponds to nothing about the literature.** 14 and 15 October will read 2 and 1 forever,
+while the papers published then exist under 16 October. **Rule, and it reverses the 15 October demotion:
+`FIRST_IDATE` answers "is ingest running"; the publication-date buckets answer "what was published then".
+Neither instrument supersedes the other and the archive needs both.** **Generalisation: an outage leaves a
+scar in whichever series is stamped at arrival, and that scar is an artefact of the pipeline, not a fact about
+the world.**
+
+**24 September's index-date count has now read 3,295, 3,284 and 3,283 on three separate days.** Twelve
+records' spread, monotonically down, unexplained. **A day's index-date count is not a fixed quantity.**
+
+**A practice can work for a reason other than its stated mechanism, and then nobody knows its boundaries.**
+Cochrane DSI: mortality **RR 0.88 (0.77–0.99), I² = 0%, 725 events**, ventilation duration −14%, tracheostomy
+**RR 0.68** — **and little to no difference in benzodiazepine, fentanyl or propofol dose, with morphine dose
+probably up 7%.** The rationale was limiting drug accumulation. **The drug accumulation did not change.**
+**Rule: when a meta-analysis confirms an effect but refutes the mechanism, say so — the candidate mechanisms
+(the daily neurological exam, earlier weaning recognition, organisational discipline) decide whether the
+practice adds anything to a modern alternative, and a pooled review cannot distinguish them.**
+
+**A pooled comparator can make the headline unanswerable for the question a reader actually has.** The 23 DSI
+trials used **three** comparators: 9 protocolised sedation, 9 clinician discretion, 5 analgesia-first/no
+sedation. **Against discretion, DSI is a protocol; against analgesia-first, DSI is the deeper strategy.** The
+abstract gives the breakdown and not the subgroup results. **Rule: when comparators are heterogeneous in kind
+rather than degree, the abstract's pooled estimate answers no clinical question — go to the subgroups.**
+
+**I² = 0% beside I² = 88% in the same review deserves attention, not confidence.** DSI: mortality I² = 0%,
+ventilation duration I² = 88%. Per the 11 October note, **I² = 0 is also what you get when trials carry too
+little information to disagree**; with 725 events it is less fragile, but the contrast is the thing to notice.
+
+**The purest monitoring-thread case yet: the intervention's purpose is to hit a number, the primary outcome is
+hitting the number, and the conclusion is that it hits the number.** Closed-loop oxygen control: **+21.2
+percentage points (18.5–23.8) time in target SpO₂ range, and not one patient outcome in the abstract.**
+**"Effective approach for achieving a target SpO₂ range" is a claim about accuracy.** **Rule: a target-adherence
+result rests on two stacked assumptions — the target is right, and hitting it helps — and is worth only as much
+as the weaker one.**
+
+**Heterogeneity fully explained by a ceiling effect, done well.** CLOC I² = 87.9% resolves into **low-flow 30.9
+points vs high-flow 12.7 points**: manual high-flow control is already mostly in range, so there is less
+headroom. **Same structure as the 15 October saturation finding — the small difference is about the headroom,
+not the device.**
+
+**An outcome measured with the instrument the intervention was titrated to is close to tautological.** The lung
+ultrasound trial's primary outcome includes **EVLW assessed by lung ultrasound score**, in an arm managed to
+keep that score low. **The non-circular outcome — postoperative hypoxaemia — moved too, and that is the
+finding.** **Rule: in a monitoring trial, separate the outcome that shares the instrument from the one that
+does not, and quote only the second as evidence of benefit.** **This is the monitoring thread's first positive
+case with a plausible mechanism** (CVP is a poor proxy for lung water; in PCNL the insult is absorbed
+irrigation fluid) — **and the abstract gives "all p < 0.001" with no incidence figures, so the size of the
+benefit is unquotable.**
+
+**Check that a non-inferiority margin is achievable at the planned sample size before accepting it.** The
+face-mask trial: **0 events in 144 per arm, risk difference 0%, 95% CI −2.6% to 2.6%, margin 2%.** **The Wilson
+upper bound for 0/144 is exactly 2.60%** — so **a 2% margin could not have been met even with a perfect result
+at full enrolment.** **Stopping early did not cause the failure; it revealed it.** **Rule: maximum achievable
+precision is a property of n, not of the results.**
+
+**And a model of honest reporting worth naming.** The same trial states that it stopped **"in the absence of
+any events rather than by a stopping rule"**, that non-inferiority was **not established** despite 0% vs 0%,
+that its only positive finding is **post hoc**, and that practice should not change until an adequately
+powered trial exists. **Four sentences a differently inclined author would have omitted.**
+
+**Dual deposit, fourth and fifth instances in one day.** Both the closed-loop oxygen review and the face-mask
+trial deposit twice: a DOI-bearing record with the full abstract, and an open-access record with a PMCID, no
+DOI, no abstract, and a different date. **Variants now seen: two DOIs/two dates; one DOI/two languages; and
+DOI-plus-abstract beside OA-plus-PMCID.**

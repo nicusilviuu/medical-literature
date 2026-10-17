@@ -2996,3 +2996,63 @@ abstract length. Length orders the queue; content decides it.**
 
 **Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
 **index-date month audit for October: 1 November**; next lagged pass **~10 November**.
+
+## Index after 2026-10-17 — ingest restarted
+
+**Whole database 49,058,472 (+39,901), residual 0.** `MED` **41,202,365** (+24,281) · `PMC` **1,009,125**
+(+10,507, **past one million**) · `PPR` **1,264,541** (+5,105) · `CTX` 3,919 (+4) · `NBK` 9 (+4) ·
+`PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624 unchanged.
+
+**Index dates: 16 Oct 37,260 (was 0 at 14:22 that day) · 17 Oct 3,650 · 14 and 15 Oct still 2 and 1,
+permanently** — the catch-up was stamped on arrival, not backdated.
+
+**Reference windows: 1–30 Sep 155,559 (+6,641) · 1–7 Oct 35,833 (+15,249).**
+**Publication-date buckets refilled:** 12 Oct 992 · 13 Oct 1,069 · 14 Oct 1,440 · 15 Oct 796 · 16 Oct 3,284.
+
+**INSTRUMENT CORRECTION to the 15 October entry: keep both series.** `FIRST_IDATE` = is ingest running.
+Publication-date buckets = what was published then. **Neither supersedes the other.**
+
+**Open residue: `FIRST_IDATE` 24 September has read 3,295 → 3,284 → 3,283 on three days.**
+
+## Brief queue after 2026-10-17
+
+**Written up today, all from newly indexed material:** Cochrane daily sedation interruption; closed-loop oxygen
+control meta-analysis; lung ultrasound-guided fluid management in PCNL; omitting face-mask ventilation.
+
+**Held, untouched:**
+
+| Item | DOI |
+| --- | --- |
+| Intrathecal drug delivery systems for chronic pain | `10.1136/rapm-2025-107226` |
+| Rocuronium dose and first-attempt intubation success | `10.1093/ajrccm/aamag203` |
+| HFNC vs NIV to prevent reintubation | `10.1097/cce.0000000000001452` |
+| Transcranial electrical stimulation and postoperative delirium | `10.1001/jamanetworkopen.2026.28284` |
+| Intercostal nerve cryoablation vs thoracic epidural | `10.1093/ejcts/ezag203` |
+| IgM-enriched immunoglobulin in sepsis | `10.1097/cce.0000000000001451` |
+| Indirect-calorimetry-guided nutrition during weaning | `10.1186/s13054-026-06272-7` |
+| **Disease-specific glucose targets in critical illness** | `10.1111/nicc.70731` |
+| **Minimally invasive vs sternotomy, redo mitral surgery** | `10.1161/jaha.126.050284` |
+| **Intraoperative dexmedetomidine and delirium, head and neck cancer** | `10.2147/dddt.s598574` |
+
+**Ten items. The 1–25 August window still holds 343 unseen records as backstop.** **Next lagged window if
+needed: 1–31 July.**
+
+## Monitoring thread — nine entries, and now a positive case. WRITE IT UP.
+
+| Entry | Failure mode |
+| --- | --- |
+| Videolaryngoscopy | the measurement changes |
+| Remimazolam BIS crossover (11 Oct) | the calibration changes |
+| AlphaMax (13 Oct) | the number is not on the causal path |
+| qCRT endotoxemia (14 Oct) | the number reverses while the disease continues |
+| STOP-Vanc (14 Oct) | an accurate measurement is not an intervention |
+| Dexamethasone satisfaction ceiling (15 Oct) | the instrument is saturated |
+| NeoBeat (15 Oct) | the act of measuring changes the sample |
+| BOX calculated PVR (16 Oct) | the index is a ratio; the intervention changed the denominator |
+| **Closed-loop oxygen control (today)** | **the outcome IS hitting the target — no patient outcome measured** |
+| Intensive glucose control (14 Oct) | positive case: the number moved two outcomes, opposite directions |
+| **Lung ultrasound fluid management (today)** | **POSITIVE CASE: a better measurement + a protocol, and postoperative hypoxaemia fell — caveat: one primary outcome shares the instrument; no effect sizes given** |
+
+**The thread is complete enough to synthesise. Next step is one piece, not another entry.** **What would
+strengthen the positive side: a multicentre version of the lung-ultrasound result with reported incidence
+figures, and any trial where closed-loop control of a physiological target moved a patient outcome.**
