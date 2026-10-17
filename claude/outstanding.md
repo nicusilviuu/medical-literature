@@ -3056,3 +3056,54 @@ needed: 1–31 July.**
 **The thread is complete enough to synthesise. Next step is one piece, not another entry.** **What would
 strengthen the positive side: a multicentre version of the lung-ultrasound result with reported incidence
 figures, and any trial where closed-loop control of a physiological target moved a patient outcome.**
+
+## Guidelines watch after 2026-10-17 — drought broken
+
+**Guideline-class by index date: nothing 3–15 October (13 days), then 19 documents 16–17 October.** Three in
+scope, all three published. **Sixteen out of scope, listed in the entry so the aperture is auditable.**
+
+**Six consecutive in-scope documents have now been found by the index-date sweep rather than by a society
+route** (3 on 15 Oct, 3 today, plus the September audit's 8 misses). **ASGE, EAN/ESCMID and SOGC are not on the
+watch's society list.** **The list is the aperture, the sweep is the peripheral vision — keep both; month audit
+monthly.**
+
+## Remimazolam thread — now four documents, one open question
+
+| Document | Position |
+| --- | --- |
+| Meta-analysis with TSA vs sevoflurane (reported 11 Oct) | haemodynamic and clinical outcomes |
+| RCT on postoperative nausea vs sevoflurane | reported 11 Oct |
+| **BIS at matched sedation depth vs propofol (11 Oct)** | **monitoring thread: the calibration changes** |
+| **ASGE clinical practice update (today)** | **the society document — six years after FDA approval** |
+
+**OPEN QUESTION, highest value in this thread: does the ASGE update address processed-EEG / depth-of-anaesthesia
+monitoring?** If BIS is miscalibrated under remimazolam at equal clinical depth, a unit adopting the drug while
+keeping its EEG targets is titrating to a number that has changed meaning. **The abstract says nothing about
+monitoring; the full text is behind the publisher. Added to the needs-a-PDF list for this one question.**
+
+## Guidelines backlog after 2026-10-17
+
+**Cleared today:** ASGE remimazolam (`10.1016/j.gie.2026.08.019`); EAN/ESCMID infectious encephalitis
+(`10.1111/ene.70647`); SOGC Technical Update 472, cord milking (`10.1016/j.jogc.2026.103523`, French
+co-publication `10.1016/j.jogc.2026.103524`).
+
+**Readable and still outstanding:** ESPEN "partially revised" diff; French primary CNS vasculitis
+(`10.1016/j.revmed.2026.07.007`); EAU urological infections 2026 summary (`10.1016/j.eururo.2026.04.011`).
+
+**Needs a PDF:** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i> (`10.57187/5395`); **ASGE
+remimazolam update — for the monitoring question only.**
+
+**Retries:** arterial injuries (2 of 3), French severe asthma (1 of 3).
+**Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
+**index-date month audit for October: 1 November**; next lagged pass **~10 November**.
+
+## Newborn-resuscitation pair opened 2026-10-17
+
+| Document | Position |
+| --- | --- |
+| NeoBeat selection-bias post-mortem (reported 15 Oct) | does displaying a measured heart rate from birth speed ventilation within 60 s — trial destroyed by anonymous video deletion |
+| **SOGC Technical Update 472 (today)** | **at 15 s, if still non-vigorous after deferred clamping and stimulation, cord milking may be considered** |
+
+**Both are about the same sixty seconds of the same infant: one about information, one about sequence.**
+**What would extend it: any guideline or trial that sets a second timed step inside the first minute, or an
+adequately powered successor to NeoBeat.**

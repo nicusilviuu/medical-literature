@@ -4586,3 +4586,63 @@ powered trial exists. **Four sentences a differently inclined author would have 
 trial deposit twice: a DOI-bearing record with the full abstract, and an open-access record with a PMCID, no
 DOI, no abstract, and a different date. **Variants now seen: two DOIs/two dates; one DOI/two languages; and
 DOI-plus-abstract beside OA-plus-PMCID.**
+
+## 2026-10-17 (guidelines watch)
+
+**The thirteen-day guideline drought was real at the index level, and it broke with the catch-up batch.**
+Nothing guideline-class entered Europe PMC between **3 and 15 October**; **19 documents arrived 16–17 October**,
+19 of 19 returned. **Three in scope.** **Confirms that the daily zero reported for a fortnight was not a window
+artefact** — which the publication-date sweep alone could never have established.
+
+**All three of today's items, and all three of yesterday's, and all three of the September audit's misses,
+reached the index outside the tracked-society list.** ASGE, EAN/ESCMID, SOGC. **Six consecutive in-scope
+documents found by the index-date sweep rather than by a society route. The list is the aperture; the sweep is
+the peripheral vision. Keep both, and run the month audit monthly.**
+
+**Record the out-of-scope set, not just the count.** Listing the sixteen excluded documents and naming the
+closest miss (ACR Appropriateness Criteria for suspected diaphragm dysfunction — an imaging indication rating,
+adjacent not reported) **makes the aperture auditable by a reader instead of only by me.**
+
+**A society document can close a thread's missing side and leave its sharpest question open.** The remimazolam
+thread (opened 10 Oct) held three research papers, the key one being the **bispectral index reading differently
+under remimazolam than propofol at matched sedation depth** (11 Oct, monitoring thread's "calibration
+changes"). **ASGE has now issued a clinical practice update — six years after FDA approval in July 2020, and
+its own 2018 sedation guidance "did not include remimazolam".** **Its abstract is a statement of scope, not of
+content: domains named, no recommendations, no counts, no grades, and nothing about depth-of-anaesthesia
+monitoring.** **Rule: an absence from an abstract is not an absence from the document — log it as the specific
+thing to check in the full text, not as a criticism.**
+
+**Lowest recommendation-to-question ratio recorded here: two of sixteen.** EAN/ESCMID infectious encephalitis —
+**16 questions prioritised, 2 graded recommendations, 1 explicit "unable to recommend for or against"
+(corticosteroids in proven HSV encephalitis), 13 good practice statements**, and the panel's own conclusion
+that **"the paucity of high-quality evidence is striking."** Against AAP UTI 8 key action statements, Spanish
+<i>H. pylori</i> 25, Chinese IVOS 24. **An explicit non-recommendation is more useful than silence: it tells a
+clinician the uncertainty is real rather than overlooked.**
+
+**A guideline recommending AGAINST a newer, broader technology.** EAN/ESCMID: **do not replace
+pathogen-specific CSF PCR with multiplex CSF PCR panels.** **A broader test is not automatically a better test,
+and a panel's failure modes are clinical** — lower per-target sensitivity, detections of uncertain
+significance, a negative panel read as a negative workup. **Same structure as the monitoring thread, approached
+from the diagnostic side.**
+
+**NEW DEPOSIT RULE: when an abstract truncates at the heading "Recommendation", read the social-media
+abstract.** The SOGC cord-milking technical update's structured recommendation field is cut off mid-structure;
+the **"Social media abstract"** field immediately above carries the operative content in full — gestational
+threshold, the fifteen-second window, the prerequisites and both outcomes. **Journals now publish plain-language
+summaries and they survive where the structured field does not.**
+
+**Document class: the technical update, which says it is not a systematic review while still grading with
+GRADE.** SOGC: **"This document represents an abstraction of the evidence rather than a methodological
+review."** **That disclosure places it between a narrative review and a guideline, and it is worth quoting when
+citing one.**
+
+**A resuscitation recommendation with a clock in it is unusually actionable.** Not "consider cord milking in
+depressed newborns" but **≥35⁰ weeks, after fifteen seconds of deferred clamping and tactile stimulation while
+kept warm, still non-vigorous.** **And it pairs with NeoBeat (15 Oct): both documents are about the same sixty
+seconds of the same infant** — one asks whether better information speeds the intervention, the other inserts
+an intervention at fifteen seconds. **The non-vigorous newborn is a problem of sequence and clock.**
+
+**Dual-deposit variants now at seven.** Today: EAN/ESCMID deposits twice, the **open-access copy being the one
+with no abstract** (sixth variant); SOGC deposits English and French **under two DOIs with the French empty**
+(seventh). Running list: two DOIs/two dates; one DOI/two languages; DOI-plus-abstract beside OA-plus-PMCID;
+two DOIs/two languages/one empty.
