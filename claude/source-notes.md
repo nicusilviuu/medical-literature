@@ -4646,3 +4646,69 @@ an intervention at fifteen seconds. **The non-vigorous newborn is a problem of s
 with no abstract** (sixth variant); SOGC deposits English and French **under two DOIs with the French empty**
 (seventh). Running list: two DOIs/two dates; one DOI/two languages; DOI-plus-abstract beside OA-plus-PMCID;
 two DOIs/two languages/one empty.
+
+## 2026-10-18 (brief)
+
+**A past `FIRST_IDATE` bucket cannot grow, so its stability is not evidence of anything — near-finding
+discarded before publication.** I began writing up "the 17 October bucket has not grown in twenty-two hours" as
+evidence of a renewed stop. **`FIRST_IDATE` is the date a record was FIRST indexed; once 17 October ended, no
+record could acquire that date.** A past bucket is complete by construction. **Third time this month an
+instrument's own definition refuted a reading taken from it** (after the rolling-window decomposition and the
+publication-date windows). **Rule: before reading a time series, state what can and cannot change in it.**
+
+**The weekly cycle, characterised for the first time, and it makes today's zero uninterpretable.** Index-date
+counts: Sat 26 Sep 9,581 / **Sun 27 Sep 189**; Sat 3 Oct 4,093 / **Sun 4 Oct 2,503**; Sat 10 Oct 3,048 /
+**Sun 11 Oct 187**; Sat 17 Oct 3,650 / **Sun 18 Oct 0 so far.** **Two of three previous Sundays finished under
+200 — a near-zero Sunday is ordinary.** **And every one of those is a final value read on a later day, so
+intra-day timing is unknown.** **Rule: a once-daily fixed-time design cannot separate a one-day signal from a
+weekly cycle it has eight points on. Say so instead of choosing a reading.** The discriminating measurement is
+the next ordinary weekday.
+
+**Specificity done properly: an interaction with a mechanism that predicts its own direction.** Rocuronium
+>1.2 mg/kg and first-attempt intubation success — overall adjusted RR **1.07 (1.02–1.12)**, but
+**ED 0.97 (0.89–1.04) and ICU 1.13 (1.06–1.20)**, intervals barely overlapping. **The pooled figure describes
+neither population.** Candidate mechanism: in low-output states the drug reaches the neuromuscular junction
+slowly, so a higher dose compensates for delivery, not for resistance — **ICU patients are more often
+vasopressor-dependent, ED patients more often normotensive.** **Offered as a hypothesis the data fit, not as
+something the paper tested.** **And a cross-paper inconsistency worth keeping: the 17 October face-mask trial
+called 1.2 mg/kg a "doubled dose"; by this paper's classification it is the top of "standard".** The same
+number is a ceiling in one paper and a baseline in the other.
+
+**A null trial whose conclusion leads with a subgroup — the full arithmetic, because it is the general case.**
+MODEST (tACS/tDCS/sham for postoperative delirium): **both active arms point the wrong way on the primary
+outcome** (ward delirium OR 1.60 and 1.51). **Denominators: 225 randomised; 180 analysed for ward delirium
+(20% missing); 164 for PACU delirium (27% missing); no reason given** — and in a delirium trial the reasons for
+missing delirium assessments are rarely independent of delirium. **The primary comparison is six events against
+six.** **Six prespecified subgroup factors; one reached P = .046, OR 0.15 (0.02–0.97).** Expected false
+positives across six tests at α = .05 is 0.3. **Prespecification protects against post-hoc selection, not
+against multiplicity.** **And the quoted "absolute risk difference −26.6% to −46.5%" is a model-derived range
+at a specified surgical duration, not an observed difference — not estimable from 7 events in 48 patients.**
+**Rule: when a conclusion's second clause offers a benefit the primary outcome denies, reconstruct the
+denominators, the event counts and the number of subgroup tests before quoting it.**
+
+**P-scores in a network meta-analysis with no significant pairwise comparisons are a ranking of noise.** The
+disease-specific glucose paper: cohort gives liberal control in cardiac disease **HR 1.78** (worst), the NMA
+ranks liberal control **best (P-score 83.5%)** — and states that **"no pairwise differences were statistically
+significant."** **The contradiction exists because one side of it is an ordering of overlapping intervals with
+a percentage attached.** **Rule: never quote an NMA ranking metric without checking whether any pairwise
+comparison was significant.**
+
+**A U-shape in an observational glucose study is the shape confounding by severity produces.** Both tails are
+sicker: low time-weighted average glucose marks aggressive insulin or a failed stress response, high marks
+illness. **Time-weighted average glucose over an ICU stay is as much an outcome of illness as a treatment
+decision**, and the abstract gives no adjustment detail. **Consistent with disease-specific optima and equally
+consistent with confounding; nothing in the abstract separates them.** **The neurological stratum is the one
+that survives** — HR 0.76 in the cohort and top rank in the NMA, the only stratum where both designs agree
+against the 70-trial literature.
+
+**MONITORING THREAD SYNTHESISED — three conditions, and the thread is closed as a collecting exercise.** Ten
+documents, nine failure modes, one positive case. **A monitored variable earns its keep only when all three
+hold: (1) the measurement is closer to the pathology than the one it replaces; (2) a protocol converts the
+number into an action; (3) the reported outcome is measured by something other than the instrument.** **Every
+one of the nine failures lacks at least one.** Closed-loop oxygen has 1 and 2, not 3 — the outcome *was* the
+target. STOP-Vanc has 1 and 3, not 2 — accurate and nobody acted. AlphaMax has 2 and 3, not 1 — frontal alpha
+power was never near the pathology. **The commonest single failure is the third.** **Further entries go in only
+if they test the three conditions, not if they add an eleventh example.** **The missing trial, now named
+precisely: a randomised comparison in which a monitored physiological target was controlled more tightly and a
+patient outcome improved with nothing cancelling it.** Intensive glucose control came closest and cancelled
+itself; the pressure-targeting thread has waited five years for the same thing.

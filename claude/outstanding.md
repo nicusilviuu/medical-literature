@@ -3107,3 +3107,58 @@ remimazolam update — for the monitoring question only.**
 **Both are about the same sixty seconds of the same infant: one about information, one about sequence.**
 **What would extend it: any guideline or trial that sets a second timed step inside the first minute, or an
 adequately powered successor to NeoBeat.**
+
+## Index after 2026-10-18 — a zero that cannot be read
+
+**Every figure identical to 17 October.** Whole database **49,058,472**, residual 0, eleven source counts
+unchanged, reference windows unchanged (1–30 Sep 155,559; 1–7 Oct 35,833).
+**Index dates: 16 Oct 37,260 · 17 Oct 3,650 · 18 Oct 0 on three reads.**
+
+**WEEKLY CYCLE, characterised for the first time:** Sat 26 Sep 9,581 / Sun 27 Sep **189**; Sat 3 Oct 4,093 /
+Sun 4 Oct **2,503**; Sat 10 Oct 3,048 / Sun 11 Oct **187**; Sat 17 Oct 3,650 / Sun 18 Oct **0**.
+**Two of three previous Sundays finished under 200. All are final values read on later days — intra-day
+timing unknown.** **So today's zero is uninterpretable.**
+
+**DISCRIMINATING MEASUREMENT: tomorrow (Monday). A normal weekday delivers 2,500–6,500.**
+
+**Near-finding discarded: a past `FIRST_IDATE` bucket cannot grow, so its stability proves nothing.**
+
+## Brief queue after 2026-10-18
+
+**Written up today, all from the queue:** rocuronium dose and first-attempt intubation success; MODEST
+transcranial electrical stimulation; disease-specific glucose targets.
+
+**Seven held:**
+
+| Item | DOI |
+| --- | --- |
+| Intrathecal drug delivery systems for chronic pain | `10.1136/rapm-2025-107226` |
+| HFNC vs NIV to prevent reintubation | `10.1097/cce.0000000000001452` |
+| Intercostal nerve cryoablation vs thoracic epidural | `10.1093/ejcts/ezag203` |
+| IgM-enriched immunoglobulin in sepsis | `10.1097/cce.0000000000001451` |
+| Indirect-calorimetry-guided nutrition during weaning | `10.1186/s13054-026-06272-7` |
+| Minimally invasive vs sternotomy, redo mitral surgery | `10.1161/jaha.126.050284` |
+| Intraoperative dexmedetomidine and delirium, head and neck cancer | `10.2147/dddt.s598574` |
+
+**Backstop: 1–25 August window, 343 unseen. Next window if needed: 1–31 July.**
+
+## Monitoring thread — SYNTHESISED AND CLOSED as a collecting exercise
+
+**Published as a section of the 2026-10-18 brief.** Ten documents, nine failure modes, one positive case.
+
+**The three conditions a monitored variable must meet:**
+1. **The measurement is closer to the pathology than the one it replaces.**
+2. **A protocol converts the number into an action.**
+3. **The reported outcome is measured by something other than the instrument.**
+
+**Every one of the nine failures lacks at least one.** Closed-loop oxygen: 1 and 2, not 3. STOP-Vanc: 1 and 3,
+not 2. AlphaMax: 2 and 3, not 1. **Commonest single failure: the third.**
+
+**ADMISSION RULE from now on: a new document enters the thread only if it tests the three conditions. An
+eleventh example does not.**
+
+**The missing trial, named precisely: a randomised comparison in which a monitored physiological target was
+controlled more tightly AND a patient outcome improved, with nothing cancelling it.** Intensive glucose control
+(14 Oct) came closest and cancelled itself. Today's disease-specific glucose paper attempts to escape the
+cancellation by stratifying and its two methods disagree. **The pressure-targeting thread, seven documents, has
+waited five years for the same trial.**
