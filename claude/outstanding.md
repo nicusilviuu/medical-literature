@@ -3162,3 +3162,46 @@ controlled more tightly AND a patient outcome improved, with nothing cancelling 
 (14 Oct) came closest and cancelled itself. Today's disease-specific glucose paper attempts to escape the
 cancellation by stratifying and its two methods disagree. **The pressure-targeting thread, seven documents, has
 waited five years for the same trial.**
+
+## Guidelines backlog after 2026-10-18 — READABLE BACKLOG EMPTY
+
+**Cleared today:** EAU urological infections 2026 summary (`10.1016/j.eururo.2026.04.011`); French primary CNS
+vasculitis (`10.1016/j.revmed.2026.07.007`).
+
+**RETIRED as unobtainable:** ESPEN practical and partially revised ICU nutrition guideline
+(`10.20960/nh.06943`) — no PMCID, not in Europe PMC full text, not open access. **Abstract does establish that
+coverage did not shrink ("All the items discussed in the previous guidelines are included"); it cannot
+establish which recommendations were revised.** Carried since early September; closed with the gap stated.
+
+**Needs a PDF (3):** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i> (`10.57187/5395`); ASGE
+remimazolam update — **for the processed-EEG monitoring question only.**
+
+**Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
+
+**Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
+**index-date month audit for October: 1 November**; next lagged pass **~10 November**.
+
+**From here the watch runs on the index-date sweep alone until new material is indexed — the first time that
+has been true.**
+
+## NEW PROCESS RULE — scope-check on entry, not on exit
+
+**French primary CNS vasculitis sat on the readable backlog from 10 to 18 October without a scope check**, and
+is outside the stated scope (not anaesthesiology, ICU, resuscitation, cardiothoracic, cardiology or ID). It was
+published on a genuine justification — **the non-infectious differential for the EAN/ESCMID encephalitis
+guideline of 17 October, presenting as stroke-like events, seizures and encephalopathy in neuro-ICU** — but the
+justification should have been written when it was queued.
+
+**RULE: an item entering the backlog carries a one-line scope justification, or is logged
+adjacent-and-excluded at that point rather than at publication.**
+
+## UTI redefinition — a metric break to watch
+
+| Guideline | Reported | What changed |
+| --- | --- | --- |
+| AAP paediatric UTI + companion technical report | 16 Oct | **the definition** — pyuria as a criterion, thresholds by age and culture availability |
+| **EAU urological infections 2026 summary** | **today** | **the classification** — whole framework restructured to a new UTI classification system |
+
+**Two societies, two continents, two age ranges, one fortnight.** **Comparisons of UTI incidence,
+antibiotic-days-per-UTI or stewardship performance spanning 2025–2026 now cross two separate redefinitions.**
+**Worth a targeted search in a month for the first paper that notices.**

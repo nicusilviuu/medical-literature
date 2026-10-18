@@ -4712,3 +4712,55 @@ if they test the three conditions, not if they add an eleventh example.** **The 
 precisely: a randomised comparison in which a monitored physiological target was controlled more tightly and a
 patient outcome improved with nothing cancelling it.** Intensive glucose control came closest and cancelled
 itself; the pressure-targeting thread has waited five years for the same thing.
+
+## 2026-10-18 (guidelines watch)
+
+**Two societies redefined urinary tract infection within three days of each other, from different
+directions.** The **EAU 2026 urological infections** summary lists as its first key update a **"comprehensive
+restructuring of the guideline framework in alignment with the new classification system for UTIs"**; the
+**AAP** paediatric UTI guideline (16 Oct) shipped a companion technical report **revising the definition** —
+pyuria added as a criterion, thresholds by age and by culture availability, positive-culture definition
+modified by age and collection method. **The AAP changed the definition for diagnosis; the EAU restructured
+the classification for management.** **Anyone comparing UTI rates, antibiotic-days-per-UTI or stewardship
+performance across 2025 and 2026 is comparing across two separate redefinitions, and nothing downstream will
+know unless told.** **Rule: when two guidelines in the same field redefine the same condition in one
+fortnight, say so in both entries — the metric break is the finding, not either document.**
+
+**A "summary of the guidelines" that lists its key updates without stating them is a pointer, and should be
+reported as one.** EAU names four updates — the reclassification, a new HSV chapter, a new fungal-UTI chapter,
+and updated periprocedural prophylaxis for prostate biopsy — **with no recommendation text for any of them.**
+**Say "this archive is reporting the pointer" rather than presenting it as a reading of the guideline.**
+
+**A scope check must happen when an item ENTERS the backlog, not when it is reached.** French primary CNS
+vasculitis is outside this archive's stated scope (not anaesthesiology, ICU, resuscitation, cardiothoracic,
+cardiology or ID) and was carried as "readable and outstanding" by every entry from 10 to 18 October without
+anyone checking. **It was published today on a justification that is genuine — PCNSV is the principal
+non-infectious differential for the condition EAN/ESCMID addressed on 17 October, and presents as stroke-like
+events, seizures and encephalopathy managed in neuro-ICU — but that justification should have been written when
+it was queued.** **New rule: an item entering the backlog carries a one-line scope justification or is logged
+adjacent-and-excluded at that point.**
+
+**A guideline built around one differential diagnosis puts it second in the sequence, and that placement is the
+document.** PCNSV: step 1 confirm vascular involvement and inflammation, **step 2 exclude intracranial
+atherosclerosis in patients with vascular stenosis**, step 3 discuss biopsy. **Narrowing looks identical
+whether the wall is inflamed or atherosclerotic, and the error runs both ways** — immunosuppress an
+atherosclerotic patient, or give antiplatelets to an inflamed one. **"As often as possible" discussing biopsy
+is a conceded recommendation: not "always", and it admits biopsy will not happen in every case.**
+
+**Same pattern in two rare severe diseases two days apart: a protocol instead of a recommendation set.**
+EAN/ESCMID encephalitis reached 2 graded recommendations from 16 questions; the French PCNSV document is
+"based on expert consensus and registry data" and writes a diagnostic and treatment sequence. **Where the
+evidence cannot support graded statements, panels write protocols — and labelling it honestly is the quality
+marker.**
+
+**RETIRED AS UNOBTAINABLE: the ESPEN "partially revised" diff** (`10.20960/nh.06943`). **No PMCID, not in
+Europe PMC full text, not open access** — there is no route from here. Carried on the backlog since early
+September. **What the abstract does establish, noticed only today: "All the items discussed in the previous
+guidelines are included as well as special conditions" — so the coverage did not shrink.** **What cannot be
+established is which recommendations were revised and in which direction**, which is the only thing a reader
+needs. **Rule: a document announcing a partial revision without a change log cannot be read from deposits —
+say so once and retire it, rather than listing it indefinitely.** **And re-read a provenance-only abstract
+once before retiring it; this one contained a scope statement nobody had extracted in seven weeks.**
+
+**The readable backlog is empty for the first time.** From here the watch runs on the index-date sweep alone
+until new material is indexed, with three PDF-dependent items and two retries parked.
