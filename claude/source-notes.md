@@ -4836,3 +4836,71 @@ database 49,066,705, index date 19 Oct **8,717**. End of run 14:11: **49,070,683
 that reversed inside twenty minutes; this is the first time it has caught motion in the other direction.**
 **Consequence for the entries: an index figure needs a timestamp, because it can be stale before the entry is
 published.** Today's brief said "8,717 by 14:04" and was therefore still true when it went out.
+
+## 2026-10-19 (guidelines watch)
+
+**The strongest evidence yet for the 15 October instrument change, and it comes from a tracked society.** The
+**SFAR + SOFMER guideline on withholding/withdrawing life-sustaining treatment** was **published 10 October and
+indexed 18–19 October.** The acronym sweeps run on 15 October covered **publication dates 1–13 and
+10–14 October** — windows this document's publication date sits inside, **searched before its record existed.**
+**A publication-date window offers no second chance: by the time the record appears, its publication date has
+fallen behind the trailing window.** **Eight consecutive in-scope documents have now come via the index-date
+route and none via a society route — and this is the first from a society the watch looks for first every
+day.** **So the blind spot was never only about which societies are on the list; it was about keying a sweep on
+a date the database assigns before it has the record.** **Keep both routes: the society route beat the index by
+a day on the AHA/ACC perioperative guideline; the index route catches what publication-date windows structurally
+cannot.**
+
+**A panel that names the GRADE discordance hazard in its Design section and then honours it.** SFAR/SOFMER:
+**"The potential drawbacks of making strong recommendations in the presence of low-quality evidence were
+emphasized."** Result: **9 recommendations — 1 at GRADE 1 (high evidence), 2 at GRADE 2 (low), 6 where GRADE
+could not be applied so an expert opinion was issued, and 2 questions abandoned for lack of literature.**
+**Faced with thin evidence on six questions it issued six expert opinions rather than six strong
+recommendations.** **This archive flagged exactly that hazard on 16 October over the AAP UTI guideline's two
+strong recommendations inside a low-to-very-low certainty range. Here is the opposite behaviour, declared in
+advance.** **Rule: read a guideline's Design section for a statement about recommendation strength; it predicts
+the Results table.**
+
+**"Strong agreement among experts" is not agreement of the evidence, and good documents keep them apart.**
+Strong agreement after one round on all nine, with six of the nine being expert opinion. **Of eleven questions
+attempted, one produced a high-evidence recommendation.** Catalogue: EAN/ESCMID 2 of 16; ACCP inpatient tobacco
+zero high-certainty; AAP UTI low to very low. **End-of-life ICU decision-making is not a field where randomised
+evidence is obtainable — labelling the opinions as opinions is the quality marker.**
+
+**An unusual co-sponsor is a claim about whose judgement the decision needs.** **SOFMER — French physical
+medicine and rehabilitation — co-signed an ICU withdrawal guideline.** **Rehabilitation physicians know what
+survival with severe impairment looks like, which is the most contested input to any withdrawal decision.**
+**It links to the rehabilitation set** (Korean ICU rehab 12 Oct, AHA stroke rehab 13 Oct, Brazilian telehealth
+trial): **a withdrawal guideline co-signed by rehabilitation specialists and a rehabilitation trial finding
+nothing measurable in survivors are two views of one question.** **Rule: note who co-signs and ask what
+knowledge they were brought in for.**
+
+**One of three fields devoted entirely to conflict is an accurate allocation of effort.** SFAR/SOFMER field 3:
+"Relationships with family members, communication, disagreements, and conflicts." **These decisions rarely fail
+on the medical assessment and frequently fail on the conversation — and it is where expert opinion is most
+defensible, because no trial design answers how to handle a family's disagreement.**
+
+**Second document in three days whose real subject is the pathway, not the procedure.** The Canadian
+transcatheter mitral/tricuspid update's declared central theme is **"timely referral and structured assessment
+to avoid missed opportunities for intervention"** — aimed at referring physicians, **who are the audience least
+likely to read a transcatheter intervention update.** With the HRS prior-authorization statement (16 Oct) they
+**bracket the gap between a recommendation and a procedure: a patient has to be referred, and then the referral
+has to be funded.** **Neither obstacle is clinical, and both are being written about by the societies that can
+see the shortfall and cannot fix it.**
+
+**"Clinical practice update" is now a recognised class here — third instance in two weeks** (ASGE remimazolam,
+CCS transcatheter, and the EAU summary in form if not name): **narrative, no recommendation counts, no grades,
+sitting between a review and a guideline.** **Also: the Canadian update covers mature mitral edge-to-edge
+repair and unsettled tricuspid intervention as though the evidence were comparable, and the abstract does not
+separate them.**
+
+**Cross-reference date caught wrong before publishing, again.** I wrote "On 15 October this watch reported the
+HRS position statement"; it was **16 October**, and "the second document in four days" should have been
+**three**. **Both found by grepping the archive for the DOI rather than trusting the draft.** **The rule keeps
+paying: grep every internal cross-reference, including the date and the interval arithmetic.**
+
+**An abstract-free deposit in an adjacent field is logged with its defect, not guessed at.** SCCT 2026 coronary
+CTA interpretation and reporting update (`10.1016/j.jcct.2026.08.014`) deposits **no abstract**. **The title
+establishes that reporting standards were updated; it does not establish what changed.** Given two UTI
+redefinitions in the preceding four days, **a third document altering how a common investigation is reported is
+worth having — on the needs-a-PDF list, not in an item.**

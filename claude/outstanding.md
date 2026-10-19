@@ -3270,3 +3270,52 @@ depth-of-anaesthesia monitoring?** Needs the PDF.
 **Placebo rates 35.7% and 36.7% despite different definitions, blocks and operations — external validation for
 the phenomenon.** **Point estimates differ by less than the intervals.** **What would settle it: a head-to-head
 or a properly powered lidocaine trial (the authors' own corrected calculation says 82 per group).**
+
+## Guidelines watch after 2026-10-19 — first entry built entirely from the index-date sweep
+
+**Guideline-class by index date, 18–19 October: 13 hits, 13 returned. Two in scope, both published. Eleven out
+of scope, listed in the entry. One adjacent and abstract-free** (SCCT coronary CTA reporting update).
+
+**THE INSTRUMENT ARGUMENT, now decisive.** The SFAR/SOFMER guideline was **published 10 Oct, indexed
+18–19 Oct**. The acronym sweeps of 15 Oct covered publication dates **1–13 and 10–14 Oct** — windows containing
+its publication date, run **before its record existed**. **A publication-date window gives no second chance.**
+**Eight consecutive in-scope documents via the index-date route; this is the first from a tracked society.**
+**Keep both routes — the society route beat the index by a day on AHA/ACC perioperative.**
+
+## Recommendation-structure catalogue
+
+| Document | Questions | Graded recommendations | Notes |
+| --- | --- | --- | --- |
+| EAN/ESCMID infectious encephalitis (17 Oct) | 16 | **2** | + 1 explicit "cannot recommend either way", 13 good practice statements |
+| **SFAR/SOFMER withdrawing LST (today)** | **11 attempted** | **1 GRADE 1, 2 GRADE 2** | **6 expert opinions because GRADE could not be applied; 2 questions abandoned** |
+| AAP paediatric UTI (16 Oct) | — | 8 key action statements (2 strong, 6 conditional) | certainty low to very low; which is which not stated |
+| ACCP inpatient tobacco (14 Oct) | 6 PICO | 8 | **zero high-certainty** |
+| Spanish <i>H. pylori</i> (15 Oct) | — | 25 | efficacy threshold 90% cure |
+| Chinese IVOS (14 Oct) | 18 | 24 | — |
+
+**SFAR/SOFMER is the only one to declare in its Design section that it would guard against strong
+recommendations on weak evidence — and the Results table shows it did.** **Rule: read the Design section for a
+statement about recommendation strength.**
+
+## Pathway thread opened 2026-10-19
+
+| Document | Where the obstacle sits |
+| --- | --- |
+| HRS prior authorization in cardiac electrophysiology (16 Oct) | **downstream** — payers deny guideline-indicated procedures |
+| **CCS/CSCS/CAIC transcatheter mitral and tricuspid update (today)** | **upstream** — eligible patients are not referred |
+
+**Together they bracket the gap between a recommendation and a procedure.** **Neither obstacle is clinical.**
+**What would extend it: any document addressing the middle of the pathway, or evidence that either society's
+intervention changed anything.**
+
+## Guidelines backlog after 2026-10-19
+
+**Readable backlog: still empty** — both of today's items were published the day they were found.
+
+**Needs a PDF (4):** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i> (`10.57187/5395`); ASGE
+remimazolam update (processed-EEG question only); **SCCT coronary CTA interpretation and reporting 2026 update
+(`10.1016/j.jcct.2026.08.014`) — no abstract deposited.**
+
+**Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
+**Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
+**index-date month audit for October: 1 November**; next lagged pass **~10 November**.
