@@ -4829,3 +4829,10 @@ HFNC reduced PPC severity (ordinal OR 0.50) **with no change in length of stay o
 so either the complications prevented were the ones that do not extend admission, or 210 patients cannot
 resolve stay. **"Selected older or higher-risk" is where the honest claim sits, and the authors put it there.**
 **Open-label matters more than usual when the outcome is a graded complication and the device is visible.**
+
+**End-of-run check catches the database moving mid-run, for the first time.** Start of run 14:04: whole
+database 49,066,705, index date 19 Oct **8,717**. End of run 14:11: **49,070,683** (+3,978) and **12,706**
+(+3,989) — **about 570 records a minute of live ingest.** **The check was added on 16 October after a rollback
+that reversed inside twenty minutes; this is the first time it has caught motion in the other direction.**
+**Consequence for the entries: an index figure needs a timestamp, because it can be stale before the entry is
+published.** Today's brief said "8,717 by 14:04" and was therefore still true when it went out.
