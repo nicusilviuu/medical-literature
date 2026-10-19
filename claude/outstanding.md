@@ -3205,3 +3205,68 @@ adjacent-and-excluded at that point rather than at publication.**
 **Two societies, two continents, two age ranges, one fortnight.** **Comparisons of UTI incidence,
 antibiotic-days-per-UTI or stewardship performance spanning 2025–2026 now cross two separate redefinitions.**
 **Worth a targeted search in a month for the first paper that notices.**
+
+## Index after 2026-10-19 — ingest running, and two corrections
+
+**Whole database 49,066,705 (+8,233), residual 0.** `MED` **41,210,588** (+8,223) · `PMC` **1,008,685**
+(**−440**) · `PPR` **1,264,992** (+451) · `NBK` **8** (−1) · `PAT` 4,229,296 · `AGR` 1,026,549 ·
+`ETH` 176,799 · `CBA` 142,377 · `CTX` 3,919 · `HIR` 2,868 · `CIT` 624 unchanged.
+
+**Index date 19 Oct: 8,717 by 14:04 — THE MONDAY TEST PASSES. Yesterday's zero was the weekend.**
+**Sunday series: 189, 2,503, 187, 0.**
+
+**Reference windows: 1–30 Sep 156,973 (+1,414) · 1–7 Oct 36,694 (+861).**
+
+**CORRECTION 1 — a past `FIRST_IDATE` bucket cannot grow but CAN shrink.** 16 Oct 37,260 → **37,243**;
+17 Oct 3,650 → **3,645**, two reads each. **It is an upper bound, not a count.** The 18 October entry said
+"complete by construction"; that was wrong by half.
+
+**CORRECTION 2 — small per-source decrements are routine churn, not events.** `PMC` −440 on a day `MED` gained
+8,223. **Previous decrements were −61,746 and −80,022. The reporting threshold for a decrement was "any" and
+is now raised.**
+
+## Brief queue after 2026-10-19
+
+**Written up today, all newly indexed:** prophylactic HFNC after VATS lung resection; IV lidocaine and rebound
+pain after interscalene block; remimazolam + flumazenil versus propofol; bivalirudin versus heparin in cardiac
+surgery.
+
+**Held (9):**
+
+| Item | DOI |
+| --- | --- |
+| Intrathecal drug delivery systems for chronic pain | `10.1136/rapm-2025-107226` |
+| HFNC vs NIV to prevent reintubation — **not answered by today's item (comparator there is conventional oxygen, prophylactic)** | `10.1097/cce.0000000000001452` |
+| Intercostal nerve cryoablation vs thoracic epidural | `10.1093/ejcts/ezag203` |
+| IgM-enriched immunoglobulin in sepsis | `10.1097/cce.0000000000001451` |
+| Indirect-calorimetry-guided nutrition during weaning | `10.1186/s13054-026-06272-7` |
+| Minimally invasive vs sternotomy, redo mitral surgery | `10.1161/jaha.126.050284` |
+| Intraoperative dexmedetomidine and delirium, head and neck cancer | `10.2147/dddt.s598574` |
+| **Robotic-assisted vs conventional CABG — SR/MA** | `10.1186/s13019-026-04684-8` |
+| **Erector spinae block in coronary surgery** | `10.4103/aca.aca_17_26` |
+
+**Backstop: 1–25 August window, 343 unseen. Next window if needed: 1–31 July.**
+
+## Remimazolam thread — five documents
+
+| Document | Position |
+| --- | --- |
+| Meta-analysis with TSA vs sevoflurane (11 Oct) | haemodynamic and clinical outcomes |
+| RCT on postoperative nausea vs sevoflurane (11 Oct) | — |
+| BIS at matched sedation depth vs propofol (11 Oct) | **monitoring: the calibration changes** |
+| ASGE clinical practice update (17 Oct) | the society document, six years after approval |
+| **Remimazolam + flumazenil vs propofol (today)** | **faster emergence, LONGER PACU stay by institutional protocol; nothing differs at 4 h or 1 day** |
+
+**OPEN QUESTION unchanged and still the thread's most valuable: does the ASGE update address processed-EEG /
+depth-of-anaesthesia monitoring?** Needs the PDF.
+
+## Rebound-pain pair opened 2026-10-19
+
+| Trial | Result |
+| --- | --- |
+| Dexamethasone adjunct, two pooled RCTs (15 Oct) | 35.7% → 18.4%, **RR 0.51 (0.30–0.88)** |
+| **IV lidocaine, 120 patients (today)** | 36.7% → 23.3%, **RR 0.64 (0.36–1.12), P = 0.163** |
+
+**Placebo rates 35.7% and 36.7% despite different definitions, blocks and operations — external validation for
+the phenomenon.** **Point estimates differ by less than the intervals.** **What would settle it: a head-to-head
+or a properly powered lidocaine trial (the authors' own corrected calculation says 82 per group).**

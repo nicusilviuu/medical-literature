@@ -4764,3 +4764,68 @@ once before retiring it; this one contained a scope statement nobody had extract
 
 **The readable backlog is empty for the first time.** From here the watch runs on the index-date sweep alone
 until new material is indexed, with three PDF-dependent items and two retries parked.
+
+## 2026-10-19 (brief)
+
+**The Monday test passes: 8,717 records by 14:04, so yesterday's zero was the weekend.** Whole database
+49,058,472 → **49,066,705 (+8,233)**, residual zero. **Sunday series now 189, 2,503, 187, 0** — a Sunday really
+can finish at zero. **The "state it as uninterpretable and name the discriminating measurement" approach worked
+and the answer was the benign one.** **Rule confirmed: when a reading is compatible with two explanations, name
+the measurement that separates them and wait one day rather than choosing.**
+
+**CORRECTION to the 18 October entry, stated because I presented it as an instrument definition.** I wrote that
+a past `FIRST_IDATE` bucket "is complete by construction and cannot grow". **The first half is right; the
+second is wrong. 16 October fell 37,260 → 37,243; 17 October 3,650 → 3,645**, two reads each. **A past
+index-date bucket cannot grow and CAN shrink, because records are removed. It is an upper bound on what was
+indexed that day, not a count.** The near-finding it was used to discard stays discarded — a stable bucket
+still proves nothing — but the reason was wrong by half.
+
+**First observation of routine churn: per-source counts are not monotonic on a normal ingest day.** `PMC` −440
+and `NBK` −1 while `MED` gained 8,223. **Every previous decrement was an event (−61,746, −80,022).** **Rule: a
+loss of a few hundred in one source on an ingest day is background. The reporting threshold for a decrement was
+"any" and should now be higher.**
+
+**Three stated numbers that cannot all be true, found by dividing percentages back out.** HFNC-after-VATS
+trial: **23.1% is 24/104 and 39.6% is 42/106 — a 16.5-point difference — against a stated absolute risk
+difference of 15.6**, whose confidence interval is symmetric about it. **15.6 is exactly 39.6 − 24.0.** So
+either the rate is 24.0% (25/104) or the difference should read 16.5. **Direction and significance survive;
+a reader quoting all three would be quoting an impossibility.** **Rule: reconstruct an absolute risk difference
+from the stated rates, not just the rates from the percentages.**
+
+**Same evidential structure, opposite reporting choice — a pair worth keeping.** MODEST (18 Oct) and the
+lidocaine rebound-pain trial (today) are both modest single-centre randomised trials with a null primary and
+positive secondaries. **MODEST led its conclusion with a subgroup at P = .046 and "suggested a benefit". The
+lidocaine trial leads with "did not establish a statistically significant reduction", discloses a CORRECTED
+post hoc power calculation (82 per group needed, 60 enrolled), labels its positive secondaries "exploratory",
+and refuses to recommend.** **The difference is editorial, not statistical.** **"A corrected post hoc
+calculation" is a sentence authors almost never write; note it when they do.**
+
+**Rebound-pain pair: the placebo rates validate the phenomenon even though the definitions differ.**
+Dexamethasone (15 Oct) 35.7% → 18.4%, RR 0.51 (0.30–0.88); lidocaine (today) 36.7% → 23.3%, RR 0.64
+(0.36–1.12). **Different definitions of rebound pain, different blocks, different operations — and placebo
+rates of 35.7% and 36.7%.** **Point estimates differ by less than the intervals: dexamethasone has the
+evidence, lidocaine the same direction without the sample size.**
+
+**A pharmacological gain can be cancelled by an institutional rule, and the two halves have different
+lifetimes.** Remimazolam + flumazenil versus propofol: **eye-opening and extubation significantly faster
+(p < .001), PACU stay significantly LONGER (p < .001) "due to institutional safety protocols"** — presumably
+mandated observation for re-sedation after flumazenil. **The pharmacology travels; the nullification does not.**
+**Rule: when a trial reports a benefit and an offsetting institutional cost, separate what is a property of the
+drug from what is a property of one hospital, because only the first generalises.** Nothing differed at 4 h or
+1 day; QoR-15K "numerically higher" and not significant, which is the correct phrasing for a trend.
+
+**Absence of evidence in the middle of a conclusion that opens and closes honestly.** Bivalirudin vs heparin in
+cardiac surgery: **three trials, 407 patients, primary RR 1.38 (0.42–4.48)** — an interval spanning a 58%
+reduction to a 4.5-fold increase in reexploration for bleeding. The conclusion opens accurately ("has not been
+shown to have any significant difference"), closes with the limitations and a call for powered trials, **and in
+between says it "can be considered for safe use… as per current international guidelines" — a recommendation
+imported into the meta-analysis, not derived from it.** **Rule: when a conclusion cites external guidelines for
+its clinical clause, say that the recommendation is imported.** **And "interstudy heterogeneity was low" across
+three small trials is near-uninformative** — the 11 October note applies: that is also what you get when trials
+carry too little information to disagree.
+
+**A positive trial whose authors decline to generalise it is reporting a gap, and the gap is usually visible.**
+HFNC reduced PPC severity (ordinal OR 0.50) **with no change in length of stay or any physiological outcome** —
+so either the complications prevented were the ones that do not extend admission, or 210 patients cannot
+resolve stay. **"Selected older or higher-risk" is where the honest claim sits, and the authors put it there.**
+**Open-label matters more than usual when the outcome is a graded complication and the device is visible.**
