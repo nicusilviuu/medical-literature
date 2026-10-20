@@ -3319,3 +3319,99 @@ remimazolam update (processed-EEG question only); **SCCT coronary CTA interpreta
 **Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
 **Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
 **index-date month audit for October: 1 November**; next lagged pass **~10 November**.
+
+## Index after 2026-10-20 — and the instrument recalibrated
+
+**Start of run, 14:04.** Whole database **49,100,976**, residual 0, **+34,271 on yesterday's 14:04 baseline**.
+`MED` **41,239,386** (+28,798) · `PMC` **1,013,320** (+4,635) · `PPR` **1,265,828** (+836) · `CTX` **3,921**
+(+2) · `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624 ·
+`NBK` 8 unchanged. **The four gains sum to 34,271 exactly.**
+
+**BASELINE-MISMATCH ERROR, caught before publishing.** First differenced against yesterday's **14:26**
+whole-database figure while the source counts were last read at **14:04**, producing a spurious residual above
+12,000. **Rule now in source-notes: measuring twice per run creates two baselines; label every reading with its
+instant and difference like against like.**
+
+**Index dates: 17 Oct 3,631 · 18 Oct 0 · 19 Oct 42,580 (FINAL) · 20 Oct 847 by 14:04.**
+
+**CORRECTION 3 — THE SAME-DAY BUCKET IS A FRACTION OF THE DAY, AND THE FRACTION VARIES FROM A FIFTH TO ALL OF
+IT.** Yesterday's four readings of the 19 October bucket: **14:04 → 8,717 (20.5%) · 14:11 → 12,706 (29.8%) ·
+14:21 → 18,695 (43.9%) · 14:26 → 21,088 (49.5%) · final 42,580**. **Saturday 17 October, by contrast, read
+3,650 at 14:08 and finished at 3,631 — essentially complete.** **Consequences: (a) today's 847 cannot be read
+as low; (b) the "Monday test" passed yesterday on a fifth of the data, which was luck; (c) the Sunday series
+189, 2,503, 187, 0 needs no weekly cycle to explain it — a run sampling a fifth of a day will sometimes sample
+nothing. The weekly-cycle explanation is superseded.**
+
+**STANDING ACTION, revised: judge ingest from the PREVIOUS day's final bucket plus the whole-database delta.
+Never from today's bucket.**
+
+## Brief queue after 2026-10-20
+
+**Written up today:** conservative vs higher oxygen targets post-cardiac arrest; remimazolam vs propofol
+quality of recovery after meniscectomy; **erector spinae block in CABG (promoted off the held list)**;
+anaesthesia method and department resources in TKA.
+
+**Held (8), plus 2 added today:**
+
+| Item | DOI |
+| --- | --- |
+| Intrathecal drug delivery systems for chronic pain | `10.1136/rapm-2025-107226` |
+| HFNC vs NIV to prevent reintubation | `10.1097/cce.0000000000001452` |
+| Intercostal nerve cryoablation vs thoracic epidural | `10.1093/ejcts/ezag203` |
+| IgM-enriched immunoglobulin in sepsis | `10.1097/cce.0000000000001451` |
+| Indirect-calorimetry-guided nutrition during weaning | `10.1186/s13054-026-06272-7` |
+| Minimally invasive vs sternotomy, redo mitral surgery | `10.1161/jaha.126.050284` |
+| Intraoperative dexmedetomidine and delirium, head and neck cancer | `10.2147/dddt.s598574` |
+| Robotic-assisted vs conventional CABG — SR/MA | `10.1186/s13019-026-04684-8` |
+| **HFOT-based spontaneous breathing trial (added today)** | `10.3760/cma.j.cn121430-20260408-00165` |
+| **Opioid-free vs opioid-based anaesthesia, robotic prostatectomy (added today)** | `10.1007/s11701-026-04028-7` |
+
+**Backstop: 1–25 August window, 343 unseen. Next window if needed: 1–31 July.**
+
+## Remimazolam thread — six documents, and the variable is now isolated
+
+| Document | Position |
+| --- | --- |
+| Meta-analysis with TSA vs sevoflurane (11 Oct) | haemodynamic and clinical outcomes |
+| RCT on postoperative nausea vs sevoflurane (11 Oct) | — |
+| BIS at matched sedation depth vs propofol (11 Oct) | **monitoring: the calibration changes** |
+| ASGE clinical practice update (17 Oct) | the society document, six years after approval |
+| Remimazolam **+ flumazenil** vs propofol (19 Oct) | **faster** emergence; longer PACU stay by protocol |
+| **Remimazolam, NO flumazenil, vs propofol (today)** | **19 minutes SLOWER emergence; QoR-15 MD −4.5; hypotension 44.4% vs 17.1%** |
+
+**THE CONTRADICTION RESOLVES ON FLUMAZENIL.** Two trials, opposite emergence results, one identifiable protocol
+difference: the antagonist. **Reading: remimazolam's emergence advantage over propofol is an antagonist effect,
+not a pharmacokinetic property of the drug.** **This is the first time in this archive that two disagreeing
+trials have been reconciled rather than reported as a disagreement.**
+
+**What would test it:** a three-arm trial (remimazolam, remimazolam + flumazenil, propofol), or any trial
+reporting emergence both before and after antagonist administration. **Also worth noting the hypotension
+direction — 44.4% vs 17.1% against remimazolam here — which runs opposite to the haemodynamic-stability claim
+in the 11 October sevoflurane meta-analysis; different comparator, so not yet a contradiction.**
+
+**OPEN QUESTION unchanged: does the ASGE update address processed-EEG / depth-of-anaesthesia monitoring?**
+Needs the PDF.
+
+## Monitoring thread — condition 1 now fails for closed-loop oxygen
+
+**The three conditions (18 Oct): (1) the measurement is closer to the pathology than the one it replaces;
+(2) a protocol converts the number into an action; (3) the reported outcome is measured by something other than
+the instrument.** Closed-loop oxygen (reported 17 Oct) had **1 and 2**, with the patient outcome missing.
+
+**Today's oxygen-target meta-analysis supplies it: 11 RCTs, 4,136 patients, neither mortality nor neurological
+outcome differs by target, with trial sequential analysis trending toward futility.** **So the target the
+closed-loop system controls more tightly does not itself carry a patient outcome — which makes condition 1
+fail, not condition 3.** **The system is better at hitting a number that does not matter.**
+
+**This is the cleanest instance yet of the thread's point, and it arrived as a null.** **Admission rule holds:
+new entries must test the conditions, not add examples.**
+
+## PACU time — a cost measured in minutes and rarely in money
+
+| Trial | PACU finding | Priced? |
+| --- | --- | --- |
+| Remimazolam + flumazenil vs propofol (19 Oct) | **longer** stay by institutional protocol | no |
+| Remimazolam vs propofol, meniscectomy (today) | emergence 19 min slower | no |
+| **Spinal vs general for TKA (today)** | **32 min longer × 395 patients ≈ 210 PACU hours** | **no — EUR 47/patient saving is reported without it** |
+
+**What would extend it: a trial that prices PACU time, or one where the recovery cost reverses the headline.**

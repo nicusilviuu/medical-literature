@@ -4904,3 +4904,55 @@ CTA interpretation and reporting update (`10.1016/j.jcct.2026.08.014`) deposits 
 establishes that reporting standards were updated; it does not establish what changed.** Given two UTI
 redefinitions in the preceding four days, **a third document altering how a common investigation is reported is
 worth having — on the needs-a-PDF list, not in an item.**
+
+## 2026-10-20 (brief)
+
+**The same-day index-date count is a fraction of the day, and the fraction is not stable — between a fifth and
+all of it.** Four readings of the 19 October bucket during yesterday's two runs: **14:04 → 8,717 (20.5% of the
+eventual 42,580); 14:11 → 12,706 (29.8%); 14:21 → 18,695 (43.9%); 14:26 → 21,088 (49.5%).** More than half the
+day's records arrived after 14:26. **Against that, Saturday 17 October read 3,650 at 14:08 and finished at
+3,631 — complete by early afternoon.** **So today's 847 cannot be read as low, and the Sunday zeroes previously
+explained by a weekly cycle need no cycle to explain them: a run that samples a fifth of a day will sometimes
+sample nothing.** **Rule: judge ingest from the PREVIOUS day's final bucket and the whole-database delta.
+Today's bucket is a sample of unknown size, not a count.**
+
+**Baseline-mismatch error, caught before publishing.** I differenced today's eleven source counts against
+yesterday's **14:26** whole-database figure when the sources themselves were last read at **14:04**, producing
+a spurious residual above 12,000 records that I briefly took for an unexplained gain. Against the matching
+14:04 baseline the per-source gains sum to **34,271 exactly** (MED +28,798, PMC +4,635, PPR +836, CTX +2).
+**Rule: measuring the index twice in a run creates two baselines. Difference against the reading taken at the
+same instant as the one you are comparing, and record which instant each number came from.** **This is the
+direct cost of the 16 October lesson — read the index at the end of a run as well as the start — and the fix is
+labelling, not fewer readings.**
+
+**Two trials that contradict each other reconcile on a variable neither one names as its subject.** Yesterday's
+trial had remimazolam emergence **faster** than propofol; today's PLOS One meniscectomy trial has it **19
+minutes slower**. **The difference is flumazenil: yesterday's protocol gave the antagonist, today's did not.**
+**Read together they isolate the variable — remimazolam's emergence advantage is an antagonist effect, not a
+pharmacokinetic one.** **This is the pattern worth keeping: two trials disagreeing on an endpoint are more
+informative than either agreeing with expectation, provided the protocols differ in one identifiable respect.
+Look for the single difference before deciding either result is wrong.**
+
+**An 11% loss to follow-up stated as two per-arm numbers rather than a flow figure.** 80 randomised, **36 + 35
+= 71 analysed**, so **9 missing (11%)** — recoverable only by adding the arms. **Rule: when an abstract gives
+per-arm analysed counts and a randomised total, subtract. The attrition is often only there.**
+
+**High-certainty evidence is rare enough in this archive that it is itself the finding.** The erector spinae
+meta-analysis awards **high certainty** to a 19 mg morphine-equivalent reduction. **Across a month of guideline
+reporting here, the recurring note has been the opposite** — ACCP inpatient tobacco with zero high-certainty
+recommendations, AAP paediatric UTI low to very low, SFAR/SOFMER unable to apply GRADE to 6 of 11 questions.
+**So a high-certainty rating in a primary-scope meta-analysis deserves the same scrutiny as a weak one: the
+24-hour CI width of 6.89 mg implies SE around 1.76 mg, which is consistent with the rating.** **Rule: check a
+high-certainty claim by reconstructing the precision from the interval, not by trusting the label.**
+
+**A cost analysis that measures an offset and does not price it.** The TKA resources trial finds spinal
+anaesthesia cheaper (**cost ratio 2.31**), less wasteful (**waste ratio 2.05**), **EUR 47 per patient** — and
+keeps patients in recovery **32 minutes longer**, which across 395 patients is **~210 PACU hours**. **The
+minutes are measured and reported; they are not converted into money and set against the EUR 47.** **Rule: in
+any economic analysis, find the resource the intervention consumes more of and check whether it entered the
+cost model. An offset that is measured but unpriced is a choice, not an oversight.**
+
+**PACU time now appears as the hidden cost in three separate trials this month** (today's TKA
+spinal-vs-general, and the two emergence-time trials). **The pattern: trials optimise the intraoperative phase
+and pay for it in recovery, where the cost is recorded in minutes and rarely in money.** **What would extend
+it: a trial that prices PACU time, or one where the recovery cost reverses the headline conclusion.**
