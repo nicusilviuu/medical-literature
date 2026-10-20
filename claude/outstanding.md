@@ -3422,3 +3422,53 @@ records/minute across a comparable interval. First flat end-of-run reading since
 adopted on 16 October.** **It supports correction 3 rather than contradicting it: a day whose records arrive in
 a late batch looks static at two o'clock.** **Watch whether tomorrow's final count for 20 October is far above
 847 — if it is, the flat line at 14:20 was sampling, not a stall.**
+
+## Recommendation-structure catalogue — updated 2026-10-20
+
+| Document | Questions | Graded recommendations | Notes |
+| --- | --- | --- | --- |
+| **SRLF atrial fibrillation in adult ICU (today)** | **24** | **2 (GRADE 2+) of 18** | **16 expert opinions — evidence UNCLASSIFIABLE in GRADE; 6 aspects abandoned; all 18 strong agreement** |
+| SFAR/SOFMER withdrawing LST (19 Oct) | 11 attempted | 1 GRADE 1, 2 GRADE 2 | 6 expert opinions; 2 questions abandoned |
+| EAN/ESCMID infectious encephalitis (17 Oct) | 16 | **2** | + 1 explicit "cannot recommend either way", 13 good practice statements |
+| AAP paediatric UTI (16 Oct) | — | 8 key action statements (2 strong, 6 conditional) | certainty low to very low; which is which not stated |
+| Spanish <i>H. pylori</i> (15 Oct) | — | 25 | efficacy threshold 90% cure |
+| ACCP inpatient tobacco (14 Oct) | 6 PICO | 8 | **zero high-certainty** |
+| Chinese IVOS (14 Oct) | 18 | 24 | — |
+| **Chinese SCCM stress ulcers (today)** | — | **23 "evidence-based"** | **NO grade distribution given; 4 domains incl. harms of acid suppression** |
+| **Chinese SCCM RRT in AKI (backlog)** | — | **34** | **NO grade distribution in abstract; 18 Aug, same journal, same society** |
+| **French hip-fracture bundle >75 (today)** | **34 items** | **0 — no grading at all** | **29 reach ≥70% agreement, 12 above 90%; the 5 non-consensus items are not named** |
+| **ADQI/ELSO CRRT during ECMO (today)** | — | **not stated in abstract** | **a consensus document whose abstract reports its topics but not its output** |
+
+**TWO AXES NOW, and they are independent: (a) how much of the output is graded; (b) whether the document
+DISCLOSES that.** **Both French documents score badly on (a) and well on (b); both Chinese documents may score
+well on (a) and score badly on (b); the French bundle and the ADQI/ELSO statements disclose that there is
+nothing to grade.** **Rule: record both, and never read a high recommendation count as evidence strength.**
+
+## Guidelines backlog after 2026-10-20 — FROM EMPTY TO SIX IN ONE SWEEP
+
+**Readable (6), each with its scope justification on entry:**
+
+| Item | DOI | Why in scope |
+| --- | --- | --- |
+| Chinese SCCM RRT in critically ill AKI, 34 recommendations | `10.1016/j.jointm.2026.08.001` | ICU — primary |
+| GFRUP paediatric SVT in PICU, 13 French-speaking experts, PICO + GRADE | `10.1016/j.aicoj.2026.100160` | French society + intensive care |
+| AANA anaesthesia guidelines for Ehlers-Danlos, first ever, 7 from 15 experts | `10.70278/aanaj/.0000001099` | anaesthesiology — primary |
+| SFAR/SFPC medication errors in anaesthesia and critical care, 29 recommendations, strong agreement on ALL | published 24 June 2026 | **French, SFAR — never reported here as an item, only mentioned in passing on 11 Oct** |
+| ESPNIC neonatal therapeutic hypothermia guideline comparison across member countries | `10.1016/j.lanepe.2026.101874` | intensive care; **borderline — it compares guidelines rather than issuing one** |
+| ERS/ESRS CPAP for adult OSA | `10.1183/13993003.01186-2026` | airway and ventilation — scope-checked in |
+
+**Needs a PDF (7):** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i> (`10.57187/5395`); ASGE
+remimazolam update (processed-EEG question only); SCCT coronary CTA (`10.1016/j.jcct.2026.08.014`);
+**ASA Perioperative Resuscitation and Life Support update following the 2025 AHA adult ALS guidelines
+(`10.1097/aln.0000000000006260`, *Anesthesiology*, 13 Oct) — squarely primary scope, no abstract deposited,
+HIGHEST PRIORITY of the seven**; EACTS/STS/AATS temporary MCS expert analysis for cardiothoracic anaesthesia
+(`10.1053/j.jvca.2026.09.028`); corrigendum to the ERC 2025 adult ALS guideline
+(`10.1016/j.resuscitation.2026.111313`) — **matters only if the correction is substantive and the record does
+not say.**
+
+**Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
+**Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
+**index-date month audit for October: 1 November**; next lagged pass **~10 November**.
+
+**PROCESS NOTE: the backlog refilled from empty the moment both sweeps were run on the same window.** **An
+empty backlog on 18 and 19 October was a property of the sweep, not of the literature.**

@@ -4956,3 +4956,65 @@ cost model. An offset that is measured but unpriced is a choice, not an oversigh
 spinal-vs-general, and the two emergence-time trials). **The pattern: trials optimise the intraoperative phase
 and pay for it in recovery, where the cost is recorded in minutes and rarely in money.** **What would extend
 it: a trial that prices PACU time, or one where the recovery cost reverses the headline conclusion.**
+
+## 2026-10-20 (guidelines watch)
+
+**A FOURTH RECOVERY ROUTE: for an open-access PMC record, the FULL-TEXT XML carries metadata the search record
+does not.** The SRLF atrial fibrillation recommendations reached the index with **no DOI, no abstract and a
+publication date of 1 January 2026**. `https://www.ebi.ac.uk/europepmc/webservices/rest/PMC<id>/fullTextXML`
+gave the real DOI (`10.1016/j.aicoj.2026.100159`), the real date (14 September 2026) and a 1,970-character
+abstract. **Rule: before logging an abstract-free record as needs-a-PDF, check whether it has a PMCID and try
+the full-text XML.** **This one would otherwise have been filed as an undatable stub — a French society
+guideline, the highest-priority category in this watch.**
+
+**THE GUIDELINE-PUBLICATION-TYPE SWEEP ALONE WOULD HAVE PRODUCED AN EMPTY DAY.** 20 hits, and the only in-scope
+records were two documents reported yesterday plus one already-backlogged abstract-free item. **The
+title-keyword sweep on the same index-date window returned 18 hits and carried all four of today's items.**
+**Both sweeps are load-bearing and neither is a superset of the other.** **Cause, for one case: Europe PMC
+types the ADQI/ELSO consensus statements as `Review`.** **Rule: run both sweeps every day; a consensus document
+is frequently not typed as one.**
+
+**Second day running that the index-date route surfaced a French society document the society-targeted search
+missed.** Yesterday SFAR; today SRLF. **The society search returned nothing for October beyond what was already
+reported — and the SRLF document had been published on 14 September.** **A publication-date or society route
+offers no second chance; the index date does.**
+
+**TWO PROSE CLAIMS FAILED VERIFICATION BEFORE PUBLISHING, both memory-sourced counts.** I wrote "the third time
+this month the index has beaten the society route" — the archive documents **one** prior instance (19 October),
+so it became "the second day running". And "the second document this month to make a gap list a primary
+product" — **no first instance exists in the archive**, so the comparative was removed. **Both found by
+grepping the archive for the claim, not for the DOI.** **Rule extended: grep the archive for every COUNT and
+EVERY "nth time" claim, not only for cross-referenced dates and DOIs. A tally is as easy to misremember as a
+date, and harder to spot once published.**
+
+**A new structure-catalogue entry, and it is the most lopsided yet.** SRLF atrial fibrillation: **24 questions,
+18 recommendations, all strong agreement, 2 at GRADE 2+, 16 expert opinions because the evidence could not be
+classified within GRADE at all, 6 further aspects abandoned.** **Of 30 attempted positions, 2 rest on
+low-quality evidence.** **With yesterday's SFAR/SOFMER document (11 questions, 1 GRADE 1, 2 GRADE 2, 6 expert
+opinions, 2 abandoned) this is the second French society document in two days to report its grade distribution
+AND its abandonments in the abstract.** **That is a disclosure practice, and naming it as such is more useful
+than treating each instance as weak evidence: most societies report neither number.**
+
+**"Evidence-based" without a grade distribution is a label, not a checkable claim.** The Chinese Society of
+Critical Care Medicine's stress-ulcer guidelines describe their process in more procedural detail than almost
+any document here — **three rounds of remote meetings, four rounds of face-to-face meetings, Standing Committee
+approval** — and give **23 "evidence-based recommendations" with no grade distribution.** **Rule: process
+transparency and evidence transparency are different properties. Record which one a document has.**
+
+**Strong agreement is a statement about the panel; a GRADE level is a statement about the literature.** Only
+the second transfers to another country's ICU. **Applies to today's items 1 and 3 and to the SFAR/SFPC
+medication-error RFE (strong agreement on all 29).** **Rule: never report a unanimity figure without the
+evidence figure beside it, and say which is which.**
+
+**A care bundle is not a graded guideline, and a Delphi's disagreements are the informative part.** The French
+hip-fracture bundle: 34 items, **29 reaching ≥70% agreement, 12 above 90%** — and **the five items that failed
+are not named in the abstract.** **Rule: for any Delphi, look for the non-consensus items; their absence from
+the abstract is the norm and is worth stating.** **Also: report the panel composition when it is given —
+anaesthetists 36.7%, geriatricians 30%, orthopaedic surgeons 20%, pharmacists 13.3% for a document about a
+fracture is a fact a reader can act on.**
+
+**Three dual-deposit defects in one day, all the same variant** — an abstract-free open-access record beside a
+record carrying the abstract — **for both `jointm` guidelines and both `aicoj` guidelines.** **For the atrial
+fibrillation document the defective record was the ONLY one the sweep surfaced.** **Rule: when a sweep returns
+an abstract-free record, search the DOI or title separately before concluding no abstract was deposited; the
+sibling record may carry it.**
