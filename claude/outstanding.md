@@ -3415,3 +3415,10 @@ new entries must test the conditions, not add examples.**
 | **Spinal vs general for TKA (today)** | **32 min longer × 395 patients ≈ 210 PACU hours** | **no — EUR 47/patient saving is reported without it** |
 
 **What would extend it: a trial that prices PACU time, or one where the recovery cost reverses the headline.**
+
+**END-OF-RUN READ, 14:20 (16 minutes after the start-of-run read): all three figures IDENTICAL** —
+whole database 49,100,976, today's bucket 847, 19 October 42,580. **Yesterday the database moved ~570
+records/minute across a comparable interval. First flat end-of-run reading since the twice-per-run practice was
+adopted on 16 October.** **It supports correction 3 rather than contradicting it: a day whose records arrive in
+a late batch looks static at two o'clock.** **Watch whether tomorrow's final count for 20 October is far above
+847 — if it is, the flat line at 14:20 was sampling, not a stall.**
