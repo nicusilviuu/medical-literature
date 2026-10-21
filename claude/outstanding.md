@@ -3575,3 +3575,8 @@ recovery, EUR 47/patient saved, unpriced); today IPACK versus selective tibial n
 peroneal motor block in the tibial arm). **Also seen unreported in today's sweep: BIS-controlled sedation and
 postoperative cognition in elderly TKA patients under spinal anaesthesia (July).** **Watch whether this is a
 genuine cluster or sampling.**
+
+**END-OF-RUN READ, 14:15:57 (10 minutes after start):** whole database **49,110,285** (+830, ~83/min);
+21 Oct bucket **11,025** (+854); 20 Oct **853** unchanged, final confirmed twice. **854 gross against 830 net
+reproduces correction 5 inside a ten-minute window — roughly two dozen deletions.** **The net-vs-gross gap is
+therefore not a once-a-day batch artefact; deletion runs continuously.**
