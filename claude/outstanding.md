@@ -3472,3 +3472,106 @@ not say.**
 
 **PROCESS NOTE: the backlog refilled from empty the moment both sweeps were run on the same window.** **An
 empty backlog on 18 and 19 October was a property of the sweep, not of the literature.**
+
+## Index after 2026-10-21 — correction 4, and the delta is net
+
+**Start of run, 14:05:53.** Whole database **49,109,455**, residual 0, **+8,479** on yesterday's 14:04
+reading. `MED` **41,247,956** (+8,570) · `PPR` **1,266,951** (+1,123) · `NBK` **14** (+6) ·
+`PMC` **1,012,100** (**−1,220**) · `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 ·
+`CTX` 3,921 · `HIR` 2,868 · `CIT` 624 unchanged. **The four changes sum to 8,479 exactly.**
+
+**Index dates: 17 Oct 3,631 · 18 Oct 0 · 19 Oct 42,358 · 20 Oct 853 (FINAL) · 21 Oct 10,171 by 14:06.**
+**Reference windows: 1–30 Sep 163,043 (−82, SHRANK) · 1–7 Oct 43,519 (+986).**
+
+**CORRECTION 4 — THE SAME-DAY BUCKET IS A LOWER BOUND, NOT "UNREADABLE AS LOW".** The test set yesterday
+returned against the claim: **20 October finished on 853 against 847 read at 14:05 — 99.3% complete.** The flat
+end-of-run reading **was a stall**, and the day **was** near-empty. **Measured fractions now: 17 Oct ~100%,
+19 Oct 20.6%, 20 Oct 99.3%.** **Correction 3 (19–20 Oct) over-reached by converting "you cannot tell" into
+"you cannot call it low".** **Every revision of this instrument has erred in the same direction: a conclusion
+stronger than the measurement supports.**
+
+**CORRECTION 5 — THE WHOLE-DATABASE DELTA IS NET.** The 20 and 21 October buckets gained **10,177** between
+them against a net rise of **8,479**, so **≥1,698 records were deleted concurrently** (`PMC` −1,220, 19 Oct
+bucket −222, Sep window −82). **To see gross ingest, sum the new index-date buckets; to see deletion,
+difference the two.**
+
+**CORRECTION 6 — a past reference WINDOW can shrink, not only a `FIRST_IDATE` bucket.** 1–30 Sep down 82.
+**Every backward-looking count in this instrument is an upper bound.**
+
+**STANDING ACTION, revised again: read `FIRST_IDATE` for the previous day AND today, the eleven sources, and
+both windows, at the START and END of every run; label every number with its instant; judge ingest from the
+previous day's FINAL bucket and treat the whole-database delta as NET.**
+
+## Brief queue after 2026-10-21
+
+**Written up today:** EIT-guided PEEP and postoperative pulmonary complications; proenkephalin A and
+hydrocortisone heterogeneity in VANISH; pancreatic stone protein versus CRP and PCT; IPACK versus selective
+tibial nerve block after TKA.
+
+**Held (10), plus 4 added today:**
+
+| Item | DOI |
+| --- | --- |
+| Intrathecal drug delivery systems for chronic pain | `10.1136/rapm-2025-107226` |
+| HFNC vs NIV to prevent reintubation | `10.1097/cce.0000000000001452` |
+| Intercostal nerve cryoablation vs thoracic epidural | `10.1093/ejcts/ezag203` |
+| IgM-enriched immunoglobulin in sepsis | `10.1097/cce.0000000000001451` |
+| Indirect-calorimetry-guided nutrition during weaning | `10.1186/s13054-026-06272-7` |
+| Minimally invasive vs sternotomy, redo mitral surgery | `10.1161/jaha.126.050284` |
+| Intraoperative dexmedetomidine and delirium, head and neck cancer | `10.2147/dddt.s598574` |
+| Robotic-assisted vs conventional CABG — SR/MA | `10.1186/s13019-026-04684-8` |
+| HFOT-based spontaneous breathing trial | `10.3760/cma.j.cn121430-20260408-00165` |
+| Opioid-free vs opioid-based anaesthesia, robotic prostatectomy | `10.1007/s11701-026-04028-7` |
+| **Balanced solutions vs normal saline, paediatric septic shock, GRADE-assessed SR/MA (added today)** | `10.1177/08850666261498038` |
+| **Norepinephrine + vasopressin-receptor agonists in septic shock — SR/MA (added today)** | `10.1177/08850666261500019` |
+| **Meropenem exposure, target attainment and TDM during CRRT — SR (added today; pairs with the ADQI/ELSO statements of 20 Oct)** | `10.1177/10600280261489958` |
+| **Bystander-CPR multifaceted intervention in France — stepped-wedge cluster RCT, Lancet Public Health (added today)** | `10.1016/s2468-2667(26)00200-8` |
+
+**Backstop: 1–25 August window, 343 unseen. Next window if needed: 1–31 July.**
+
+## Monitoring thread — A CANDIDATE TRIAL AT LAST, thread stays open
+
+**The missing trial was specified on 18 October as: a randomised comparison in which a monitored physiological
+target was controlled more tightly AND a patient outcome improved, with nothing cancelling it.**
+
+| Document | Condition 1 | Condition 2 | Condition 3 | Outcome |
+| --- | --- | --- | --- | --- |
+| EIT-guided PEEP feasibility, <i>Anesthesiology</i> (19 Sep) | met | met | **FAILED — outcome was ventilation phenotype, i.e. the instrument** | PPCs 25% vs 41% historical, ARD −15.8%, P = 0.17 |
+| **EIT-guided PEEP RCT, <i>BJA</i> (today)** | **met** | **met** | **MET — 30-day PPCs adjudicated by a multidisciplinary team** | **49.2% vs 72.4%, HR 0.53 (0.33–0.85), P = 0.009** |
+| Closed-loop oxygen (17 Oct) + oxygen-target meta-analysis (20 Oct) | **FAILED — set-point carries no outcome** | met | met | null |
+
+**WHY THE THREAD STAYS OPEN: what cancels today's trial is the comparator and the composite, not the
+measurement.** **(a) The control arm is a FIXED PEEP of 5 — and the 19 September study showed EIT moves PEEP in
+BOTH directions (up 5→9 ventral-dominant, down 7→3 dorsal-dominant), so fixed 5 is wrong two ways at once and
+the trial measures the cost of not individualising.** **(b) A 72.4% control-arm PPC rate against a literature
+usually reporting 10–40% means the composite is dominated by radiological atelectasis; NNT 4.3 is ordinary for
+that and remarkable for a clinical endpoint.**
+
+**WHAT WOULD SETTLE IT: EIT against another individualisation method — driving-pressure-guided PEEP, or
+recruitment with decremental titration — on a composite not dominated by atelectasis.** **Admission rule still
+holds: a new document enters only if it tests the three conditions.**
+
+## Biomarker thread opened 2026-10-21 — prognostic vs predictive
+
+| Document | Claim made | Conditions met |
+| --- | --- | --- |
+| **PENK and hydrocortisone, VANISH post hoc (today)** | **predictive** (who benefits) — exploratory | 1, and an outcome not measured by the marker; **but 111 of 409 (27%), p = 0.01 on kidney-failure-free days and 0.14 on mortality** |
+| **PENK prognostic finding (today)** | **prognostic** (who dies) — OR 3.24 (1.62–6.74) | established, and a different claim |
+| **PSP vs CRP and PCT, paired-AUC meta-analysis (today)** | **discrimination only** | **1 only — no protocol, no outcome beyond the AUC** |
+
+**Three documents in one day at descending evidential strength on the same question: does measuring better
+change anything.** **Named open questions: (a) was the PENK threshold of 89 pmol/L prespecified from external
+data or chosen in these data — decides how much of p = 0.01 survives; (b) who ran the seven PSP studies and on
+which assay — a ΔAUC of 0.15–0.18 against a mature comparator invites the question; (c) the trial in which
+acting on a sepsis biomarker changes an outcome has not been done.**
+
+**Confound to carry forward: PENK is a biomarker of renal function and the outcome is kidney failure. The
+stratifying variable and the endpoint are the same physiology.**
+
+## TKA run
+
+**Second day running.** 20 Oct spinal versus general anaesthesia and department resources (32 min longer in
+recovery, EUR 47/patient saved, unpriced); today IPACK versus selective tibial nerve block (null, 8.9%
+peroneal motor block in the tibial arm). **Also seen unreported in today's sweep: BIS-controlled sedation and
+postoperative cognition in elderly TKA patients under spinal anaesthesia (July).** **Watch whether this is a
+genuine cluster or sampling.**

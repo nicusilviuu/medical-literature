@@ -5018,3 +5018,107 @@ record carrying the abstract — **for both `jointm` guidelines and both `aicoj`
 fibrillation document the defective record was the ONLY one the sweep surfaced.** **Rule: when a sweep returns
 an abstract-free record, search the DOI or title separately before concluding no abstract was deposited; the
 sibling record may carry it.**
+
+## 2026-10-21 (brief)
+
+**CORRECTION 4 TO THE INDEX INSTRUMENT, AND IT GOES AGAINST WHAT WAS PUBLISHED YESTERDAY.** The test recorded
+yesterday — "watch whether tomorrow's final count for 20 October is far above 847" — returned **853**. **The
+14:05 reading was 99.3% of the day; the flat end-of-run reading was a genuine stall; 20 October was a
+near-empty day.** **So "today's 847 cannot be read as low" was false: it was low.** **Right statement: the
+same-day count is a LOWER BOUND whose tightness is unknowable at reading time.** Three measured fractions:
+**17 Oct ~100%, 19 Oct 20.6%, 20 Oct 99.3%.** **Yesterday's version converted "you cannot tell" into "you
+cannot call it low", which is itself a claim.** **Fourth revision, second in two days, and EVERY error in this
+instrument's history has been in the same direction — a conclusion stronger than the measurement supports.**
+**Standing rule added: when a measurement establishes that something is unknowable, say unknowable; do not
+convert it into a prohibition on the opposite reading.**
+
+**THE WHOLE-DATABASE DELTA IS A NET FIGURE AND UNDERSTATES INGEST WHEN DELETION RUNS CONCURRENTLY.** Today:
+net **+8,479** (residual 0), but the 20 and 21 October index buckets gained **10,177** between them. **At least
+1,698 records were deleted while those were added** — visible as `PMC` −1,220, the 19 October bucket −222 (now
+42,358), the September reference window −82. **Rule: the standing action ("judge ingest from the previous day's
+final bucket plus the whole-database delta") needs the qualifier NET. To see gross ingest, sum the new
+index-date buckets; to see deletion, difference the two.**
+
+**A past reference WINDOW can shrink too, not just a `FIRST_IDATE` bucket.** 1–30 September **163,043**, down
+**82** from 163,125. **Generalises the 19 October correction: every backward-looking count in this instrument is
+an upper bound, not only the index-date buckets.**
+
+**THE MONITORING THREAD HAS ITS CANDIDATE TRIAL, AND THE SAME INSTRUMENT FAILED CONDITION 3 FIVE WEEKS AGO.**
+The BJA EIT-guided PEEP RCT meets all three conditions: regional lung collapse imaged directly (1); PEEP
+titrated to the image (2); **30-day PPCs adjudicated by a multidisciplinary team, no EIT involved (3)**.
+**On 19 September this archive reported an *Anesthesiology* EIT feasibility study whose primary outcome was
+ventilation-phenotype conversion — the instrument reporting on itself — with PPCs exploratory against a
+historical cohort (25% vs 41%, ARD −15.8%, P = 0.17).** **Today: randomised, adjudicated, 49.2% vs 72.4%,
+HR 0.53 (0.33–0.85).** **Same instrument, same protocol, different outcome measure, and the thing that changed
+is the one the thread says matters.** **THREAD STAYS OPEN: what cancels it is the comparator and the composite,
+not the measurement.**
+
+**A weak comparator can manufacture a large effect, and the September paper says exactly how.** That study moved
+PEEP **in both directions** — up 5→9 in ventral-dominant patients, **down 7→3 in dorsal-dominant** ones. **So a
+fixed PEEP of 5 is wrong in two directions at once in the same theatre, and a trial against it measures the
+cost of not individualising rather than the value of EIT.** **Rule: before crediting an individualisation
+trial, ask what the control arm individualises on. "Fixed" is not a comparator for "individualised"; another
+individualisation method is.**
+
+**A control-arm event rate far above the literature's identifies a soft composite without needing the methods
+section.** 72.4% PPCs where perioperative trials usually report 10–40%; atelectasis is named in the composite.
+**ARD 23.3 points, NNT 4.3 — remarkable for a clinical endpoint, ordinary for a radiological one.** **Rule: read
+the control-arm rate against the field's usual rate FIRST; it bounds what the composite can be counting.**
+**Internal consistency check that passed: HR 0.53 sits between RR 0.68 and OR 0.37, as it must.**
+
+**PROGNOSTIC AND PREDICTIVE ARE DIFFERENT CLAIMS, and today's items 2 and 3 separate cleanly on it.** PENK
+predicts death (OR 3.24, 1.62–6.74) — prognostic, established. PENK predicting who benefits from hydrocortisone
+— predictive, exploratory. **The PSP meta-analysis measures discrimination only: condition 1 met, 2 and 3 not.**
+**An AUC is a statement about ranking patients, not about changing what happens to them.** **Rule: for any
+biomarker paper, say which of the two claims is being made, because abstracts routinely slide from the first to
+the second.**
+
+**A biomarker that measures the organ whose failure is the outcome cannot separate drug effect from
+confounding.** PENK is described in its own abstract as "a biomarker of renal function", and the finding is
+fewer kidney-failure-free days on hydrocortisone in patients whose kidneys were already failing. **Rule: check
+whether the stratifying variable and the outcome are the same physiology. No post hoc adjustment fixes it.**
+
+**A crossover interaction requires both halves to be real, which is why it is the most fragile shape.**
+Hydrocortisone looks harmful in high PENK (50% vs 32%) and beneficial in low PENK (14% vs 24%). **Significant
+for kidney-failure-free days (p = 0.01), not for mortality (p = 0.14), in 111 of VANISH's 409 patients (27%).**
+**The unstated number that decides everything: whether the 89 pmol/L threshold was prespecified from external
+data or chosen in these data.** **Rule: for any dichotomised biomarker, the threshold's provenance is the first
+thing to look for and is usually absent from the abstract.**
+
+**I² = 0.00% WITH FEW COHORTS IS NOT REASSURANCE — it is the floor of a badly estimated statistic.** PSP vs
+PCT: I² = 0.00%, interval 0.114–0.193 (SE ≈ 0.020). PSP vs CRP: I² = 81.65%, interval 0.095–0.262 (SE ≈ 0.043).
+**The narrower interval follows from assumed homogeneity, not from more data.** **Rule: report a zero I² as
+uninformative when the number of independent cohorts is small, and never let it carry more weight than a high
+one that the authors flagged.**
+
+**PAIRED WITHIN-STUDY AUC COMPARISON IS THE RIGHT DESIGN AND IS RARE — credit it.** Most biomarker
+meta-analyses pool each marker separately across different cohorts and subtract, comparing populations as much
+as markers. **Rule: when a biomarker meta-analysis is head-to-head in the same patients, say so; it is the
+difference between a real ΔAUC and a case-mix artefact.** **Separate caution: a ΔAUC of 0.15–0.18 against a
+mature comparator is large enough that index-test-versus-comparator care becomes the first question, and this
+abstract answers nothing about assay or sponsorship.**
+
+**A FAILED SUPERIORITY TRIAL REPORTED AS EQUIVALENCE — reconstruct the interval before accepting "similar".**
+IPACK vs tibial block: 6 (7) vs 5 (6) mg at 45/arm → **SE of the difference 1.37 mg, 95% CI about −1.7 to
++3.7 mg**; the upper bound is **74% of the comparator's total consumption**. **No equivalence margin stated, and
+at n = 90 none could have been met.** **Rule: whenever an abstract says two treatments are "similar" on a null,
+compute the interval from the reported means and SDs. If the bound admits a clinically large difference, the
+word is unearned.**
+
+**A multimodal background can take the primary outcome to the floor before randomisation.** Both arms used 5–6
+mg morphine in 24 h on top of spinal anaesthesia, a femoral triangle block, paracetamol and ibuprofen. **Mirror
+image of yesterday's ESPB meta-analysis, where opioid use moved 19 mg and pain scores barely moved; here
+neither moves.** **Rule: read the background analgesia before the primary outcome; it sets the ceiling on any
+detectable effect.**
+
+**SD ≥ mean means the data are right-skewed and the summary is the wrong one.** 6 ± 7 and 5 ± 6 mg of morphine.
+**Rule: flag it, use the figures anyway if nothing better is given, and say the derived interval is an
+approximation of an approximation.**
+
+**Dose equalised in MASS while volume and concentration differ four-fold is good technique-comparison design.**
+IPACK 19 ml of 0.2% = 38 mg; tibial 5 ml of 0.75% = 37.5 mg. **Rule: compute the milligrams whenever two blocks
+are compared at different concentrations — it decides whether the trial compares techniques or doses.**
+
+**The actionable finding can sit in the safety sentence while the title is about analgesia.** Equal pain relief,
+and **common peroneal motor block in 4/45 (8.9%) of the tibial arm only.** **Rule: when a null trial reports a
+one-sided complication, that is the result.**
