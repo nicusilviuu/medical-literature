@@ -3580,3 +3580,64 @@ genuine cluster or sampling.**
 21 Oct bucket **11,025** (+854); 20 Oct **853** unchanged, final confirmed twice. **854 gross against 830 net
 reproduces correction 5 inside a ten-minute window — roughly two dozen deletions.** **The net-vs-gross gap is
 therefore not a once-a-day batch artefact; deletion runs continuously.**
+
+## Recommendation-structure catalogue — updated 2026-10-21
+
+**THE FRENCH-SPEAKING CONVERGENCE, three documents in three days (computed, not estimated):**
+
+| Document | Recommendations | Graded | Expert opinion | Abandoned |
+| --- | --- | --- | --- | --- |
+| SFAR/SOFMER withdrawing LST (19 Oct) | 9 | 3 | 6 | 2 |
+| SRLF atrial fibrillation in adult ICU (20 Oct) | 18 | 2 | 16 | 6 |
+| **GFRUP paediatric SVT in PICU (today)** | **21** | **5** | **16** | not stated |
+| **TOTAL** | **48** | **10 (20.8%)** | **38 (79.2%)** | **≥8** |
+
+**New entries today:**
+
+| Document | Framework | Output | Disclosure |
+| --- | --- | --- | --- |
+| **STS borderline left heart (today)** | PICO + modified Delphi | **numeric thresholds in the abstract** (indexed LVEDV < 25 ml/m², ascending aortic flow < 2.0 L/min/m²) | **none — no count, no grades, no agreement figure** |
+| **Canadian spinal procedures for chronic pain (today)** | **USPSTF A–D plus I — FIRST non-GRADE framework in this archive** | 15 key recommendations + good practice statements; 75% agreement threshold | **framework described in detail, distribution NOT given** |
+| **Chinese SCCM RRT in AKI (today)** | GRADE | 34 recommendations | **no distribution** — and the questions (timing, weaning) ARE well trialled |
+| Chinese SCCM stress ulcers (20 Oct) | GRADE | 23 recommendations | no distribution |
+
+**TWO INDEPENDENT AXES, confirmed again: (a) how much of the output is graded; (b) whether the document
+discloses it.** **STS: excellent content, zero structure. Canadian: framework explained, result withheld.
+French-speaking: a fifth graded and all of it disclosed.** **Rule: score both; a document can be excellent on
+one axis and silent on the other.**
+
+## Pathway thread — closed by composition, 2026-10-21
+
+| Document | Where the obstacle sits |
+| --- | --- |
+| HRS prior authorization in cardiac electrophysiology (16 Oct) | **downstream** — payers deny guideline-indicated procedures |
+| CCS/CSCS/CAIC transcatheter mitral and tricuspid update (19 Oct) | **upstream** — eligible patients are not referred |
+| **Canadian spinal procedures for chronic pain (today)** | **the funder is ON THE PANEL** — provincial regulatory and funding bodies sat on the guideline group that proposed repeat-procedure frequency |
+
+**The thread asked for a document addressing the middle of the pathway. This one dissolves the middle by
+putting the payer in the room where the recommendation is written.** **What would extend it now: evidence that
+funder participation changed either uptake or spend, in either direction.**
+
+## Guidelines backlog after 2026-10-21
+
+**Readable (4):** AANA Ehlers-Danlos anaesthesia guidelines (`10.70278/aanaj/.0000001099`); **SFAR/SFPC
+medication errors, 29 recommendations with strong agreement on ALL (24 June 2026) — NOW THE OBVIOUS NEXT TEST
+OF THE THREE-DOCUMENT PATTERN, being the one French document to date that reports unanimity without a grade
+distribution**; ESPNIC neonatal therapeutic hypothermia comparison (`10.1016/j.lanepe.2026.101874`); ERS/ESRS
+CPAP for adult OSA (`10.1183/13993003.01186-2026`).
+
+**Needs a PDF (8):** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i> (`10.57187/5395`); ASGE
+remimazolam update (processed-EEG only); SCCT coronary CTA (`10.1016/j.jcct.2026.08.014`); **ASA PeRLS update
+(`10.1097/aln.0000000000006260`) — still highest priority**; EACTS/STS/AATS temporary MCS expert analysis
+(`10.1053/j.jvca.2026.09.028`); ERC 2025 adult ALS corrigendum (`10.1016/j.resuscitation.2026.111313`);
+**NEW — ESICM position paper on equity, diversity and inclusion (`10.1007/s00134-026-08653-6`): no abstract
+deposited anywhere, no sibling record, no PMCID, not OA, and the DOI 303s to `idp.springer.com/authorize`.
+A redirect to an identity provider is a block, not a route.**
+
+**To the BRIEF queue, not here:** prospective clinical audit of adherence to international guidelines on
+quantitative neuromuscular monitoring (`10.1007/s10877-026-01492-2`, 20 Oct) — **research article, and it
+belongs to the brief's monitoring thread.**
+
+**Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
+**Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
+**index-date month audit for October: 1 November**; next lagged pass **~10 November**.

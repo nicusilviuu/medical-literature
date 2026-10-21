@@ -5122,3 +5122,98 @@ are compared at different concentrations — it decides whether the trial compar
 **The actionable finding can sit in the safety sentence while the title is about analgesia.** Equal pain relief,
 and **common peroneal motor block in 4/45 (8.9%) of the tibial arm only.** **Rule: when a null trial reports a
 one-sided complication, that is the result.**
+
+## 2026-10-21 (guidelines watch)
+
+**THE FRENCH-SPEAKING PATTERN IS NOW A THREE-DOCUMENT FINDING, COMPUTED NOT ESTIMATED.** SFAR/SOFMER
+withdrawing LST (19 Oct) **9 recommendations, 3 graded, 6 expert opinions, 2 questions abandoned**; SRLF atrial
+fibrillation in the adult ICU (20 Oct) **18, 2, 16, 6**; GFRUP paediatric SVT (today) **21, 5, 16, not
+stated**. **Totals: 48 recommendations, 10 graded (20.8%), 38 expert opinions (79.2%), at least 8 questions
+abandoned.** **All three disclose the split in the abstract; all three record strong agreement on everything.**
+**Two of the three independently land on exactly 16 expert opinions — coincidence, and recorded as such.**
+
+**THE RIGHT READING: this is a property of the QUESTIONS, not of the societies.** Withdrawing life-sustaining
+treatment cannot be randomised for ethical reasons; new-onset AF in a catecholamine-supported adult and
+neonatal SVT cannot be randomised for want of patients. **A framework built to grade randomised evidence
+returns "not applicable" because there is none, which is the correct output. The failure mode is issuing the
+same advice without the label — which is what most guidelines do.** **Rule: do not read a low graded fraction
+as a weak guideline until you have asked whether the question is randomisable.**
+
+**A NEW GRADING FRAMEWORK IN THE CATALOGUE — USPSTF, and it is the first in a month of reporting here**
+(verified by grepping the archive for "USPSTF" and "Preventive Services": no prior instance). The Canadian
+spinal-procedures guideline grades **A (strongest) to D (NOT RECOMMENDED), plus I (insufficient)**, certainty
+high/medium/low, **75% panel agreement**. **The structural difference matters: GRADE separates recommendation
+strength from evidence certainty and has no category for "do not do this"; USPSTF's D does exactly that.**
+**For a field whose central question is which injections are worth doing, a framework with an explicit "no" is
+the better instrument**, and "I" does the same job the French documents do with expert opinion by a different
+route. **Rule: record the framework, not just the counts — the framework determines what the document is
+capable of saying.**
+
+**A FUNDER ON THE GUIDELINE PANEL — name it, in both directions.** The Canadian panel included **patient
+partners AND representatives from provincial healthcare regulatory and funding bodies**, and the abstract says
+**"suggested frequency for repeated procedures"** was proposed — the single most financially consequential
+output a spinal-injection guideline can have. **It makes the guidance implementable and reimbursable; it also
+puts the payer in the room where repeat frequency is set.** **This closes, by composition, the gap the
+pathway thread has been tracking** (HRS prior authorization, 16 Oct; CCS transcatheter referral, 19 Oct).
+**Whether that is good practice or capture is not answerable from an abstract and should be stated either
+way.** **Rule: report panel composition whenever it is given; it is the most under-read line in a guideline
+abstract.**
+
+**ALL CONTENT AND NO STRUCTURE IS THE MIRROR OF ALL STRUCTURE AND NO CONTENT.** The STS borderline-left-heart
+consensus puts **actual numeric decision thresholds in its abstract** — indexed LV diastolic volume
+**< 25 ml/m²**, ascending aortic flow **< 2.0 L/min/m²**, plus valve sizes and endocardial fibroelastosis —
+and gives **no statement count, no grading scheme, no agreement figure.** **The French documents are the
+reverse.** **Rule: the two axes are independent and a document can be excellent on one and silent on the
+other; score both.**
+
+**A SURGICAL SOCIETY RECOMMENDING LESS IMMEDIATE SURGERY IS WORTH NOTING AS A DIRECTION.** STS: "primary
+biventricular repair should be adopted cautiously", "most neonates recommended for staged recruitment rather
+than primary repair" — a slower pathway with more operations and more catheterisations. **Rule: note when a
+specialty society's recommendation runs against its own members' immediate interest; it raises confidence in
+the rest.**
+
+**THE DISTRIBUTION IS THE FINDING, AND DESCRIBING THE SCALE IS NOT REPORTING THE RESULT.** The Canadian
+guideline describes its A-to-D-plus-I framework in unusual detail and **never says how many of its 15 key
+recommendations are A, how many D and how many I.** **For a document whose value is telling clinicians which
+procedures to stop doing, a reader cannot tell whether it endorses most of them or rejects most of them.**
+**Rule: an abstract that explains its grading scheme without giving the counts scores badly on the disclosure
+axis, not well.**
+
+**"EVIDENCE-BASED" IS LEAST CREDIBLE WHERE LARGE TRIALS EXIST AND ARE NOT CITED AS HIGH-CERTAINTY.** The
+Chinese SCCM RRT guideline covers **timing of initiation and weaning** — questions that do have large
+randomised trials (STARRT-AKI, AKIKI, ELAIN, IDEAL-ICU) — **with 34 recommendations and no grade
+distribution.** **A guideline covering genuinely well-trialled questions should be able to name its
+high-certainty recommendations; not doing so leaves its best-supported advice indistinguishable from its
+weakest.** **57 recommendations across two documents in six weeks from one society, neither with a
+distribution.** **Rule: weigh the missing distribution against how trialled the questions are.**
+
+**CONSUMABLE-LEVEL RECOMMENDATIONS CARRY PROCUREMENT CONSEQUENCES — flag them specifically.** The Chinese RRT
+guideline takes positions on **"application of specialized membrane filters"** and **"replacement fluid
+formulations"**, which most guidelines leave to local protocol and where industry interest concentrates.
+**Rule: the absence of a grade distribution matters more for consumable-level recommendations than anywhere
+else in a document.**
+
+**THE SIBLING-RECORD DEFECT RESOLVED WITHIN A DAY, so yesterday's recovery route bought exactly the day it
+needed to.** The SRLF atrial fibrillation document now appears in the sweep **with its DOI and abstract
+intact**; yesterday only the abstract-free, undated PMC record surfaced. **The defect was in the index, not the
+deposit.** **Rule stands and is now better understood: the full-text-XML route is worth running on the day,
+because waiting would have worked too but would have cost a day on a French society guideline.**
+
+**AN ABSENCE REPORTED AS AN ABSENCE, for a TRACKED society.** **ESICM position paper on equity, diversity and
+inclusion in intensive care** (`10.1007/s00134-026-08653-6`, *Intensive Care Medicine*, 19 Oct): **single
+Europe PMC record, no sibling, no PMCID, not open access, zero-length abstract**, and **the DOI redirects
+through Springer to an `idp.springer.com/authorize` endpoint — an authentication wall, not a page.** **Chasing
+an authorize redirect is not a recovery route and was not attempted further.** **Rule: a 303 to an identity
+provider is a block; record it, do not follow it.**
+
+**ANOTHER COUNT CLAIM FAILED VERIFICATION BEFORE PUBLISHING — third day running.** I wrote that the Chinese
+RRT guideline and the ADQI/ELSO statements were "three weeks apart"; **18 August to 12 October is 55 days,
+about eight weeks**, and it was corrected. **Day one it was "the third time this month" and "the second
+document this month"; day two it was nothing; today an interval.** **The rule is holding because it keeps
+being applied: compute every interval and every tally, never recall one.**
+
+**A RESEARCH ARTICLE ABOUT GUIDELINE ADHERENCE BELONGS TO THE BRIEF, NOT HERE.** A prospective clinical audit
+of adherence to international guidelines on **quantitative neuromuscular monitoring**
+(`10.1007/s10877-026-01492-2`, 20 Oct) surfaced in the keyword sweep. **It is a research article, so it goes to
+the brief queue — and it sits squarely in the brief's monitoring thread, which is the better home for it
+anyway.** **Rule: the scope boundary between the two routines is the document TYPE, not the subject.**
