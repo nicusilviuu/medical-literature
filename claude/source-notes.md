@@ -5354,3 +5354,95 @@ exactly this day; an empty sweep is a reason to spend the queue, never a reason 
 `<em>is</em>` inside an `<em>`-wrapped footer paragraph; the nesting-depth assertion returned max depth 2.
 **Fixed with `<i>` for the inner span, which is the recorded fix.** **The assertion has now paid for itself
 twice — keep it in the suite.**
+
+## 2026-10-22 (guidelines watch)
+
+**A PREDICTION THIS WATCH PUBLISHED WAS TESTED TODAY AND WAS WRONG IN THE INFORMATIVE DIRECTION.** Yesterday I
+wrote that the SFAR/SFPC medication-error recommendations were "the obvious next test of the three-document
+pattern, because it is the one French document to date that reports unanimity without reporting a grade
+distribution." **It does not withhold a grade distribution — it explains why there is not one, and did so
+BEFORE drafting.** The panel searched 20 years of literature, found almost no study powered to answer its
+primary criterion (whether an intervention reduces medication errors), and **formally reclassified the document
+from Formalized Expert Recommendations (RFE) to Professional Practice Guidelines (PPG) prior to writing the
+recommendations.** **Rule: a missing grade distribution has at least two causes — withholding, and a document
+class that does not require one. Read the Design section for a format decision before scoring the disclosure
+axis.**
+
+**SO THERE ARE TWO MECHANISMS FOR THE SAME HONESTY, and the catalogue needs both columns.**
+**(a) Label each recommendation** — SFAR/SOFMER 9 recs (3 graded, 6 EO, 2 abandoned); SRLF 18 (2, 16, 6);
+GFRUP 21 (5, 16, —). **(b) Relabel the document** — SFAR/SFPC 29 recommendations, no grade split by design,
+**ZERO questions abandoned.** **Four documents, 77 recommendations (29+9+18+21, computed).**
+**The trade-off is explicit and runs opposite ways: label each recommendation and some questions go
+unanswered; relabel the document and every question gets an answer of a weaker kind.** **Rule: say which trade
+a document made; both abstracts state it.**
+
+**CONFLICTS OF INTEREST AND INDUSTRY INDEPENDENCE DECLARED IN THE ABSTRACT — first instance in ~30 guideline
+abstracts reported here since late September.** SFAR/SFPC: "Potential conflicts of interest were formally
+declared at the outset … conducted independently of any industry funding." **For a medication-safety document,
+where makers of labelling systems, syringe pumps and prefilled syringes have obvious interests, this is the
+relevant disclosure and it is made where a reader meets it.** **Rule: record it when present; its absence is
+the norm and should stop being invisible.**
+
+**A MEDICATION-SAFETY GUIDELINE THAT TREATS DRUG SHORTAGES AS A PATIENT-SAFETY FIELD.** SFAR/SFPC's four
+fields: work environment and processes; human and organisational factors; post-hoc risk management; **the
+problem of drug shortages.** **Three of four are about the system rather than the drug, and the fourth is one
+almost no medication-safety guideline includes** — despite substitution of an unfamiliar presentation during a
+shortage being a well-documented error mechanism. **Rule: note which fields a safety guideline declines to
+treat as clinical.**
+
+**A SOURCING ERROR THAT CAME FROM OUTSIDE AND I CARRIED FOR TWO DAYS.** My backlog recorded the SFAR/SFPC
+guidelines as "published 24 June 2026", taken from a **web-search summary** on 20 October. **The index gives
+first publication 26 November 2025 in a 2026 issue — eleven months old, not four.** **Four days running a
+check has caught a date or a count before publication, and this is the first of the four that originated
+OUTSIDE this archive rather than in my own memory.** **Rule extended: a date from a web search is a lead, not
+a fact. Confirm it against the index before it enters the backlog, not when the item is finally written up.**
+
+**A CONSENSUS THAT NAMES ITS OWN SURROGATE AS INADEQUATE AND REPLACES IT WITH A DIRECT TEST — the cleanest
+instance yet for the monitoring thread.** Swiss desmopressin consensus: **"A desmopressin trial is recommended
+to verify tolerability and identify responders, as the response to the drug is not predictable based on
+baseline levels of factor VIII and von Willebrand factor."** **Conditions 1 and 2 met emphatically — and
+uniquely, the guidance STATES WHY the surrogate fails rather than assuming it; condition 3 absent (no outcome
+measured by anything but the test).** **Same shape as closed-loop oxygen, better reasoning, because the
+surrogate's failure is established pharmacology rather than an assumption.**
+
+**"BEFORE EVERY ADMINISTRATION" IS A DIFFERENT INSTRUCTION FROM "ONCE PER PATIENT" — read dosing cautions for
+their frequency.** Desmopressin: "Previously observed side effects and current contraindications must be
+carefully evaluated **prior to every administration**." **Hyponatraemia accumulates through free-water
+retention and tachyphylaxis makes repeat doses less effective, so the risk-benefit inverts on day two — which
+is where a perioperative team is least likely to re-check.** **Rule: when a caution specifies a frequency, it
+is targeting the repeat dose, and that is the clinically useful part.**
+
+**TWO GUIDELINES THREE WEEKS APART THAT DO NOT QUITE MEET, AND THE QUALIFICATION IS THE INTERESTING PART.**
+AANA recommends "consideration of desmopressin" in classical, classical-like, kyphoscoliotic and vascular EDS
+(1 Oct); the Swiss consensus lists its indications as non-severe haemophilia A, VWD, bleeding disorders of
+unknown cause, and mild platelet function disorders (30 Sep) — **EDS is not named.** **NOT a contradiction: an
+individual EDS patient with a bleeding tendency and no factor deficiency may fall under "bleeding disorders of
+unknown cause" or "mild platelet function disorders".** **The anaesthesia guideline licenses by SYNDROME; the
+haematology consensus licenses by HAEMOSTATIC PHENOTYPE and demands a test dose.** **They reconcile by doing
+what the Swiss document says — establish whether this patient responds rather than inferring from the
+diagnosis — and neither states it, because neither knows about the other.** **Rule: when two guidelines from
+different specialties touch the same drug, compare their INDICATION LISTS, not their recommendations.**
+
+**MECHANISM MATTERS WHEN A DRUG IS RECOMMENDED OUTSIDE ITS DEVELOPED INDICATION.** Desmopressin releases stored
+von Willebrand factor and raises factor VIII; **EDS bleeding is connective-tissue and vessel-wall — abnormal
+collagen giving fragile vessels and poor platelet adhesion to subendothelium.** **Raising VWF where collagen is
+the defect is plausible and not obvious, which is precisely the case for a test dose over a syndrome-level
+recommendation.**
+
+**A 100% CONSENSUS RATE ON SEVEN STATEMENTS FROM FIFTEEN RATERS IS A STATEMENT ABOUT THE PANEL.** AANA EDS:
+consensus on all seven by round three, and the authors say "limited by sample size and gaps in existing
+evidence". **Rule: report the consensus rate alongside the number of statements; 7/7 and 29/34 mean different
+things.**
+
+**THE THREE SWEEP PATTERNS, AND NEITHER SWEEP IS A SUPERSET IN EITHER DIRECTION.** 20 Oct: keyword sweep
+carried all four items, publication-type sweep would have given an empty day. 21 Oct: keyword sweep alone found
+the Canadian guideline and the ESICM paper. **22 Oct: the REVERSE — the publication-type sweep found the only
+new document and the keyword sweep missed it entirely**, because "Desmopressin (DDAVP): indications and
+practicalities" contains **no clinical keyword from the in-scope list** and is findable only by its four
+assigned publication types. **Rule confirmed three ways in three days: run both sweeps every day. A title can
+omit every clinical keyword, and a publication type can be `Review` instead of `Guideline`.**
+
+**SAME JOURNAL, DIFFERENT DEPOSIT BEHAVIOUR.** *Swiss Medical Weekly* deposited a full abstract for the
+desmopressin consensus (`10.57187/5030`) while the Swiss <i>C. difficile</i> document (`10.57187/5395`) has sat
+on the needs-a-PDF list with a provenance-only abstract. **Rule: a publisher's deposit quality is per-document,
+not per-journal. Do not generalise a block from one DOI to its neighbours.**

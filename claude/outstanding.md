@@ -3738,3 +3738,74 @@ not dominated by radiological atelectasis.**
 21 Oct 11,298, 22 Oct 891, **and `MED` / `PMC` still both 0 in today's bucket.** **The new source test gave the
 same answer at both ends of the run — the first consistent cross-run reading this instrument has produced
 without a revision attached.** **The 22 October journal batch had still not landed by 14:24.**
+
+## Recommendation-structure catalogue — updated 2026-10-22: TWO MECHANISMS, NOT ONE PATTERN
+
+| Document | Recs | Graded | Expert opinion | Abandoned | Mechanism |
+| --- | --- | --- | --- | --- | --- |
+| **SFAR/SFPC medication errors (26 Nov 2025)** | **29** | **— by design** | **— by design** | **0** | **FORMAT CHANGED IN ADVANCE: PPG not RFE** |
+| SFAR/SOFMER withdrawing LST (19 Oct) | 9 | 3 | 6 | 2 | labelled per recommendation |
+| SRLF atrial fibrillation in adult ICU (20 Oct) | 18 | 2 | 16 | 6 | labelled per recommendation |
+| GFRUP paediatric SVT in PICU (21 Oct) | 21 | 5 | 16 | not stated | labelled per recommendation |
+| **Four documents** | **77** | — | — | — | — |
+
+**YESTERDAY'S PREDICTION WAS WRONG AND THAT IS THE FINDING.** I expected SFAR/SFPC to be the counter-case —
+unanimity without a grade distribution. **It is the pattern taken further: the panel found its primary
+criterion unanswerable by any powered study and RECLASSIFIED the document before drafting.** **Rule: a missing
+grade distribution has two causes — withholding, and a document class that does not require one.**
+
+**THE TRADE-OFF RUNS OPPOSITE WAYS AND BOTH ABSTRACTS STATE IT: label each recommendation and some questions
+go unanswered (2, 6, —); relabel the document and ZERO questions go unanswered but every answer is of a weaker
+class.**
+
+**New entries on the disclosure axis:** SFAR/SFPC is the **first of ~30 guideline abstracts since late
+September to declare conflicts of interest AND industry independence in the abstract.** AANA EDS: **7
+statements, 15 raters, 100% consensus by round 3, and the authors name sample size as a limitation.**
+
+## Desmopressin / indication-list mismatch — opened 2026-10-22
+
+| Document | Licenses by | Covers EDS? |
+| --- | --- | --- |
+| AANA anaesthesia guidelines for EDS (1 Oct) | **syndrome** — "consideration of desmopressin" in classical, classical-like, kyphoscoliotic, vascular EDS | yes, by name |
+| Swiss Society of Haematology desmopressin consensus (30 Sep) | **haemostatic phenotype** — non-severe haemophilia A, VWD, bleeding disorders of unknown cause, mild platelet function disorders | **not named** |
+
+**Not a contradiction: an EDS patient with a bleeding tendency and no factor deficiency may fall under
+"bleeding disorders of unknown cause" or "mild platelet function disorders".** **They reconcile by doing what
+the Swiss document says — a test dose to identify responders, because response is not predictable from
+baseline FVIII/VWF — and neither document states it, because neither knows about the other.**
+**What would extend it: any document that licenses desmopressin in EDS by phenotype rather than syndrome, or
+response data in EDS patients specifically.**
+
+## Monitoring thread — sixth entry, and the first to name its own surrogate as inadequate
+
+| Document | C1 | C2 | C3 | Note |
+| --- | --- | --- | --- | --- |
+| **Swiss desmopressin consensus (today)** | **met, and UNIQUELY states WHY the surrogate fails** | **met — responders get the drug, non-responders do not** | **absent** | "response … not predictable based on baseline levels of factor VIII and von Willebrand factor" |
+
+**Same shape as closed-loop oxygen (1 and 2, not 3) but better reasoned, because the surrogate's failure is
+established pharmacology rather than an assumption.** **Thread stays open.**
+
+## Guidelines backlog after 2026-10-22
+
+**Readable (2):** ESPNIC neonatal therapeutic hypothermia comparison (`10.1016/j.lanepe.2026.101874`) —
+borderline, compares guidelines rather than issuing one; ERS/ESRS CPAP for adult OSA
+(`10.1183/13993003.01186-2026`).
+
+**Needs a PDF (9):** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i> (`10.57187/5395`) — **note
+today's desmopressin consensus is from the SAME journal with a full abstract, so deposit quality is
+per-document, not per-journal**; ASGE remimazolam update (processed-EEG only); SCCT coronary CTA
+(`10.1016/j.jcct.2026.08.014`); **ASA PeRLS update (`10.1097/aln.0000000000006260`) — still highest
+priority**; EACTS/STS/AATS temporary MCS expert analysis (`10.1053/j.jvca.2026.09.028`); ERC 2025 adult ALS
+corrigendum (`10.1016/j.resuscitation.2026.111313`); ESICM equity/diversity/inclusion position paper
+(`10.1007/s00134-026-08653-6`); **NEW — companion editorial to the SFAR/SFPC guidelines
+(`10.1016/j.accpm.2025.101719`, 27 Nov 2025, no abstract), which may say why the panel reclassified the
+document.**
+
+**Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
+**Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
+**index-date month audit for October: 1 November**; next lagged pass **~10 November**.
+
+**SWEEP-PATTERN LOG — neither sweep is a superset, confirmed three different ways in three days:**
+**20 Oct** keyword sweep carried all four items (publication-type sweep → empty day). **21 Oct** keyword sweep
+alone found the Canadian guideline and the ESICM paper. **22 Oct REVERSED — publication-type sweep found the
+only new document; keyword sweep missed it entirely** (no in-scope clinical keyword in its title).
