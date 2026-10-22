@@ -3733,3 +3733,8 @@ protocol for acting on the measurement. Two of twelve bounds what the review can
 
 **Thread stays open. What would settle it is still EIT against another individualisation method, on a composite
 not dominated by radiological atelectasis.**
+
+**END-OF-RUN READ, 14:24:18 (17 min after start): EVERY FIGURE IDENTICAL** — whole database 49,111,254,
+21 Oct 11,298, 22 Oct 891, **and `MED` / `PMC` still both 0 in today's bucket.** **The new source test gave the
+same answer at both ends of the run — the first consistent cross-run reading this instrument has produced
+without a revision attached.** **The 22 October journal batch had still not landed by 14:24.**
