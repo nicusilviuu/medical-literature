@@ -5217,3 +5217,140 @@ of adherence to international guidelines on **quantitative neuromuscular monitor
 (`10.1007/s10877-026-01492-2`, 20 Oct) surfaced in the keyword sweep. **It is a research article, so it goes to
 the brief queue — and it sits squarely in the brief's monitoring thread, which is the better home for it
 anyway.** **Rule: the scope boundary between the two routines is the document TYPE, not the subject.**
+
+## 2026-10-22 (brief)
+
+**THE INDEX INSTRUMENT'S MECHANISM, FOUND BY DECOMPOSING `FIRST_IDATE` BUCKETS BY `SRC`. This supersedes four
+days of statistical guessing with a measurement.**
+
+| Index date | MED | PMC | PPR | other | total |
+| --- | --- | --- | --- | --- | --- |
+| Sat 17 Oct | 2,826 | 0 | 805 | 0 | 3,631 |
+| Sun 18 Oct | 0 | 0 | 0 | 0 | 0 |
+| Mon 19 Oct | **37,183** | 4,704 | 454 | 2 | 42,343 |
+| Tue 20 Oct | **0** | **0** | 845 | 7 | 852 |
+| Wed 21 Oct | 8,620 | 1,532 | 1,132 | 14 | 11,298 |
+| Thu 22 Oct 14:08 | **0** | **0** | 890 | 1 | 891 |
+
+**MEDLINE arrives as a DAILY BATCH of 0 to 37,000. Preprints run 450–890/day continuously (but were 0 on
+Sunday 18 Oct). The same-day count has been mixing two streams with different schedules.**
+
+**THE TEST IS NOW MECHANICAL, NOT STATISTICAL. Rule: decompose today's bucket with
+`SRC:MED AND FIRST_IDATE:<today>`.**
+- **`MED` = 0 → the journal batch has NOT started. The day's total is unknown: it may stay near 900 (20 Oct) or
+  reach 40,000 (19 Oct).**
+- **`MED` > 0 → the batch HAS started. This does NOT mean it has finished** — 19 Oct had MED non-zero at 14:04
+  and was only 20.6% complete, because a 37,000-record batch was mid-flight.
+- **The decomposition buys the single most informative bit and no more. Say so: the previous four revisions all
+  failed by claiming more than the measurement gave.**
+
+**20 OCTOBER RECEIVED ZERO MEDLINE AND ZERO PMC RECORDS, EVER.** Its 852 is the preprint stream. **So "20
+October was a near-empty day" is true of journal ingest and false of preprints — and the earlier framing
+("unreadable as low", then "a lower bound of unknowable tightness") was groping at this.**
+
+**"FINAL" IS NEVER AVAILABLE AND I USED THE WORD TWICE.** 20 Oct read 853 yesterday, called final twice
+("settles it as final"); it reads **852** today. **16 Oct: 37,260 peak → 37,243 → 35,902 today, down 1,358
+(−3.64%).** **This page published "every backward-looking count is an upper bound" on 21 October and then
+contradicted it in the same footer.** **Rule: never write "final" of an index count. Write "last read" and the
+timestamp.**
+
+**A MEDLINE DECREMENT IS NOT UNPRECEDENTED — checked before claiming it.** `MED` −186 today. **MED fell 53,519
+during the 16 October rollback that reversed in 19 minutes** (archive, outstanding.md). **So today is the first
+SMALL MED decrement outside a rollback event, not the first MED decrement.** **Fourth day running that
+grepping the archive corrected a claim before publication.**
+
+**NET CAN EXCEED NEW-BUCKET GROWTH, AND NO PAST BUCKET GREW — both tested, not assumed.** Net +1,799 while the
+21–22 Oct buckets gained only +1,164 and 16/19/20 Oct all shrank. **I tested whether a past bucket can grow by
+re-reading 13–18 October: 13 Oct 63,473, 14 Oct 2, 15 Oct 1, 17 Oct 3,631, 18 Oct 0 — all exactly at or below
+their last recorded values. The 19 October correction holds: a past bucket cannot grow, but can shrink.**
+**The extra net sits in PMC +1,087 and PPR +883, which carry OLD first-index-dates** (PMC has 9,502 records
+with a September 2026 index date; PPR 22,509). **Rule: `FIRST_IDATE` buckets track MEDLINE-style ingest; PMC
+and preprint backfill lands in old buckets, so source and index date are not aligned.**
+
+**A QUERY TRAP THAT IS THE EXACT MIRROR OF THE RECORDED PMCID ONE.**
+`DOI:10.1016/s2468-2667(26)00200-8` → **0 hits**; `DOI:"10.1016/s2468-2667(26)00200-8"` → **1 hit**. The
+parentheses need quoting. **Whereas `PMCID:"PMC1239592"` → 0 and `PMCID:PMC1239592` → 1 (16 Oct).** **Rule:
+quoting is required for a DOI containing parentheses and fatal for a PMCID. Try both forms before concluding a
+record is absent — in opposite directions.**
+
+**A TITLE THAT ASSERTS IN THE INDICATIVE WHAT THE PAPER'S OWN TRIAL SEQUENTIAL ANALYSIS DENIES. New worst case
+for the catalogue.** Title: "Vasopressors Combination Therapy … **Improve** Septic Shock Outcome". Final
+result sentence: "**TSA indicated lack of firm evidence for a beneficial effect.**" Conclusion, honestly: "may
+reduce … (low quality of evidence)". **The overstatement is confined to the one line that gets indexed and
+cited by everyone who never opens the paper.** **Rule: read the title against the TSA sentence specifically; a
+TSA exists to say "not yet", and a title can contradict it while the conclusion does not.**
+
+**THREE OF FOUR UPPER BOUNDS AT UNITY IS THE SHAPE, AND IT IS VISIBLE WITHOUT THE TEXT.** 0.99, 1.00, 1.00
+(plus digital ischaemia 4.27). **Rule: list the interval bounds in a column before reading the prose; a run of
+0.99/1.00 upper bounds tells you what the TSA will say.**
+
+**A SUBGROUP CLAIM WITH AN IDENTICAL POINT ESTIMATE IS NOT A SUBGROUP FINDING.** Overall mortality RR
+**0.90** (0.83–0.99); "more severe" subgroup RR **0.90** (0.81–1.00). **Same point estimate; only the interval
+closes differently.** **So "benefit mainly appeared in more severe patients" rests on where an interval lands,
+not on a different effect.** **Easier to catch than MODEST's version because both estimates are printed side
+by side.** **Rule: compare the subgroup's POINT ESTIMATE with the overall one before believing an
+effect-modification claim.**
+
+**"GRADE-ASSESSED" IN A TITLE WITH NO CERTAINTY RATING ANYWHERE IN THE ABSTRACT.** The paediatric fluids
+meta-analysis says certainty was rated "for all outcomes" in its methods and gives not one rating in results
+or conclusion. **Fourth day running this archive has met a document that describes its grading framework and
+withholds the result — but the first time in a META-ANALYSIS, and the first with the framework in the title.**
+**Rule: the disclosure failure is not a guidelines-only phenomenon; apply the same test to meta-analyses.**
+
+**DISTINGUISH A DELIVERY CHECK FROM A PATIENT OUTCOME WHEN BOTH ARE CALLED "SIGNIFICANT".** Balanced solutions
+reduced hyperchloraemia RR 0.65 (0.57–0.75), SE ≈ 0.07 — **the tightest estimate in the paper and the least
+interesting, because balanced solutions contain less chloride: it confirms the intervention was delivered.**
+Renal replacement RR 0.68 (0.47–0.97), SE ≈ 0.18 — **upper bound clears unity by 0.03, a hard
+operator-independent endpoint, and the finding that matters.** **The conclusion's single word "significant"
+carries both.** **Rule: separate the tautological secondary from the consequential one and say which is
+which.**
+
+**A USEFUL NULL IS NOT AN ABSENCE OF EVIDENCE — bound it in absolute terms.** Mortality 3.5% vs 3.7%, RR 0.97
+(0.81–1.16) in 9,743 children → **between 0.7 fewer and 0.6 more deaths per hundred.** **Rule: convert a null
+RR interval into absolute risk before calling it uninformative; at this size it excludes anything clinically
+important.**
+
+**A REVIEW CAN RECOMMEND MEASUREMENT-GUIDED THERAPY ON EVIDENCE WHERE ALMOST NOBODY ACTED ON THE MEASUREMENT.**
+Meropenem on CRRT: **12 studies, 4 used routine TDM, only 2 had a protocol that changed the dose**; the
+clinical-outcome claim rests on **one adjusted observational analysis at very low certainty.** **Against the
+three conditions: 1 met (a drug concentration IS exposure, not a surrogate for it); 2 met in one sixth of the
+evidence base; 3 nominally met and evidentially thin.** **The inverse of the 21 October EIT trial, which
+randomised the measurement, protocolised the response and had an adjudication team score the outcome.**
+**Rule: count how many of a review's studies had a protocol for acting on the measurement; that fraction, not
+the number of studies, bounds what the review can recommend.**
+
+**A STEPPED-WEDGE'S CENTRAL VULNERABILITY IS THE TIME TREND, AND THE ADJUSTED ANALYSIS IS THE REAL RESULT.**
+Bystander CPR: primary adjusted OR **1.54 (1.09–2.19)**, but **1.38 (0.98–1.94)** after adjusting for
+cluster-specific secular trends and **1.39 (0.97–1.98)** after baseline characteristics — significant in four
+of six prespecified sensitivity analyses. **Every cluster crosses in the same direction, so the intervention
+is confounded with calendar time by construction.** **Rule: in a stepped-wedge, find the secular-trend-adjusted
+estimate and treat it as the headline.**
+
+**A TRIAL SPANNING 2020 WHOSE VALIDITY TURNS ON TIME-TREND MODELLING SHOULD SAY WHAT IT DID ABOUT THE
+PANDEMIC.** Recruitment ran **27 Aug 2018 to 20 Feb 2022** and the abstract does not mention COVID. **Bystander
+willingness, dispatcher protocols and public behaviour all changed in 2020–21, in both directions and at
+different times by region.** **Rule: check the recruitment window of any secular-trend-sensitive design against
+2020; if it spans it and the abstract is silent, that is the first thing to look for in the full text.**
+
+**ATTRITION WITH A CREDITABLE REASON IS STILL ATTRITION — report both.** 2,160 recruited → **1,684 (78.0%)**
+in ITT; **476 (22%) dropped because they came from two agencies that REPLACED withdrawals.** Restricting to the
+12 originally randomised clusters is the right call for randomisation integrity and costs a fifth of the data.
+**Arms unequal at 998:686 (1.45), which a stepped-wedge produces by design.**
+
+**THE MONITORING THREAD'S STRONGEST VERSION OF THE PROCESS-WITHOUT-OUTCOME PATTERN.** Bystander CPR rose 9.6
+points and **the trial states the clinical outcome did not improve.** **Stronger than closed-loop oxygen
+because bystander CPR is not a surrogate invented for a trial — it is the link in the chain of survival that
+observational data most consistently associates with survival.** **And the most likely explanation, that the
+trial was far too small to detect a survival difference, is one the abstract does not quantify.** **Rule: when
+a process measure moves and the outcome does not, ask whether the trial was powered for the outcome at all
+before concluding the process does not matter.**
+
+**WHEN THERE IS NO NEW MATERIAL, SAY SO AND USE THE QUEUE.** Today's sweep: 41 hits, 41 returned, all but one
+read yesterday, because MEDLINE contributed nothing to today's index date. **All four items came off the
+queue, all published 19 October or later, none presented as newer than it is.** **Rule: the queue exists for
+exactly this day; an empty sweep is a reason to spend the queue, never a reason to stretch recency.**
+
+**THE 14 OCTOBER NESTED-`<em>` HAZARD FIRED AGAIN AND THE CHECK CAUGHT IT PRE-PUBLISH.** I wrote
+`<em>is</em>` inside an `<em>`-wrapped footer paragraph; the nesting-depth assertion returned max depth 2.
+**Fixed with `<i>` for the inner span, which is the recorded fix.** **The assertion has now paid for itself
+twice — keep it in the suite.**

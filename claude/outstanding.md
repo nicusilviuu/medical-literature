@@ -3641,3 +3641,95 @@ belongs to the brief's monitoring thread.**
 **Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
 **Dated:** three abstract-free ISHLT documents **25 October**; AHA/ACC perioperative re-check **7 November**;
 **index-date month audit for October: 1 November**; next lagged pass **~10 November**.
+
+## Index after 2026-10-22 — THE MECHANISM, and the instrument is now measurable
+
+**Start of run, 14:06:52.** Whole database **49,111,254**, residual 0, **+1,799** on yesterday's 14:05:53
+reading. `PMC` **1,013,187** (+1,087) · `PPR` **1,267,834** (+883) · `NBK` **28** (+14) · `CTX` **3,922** (+1) ·
+`MED` **41,247,770** (**−186**) · `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 ·
+`HIR` 2,868 · `CIT` 624 unchanged. **The five changes sum to 1,799 exactly.**
+
+**SOURCE DECOMPOSITION OF THE INDEX BUCKETS — this is the standing instrument from now on:**
+
+| Index date | MED | PMC | PPR | other | total |
+| --- | --- | --- | --- | --- | --- |
+| Sat 17 Oct | 2,826 | 0 | 805 | 0 | 3,631 |
+| Sun 18 Oct | 0 | 0 | 0 | 0 | **0** |
+| Mon 19 Oct | **37,183** | 4,704 | 454 | 2 | 42,343 |
+| Tue 20 Oct | **0** | **0** | 845 | 7 | 852 |
+| Wed 21 Oct | 8,620 | 1,532 | 1,132 | 14 | **11,298 (last read)** |
+| Thu 22 Oct 14:08 | **0** | **0** | 890 | 1 | 891 |
+
+**STANDING ACTION, REVISED AND SIMPLIFIED: run `SRC:MED AND FIRST_IDATE:<today>` at the start of every run.**
+**MED = 0 → the journal batch has not started; today's total is unknown and the sweep will find nothing new.**
+**MED > 0 → the batch has started, but NOT necessarily finished (19 Oct: MED non-zero at 14:04, 20.6%
+complete).** **Still read the eleven sources, both windows, and the previous day's bucket at start AND end, and
+label every number with its instant.**
+
+**YESTERDAY'S TEST RETURNED IN FAVOUR: 21 Oct finished on 11,298**, so 10,171 at 14:06 was **90.0%** and 11,025
+at 14:16 was 97.6%. **Fractions now: 17 Oct ~100%, 19 Oct 20.6%, 20 Oct 99.3%, 21 Oct 90.0% — the single low
+one is the 37,183-record batch day.**
+
+**CORRECTION 7 — "FINAL" IS NEVER AVAILABLE.** 20 Oct read 853 yesterday and was called final twice; it reads
+**852** today. **16 Oct: 37,260 peak → 37,243 → 35,902, down 1,358 (−3.64%).** **Write "last read" plus the
+timestamp, never "final".**
+
+**PAST BUCKETS STILL CANNOT GROW — tested today, not assumed.** Re-read 13–18 Oct: 13 Oct 63,473, 14 Oct 2,
+15 Oct 1, 17 Oct 3,631, 18 Oct 0 — **all at or below their last recorded values.** **The 19 October correction
+holds.** **The net rise exceeding new-bucket growth is explained instead by PMC and PPR backfill carrying OLD
+first-index-dates** (PMC holds 9,502 records with a Sep 2026 index date; PPR 22,509). **So `FIRST_IDATE`
+tracks MEDLINE-style ingest and misses PMC/preprint backfill.**
+
+**`MED` −186 is the first SMALL MEDLINE decrement outside a rollback** — MED fell 53,519 during the 16 October
+rollback that reversed in 19 minutes. **Checked against the archive before claiming a first.**
+
+**Reference windows: 1–30 Sep 162,940 (−103, second day shrinking) · 1–7 Oct 43,679 (+160).**
+
+## Brief queue after 2026-10-22
+
+**TODAY WAS THE DAY THE QUEUE EXISTS FOR.** Sweep returned 41 hits, 41 returned, all but one read yesterday,
+because MEDLINE contributed zero records to today's index date. **All four items came off the queue, all
+published 19 October or later.**
+
+**Written up today (all cleared from the queue):** norepinephrine plus vasopressin-receptor agonists in septic
+shock; balanced solutions versus normal saline in paediatric septic shock; meropenem exposure and TDM during
+CRRT; the French bystander-CPR stepped-wedge trial.
+
+**Held (10), plus 1 added:**
+
+| Item | DOI |
+| --- | --- |
+| Intrathecal drug delivery systems for chronic pain | `10.1136/rapm-2025-107226` |
+| HFNC vs NIV to prevent reintubation | `10.1097/cce.0000000000001452` |
+| Intercostal nerve cryoablation vs thoracic epidural | `10.1093/ejcts/ezag203` |
+| IgM-enriched immunoglobulin in sepsis | `10.1097/cce.0000000000001451` |
+| Indirect-calorimetry-guided nutrition during weaning | `10.1186/s13054-026-06272-7` |
+| Minimally invasive vs sternotomy, redo mitral surgery | `10.1161/jaha.126.050284` |
+| Intraoperative dexmedetomidine and delirium, head and neck cancer | `10.2147/dddt.s598574` |
+| Robotic-assisted vs conventional CABG — SR/MA | `10.1186/s13019-026-04684-8` |
+| HFOT-based spontaneous breathing trial | `10.3760/cma.j.cn121430-20260408-00165` |
+| Opioid-free vs opioid-based anaesthesia, robotic prostatectomy | `10.1007/s11701-026-04028-7` |
+| **Audit of adherence to international guidelines on quantitative neuromuscular monitoring (handed over from the guidelines watch; belongs in the monitoring thread)** | `10.1007/s10877-026-01492-2` |
+
+**Backstop: 1–25 August window, 343 unseen. Next window if needed: 1–31 July.**
+
+## Monitoring thread — five entries, and today's two fail different conditions
+
+| Document | C1 measurement closer to pathology | C2 protocol converts number to action | C3 outcome measured by something else | Result |
+| --- | --- | --- | --- | --- |
+| EIT-guided PEEP feasibility, <i>Anesthesiology</i> (19 Sep) | met | met | **FAILED — outcome was the instrument** | PPCs 25% vs 41% historical, P = 0.17 |
+| **EIT-guided PEEP RCT, <i>BJA</i> (21 Oct)** | met | met | **met — adjudication team** | **49.2% vs 72.4%, HR 0.53** |
+| Closed-loop oxygen (17 Oct) + oxygen-target meta-analysis (20 Oct) | **FAILED — set-point carries no outcome** | met | met | null |
+| **Meropenem TDM on CRRT (today)** | **met emphatically — a concentration IS exposure, not a surrogate** | **met in 2 of 12 studies** | **nominally met: 1 adjusted observational analysis, very low certainty** | recommendation outruns evidence |
+| **Bystander CPR stepped-wedge, France (today)** | **FAILED in the same shape as oxygen — process moved, outcome did not** | **met emphatically: 60 s to recognition, 60 s to compression** | met — CPR observed independently | **+9.6 points process, NO clinical benefit, and the adjusted OR is 1.38 (0.98–1.94)** |
+
+**The bystander-CPR case is the STRONGEST version of the process-without-outcome pattern yet, because bystander
+CPR is not a surrogate invented for a trial — it is the chain-of-survival link observational data most
+consistently associates with living.** **Open question it raises: was the trial powered for survival at all?
+The abstract does not say, and that is the first thing to check in the full text.**
+
+**The meropenem case adds a new way to score condition 2: count the fraction of a review's studies that had a
+protocol for acting on the measurement. Two of twelve bounds what the review can recommend.**
+
+**Thread stays open. What would settle it is still EIT against another individualisation method, on a composite
+not dominated by radiological atelectasis.**
