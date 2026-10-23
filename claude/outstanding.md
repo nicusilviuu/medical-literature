@@ -3900,3 +3900,72 @@ one.**
 **NEW TEST FOR TOMORROW, stated as a test and not a conclusion, given this week's record:** a flat end-of-run
 reading paired with `MED` > 0 may indicate the batch is COMPLETE, which the morning test alone cannot say.
 **If 23 Oct still reads 7,505 tomorrow, the pairing is informative; if it rises, it is not.**
+
+## Guidelines watch after 2026-10-23 — a gap found, and the fourth sweep pattern
+
+**SWEEP-PATTERN LOG, four days, four patterns — neither sweep is ever a superset:**
+**20 Oct** keyword carried all four (publication-type → empty day). **21 Oct** keyword alone found the Canadian
+guideline and the ESICM paper. **22 Oct REVERSED** — publication-type found the only new document.
+**23 Oct** publication-type returned 2 hits, **neither in scope** (WHO obesity, children and adolescents);
+keyword carried all four items.
+
+**NEW NAMED TARGET — a guideline this archive has missed entirely: the 2026 EUSEM acute pain guidelines.**
+Found because today's implementation paper cites them by name. **A grep of the whole archive returns no mention
+of EUSEM.** Not on the tracked society list; **acute pain in the ED is primary scope.** **No DOI in hand — to
+be located by title search on the next run.**
+**ROUTE RULE: implementation papers, toolkits and "guideline highlights" pieces name the guideline they
+implement, so they are a route to guidelines the society list misses.**
+
+## Pathway thread — four failure points, and only one is about money
+
+| Document | Where the recommendation fails to become a treatment |
+| --- | --- |
+| HRS prior authorization (16 Oct) | **payers deny** guideline-indicated procedures |
+| CCS/CSCS/CAIC transcatheter update (19 Oct) | **eligible patients are never referred** |
+| Canadian spinal procedures for chronic pain (22 Oct) | **the funder sat on the panel** — dissolves the middle |
+| **Acute pain 10-domain toolkit (today)** | **the clinician at the bedside knows the recommendation and does not act on it** (oligoanalgesia) |
+
+**"Implementation gap" is not one thing. Record WHERE it fails.** **What would extend it: evidence that any of
+the four interventions changed uptake.**
+
+## Surviving Sepsis Campaign 2026 — five documents in this archive
+
+| Document | Reported | Note |
+| --- | --- | --- |
+| Adult primary (`10.1097/ccm.0000000000007075`, pub 2026-03-23) | 1 Sep | SCCM / ESICM |
+| Paediatric primary | 1 Sep | — |
+| The dissenting opinion | 13 Oct | paywalled beyond abstract |
+| Controversies and future directions | 13 Oct | published same day as the dissent |
+| **Hospitalist "guideline highlights" (today)** | today | **584-char abstract, pure masthead, NO recommendation** |
+
+**The two facts today's derivative does contribute: "no industry funding", and the revision cycle
+2004/2008/2012/2016/2021/2026 — so the 2026 edition arrived on schedule, not early.**
+**A reader wanting the actual recommendations is still better served by the dissent, which argues with
+specifics.**
+
+## AHA/ACC perioperative — TWO documents, confirmed by DOI query
+
+| Document | Status |
+| --- | --- |
+| **2026 AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM guideline** (`10.1161/cir.0000000000001472`, <i>Circulation</i>, fpd 2026-09-28, abstract 1,214 chars) | **UNREADABLE since 30 Sep** — Cloudflare JS challenge both publisher pages, no shell route. Monthly re-check **7 November** |
+| **2024 AHA/ACC guideline** — reviewed in today's item (`10.1016/j.aan.2026.05.004`, <i>Advances in Anesthesia</i>, 18 Aug 2026) | the readable PREDECESSOR; itself a decennial update of 2014 |
+
+**Today's review is scaffolding for the 7 November re-check, not current guidance** — published six weeks
+before the 2026 version and already superseded. **Its one substantive preserved detail: postoperative
+surveillance for myocardial injury after noncardiac surgery is a named section, so that is where to look first
+in the 2026 document.**
+
+## Guidelines backlog after 2026-10-23
+
+**Readable (2):** ESPNIC neonatal therapeutic hypothermia comparison (`10.1016/j.lanepe.2026.101874`);
+ERS/ESRS CPAP for adult OSA (`10.1183/13993003.01186-2026`).
+**Named targets to find (1, NEW):** **2026 EUSEM acute pain guidelines** — locate by title search.
+**Needs a PDF (9), unchanged:** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i>
+(`10.57187/5395`); ASGE remimazolam update; SCCT coronary CTA (`10.1016/j.jcct.2026.08.014`); **ASA PeRLS
+update (`10.1097/aln.0000000000006260`) — highest priority**; EACTS/STS/AATS temporary MCS expert analysis
+(`10.1053/j.jvca.2026.09.028`); ERC 2025 adult ALS corrigendum (`10.1016/j.resuscitation.2026.111313`);
+ESICM equity/diversity/inclusion (`10.1007/s00134-026-08653-6`); SFAR/SFPC companion editorial
+(`10.1016/j.accpm.2025.101719`).
+**Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
+**Dated:** three abstract-free ISHLT documents **25 October — TWO DAYS AWAY**; AHA/ACC perioperative re-check
+**7 November**; index-date month audit for October **1 November**; next lagged pass **~10 November**.

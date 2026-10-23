@@ -5566,3 +5566,88 @@ patient recall, altered by the drug. Music therapy — observer ratings and clin
 monitors flat. PULSE Ox — a radiological reading, in the wrong direction, on three patients an arm.
 Haemoadsorption — interleukin-6 and tumour necrosis factor, measured, null, and reported as such alongside a
 TSA that declines to claim futility either.** **The honest one is the one with nothing to report.**
+
+## 2026-10-23 (guidelines watch)
+
+**A GAP FOUND, AND THE ROUTE THAT FOUND IT IS THE RULE: AN IMPLEMENTATION PAPER NAMES THE GUIDELINE IT
+IMPLEMENTS.** The acute pain position paper is built on "the 2026 EUSEM guidelines" — **European Society for
+Emergency Medicine acute pain recommendations, and a grep of this whole archive returns no mention of EUSEM at
+all.** EUSEM is not on the tracked society list; **acute pain in the emergency department is in primary
+scope.** **Rule: implementation papers, toolkits and "guideline highlights" pieces are a ROUTE to guidelines
+the society list misses, because they cite the guideline by name. Harvest the named guideline, not just the
+paper.**
+
+**FOURTH DISTINCT SWEEP PATTERN IN FOUR DAYS.** 20 Oct keyword-only (publication-type sweep → empty day).
+21 Oct keyword sweep alone found two items. 22 Oct the REVERSE — publication-type found the only new document.
+**23 Oct: publication-type returned 2 hits, NEITHER in scope (WHO obesity guidelines); keyword carried all
+four items.** **Four days, four patterns. The only safe conclusion is the one already recorded: run both.**
+
+**TWO CLAIMS CHECKED AGAINST THE ARCHIVE AND ONE ABANDONED — sixth consecutive day.**
+**(a) The AHA/ACC year.** Today's review names the **2024** guideline; this watch has tracked a **2026** one.
+Querying the recorded DOI (`10.1161/cir.0000000000001472`) confirmed **two different documents**: the 2026
+version is a NINE-society guideline (AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM) in *Circulation*, fpd
+2026-09-28, abstract 1,214 chars; the 2024 version is the predecessor, itself a decennial update of 2014.
+**Rule: when a derivative names a year different from the one in the backlog, query the recorded DOI before
+assuming either is wrong.**
+**(b) ABANDONED CLAIM: I was about to write that the primary SSC 2026 guidelines had never been reported here
+as an item.** **Both the adult and paediatric versions are in the 1 September entry** (adult:
+`10.1097/ccm.0000000000007075`, published 2026-03-23). **Checked by grepping items-block titles, which is the
+only reliable form.**
+
+**A GUIDELINE-COMPARISON DOCUMENT THAT MAPS DISAGREEMENTS IS THE RAREST AND MOST USEFUL CLASS THIS WATCH
+REPORTS.** The ESPEN appraisal: **four agreements** (initiate early after stabilisation; avoid acute-phase
+overfeeding; increase energy and protein progressively; anticipate refeeding syndrome) and **six
+disagreements** (acute-phase energy targets, protein dosing, enteral vs parenteral, supplemental parenteral,
+**indirect calorimetry**, enriched enteral formulas). **Rule: distinguish a document that compares national
+ADHERENCE (ESPNIC, borderline) from one that maps the guidelines' own substantive DISAGREEMENTS (this one, in
+scope in the strictest sense).**
+
+**AND THE STATED REASON FOR THE DISAGREEMENTS IS STRUCTURAL, NOT POLITICAL: "evidence largely derived from
+mechanically ventilated patients during the first ICU week."** **The insufficiently-addressed list is
+precisely everything outside that window** — prolonged critical illness, obesity, sarcopenia, post-extubation
+nutrition, post-ICU rehabilitation, nutrition after major surgery. **This is the SAME underlying fact as this
+week's French-speaking pattern, surfacing in a different place: three societies graded 10 of 48
+recommendations and SFAR/SFPC reclassified a whole document, all because the trials do not cover the
+questions.** **Here the same narrow base produces divergence BETWEEN documents instead of expert opinion
+WITHIN one.** **Rule: when guidelines disagree, look for the shape of the evidence base before looking for
+the methodology dispute.**
+
+**INDIRECT CALORIMETRY IS A GUIDELINE-LEVEL DISAGREEMENT, which is a stronger statement than any single
+trial.** A trial of calorimetry-guided nutrition during weaning (`10.1186/s13054-026-06272-7`) has been on the
+brief queue over a week. **The societies cannot agree whether to measure it at all.** **Feeds the monitoring
+thread: before asking whether measuring more precisely changes an outcome, check whether the field agrees the
+measurement is worth taking.**
+
+**CORE-VERSUS-CONTEXT-TRIGGERED IS A DESIGN CHOICE WORTH COPYING.** The acute pain toolkit: **10 domains, 6
+core (1,2,3,5,9,10) and 4 context-triggered (4,6,7,8)**, all briefly considered, specific tools "activated only
+when clinically relevant." **Most implementation frameworks present every element as mandatory and are
+therefore ignored wholesale.** **Rule: note whether an implementation document prioritises its own elements;
+one that tells a clinician which six always matter is more likely to be used.**
+
+**THE PATHWAY THREAD NOW HAS FOUR FAILURE POINTS AND ONLY ONE IS ABOUT MONEY.** HRS prior authorization
+(16 Oct) — payers deny. CCS transcatheter update (19 Oct) — patients never referred. Canadian spinal procedures
+(22 Oct) — funder seated on the panel, dissolving the middle. **Today — the clinician at the bedside who knows
+the recommendation and does not act on it (oligoanalgesia).** **Rule: "implementation gap" is not one thing;
+record WHERE the recommendation fails to become a treatment.**
+
+**A "CLINICAL GUIDELINE HIGHLIGHTS" ABSTRACT CAN BE PURE MASTHEAD WITH NO RECOMMENDATION IN IT.** The SSC 2026
+hospitalist summary: 584 chars giving title, release date, version history, developer, funder, target
+population — **and not one recommendation.** It is the journal's standard series template, so a deposit-format
+observation rather than an author failure. **Rule: for a "guideline highlights" series, expect the abstract to
+be metadata; its value is provenance (here: "no industry funding", and the 2004/2008/2012/2016/2021/2026
+revision cycle, establishing that 2026 arrived on schedule).**
+
+**FIVE DOCUMENTS ABOUT ONE GUIDELINE — one primary pair, two arguing about it, one restating its cover page.**
+SSC 2026 in this archive: adult primary + paediatric primary (1 Sep), dissenting opinion + controversies
+(13 Oct), hospitalist highlights (today). **Rule: count the derivatives; a guideline whose content reaches you
+mainly through commentary is one whose primary text is paywalled, and the dissent is often the most specific
+account available.**
+
+**A SUPERSEDED REVIEW CAN STILL BE WORTH REPORTING, BUT ONLY WITH THE REASON NAMED.** Today's AHA/ACC item
+reviews the 2024 guideline, was published 18 August 2026 — six weeks before the 2026 version — and its 604-char
+abstract names section headings rather than findings. **It earns its place solely because the 2026 guideline
+has been unreadable here since 30 September (Cloudflare JavaScript challenge, no shell route, monthly re-check
+7 November), and this is the readable scaffolding for it.** **The one substantive detail preserved:
+postoperative surveillance for myocardial injury after noncardiac surgery is a named section — which is where
+to look first in the 2026 version.** **Rule: report a superseded document only when it is the readable
+predecessor of one you cannot open, and say both things in the first sentence.**
