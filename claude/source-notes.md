@@ -5446,3 +5446,123 @@ omit every clinical keyword, and a publication type can be `Review` instead of `
 desmopressin consensus (`10.57187/5030`) while the Swiss <i>C. difficile</i> document (`10.57187/5395`) has sat
 on the needs-a-PDF list with a provenance-only abstract. **Rule: a publisher's deposit quality is per-document,
 not per-journal. Do not generalise a block from one DOI to its neighbours.**
+
+## 2026-10-23 (brief)
+
+**CORRECTION 8 — `FIRST_PDATE` WINDOWS CAN GROW; `FIRST_IDATE` BUCKETS CANNOT. I collapsed the two
+yesterday.** Yesterday's published claim: "every backward-looking number in this instrument is an upper
+bound." **1–30 September fell 103 and 82 on the two previous days and rose 399 today, to 163,339; 1–7 October
+rose 1,235.** **Mechanism: a record indexed today can carry a September publication date, so a publication
+window grows by ingest and shrinks by deletion and is monotonic in neither direction. An index-date bucket
+cannot grow because the index date is assigned at entry.** **Rule: never state a property of one measure as a
+property of "this instrument".**
+
+**THE META-PATTERN ACROSS FIVE CONSECUTIVE CORRECTIONS, worth more than any of them individually: every one
+has been an OVER-GENERALISATION FROM A SINGLE OBSERVATION, not a measurement error.** The measurements have
+held up every time; the sentences built on them have not. **Rule: when a measurement supports a narrow claim,
+publish the narrow claim. The failure mode of this archive is not bad data, it is the sentence after the
+data.**
+
+**TWO WEEKDAYS THIS MONTH RECEIVED ZERO JOURNAL RECORDS, and both were read correctly at the time by the
+source test rather than guessed at.** 20 Oct final 852 (MED 0, PMC 0, PPR 845). **22 Oct FINAL at 891 (MED 0,
+PMC 0, PPR 890, CTX 1) — the batch never came, which settles yesterday's test.** 23 Oct: MED 6,087, PMC 317,
+PPR 1,101, total 7,505, decomposition exact. **The source test has now answered correctly on four consecutive
+days and is the standing instrument.**
+
+**A BIOMARKER NULL IS MORE FUNDAMENTAL THAN AN OUTCOME NULL — new rule, and the most useful thing today.**
+Haemoadsorption is a cartridge that removes circulating cytokines; that is the whole mechanism. **The review
+measured interleukin-6 and tumour necrosis factor and found no significant change in either.** **An outcome
+null says the therapy did not help. A biomarker null says the therapy did not do the thing it is sold as
+doing.** **Rule: for any device or therapy with a declared mechanism, look for the mechanistic biomarker before
+the clinical outcome; its absence or its nullity is the stronger result and needs fewer patients to be
+interesting.** **Context: the 3 September position statement by the field's own advocates conceded fifteen
+years of adoption rests on pathophysiological reasoning — and the pathophysiology does not appear in the
+biomarkers.**
+
+**TWO META-ANALYSES ON THE SAME TOPIC THAT ARE NOT NESTED — say so rather than smoothing it over.**
+29 Aug Pittaway (BJA): **12 RCTs, 713 patients**, mean 59/trial. Today (ACCPM): **6 RCTs, 798 patients**, mean
+133/trial. **Fewer trials, more patients.** Today's restricts to elective cardiac surgery with a prespecified
+AKI primary; August's was broader. **Neither abstract says they are not nested.** **Rule: when two reviews of
+one question report different trial counts, compute the mean trial size — it identifies an inclusion-criteria
+difference immediately — and tell the reader they are not comparable.**
+
+**A TSA THAT QUALIFIES THE CONCLUSION IN BOTH DIRECTIONS IS THE COMPLETE REPORT, and it is the exact mirror
+of yesterday's.** Today: a null stated, then **"only 48% of the heterogeneity-adjusted required information
+size (1,491 patients), and the cumulative Z-curve crossed neither the monitoring nor the futility boundary"** —
+i.e. no benefit shown AND futility not shown. **Internal check passed: 48% of 1,491 = 716 against the 723 who
+contributed the primary outcome.** **Yesterday: "Improve … Outcome" in the title while its own TSA reported a
+lack of firm evidence.** **Third TSA in the last four briefs (checked by grepping October, not asserted).**
+**Rule: a TSA's value is that it can decline in both directions; check whether the authors let it.**
+
+**THE BLINDING SIGNATURE: SORT SECONDARY OUTCOMES BY WHO MEASURED THEM. This is today's strongest analytic
+move and it generalises.** Music therapy during weaning, n=100: **primary (weaning duration) p = 0.97.**
+**MOVED:** Richmond Agitation-Sedation Scale (observer rating), propofol use (clinician prescribing decision),
+tracheostomy rate (clinician decision, p = 0.025). **DID NOT MOVE:** perceived pain, perceived stress
+(p = 0.24), IMV and ICU duration, and **heart rate, respiratory rate, blood pressure and oxygenation — no
+change before and after sessions.** **Music therapy cannot be blinded from the treating team.** **So everything
+an unblinded clinician scores or decides improved, and everything a monitor records did not. That is the
+signature of unblinding, and the physiological null is the paper's own evidence for it.** **Rule: partition the
+secondaries into observer-rated / clinician-decided / machine-measured, and read the partition before the
+p-values.**
+
+**AND THE INTERNAL CONTRADICTION THAT SETTLES THE TRACHEOSTOMY CLAIM: a shorter weaning course would explain
+fewer tracheostomies, and there was no shorter weaning course (p = 0.97).** **Rule: when a downstream
+clinician-decided outcome improves and the upstream measure that drives that decision does not, the decision
+changed, not the patient.**
+
+**A SEDATIVE CANNOT BE BLINDED FROM THE PATIENT IT SEDATES, and an outcome of recalled experience cannot be
+interpreted for a drug that alters recall.** Dexmedetomidine in caesarean: primary outcome = satisfaction with
+intraoperative sedation/analgesia, **7-point scale, assessed on postoperative day 1**, common OR **13.4
+(4.6–39.0)**. **A sedated patient's memory of an operation is not the same object as an unsedated patient's
+memory of the same operation.** **Blinding the allocation is not blinding the effect.** **13.4 is an
+implausibly large clinical effect and an ordinary size for an unblinding effect on a self-reported scale.**
+**What settles it: the 24-h QoR-40 did NOT improve.** **Reading: the group remembered the operation more
+favourably and recovered no better — which may still be worth having, and is a different claim.** **Rule: when
+the intervention alters the measuring apparatus (memory, perception, observer behaviour), say so; it is a
+condition-3 failure of a particular and under-named kind.**
+
+**A HODGES-LEHMANN POINT ESTIMATE SITTING ON ITS OWN CI LOWER BOUND IS A DISCRETENESS ARTEFACT, not an
+error.** Reported as "location shift 1.0 point; 95% CI 1.0 to 2.0" on a 7-point scale. **Rule: an interval on
+an ordinal scale does not behave like one on a continuous measure; note it and move on.**
+
+**A NON-SIGNIFICANT p REPORTED IN DECLARATIVE FORM, THEN PROMOTED BY THE CONCLUSION — grammar doing the work
+of inference.** **"The MG obtained lower Perceived Stress Scale-14 scores (p = 0.24)"**, written in the same
+form as the p = 0.028 result beside it, and the conclusion then says **"It may potentially decrease perceived
+stress."** **The same abstract both does and does not know how to report p > 0.05 — two sentences away it
+correctly hedges ICU stay at p = 0.206.** **Rule: read every "showed/obtained/demonstrated" against its own
+p-value; inconsistency within one abstract is common and is quotable.**
+
+**A DENOMINATOR INCONSISTENCY IS RECOVERABLE FROM THE PERCENTAGES ALONE.** PULSE Ox arms 8 + 10 + 10 = 28, but
+infection percentages 5 (71%), 5 (56%), 3 (33%) imply denominators **7, 9, 9 = 25**. **Three patients
+unaccounted for, no reason given, in a 28-patient trial.** **Rule: divide each count by its stated percentage
+and check the denominators against the randomised arms — it takes one line and catches unexplained loss.**
+
+**AN EFFECT IN THE WRONG PHYSIOLOGICAL DIRECTION, ON TINY COUNTS, IN A TRIAL THAT CALLS ITSELF FEASIBILITY.**
+PULSE Ox: **least atelectasis at FIO₂ 0.8 — 3/10 vs 6/8 and 8/10, p = 0.045** — the opposite of absorption
+atelectasis. **Either a real countervailing effect (higher oxygen reserve, fewer desaturation events, less
+recruitment loss) or small-number noise; the counts are 3, 6 and 8 patients, and it is one of four reported
+comparisons.** **Credit where due: the title says feasibility, the stated purpose was whether FIO₂ can be
+controlled and redox state measured, and the conclusion asks for powered studies.** **Rule: a surprising
+direction in a feasibility trial is a reason to want the real trial, not a finding.**
+
+**INDEPENDENT CONFIRMATION THAT A RADIOLOGICAL COMPONENT DOMINATES A COMPOSITE.** On 21 October this archive
+flagged that the EIT trial's 72.4% control-arm pulmonary-complication rate implied a composite driven by
+radiological atelectasis. **PULSE Ox reports atelectasis ALONE at 30–80% in ordinary abdominal surgery.**
+**So atelectasis after major surgery is close to a majority finding, and any composite containing it will be
+driven by it.** **Rule: when a composite's rate looks too high, find a trial that reports the suspect component
+alone.**
+
+**THE SIBLING-RECORD DEFECT IS OFTEN A TEMPORARY STATE OF THE INDEX, NOT A PERMANENT PROPERTY OF THE DEPOSIT —
+third instance in four days, and the second to resolve without action.** PULSE Ox had two records: one OA with
+no abstract, no DOI, fpd 2026-01-01; one with the full abstract, real DOI and real date. **It surfaced
+abstract-free on 21 and 22 October and became readable today.** The SRLF atrial fibrillation document did the
+same between 20 and 21 October. **Rule: log a defective record with its defect and RE-CHECK it on later
+sweeps before escalating it to needs-a-PDF; the full-text-XML route buys the day, and waiting often buys the
+rest.**
+
+**THE DAY'S SHAPE, worth keeping as an example: three of four items moved an outcome their own intervention
+helps measure, and the fourth measured its mechanism directly and found nothing.** **Dexmedetomidine —
+patient recall, altered by the drug. Music therapy — observer ratings and clinician decisions, with the
+monitors flat. PULSE Ox — a radiological reading, in the wrong direction, on three patients an arm.
+Haemoadsorption — interleukin-6 and tumour necrosis factor, measured, null, and reported as such alongside a
+TSA that declines to claim futility either.** **The honest one is the one with nothing to report.**

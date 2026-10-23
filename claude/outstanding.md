@@ -3809,3 +3809,85 @@ document.**
 **20 Oct** keyword sweep carried all four items (publication-type sweep → empty day). **21 Oct** keyword sweep
 alone found the Canadian guideline and the ESICM paper. **22 Oct REVERSED — publication-type sweep found the
 only new document; keyword sweep missed it entirely** (no in-scope clinical keyword in its title).
+
+## Index after 2026-10-23 — the source test answers a fourth day, and correction 8
+
+**Start of run, 14:06.** Whole database **49,118,306**, residual 0, **+7,052** on yesterday's 14:06:52 reading.
+`MED` **41,253,787** (+6,017) · `PPR` **1,268,930** (+1,096) · `PMC` **1,013,126** (**−61**) · `PAT` 4,229,296 ·
+`AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `CTX` 3,922 · `HIR` 2,868 · `NBK` 28 · `CIT` 624 unchanged.
+**The three changes sum to 7,052 exactly.**
+
+| Index date | MED | PMC | PPR | other | total |
+| --- | --- | --- | --- | --- | --- |
+| Tue 20 Oct | **0** | **0** | 845 | 7 | 852 |
+| Wed 21 Oct | 8,620 | 1,532 | 1,132 | 14 | 11,298 |
+| Thu 22 Oct | **0** | **0** | 890 | 1 | **891 — FINAL, batch never came** |
+| Fri 23 Oct 14:06 | **6,087** | 317 | 1,101 | 0 | **7,505** |
+
+**YESTERDAY'S TEST IS SETTLED: the 22 October MEDLINE batch never arrived.** **Two weekdays this month with
+zero journal records (20 and 22 Oct), both read correctly at the time by the source test.** **The test has now
+answered correctly on four consecutive days.**
+
+**Gross vs net, both directions today:** MED bucket 6,087 against MED net +6,017 → ~70 MED records removed
+elsewhere; PMC contributed 317 to today's bucket while falling 61 overall → ~378 PMC records removed.
+
+**CORRECTION 8 — `FIRST_PDATE` WINDOWS CAN GROW; `FIRST_IDATE` BUCKETS CANNOT.** Yesterday's "every
+backward-looking number in this instrument is an upper bound" collapsed the two. **1–30 Sep: −103, −82, then
++399 today to 163,339. 1–7 Oct +1,235 to 44,914.** **A record indexed today can carry a September publication
+date; an index date is assigned at entry and cannot change.** **Never state a property of one measure as a
+property of the instrument.**
+
+**META-PATTERN ACROSS FIVE CONSECUTIVE CORRECTIONS: every one has been an over-generalisation from a single
+observation, not a measurement error.** **The measurements have held up every time; the sentences built on
+them have not.**
+
+## Brief queue after 2026-10-23
+
+**Written up today:** haemoadsorption to prevent CSA-AKI in cardiac surgery; PULSE Ox intraoperative oxygen
+concentration; IV dexmedetomidine during caesarean; music therapy during ventilator weaning.
+
+**Held (11, unchanged):** `10.1136/rapm-2025-107226` · `10.1097/cce.0000000000001452` ·
+`10.1093/ejcts/ezag203` · `10.1097/cce.0000000000001451` · `10.1186/s13054-026-06272-7` ·
+`10.1161/jaha.126.050284` · `10.2147/dddt.s598574` · `10.1186/s13019-026-04684-8` ·
+`10.3760/cma.j.cn121430-20260408-00165` · `10.1007/s11701-026-04028-7` · `10.1007/s10877-026-01492-2`
+
+**Added today (3):** preoperative respiratory muscle strength / respiratory sarcopenia as predictors of PPCs
+after thoracic and cardiac surgery (`10.1016/j.clnesp.2026.105204`) — **pairs with the 21 Oct EIT/PPC trial,
+same outcome, different predictor**; augmented enteral protein and muscle-mass attenuation in critical illness
+(`10.1002/jpen.70158`) — pairs with the queued calorimetry item; ECMO in COVID-19 across central and eastern
+Europe (`10.12659/msm.954002`).
+
+**Also seen, preprints not taken:** low-dose perioperative dexmedetomidine for delirium prevention in hip
+fracture (`10.21203/rs.3.rs-10792157/v1`); low-volume low-concentration ropivacaine superior trunk vs
+interscalene block, diaphragm-sparing (`10.21203/rs.3.rs-11051385/v1`). **Both worth watching for journal
+publication.**
+
+**Backstop: 1–25 August window, 343 unseen. Next window 1–31 July.**
+
+## Monitoring thread — nine entries, and today adds a NAMED SUB-TYPE of condition-3 failure
+
+**NEW SUB-TYPE: the intervention alters the MEASURING APPARATUS, not just the outcome.**
+
+| Document | How condition 3 fails |
+| --- | --- |
+| **IV dexmedetomidine in caesarean (today)** | **the outcome is patient RECALL of the operation, and the drug alters recall.** 24-h QoR-40 unchanged while satisfaction OR 13.4 |
+| **Music therapy during weaning (today)** | **observer-rated (RASS) and clinician-decided (propofol, tracheostomy) outcomes moved; HR, RR, BP, oxygenation did not.** Primary p = 0.97 |
+| **PULSE Ox (today)** | a radiological reading, in the wrong physiological direction, 3 patients per arm, one of four comparisons |
+| EIT-guided PEEP RCT (21 Oct) | **PASSES** — adjudication team, blinded to nothing but independent of the instrument |
+| Bystander CPR stepped-wedge (22 Oct) | process moved 9.6 pts, clinical outcome did not |
+| Meropenem TDM on CRRT (22 Oct) | protocol present in only 2 of 12 studies |
+| Closed-loop oxygen (17 Oct) + oxygen-target MA (20 Oct) | set-point carries no outcome |
+| Swiss desmopressin consensus (22 Oct) | no outcome beyond the test itself |
+| EIT feasibility, <i>Anesthesiology</i> (19 Sep) | outcome WAS the instrument |
+
+**THE ANALYTIC MOVE TO REUSE: partition secondary outcomes into observer-rated / clinician-decided /
+machine-measured, and read the partition before the p-values.** **Music therapy is the clean demonstration —
+everything an unblinded clinician scored or decided improved, everything a monitor recorded did not.**
+
+**AND THE COUNTER-EXAMPLE, which is today's lead item: haemoadsorption measured its own mechanism (IL-6, TNF),
+found nothing, and reported a TSA that declines to claim futility either.** **New rule: for a therapy with a
+declared mechanism, the mechanistic biomarker is the stronger test and needs fewer patients than the outcome.**
+
+**Thread stays open. What would settle it is still EIT against another individualisation method, on a composite
+not dominated by radiological atelectasis — and PULSE Ox strengthens that caveat by reporting atelectasis
+alone at 30–80% in ordinary abdominal surgery.**
