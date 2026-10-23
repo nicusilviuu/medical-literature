@@ -3891,3 +3891,12 @@ declared mechanism, the mechanistic biomarker is the stronger test and needs few
 **Thread stays open. What would settle it is still EIT against another individualisation method, on a composite
 not dominated by radiological atelectasis — and PULSE Ox strengthens that caveat by reporting atelectasis
 alone at 30–80% in ordinary abdominal surgery.**
+
+**END-OF-RUN READ, 14:15:16 (9 min after start): EVERY FIGURE IDENTICAL** — whole database 49,118,306, 22 Oct
+891, 23 Oct 7,505, `MED` today still 6,087, `PMC` 317, 1–30 Sep window 163,339. **Today's MEDLINE batch had
+finished before the run began.** **Third flat end-of-run reading (20, 22, 23 Oct) and the second consecutive
+one.**
+
+**NEW TEST FOR TOMORROW, stated as a test and not a conclusion, given this week's record:** a flat end-of-run
+reading paired with `MED` > 0 may indicate the batch is COMPLETE, which the morning test alone cannot say.
+**If 23 Oct still reads 7,505 tomorrow, the pairing is informative; if it rises, it is not.**
