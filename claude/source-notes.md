@@ -5766,3 +5766,105 @@ for a teaching hospital and one written for everywhere.**
 same direction, **no within-subgroup estimate reached significance, and the abstract says so without claiming
 effect modification.** **Compare the vasopressor meta-analysis (22 Oct), whose "benefit mainly appeared in more
 severe patients" rested on a subgroup point estimate IDENTICAL to the overall one.**
+
+## 2026-10-24 (guidelines watch)
+
+**THE NAMED TARGET WAS FOUND IN ONE QUERY, AND IT HAD BEEN IN THE INDEX SINCE 11 MARCH — a structural
+limitation of this whole instrument, not a one-off miss.** "Updated European Society for Emergency Medicine
+Guidelines for acute pain management in emergency departments and prehospital care", *European Journal of
+Emergency Medicine*, **fpd 2026-03-11 (227 days, 7.5 months ago)**, **typed by Europe PMC as a Practice
+Guideline, 2,059-char abstract deposited in full, primary scope** — and this watch ran daily throughout.
+**The same query also found the two-part 2020 EUSEM guidelines it updates, neither previously reported.**
+
+**WHY BOTH ROUTES MISSED IT, stated as the limitation it is:** the two index-date sweeps find what enters the
+database **in a two-day window**; the society list finds what the **named** societies publish. **A guideline
+from an unlisted society, published before the sweep window, is invisible to both.** **EUSEM is not on the
+tracked list.** **Rule: the third route is the only one that caught it — documents that implement, summarise
+or dissent from a guideline NAME it. Harvest the names.** **How many others exist is not knowable from here.**
+
+**QUERY FORM THAT WORKED, for reuse:** combine a title search with an acronym search across abstract and
+author fields — `(TITLE:"acute pain" AND (TITLE:"guideline" OR TITLE:"guidelines")) AND (ABSTRACT:"EUSEM" OR
+AUTH:"EUSEM" OR TITLE:"EUSEM")` → 4 hits, including the target and both 2020 parts. **A society acronym often
+sits in the abstract or author string rather than the title.**
+
+**A GUIDELINE UPDATE WHOSE STATED JUSTIFICATION INCLUDES THE FAILURE OF ITS OWN PREDECESSOR.** EUSEM's second
+substantive sentence: **"Despite previous guidelines, oligoanalgesia remains prevalent, with many patients
+experiencing suboptimal pain control."** **And the listed obstacles are not evidential — inadequate clinical
+knowledge, training deficits, opioid-stewardship pressure, suspicion of drug-seeking behaviour. None is fixed
+by a better recommendation.** **Rule: record it when an update admits its predecessor did not change practice;
+it is rare and it is the most honest thing such a document can say.**
+
+**AN IMPLEMENTER AND ITS SOURCE GUIDELINE DISAGREEING ABOUT WHERE THE PROBLEM IS — checkable from two
+abstracts.** Yesterday's paper is titled **"Beyond the Ladder"** and locates the failure in human factors the
+guidelines do not address. **Today's EUSEM guideline "integrate[s] the Channels-Enzymes-Receptors Targeted
+Analgesia framework with WHO analgesic ladder principles"** — it retains the ladder. **EUSEM locates the
+failure in knowledge and training; its implementers locate it in the ladder's adequacy as an operational
+model.** **Both diagnoses can be right and neither document engages the other.** **Rule: when a derivative and
+its source are both in hand, compare where each locates the problem.**
+
+**CERTA + WHO LADDER IS A HYBRID WORTH UNDERSTANDING: the ladder answers "how strong", CERTA answers "which
+mechanism".** Channels-Enzymes-Receptors Targeted Analgesia selects by molecular target — sodium channels,
+cyclo-oxygenase, opioid and NMDA receptors — rather than by potency rank. **For a guideline written under
+opioid-crisis pressure, a mechanism-first framework gives a route to adequate analgesia that does not run
+through dose escalation.** **That is why multimodal regimens get BUILT rather than ESCALATED.**
+
+**A SEARCH-TO-USE STALENESS CALCULATION WORTH DOING ROUTINELY.** EUSEM searched to **May 2025**, published
+**11 March 2026** (**284 days later**), read here **16.8 months after the search closed** — in a field the
+guideline itself says is changing through "emergent technological advances". **Rule: compute search-close to
+today, not search-close to publication; the second understates the cost to a reader.**
+
+**"FLEXIBLE, ADAPTABLE GUIDELINES SUITABLE FOR DIVERSE SETTINGS" IS A DESIGN CHOICE WITH A COST THE DOCUMENT
+ITSELF DOCUMENTS.** **Flexibility is how a guideline survives contact with thirty health systems and also how
+it fails to change anything.** **The 2020 version was presumably flexible too, and the 2026 version's second
+sentence records the result.**
+
+**NAMING EXACTLY WHAT CHANGED IS THE BEST THING A GUIDELINE-UPDATE ABSTRACT CAN DO, and the UK OPAT
+recommendations are the first this month to do it.** **Five new recommendations, each named (self-administration;
+hard-to-reach groups; patient education; monitoring protocols for complex oral antimicrobials and new
+parenteral routes; equitable provision of care) and two amended, each named (thromboprophylaxis; early
+collaboration with vascular access teams).** **A reader working to the previous version knows from the
+abstract alone what to go and look at.** **Better than a grade distribution, because it answers the question
+an EXISTING user actually has.** **Compare the 2026 AHA/ACC perioperative guideline, where "what changed" is
+exactly what this archive cannot determine.** **Rule: for any update, look first for a delta list; if absent,
+say so.**
+
+**AN ANTIMICROBIAL STEWARDSHIP UPDATE THAT SPENT 60% OF ITS NEW RECOMMENDATIONS ON ACCESS, NOT DRUGS.** Three
+of five new items — hard-to-reach groups, patient education, equitable provision — are about who gets the
+service and whether they can use it; a fourth, self-administration, is about shifting delivery to the patient.
+**Only one of five is clinical in the narrow sense.** **Pathway thread again.**
+
+**SELF-ADMINISTRATION OF IV ANTIMICROBIALS IS THE MOST CONSEQUENTIAL AND LEAST DISCUSSED CHANGE: it moves a
+hospital task into a kitchen**, is how OPAT scales and reaches people who cannot attend daily, and transfers a
+line-infection and dosing risk to someone untrained. **A new recommendation implies the evidence base now
+supports it.**
+
+**A FOURTH GRADING FRAMEWORK ENTERS THE CATALOGUE: the Indian Chest Society framework** (after GRADE, USPSTF
+A–D plus I, and PROSPECT's three-way bin). **New to this archive, and the omission of a grade distribution
+hurts MORE for an unfamiliar framework, because a reader outside India cannot calibrate what one of its grades
+means without seeing how they fell.**
+
+**AN EPIDEMIOLOGICAL GAP IN THE INTERNATIONAL GUIDELINES, which is the less-noticed sibling of the
+resource-tiered pattern.** The Indian home-NIV guidelines cover **post-tuberculosis lung disease** — an
+indication that appears in no other home-ventilation guidance this archive has met and had never appeared in
+this archive at all. **Post-tuberculous destroyed lung, bronchiectasis and chest-wall fibrosis are a major
+cause of chronic hypercapnic respiratory failure in India and absent from the European and American evidence
+base.** **So this is not a local variation on an international document — it is the international documents
+having a hole where a large population sits.** **Rule: read a national guideline's indication list for entries
+the international ones lack; the gap may be epidemiological rather than economic.**
+
+**TWO TRANSFERABLE CLINICAL POINTS FROM THE HOME-NIV DOCUMENT.** **(a) COPD: persistent daytime hypercapnia
+INCLUDING patients still hypercapnic 2–4 weeks after an exacerbation — the window matters because it excludes
+those whose hypercapnia resolves with recovery, which is the commonest way home NIV gets started
+unnecessarily.** **(b) "High-intensity" bilevel titrated to a meaningful CO2 reduction is the correct emphasis:
+the COPD trials that showed benefit used pressures high enough to lower CO2; those titrated to comfort did
+not.** **And the OHS recommendation (CPAP first where severe OSA present) AGREES with international practice,
+reached independently through two consensus rounds — worth recording as agreement, not divergence.**
+
+**"AVAILABLE RESOURCES" NAMED IN THE RECOMMENDATIONS' OWN FRAMING RATHER THAN A LIMITATIONS PARAGRAPH** —
+"applied in the context of patient goals, clinical feasibility, and available resources". **Better practice
+than writing a recommendation that assumes the equipment.**
+
+**SECOND CONSECUTIVE DAY THE PUBLICATION-TYPE SWEEP PRODUCED NOTHING IN SCOPE** (5 hits: autism
+rehabilitation, the two WHO obesity guidelines for a THIRD day, primary biliary cholangitis, ADHD
+pharmacotherapy). **Fifth day of logging sweep patterns and the keyword sweep has now carried the in-scope
+items on four of the five.**

@@ -4074,3 +4074,78 @@ reading (20, 22, 23, 24 Oct) and the third consecutive one.**
 
 **SECOND INSTANCE OF YESTERDAY'S TEST CONDITION: a flat end-of-run reading with `MED` > 0.** **Tomorrow's
 reading of today's 6,512 is the second test of the pairing — and two passes would still be two.**
+
+## Guidelines watch after 2026-10-24 — the named target found, and a limitation of the instrument
+
+**EUSEM 2026 ACUTE PAIN GUIDELINES: FOUND IN ONE QUERY, INDEXED SINCE 11 MARCH.**
+`10.1097/mej.0000000000001323`, *European Journal of Emergency Medicine*, fpd **2026-03-11 — 227 days, 7.5
+months ago** — **typed Practice Guideline, 2,059-char abstract, primary scope**, and unreported here while the
+watch ran daily. **Also found: the two-part 2020 EUSEM guidelines it updates
+(`10.1007/s11739-020-02477-y` assessment, `10.1007/s11739-020-02411-2` management), neither reported.**
+
+**THE STRUCTURAL LIMITATION, recorded as such:** the index-date sweeps find what enters the database **in a
+two-day window**; the society list finds what the **named** societies publish. **A guideline from an unlisted
+society published before the sweep window is invisible to BOTH.** **How many others exist is not knowable from
+here.** **The third route is what caught it: derivatives name the guideline they implement.**
+
+**QUERY FORM FOR REUSE:** title search AND acronym across abstract + author fields —
+`(TITLE:"<topic>") AND (ABSTRACT:"<ACRONYM>" OR AUTH:"<ACRONYM>" OR TITLE:"<ACRONYM>")`. **A society acronym
+often sits in the abstract or author string, not the title.**
+
+## Recommendation-structure catalogue — updated 2026-10-24
+
+| Document | Framework | Discloses what? |
+| --- | --- | --- |
+| **UK OPAT GPR update (today)** | SR + expert consensus + consultation | **BEST THIS MONTH — names exactly what changed: 5 new + 2 amended, each listed** |
+| **Indian Chest Society home NIV (today)** | **Indian Chest Society framework — FOURTH framework in this catalogue** | **no counts, no distribution — and that hurts more for an unfamiliar framework** |
+| **EUSEM acute pain 2026 (today)** | PRISMA SR, "evidence levels assigned", CERTA + WHO ladder | **no counts, no distribution**; does admit its predecessor failed |
+| PROSPECT shoulder (24 Oct brief) | three-way bin | yes — names liposomal bupivacaine as unsupported |
+| Canadian spinal procedures (22 Oct) | USPSTF A–D plus I | framework described, distribution withheld |
+| SFAR/SFPC medication errors | reclassified RFE → PPG in advance | yes, by format |
+| Three French-speaking documents (19–21 Oct) | GRADE, labelled per recommendation | yes — 10 of 48 graded |
+
+**NEW BEST PRACTICE IDENTIFIED: a DELTA LIST beats a grade distribution for an update, because it answers the
+question an existing user has.** **Rule: for any update, look first for a delta list; if absent, say so.**
+
+## Pathway thread — fifth entry
+
+| Document | Where the recommendation fails to become a treatment |
+| --- | --- |
+| HRS prior authorization (16 Oct) | payers deny |
+| CCS transcatheter update (19 Oct) | patients never referred |
+| Canadian spinal procedures (22 Oct) | funder on the panel — dissolves the middle |
+| Acute pain 10-domain toolkit (23 Oct) | clinician at the bedside does not act |
+| **UK OPAT update (today)** | **the service does not reach the patient — 3 of 5 new recommendations are hard-to-reach groups, patient education, equitable provision** |
+| **EUSEM 2026 (today)** | **the guideline itself: "Despite previous guidelines, oligoanalgesia remains prevalent"** |
+
+**EUSEM is the thread's strongest entry because it is the guideline conceding the gap about itself.**
+
+## Guidelines backlog after 2026-10-24
+
+**Readable (3):** ESPNIC neonatal therapeutic hypothermia comparison (`10.1016/j.lanepe.2026.101874`);
+ERS/ESRS CPAP for adult OSA (`10.1183/13993003.01186-2026`) — **now pairs with today's Indian home-NIV
+guidelines on obesity hypoventilation**; **NEW** Vascular Access Society + European Kidney Transplant
+Association position paper on vascular access after kidney transplantation (`10.1177/11297298261468406`).
+
+**Named targets — 2026 EUSEM CLEARED (published today). NEW target added (1):** the two-part **2020 EUSEM
+guidelines** — **readable, and the only way to work out what the 2026 update changed, since its abstract does
+not say.**
+
+**Needs a PDF (9), unchanged:** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i>
+(`10.57187/5395`); ASGE remimazolam update; SCCT coronary CTA (`10.1016/j.jcct.2026.08.014`); **ASA PeRLS
+update (`10.1097/aln.0000000000006260`) — highest priority**; EACTS/STS/AATS temporary MCS expert analysis
+(`10.1053/j.jvca.2026.09.028`); ERC 2025 adult ALS corrigendum (`10.1016/j.resuscitation.2026.111313`);
+ESICM equity/diversity/inclusion (`10.1007/s00134-026-08653-6`); SFAR/SFPC companion editorial
+(`10.1016/j.accpm.2025.101719`).
+
+**To the BRIEF, not here:** clinician adherence to peri-procedural warfarin bridging guidelines in AF
+(`10.1097/hpc.0000000000000444`) — adherence audit, so a research article by the 22 October rule.
+
+**Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
+**Dated: three abstract-free ISHLT documents TOMORROW, 25 OCTOBER**; AHA/ACC perioperative re-check
+**7 November**; index-date month audit for October **1 November**; next lagged pass **~10 November**.
+
+**SWEEP-PATTERN LOG, five days:** 20 Oct keyword-only · 21 Oct keyword-plus · 22 Oct publication-type-only ·
+23 Oct keyword-only (publication-type nothing in scope) · **24 Oct keyword-only (publication-type nothing in
+scope, SECOND consecutive day; WHO obesity guidelines returned for a THIRD day).** **Keyword sweep has carried
+the in-scope items on four of five days; still run both.**
