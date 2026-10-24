@@ -4067,3 +4067,10 @@ interscalene catheter beats a single bolus.**
 
 **Previous worst was an outcome measured partly by the instrument. This is a review with no patient outcome at
 all.** **Thread stays open.**
+
+**END-OF-RUN READ, 14:13:45 (10 min after start): EVERY FIGURE IDENTICAL** — whole 49,124,762, 23 Oct 7,489,
+24 Oct 6,512, `MED` today 5,723, and the 13 `NBK` records still in the 23 Oct bucket. **Fourth flat end-of-run
+reading (20, 22, 23, 24 Oct) and the third consecutive one.**
+
+**SECOND INSTANCE OF YESTERDAY'S TEST CONDITION: a flat end-of-run reading with `MED` > 0.** **Tomorrow's
+reading of today's 6,512 is the second test of the pairing — and two passes would still be two.**
