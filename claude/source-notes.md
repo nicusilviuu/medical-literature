@@ -5651,3 +5651,118 @@ has been unreadable here since 30 September (Cloudflare JavaScript challenge, no
 postoperative surveillance for myocardial injury after noncardiac surgery is a named section — which is where
 to look first in the 2026 version.** **Rule: report a superseded document only when it is the readable
 predecessor of one you cannot open, and say both things in the first sentence.**
+
+## 2026-10-24 (brief)
+
+**CORRECTION 9 — A PAST `FIRST_IDATE` BUCKET *CAN* GAIN RECORDS, and this falsifies a claim made twice.** The
+23 October bucket: MED **6,087 → 6,058 (−29)**, PMC 317 unchanged, PPR 1,101 unchanged, **`NBK` 0 → 13
+(+13)**, total **7,505 → 7,489 (−16)**. **The total fell while a component grew.** **On 19 October the rule
+was corrected to "cannot grow but can shrink"; on 22 October I tested it by re-reading the 13–18 October
+buckets and found every one at or below its last value — but I read TOTALS, which could not have detected
+this.** **Right statement: a past bucket's total is a NET figure like everything else here, and gross movements
+in both directions are invisible without decomposing by `SRC`.**
+
+**AND THIS FAILURE IS A DIFFERENT KIND FROM THE WEEK'S OTHERS — worth distinguishing because the fix
+differs.** Corrections 4–8 were conclusions generalised beyond their measurement; **correction 9 is a claim
+tested at the WRONG GRANULARITY.** **The first needs a narrower sentence; this one needs a finer
+measurement.** **Rule: when testing a claim about a composite quantity, test it on the components.**
+
+**YESTERDAY'S TEST PASSED ONCE AND IS RECORDED AS ONCE.** A flat end-of-run reading paired with `MED` > 0 did
+mean the batch was complete: 23 Oct fell 16 rather than rising. **One pass is not a rule, and the move from
+one observation to a general claim is precisely this archive's characteristic failure this week.**
+
+**`PMC` EXACTLY UNCHANGED for the first time this week** (1,013,126 both days), and **PMC contributed zero
+records to today's bucket.** Saturday 24 Oct: 6,512 = MED 5,723 + PPR 788 + 1 other.
+
+**THE ASYMMETRY OF MECHANISTIC EVIDENCE — today's most useful idea, and it completes yesterday's rule.**
+**A mechanistic biomarker NULL is close to decisive against a therapy; a mechanistic biomarker POSITIVE
+establishes almost nothing.** Yesterday: haemoadsorption did not change IL-6 or TNF — the cartridge does not do
+its own mechanism, so it cannot work through it. **Today: eleven interventions DID reduce glycocalyx shedding
+markers, and that shows only that the mechanism is operable — necessary, nowhere near sufficient.** **Rule:
+when a review reports mechanism-level outcomes, the direction decides the weight. Treat a null as strong
+evidence and a positive as a research agenda.**
+
+**"PROMISING" IN A TITLE OVER 81% ANIMAL STUDIES.** Glycocalyx review: **21 studies, 17 animal, 4 human**;
+**11 named interventions → 1.91 studies each and 0.36 HUMAN studies each.** **Every listed outcome is the
+instrument** — syndecan-1, heparan sulfate, hyaluronan, perfused boundary region, microscopy. **No mortality,
+organ failure, vasopressor duration or length of stay anywhere.** **The abstract's final clause contradicts its
+own title ("most evidence remains preclinical") and the final clause is right.** **Rule: compute the
+animal-study fraction and the human-studies-per-intervention ratio before reading the conclusion.**
+
+**MOST COMPLETE CONDITION-3 FAILURE YET RECORDED: not an outcome measured partly by the instrument, but a
+review in which NO non-instrument outcome exists at all.**
+
+**A MECHANISM CAN SURVIVE THE FAILURE OF THE THERAPY MEANT TO EXPLOIT IT.** Several glycocalyx agents are
+licensed drugs being repurposed — **ascorbic acid, doxycycline, heparin, antithrombin, recombinant
+thrombomodulin, therapeutic plasma exchange.** **Ascorbic acid in sepsis has been through large randomised
+trials with discouraging patient outcomes, and here it reappears on a marker basis.** **Rule: when a
+repurposing list includes an agent already refuted on outcomes, say so.**
+
+**A DRUG'S RATIONALE CAN BE THE THING ITS EVIDENCE DOES NOT SUPPORT — the pharmacological form of yesterday's
+rule.** Fospropofol is a water-soluble propofol prodrug whose point is tolerability. **Review conclusion:
+"Current evidence does not establish a consistent cardiorespiratory safety advantage for fospropofol over
+other sedatives."** **The one pooled propofol comparison — hypotension RR 0.93 (0.67–1.28), SE ≈ 0.17 — is a
+null wide enough to contain a 33% reduction and a 28% increase.** **Rule: identify why the molecule was made,
+then find the outcome that tests it.**
+
+**A DOSE-RESPONSE WITHIN A DRUG IS NOT A COMPARISON WITH ANYTHING.** Fospropofol 6.5 vs 2 mg/kg: sedation
+success **RR 3.27 (2.62–4.08), SE ≈ 0.11** — tight, and unsurprising. **It is the only statistically clean
+finding in the review and it answers a question nobody asked.** **Rule: check whether a review's significant
+estimate is an internal dose contrast or an external comparison.**
+
+**AND THE TOLERABILITY PROFILE IS A SWAP, NOT AN IMPROVEMENT:** "paresthesia/pruritus was commonly reported"
+— perineal paraesthesia and itching from the phosphate prodrug, traded for propofol's injection pain — **and
+evidence on injection pain and satisfaction was "limited", so the comparison that would settle whether the swap
+is worth making has not been done.**
+
+**TWO NOVEL SEDATIVES, TWO PROPOFOL-BEATING CLAIMS, NEITHER SURVIVING SCRUTINY.** Remimazolam (thread at six
+documents): emergence advantage exists **only with flumazenil** (20 Oct). Fospropofol (today): cardiorespiratory
+advantage **not established.** **Propofol remains hard to improve on; the honest reading is that the newer
+agents are ALTERNATIVES, not upgrades.**
+
+**THE MOST SELF-CRITICAL ABSTRACT THIS ARCHIVE HAS REPORTED, and three pieces of method are worth copying.**
+Paediatric liver-transplant extubation: **mortality OR 0.35 (0.18–0.68)**, reported, confirmed by a second
+estimator, **and then disowned in the authors' own key points: "These associations likely reflect selection
+bias rather than a proven causal benefit."**
+1. **Cohort-overlap correction: 1,323 records → 1,158 unique children, 165 (12.5%) removed as double-counted
+   across overlapping single-centre series.** **Double-counting across retrospective series from the same
+   transplant centres is the classic silent inflation in this literature and almost nobody checks.**
+2. **Correction-free Peto odds ratios reported alongside the main estimates (0.29 vs 0.32; 0.31 vs 0.35)** —
+   Peto avoids the continuity corrections that distort sparse-data ORs, so agreement shows the finding is not
+   a correction artefact.
+3. **Meta-regression read AGAINST itself:** transfusion predicted hospital LOS with **R² = 57.1%, p = 0.006**,
+   and the authors called it **"more consistent with confounding by indication than with a beneficial
+   mechanism of transfusion itself."** **Most papers report a significant meta-regression predictor as a
+   mechanism; this one reports it as evidence the whole analysis is confounded.**
+
+**AN IMPLAUSIBLE CAUSAL PATHWAY IS ITSELF EVIDENCE FOR CONFOUNDING — an argument the authors did not make.**
+Reintubation is directly downstream of extubation timing; length of stay plausibly so. **But a halving of
+mortality cannot sensibly be produced by the timing of tracheal tube removal in a child who has just received
+a liver.** **Rule: when an effect size outruns any mechanism that could produce it, treat the implausibility as
+positive evidence for selection, not as a puzzle.**
+
+**PROSPECT'S THREE-WAY BIN IS A DISCLOSURE STRUCTURE WORTH ADDING TO THE CATALOGUE — first PROSPECT document
+in this archive.** Interventions sorted into **improved / conflicting evidence / no evidence**, then a regimen
+issued. **A reader learns which available options the evidence does NOT support.** **Compare the Canadian
+spinal-procedures guideline (22 Oct), which used USPSTF A–D plus I precisely because GRADE has no explicit
+"do not do this" category: PROSPECT reaches the same place without grading — it bins.**
+
+**AND IT USES THAT STRUCTURE TO NAME A PROPRIETARY FORMULATION AND DECLINE IT:** "interscalene brachial plexus
+block with a single-bolus injection of long-acting local anaesthetic (bupivacaine or ropivacaine), **but not
+liposomal bupivacaine**." **Expensive, heavily promoted, conflicting evidence — and the negative is written
+into the recommendation rather than left in the discussion.** **Rule: note when a recommendation names a
+product it will not endorse; it is rare and it is the most contestable line in such a document.**
+
+**SCREENING YIELD AS A SIGNAL:** 1,809 articles screened → **37 included (2.05%)**. **And 30 trials plus 7
+reviews were still not enough to settle whether a continuous interscalene catheter adds anything over a single
+bolus** — which says something about how the regional-anaesthesia literature allocates effort.
+
+**NAMING ABSENCE OF EXPERTISE AS A LEGITIMATE REASON TO CHOOSE THE ALTERNATIVE** ("in case of contraindications
+or absence of expertise, local infiltration analgesia is a reasonable alternative") **is a practical concession
+most recommendations avoid making.** **Rule: record it; it is the difference between a recommendation written
+for a teaching hospital and one written for everywhere.**
+
+**A CORRECT SUBGROUP NON-CLAIM, as a contrast with 22 October.** Donor-type subgroups showed effects in the
+same direction, **no within-subgroup estimate reached significance, and the abstract says so without claiming
+effect modification.** **Compare the vasopressor meta-analysis (22 Oct), whose "benefit mainly appeared in more
+severe patients" rested on a subgroup point estimate IDENTICAL to the overall one.**

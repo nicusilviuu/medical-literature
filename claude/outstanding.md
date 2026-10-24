@@ -3969,3 +3969,101 @@ ESICM equity/diversity/inclusion (`10.1007/s00134-026-08653-6`); SFAR/SFPC compa
 **Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
 **Dated:** three abstract-free ISHLT documents **25 October — TWO DAYS AWAY**; AHA/ACC perioperative re-check
 **7 November**; index-date month audit for October **1 November**; next lagged pass **~10 November**.
+
+## Index after 2026-10-24 — correction 9, and a test that passed once
+
+**Start of run, 14:04.** Whole database **49,124,762**, residual 0, **+6,456** on yesterday's 14:04 reading.
+`MED` **41,259,447** (+5,660) · `PPR` **1,269,715** (+785) · `NBK` **38** (+10) · `CTX` **3,923** (+1) ·
+`PMC` **1,013,126** (**0 — exactly unchanged, first time this week**) · `PAT` 4,229,296 · `AGR` 1,026,549 ·
+`ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624 unchanged. **The five changes sum to 6,456 exactly.**
+
+| Index date | MED | PMC | PPR | other | total |
+| --- | --- | --- | --- | --- | --- |
+| Thu 22 Oct | 0 | 0 | 890 | 1 | 891 (final) |
+| Fri 23 Oct | **6,058** | 317 | 1,101 | **13 `NBK`** | **7,489** (was 7,505) |
+| Sat 24 Oct 14:04 | **5,723** | **0** | 788 | 1 | **6,512** |
+
+**YESTERDAY'S TEST PASSED — ONCE.** A flat end-of-run reading with `MED` > 0 did mean the batch was complete:
+23 Oct fell 16 rather than rising. **One pass is not a rule.**
+
+**CORRECTION 9 — A PAST `FIRST_IDATE` BUCKET CAN GAIN RECORDS. This falsifies a claim made on 19 October and
+apparently confirmed on 22 October.** The 23 Oct bucket took **13 new `NBK` records** while losing **29 MED**,
+so the total fell 16 and the gain was invisible. **The 22 October test read TOTALS for 13–18 October and could
+not have detected it.** **A past bucket's total is a NET figure like everything else; gross movements in both
+directions need `SRC` decomposition.**
+
+**AND THE FAILURE MODE IS A NEW ONE: corrections 4–8 were conclusions generalised beyond their measurement;
+correction 9 is a claim TESTED AT THE WRONG GRANULARITY.** **Fix differs: a narrower sentence vs a finer
+measurement.** **Rule added: to test a claim about a composite, test it on the components.**
+
+**Reference windows: 1–30 Sep 163,661 (+322, growing a SECOND day after two days of shrinking — correction 8
+holds) · 1–7 Oct 46,374 (+1,460).**
+
+## Brief queue after 2026-10-24
+
+**Written up today:** PROSPECT shoulder arthroplasty recommendations; immediate vs delayed extubation after
+paediatric liver transplantation; fospropofol for sedation; glycocalyx-targeted interventions in sepsis.
+
+**Held (14):** `10.1136/rapm-2025-107226` · `10.1097/cce.0000000000001452` · `10.1093/ejcts/ezag203` ·
+`10.1097/cce.0000000000001451` · `10.1186/s13054-026-06272-7` · `10.1161/jaha.126.050284` ·
+`10.2147/dddt.s598574` · `10.1186/s13019-026-04684-8` · `10.3760/cma.j.cn121430-20260408-00165` ·
+`10.1007/s11701-026-04028-7` · `10.1007/s10877-026-01492-2` · `10.1016/j.clnesp.2026.105204` ·
+`10.1002/jpen.70158` · `10.12659/msm.954002`
+
+**Added today (3) — note a CAESAREAN-ANALGESIA CLUSTER, three documents in three days:**
+transversalis fascia plane block vs wound infiltration (`10.1590/1806-9282.20260662`); TENS plus low-level
+laser photobiomodulation (`10.1371/journal.pone.0360761`) — **both join the dexmedetomidine caesarean trial
+reported 23 Oct**; esketamine plus magnesium sulfate for postoperative fatigue after laparoscopic
+cholecystectomy (`10.2147/jpr.s636898`).
+
+**Logged with their defect, for re-check:** a **comment and a reply** on a phenobarbital-versus-benzodiazepine
+meta-analysis for alcohol withdrawal in critically ill adults (`10.1002/phar.70210`, `10.1002/phar.70212`),
+both abstract-free; also the reply to a comment on esketamine vs dexmedetomidine in thoracoscopic surgery
+(`10.1007/s00540-026-03920-8`), abstract-free. **Three defective records became readable this week without
+intervention, so re-check rather than escalate.**
+
+**Backstop: 1–25 August window, 343 unseen. Next window 1–31 July.**
+
+## Mechanistic-evidence asymmetry — NEW RULE, opened 2026-10-24
+
+| Document | Mechanism measured | Direction | Evidential weight |
+| --- | --- | --- | --- |
+| **Haemoadsorption in cardiac surgery (23 Oct)** | IL-6, TNF — the cytokines the cartridge removes | **NULL** | **close to decisive AGAINST** — a therapy that does not do its own mechanism cannot work through it |
+| **Glycocalyx interventions in sepsis (today)** | syndecan-1, heparan sulfate, hyaluronan, perfused boundary region | **POSITIVE** | **almost nothing** — necessary, nowhere near sufficient |
+| **Fospropofol (today)** | cardiorespiratory tolerability, the reason the prodrug exists | **NULL** (hypotension RR 0.93, 0.67–1.28) | **strong against the drug's rationale** |
+
+**RULE: when a review reports mechanism-level outcomes, the DIRECTION decides the weight. A null is strong
+evidence; a positive is a research agenda.**
+
+## Novel sedatives vs propofol — neither claim survives
+
+| Drug | Claimed advantage | Finding |
+| --- | --- | --- |
+| Remimazolam (thread at 6 documents) | faster emergence | **exists only with flumazenil** (20 Oct) |
+| **Fospropofol (today)** | cardiorespiratory tolerability | **not established**; hypotension RR 0.93 (0.67–1.28); paraesthesia/pruritus common |
+
+**Propofol remains hard to improve on. The honest reading: these are ALTERNATIVES, not upgrades.**
+**What would extend it: a head-to-head powered for a cardiorespiratory outcome, or a three-arm remimazolam
+trial with and without flumazenil.**
+
+## Recommendation-structure catalogue — PROSPECT added 2026-10-24
+
+| Document | Framework | Discloses the negative? |
+| --- | --- | --- |
+| **PROSPECT shoulder arthroplasty (today)** | **three-way bin: improved / conflicting / no evidence**, then a regimen | **YES, and names a product: "but not liposomal bupivacaine"** |
+| Canadian spinal procedures (22 Oct) | USPSTF A–D plus I — has an explicit "not recommended" grade | framework described, **distribution withheld** |
+| SFAR/SFPC medication errors (26 Nov 2025) | reclassified RFE → PPG in advance | yes, by format |
+| Three French-speaking documents (19–21 Oct) | GRADE, labelled per recommendation | yes, 10 of 48 graded |
+
+**PROSPECT reaches an explicit negative WITHOUT grading — it bins.** **First PROSPECT document here.**
+**Screening yield 1,809 → 37 (2.05%), and 30 trials plus 7 reviews still could not settle whether a continuous
+interscalene catheter beats a single bolus.**
+
+## Monitoring thread — tenth entry, and the most complete condition-3 failure recorded
+
+| Document | How condition 3 fails |
+| --- | --- |
+| **Glycocalyx interventions in sepsis (today)** | **NO non-instrument outcome EXISTS in the review** — every outcome is a shedding marker, a microcirculatory index or a micrograph |
+
+**Previous worst was an outcome measured partly by the instrument. This is a review with no patient outcome at
+all.** **Thread stays open.**
