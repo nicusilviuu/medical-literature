@@ -6010,3 +6010,113 @@ studies, find the inclusion criterion that did the cutting and say what it exclu
 **ELEVEN OF 51 SWEEP HITS WERE DUAL-DEPOSIT PAIRS** — the same record twice, one copy abstract-free and dated
 1 January 2026. **The defect is now the single most common artefact in these sweeps and the `fpd 2026-01-01`
 placeholder is its reliable marker.**
+
+## 2026-10-25 (guidelines watch)
+
+**METHOD CORRECTION, AND IT IS THE MOST CONSEQUENTIAL OF THE MONTH: AN ABSTRACT-FREE RECORD IS NOT AN
+UNREADABLE DOCUMENT.** **THE DISCRIMINATOR IS NOT ABSTRACT LENGTH — IT IS WHETHER THE RECORD CARRIES A PMCID
+AND AN OPEN-ACCESS FLAG.** Two AAST Critical Care Committee PICS consensus guidelines surfaced with
+**zero-length abstracts in every record**, and both are OA with a PMCID, so both full texts returned on the
+first request: **`https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML`, 156 kB and 165 kB**,
+yielding **all twelve questions and recommendations across the two parts.** **Under standing practice both
+would have gone straight onto the needs-a-PDF list.**
+**RULE: before writing off any abstract-free in-scope record, check two fields — `pmcid` and `isOpenAccess`.
+If both are present, fetch the full text. This is a two-field check and it takes one query.**
+**ACTION ON THE CALENDAR: run it against all nine (now ten) needs-a-PDF entries on the next quiet day.**
+
+**AND THE SAME CHECK EXPLAINS TODAY'S FAILURE, which is why it is a discriminator rather than a hope.** The
+three ISHLT documents have **no PMCID and are not OA** — so the route that worked for AAST and for the SRLF
+atrial fibrillation guideline (20 Oct) **does not exist for them.** The JCVA stroke-guideline summary
+(`10.1053/j.jvca.2026.09.005`) likewise: one record, no PMCID, not OA. **The check correctly separates the
+recoverable from the unrecoverable.**
+
+**THE DATED ISHLT RE-CHECK FAILED ON ALL FOUR ROUTES — report as unobtainable, not as pending.**
+(1) Index: third check, still zero-length. (2) Sibling record: one Europe PMC record each, nothing to read.
+(3) PMC full text: no PMCID, not OA. (4) Publisher: the DOI resolves to `linkinghub.elsevier.com`, which
+returns a page whose **entire content is the word "Redirecting"** — the JavaScript wall already recorded for
+this publisher. **Moved to a DORMANT list on the same reasoning that retired the ESPEN "partially revised"
+diff on 18 October: three index checks plus a publisher attempt with no route remaining is a finding, not a
+task.** **Rule: a re-check schedule needs a termination condition, and "all known routes exhausted" is it.**
+
+**A GUIDELINE THAT DECLINES THE SYSTEMATIC-REVIEW LABEL OUTRIGHT — the most candid methods statement recorded
+here.** AAST, both parts, verbatim: **"The methodology did not follow the iterative selection or appraisal
+processes characteristic of a systematic review; instead, the search and selection strategies were determined
+by individual authors."** And: **"each working group member appraised the quality and applicability of the
+evidence at their discretion."** **There are no evidence grades at all — and given those methods, there should
+not be.** **Set against a month of documents that described GRADE and withheld the distribution, declining the
+label outright is the more honest failure mode.** **Rule: a document with no grades and an explicit
+non-systematic methods statement scores BETTER on the disclosure axis than one with a named framework and no
+distribution.**
+
+**AN 80% CONSENSUS THRESHOLD WITH AN EXPLICIT 'NO CONSENSUS' CATEGORY — add to the structure catalogue.**
+"Consensus was defined a priori as agreement among ≥80% of committee members during structured discussions …
+any points for which consensus could not be achieved were recorded as 'no consensus' in the final document."
+**A named threshold plus a category for failure to reach it is a disclosure structure; most documents have
+neither.**
+
+**FINANCIAL HARDSHIP AS A CLINICAL OUTCOME WITH A NAMED SCREENING INSTRUMENT — sixth entry in the pathway
+thread and the first where the cost falls on the PATIENT.** AAST Part 2 recommends structured multidomain
+screening of **cost burden, employment impact, insurance status and access to resources — the AAST Health
+Economics Committee's "Financial Five"** — asks providers to mitigate preventable cost drivers via the ICU
+Liberation bundle, and asks **hospitals** to ensure access to financial counsellors. **Rule: when a guideline
+assigns responsibility to the institution rather than the clinician, record it; it is rare and it is
+checkable.**
+
+**A 48-HOUR ICU THRESHOLD IS THE OPERATIONAL CORE OF BOTH AAST PARTS, AND IT IS A JUDGEMENT.** It triggers
+psychological screening (Part 2) and PICS-clinic referral (Part 1), is consistent across both publications,
+and **nothing in either methods section suggests it came from a risk model.** **Rule: identify the single
+number a unit would need to implement a guideline, then check whether it was derived or chosen.**
+
+**PICS GAINS A FOURTH, BIOLOGICAL DOMAIN.** AAST Part 1 adds **persistent thromboinflammatory dysregulation
+and sustained organ dysfunction** to the physical/cognitive/psychological triad, justified by persistent
+immune alteration after prolonged ICU stay and organ failure, linked to post-discharge morbidity and
+mortality. **This converts PICS from a syndrome defined by what the patient cannot do into one with a
+laboratory signature — a target for mechanistic study rather than only rehabilitation.** **And it puts a
+surgical/trauma committee's stamp on a construct largely developed in medical intensive care.**
+
+**NAMED INSTRUMENTS, WHICH IS THE PRACTICAL VALUE OF BOTH PARTS.** Cognition: **in-person MoCA**, with
+**TICS** as the validated remote alternative. Mental health: **HADS** for anxiety/depression, **PTSS-14** for
+trauma/PTSD, **assessed after discharge "when PTSD-related symptoms can be more reliably assessed"** — a
+measurement point and a good one, because screening for post-traumatic stress while the patient is still in
+the unit measures something else. Physical: **no single test validated across all domains**, so an
+individualised approach accounting for the surgical cause. **An honest admission in place of a false
+standard.**
+
+**TWO RISK FACTORS THAT RUN AGAINST INTUITION AND ARE STATED PLAINLY: younger age and female sex** raise the
+risk of PICS-related mental health impairment. **And the in-ICU risk list is almost entirely things an
+intensivist controls** — delirium, deep or prolonged sedation, prolonged ventilation, uncontrolled pain,
+ICU hallucinations and delusional memories, sepsis or shock, sleep and environmental disruption.
+**Which is what makes the ABCDEF bundle recommendation substantive: it converts a sedation-and-delirium
+intervention into a psychiatric one.**
+
+**A THIRD RECOMMENDATION TIER ALMOST NO GUIDELINE USES: EXPLICIT EQUIPOISE.** ERS/ESRS CPAP: **one strong
+recommendation** (CPAP for excessive daytime sleepiness), **a set of conditional ones** (sleepiness, other
+patient-reported outcomes, blood pressure; moderate-to-severe OSA; the elderly; arterial and
+treatment-resistant hypertension), and **"either CPAP or no treatment"** for patients without EDS, for
+**atrial fibrillation recurrence**, and for **glycaemic control in impaired glucose metabolism.**
+**Equipoise is a different statement from "insufficient evidence": it says the evidence exists and does not
+favour either choice, which is actionable where a gap is not.** **Rule: record an equipoise category
+separately; it is the most useful thing a guideline can say and the rarest.**
+
+**AND THE EQUIPOISE LIST IS EXACTLY WHERE ENTHUSIASM RAN AHEAD OF THE RANDOMISED EVIDENCE** — the prognostic
+indications large cardiovascular outcome trials failed to support. **Honest one-line summary: CPAP is strongly
+recommended for how patients FEEL and conditionally at best for what HAPPENS to them. The single strong
+recommendation is for a symptom.**
+
+**A DERIVATIVE'S FULL TEXT IS A ROUTE TO ITS PREDECESSOR — second instance in two days.** AAST Part 1
+(3 April 2026) was found **only because Part 2's full text cited it**; yesterday the 2026 EUSEM guidelines were
+found only because an implementation paper named them. **Rule confirmed twice: harvest the citations of any
+in-scope derivative.**
+
+**THE TRACKED SOCIETY LIST HAS NOW MISSED THE IN-SCOPE GUIDANCE TWO DAYS RUNNING.** EUSEM yesterday, **AAST
+today** — neither is on the list, and both supplied the lead items. **The list is necessary and is not
+sufficient; the keyword sweep and citation-harvesting are carrying it.**
+
+**THIRD CONSECUTIVE DAY THE PUBLICATION-TYPE SWEEP FOUND NOTHING IN SCOPE** (5 hits: hepatology, two
+oncology, sleep medicine, ADHD). **Keyword sweep: 23 hits and all of today's items.** **Six days of
+sweep-pattern logging and the keyword sweep has carried the in-scope items on five of six.**
+
+**AGREEMENT REACHED INDEPENDENTLY IS WORTH RECORDING AS EXPLICITLY AS DISAGREEMENT.** ERS/ESRS (11 Oct, read
+today) and the Indian Chest Society home-NIV guidelines (21 Oct, read 24 Oct) **both make CPAP the preferred
+initial treatment for obesity hypoventilation syndrome with severe OSA** — different continents, different
+specialties, separate consensus processes.

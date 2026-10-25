@@ -4274,3 +4274,119 @@ available.**
 **NO TEST IS SET TODAY, deliberately.** **PMC at zero is exactly the state that produced yesterday's failed
 test.** **Today's total is unknown because a contributing source has not started.** **Tomorrow's reading of
 today's 11,188 will say how much was missing — a measurement, not a hypothesis.**
+
+## Guidelines watch after 2026-10-25 — the dated re-check failed, and the method is corrected
+
+**NEW STANDING CHECK, and it is the most consequential change of the month: BEFORE WRITING OFF ANY
+ABSTRACT-FREE IN-SCOPE RECORD, CHECK TWO FIELDS — `pmcid` AND `isOpenAccess`. If both present, fetch
+`https://www.ebi.ac.uk/europepmc/webservices/rest/<PMCID>/fullTextXML`.**
+**Demonstrated today: two AAST PICS consensus guidelines with ZERO-LENGTH abstracts in every record returned
+156 kB and 165 kB of full text on the first request, yielding all twelve questions and recommendations.**
+**Under standing practice both would have gone to needs-a-PDF.**
+**The check is a DISCRIMINATOR, not a hope: the three ISHLT documents and the JCVA stroke summary all fail it
+(no PMCID, not OA) and are genuinely unreadable.**
+
+**CALENDAR ACTION: run the two-field check against all ten needs-a-PDF entries on the next quiet day.
+ASA PeRLS (`10.1097/aln.0000000000006260`) first.**
+
+**DATED ITEM CLOSED — ISHLT RE-CHECK FAILED ON ALL FOUR ROUTES.**
+(1) index: third check, zero-length. (2) sibling: one record each. (3) PMC full text: no PMCID, not OA.
+(4) publisher: `linkinghub.elsevier.com` returns a page whose entire content is "Redirecting".
+**→ DORMANT, routes exhausted. Same reasoning that retired the ESPEN diff on 18 Oct.**
+**Rule: a re-check schedule needs a termination condition, and "all known routes exhausted" is it.**
+
+## Recommendation-structure catalogue — updated 2026-10-25
+
+| Document | Framework | Disclosure |
+| --- | --- | --- |
+| **AAST PICS Parts 1 and 2 (today)** | **targeted narrative review by subtopic; ≥80% consensus threshold with an explicit 'no consensus' category** | **declines the systematic-review label outright, in its own words; NO grades, and given the methods there should not be** |
+| **ERS/ESRS CPAP (today)** | PICO + systematic review + GRADE + Evidence-to-Decision | **THREE TIERS: 1 strong, several conditional, and EXPLICIT EQUIPOISE ("either CPAP or no treatment")**; distribution not given |
+| UK OPAT GPR (24 Oct) | SR + consensus + consultation | best this month — names exactly what changed (5 new + 2 amended) |
+| Indian Chest Society home NIV (24 Oct) | ICS framework (4th framework) | no counts, no distribution |
+| EUSEM acute pain 2026 (24 Oct) | PRISMA SR, CERTA + WHO ladder | no counts; admits its predecessor failed |
+| PROSPECT shoulder (24 Oct brief) | three-way bin | names liposomal bupivacaine as unsupported |
+
+**TWO NEW ENTRIES ON THE DISCLOSURE AXIS:**
+**(a) Declining the systematic-review label outright scores BETTER than a named framework with no
+distribution.** AAST, verbatim: "The methodology did not follow the iterative selection or appraisal processes
+characteristic of a systematic review; instead, the search and selection strategies were determined by
+individual authors."
+**(b) AN EQUIPOISE TIER — "either CPAP or no treatment" — is a different statement from "insufficient
+evidence": it says the evidence EXISTS and does not favour either choice.** **Record it separately; it is the
+most useful thing a guideline can say and the rarest.**
+
+## Pathway thread — sixth entry, and the first where the cost falls on the patient
+
+| Document | Where it fails / who pays |
+| --- | --- |
+| HRS prior authorization (16 Oct) | payers deny |
+| CCS transcatheter update (19 Oct) | patients never referred |
+| Canadian spinal procedures (22 Oct) | funder on the panel |
+| Acute pain toolkit (23 Oct) | clinician does not act |
+| UK OPAT update (24 Oct) | service does not reach the patient |
+| **AAST PICS Part 2 (today)** | **the PATIENT pays — financial hardship screened with the AAST Health Economics Committee's "Financial Five"; hospitals asked to ensure access to financial counsellors** |
+
+**A guideline that assigns responsibility to the INSTITUTION rather than the clinician is rare and
+checkable.**
+
+## PICS — a two-part AAST consensus guideline, both recovered from full text
+
+**Part 1 (3 Apr 2026, `10.1136/tsaco-2025-002172`):** defines PICS and **ADDS A FOURTH, BIOLOGICAL DOMAIN —
+persistent thromboinflammatory dysregulation and sustained organ dysfunction** to the
+physical/cognitive/psychological triad. Cognition: **in-person MoCA, TICS as validated remote alternative.**
+Physical: **no single test validated across all domains** → individualised, accounting for the surgical cause.
+**PICS clinic** = multidisciplinary outpatient programme across four core domains, dedicated provider
+champion + nursing + physical therapy, with an explicit feasibility caveat. **Referral: ICU >48 h or high
+risk, evaluated before discharge, follow-up 2–4 weeks after.**
+
+**Part 2 (16 Oct 2026, `10.1136/tsaco-2026-002496`):** six questions on patient/family concerns, mental-health
+diagnosis, risk factors, what an intensivist can do, caregiver burden, and financial hardship.
+**Screening: ICU >48 h or high risk; starts IN the ICU and continues through transitions; HADS for
+anxiety/depression, PTSS-14 for trauma/PTSD after discharge "when PTSD-related symptoms can be more reliably
+assessed."**
+**Risk factors include YOUNGER AGE and FEMALE SEX** (counter-intuitive, stated plainly), and an in-ICU list
+that is almost entirely things an intensivist controls → **which is what makes the ABCDEF/ICU Liberation
+recommendation substantive: it converts a sedation-and-delirium intervention into a psychiatric one.**
+
+**THE 48-HOUR THRESHOLD is the operational core of both parts, is consistent across them, and is a JUDGEMENT —
+nothing in either methods section suggests it came from a risk model.** **Rule: find the single number a unit
+would need to implement a guideline, then check whether it was derived or chosen.**
+
+## Citation-harvesting — confirmed twice in two days
+
+**AAST Part 1 was found ONLY because Part 2's full text cited it.** Yesterday the 2026 EUSEM guidelines were
+found only because an implementation paper named them. **Rule: harvest the citations of any in-scope
+derivative.**
+
+**AND THE TRACKED SOCIETY LIST HAS MISSED THE IN-SCOPE GUIDANCE TWO DAYS RUNNING** — EUSEM yesterday, **AAST
+today**, neither on the list, both supplying the lead items. **The list is necessary and not sufficient.**
+
+## Guidelines backlog after 2026-10-25
+
+**Readable (2):** ESPNIC neonatal therapeutic hypothermia comparison (`10.1016/j.lanepe.2026.101874`);
+Vascular Access Society + EKTA position paper on access after kidney transplantation
+(`10.1177/11297298261468406`).
+**Named target (1):** the two-part **2020 EUSEM** acute pain guidelines — still the only way to establish what
+the 2026 update changed.
+**Needs a PDF (10):** ACEP procedural sedation Parts 1–2; Swiss <i>C. difficile</i> (`10.57187/5395`); ASGE
+remimazolam update; SCCT coronary CTA (`10.1016/j.jcct.2026.08.014`); **ASA PeRLS
+(`10.1097/aln.0000000000006260`) — highest priority, FIRST IN LINE for the new two-field check**;
+EACTS/STS/AATS temporary MCS expert analysis (`10.1053/j.jvca.2026.09.028`); ERC 2025 adult ALS corrigendum
+(`10.1016/j.resuscitation.2026.111313`); ESICM equity/diversity/inclusion (`10.1007/s00134-026-08653-6`);
+SFAR/SFPC companion editorial (`10.1016/j.accpm.2025.101719`); **NEW — JCVA summary of what the 2026 acute
+ischaemic stroke guidelines changed for adult and paediatric cardiac surgery
+(`10.1053/j.jvca.2026.09.005`), primary scope and a delta-list format, but one record, no PMCID, not OA, so
+the new check has already failed.**
+**DORMANT, routes exhausted (3):** ISHLT BLAD consensus (`10.1016/j.healun.2026.05.034`), its perspective
+(`…05.031`), the frailty statement (`…05.035`).
+**To the BRIEF (3):** sepsis reinforcement-learning discordance (`10.1038/s44401-026-00156-2`); Indian
+national survey of anaesthetic syringe labelling and standards alignment (`10.7417/ct.2026.2154`) — bears on
+the SFAR/SFPC medication-error recommendations; early-mobility-after-cardiac-surgery trial development
+(`10.3389/fresc.2026.1801084`).
+**Retries (2):** arterial injuries (2 of 3), French severe asthma (1 of 3).
+**Dated:** AHA/ACC perioperative re-check **7 November**; **index-date month audit for October: 1 November**;
+next lagged pass **~10 November**; **two-field check on the needs-a-PDF list: next quiet day.**
+
+**SWEEP-PATTERN LOG, six days:** 20 Oct keyword-only · 21 Oct keyword-plus · 22 Oct publication-type-only ·
+23 Oct keyword-only · 24 Oct keyword-only · **25 Oct keyword-only (publication-type nothing in scope, THIRD
+consecutive day).** **Keyword sweep has carried the in-scope items on five of six days; still run both.**
