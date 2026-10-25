@@ -4267,3 +4267,10 @@ P = .046, 6 events vs 6) **falls INSIDE the tES review's September 2026 update s
 **If not:** a 2026 trial in a major journal was missed by a search that ran after it published.
 **The abstract does not list included studies, so neither is determinable.** **Resolve from the full text when
 available.**
+
+**END-OF-RUN READ, 14:16 (11 min after start): EVERY FIGURE IDENTICAL** — whole 49,137,700, 24 Oct 11,067,
+25 Oct 11,188, `MED` today 10,915, **`PMC` today still ZERO.**
+
+**NO TEST IS SET TODAY, deliberately.** **PMC at zero is exactly the state that produced yesterday's failed
+test.** **Today's total is unknown because a contributing source has not started.** **Tomorrow's reading of
+today's 11,188 will say how much was missing — a measurement, not a hypothesis.**
