@@ -4149,3 +4149,121 @@ ESICM equity/diversity/inclusion (`10.1007/s00134-026-08653-6`); SFAR/SFPC compa
 23 Oct keyword-only (publication-type nothing in scope) · **24 Oct keyword-only (publication-type nothing in
 scope, SECOND consecutive day; WHO obesity guidelines returned for a THIRD day).** **Keyword sweep has carried
 the in-scope items on four of five days; still run both.**
+
+## Index after 2026-10-25 — correction 10, and a container rebuild
+
+**CONTAINER REBUILT OVERNIGHT.** `/home/user/medical-literature` and both `/tmp/claude-0` helper scripts were
+gone. **Repo re-cloned, verified at `fe8d6db`. The epmc helper was rebuilt from `claude/source-notes.md`
+(lines 727–745) rather than from memory** — first use of this archive's tooling record for its stated purpose,
+and it passed its first smoke test. **`git config` survived; `/tmp` did not.** **Recreate-from-notes is now a
+proven recovery path.**
+
+**Start of run, 14:05.** Whole database **49,137,700**, residual 0, **+12,938** on yesterday's 14:04 reading.
+`MED` **41,270,362** (+10,915) · `PMC` **1,014,846** (+1,720) · `PPR` **1,269,987** (+272) · `NBK` **69**
+(+31) · `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `CTX` 3,923 · `HIR` 2,868 ·
+`CIT` 624 unchanged. **The four changes sum to 12,938 exactly.**
+
+| Index date | MED | PMC | PPR | NBK | other | total |
+| --- | --- | --- | --- | --- | --- | --- |
+| Fri 23 Oct | 6,058 | 317 | 1,101 | 13 | 0 | 7,489 (stable) |
+| Sat 24 Oct | **5,723** | **4,524** | 788 | **31** | 1 | **11,067** (was 6,512) |
+| Sun 25 Oct 14:05 | **10,915** | **0** | 273 | 0 | 0 | **11,188** |
+
+**CORRECTION 10 — YESTERDAY'S TEST FAILED.** 24 Oct: 6,512 → **11,067** (+4,555, +70%; yesterday was 58.8% of
+today). **MEDLINE was COMPLETE and unchanged at 5,723; PMC had NOT STARTED and went 0 → 4,524.** **The test
+conflated one source's completion with the day's — which is exactly what the 22 October source decomposition
+exists to prevent.** **The instrument built to separate the streams was used to make a claim in aggregate
+terms.**
+
+**REPLACEMENT STATEMENT: a flat reading of ONE source means THAT source is done and says nothing about the
+others. Judging a day's total would require every contributing source flat — never yet observed.**
+
+**CORRECTION 9 RECURS (2nd instance): all 31 new `NBK` records went into the 24 OCTOBER bucket, none into
+today's.** **CORRECTION 8 HOLDS: 1–30 Sep +1,969 to 165,630 (third straight day of growth); 1–7 Oct +2,819 to
+49,193.**
+
+**"SUNDAY IS QUIET" IS NOT A RULE EITHER:** 25 Oct took a MEDLINE batch of **10,915**; Sunday 18 October took
+nothing from any source.
+
+**Gross vs net:** MEDLINE's entire net gain went into today's bucket → no MED deletions. PMC gained 1,720 net
+while putting 4,524 into the 24 Oct bucket → **~2,804 PMC records deleted elsewhere.**
+
+## Brief queue after 2026-10-25
+
+**Written up today:** CSA-AKI clinical prediction models; perioperative transcranial electrical stimulation
+SR/MA with TSA; uniportal vs multiportal robotic thoracic surgery; dexmedetomidine and postoperative
+delirium/early POCD.
+
+**Held (17, unchanged):** `10.1136/rapm-2025-107226` · `10.1097/cce.0000000000001452` ·
+`10.1093/ejcts/ezag203` · `10.1097/cce.0000000000001451` · `10.1186/s13054-026-06272-7` ·
+`10.1161/jaha.126.050284` · `10.2147/dddt.s598574` · `10.1186/s13019-026-04684-8` ·
+`10.3760/cma.j.cn121430-20260408-00165` · `10.1007/s11701-026-04028-7` · `10.1007/s10877-026-01492-2` ·
+`10.1016/j.clnesp.2026.105204` · `10.1002/jpen.70158` · `10.12659/msm.954002` ·
+`10.1590/1806-9282.20260662` · `10.1371/journal.pone.0360761` · `10.2147/jpr.s636898`
+
+**Added today (4):** NPASS scale reliability and validity in ventilated neonates
+(`10.7759/cureus.116730`) — **a measurement-instrument validation; monitoring thread**; stress hyperglycaemia
+ratio and short-term mortality in critically ill respiratory patients, dose-response MA
+(`10.3389/fmed.2026.1937012`) — **prognostic biomarker thread**; primary prevention of VAP in neonatal ICUs
+(`10.1038/s41390-026-05562-8`); music-based intervention in postoperative lung transplant care
+(`10.1093/jmt/thag021`) — **pairs directly with the 23 Oct music-therapy weaning RCT**.
+
+**Still logged with their defect (abstract-free, for re-check):** `10.1002/phar.70210` and
+`10.1002/phar.70212` (phenobarbital vs benzodiazepine comment + reply); `10.1007/s00540-026-03920-8`
+(esketamine vs dexmedetomidine reply).
+
+**Backstop: 1–25 August window, 343 unseen. Next window 1–31 July.**
+
+## Diagnostic-accuracy rule — NEW, opened 2026-10-25
+
+**WHENEVER SENSITIVITY, SPECIFICITY AND PREVALENCE ARE ALL GIVEN, COMPUTE PPV AND NPV BEFORE READING THE
+CONCLUSION.** CSA-AKI / Thakar 2005 at ≥3 points: prevalence **2.2%**, sens **0.87**, spec **0.49** →
+**PPV 3.7%, NPV 99.4%.** **~96 of every 100 flagged patients will not need renal replacement.**
+**It is a RULE-OUT tool; the abstract's framing ("identify high-risk patients enabling targeted preventive
+interventions") is a RULE-IN use the numbers cannot support.** **An AUC does not distinguish the two.**
+
+**And the intervention the stratification would target failed two days earlier** — Friday's haemoadsorption
+review found no CSA-AKI reduction and no change in IL-6 or TNF. **Condition 2 is nominally met and what it
+triggers has no evidence.**
+
+**Supporting flags on the same document:** pooled-incidence interval widths of **0.4 and 0.1 percentage
+points** (too narrow to be inferential — COVALENT signature); best-validated models **19–21 years old**
+(Thakar 2005, Mehta 2006, Wijeysundera 2007); **calibration underestimates risk, which for a rule-out tool is
+the dangerous direction.**
+
+## TSA-versus-GRADE — NEW distinction, opened 2026-10-25
+
+| Document | TSA verdict | Certainty |
+| --- | --- | --- |
+| Oxygen targets post-arrest (20 Oct) | trending toward futility | — |
+| Vasopressor combination (22 Oct) | **lack of firm evidence** (title said "Improve") | low |
+| Haemoadsorption CSA-AKI (23 Oct) | 48% of required size, neither boundary | — |
+| **tES postoperative pain (today)** | **SUFFICIENT for 3 outcomes — first positive crossing in this archive** | **very low to moderate** |
+
+**TSA asks whether there is ENOUGH data; GRADE asks how much it can be TRUSTED. Enough of a possibly-biased
+estimate is still a possibly-biased estimate.** **Rule: read the two sentences together.**
+**The tES paper is also the methodological benchmark: RoB 2 + publication bias + sensitivity + outlier +
+subgroup + meta-regression + TSA + GRADE in one document.**
+
+## Instrument-alters-the-measurement — third instance in a week
+
+| Document | How |
+| --- | --- |
+| Dexmedetomidine in caesarean (23 Oct) | recalled satisfaction OR 13.4 while 24-h QoR-40 unchanged |
+| Music therapy during weaning (23 Oct) | observer-rated agitation moved; every monitored variable flat |
+| **Dexmedetomidine delirium/POCD (today)** | **a sedative improving a 24-HOUR delirium score — still the tail of emergence** |
+
+**Honest version of today's: dexmedetomidine is associated with better early cognitive SCREENING scores, and a
+24-hour endpoint cannot separate a brain effect from a sedation effect.**
+**Dexmedetomidine is now a three-document thread (caesarean trial 23 Oct; queued head-and-neck delirium trial;
+today). Dose stated consistently: 1 µg/kg load then 0.2–0.7 µg/kg/h — worth tracking as its own variable.**
+
+## MODEST / tES — an unresolved relationship, logged as unresolved
+
+**MODEST** (transcranial electrical stimulation and delirium, *JAMA Network Open*, published **3 Aug 2026**,
+reported here 18 Oct; this archive's standing subgroup-overclaim example — 6 prespecified factors, one at
+P = .046, 6 events vs 6) **falls INSIDE the tES review's September 2026 update search window.**
+**If included:** a meta-analysis reporting delirium RR 0.45 contains a trial that was null for delirium.
+**If not:** a 2026 trial in a major journal was missed by a search that ran after it published.
+**The abstract does not list included studies, so neither is determinable.** **Resolve from the full text when
+available.**

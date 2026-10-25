@@ -5868,3 +5868,145 @@ than writing a recommendation that assumes the equipment.**
 rehabilitation, the two WHO obesity guidelines for a THIRD day, primary biliary cholangitis, ADHD
 pharmacotherapy). **Fifth day of logging sweep patterns and the keyword sweep has now carried the in-scope
 items on four of the five.**
+
+## 2026-10-25 (brief)
+
+**THE ARCHIVE'S RECORD OF ITS OWN TOOLING WAS USED FOR ITS STATED PURPOSE FOR THE FIRST TIME, AND IT
+WORKED.** The container was rebuilt overnight: `/home/user/medical-literature` and both helper scripts were
+gone. **The repository was re-cloned (verified at `fe8d6db`) and the hardened Europe PMC query function was
+rebuilt by `sed -n '727,745p' claude/source-notes.md > /tmp/claude-0/epmc.sh`** — extracted from this file,
+where it has been recorded verbatim since the day it was hardened, **rather than retyped from memory.** It
+passed its first smoke test. **Rule confirmed: record working code in the notes file. It has looked like
+fussiness for weeks and today it saved the run.** **Also worth noting: `git config user.name/user.email`
+survived the rebuild; the helper scripts in `/tmp` did not.**
+
+**CORRECTION 10 — YESTERDAY'S TEST FAILED, AND THE FAILURE IS THE MOST SELF-INFLICTED OF THE SERIES.**
+24 October read **6,512** yesterday and **11,067** today (**+4,555, +70%**; yesterday was 58.8% of today).
+**Why: MEDLINE was COMPLETE and unchanged at 5,723, while PMC had NOT STARTED and went 0 → 4,524.** (PPR
+unchanged at 788; NBK 0 → 31; sum 11,067 exactly.) **The test conflated "the MEDLINE batch is finished" with
+"the day's batch is finished" — and those differ because the sources run on different schedules, which is the
+entire reason the 22 October source decomposition exists.** **So the instrument built to separate the streams
+was used two days later to make a claim that ignored the separation.**
+
+**REPLACEMENT STATEMENT, and it is all the measurement supports: a flat reading of ONE source means THAT
+source is done and says nothing about the others.** **Judging a day's total would require seeing every
+contributing source flat, and no run has yet observed that.** **Rule: when an instrument's whole purpose is to
+disaggregate, never phrase a conclusion in aggregate terms.**
+
+**CORRECTION 9 RECURS, second instance: all 31 new `NBK` records went into the 24 OCTOBER bucket and none into
+today's.** This time the component's gain was the whole source's net gain. **Past buckets gain records; only
+`SRC` decomposition shows it.**
+
+**CORRECTION 8 HOLDS: 1–30 Sep grew +1,969 to 165,630, a THIRD consecutive day of growth after two of
+shrinking; 1–7 Oct +2,819 to 49,193.** **`FIRST_PDATE` windows are net and non-monotonic; `FIRST_IDATE`
+buckets are not upper bounds either (correction 9).**
+
+**A LARGE SUNDAY MEDLINE BATCH.** 25 Oct: 11,188 = MED **10,915** + PPR 273, PMC zero — against Sunday 18
+October which took **nothing from any source**. **So "Sunday is quiet" is not a rule either.** **Gross vs net:
+MEDLINE's entire net gain went into today's bucket (no MED deletions); PMC gained 1,720 while putting 4,524
+into the 24 Oct bucket, so ~2,804 PMC records went elsewhere.**
+
+**DO THE PREDICTIVE-VALUE CALCULATION THE ABSTRACT OMITS — today's single most useful move.** CSA-AKI
+prediction models: **AUC 0.80, sensitivity 0.87, specificity 0.49 at the recommended threshold, outcome
+prevalence 2.2%.** → **PPV 3.7%, NPV 99.4%.** **So ~96 of every 100 patients flagged high-risk for renal
+replacement will not need it.** **It is a RULE-OUT instrument, and the abstract's framing ("may identify
+high-risk patients enabling targeted preventive interventions") is a RULE-IN use the numbers will not
+support.** **Rule: whenever sensitivity, specificity and prevalence are all given, compute PPV and NPV before
+reading the conclusion. An AUC does not distinguish rule-in from rule-out use.**
+
+**AND THE INTERVENTION THE STRATIFICATION WOULD TARGET FAILED TWO DAYS AGO.** Friday's haemoadsorption
+meta-analysis found no CSA-AKI reduction and no change in IL-6 or TNF. **Risk stratification is only valuable
+where something follows from it — condition 2 — and here the protocol exists while the thing it triggers does
+not.**
+
+**POOLED-INCIDENCE INTERVALS TOO NARROW TO BE INFERENTIAL — same signature as COVALENT.** CSA-AKI 26.3%
+(26.0–26.4), width **0.4 points**; CSA-AKI RRT 2.2% (2.1–2.2), width **0.1 points**. **Pooled incidences
+across heterogeneous cardiac surgery cohorts do not have that precision unless heterogeneity was not
+propagated.** **Rule: read such point estimates as descriptive and the intervals as not inferential.**
+
+**MODEL VINTAGE AS A SIGNAL.** The three best-validated CSA-AKI models are **Thakar 2005, Mehta 2006,
+Wijeysundera 2007 — 19 to 21 years old** — while the newest named (Demirjian 2022) gets only "promising".
+**A field whose best-validated risk tool predates off-pump's decline, modern blood conservation and current
+transfusion thresholds is telling you validation effort has not followed development effort.**
+
+**AND THE CALIBRATION DIRECTION MATTERS MORE THAN THE DISCRIMINATION: "calibration indicated underestimation
+of risk."** **For a rule-out tool, under-predicting is the DANGEROUS direction — it is how a patient gets
+cleared who should not have been.**
+
+**TSA AND GRADE ANSWER DIFFERENT QUESTIONS, AND A DOCUMENT CAN HAVE BOTH POINTING OPPOSITE WAYS.** The tES
+meta-analysis: **TSA says the sample is SUFFICIENT for three outcomes — the first TSA in this archive to cross
+a boundary in the POSITIVE direction** (compare oxygen targets trending to futility, vasopressors lacking firm
+evidence, haemoadsorption at 48% of required size) — **while GRADE certainty runs very low to moderate.**
+**TSA asks whether there is enough data; GRADE asks how much it can be trusted. Enough of a possibly-biased
+estimate is still a possibly-biased estimate.** **Rule: read the TSA sentence and the certainty sentence
+together; a reader who takes either alone gets the wrong impression.**
+
+**MOST METHODOLOGICALLY COMPLETE META-ANALYSIS THIS ARCHIVE HAS REPORTED** — RoB 2, publication bias,
+sensitivity, outlier analysis, subgroup, meta-regression, TSA **and** GRADE in one paper. **Worth recording as
+the benchmark.**
+
+**A HARM FINDING CAN BE AN UNBLINDING MECHANISM even where sham control is feasible.** tES is sham-controllable
+and sham stimulation is standard — **but stimulation site discomfort RR 3.10 (1.96–4.90) means a patient who
+feels tingling knows which arm they are in.** **And the outcomes that moved are self-reported pain,
+patient-controlled opioid use and observer-rated delirium.** **The one NULL is quality of recovery — also
+self-reported, which cuts against the simple unblinding story and should be said rather than explained away.**
+
+**"TRANSCRANIAL ELECTRICAL STIMULATION" IS NOT ONE INTERVENTION, and the heterogeneity analysis says so.**
+Initial timing and number of sessions explained heterogeneity in day-1 pain; timing, modality and target site
+explained it in opioid consumption. **A pooled SMD of −0.57 is an average across several different
+treatments.** **Rule: when meta-regression identifies the intervention's own parameters as heterogeneity
+sources, the pooled estimate is an average over treatments, not an effect of one.**
+
+**AN UNRESOLVABLE RELATIONSHIP BETWEEN A META-ANALYSIS AND A TRIAL THIS ARCHIVE REPORTED — state it as
+unresolved.** MODEST (tES and delirium, *JAMA Network Open*, published **3 August 2026**, reported here
+18 October) **falls inside this review's September 2026 update search window.** **If included, a meta-analysis
+reporting delirium RR 0.45 contains a trial that was null for delirium; if not, a 2026 trial in a major
+journal was missed by a search that ran after it published.** **The abstract does not list included studies,
+so neither is determinable.** **Rule: when a pooled result and a known individual trial disagree, check the
+search window and say which of the two possibilities obtain — or that you cannot.**
+
+**A REVIEW THAT DISMANTLES ITS OWN POSITIVE FINDING IN THE NEXT SENTENCE — the best disclosure behaviour of
+the week.** Uniportal RATS: day-1 pain MD −0.6 points, and **the very next sentence says it is below
+clinical-importance thresholds AND lost significance when digitised values were excluded (p = 0.092)**.
+**"Digitised values" = data read off published graphs, a recognised extraction-error source. A result that
+depends on figure-digitised data depends on the reviewers' ruler.** **Rule: look for whether a sensitivity
+analysis excluding digitised data was done; its absence is itself informative.**
+**Minor internal inconsistency worth noting because it propagates: results say MD −0.6, next sentence says
+"the 0.5-point pain difference".**
+
+**ROBINS-I "CRITICAL" RISK OF BIAS IN 7 OF 9 STUDIES MEANS THE REVIEW DESCRIBES A LITERATURE, NOT AN
+EFFECT.** Critical means too confounded to provide useful evidence on the effect of interest. **Complications
+16.0% vs 30.2% — 14.2 points absolute, RR 0.49 (0.22–1.06), p = 0.069, I² 66% — is either a large real effect
+nine small non-randomised studies cannot establish, or exactly what confounding produces.** **The authors name
+the confounder: operative era and experience.** **Uniportal is newer, so its series come from more experienced
+surgeons operating later on selected cases — sufficient to generate a 14-point difference with no causal
+contribution from port count.**
+
+**CONSOLE TIME IS A SURGEON/SYSTEM OUTCOME, NOT A PATIENT OUTCOME** (−23.5 min, −35.6 to −11.4). **It is the
+one robust-looking finding and it belongs in a different column from complications and pain. A reader choosing
+between techniques on this review is choosing on theatre throughput.**
+
+**A SLASH IN AN OUTCOME NAME IS A COMPOSITE OF TWO DIFFERENT DISEASES.** Dexmedetomidine: "24-h postoperative
+delirium/early postoperative cognitive impairment". **Delirium is an acute fluctuating attention disturbance
+screened by CAM-type instruments; early POCD is a measured decrement on neuropsychological testing. Different
+pathophysiology, time course, instrument and consequence.** **The pooled OR 0.38 describes a mixture whose
+composition is not stated — how many events were delirium and how many cognitive impairment is the first thing
+a reader needs.** **Rule: treat a solidus in an outcome name as a composite and demand the split.**
+
+**THIRD INSTANCE IN ONE WEEK OF AN INTERVENTION THAT ALTERS THE INSTRUMENT MEASURING ITS OWN EFFECT.**
+(a) 23 Oct dexmedetomidine raising recalled caesarean satisfaction 13-fold with 24-h QoR-40 unchanged;
+(b) 23 Oct music therapy moving observer-rated agitation while every monitored variable stayed flat;
+(c) today, a sedative improving a **24-hour** delirium score. **Twenty-four hours post-op is still the tail of
+emergence, and dexmedetomidine's arousable sedation scores differently on a delirium screen — not necessarily
+better, differently.** **Honest version: dexmedetomidine is associated with better early cognitive SCREENING
+scores, and a 24-hour endpoint cannot separate a brain effect from a sedation effect.**
+
+**A FOUR-STUDY META-ANALYSIS OF A QUESTION WITH DOZENS OF TRIALS SHOULD SAY SO.** Dexmedetomidine and
+postoperative delirium has many RCTs and several large meta-analyses; **the narrow inclusion criteria (elderly,
+general surgery, 24-h composite) cut it to 4 studies and 479 patients, and nothing in the abstract positions
+it against the larger literature.** **Rule: when a meta-analysis of a well-studied question includes very few
+studies, find the inclusion criterion that did the cutting and say what it excluded.**
+
+**ELEVEN OF 51 SWEEP HITS WERE DUAL-DEPOSIT PAIRS** — the same record twice, one copy abstract-free and dated
+1 January 2026. **The defect is now the single most common artefact in these sweeps and the `fpd 2026-01-01`
+placeholder is its reliable marker.**
