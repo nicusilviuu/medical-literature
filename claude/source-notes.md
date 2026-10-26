@@ -6120,3 +6120,141 @@ sweep-pattern logging and the keyword sweep has carried the in-scope items on fi
 today) and the Indian Chest Society home-NIV guidelines (21 Oct, read 24 Oct) **both make CPAP the preferred
 initial treatment for obesity hypoventilation syndrome with severe OSA** — different continents, different
 specialties, separate consensus processes.
+
+## 2026-10-26 — a source at zero predicts nothing; two weekday rules retired; and two near-misses caught pre-commit
+
+### INDEX RULE (standing, now with two measurements behind it)
+
+**A source sitting at zero while another has gone flat carries NO information about what that source will
+deliver.** Measured twice, on consecutive days, from an identical observable:
+
+| Bucket | At end of its own run | Next day | Change | PMC's share |
+| --- | --- | --- | --- | --- |
+| 24 October | 6,512, PMC 0 | 11,067 | +4,555 | +4,524 |
+| 25 October | 11,188, PMC 0 | 11,194 | **+6** | **+1** |
+
+Three orders of magnitude apart. The 25 October page declined to set a test on exactly this state and said
+tomorrow's reading would be a measurement rather than a hypothesis. **That refusal is now the first in this
+archive vindicated BY measurement rather than merely left unfalsified.** Keep the replacement statement from
+correction 10 unchanged and treat it as closed: a flat reading of one source means that source is done and
+says nothing whatever about the others.
+
+25 October decomposed exactly on re-reading: MED 10,920 + PPR 273 + PMC 1 = 11,194, residual 0. Its +6 is
+MED +5 and PMC +1 — five records entered a MEDLINE batch that had looked complete.
+
+### WEEKDAY RULES: BOTH PROPOSED RULES NOW RETIRED
+
+- Monday 19 Oct MEDLINE **37,183** to that index date at ~14:05.
+- Monday 26 Oct MEDLINE **2,888**. **37,183 / 2,888 = 12.88 → 12.9-fold.**
+
+"Monday is the catch-up day" was floated on 19 Oct and deliberately NOT asserted from one observation; it is
+retired on its second observation, the earliest it could be. "Sunday is quiet" was retired on 18 Oct (a Sunday
+took nothing from any source) and contradicted again on 25 Oct (a Sunday took 10,915). **Two weekday rules
+proposed, two retired. Stop proposing them: batch size is not a function of the calendar.** Four attempts to
+make it one have failed.
+
+### FIRST BOOKSHELF DECREMENT
+
+`NBK` 69 → **65** (−4). `NBK` had only ever risen in this archive's readings, including +31 into the
+24 October bucket on 25 Oct. Until today MEDLINE was the only source observed losing records. Correction 9
+said a past bucket can GAIN; its counterpart is that a source can LOSE. **A −4 inside a +2,989 is invisible
+without the source decomposition** — the same argument that justified building the decomposition on 22 Oct.
+
+### ANALYTIC RULE — THE DENOMINATOR ASYMMETRY (new, name it and reuse it)
+
+**Ask which study design supplies which outcome before reading any effect size.** Today's GLP-1 review
+(16 studies: 7 observational, 9 case reports/series) has the surrogate — residual gastric contents on
+ultrasound — coming from the designs that have denominators, and the outcome that matters — aspiration —
+reported "predominantly in case-based literature", which has none.
+
+**A case series establishes that an event occurred. It cannot establish a rate, because its source population
+is undefined.** So "aspiration events were uncommon" is not a measurement from case-based literature; it is an
+inference from absence of reports, which is publication-dependent in both directions. The review's own
+conclusion keeps the distinction ("current evidence does not establish a corresponding increase"), which is a
+statement about what the evidence fails to show, not a claim that risk is low. **Keep that distinction when
+summarising; it is usually the whole clinical question.** The denominator-bearing null — "larger observational
+studies did not demonstrate a clear increase" — outweighs the nine case reports combined.
+
+Related, and now logged for the fourth time in two weeks: **an intervention that alters the instrument
+measuring its own effect.** Finding retained contents on ultrasound caused postponement, re-assessment and
+changed anaesthetic plans, so the aspiration rate observed in ultrasound-screened patients is partly a product
+of the screening. Any prospective attempt to quantify GLP-1 aspiration risk inherits this.
+
+### ANALYTIC RULE — A NAMED PRIMARY OUTCOME WITH NO REPORTED RESULT
+
+The prone-position airway trial names three primary outcomes (peak airway pressure, **need for conversion of
+airway technique**, airway-related complications) and the abstract gives no result for conversion at all — not
+a number, not "none occurred". **Report the gap as a gap. Do not infer the number and do not assume silence
+means zero.** In this case the omitted outcome is the one that bears on the specific hazard the technique is
+questioned for, so the absence is the most important thing the abstract says.
+
+Also recorded: **the one reported between-group difference was Ppeak higher with a tracheal tube (P < 0.001),
+which is a property of the apparatus — a narrower conduit — not a finding about the patient.** SpO₂, ETCO₂ and
+minute ventilation were all comparable, i.e. the pressure difference did not become a ventilation difference.
+**And "comparable" from 35 per arm, with no equivalence margin and no power statement, is an absence of
+detected difference, not demonstrated equivalence.**
+
+### ANALYTIC RULE — I² = 0% IN A HANDFUL OF SMALL STUDIES IS UNINFORMATIVE, NOT REASSURING
+
+The antifibrotic meta-analysis reports I² = 0% for **all four** outcomes across **five retrospective cohorts**.
+I²'s denominator depends on study count and within-study precision; with five small retrospective studies and
+events in single or low double digits the statistic has almost no power to detect heterogeneity. **Four zeros
+do not mean the studies agree; they mean heterogeneity could not have been detected had it been present.**
+
+Two companion rules from the same paper:
+
+- **Attenuation on adding the largest and least-selected data source is the signature of selection effects.**
+  "Sensitivity analyses, including a nationwide database study, supported the association, although the effect
+  was attenuated" — that sentence is the best available indication of what a prospective estimate would look
+  like: smaller.
+- **Confounding by indication, direction matters.** Antifibrotics go to patients well enough to take them and
+  under specialist follow-up; the comparator includes those too unwell, diagnosed late, or outside specialist
+  care. A 30-day all-cause mortality RR of 0.12 for an oral drug that changes neither the operation nor the
+  tumour is larger than the mechanism plausibly supports.
+- **A non-English database named in the search string is a generalisation constraint worth stating.** Searching
+  Ichushi-Web (Japan Medical Abstracts Society) alongside PubMed is a deliberate choice made when the evidence
+  base is substantially Japanese-language; the pooled estimate then reflects one practice context. Not a
+  criticism of the search — a limit on transfer that the abstract does not state.
+
+### TSA AND GRADE — SECOND INSTANCE IN TWO DAYS, OPPOSITE VERDICTS
+
+Yesterday's rule (TSA asks whether there is enough data; GRADE asks how far it can be trusted) now has a
+worked contrast:
+
+- 25 Oct, transcranial electrical stimulation: **TSA sufficient** for three outcomes, **GRADE very low to
+  moderate** — ample data from biased studies.
+- 26 Oct, preoperative cognitive training: **GRADE low and very low**, *and* **"the required information sizes
+  were not reached for either outcome"** with cumulative Z-curves not crossing the boundaries — not enough
+  data, and what there is is biased.
+
+**The second is the rarer and more useful disclosure, because it accompanies a positive result** (POD RR 0.53,
+95% CI 0.36–0.77, P = 0.001). The conventional pattern is a null result plus a power caveat; a significant
+result plus a "potential for false-positive findings" from the authors' own TSA is worth flagging as good
+practice rather than as a contradiction.
+
+**Boundary-significant meta-regression:** β1 1.072, 95% CI 0.006–2.138, P = 0.049 — the interval excludes zero
+by six thousandths. Symmetric to three decimals (1.066 either side), so internally consistent, and a
+hypothesis rather than a finding. The companion DNR moderator sits at P = 0.045, the same boundary. **Report
+the bound; it makes the case better than any adjective.**
+
+### TWO NEAR-MISSES CAUGHT PRE-COMMIT (both method errors, both mine)
+
+1. **I drafted the end-of-run index paragraph with invented numbers before taking the reading.** The draft
+   contained a plausible-looking "whole database 49,140,708, up 19" at a time that had not yet arrived. It was
+   replaced with a placeholder and the real reading taken afterwards (14:15:29, every figure identical to
+   14:06:44). **RULE: never draft a reading before taking it, not even as scaffolding. Write the placeholder,
+   take the measurement, then fill it.** A fabricated number in a draft is one failed edit away from being a
+   fabricated number in the archive.
+2. **I wrote an unverifiable ordinal — "the eleventh source observed losing records".** Eleven is the number of
+   sources in the decomposition, not the number observed losing records, and the latter is not established
+   anywhere in the notes. Replaced with what is checkable: until today MEDLINE was the only source this archive
+   had watched lose records. **RULE: an ordinal claim ("the first", "the eleventh", "the third time") must be
+   checkable against the archive before it is written — this is the archive's named failure mode and it fired
+   again today.**
+
+### MARKUP HAZARD — A HEADING MUST BE ONE LINE
+
+A wrapped `## ` heading renders as a heading plus a stray paragraph. Today's item-4 heading was written across
+two lines at 100-column wrap and caught by the pre-commit heading check. **Add to the suite: every `^#+ ` line
+must contain the whole heading.** Only the front-matter `summary` line and heading lines may exceed the wrap
+width.

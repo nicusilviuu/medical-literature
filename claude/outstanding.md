@@ -4390,3 +4390,71 @@ next lagged pass **~10 November**; **two-field check on the needs-a-PDF list: ne
 **SWEEP-PATTERN LOG, six days:** 20 Oct keyword-only · 21 Oct keyword-plus · 22 Oct publication-type-only ·
 23 Oct keyword-only · 24 Oct keyword-only · **25 Oct keyword-only (publication-type nothing in scope, THIRD
 consecutive day).** **Keyword sweep has carried the in-scope items on five of six days; still run both.**
+
+## 2026-10-26 — index baselines, sweep log, queue
+
+### Index baselines (for tomorrow's comparison)
+
+Reading at **14:06:44 UTC**, confirmed identical at **14:15:29 UTC** (nine minutes later, every figure
+unchanged):
+
+- **Whole database 49,140,689, residual 0**, up 2,989 on 25 Oct's 14:05 reading.
+- `MED` 41,273,255 (+2,893) · `PMC` 1,014,847 (+1) · `PAT` 4,229,296 (0) · `PPR` 1,270,085 (+98) ·
+  `AGR` 1,026,549 (0) · `ETH` 176,799 (0) · `CBA` 142,377 (0) · `CTX` 3,924 (+1) · `HIR` 2,868 (0) ·
+  **`NBK` 65 (−4, FIRST BOOKSHELF DECREMENT)** · `CIT` 624 (0). The five changes sum to 2,989 exactly.
+- **Bucket 2026-10-26: 2,987** = MED 2,888 + PPR 98 + CTX 1 (+ PMC 0, NBK 0). Decomposes exactly.
+- **Bucket 2026-10-25: 11,194** = MED 10,920 + PPR 273 + PMC 1. Decomposes exactly. **Was 11,188 at end of
+  its own run: +6 only (MED +5, PMC +1).**
+- Windows: **1–30 Sep 165,894 (+264, fourth consecutive day of growth)**; 1–7 Oct 49,470 (+277). Both growth
+  figures an order of magnitude below yesterday's (1,969 / 2,819), tracking the small MEDLINE batch.
+
+**Tomorrow:** read today's 2,987 and 25 Oct's 11,194. **No prediction is set — deliberately, for the second
+day running.** Today's bucket ends the run with PMC at zero and MEDLINE flat, which is the exact state that
+produced +4,555 on one day and +6 on the next.
+
+**Retired rules to stop re-proposing:** "Sunday is quiet" (retired 18 Oct, contradicted 25 Oct);
+**"Monday is the catch-up day" (retired today: Mon 19 Oct MED 37,183 vs Mon 26 Oct MED 2,888, 12.9-fold)**.
+
+### Sweep-pattern log — day 7
+
+| Date | Index dates swept | Hits | Returned | Added to queue |
+| --- | --- | --- | --- | --- |
+| 26 Oct | 25–26 Oct | **37** | 37 | **0** |
+
+**Smallest sweep this archive has run.** The four selected items exhausted the in-scope material, so nothing
+was added to the queue — the first day that has happened.
+
+### Queue after today: 21 held, unchanged
+
+No additions. Still logged with their defect: the phenobarbital-versus-benzodiazepine comment and reply, and
+the esketamine-versus-dexmedetomidine reply, all abstract-free.
+
+**Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### Calendar — unchanged by today
+
+- **Next quiet day:** run the two-field `pmcid` + `isOpenAccess` check against all ten needs-a-PDF guidelines
+  entries, **ASA PeRLS (`10.1097/aln.0000000000006260`) first**. *Today was not it — the brief run consumed
+  the time; still outstanding.*
+- **1 November:** index-date month audit for October.
+- **7 November:** AHA/ACC perioperative re-check.
+- **~10 November:** next lagged pass.
+
+### Published today (brief)
+
+1. Preoperative cognitive training for PND — `10.1016/j.jclinane.2026.112359`, *J Clin Anesth* 116:112359,
+   fpd 2026-10-25. **13 RCTs / 1,446 patients. POD RR 0.53 (0.36–0.77), low certainty; DNR RR 0.66
+   (0.46–0.96), very low, unsupported by sensitivity analyses. TSA: required information sizes not reached for
+   either outcome.** Meta-regression β1 1.072 (0.006–2.138), P = 0.049, traditional over digital training.
+   PROSPERO CRD420261293607. **First appearance of cognitive prehabilitation in this archive.**
+2. GLP-1 perioperative safety — `10.7759/cureus.116901`, *Cureus* 18:e116901, fpd 2026-09-25. **16 studies:
+   7 observational, 9 case reports/series. The denominator asymmetry.** PROSPERO CRD420261289189. Pairs with
+   the *Anaesthesia* consensus at `_guidelines/2026-09-20.md`.
+3. Classic LMA vs ETT, prone urologic surgery — `10.1155/anrp/1390565`, *Anesthesiol Res Pract* 2026:1390565,
+   fpd 2026-10-25. 70 patients, 35/arm, ≤90 min. **Conversion of airway technique is a named primary outcome
+   with no result in the abstract.** IRCT20250729066688N1. **First RCT here on prone airway management;**
+   topic previously only in `_guidelines/2026-10-04.md`.
+4. Perioperative antifibrotic treatment in IPF lung cancer surgery — `10.1111/1759-7714.70408`,
+   *Thoracic Cancer* 17, fpd 2026-10-01. **5 retrospective cohorts, pirfenidone. AE-IPF RR 0.24 (30 d) and
+   0.23 (90 d); mortality RR 0.12 (30 d) and 0.13 (90 d); I² = 0% for all four.** Searched Ichushi-Web.
+   Topic previously in `_guidelines/2026-10-06.md` and `_guidelines/2026-10-09.md`.
