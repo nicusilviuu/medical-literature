@@ -4458,3 +4458,77 @@ the esketamine-versus-dexmedetomidine reply, all abstract-free.
    *Thoracic Cancer* 17, fpd 2026-10-01. **5 retrospective cohorts, pirfenidone. AE-IPF RR 0.24 (30 d) and
    0.23 (90 d); mortality RR 0.12 (30 d) and 0.13 (90 d); I² = 0% for all four.** Searched Ichushi-Web.
    Topic previously in `_guidelines/2026-10-06.md` and `_guidelines/2026-10-09.md`.
+
+## 2026-10-26 (guidelines watch) — backlog, calendar, sweep log
+
+### CALENDAR ACTION DISCHARGED — two-field check on the needs-a-PDF list
+
+**Run today against all ten. Clean negative on ten of ten: no PMCID, not open access, one record each.**
+**CLOSED — do not carry forward.** The two-field check recovers a document only when it is deposited in PMC;
+none of the ten is. Four of the ten have abstracts (ACEP Parts 1–2 at 362 characters each, Swiss
+<i>C. difficile</i> 1,150, ASGE remimazolam 1,039) and are on the list for recommendation detail; **six have
+nothing and the PDF is the only remaining route**: ASA PeRLS, SCCT coronary CTA, EACTS/STS/AATS temporary MCS,
+ERC 2025 adult ALS corrigendum, ESICM equity/diversity/inclusion, SFAR/SFPC companion editorial.
+
+### Guidelines backlog after today
+
+**Readable (2), unchanged:** ESPNIC neonatal hypothermia comparison (`10.1016/j.lanepe.2026.101874`); Vascular
+Access Society + EKTA position paper (`10.1177/11297298261468406`).
+
+**Named target (1), unchanged:** the two-part **2020 EUSEM** guidelines (`10.1007/s11739-020-02477-y`,
+`10.1007/s11739-020-02411-2`) — the only way to establish what the 2026 update changed.
+
+**Needs a PDF (10), now fully triaged** — see above; the two-field check has been applied and failed on all.
+**Plus the JCVA stroke-guidelines delta summary (`10.1053/j.jvca.2026.09.005`), already failed.**
+
+**NEW named gaps (4), all abstract-free with no PMCID and not OA:**
+- Correction to the **2026 ESC Guidelines on cardiac rehabilitation**, published twice —
+  `10.1093/eurheartj/ehag887` and `10.1093/eurjpc/zwag550` (both 23 Oct).
+- Correction to the **2026 ESC Guidelines for CVD and chronic kidney disease** with the ERA —
+  `10.1093/eurheartj/ehag884` (26 Oct).
+- **"On the development of guidelines and clinical documents"**, *J Intensive Care Soc* —
+  `10.1177/17511437261497938` (22 Oct), a methods piece for the recommendation-structure catalogue.
+
+**Dormant, routes exhausted (3), unchanged:** ISHLT BLAD consensus (`10.1016/j.healun.2026.05.034`), its
+perspective (`…05.031`), the frailty statement (`…05.035`).
+
+**To the BRIEF (3), unchanged:** sepsis reinforcement-learning discordance (`10.1038/s44401-026-00156-2`);
+Indian anaesthetic syringe-labelling survey (`10.7417/ct.2026.2154`); early-mobility-after-cardiac-surgery
+trial development (`10.3389/fresc.2026.1801084`).
+
+**Retries (2), unchanged:** arterial injuries (2 of 3), French severe asthma (1 of 3).
+
+**Dated:** AHA/ACC perioperative re-check **7 November**; index-date month audit for October **1 November**;
+next lagged pass **~10 November**. *(The two-field-check action is removed: discharged today.)*
+
+**NEW DATED ACTION:** the **STS/APHRS postoperative-AF anticoagulation class** is the one element of today's
+comparison not verified on both sides. **If the STS guideline becomes readable, confirm or correct the
+secondary-source reading of Class IIb, individualised.** No date — opportunistic.
+
+### Published today (guidelines)
+
+1. **APHRS 2026 atrial fibrillation guidelines, four parts** — `10.1002/joa3.70495` (I), `…70491` (II),
+   `…70492` (III), `…70490` (IV), *J Arrhythm* 42, 21 Oct. **Part III abstract-free in BOTH records, recovered
+   from PMC13687576/83/93/82 full text (862 kB for Part III). 111 graded recommendations: I 50, IIa 38,
+   IIb 15, III 8; A 30, B 49, C 32.** Cardiac-surgery chapter, POAF chapter, critically-ill section.
+2. **Swedish Consensus Recommendation for Follow-Up After ICU Stay** — `10.1111/aas.70361`, *Acta Anaesthesiol
+   Scand* 71(1):e70361. **`firstPublicationDate` 2027-01-01 (January 2027 print issue);
+   `electronicPublicationDate` null; created 2026-10-25, indexed 2026-10-26.** Follow-up for all ICU stays
+   ≥ 48 h; contact within 1 week; outpatient visit at 2–3 months.
+3. **Polymyxin B haemoadsorption consensus** — `10.1186/s13054-026-06182-8`, *Critical Care*, 29 Jul. **20
+   statements at ≥ 80% agreement; EAA window ≥ 0.60 and < 0.90; ≤ 36 h benchmark; two 120-min sessions 24 h
+   apart.**
+
+### Guidelines sweep-pattern log — day 7
+
+| Date | Index dates | Hits | Returned | In-scope items |
+| --- | --- | --- | --- | --- |
+| 26 Oct | 25–26 Oct | **35** | 35 | 6 (four of them one four-part guideline) |
+
+Combined publication-type **and** title-keyword form. A ten-day window on the same query returns **183**, so
+the two-day window is the right granularity for a daily watch. **Dedupe caught two already-reported
+candidates** (AAST PICS Part 2, JCVA stroke summary — both yesterday's).
+
+**SOCIETY ROUTE DRY FOR A THIRD CONSECUTIVE DAY.** 24 Oct EUSEM, 25 Oct AAST, 26 Oct APHRS — three days
+running, the index route produced the lead item and the tracked list produced nothing, and **all three leads
+are from societies not on the tracked list.** Pattern, not coincidence: **the list is what needs changing.**

@@ -6258,3 +6258,132 @@ A wrapped `## ` heading renders as a heading plus a stray paragraph. Today's ite
 two lines at 100-column wrap and caught by the pre-commit heading check. **Add to the suite: every `^#+ ` line
 must contain the whole heading.** Only the front-matter `summary` line and heading lines may exceed the wrap
 width.
+
+## 2026-10-26 (guidelines watch) — the recovery route's third use and first with no abstract at all; two guidelines inverted on the same question; and a publication date in the future
+
+### THE TWO-FIELD CHECK: THIRD USE, AND THE STRONGEST CASE YET
+
+APHRS 2026 atrial fibrillation guidelines, Part III (`10.1002/joa3.70492`) — **no abstract in EITHER index
+record**, the publisher copy and the PMC sibling alike. The sibling has `pmcid` PMC13687593 and
+`isOpenAccess` Y, so the route applied: `/<PMCID>/fullTextXML` returned **862 kB**, the complete guideline.
+
+Prior uses: SRLF ICU atrial fibrillation (20 Oct), the two AAST PICS consensus guidelines (25 Oct). **Each of
+those had something to work from. Part III had nothing, and the route still returned the whole document.** The
+25 October method correction — an abstract-free record is not an unreadable document; the discriminator is the
+PMCID and OA flags, not abstract length — **is now established rather than provisional.**
+
+### AND ITS LIMIT, MEASURED: CLEAN NEGATIVE ON TEN OF TEN
+
+Standing calendar action discharged today. `pmcid` + `isOpenAccess` run against every needs-a-PDF entry, ASA
+PeRLS first. **All ten: no PMCID, not OA, exactly one record each (so no sibling either).** ASA PeRLS
+`10.1097/aln.0000000000006260` · ACEP Parts 1–2 `10.1016/j.annemergmed.2026.06.038`/`.039` · Swiss
+<i>C. difficile</i> `10.57187/5395` · ASGE remimazolam `10.1016/j.gie.2026.08.019` · SCCT
+`10.1016/j.jcct.2026.08.014` · EACTS/STS/AATS MCS `10.1053/j.jvca.2026.09.028` · ERC corrigendum
+`10.1016/j.resuscitation.2026.111313` · ESICM EDI `10.1007/s00134-026-08653-6` · SFAR/SFPC editorial
+`10.1016/j.accpm.2025.101719`.
+
+**RULE: the two-field check is not a general solvent. It recovers a document only when that document is
+deposited in PMC.** It worked four times because those four were; none of the ten is. **The needs-a-PDF list is
+genuinely a needs-a-PDF list and the action is CLOSED, not carried forward.** Four of the ten do have abstracts
+(362, 362, 1,150 and 1,039 characters) — they are on the list because the recommendation detail needs the
+document. Six have nothing, and for those the only route left is the PDF.
+
+### NEW DATE HAZARD — `firstPublicationDate` CAN BE IN THE FUTURE
+
+Swedish ICU follow-up consensus (`10.1111/aas.70361`), indexed **today**:
+
+- `firstPublicationDate` = **2027-01-01**
+- `printPublicationDate` = 2027-01-01, `dateOfPublication` = "2027 Jan", `pubYear` = 2027, vol 71 issue 1
+- **`electronicPublicationDate` = None**
+- `dateOfCreation` = 2026-10-25, `firstIndexDate` = 2026-10-26
+
+**So for an ahead-of-print record assigned to a future print issue, `firstPublicationDate` is that future date
+and the index holds NO actual publication date.** This is the **mirror image** of the logged 2026-01-01
+placeholder on abstract-free dual-deposit siblings: there the date stands in for nothing, here it is a real
+date that has not happened. **RULE: when `firstPublicationDate` is in the future, say "online ahead of the
+<month year> print issue, entered the index on <firstIndexDate>, online date not recorded in the index."**
+Never report the future date as the publication date and never substitute today's.
+
+### TWO 2026 GUIDELINES INVERTED ON THE SAME QUESTION
+
+Postoperative atrial fibrillation after cardiac surgery, verified on both sides today:
+
+| Recommendation | STS 2026 (18 Apr) | APHRS 2026 Part III (21 Oct) |
+| --- | --- | --- |
+| **Perioperative beta-blockers** | **Class IIa** | **Class I, Level A** |
+| **Perioperative amiodarone** | **Class I** (oral) | **Class IIa, Level A** |
+| Posterior left pericardiotomy | Class IIa | Class IIa, Level A |
+| Cardioversion, unstable POAF | Class I | Class I, Level C |
+
+**Exactly swapped on the two central prophylactic drugs, six months apart, citing the same trials (BLOS,
+PAPABEAR, PALACS, the landiolol RCTs).** Neither document acknowledges the other.
+
+**RULE — separate an availability effect from a disagreement.** APHRS adds landiolol/esmolol at IIa/B
+(a CABG RCT 34.3% → 10%, meta-analysis RR 0.40). Landiolol is unavailable in the US, so STS could not
+recommend it whatever the evidence; APHRS states it is integrating Asia-Pacific-specific considerations. **That
+part of the divergence is legitimate and is NOT the finding.** The beta-blocker/amiodarone swap is, because
+both drugs and both trial sets are available in both regions.
+
+**RULE — a class in this archive taken from a secondary source must be re-verified against the primary before
+it is used in a comparison.** The 22 August entry carried the STS classes from a news release and trade
+coverage and said so. Today's reading of the STS primary abstract **confirmed both** (amiodarone I,
+beta-blockers IIa) and added what the entry lacked: **15 recommendations — 8 preventive, 3 intraoperative,
+4 postoperative — as 2 Class I, 2 Class IIa, 8 Class IIb, 3 Class III.** **Eight of fifteen at IIb is a
+guideline that is mostly uncertainty by its own count.** It also **settled a date the entry recorded as
+unresolved ("~April or July 2026"): 18 April 2026.**
+
+**And the discipline held where verification failed:** the STS anticoagulation class (recorded as IIb,
+individualised, from secondary sources) is **not** named in the STS abstract, so the third potential
+disagreement is published as **unconfirmed**, not as a finding.
+
+### ANALYTIC RULE — A CLASS LABEL CAN HIDE CONSENSUS-GRADE EVIDENCE ONE COLUMN OVER
+
+APHRS Part III, critically ill patients: electrical cardioversion **Class I, Level C**; IV landiolol **IIb/B**;
+IV amiodarone **IIb/B**. Set against `_guidelines/2026-10-20.md` — SRLF, eighteen recommendations on ICU atrial
+fibrillation, **two gradeable, sixteen expert opinions because GRADE could not be applied, six questions
+abandoned**, whose stated premise is that *"most existing recommendations for atrial fibrillation are derived
+from cardiology settings."*
+
+**APHRS is such a document, and it DOES grade its ICU recommendations — but its one Class I for this population
+is Level C**, i.e. consensus or small non-randomised data. **The two documents do not disagree about the
+evidence; they disagree about whether to attach a class label to it.** The French panel reported the weakness
+in its grade distribution; APHRS reported it in the level column, where it is easier to miss. **Read class and
+level together, always, and never quote a Class I without its level.**
+
+### RECOMMENDATION-STRUCTURE CATALOGUE — APHRS PART III
+
+**111 recommendations, parsed from the full-text XML recommendation tables** (rows whose last two cells are a
+class and a level), not estimated:
+
+| Class | A | B | C | Total |
+| --- | --- | --- | --- | --- |
+| I | 19 | 16 | 15 | **50** |
+| IIa | 4 | 22 | 12 | **38** |
+| IIb | 5 | 7 | 3 | **15** |
+| III | 2 | 4 | 2 | **8** |
+| **Total** | **30** | **49** | **32** | **111** |
+
+Rows, columns and the 4 × 3 cross-table each sum to 111 independently, so the parse is internally consistent.
+**Keep the parser: a guideline in PMC full text yields its own distribution without trusting a prose summary.**
+
+### THE SFAR DATE ERROR REPRODUCED ITSELF TODAY
+
+Today's SFAR search again returned the SFAR/SFPC medication-error document as **"online since 24 June 2026"** —
+**the exact wrong date this archive corrected on 22 October**; the index gives 26 November 2025. **The same
+web-search summary produced it again, which confirms the source of the error rather than merely the error.**
+Standing rule reinforced: **a date from a web search is a lead, not a fact; confirm on entry to the backlog.**
+
+### SOCIETY ROUTE DRY FOR A THIRD CONSECUTIVE DAY
+
+24 Oct EUSEM, 25 Oct AAST, 26 Oct APHRS — **three days running the index route produced the entry's lead item
+and the tracked society list produced nothing.** All three leads are from societies not on the tracked list.
+**This is now a pattern rather than a coincidence, and the list is the thing that is wrong, not the route.**
+
+### NEW NAMED GAPS (abstract-free, no PMCID, not OA — unreadable from the index)
+
+- **Three ESC guideline corrections**: cardiac rehabilitation, published twice
+  (`10.1093/eurheartj/ehag887` and `10.1093/eurjpc/zwag550`, both 23 Oct); CVD and chronic kidney disease with
+  the ERA (`10.1093/eurheartj/ehag884`, 26 Oct). **What was corrected is not recoverable and is reported as
+  unknown rather than guessed.** Neither parent guideline is in the archive, so nothing to amend.
+- **"On the development of guidelines and clinical documents"**, *J Intensive Care Soc*
+  (`10.1177/17511437261497938`, 22 Oct) — a methods piece that belongs in this catalogue and cannot be read.
