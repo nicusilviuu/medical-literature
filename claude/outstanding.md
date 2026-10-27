@@ -4532,3 +4532,92 @@ candidates** (AAST PICS Part 2, JCVA stroke summary — both yesterday's).
 **SOCIETY ROUTE DRY FOR A THIRD CONSECUTIVE DAY.** 24 Oct EUSEM, 25 Oct AAST, 26 Oct APHRS — three days
 running, the index route produced the lead item and the tracked list produced nothing, and **all three leads
 are from societies not on the tracked list.** Pattern, not coincidence: **the list is what needs changing.**
+
+## 2026-10-27 (guidelines watch) — index baselines, backlog, sweep log
+
+### Index baselines (for tomorrow)
+
+Reading at **14:30:10 UTC**:
+
+- **Whole database 49,139,569, residual 0, DOWN 1,120** on 26 Oct's reading.
+- `MED` 41,274,575 (+1,320) · `PPR` 1,270,915 (+830) · **`PMC` 1,011,638 (−3,209)** ·
+  **`NBK` 4 (−61, from 65)** · `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 ·
+  `CTX` 3,924 · `HIR` 2,868 · `CIT` 624 — other seven unchanged; four changes sum to −1,120 exactly.
+- **NOT A ROLLBACK, established by test:** the 16 Oct signature is zero for every `FIRST_IDATE` after the
+  boundary; today 27 Oct = 2,199 and 26 Oct = 3,108, both non-zero.
+- **Bucket 2026-10-27: 2,199** = MED 1,355 + PPR 843 + PMC 1. Exact. **Preprints are 38% of today's bucket.**
+- **Bucket 2026-10-26: 3,108** = MED 2,880 + PMC 129 + PPR 98 + CTX 1. Exact. **Was 2,987 at end of its own
+  run: +121, of which PMC +129 and MED −8.**
+- Windows: 1–30 Sep **165,493 (−401**, ending four days of growth); 1–7 Oct 49,459 (−11).
+
+**Tomorrow:** read today's 2,199 and 26 Oct's 3,108. **No prediction set** — three consecutive days of the
+identical end-of-run observable produced +4,555, +6 and +121. **Also re-read `NBK` (4) and `PMC`: if the churn
+reverses, today's −1,120 was transient; if it holds, it was a deletion.** That is a measurement, not a
+hypothesis.
+
+### Guidelines backlog after today
+
+**Readable (2), unchanged:** ESPNIC neonatal hypothermia comparison (`10.1016/j.lanepe.2026.101874`); Vascular
+Access Society + EKTA position paper (`10.1177/11297298261468406`).
+
+**Named target (1), unchanged:** the two-part **2020 EUSEM** guidelines (`10.1007/s11739-020-02477-y`,
+`10.1007/s11739-020-02411-2`).
+
+**Needs a PDF (10 + 1), unchanged** — two-field check applied and failed on all; see 26 Oct notes.
+
+**Named gaps (4), unchanged and still unreadable:** the two cardiac-rehabilitation ESC corrections
+(`10.1093/eurheartj/ehag887`, `10.1093/eurjpc/zwag550`); the ESC CVD/chronic-kidney-disease correction
+(`10.1093/eurheartj/ehag884`) — **reappeared in today's sweep without becoming readable**; and
+`10.1177/17511437261497938` (*J Intensive Care Soc*, guideline-development methods).
+
+**Dormant, routes exhausted (3), unchanged:** ISHLT BLAD consensus and its two companions.
+
+**Out of scope, logged today (3):** AES/CNS epilepsy surgery guideline (`10.1227/neu.0000000000004254`) —
+an update to a 2003 AAN practice parameter, GRADE, and explicitly did not address neurostimulation; ESES
+thyroid-surgery autofluorescence/ICG recommendations (`10.1093/bjs/znag118`); WAPM placenta accreta spectrum
+guideline (`10.1002/pmf2.70489`).
+
+**To the BRIEF (4):** sepsis reinforcement-learning discordance (`10.1038/s44401-026-00156-2`); Indian
+anaesthetic syringe-labelling survey (`10.7417/ct.2026.2154`); early-mobility-after-cardiac-surgery trial
+development (`10.3389/fresc.2026.1801084`); **NEW — GLP-1 RA and SGLT2i eligibility under the 2026
+cardiovascular-kidney-metabolic syndrome guideline (`10.64898/2026.10.22.26366274`), a preprint, which joins
+the GLP-1 thread (Anaesthesia consensus 20 Sep, perioperative safety review 26 Oct).**
+
+**Retries (2), unchanged:** arterial injuries (2 of 3), French severe asthma (1 of 3).
+
+**Dated:** AHA/ACC perioperative re-check **7 November**; index-date month audit for October **1 November**;
+next lagged pass **~10 November**. **Opportunistic:** confirm the STS postoperative-AF anticoagulation class
+if the STS guideline becomes readable.
+
+**NEW opportunistic action:** the emergency-undocking Delphi **deferred three role-allocation items to a
+planned subsequent round**. **Watch for that round** — it is the part that coordinates the surgical and
+anaesthetic teams, and it is the part this archive cares about.
+
+### Published today (guidelines)
+
+1. **Emergency undocking in robotic surgery: international Delphi consensus** —
+   `10.1007/s11701-026-04102-0`, *J Robot Surg* 20, 26 Oct. **52 experts, 10 countries, 4 rounds, 80%
+   threshold; 37 statements (2 definitions, 6 common pathway, 18 controlled, 11 uncontrolled); 25
+   platform-agnostic / 12 platform-dependent; 3 role-allocation items deferred.** **Panel: 28 console
+   surgeons, 16 first assistants, 5 surgical care practitioners, 2 anaesthetists, 1 industry — and no scrub or
+   circulating practitioners, stated by the paper.** First consensus in this archive on robotic-theatre crisis
+   management.
+2. **AHA/AAP/ACOG/SMFM consensus guidance on female-specific cardiovascular prevention and management** —
+   `10.1161/cir.0000000000001482`, *Circulation*, 26 Oct. **Female Life Stage construct: perimenarche (S1),
+   ovarian cycling (S2), perimenopause (S3), postmenopause (S4), with pregnancy as a modifying life event.**
+   **A crosswalk document, written because society guidelines are inconsistently aligned.** No recommendation
+   count, no grading scheme, no distribution in the abstract.
+
+### Guidelines sweep-pattern log — day 8
+
+| Date | Index dates | Keyword+type | Type-only | Lead item found by |
+| --- | --- | --- | --- | --- |
+| 27 Oct | 26–27 Oct | 17/17 | 12/12 | **publication-type ONLY** |
+
+**FIRST REVERSAL.** Through 25 Oct the keyword sweep had carried the in-scope items on five of six days and
+the publication-type sweep had found nothing in scope for three consecutive days. **Today the lead item was
+invisible to the keyword sweep** (no anaesthesia keyword in "Emergency undocking in robotic surgery").
+**Keep running both.**
+
+**SOCIETY ROUTE DRY FOR A FOURTH CONSECUTIVE DAY.** 24 Oct EUSEM · 25 Oct AAST · 26 Oct APHRS · 27 Oct an
+international Delphi panel with no society at all. **None of the four leads came from the tracked list.**

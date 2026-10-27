@@ -6387,3 +6387,123 @@ and the tracked society list produced nothing.** All three leads are from societ
   unknown rather than guessed.** Neither parent guideline is in the archive, so nothing to amend.
 - **"On the development of guidelines and clinical documents"**, *J Intensive Care Soc*
   (`10.1177/17511437261497938`, 22 Oct) — a methods piece that belongs in this catalogue and cannot be read.
+
+## 2026-10-27 (guidelines watch) — a published error corrected, and the procedure that should have caught it
+
+### CORRECTION TO THE 26 OCTOBER BRIEF — PUBLISHED, NOW AMENDED
+
+Yesterday's brief reported as a headline index finding that **"Bookshelf fell for the first time"** and that
+**until 26 October the only source this archive had watched lose records was MEDLINE**. **Both are false.**
+The refutation was already in these notes, twice:
+
+- **16 October** (line ~4380): the rollback to 24 September. **Six sources lost records** — `MED` −53,519,
+  `PMC` −13,009, `PPR` −12,435, `AGR` −1,049, `CTX` −5, **`NBK` 5 → 0**.
+- **19 October** (line ~4783): **`PMC` −440 and `NBK` −1** on an ordinary ingest day while `MED` gained 8,223 —
+  the *"first observation of routine churn"*. **With a rule: "a loss of a few hundred in one source on an
+  ingest day is background. The reporting threshold for a decrement was 'any' and should now be higher."**
+
+**So a −4 was not a first, was not the first non-MEDLINE decrement, and under this archive's own rule was not
+reportable at all.** The page has been amended in place with a visible correction; the only surviving part of
+the original claim is that **a −4 inside a +2,989 is invisible without the source decomposition.**
+
+**The aggravating fact: yesterday's page recorded a NEW RULE against exactly this** — it replaced an
+unverifiable ordinal ("the eleventh source observed losing records") with the sentence now corrected, and wrote
+that an ordinal claim must be checkable against the archive before it is written. **The replacement was itself
+an unchecked ordinal, written in the same paragraph as the rule forbidding it.**
+
+### PROCEDURE RULE (this is the fix, not another restatement)
+
+**Before any sentence containing <i>first</i>, <i>only</i>, <i>never</i>, or an ordinal goes onto a page: grep
+the notes for the COUNTER-CASE, not for the supporting case.** Searching for what confirms a claim is what
+produced all three failures. The search terms are the negation: for "first `NBK` decrement", grep `NBK` and
+read every hit; for "only source to lose records", grep `−` against each source name.
+**Three failures in two days (25 Oct ordinal, 26 Oct ordinal, 26 Oct replacement ordinal) is a procedure
+problem, not three accidents.**
+
+### INDEX — WHOLE DATABASE FELL, AND IT IS NOT A ROLLBACK
+
+Reading at **14:30:10**: whole **49,139,569**, residual 0, **−1,120** on yesterday's 14:06:44/14:15:29 figure.
+`MED` +1,320 · `PPR` +830 · **`PMC` −3,209** · **`NBK` 65 → 4 (−61)** · other seven unchanged. Four changes
+sum to −1,120 exactly.
+
+**Settled by test, not judgement. The 16 October rollback signature is that `FIRST_IDATE` returns zero for
+every date after the boundary.** Today **27 October returns 2,199 and 26 October returns 3,108**, so the
+signature is absent: **this is churn, not a rollback.** `PMC` −3,209 is above the 19 October background
+threshold; `NBK` −61 is reportable because it is four more than the entire source held on 25 October
+(a 94% loss), not because the number is large.
+
+**RULE: test the rollback signature before calling a whole-database decrement an event.** One query per recent
+index date answers it.
+
+### 26 OCTOBER RESOLVED: +121 — THIRD OUTCOME FROM THE SAME OBSERVABLE
+
+26 Oct bucket **2,987 → 3,108 (+121)**. Composition: **`PMC` 0 → 129**, **`MED` 2,888 → 2,880 (−8)**,
+`PPR` 98 and `CTX` 1 unchanged; parts sum to 3,108 exactly.
+
+**Three consecutive days, identical end-of-run observable (PMC at zero, MEDLINE flat): +4,555, +6, +121.**
+Second confirmation that the state carries no information. **The refusal to predict was right twice.**
+
+**Third instance of correction 9 (a past bucket can gain), and the FIRST in which a past bucket gained while
+one of its components lost at the same time.** Net +121 conceals a MEDLINE loss of 8 and a PMC gain of 129.
+**Gross and net again, one level down: inside a single bucket, not just across the database.**
+
+Windows: 1–30 Sep **165,493 (−401)**, ending four consecutive days of growth; 1–7 Oct 49,459 (−11).
+Shrinking windows were already recorded, so neither figure is a new claim.
+
+### SWEEP-PATTERN REVERSAL — FIRST TIME THE PUBLICATION-TYPE SWEEP CARRIED THE DAY
+
+Keyword-plus-publication-type form: **17 hits, 17 returned.** Publication-type-only form: **12 hits, 12
+returned.** **The in-scope lead item — the emergency undocking consensus — was found ONLY by the
+publication-type sweep**, because its title carries no anaesthesia keyword.
+
+Through 25 October the log said the keyword sweep had carried the in-scope items on **five of six days** and
+that the publication-type sweep had found nothing in scope for **three consecutive days**. **Today reverses
+it. This is the case the standing practice of running both exists for — keep running both.**
+
+### DEDUPE CAUGHT A DOCUMENT THE WATCH HAD ALREADY REPORTED, TWO MONTHS EARLY
+
+The sweep surfaced the **AHA/ACC/ESC/WHF Second Universal Definition of Heart Failure (2026)**, published
+24 August and only now reaching these index dates. **The whole-archive check found it already in the
+29 August entry — five days after publication.** Same phenomenon the 8 October entry recorded from a lagged
+re-sweep. **Second confirmation that the daily watch runs AHEAD of the index for society documents**, and the
+reason the DOI dedupe is run before drafting rather than after.
+
+### ANALYTIC RULE — RECONSTRUCT PANEL COMPOSITION FROM THE PERCENTAGES
+
+Emergency undocking Delphi: 53.8%, 30.8%, 9.6%, **3.8%** and 1.9% of **52** are **28, 16, 5, 2, 1**, summing
+to 52 exactly. **So "anaesthetists (3.8%)" means exactly two people**, and the paper adds that the panel
+"included no scrub or circulating practitioners."
+
+**RULE: when a consensus covers a procedure executed by two or more teams, convert every role percentage to a
+head count and check which team wrote it.** Here: an operating-theatre emergency in which the anaesthetist is
+one of two principals, agreed by a panel that is 3.8% anaesthetists and 0% theatre nursing — **and the three
+items deferred to a later round are the role-allocation items, i.e. exactly the part that coordinates the two
+teams.** The steps are agreed; who does them is not.
+
+**Credit where due, and record it as good practice to look for:** the paper states its own composition limit
+in the abstract rather than leaving a reader to count. **And the platform-agnostic (25) / platform-dependent
+(12) split is a structure worth wanting from any device-adjacent consensus** — it says which statements
+survive a change of vendor.
+
+### GENRE NOTE — THE CROSSWALK CONSENSUS DOCUMENT
+
+AHA/AAP/ACOG/SMFM female-specific cardiovascular guidance exists, by its own account, because **"inconsistent
+alignment across society guidelines contributes to missed opportunities"**, and its deliverable **"crosswalks
+major society guidelines"**. **A consensus document whose product is reconciliation rather than new
+recommendations is a distinct genre and should be catalogued as one.**
+
+**What a crosswalk abstract does not tell you, and this one does not: which conflicts were found, how any were
+resolved, how many recommendations resulted, or any grading scheme or distribution.** A crosswalk can map
+disagreement or paper over it, and the abstract cannot distinguish those. **"Consensus-based clinical
+guidance" describes the method, not the strength of any item.**
+
+**Pairing worth keeping:** yesterday's entry documented STS and APHRS giving **inverted classes to the same
+two drugs for the same operation**, neither acknowledging the other; today a four-society panel writes a
+crosswalk because guidelines do not align. **One is the disease, the other a proposed treatment.**
+
+### THE SFAR DATE, THIRD REPRODUCTION
+
+Today's search again returned the SFAR/SFPC medication-error recommendations as **"en ligne le 24 juin 2026"**
+— the date corrected on 22 October against the index's 26 November 2025. **Third consecutive day, same source.
+That is a property of the source, not an anecdote about one summary.** Standing rule holds and is now
+evidenced: a date from a web search is a lead, not a fact.
