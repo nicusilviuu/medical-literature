@@ -4621,3 +4621,73 @@ invisible to the keyword sweep** (no anaesthesia keyword in "Emergency undocking
 
 **SOCIETY ROUTE DRY FOR A FOURTH CONSECUTIVE DAY.** 24 Oct EUSEM · 25 Oct AAST · 26 Oct APHRS · 27 Oct an
 international Delphi panel with no society at all. **None of the four leads came from the tracked list.**
+
+## 2026-10-27 (brief) — index baselines, queue, sweep log
+
+### Index baselines (for tomorrow)
+
+Three readings — **14:30:10, 14:42:02, 14:50:02 — every figure identical at all three**, the third
+19 min 52 s after the first:
+
+- **Whole database 49,139,569, residual 0, DOWN 1,120** on 26 Oct.
+- `MED` 41,274,575 (+1,320) · `PPR` 1,270,915 (+830) · **`PMC` 1,011,638 (−3,209)** · **`NBK` 4 (−61)** ·
+  `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `CTX` 3,924 · `HIR` 2,868 · `CIT` 624.
+  Four changes sum to −1,120 exactly.
+- **NOT A ROLLBACK** — signature test: 27 Oct bucket 2,199 and 26 Oct bucket 3,108, both non-zero.
+- **Bucket 2026-10-27: 2,199** = MED 1,355 + PPR 843 + PMC 1. Exact. **Preprints 38% — highest share read.**
+- **Bucket 2026-10-26: 3,108** = MED 2,880 + PMC 129 + PPR 98 + CTX 1. **Was 2,987 at end of its own run:
+  +121, of which PMC +129 and MED −8.**
+- Windows: 1–30 Sep 165,493; 1–7 Oct 49,459. Both unchanged since yesterday.
+
+**TOMORROW'S MEASUREMENT (the only one set): is `NBK` still 4 and `PMC` still near 1,011,638?** If the churn
+reverses, the −1,120 was transient; if it holds, it was a deletion. **No prediction, third day running** —
+the identical end-of-run observable has now produced +4,555, +6 and +121.
+
+**Also confirmed today:** the future-print-date hazard logged 26 Oct is journal-wide, not a one-off —
+`aas.70361`, `aas.70362`, `aas.70365` all carry `firstPublicationDate` 2027-01-01.
+
+### Queue after today: 22 held + 3 added = 25
+
+**Added from today's sweep (3):** circadian-oriented goal-directed sedation and sleep quality in ventilated
+patients (`10.1016/j.jocn.2026.112318`) — **a fourth sedation paper in the same two-day window**; antidepressant
+withholding in invasively ventilated ICU patients (`10.1016/j.aucc.2026.101709`); language models versus
+353 physicians for sepsis diagnosis (`10.64898/2026.10.23.26366291`), a preprint.
+
+**Noted as a pair, to read together or not at all:** two preprints posted the same day on fibrinolysis
+resistance in sepsis — a bedside viscoelastometry measurement study (`10.64898/2026.10.24.26366401`) and a
+mortality model built on that measurement (`10.64898/2026.10.24.26366402`).
+
+**Still logged with their defect:** the phenobarbital-versus-benzodiazepine comment and reply, and the
+esketamine-versus-dexmedetomidine reply, all abstract-free. **Backstop unchanged: 1–25 August window, 343
+unseen; next window 1–31 July.**
+
+### Published today (brief)
+
+1. **Volatile vs intravenous sedation in ventilated critically ill adults** — `10.1177/0310057x261496935`,
+   *Anaesth Intensive Care*, 26 Oct. 15 of 3,182 studies. **Delirium RR 0.72 (0.38–1.34, p ≈ 0.31);
+   mortality RR 0.97 (0.80–1.17); ICU stay +0.28 d (−1.74 to +2.30); ventilation −37.20 h
+   (−78.60 to +4.20), SE 21.12, p ≈ 0.078.** First volatile ICU sedation item in the archive.
+2. **Deep sedation protocols for pulsed field ablation of AF** — `10.1111/pace.70457`, *PACE*, 26 Oct.
+   166 patients, three electrophysiologist-led protocols (53/67/46). **Target Ramsay ≥ 3: 47.2% / 73.1% /
+   82.6% = 25/53, 49/67, 38/46. Dexmedetomidine best sedation and pain, most hypotension (p = 0.047).**
+3. **Sedation vs general anaesthesia in paediatric EP studies** — `10.1111/pace.70474`, *PACE*, 26 Oct.
+   51 patients, paired within session. **Inducibility 40/51 (78.4%) vs 29/51 (56.9%), p = 0.007, with no
+   electrophysiological parameter changed.** Subgroups reconstructed: AVNRT n = 25 (21→15), WPW/AVRT n = 26
+   (19→14). **Accessory pathway ERP prolonged under GA, p = 0.018.**
+4. **Earlier vs later ECPR in refractory OHCA** — `10.1093/ehjacc/zuag132`, *EHJ Acute Cardiovasc Care*,
+   25 Oct. Korean registry 2016–2023, sequential landmark target trial emulation, 22 covariates.
+   **909/58,668 = 1.55% treated. ARDs +15.0 / +14.4 / +7.7 points at 15/30/60 min; control survival at
+   60 min = 3.2%.** First ECPR timing study here.
+5. **Enhanced care unit features and surgical cancellation** — `10.1213/ane.0000000000008309`,
+   *Anesth Analg*, 26 Oct. **65 sites, 28 analysable, 4,112 patients. Elective-only beds OR 0.54
+   (0.39–0.76); multi-specialty OR 0.48 (0.33–0.69); emergency admissions permitted OR 1.61 (1.06–2.43).**
+
+### Brief sweep-pattern log — day 8, and the page-size check fired
+
+| Date | Index dates | Sweep 1 | Sweep 2 | Used |
+| --- | --- | --- | --- | --- |
+| 27 Oct | 26–27 Oct | keyword-anywhere **575/100 — FAILED** | title-scoped + 7-day pub window **64/64** | sweep 2 |
+
+**First run in which the page-size check actually caught something and changed the method mid-run.** The
+discarded sweep returned 100 of 575, which is a sample of unknown composition. **Fix recorded: narrow with
+`TITLE:` scoping plus a publication-date window rather than raising the page size.**

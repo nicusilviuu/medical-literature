@@ -6507,3 +6507,183 @@ Today's search again returned the SFAR/SFPC medication-error recommendations as 
 — the date corrected on 22 October against the index's 26 November 2025. **Third consecutive day, same source.
 That is a property of the source, not an anecdote about one summary.** Standing rule holds and is now
 evidenced: a date from a web search is a lead, not a fact.
+
+## 2026-10-27 (brief) — the same near-miss twice, a page-size check that finally fired, and four papers whose findings are properties of their arrangement
+
+### THE SAME NEAR-MISS, TWO DAYS LATER — THE RULE DID NOT WORK
+
+**On 26 October I recorded: "never draft a reading before taking it, not even as scaffolding."** **Today I
+drafted the end-of-run index paragraph with invented numbers again** — a plausible "15:06" reading with
+figures — and caught it only on re-reading the draft before the verification suite. **Second occurrence in
+two days. The rule as written did not change the behaviour, so the rule is not the fix.**
+
+**PROCEDURAL FIX, to be executed and not merely stated:** the end-of-run paragraph is written as the literal
+token `END_OF_RUN_PLACEHOLDER` **at the moment the draft reaches it**, and **no digit is typed into that
+paragraph until the query has returned.** The token is grep-able, so a draft that still contains it cannot be
+committed by accident, and a draft that contains numbers there was necessarily written after the measurement.
+**This is the same class of failure as the three ordinal claims: stating a rule in the notes is not the same
+as having a step that enforces it.**
+
+### THE PAGE-SIZE CHECK FIRED FOR THE FIRST TIME AND CHANGED THE METHOD MID-RUN
+
+First sweep (keyword-anywhere, `FIRST_IDATE` 26–27 Oct, `SRC:MED`): **575 hits, 100 returned. CHECK FAILED.**
+**The sweep was discarded rather than used** — 100 of 575 is a sample, and which 100 is not under my control.
+
+Replacement: **title-scoped keywords AND `FIRST_PDATE` within the last seven days** → **64 hits, 64 returned,
+check passed.** All four items came from the replacement.
+
+**This is the first run in which the page-size check actually caught something.** It has been run as a
+formality for weeks. **Record that it earns its place, and record the fix: when hits exceed the page size,
+narrow with `TITLE:` scoping plus a publication-date window rather than raising the page size** — raising it
+returns more records but still gives no guarantee, and the title scope is what makes the result reproducible.
+
+### INDEX — DOWN 1,120, AND NOT A ROLLBACK
+
+14:30:10 reading: whole **49,139,569**, residual 0, **−1,120**. `MED` +1,320 · `PPR` +830 ·
+**`PMC` −3,209** · **`NBK` 65 → 4**; other seven flat; four changes sum to −1,120 exactly.
+
+**Rollback excluded by signature test** (see 27 Oct guidelines entry): a rollback zeroes every `FIRST_IDATE`
+after its boundary; 27 Oct returns 2,199 and 26 Oct returns 3,108.
+
+**Three readings — 14:30:10, 14:42:02, 14:50:02 — every figure identical.** The third is **19 min 52 s** after
+the first, **which just clears the nineteen minutes the 16 October rollback took to reverse.** **So the
+shortfall has outlasted the only previous event, by under a minute. That favours a durable deletion over a
+transient on a sample of one prior event, and no further.** **Tomorrow's measurement: is `NBK` still 4 and
+`PMC` still near 1,011,638.**
+
+Today's bucket **2,199 = MED 1,355 + PPR 843 + PMC 1**, exact. **Preprints are 38% of today's records, the
+highest share read.** 26 Oct resolved to **3,108 (+121 on its own end-of-run 2,987)**: PMC 0 → 129 while MED
+2,888 → 2,880. **Three days, identical observable, +4,555 / +6 / +121.**
+
+### YESTERDAY'S DATE RULE CONFIRMED WITHIN A DAY
+
+Logged 26 Oct from one record: an ahead-of-print record assigned to a future print issue carries that future
+date in `firstPublicationDate` while `electronicPublicationDate` is null. **Today's sweep returned three more,
+all <i>Acta Anaesthesiologica Scandinavica</i>: `aas.70361`, `aas.70362`, `aas.70365`, each 2027-01-01.**
+**Journal-wide issue-assignment pattern, not a one-off.** Rule stands unchanged.
+
+### ANALYTIC RULE — DISTINGUISH KINDS OF NULL
+
+Volatile versus intravenous ICU sedation, 15 studies, **four outcomes all reported as "not associated with
+significant differences"**:
+
+| Outcome | Effect | 95% CI | Reconstructed |
+| --- | --- | --- | --- |
+| Mortality | RR 0.97 | 0.80–1.17 | tight null |
+| ICU stay | MD +0.28 d | −1.74 to +2.30 | tight null |
+| Delirium | RR 0.72 | 0.38–1.34 | z ≈ 1.0, **p ≈ 0.31** — imprecise, no signal |
+| **Ventilation duration** | **MD −37.20 h** | **−78.60 to +4.20** | **SE 21.12, z 1.76, p ≈ 0.078** |
+
+**−37.20 h is 1.55 days and the interval misses zero by 4.2 hours.** The interval is exactly symmetric
+(41.40 h either side), which is what makes the reconstruction legitimate.
+**RULE: for any null with a clinically large point estimate, reconstruct the standard error from the symmetric
+interval and compute the implied p. Then say which nulls are tight and which are near-misses.** An abstract
+that lists all four in one sentence makes them look alike, and they are not.
+
+**COMPANION RULE — mechanistic ordering as a weak prior on which null is real.** A volatile agent is eliminated
+by the lungs rather than metabolised, so **time to wakefulness and extubation is the proximal outcome and
+delirium and mortality are distal.** The statistical ordering and the mechanistic ordering agree here. **That
+is mild support for the ventilation estimate and says nothing whatever about the other three** — it is a prior
+on which outcome to power the next trial on, not evidence.
+
+### METHOD — SUBGROUP COUNTS RECONSTRUCT FROM PERCENTAGES ALONE
+
+Paediatric EP study, overall 40/51 (78.4%) vs 29/51 (56.9%), p = 0.007. The abstract gives subgroup
+percentages and no counts:
+
+- AVNRT 84.0% → 60.0%: only possible at **n = 25** (21 → 15), a loss of **6**.
+- WPW/AVRT 73.1% → 53.8%: only possible at **n = 26** (19 → 14), a loss of **5**.
+- **25 + 26 = 51 and 6 + 5 = 11 = 40 − 29.**
+
+**RULE: when reconstructed denominators partition the stated total exactly AND the reconstructed differences
+sum to the overall difference, the reconstruction is confirmed, not inferred.** Two independent closures.
+PFA arms likewise: 47.2% / 73.1% / 82.6% of 53 / 67 / 46 give **25 / 49 / 38**, summing to 166.
+
+### THE PUREST INSTRUMENT-ALTERATION CASE YET
+
+**The anaesthetic suppresses the arrhythmia the procedure exists to find.** Paired within-session design, so
+the effect is not confounding: inducibility 78.4% under sedation, 56.9% under general anaesthesia, **while no
+electrophysiological parameter differed** — refractory periods, Wenckebach point, jump, echo interval, VA block
+duration all unchanged. The substrate measured the same; only provocability changed. The one significant
+subgroup mechanism is coherent: **accessory pathway effective refractory period prolonged under general
+anaesthesia (p = 0.018)** in the WPW group.
+
+**THE CONSEQUENCE IS WORSE THAN THE FINDING, and the abstract does not state it:** **post-ablation validation
+depends on failing to induce the arrhythmia**, so **an anaesthetic that suppresses inducibility can make an
+incomplete ablation look successful.** **RULE: the anaesthetic must be fixed before the diagnostic phase and
+held constant through validation, or the two measurements are not comparable with each other.** The paper's
+"individualized anesthetic planning" is right and understates this.
+
+**Also log the reporting as good practice:** the two underpowered subgroups are described as *"numerically
+lower … in the same direction as the overall finding, although these subgroup differences did not reach
+statistical significance."* **Direction and consistency claimed, significance explicitly declined.** That is
+the correct sentence for two subgroups of twenty-five.
+
+### ANALYTIC RULE — AN ENDPOINT WHOSE VALUE DEPENDS ON WHO ANSWERS IT
+
+PFA deep sedation: three **electrophysiologist-led** protocols, and **operator satisfaction is a secondary
+endpoint.** The person rating satisfaction chose and delivered the drug. Not a fatal flaw — an unsettled
+patient during left atrial instrumentation is a real safety problem — but it belongs in the
+observer-rated / clinician-decided / machine-measured partition this archive keeps, **and it is
+clinician-decided by the same clinician.**
+
+Two further notes on that paper. **Credit: the conclusion says the comparison is against "the specific low-dose
+Midazolam regimen", not against midazolam** — a 47.2% attainment rate is a statement about a dose and the
+authors decline to generalise it to a drug. **Caution: the hypotension signal is the finding to carry forward
+and the weakest powered** — p = 0.047 in a 46-patient non-randomised arm, for the complication that matters
+most in deep sedation. Signal to confirm, not a quantified risk. **Dexmedetomidine's haemodynamic cost is now
+a recurring item here.**
+
+### ANALYTIC RULE — TARGET TRIAL EMULATION FIXES THE CONTROL DEFINITION, NOT THE SELECTION
+
+ECPR in refractory OHCA. **The paper's contribution is a definition:** prior comparisons *"did not restrict
+controls to patients still in refractory arrest at the same decision point"*, so their control groups contained
+patients who achieved ROSC before cannulation was ever a question. **Sequential landmark design at 15, 30 and
+60 minutes fixes that.** Adjusted risk differences **+15.0 (8.0–22.0), +14.4 (10.4–18.4), +7.7 (3.7–11.7)**;
+each equals the difference of the weighted survivals exactly and each interval is exactly symmetric.
+
+**But: 909 of 58,668 received ECPR — 1.55%.** **RULE: compute the treated fraction in every target trial
+emulation and state it.** Twenty-two covariates and overlap weighting balance what was recorded; they cannot
+balance the judgement that made a team cannulate this patient and not the forty-nine like them. **At one hour
+of refractory arrest the ECPR group is by construction the patients in whom an experienced team still saw a
+reason to continue, which is exactly the unrecorded quantity.**
+
+**The strongest part of the paper is the comparator, not the treatment effect: 3.2% 30-day survival with
+continued conventional CPR at the 60-minute landmark.** When the alternative is near zero, even a heavily
+selected 10.9% is worth having. **The authors' qualifiers — "for selected patients in capable systems" — are
+both load-bearing and should be quoted with the claim.**
+
+### ANALYTIC RULE — FOR A CLUSTER-LEVEL EXPOSURE, THE EFFECTIVE n IS THE NUMBER OF CLUSTERS
+
+Enhanced care units and surgical cancellation: **65 sites, 28 analysable, 4,112 patients**, two-level model with
+cases nested in hospitals. Three features: elective-only beds **OR 0.54 (0.39–0.76)**, multi-specialty care
+**OR 0.48 (0.33–0.69)**, emergency admissions permitted **OR 1.61 (1.06–2.43)** — all log-symmetric.
+
+**The exposures are properties of hospitals and there are 28 hospitals.** The multilevel model is the right
+tool, but **the precision of a facility-level estimate is bounded by the facility count, not the patient
+count.** **And the three features are plausibly one organisational type seen three ways** — a hospital that
+ring-fences elective beds is likely the same hospital that excludes emergencies and runs a multi-specialty
+unit. **The abstract gives no correlation between features and no count of how many of the 28 had each.**
+**RULE: for a cluster-level exposure, read the cluster count, and ask whether "separate" structural findings
+are one latent type.**
+
+**COMPANION RULE — a near-tautological finding can still be worth the measurement.** *A bed that cannot be
+taken is a bed that does not cancel your operation* needed no study. **The effect size did:** about 0.5 against
+about 1.6 is usable in a business case in a way intuition is not. **Do not dismiss a study for confirming the
+obvious; ask whether the quantity was previously unknown.**
+
+### OBSERVATION — SIX SEDATION PAPERS IN A TWO-DAY INDEX WINDOW
+
+Volatile versus intravenous ICU sedation; circadian-oriented goal-directed ICU sedation; deep sedation for
+pulsed field ablation; sedation versus general anaesthesia for paediatric EP; a national survey of
+ophthalmologists on cataract sedation; and a literature study of Catholic perspectives on palliative sedation.
+**Three of the six are about who administers it and under what protocol rather than about which drug.**
+Recorded as an observation, **not as a trend — two days is not a window from which to claim one**, and the
+archive has retired two calendar "rules" this week for exactly that reason.
+
+### CORRECTION TO YESTERDAY'S DELIVERY
+
+Yesterday's guidelines reply closed by flagging that the literature brief had not run. **Wrong: the trigger
+fired at 14:31:18 against a 14:02:31 schedule — 29 minutes late — and reached the session mid-run on the
+guidelines watch, so it arrived after that reply was written.** **Rule: before reporting a routine as missed,
+check whether it is queued rather than absent.**
