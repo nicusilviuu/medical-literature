@@ -4691,3 +4691,97 @@ unseen; next window 1–31 July.**
 **First run in which the page-size check actually caught something and changed the method mid-run.** The
 discarded sweep returned 100 of 575, which is a sample of unknown composition. **Fix recorded: narrow with
 `TITLE:` scoping plus a publication-date window rather than raising the page size.**
+
+## 2026-10-28 (brief) — index baselines, queue, sweep log
+
+### Index baselines (for tomorrow)
+
+Two readings, **14:06:31 and 14:13:54 — every figure identical**:
+
+- **Whole database 49,169,545, residual 0, UP 29,976** on 27 Oct.
+- `MED` 41,291,998 (+17,423) · `PMC` **1,022,973 (+11,335)** · `PPR` 1,272,124 (+1,209) · **`NBK` 13 (+9)** ·
+  `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `CTX` 3,924 · `HIR` 2,868 · `CIT` 624.
+  Four changes sum to 29,976 exactly.
+- **Bucket 2026-10-28: 13,713** = MED 12,491 + PPR 1,222 + PMC 0. Exact.
+- **Bucket 2026-10-27: 18,705** = MED 6,320 + PMC 11,533 + PPR 843 + NBK 9. Exact.
+  **Was 2,199 at end of its own run: +16,506, an 8.5-fold rise.**
+- Windows: 1–30 Sep **168,908 (+3,415)**; 1–7 Oct **59,849 (+10,390 — largest window movement read)**.
+
+**YESTERDAY'S TEST ANSWERED: NO and NO.** `NBK` is 13, not 4; `PMC` is 1,022,973 — **8,126 above its
+26 October level**, having been 3,209 below. **The −1,120 was transient. CORRECTION 11 recorded.**
+`NBK` is still 52 short of 26 Oct's 65, so **PMC recovered and Bookshelf has not.**
+
+**TOMORROW:** read today's 13,713 (PMC component zero) and 27 Oct's 18,705. **No prediction, fourth day
+running** — the identical observable has produced **+4,555, +6, +121, +16,506**.
+
+### Queue after today: 25 held + 4 added = 29
+
+**Added from today's sweep (4):** erector spinae plane block added to intercostal nerve block versus
+intercostal block alone (`10.1371/journal.pone.0361408`); airway management for children with cleft lip and/or
+palate under general anaesthesia (`10.1371/journal.pone.0361327`); learning curve and safety after 170
+robot-assisted thoracic cases (`10.1177/15569845261494003`) — **pairs with the 27 Oct emergency-undocking
+consensus**; remimazolam for sedation in fiberoptic bronchoscopy (`10.1097/lbr.0000000000001099`) — **pairs
+with the ASGE remimazolam update in `_guidelines/2026-10-17.md`**.
+
+**Noted, abstract-free:** respiratory support during neonatal intubation, meta-analysis of RCTs
+(`10.1136/archdischild-2026-331145`); early vasopressor initiation before complete fluid resuscitation in
+septic shock, systematic review (*Cureus*, no DOI in the record).
+
+**Still noted as a pair:** the two fibrinolysis-resistance-in-sepsis preprints
+(`10.64898/2026.10.24.26366401` measurement, `…402` model).
+
+**Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### FOR TOMORROW'S GUIDELINES WATCH — two tracked-society documents found by the brief sweep
+
+- **ESICM consensus statement on human-centred partnership in the ICU** — `10.1007/s00134-026-08626-9`,
+  *Intensive Care Medicine*, 26 Oct, 2,024-character abstract. **ESICM is on the tracked list; this would be
+  the first ESICM consensus statement in the archive.**
+- **Singapore Society of Anaesthesiologists position statement on sustainability in anaesthesiology and
+  intensive care** — `10.4103/singaporemedj.smj-2026-426`, 27 Oct, 1,187-character abstract.
+
+**Both are guideline-tracking material and were deliberately NOT published in today's brief.**
+
+### STANDING GAP — airway-device comparisons that do not report device failure
+
+26 Oct: prone-position classic LMA vs ETT RCT — conversion named a primary outcome, **no result reported**.
+28 Oct: supraglottic vs ETT in sinonasal surgery meta-analysis — **conversion/device failure not among the
+outcomes**. **Two recent comparisons, neither giving the exchange rate.** Watch for a third, and for any paper
+that does report it.
+
+### Published today (brief)
+
+1. **NasoVISI** — `10.1016/s2352-4642(26)00239-7`, *Lancet Child Adolesc Health*, 27 Oct. 8 centres, 684
+   randomised / 673 analysed. **First-attempt success 281/340 vs 249/333; adjusted RD 8.2% (2.0–14.3),
+   p = 0.0093. Complications: +0.4% first attempt, −1.9% all attempts, both null. 143 failed first attempts
+   (VL 59, DL 84); of 9 patients whose first complication came later, 8 in the DL arm.**
+2. **Supraglottic airway vs ETT, sinonasal surgery** — `10.1007/s00405-026-10650-w`, 26 Oct. 9 studies, 714
+   patients, **1995–2024 (29 years)**. **One aspiration event. Contamination RR 0.27 (0.15–0.47); day-0 cough
+   RR 0.39 (0.23–0.68); sore throat RR 0.65 (0.24–1.74, I² 68.7%). Device contamination "SGAs 0–86%".**
+3. **Cochrane, air vs supplemental oxygen at birth** — `10.1002/14651858.cd014781.pub2`, 27 Oct. 12 studies,
+   2,054 participants, fixed-effect, all I² 0%. **Mortality pre-discharge RR 0.72 (0.57–0.91, low); HIE II–III
+   RR 0.88 (0.71–1.10); mortality post-discharge RR 0.82 (0.58–1.16); NDI RR 1.24 (0.74–2.10, very low). All
+   12 studies used 100% oxygen WITHOUT titration. Three of seven outcomes had no data.**
+4. **Anticholinergic burden and POD** — `10.1016/j.accpm.2026.101957`, 27 Oct. 10 reports / 9 cohorts /
+   10,457 participants. **SMD 0.31 (0.20–0.43); OR 1.22 (1.09–1.37) per point; graded; certainty LOW.**
+   PROSPERO CRD420261294941. **Ecological inference flagged.**
+5. **OPICU** — `10.1016/j.jclinane.2026.112323`, 27 Oct. **75 ICUs, 55,963 evaluated, 2,764 planned (4.94%).
+   804 (29.09%) refused for want of a bed; 411 of the remaining 1,960 (20.97%) did not need ICU. 1,549 =
+   78.2% of 1,980, closing exactly. ICU mortality 5.9%, 90-day 7.5%; emergent 18.1% / 18.9%. ORs 12.4 / 3.1 /
+   2.7 with no confidence intervals.** **Pairs with the 27 Oct enhanced-care-unit cancellation study.**
+
+### Brief sweep-pattern log — day 9, page-size check failed twice
+
+| Form | Query | Result |
+| --- | --- | --- |
+| 1 | keyword-anywhere, 7-day pub window | **233 / 150 — DISCARDED** |
+| 2 | title-scoped, 3-day pub window, `SRC:MED` | **104 / 100 — DISCARDED** |
+| 3 | title-scoped, pub window 27–28 Oct | **62 / 62 — PASSED** |
+
+**Yesterday's fix worked and needed two iterations.** **Caveat carried onto the page: the two 26 October items
+were retrieved by DOI, not by the passing sweep.**
+
+### Procedure note — the `END_OF_RUN_PLACEHOLDER` check worked, first run as designed
+
+Token written into the draft; no digit typed into that paragraph until the 14:13:54 query returned; token
+confirmed gone before commit. **Keep the token check in the pre-commit suite permanently.**

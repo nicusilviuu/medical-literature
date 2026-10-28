@@ -6687,3 +6687,220 @@ Yesterday's guidelines reply closed by flagging that the literature brief had no
 fired at 14:31:18 against a 14:02:31 schedule — 29 minutes late — and reached the session mid-run on the
 guidelines watch, so it arrived after that reply was written.** **Rule: before reporting a routine as missed,
 check whether it is queued rather than absent.**
+
+## 2026-10-28 (brief) — CORRECTION 11, the placeholder procedure working as designed, and five papers with a proxy problem
+
+### CORRECTION 11 — YESTERDAY'S INFERENCE FALSIFIED
+
+Yesterday's page set one test: is `NBK` still 4 and `PMC` still near 1,011,638? **Both no.**
+
+| Source | 26 Oct | 27 Oct | 28 Oct |
+| --- | --- | --- | --- |
+| `PMC` | 1,014,847 | **1,011,638** | **1,022,973** |
+| `NBK` | 65 | **4** | **13** |
+
+**`PMC` is 8,126 ABOVE its 26 October level, having been 3,209 below it. The −1,120 shortfall was
+transient.**
+
+**What the page inferred and why it was wrong.** Three readings across 19 min 52 s were identical, and the
+page reasoned that because the one previous event (the 16 October rollback) reversed inside nineteen minutes,
+a shortfall outlasting nineteen minutes was more likely durable than transient. **That uses a single prior
+observation as a yardstick for how long a transient lasts. A sample of one supports no yardstick.** The page
+did write "on a sample of one prior event, and no further" — which limits the claim without rescuing it. **It
+should not have been made.**
+
+**Correction 11 joins the family that runs from correction 4 to correction 8 — a conclusion
+over-generalised from a single observation. Six members now, and the common feature is using one prior event
+to calibrate the next.**
+
+**REPLACEMENT STATEMENT: the duration of a transient in this index is unknown, because two have been observed
+and they lasted different lengths of time. Twenty minutes of stability means twenty minutes of stability.**
+`NBK` remains 52 short of its 26 October value, so **PMC recovered and Bookshelf has not** — one event, two
+sources, two different recovery profiles, which is a further reason not to generalise from either.
+
+### THE BUCKET: FOURTH OUTCOME, AND THE LARGEST
+
+27 Oct bucket **2,199 → 18,705 (+16,506)**, an 8.5-fold rise. `PMC` 1 → 11,533; `MED` 1,355 → 6,320;
+`PPR` 843 unchanged; `NBK` 0 → 9. Parts sum to 18,705 exactly.
+
+**Four days, the identical end-of-run observable (PMC at zero for the day's bucket, MEDLINE flat): +4,555,
++6, +121, +16,506.** Three and a half orders of magnitude. **The refusal to predict has been right four
+times.**
+
+Today: whole **49,169,545** at 14:06:31, residual 0, **+29,976** (`MED` +17,423, `PMC` +11,335, `PPR` +1,209,
+`NBK` +9; sum exact). Bucket **13,713 = MED 12,491 + PPR 1,222 + PMC 0**, exact. Wednesday's MEDLINE is
+**9.2×** Tuesday's 1,355 — **recorded as a measurement, NOT as a weekday rule** (two retired last week).
+Windows both grew sharply: 1–30 Sep **+3,415** to 168,908; 1–7 Oct **+10,390** to 59,849, **the largest window
+movement read.**
+
+### THE PLACEHOLDER PROCEDURE WORKED — FIRST RUN AS DESIGNED
+
+Recorded yesterday after the second occurrence of drafting an end-of-run reading with invented numbers: write
+the literal token `END_OF_RUN_PLACEHOLDER` at that point in the draft, type **no digit** into that paragraph
+until the query returns, grep for the token before committing.
+
+**Today it was followed and it worked.** The draft carried the token; the reading was taken at 14:13:54; the
+paragraph was then written from the result; the pre-commit check confirmed the token was gone. **Third
+consecutive day on which this class of error was possible and the first on which a procedure rather than a
+resolution prevented it.** **Keep the token check in the suite permanently.**
+
+Also applied today for the first time: **the end-of-run paragraph states the stability interval and explicitly
+declines to infer from it** — seven minutes of stability reported as seven minutes of stability. That is
+correction 11 applied to the same run that recorded it.
+
+### SWEEP — PAGE-SIZE CHECK FAILED TWICE BEFORE PASSING
+
+1. Keyword-anywhere, 7-day publication window: **233 hits / 150 returned — DISCARDED.**
+2. Title-scoped, 3-day publication window, `SRC:MED`: **104 / 100 — DISCARDED.**
+3. Title-scoped, publication window narrowed to 27–28 October: **62 hits, check passed.**
+
+**Yesterday's fix (narrow with `TITLE:` scoping plus a publication-date window rather than raising the page
+size) worked, and needed two iterations rather than one.** **Stated caveat carried onto the page: the two
+26 October items were retrieved by DOI, not by the passing sweep, so their publication date was reached by a
+form whose completeness was not verified.** Record that as the honest cost of the narrowing.
+
+### ANALYTIC RULE — A PROCESS MEASURE CAN MOVE WITHOUT ITS OUTCOME
+
+NasoVISI, 8 centres, 684 randomised / 673 analysed, infants ≤365 days, no anticipated difficult airway, GEE
+clustered on intubating clinician. **First-attempt success 281/340 (82.6%) vs 249/333 (74.8%); adjusted risk
+difference 8.2% (2.0–14.3), p = 0.0093 — one extra first-attempt success per ~12 infants.**
+**Complications: first attempt +0.4% (−3.5 to 4.3), p = 0.83; all attempts −1.9% (−6.0 to 2.3), p = 0.38; no
+arrest or death in either arm.**
+
+**The abstract's opening premise is that first-attempt success reduces complications. The trial moved
+first-attempt success by 8.2 points and moved no complication rate.** Not a contradiction — it was powered for
+the process measure — **but the thing that moved is the proxy, and the abstract does not say so.**
+
+**METHOD — decompose the complication increment by arm.** 143 first attempts failed (**VL 59, DL 84**).
+First-attempt complications 85 → all-attempt complications 94, an increment of **nine patients**, of whom
+**eight are in the DL arm (40→48) and one in the VL arm (45→46)**. **So the extra complications arising from
+repeated attempts fall almost entirely where the repeated attempts were — the mechanism the premise proposes,
+visible in the counts and far too small to reach significance.** The abstract gives none of this.
+**RULE: when a trial reports both first-attempt and all-attempt harm, subtract them per arm. The difference is
+where the proxy's claim lives.**
+
+### ANALYTIC RULE — WHEN THE FEARED OUTCOME HAPPENS ONCE, THE REVIEW IS ABOUT SOMETHING ELSE
+
+Supraglottic airway vs tracheal tube in endoscopic sinus surgery: **9 studies, 714 patients, and aspiration
+occurred once (one asymptomatic ET case).** So the review cannot estimate aspiration risk, and its pooled
+results are **airway contamination RR 0.27 (0.15–0.47, I² 0%)**, **day-0 cough RR 0.39 (0.23–0.68, I² 0%)**,
+day-0 sore throat RR 0.65 (0.24–1.74, **I² 68.7%**). All log-symmetric.
+**RULE: say what the pooled outcomes actually are when the headline worry is unmeasurable, and read the
+conclusion's verb — "not supported by current comparative evidence" is not "refuted", and with one event it is
+the strongest available statement.**
+
+**Two further rules from the same paper.**
+- **A range of 0–86% is not an estimate.** Device contamination reported as "SGAs 0–86%, ETs 53–77%" spans
+  almost the whole possible interval; the review's own "of limited clinical consequence" is the right
+  judgement about something it cannot measure.
+- **Check the span of included studies against the rate of device change.** 1995–2024 is **29 years**: a 1995
+  classic laryngeal mask has no gastric drain, a 2024 second-generation device does — **and gastric drainage is
+  precisely the feature bearing on the question asked.** Pooling across that span treats a changing
+  intervention as one intervention, and the abstract does not flag it.
+
+### STANDING GAP — TWO AIRWAY-DEVICE COMPARISONS IN THREE DAYS, NEITHER REPORTS DEVICE FAILURE
+
+26 Oct brief: prone-position classic LMA vs ETT RCT, **"need for conversion of airway technique" named a
+primary outcome with no result given.** 28 Oct: this review, whose primary outcomes are aspiration,
+contamination and post-operative symptoms — **conversion and device failure are not among them.**
+**So the literature holds two recent comparisons of supraglottic airway against tracheal tube in bleeding or
+positionally awkward surgery, and in neither can a reader find how often the supraglottic device had to be
+exchanged. That is the number required to accept the trade being offered.** Logged as a standing gap.
+
+### ANALYTIC RULE — A MORTALITY BENEFIT WITH NO MOVEMENT IN THE PROXIMATE INJURY MARKER
+
+Cochrane, air vs supplemental oxygen at birth, 12 studies / 2,054 participants, fixed-effect, every I² = 0%:
+
+| Outcome | RR | 95% CI | Studies | n | Certainty |
+| --- | --- | --- | --- | --- | --- |
+| Mortality before discharge | **0.72** | 0.57–0.91 | 10 | 1,879 | Low |
+| HIE stage II–III | 0.88 | 0.71–1.10 | 5 | 1,384 | Low |
+| Mortality beyond discharge | 0.82 | 0.58–1.16 | 3 | 668 | Low |
+| **NDI (best available)** | **1.24** | 0.74–2.10 | 3 | 414 | Very low |
+
+**HIE II–III is the proximate injury through which an oxygen-strategy effect on neonatal death would travel,
+and it did not move.** Three readings, and the review correctly chooses none: the benefit may be real and
+mediated otherwise (oxidative stress, reperfusion injury — not captured by a Sarnat stage); or the mortality
+estimate is inflated ("risk of bias was high for most studies", certainty low); or HIE is underpowered.
+**RULE restated in this form: a null on the proximate injury marker weakens a mortality claim without refuting
+it, because the marker may not be the route.**
+
+**RULE — report the row that runs the other way.** **NDI is RR 1.24, numerically favouring supplemental
+oxygen**, on 3 studies and 414 infants at very low certainty. Close to no information, not evidence of harm
+from air — **but a review reporting a mortality benefit must not have that row dropped from the summary a
+reader carries away.**
+
+**And the limitation that matters most, which the authors put first themselves:** **all 12 studies compared air
+with 100% oxygen WITHOUT titration to saturation targets**, so the review explicitly cannot answer the
+question clinicians face (starting FiO₂ when a blender and a target exist). **Three of seven pre-specified
+outcomes had no data at all.** **A review whose most useful output is a list of what nobody has measured has
+done its job**, and is a better document than one that would have pooled titrated and untitrated strategies to
+produce an answer.
+
+### ANALYTIC RULE — ECOLOGICAL INFERENCE: A DIFFERENCE BETWEEN STUDIES IS NOT A FACT ABOUT PATIENTS
+
+Anticholinergic drug burden and postoperative delirium: 10 reports / 9 cohorts / 10,457 participants.
+**SMD 0.31 (0.20–0.43); OR 1.22 (1.09–1.37) per one-point increase; graded across burden levels; significant
+for the ACB scale; certainty LOW.**
+
+> Result: *"The association was attenuated in studies that excluded patients with cognitive impairment."*
+> Conclusion: *"Baseline cognitive impairment appears to amplify this association."*
+
+**The result is a difference between studies; the conclusion is a statement about individuals. No patient-level
+interaction is reported anywhere.** **And a simpler explanation predicts the same observation: anticholinergic
+burden is itself higher in people with cognitive impairment (antimuscarinics, sedating antihistamines,
+tricyclics, antipsychotics), and cognitive impairment is the strongest known risk factor for POD — so in
+cohorts including them the burden score is partly a marker for the condition that causes the delirium.
+Excluding them removes the confounding and the association shrinks. That is confounding, not effect
+modification.**
+
+**The two are not distinguishable from study-level data, and the abstract asserts the one that supports a
+recommendation.** **The operational stakes are opposite: if cognitive impairment amplifies, burden reduction
+matters most in the cognitively impaired; if it confounds, burden reduction may do very little in exactly
+those patients.** **What would settle it is a reported interaction term, not the head-to-head scale comparison
+the paper calls for.**
+
+**The underlying association is probably real** — a dose-gradient with OR 1.22 per point and a specific
+pharmacological mechanism is the shape a causal relationship takes. **And the recommendation barely needs this
+evidence:** preoperative review of anticholinergic medication in an older surgical patient is good practice
+regardless, because most of those drugs have thin indications in that population.
+
+### ANALYTIC RULES FROM OPICU — TWO DENOMINATORS, AND A PREDICTION RULE WITHOUT THE RESOURCE
+
+Multicentre prospective, **75 ICUs**, 55,963 preoperatively evaluated, 2,764 (4.94%) planned for ICU.
+
+- **804 of 2,764 (29.09%) could not be admitted for want of a bed.**
+- **411 of the remaining 1,960 (20.97%) turned out not to need ICU care** — the stated 14.87% of 2,764.
+- **1,960 − 411 = 1,549 = exactly the stated 78.2% of the 1,980 admitted. The group structure closes.**
+- Benefit indicators (vasopressors, ventilation >12 h, arrest) significantly higher in unplanned and emergent
+  than planned (p < 0.001). ICU mortality 5.9%, 90-day 7.5%; emergent group 18.1% and 18.9%.
+
+**RULE — two denominators, the second unstated.** The abstract calls 1,980 **"3.09% of all cases"**, but
+1,980/55,963 = **3.54%**. **A 3.09% share implies a denominator of about 64,100**, so "all cases" is a larger
+population than the preoperatively evaluated cohort. **Reported as an observation, not an error** — but a
+reader cannot reconcile the two percentages from the abstract.
+
+**RULE — a prediction rule is only useful where the resource exists.** The paper's conclusion is about
+prediction (modified Wang criteria + POSSUM + intraoperative complications + emergency status + ASA > 2).
+**The 804 is about capacity, and it is the larger number: in a system refusing three in ten planned
+admissions, improving the prediction redistributes a shortage rather than resolving it.**
+
+**Also: ORs of 12.4, 3.1 and 2.7 are offered as a prediction rule with NO confidence intervals in the
+abstract.** Record that as a reporting defect for odds ratios presented for clinical use.
+
+**PAIRING, and it is exact.** The 27 October brief carried a UK nationwide study: enhanced care units with beds
+**reserved exclusively for elective cases** had OR 0.54 for cancellation, those **permitting emergency
+admissions** OR 1.61. **Today's paper measures the same system from inside the queue: 804 patients planned for
+a bed that was not there.** **Two papers, two countries, two days — one measuring the structural feature, the
+other its consequence.**
+
+### FOR THE GUIDELINES WATCH, NOT THE BRIEF
+
+Two tracked-society documents surfaced in today's brief sweep and are guideline-tracking material:
+
+- **ESICM consensus statement on human-centred partnership in the intensive care unit**
+  (`10.1007/s00134-026-08626-9`, *Intensive Care Medicine*, 26 October). **ESICM is on the tracked list and
+  this would be the first ESICM consensus statement to appear in this archive** — which also bears on the
+  four-day run in which the society route produced nothing.
+- **Singapore Society of Anaesthesiologists position statement on sustainability in anaesthesiology and
+  intensive care** (`10.4103/singaporemedj.smj-2026-426`, 27 October).
