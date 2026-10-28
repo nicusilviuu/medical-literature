@@ -6904,3 +6904,151 @@ Two tracked-society documents surfaced in today's brief sweep and are guideline-
   four-day run in which the society route produced nothing.
 - **Singapore Society of Anaesthesiologists position statement on sustainability in anaesthesiology and
   intensive care** (`10.4103/singaporemedj.smj-2026-426`, 27 October).
+
+## 2026-10-28 (guidelines watch) — a society's website behind its own journal, and four ungraded consensus documents in one day
+
+### THE SOCIETY ROUTE'S FAILURE MODE, DEMONSTRATED EXACTLY
+
+**ESICM published a consensus statement on human-centred partnership in the ICU**
+(`10.1007/s00134-026-08626-9`, *Intensive Care Medicine*, 26 Oct) — **the first ESICM consensus statement in
+this archive, and the end of a four-day run in which the tracked society list produced nothing.**
+
+**But the society route did not find it.** It surfaced in **this morning's literature-brief index sweep**, was
+recognised as guideline-tracking material and held back for the watch. **Then today's society search found
+ESICM's own guidelines page, which still lists the document as "development in progress" while its own journal
+carries the finished article with a full abstract.**
+
+**RULE, now evidenced rather than asserted: a society's website can be behind the society's own journal.**
+That is the mechanism behind five days of the index route beating the society route, and it means **the society
+route cannot be used to establish that a document does NOT exist** — only the index can, and even then only
+for what has been deposited.
+
+**Useful corroboration from the same wrong search result:** the six domains named in ESICM's 2025 ethics
+section report match the six in the published abstract exactly. **A search result can be right about identity
+and wrong about status; read it for the former.**
+
+### RECOMMENDATION-STRUCTURE CATALOGUE — FOUR DOCUMENTS, FOUR METHODS, NO STRENGTHS
+
+| Document | Method as stated | Statements | Strength/certainty |
+| --- | --- | --- | --- |
+| ESICM human-centred partnership | 20 PICOs, rapid reviews, 2-round eDelphi, ratification meeting | **53 drafted → 43 endorsed** | **none** |
+| Carcinoid crisis (BJS Open) | modified Delphi, 4 voting rounds, defined consensus rule | **41** (12 pre / 27 intra / 2 post) | **none** |
+| Italian aortic stenosis (Ann Thorac Surg) | "a narrative, evidence-based synthesis" | **no count** | **none** |
+| Singapore sustainability | "iterative consensus building through discussion and consultation" | **no count** | **none** |
+
+**Two report a count and a consensus threshold; two report neither; none attaches a grade, class, level or
+certainty to any individual statement.**
+
+**APPLY THE 22 OCTOBER RULE** (a missing grade distribution has at least two causes — withholding, and a
+document class that does not require one; read the design section for a format decision first).
+**For ESICM there appears to be such a decision on the record: its 2025 ethics section report is reported to
+say a consensus statement was chosen over a guideline because of the limited randomised trials available.**
+**Flagged on the page as a WEB-SEARCH LEAD, not a fact**, with the published abstract's consistency stated
+separately — "evidence-informed" rather than evidence-based, **rapid** reviews rather than systematic reviews,
+no grades. **Third documented instance of a society choosing a weaker document class in advance** (after
+SFAR/SOFMER and SFAR/SFPC's RFE→PPG reclassification).
+
+**RULE: an ungraded consensus statement WITH a stated reason is a different object from one with no stated
+reason. Only one of today's four is the former.** Record which, every time.
+
+**Range this week, for the catalogue:** 20 Oct SRLF — 18 recommendations, grade distribution and abandonments
+in the abstract. 26 Oct APHRS Part III — 111 class-and-level pairs. **28 Oct — four documents, zero
+strengths.**
+
+### ESICM — numbers, and two that deserve scrutiny
+
+46-member panel; 20 PICOs over six domains; **53 draft statements; 201 stakeholders in eDelphi round 1 and 149
+in round 2; 43 endorsed.**
+
+- **Ten of 53 drafts dropped (18.9%).** That tells a reader which were less agreed, **not how well-supported
+  the surviving 43 are.**
+- **25.9% attrition between eDelphi rounds, unexplained.** **RULE: in a two-round Delphi, state the
+  between-round attrition when reading the result — the second round's consensus is the consensus of whoever
+  came back.**
+
+Content worth extracting rather than skimming: **"environmental interventions to improve sleep and reduce
+delirium"** is a clinical intervention with a hard outcome (and connects to the circadian-sedation study in
+the brief queue); **"psychological support for patients and ICU professionals"** puts staff inside the scope
+of a clinical consensus statement.
+
+### CARCINOID CRISIS — A WELL-SPECIFIED DELPHI, AND TWO REVERSALS
+
+44 experts + 3 patient partners; four voting rounds; Likert 1–7.
+**Consensus defined as median 5–7 AND no more than 13 panellists rating outside the median's score
+category.** **RULE: record a dispersion criterion when a Delphi states one — a median alone can hide a split
+panel, and most documents give only the median.**
+
+**41 statements: 12 preoperative, 27 intraoperative (65.9%), 2 postoperative (4.9%).** **The distribution is
+the scope finding: two-thirds of the document is the anaesthetic**, despite the surgical journal.
+
+**Both practice-shifting recommendations are REVERSALS:** somatostatin analogues **not** necessary for
+prophylaxis before surgery or on the day; treatment of crisis **starts with vasopressors**, short-acting
+somatostatin analogue as adjunct. **That reframes carcinoid crisis from a hormonal event to suppress into a
+vasoplegic one to support, and changes what is drawn up before the case.**
+
+**RULE: a reversal recommendation carries a higher evidentiary burden than an addition, because the practice
+being removed was adopted for a reason.** With no strength attached to any of the 41, this document does not
+show the reader where that burden was met. **First appearance of carcinoid crisis in this archive.**
+
+### GENRE NOTE — A TITLE CLAIMING MORE THAN THE METHODS DELIVER
+
+Italian Cardiac Surgery Working Group, titled *"Expert Review of Evidence and Consensus Guidelines"*, methods
+described as **"a narrative, evidence-based synthesis"**. **No panel size, no voting, no threshold, no
+statement count, no grading — none of the apparatus "consensus" implies.** **RULE: check the methods sentence
+against the title before filing a document as a consensus guideline.**
+
+### ANALYTIC RULE — WHEN THE QUESTION IS LONGER THAN THE TRIALS, REGISTRIES ARE NOT WEAKER EVIDENCE
+
+Same document. The 2025 ESC/EACTS guidelines give **Class I for transfemoral TAVI in selected patients ≥70**
+with suitable anatomy; SAVR remains recommended in younger low-risk patients. This group reads it down:
+**"early non-inferiority of TAVI may attenuate with longer follow-up"**; **"randomized durability data remain
+limited, whereas propensity-matched real-world registries have suggested possible higher late mortality after
+TAVI in younger, lower-risk populations"**; reintervention after a transcatheter-first strategy grows more
+complex. Conclusion: **SAVR "should retain a central role as an important reference strategy"** in long
+expected survival.
+
+**The case for restraint rests on registries over RCTs — ordinarily the weaker qualifying the stronger — and
+here that is the right way round, because the question is durability over decades and no RCT has that
+follow-up.** **RULE: when the question's horizon exceeds the trials' follow-up, observational data are the
+only evidence on the relevant timescale, not a downgrade.** The residual caution: **propensity matching cannot
+balance the reasons a 68-year-old was offered a transcatheter valve instead of an operation**, and "possible
+higher late mortality" is correctly hedged.
+
+**STRUCTURAL OBSERVATION — THIRD CONSECUTIVE ENTRY ON GUIDELINES DISAGREEING.** 26 Oct: STS and APHRS inverted
+on postoperative AF. 27 Oct: a four-society document whose stated reason for existing is that society
+guidelines do not align. 28 Oct: **a national surgical working group reading down a Class I recommendation
+that EACTS — its own international society — co-authored.** Three angles on one problem in three days.
+
+### GOOD PRACTICE TO LOOK FOR — DECLARING THE EVIDENCE TYPE IN THE ABSTRACT
+
+Singapore Society of Anaesthesiologists sustainability position statement: *"Evidence was derived from life
+cycle analyses, laboratory or environmental studies, and quality improvement initiatives rather than
+conventional randomised controlled trials."* **Leading with the character of the evidence base is better than
+leaving a reader to discover it, and demanding an RCT of a procurement decision would be a category error.**
+
+**The honest objection is to the second half:** *"can nevertheless provide a robust scientific basis"* is a
+general claim about a method, **not an assessment of the particular studies used**, and no certainty is
+attached to any recommendation. **No count of recommendations is given anywhere.** The document is a **call to
+action** — the same genre flagged in yesterday's four-society cardiovascular statement — and **a call to
+action is not a recommendation.** First standalone sustainability statement, and first Singaporean society
+document, in this archive.
+
+### THE SFAR DATE ERROR DID NOT REPRODUCE TODAY
+
+Three consecutive days the search source returned "en ligne le 24 juin 2026" for the SFAR/SFPC
+medication-error document (true date 26 November 2025). **Today it did not appear.** **So the source is not
+deterministic, and the standing rule holds for the right reason: a web-search date is a lead because the
+source is unreliable, not because it is consistently wrong.**
+
+### METHOD — A DEDUPE HIT THAT IS NOT A DUPLICATE
+
+The whole-archive DOI dedupe fired on two of today's four items. **Both hits are this morning's brief, where
+the ESICM and Singapore DOIs appear only in a hand-off note saying they were being held for this entry.**
+**RULE: when the brief hands material to the watch, the dedupe will hit the hand-off note. Check whether the
+hit is in an items block or in prose before treating it as a duplicate — and record the check, because this
+will recur.**
+
+Sweep: guideline publication-type and title-keyword forms combined over `FIRST_IDATE` 27–28 October,
+**60 hits, 60 returned, page-size check passed on the FIRST form** — worth noting against today's brief, which
+needed three attempts on the same check. **The difference is the guideline query's narrower keyword set, not
+luck.**

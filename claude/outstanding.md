@@ -4785,3 +4785,90 @@ were retrieved by DOI, not by the passing sweep.**
 
 Token written into the draft; no digit typed into that paragraph until the 14:13:54 query returned; token
 confirmed gone before commit. **Keep the token check in the pre-commit suite permanently.**
+
+## 2026-10-28 (guidelines watch) — backlog, named gaps, sweep log
+
+### Guidelines backlog after today
+
+**Readable (3):** ESPNIC neonatal hypothermia comparison (`10.1016/j.lanepe.2026.101874`); Vascular Access
+Society + EKTA position paper (`10.1177/11297298261468406`); **NEW — WSES position paper on
+procalcitonin-informed decision-making in abdominal and emergency surgery
+(`10.3390/antibiotics15101042`, 21 Oct, 2,593-character abstract), held for a fuller read rather than
+compressed into a fourth slot today; connects to the procalcitonin-guided-duration thread in
+`_guidelines/2026-10-02.md`.**
+
+**Named target (1), unchanged:** the two-part **2020 EUSEM** guidelines (`10.1007/s11739-020-02477-y`,
+`10.1007/s11739-020-02411-2`).
+
+**NEW NAMED GAP — the OAA document itself.** A German-language commentary on **remifentanil PCA for labour
+using the Obstetric Anaesthetists' Association guidelines as its basis** (`10.1055/a-2920-1371`, 26 Oct,
+794-character abstract) was logged today. **The OAA remifentanil guideline is not in this archive at all.**
+Find and report the primary document.
+
+**Named gaps (4 + 3 new), all abstract-free with no PMCID and not OA:**
+- The two ESC cardiac-rehabilitation corrections (`10.1093/eurheartj/ehag887`, `10.1093/eurjpc/zwag550`) and
+  the ESC CVD/chronic-kidney-disease correction (`10.1093/eurheartj/ehag884`).
+- `10.1177/17511437261497938` (*J Intensive Care Soc*, guideline-development methods).
+- **NEW:** an anaesthetist's perspective on the 2026 ASE cardiac ultrasound guideline
+  (`10.1053/j.jvca.2026.09.034`); an Italian editorial on the first ESC cardiac rehabilitation guidelines
+  (`10.1714/4793.48185`); a primary-care perspective on the 2026 ESC heart failure guideline
+  (`10.1093/eschf/xvag273`). **All three are commentary on ESC documents — so six of the seven named gaps are
+  now ESC-related, which is itself a pattern worth watching.**
+
+**Dormant, routes exhausted (3), unchanged:** ISHLT BLAD consensus and its two companions.
+
+**Needs a PDF (10 + 1), unchanged** — two-field check applied and failed on all (26 Oct).
+
+**Out of scope, logged today (6):** European eosinophilic oesophagitis guidelines; a cauda equina syndrome
+modified Delphi; Chinese COPD guidelines (2026 revision); Taiwan Hypertension Society highlights; an
+Inter-American consensus on hypertrophic cardiomyopathy; a second Mexican consensus on abdominal aortic
+aneurysms. **Secondary scope, logged:** expert consensus redefining cardiometabolic disease as a
+CardioVascular-Kidney-Liver-Metabolic entity (`10.1093/eurjpc/zwag563`, 27 Oct) — **third
+nomenclature-and-crosswalk document in three days.**
+
+**Dated:** AHA/ACC perioperative re-check **7 November**; index-date month audit for October **1 November**;
+next lagged pass **~10 November**. **Opportunistic:** the STS postoperative-AF anticoagulation class, if the
+STS guideline becomes readable; the emergency-undocking Delphi's deferred role-allocation round.
+
+### Published today (guidelines)
+
+1. **ESICM consensus statement on human-centred partnership in the ICU** — `10.1007/s00134-026-08626-9`,
+   *Intensive Care Medicine*, 26 Oct. **46-member panel; 20 PICOs over six domains; 53 drafts → 43 endorsed
+   (10 dropped, 18.9%); eDelphi 201 → 149 stakeholders (25.9% attrition). No strength attached to any
+   statement.** **First ESICM consensus statement in the archive, and found by the brief's index sweep while
+   ESICM's own guidelines page still says "development in progress".**
+2. **International expert consensus on perioperative management of carcinoid crisis** —
+   `10.1093/bjsopen/zrag159`, *BJS Open*, 1 Sep. **44 experts + 3 patient partners; four voting rounds;
+   consensus = median 5–7 AND ≤13 panellists outside the median's category; 41 statements (12 pre / 27 intra
+   / 2 post).** **Two reversals: no somatostatin prophylaxis before surgery or on the day; treat crisis with
+   vasopressors first, somatostatin analogue as adjunct.** First carcinoid-crisis document here.
+3. **Lifetime Management of Aortic Stenosis** — `10.1016/j.athoracsur.2026.09.062`, *Ann Thorac Surg*, 26 Oct.
+   **Italian Cardiac Surgery Working Group reading down the 2025 ESC/EACTS Class I for transfemoral TAVI in
+   selected patients ≥70. Case rests on propensity-matched registries because no RCT has decades of durability
+   follow-up. Titled "Consensus Guidelines"; methods say "a narrative, evidence-based synthesis".** First
+   aortic stenosis guidelines document here.
+4. **Singapore Society of Anaesthesiologists position statement on sustainability** —
+   `10.4103/singaporemedj.smj-2026-426`, 27 Oct. **Healthcare = 7% of Singapore's carbon emissions. Evidence
+   declared in the abstract as life-cycle analyses, laboratory/environmental studies and QI rather than RCTs.
+   No count of recommendations; a call to action.** First standalone sustainability statement and first
+   Singaporean society document here.
+
+### Guidelines sweep-pattern log — day 9
+
+| Date | Index dates | Form | Result |
+| --- | --- | --- | --- |
+| 28 Oct | 27–28 Oct | type + title-keyword combined | **60 / 60 — PASSED on the first form** |
+
+**Against today's brief, which needed three attempts at the same check.** The difference is the guideline
+query's narrower keyword set, not luck.
+
+**FOUR-DAY DRY RUN ENDED — but the route did not change.** 24 Oct EUSEM · 25 Oct AAST · 26 Oct APHRS ·
+27 Oct an international Delphi panel · **28 Oct ESICM, a tracked society — found by the index, not the society
+route, whose own page says the document is unpublished.** **Five days, five leads, zero from the society
+route.**
+
+### Procedure note — a dedupe hit that is not a duplicate
+
+The dedupe fired on the ESICM and Singapore DOIs; **both hits are the hand-off note in
+`_briefs/2026-10-28.md`, not an items block.** **This will recur every time the brief hands material to the
+watch: check whether the hit is in an items block or in prose before treating it as a duplicate.**
