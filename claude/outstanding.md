@@ -4947,3 +4947,94 @@ comparison will confound detection intensity with intervention. **Check against 
 **STANDING PRACTICE ADOPTED: count the sweep with `idlist` before running it with `core`, and pick the window
 from the count.** Two `idlist` calls are cheaper than one discarded `core` sweep. **Three days of page-size
 failures end here.**
+
+## 2026-10-29 (guidelines watch) — backlog, named gaps, sweep log
+
+### Guidelines backlog after today
+
+**Readable (2):** ESPNIC neonatal hypothermia comparison (`10.1016/j.lanepe.2026.101874`); Vascular Access
+Society + EKTA position paper (`10.1177/11297298261468406`). **The WSES procalcitonin paper is CLEARED —
+held 28 Oct and published today as promised.**
+
+**Named targets (2):** the two-part **2020 EUSEM** guidelines (`10.1007/s11739-020-02477-y`,
+`10.1007/s11739-020-02411-2`); **NEW — the 2024 GIHP / SFAR / SFTH / SFMV update of SFAR's 2011 perioperative
+venous thromboprophylaxis recommendations**, reported today as endorsed by the French society of digestive
+surgery, the French society of pharmacology and therapeutics and the INVENTE network. **This is a WEB-SEARCH
+LEAD, not a confirmed holding — find the primary record.** Also still unlocated: **the OAA remifentanil PCA
+guideline** (named 28 Oct).
+
+**Named gaps — abstract-free, no PMCID, not OA (8):**
+- The two ESC cardiac-rehabilitation corrections (`10.1093/eurheartj/ehag887`, `10.1093/eurjpc/zwag550`) and
+  the ESC CVD/chronic-kidney-disease correction (`10.1093/eurheartj/ehag884`).
+- `10.1177/17511437261497938` (*J Intensive Care Soc*, guideline-development methods).
+- The ASE cardiac-ultrasound perspective (`10.1053/j.jvca.2026.09.034`); the Italian ESC cardiac
+  rehabilitation editorial (`10.1714/4793.48185`); the primary-care perspective on the 2026 ESC heart failure
+  guideline (`10.1093/eschf/xvag273`).
+- **NEW: the ESEM / ACEP harmonisation document** (`10.1097/mej.0000000000001390`, *Eur J Emerg Med*,
+  27 Oct) — **this is the EUSEM thread opened 24 October and it cannot be read from the index.**
+
+**Six of the eight named gaps are ESC-related or ESC-commentary; the newest is EUSEM.**
+
+**Dormant, routes exhausted (3), unchanged:** ISHLT BLAD consensus and its two companions.
+
+**Needs a PDF (10 + 1), unchanged** — two-field check applied and failed on all (26 Oct).
+
+**In scope but set aside today (1):** the non-malignant pleural effusion review
+(`10.1080/17476348.2026.2755101`, 28 Oct) — a narrative review with an author "Expert opinion" section rather
+than a consensus, **and its entire literature search ran 1–13 August 2026, a thirteen-day window, the shortest
+this archive has seen in a document using the word "recommendations".**
+
+**Out of scope, logged today (8):** EAACI IgE-binding components in fungi and parasites; WHO childhood and
+adolescent obesity guidance plus its synopsis; a Colombian ketogenic-diet consensus; Mexican dietary guideline
+implementation; a Polish thyroid cancer recommendation; German COPD guidelines for respiratory specialists; a
+Malaysian myeloma consensus; the second Mexican consensus on abdominal aortic aneurysms (now with an abstract,
+still vascular rather than cardiothoracic).
+
+**Dated:** AHA/ACC perioperative re-check **7 November**; index-date month audit for October **1 November**;
+next lagged pass **~10 November**. **Opportunistic:** the STS postoperative-AF anticoagulation class; the
+emergency-undocking Delphi's deferred role-allocation round; **the 2026 GIHP-SFAR periprocedural anticoagulant
+management guidelines themselves — today's item is the companion, and the parent document is not in this
+archive.**
+
+### Published today (guidelines)
+
+1. **GIHP / SFAR procedure-specific bleeding risk classification** — `10.1016/j.accpm.2026.101962`, *ACCPM*,
+   28 Oct. **With 24 surgical and interventional specialty societies; a working group and systematic review
+   per domain; FOUR TIERS (no / low / high / very high) plus a fifth contextual category; 24 procedural
+   domains; procedures warranting ≥ 72 h delayed resumption identified. No grades — correctly, as a
+   risk-stratification classification rather than a recommendation set.** **Pairs with the fully graded
+   SFMU/SFAR/SFTH/GIHP emergency recommendations in `_guidelines/2026-10-05.md` (103 recs: 19 GRADE 1,
+   35 GRADE 2, 48 expert opinions).**
+2. **WSES procalcitonin position paper** — `10.3390/antibiotics15101042`, *Antibiotics*, 21 Oct.
+   **Six PICO questions, six CONDITIONAL recommendations, selected GRADE domains only; moderate certainty for
+   antibiotic discontinuation and infected pancreatic necrosis, LOW for the other four.** **The stop/start
+   asymmetry is the finding.** **Index oddity: the open-access PMC sibling is the abstract-free one — the
+   dual-deposit pattern inverted.**
+3. **SIAC Inter-American HCM consensus** — `10.24875/acm.26000187`, *Arch Cardiol Mex* 96(Supl 4).
+   **Formal Delphi, consensus at > 80%. No recommendation count, no grading scheme.**
+   **THIRD CAUSE OF A 1 JANUARY DATE: `monthOfPublication` = 0, `dateOfPublication` "2026 " — a year-only
+   date.** Created 27 Oct, indexed 28 Oct.
+
+### Guidelines sweep-pattern log — day 10
+
+| Step | Query | Result |
+| --- | --- | --- |
+| size | `idlist`, type + title-keyword, `FIRST_IDATE` 28–29 Oct | **35** |
+| run | `core` pageSize 60 | **35 / 35 — PASSED first `core` call** |
+
+**Sizing is two for two on the day: this morning's brief passed first time and the watch passed first time.**
+**The practice is settled — size with `idlist`, then run `core` above the count.**
+
+**SOCIETY ROUTE: SIX CONSECUTIVE DAYS WITH NO LEAD, AND TWO CONSECUTIVE DAYS DENYING THE DOCUMENT.**
+24 Oct EUSEM · 25 Oct AAST · 26 Oct APHRS · 27 Oct Delphi panel · 28 Oct ESICM (its own site said
+"development in progress") · **29 Oct GIHP-SFAR (the French search said no such 2026 document exists)**.
+**Standing rule: a society search cannot establish that a document does not exist. Read it for identity,
+never for status — and keep running it first.**
+
+### Procedure notes
+
+- **Deferral works.** The WSES paper was held on 28 Oct "for a fuller read rather than compressed into a
+  fourth slot" and was published today as promised. **Deferral is preferable to a compressed fourth item —
+  provided the backlog entry names it, which it did.**
+- **Not-a-duplicate dedupe hit, second instance.** The dedupe flagged WSES against yesterday's entry, where it
+  appears only in the backlog note. **Check whether a hit sits in an items block or in prose.**

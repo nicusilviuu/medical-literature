@@ -7186,3 +7186,136 @@ them**, so the "low or very low" certainty is carrying the weight. **And the sub
 "consistently across the analysed subgroups" is only as strong as which were analysed, and the ones that
 matter for a recovery claim (obesity, the elderly, long cases) are exactly where the abstract leaves a reader
 blind. **First appearance of desflurane in this archive.**
+
+## 2026-10-29 (guidelines watch) — the society route denies a document for the second day running, and a third cause of the 1 January date
+
+### THE SOCIETY ROUTE CANNOT SUPPORT A NEGATIVE — NOW EVIDENCED TWICE
+
+**Today's lead: GIHP-SFAR procedure-specific bleeding risk classification**
+(`10.1016/j.accpm.2026.101962`, *ACCPM* — SFAR's own journal — 28 Oct, 1,863-character abstract in the index).
+
+**Today's French society search, run first as the skill requires, returned a flat negative:** *"Je n'ai trouvé
+aucune recommandation GIHP/SFAR publiée en 2026 sur la gestion périopératoire des anticoagulants… Je n'ai pas
+trouvé de texte 2026 ni de référence précise sur l'évaluation du risque hémorragique par procédure."*
+
+**Yesterday: ESICM's own guidelines page listed its human-centred partnership consensus as "development in
+progress" while *Intensive Care Medicine* carried the finished article.**
+
+**SIX CONSECUTIVE DAYS, SIX LEAD DOCUMENTS, NONE FROM THE SOCIETY ROUTE** — 24 Oct EUSEM · 25 Oct AAST ·
+26 Oct APHRS · 27 Oct an international Delphi panel · 28 Oct ESICM · 29 Oct GIHP-SFAR. **And on the last two
+the route did not miss the document, it asserted the document does not exist.**
+
+**RULE, now evidenced rather than asserted: a society search cannot establish that a document does NOT exist.
+A negative from it is not a finding.** It can corroborate identity — yesterday's search got ESICM's six
+domains right while getting its status wrong; today's correctly named the parent guideline's society cluster —
+**so read it for identity, never for status.** Only the index can support a negative, and only for what has
+been deposited.
+
+**Still run the society route first.** It is the skill's order, it produces corroborating detail, and its
+negatives are themselves now data about the route.
+
+**One positive from today's search, flagged as a LEAD not a fact:** a **2024 GIHP/SFAR/SFTH/SFMV update of
+SFAR's 2011 perioperative venous thromboprophylaxis recommendations**, reported as endorsed by the French
+society of digestive surgery, the French society of pharmacology and therapeutics, and the INVENTE network.
+**Not in this archive. Named gap: find the primary document.**
+
+### GIHP-SFAR — AND THE CLEANEST FORMAT-DECISION PAIR THE ARCHIVE HOLDS
+
+GIHP + SFAR with **24 surgical and interventional specialty societies**; a working group and systematic
+literature review **per procedural domain**; **four tiers (no / low / high / very high bleeding risk) plus a
+fifth category for contextual risk** (anatomical site, patient factors, need for reversible anticoagulation);
+**24 procedural domains**, regional anaesthesia and digestive endoscopy through cardiac surgery, neurosurgery
+and ophthalmology, each with a risk table and narrative evidence; **procedures warranting delayed resumption
+(≥ 72 h) or short-acting/reversible agents identified.**
+
+**NO grades — and the 22 October rule applies cleanly: this is a risk-stratification classification, not a
+recommendation set, and a bleeding-risk tier does not take a GRADE certainty.** It is the *input* to the
+parent guideline's recommendations.
+
+**THE PAIR, and it is the clearest instance in the archive.** `_guidelines/2026-10-05.md` holds the
+**SFMU/SFAR/SFTH/GIHP recommendations on anticoagulant management in EMERGENCY settings**: **103
+recommendations over 21 questions — 19 GRADE 1, 35 GRADE 2, 48 expert opinions, one question with no
+recommendation.** **Same society cluster, two documents, two instruments: a fully graded recommendation set
+for emergencies and an ungraded four-tier risk table for elective procedures.** **So an absent grade
+distribution is sometimes a deliberate format choice by the same authors who grade elsewhere. Score the
+disclosure axis only after identifying the document class.**
+
+**Partial disclosure to record:** the classification covers scenarios *"including those with limited published
+evidence where structured expert opinion was applied"* — **it says expert opinion was used and not in which
+of the 24 domains.** **In a four-tier scheme the high/very-high boundary is where that matters.**
+
+**And: GIHP sits in this archive's French-society audit table in a row of seventeen societies marked "not
+run".** The index found a GIHP document anyway.
+
+### WSES PROCALCITONIN — THE STOP/START ASYMMETRY
+
+Literature Jan 1980–Dec 2025 with targeted updates through Aug 2026; **six PICO questions; six CONDITIONAL
+recommendations, none strong**; appraisal on **selected GRADE domains only (consistency, directness,
+precision)** — declared, and a partial appraisal without risk-of-bias or publication-bias domains.
+**Certainty: moderate for antibiotic discontinuation and infected pancreatic necrosis; LOW for the other
+four.**
+
+**THE SENTENCE:** *"Evidence for reduced antibiotic exposure with predefined PCT algorithms is more
+established than evidence that PCT-informed imaging, reintervention, or discharge decisions improve patient
+outcomes."*
+
+**RULE — separate a biomarker's STOP use from its START use.** Procalcitonin has reasonable evidence for
+stopping antibiotics and weak evidence for starting a CT, a reoperation or a discharge. **The two moderate
+domains are both stop-type; the four low ones include the decisions that send a patient back to theatre.**
+A guideline treating them as one use would be actively misleading.
+
+**Declared limits worth quoting together:** no support for *"universal thresholds or routine serial testing in
+all surgical patients"*; *"biomarker kinetics should strengthen, but not replace, surgical reasoning"*; and —
+the honest one — future research should *"establish whether PCT provides actionable information before clinical
+deterioration."* **The entire case for serial monitoring rests on that, and the panel lists it as an open
+question rather than a premise.**
+
+**INDEX OBSERVATION — THE DUAL-DEPOSIT PATTERN INVERTED.** This record appears twice and **the
+OPEN-ACCESS copy is the abstract-free one**: PMC13700824, `isOpenAccess` Y, fpd 2026-10-01, abstract length 0;
+the publisher record (fpd 2026-10-21, no PMCID, not OA) carries the full **2,565 characters** after
+tag-stripping. **Usually the abstract-free copy is the one with the PMCID and OA flag — which is what makes
+the two-field recovery route work.** **Here a reader on the open-access metadata finds nothing and the
+paywalled record describes the paper. Check BOTH siblings' abstract lengths, in both directions.**
+
+### A THIRD CAUSE OF A 1 JANUARY DATE — AND THE FIELD THAT DISCRIMINATES THEM
+
+SIAC Inter-American HCM consensus (`10.24875/acm.26000187`), `firstPublicationDate` **2026-01-01**:
+
+| Cause | Signature | Logged |
+| --- | --- | --- |
+| Dual-deposit placeholder | abstract-free sibling dated 1 January | earlier |
+| **Future print issue** | `printPublicationDate` in a later year, real month | 26–27 Oct (*Acta Anaesthesiol Scand*, 2027-01-01) |
+| **Year-only publication date** | **`monthOfPublication` = 0, `dateOfPublication` = "2026 "** | **TODAY** |
+
+`electronicPublicationDate` null; `dateOfCreation` 2026-10-27; `firstIndexDate` 2026-10-28; volume 96,
+Supplement 4.
+
+**RULE: `monthOfPublication` = 0 means the journal supplied no month at all.** Where it reads 0, report
+**"2026, month not stated in the index, entered the index on <firstIndexDate>"** — never 1 January. Where it
+reads a real month and the year is in the future, it is a print-issue date. **Three causes, one field tells
+them apart.**
+
+Content notes: SIAC committee across the Americas; systematic review then **formal Delphi with consensus at
+> 80% agreement**; covers sudden-death risk assessment, paediatric and pregnant patients, exercise.
+**No recommendation count, no grading scheme, no distribution** — nothing for the catalogue beyond the 80%
+threshold. **The resource-stratification rationale is the distinctive feature and is the same argument APHRS
+made on 26 October: a regional guideline justified by what is available, not by different biology.**
+HCM's perioperative relevance is specific (dynamic outflow obstruction makes vasodilatation, hypovolaemia and
+tachycardia hazardous).
+
+### METHOD — SIZING THE SWEEP IS NOW TWO FOR TWO IN ONE DAY
+
+`idlist` count of the combined publication-type and title-keyword query over `FIRST_IDATE` 28–29 Oct:
+**35**. Then `core` at page size 60: **35 hits, 35 returned, passed on the first `core` call.**
+**This morning's brief passed first time too. Two for two on the day, after three days of discarded sweeps.**
+**The practice is settled: size with `idlist`, then run `core` above the count.**
+
+**A NOT-A-DUPLICATE DEDUPE HIT, SECOND INSTANCE.** The dedupe flagged the WSES paper against
+`_guidelines/2026-10-28.md`, where it appears only in the backlog note recording that it was being **held**.
+Yesterday the same pattern appeared with the ESICM and Singapore DOIs against the brief's hand-off note.
+**Rule holds and is now seen twice: check whether a dedupe hit sits in an items block or in prose.**
+
+**And a first for this watch: a document was deliberately deferred one day and reported as promised.** The
+WSES paper was held on 28 October *"for a fuller read rather than compressed into a fourth slot"*. **Record
+that deferral works and is preferable to a compressed fourth item** — but only if the backlog entry names it,
+which it did.
