@@ -7052,3 +7052,137 @@ Sweep: guideline publication-type and title-keyword forms combined over `FIRST_I
 **60 hits, 60 returned, page-size check passed on the FIRST form** — worth noting against today's brief, which
 needed three attempts on the same check. **The difference is the guideline query's narrower keyword set, not
 luck.**
+
+## 2026-10-29 (brief) — the five-outcome series closes with a negative, and a sweep sized before it is run
+
+### THE OBSERVABLE IS SETTLED: FIVE OUTCOMES, −15 TO +16,506
+
+**28 October bucket 13,713 → 13,698 (−15), every lost record MEDLINE** (12,491 → 12,476); preprints 1,222 and
+PMC 0 unmoved; parts sum to 13,698 exactly.
+
+**Five consecutive days, identical end-of-run observable (PMC at zero for the day's bucket, MEDLINE flat):
++4,555, +6, +121, +16,506, −15.** **The first negative, and the series now spans −15 to +16,506.**
+
+A past bucket shrinking is not new (19 Oct: 16 October fell 37,260 → 37,243, 17 October 3,650 → 3,645), **but
+the series is now complete in both directions.** **STANDING CONCLUSION, upgraded from a caution: the
+end-of-run state of a bucket carries NO information about its next reading. Stop treating this as a question
+to be tested; it is answered.**
+
+### BOOKSHELF AND PMC — ONE WINDOW, TWO SOURCES, NO COMMON PATTERN
+
+| Reading | 26 Oct | 27 Oct | 28 Oct | 29 Oct |
+| --- | --- | --- | --- | --- |
+| `NBK` | 65 | 4 | 13 | **5** |
+| `PMC` | 1,014,847 | 1,011,638 | 1,022,973 | **1,022,974** |
+
+`NBK` has lost 92%, partly recovered and lost again; `PMC` fell 3,209, recovered 11,335 and today moved by
+**one**. **Two sources, same four days, nothing in common.** **This is the standing argument for the
+decomposition and against reading the whole-database figure** — and it is why correction 11's replacement
+statement (the duration of a transient here is unknown) should not be narrowed into a per-source rule either.
+
+Today: whole **49,174,847** at 14:16:23, residual 0, **+5,302** (`MED` +4,573, `PPR` +736, `PMC` +1,
+`NBK` −8; sum exact). Bucket **5,363 = MED 4,620 + PPR 742 + PMC 1**, exact. Thursday MED 4,620 against
+Wednesday 12,491, **2.7-fold** — measurement, not a weekday claim. Windows: 1–30 Sep **+193** to 169,101;
+1–7 Oct **+414** to 60,263, **both an order of magnitude below yesterday's 3,415 and 10,390.**
+
+### METHOD — SIZE THE SWEEP BEFORE RUNNING IT (this replaces yesterday's two discarded sweeps)
+
+Yesterday's fix (narrow with `TITLE:` scoping plus a publication-date window) needed two discarded attempts.
+**Today: one cheap `idlist` count of the same query at two candidate publication windows first —
+54 hits for 28–29 October, 132 for 26–29 October — then run the narrower window with `core` at page size
+100: 54 hits, 54 returned, check passed on the first `core` call.**
+
+**STANDING PRACTICE: count the sweep with `idlist` (pageSize 1) before running it with `core`, and pick the
+window from the count.** An `idlist` call is one request and returns the hit count without the payload, so
+two of them are cheaper than one discarded `core` sweep. **Three days of page-size failures end here.**
+
+### ANALYTIC — A GUIDELINE DISAGREEMENT WITH AN EVIDENCE BASE OF 302 PATIENTS
+
+On 26 Oct this archive published that STS 2026 and APHRS 2026 Part III differ on anticoagulating
+postoperative AF (APHRS **IIa/B** for POAF ≥ 24–48 h; STS recorded as **IIb, individualised** from secondary
+sources, **published as unconfirmed** because the STS abstract does not name it).
+
+**Today's meta-analysis is the randomised evidence base for that question: five trials, 302 patients
+(153 DOAC / 149 warfarin), rivaroxaban in 3 trials and apixaban and dabigatran in 1 each.**
+**Any bleeding 9.2% vs 8.1%; OR 1.24 (0.39–3.99).** Reconstructed: **14 and 12 events — twenty-six in
+total**; the interval spans a factor of **10.2** and is log-symmetric; the crude OR of the summed counts is
+about **1.15** against the pooled 1.24, which is normal for random-effects pooling and **not** a discrepancy.
+
+**RULE: when two guidelines take different positions on one question, find the evidence base and state its
+size before characterising the disagreement.** Here it reframes everything: **this is not two panels reading
+strong evidence differently — it is two panels placing different weights on an absence, and a Class IIa and a
+Class IIb are both defensible readings of nothing.** **A panel should report the evidence base's size
+alongside its class.**
+
+**Also recorded: the indexed abstract is TRUNCATED** — it stops mid-report after the primary outcome, and the
+six named secondary outcomes (stroke/TIA, systemic embolism, major bleeding, intracranial haemorrhage,
+reoperation, length of stay) have no results. No PMCID, not OA, so the two-field route does not apply.
+**Nothing was inferred about them, and with 302 patients none can have been powered.**
+
+### ANALYTIC — DISCRIMINATION IS FOR INDIVIDUALS, CALIBRATION IS FOR GROUPS
+
+Paediatric ECPR survival model, ELSO registry 2020–2023, **derivation 1,060 + validation 317 = 1,377**,
+hospital-stratified split, LASSO, 14 variables. **AUC 0.728 → 0.678 (a drop of 0.050); O:E 0.995;
+Brier 0.222; median OR for between-hospital variation 1.30 (1.11–1.93)** for centres with ≥ 5 cases.
+
+**The paper's own sentence is the rule:** *"The model performance as a discriminator likely limits its use as
+a standalone tool for clinical decision-making. However, strong internal calibration allowed for determination
+of hospital-level RSSRs."* **An AUC of 0.678 is useless for one child; an O:E of 0.995 can still adjust a
+hospital's aggregate rate.** **RULE: read discrimination and calibration separately and say which the paper's
+use requires. Most papers conflate them; this one separates them and acts on the separation.**
+
+**EXCEPTION TO THE SYMMETRY CHECK, recorded so it does not fire wrongly again: the median odds ratio's
+interval is asymmetric by a factor of 2.5 on the log scale (1.30, bounds 1.11 and 1.93), and that is CORRECT.**
+A median OR derives from the random-intercept variance, whose sampling distribution is skewed. **Do not flag
+asymmetry in a variance-derived statistic.**
+
+**AND THE GAP: a Brier score cannot be interpreted without the base rate, and the abstract never states the
+survival rate.** Base-rate-only prediction gives p(1−p): **0.2475 at 45% survival, 0.2100 at 30%.** **So
+0.222 is either a modest improvement or worse than predicting the base rate for everyone, depending on a
+number this survival-model paper does not report.** **RULE: whenever a Brier score is quoted, demand the base
+rate; without it the number is uninterpretable.**
+
+Credit: the paper builds a benchmarking tool and then says *"additional external validation and evaluation of
+residual case-mix differences are needed before such models can be used for benchmarking"* — **a paper that
+declines to use its own tool is behaving properly**, and the median OR should be read as a reason to
+investigate variation, not as a league table.
+
+### ANALYTIC — SAME MECHANISM, TWO IMPLEMENTATIONS, ONE RECOMMENDED AND ONE UNTESTED
+
+PROPER trial (**protocol, no results**): 624 patients, 8 Nordic centres (~78 each), randomised 1:1 to
+**intraoperative posterior pericardial chest tube for prolonged drainage** vs standard care; primary endpoint
+AF within 7 days; secondary AF recurrence, bleeding or stroke hospitalisation, all-cause mortality;
+**5-year follow-up**; **wearable ECG patch monitoring**. NCT06800781. Mechanism stated as pericardial blood
+triggering a localised inflammatory response.
+
+**Both 2026 guidelines already act on that mechanism via a surgical incision: STS posterior pericardiotomy
+Class IIa; APHRS posterior left pericardiotomy IIa/A (PALACS, 17% vs 32%).** **PROPER tests a tube.**
+**RULE: when a guideline recommends one implementation of a mechanism, ask whether the simpler implementation
+has been tested. Here the more invasive one is recommended and the simpler one is only now enrolling** — not a
+criticism of the panels, who followed the trial that existed, but the clearest instance the archive holds.
+
+**PREDICTION RECORDED FOR CHECKING (a detection-regime prediction, not an outcome one): PROPER's absolute POAF
+rates will not be comparable with PALACS's, because PROPER adds a wearable ECG patch and the guideline trials
+used routine surveillance.** Within-trial comparison is fair (both arms patched); cross-trial comparison will
+confound detection intensity with intervention. **Check this against the published results.**
+
+### PAIRING — DESFLURANE'S CLINICAL CASE, ONE DAY AFTER THE STATEMENT THAT TARGETS IT
+
+Umbrella review, **31 systematic reviews published 2014–2024**, AMSTAR 2 + GRADE.
+**Desflurane consistently faster recovery than sevoflurane across analysed subgroups, at LOW or VERY LOW
+certainty**; against propofol the early-recovery advantage is **less consistent**; **no clinically relevant
+morbidity differences**, except **a possible advantage of propofol in PONV and emergence agitation** — the one
+morbidity signal runs against desflurane. Verdict: *"may be conditionally considered when rapid recovery is
+prioritized."*
+
+**Read against yesterday's Singapore sustainability position statement (healthcare = 7% of national carbon
+emissions).** **Desflurane is the largest single target of anaesthetic sustainability work.** **So between
+them, two documents a day apart answer the clinician's question: the clinical case for keeping it is a small,
+low-certainty recovery-speed benefit, which is a weak counterweight to an unambiguous environmental cost.**
+Operationally: a reserve agent for when minutes to emergence matter, not a default.
+
+**Two limitations to hold.** **An umbrella review's AMSTAR 2 assesses the reviews, not the trials inside
+them**, so the "low or very low" certainty is carrying the weight. **And the subgroups are not named** —
+"consistently across the analysed subgroups" is only as strong as which were analysed, and the ones that
+matter for a recovery claim (obesity, the elderly, long cases) are exactly where the abstract leaves a reader
+blind. **First appearance of desflurane in this archive.**

@@ -4872,3 +4872,78 @@ route.**
 The dedupe fired on the ESICM and Singapore DOIs; **both hits are the hand-off note in
 `_briefs/2026-10-28.md`, not an items block.** **This will recur every time the brief hands material to the
 watch: check whether the hit is in an items block or in prose before treating it as a duplicate.**
+
+## 2026-10-29 (brief) — index baselines, queue, sweep log
+
+### Index baselines (for tomorrow)
+
+Two readings, **14:16:23 and 14:21:09 — every figure identical**:
+
+- **Whole database 49,174,847, residual 0, up 5,302** on 28 Oct.
+- `MED` 41,296,571 (+4,573) · `PPR` 1,272,860 (+736) · `PMC` 1,022,974 (**+1**) · **`NBK` 5 (−8)** ·
+  `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `CTX` 3,924 · `HIR` 2,868 · `CIT` 624.
+  Four changes sum to 5,302 exactly.
+- **Bucket 2026-10-29: 5,363** = MED 4,620 + PPR 742 + PMC 1. Exact.
+- **Bucket 2026-10-28: 13,698** = MED 12,476 + PPR 1,222 + PMC 0. Exact. **Was 13,713 at end of its own run:
+  −15, all MEDLINE.**
+- Windows: 1–30 Sep **169,101 (+193)**; 1–7 Oct **60,263 (+414)**.
+
+**THE OBSERVABLE IS SETTLED — STOP SETTING A TEST FOR IT.** Five consecutive days, identical end-of-run state:
+**+4,555, +6, +121, +16,506, −15.** **The end-of-run state of a bucket carries no information about its next
+reading.** Read the buckets daily as a measurement; do not frame them as a question.
+
+**`NBK` four-day trail: 65, 4, 13, 5.** `PMC` over the same window: −3,209, +11,335, +1. **No common pattern
+between two sources in one window.**
+
+### Queue after today: 29 held + 4 added = 33
+
+**Added from today's sweep (4):** TETRiS national service evaluation of traumatic emergency thoracotomy
+(`10.1016/j.resuscitation.2026.111371`); perioperative esketamine and chronic pain after VATS lung resection
+(`10.1016/j.bja.2026.08.039`) — **third esketamine item in the queue**; bronchoscopy in paediatric cardiac
+surgery patients (`10.1177/21501351261497290`); randomised trial of multimodal prehabilitation before robotic
+radical prostatectomy (`10.1097/ju.0000000000005365`) — **pairs with the 26 Oct cognitive-training review**.
+
+**Noted, abstract-free:** Candida septic shock editorial (`10.1097/ccm.0000000000007411`); practice patterns
+and staffing models for non-operating-room anaesthesia in the ICU (`10.1213/ane.0000000000008314`) — **would
+pair with the enhanced-care-unit and OPICU papers of 27–28 Oct if readable**; venous congestion and flow
+mismatch in VV-ECMO (`10.1177/15569845261495140`).
+
+**Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### Published today (brief)
+
+1. **PROPER trial protocol** — `10.1016/j.ahj.2026.107635`, *Am Heart J*, 28 Oct. **PROTOCOL, NO RESULTS.**
+   624 patients, 8 Nordic centres, posterior pericardial chest tube vs standard care, primary endpoint AF
+   within 7 days, wearable ECG patch, 5-year follow-up. NCT06800781. **Tests a tube where STS (IIa) and APHRS
+   (IIa/A) already recommend an incision for the same mechanism.**
+2. **DOAC vs VKA for AF after cardiac surgery** — `10.1097/crd.0000000000001516`, *Cardiol Rev*, 29 Oct.
+   **5 RCTs, 302 patients (153/149), 26 bleeding events. Any bleeding 9.2% vs 8.1%, OR 1.24 (0.39–3.99), a
+   10.2-fold span.** **This is the evidence base beneath the STS/APHRS anticoagulation disagreement flagged
+   26 Oct.** **Indexed abstract is TRUNCATED — six named secondary outcomes have no results.**
+3. **Paediatric ECPR survival model** — `10.1097/ccm.0000000000007383`, *Crit Care Med*, 29 Oct. ELSO
+   2020–2023, derivation 1,060 + validation 317 = 1,377, LASSO, 14 variables. **AUC 0.728 → 0.678; O:E 0.995;
+   Brier 0.222; median OR 1.30 (1.11–1.93).** **Abstract never states the survival rate, so the Brier score is
+   uninterpretable.** Pairs with the 27 Oct adult ECPR paper.
+4. **Desflurane vs sevoflurane and propofol: umbrella review** — `10.1016/j.redare.2026.502163`, 28 Oct.
+   **31 systematic reviews, 2014–2024, AMSTAR 2 + GRADE. Faster recovery than sevoflurane at LOW/VERY LOW
+   certainty; less consistent vs propofol; no morbidity difference except possible propofol advantage in PONV
+   and emergence agitation.** **Pairs with the 28 Oct Singapore sustainability statement.** First desflurane
+   item here.
+
+### PREDICTION RECORDED FOR LATER CHECKING
+
+**PROPER's absolute POAF rates will not be comparable with PALACS's**, because PROPER adds wearable ECG patch
+monitoring while the guideline trials used routine surveillance. Within-trial comparison is fair; cross-trial
+comparison will confound detection intensity with intervention. **Check against the published results.**
+
+### Brief sweep-pattern log — day 10, and the page-size problem is solved
+
+| Step | Query | Result |
+| --- | --- | --- |
+| size | `idlist` count, pub window 28–29 Oct | **54** |
+| size | `idlist` count, pub window 26–29 Oct | 132 |
+| run | `core` pageSize 100, pub window 28–29 Oct | **54 / 54 — PASSED first try** |
+
+**STANDING PRACTICE ADOPTED: count the sweep with `idlist` before running it with `core`, and pick the window
+from the count.** Two `idlist` calls are cheaper than one discarded `core` sweep. **Three days of page-size
+failures end here.**
