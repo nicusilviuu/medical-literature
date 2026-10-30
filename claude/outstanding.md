@@ -5128,3 +5128,100 @@ the omission.**
 | run | `core` pageSize 100, pub window 29–30 Oct | **73 / 73 — PASSED first `core` call** |
 
 **Three for three since the practice was adopted.**
+
+## 2026-10-30 (guidelines watch) — backlog, named gaps, sweep log
+
+### ROUTING RULE FIXED
+
+**A document whose subject is what guidelines say or how they have changed belongs to the GUIDELINES WATCH,
+whatever journal it appears in.** This morning's brief misrouted the thoracic non-cardiac appraisal to the
+literature queue; **the dedupe caught it and the correction is published on today's watch entry.** Remove it
+from the brief queue.
+
+### Guidelines backlog after today
+
+**Readable (3):** ESPNIC neonatal hypothermia comparison (`10.1016/j.lanepe.2026.101874`); Vascular Access
+Society + EKTA position paper (`10.1177/11297298261468406`); **NEW — WSES-PSOGI-SICO evidence-informed
+guidelines on surgical emergencies in patients with peritoneal surface malignancies
+(`10.1186/s13017-026-00718-7`, 24 July, 3,622-character abstract), the third WSES document to reach this watch
+in three days and the largest abstract of the three; held for a fuller read, which worked yesterday.**
+**Also readable, lower priority:** a modified nominal group technique consensus on infection prevention and
+control in paramedicine (`10.1016/j.ajic.2026.10.014`, 29 Oct).
+
+**Named targets (3), unchanged:** the two-part **2020 EUSEM** guidelines; the **2024 GIHP/SFAR/SFTH/SFMV
+perioperative venous thromboprophylaxis update** (web-search lead, unconfirmed); the **OAA remifentanil PCA
+guideline**.
+
+**Named gaps — abstract-free, no PMCID, not OA (12):**
+- ESC-related (6): the two cardiac-rehabilitation corrections; the CVD/chronic-kidney-disease correction; the
+  ASE cardiac-ultrasound perspective; the Italian ESC cardiac-rehabilitation editorial; the primary-care
+  perspective on the 2026 ESC heart failure guideline.
+- `10.1177/17511437261497938` (*J Intensive Care Soc*, guideline-development methods).
+- The ESEM/ACEP harmonisation document (`10.1097/mej.0000000000001390`) — the EUSEM thread.
+- **NEW, and logged as ONE PATTERN — four commentaries on guidelines this archive holds or tracks:**
+  **(1)** Neurocritical Care perspectives on the updated Brain Trauma Foundation penetrating brain injury
+  guidelines (`10.1007/s12028-026-02710-0`) — **parent held in `_guidelines/2026-10-07.md`**;
+  **(2)** caution against overinterpreting the 2026 Surviving Sepsis Campaign guidelines
+  (`10.20452/pamw.17437`) — **parents held in `_guidelines/2026-09-01.md` and `2026-10-23.md`**;
+  **(3)** distinguishing uncertainty from ineffectiveness in peripheral nerve corticosteroid recommendations
+  (`10.1136/rapm-2026-108682`) — **this archive's structure thread stated in a title**;
+  **(4)** when guidelines downgrade durability, on CABG evidence standards
+  (`10.1016/j.xjon.2026.101985`) — **yesterday's aortic-stenosis durability argument from the coronary side**.
+
+**OBSERVATION: the most on-point commentary on guidelines is consistently the least readable material in the
+index, because editorials and perspectives are deposited without abstracts. Twelve named gaps, and it is a
+genre problem rather than a publisher problem.**
+
+**Dormant, routes exhausted (3), unchanged.** **Needs a PDF (10 + 1), unchanged.**
+
+**Out of scope, logged today (7):** EAACI IgE-binding components in fungi and parasites; WHO childhood obesity
+guidance and its synopsis; a Polish thyroid cancer recommendation; two French cervical cancer reviews; a
+Japanese anaphylaxis-guideline implementation study; image-guided ablation for desmoid fibromatosis; a
+systematic review of Chinese osteoporosis guideline quality.
+
+**Dated:** AHA/ACC perioperative re-check **7 November**; index-date month audit for October **1 November**
+(tomorrow); next lagged pass **~10 November**.
+
+### Published today (guidelines)
+
+1. **Thoracic non-cardiac perioperative guideline appraisal** — `10.1097/aco.0000000000001718`,
+   *Curr Opin Anaesthesiol*, 29 Oct. **THE DIVERGENCE MECHANISM: guidelines converge on process measures
+   (opioid-sparing analgesia, a single chest drain, early ambulation, no reflex ICU admission) and diverge on
+   every number (exercise-testing cut-offs, transfusion triggers, drain-removal volumes), with newer documents
+   more permissive.** *"Ascertain the underlying guideline generation for any numerical threshold before its
+   implementation."* **Limitation: names neither the guidelines reviewed nor how many.**
+2. **NANS implantable peripheral nerve stimulation guidelines** — `10.1016/j.neurom.2026.09.002`,
+   *Neuromodulation*, 17 Sep. **USPSTF grades — a THIRD grading scheme for the catalogue. Stratified by
+   anatomical region then indication; 13 graded indications (4 Grade A, 9 Grade B); ≥ 3 months of failed
+   conservative measures as a condition; durability certainty conceded.** **Systematic search closed
+   1 July 2025, manual top-up 30 July 2026, published 17 Sep 2026 — 394 and 443 days.**
+3. **Loss-of-resistance teaching approach** — `10.52965/001c.172702`, *Orthopedic Reviews*, 26 Oct.
+   **Title claims expert consensus; the text calls itself an expert educational perspective by the authors.
+   SECOND title/methods mismatch in two days.** Content worth keeping: the transitional stage where the
+   supervisor controls the needle and the trainee operates the LOR syringe.
+
+### Grading schemes in the catalogue — now three
+
+**GRADE · ACC/AHA class-and-level pairs · USPSTF grades with levels of certainty.**
+
+### Organising axes — a possible trend to watch
+
+**29 Oct GIHP-SFAR: bleeding risk indexed by procedure. 30 Oct NANS: recommendations indexed by anatomical
+region then syndrome.** **Two documents two days apart indexed by WHERE rather than WHAT.** Watch for a third.
+
+### Society-route log — distinguish a blank from a denial
+
+Seven consecutive days with the lead from the index. **Denials (2): 28 Oct ESICM's own page said "development
+in progress"; 29 Oct the French search said no 2026 GIHP/SFAR document exists.** **Today: an ordinary blank.**
+**Keep the categories separate — a blank is weak evidence about the route, a denial is strong.**
+
+### Guidelines sweep-pattern log — day 11
+
+| Step | Query | Result |
+| --- | --- | --- |
+| size | `idlist`, type + title-keyword, `FIRST_IDATE` 29–30 Oct | **35** |
+| run | `core` pageSize 60 | **35 / 35 — PASSED first `core` call** |
+
+**Four for four since adoption; second today.** **And the dedupe did consistency work again — third day
+running it caught a cross-run note rather than a duplicate (27 Oct hand-off, 29 Oct deferral, 30 Oct
+misrouting).**

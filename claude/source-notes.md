@@ -7494,3 +7494,146 @@ the literature, not of one abstract.**
 `idlist` counts of the title-scoped query over `FIRST_IDATE` 29–30 Oct: **73** for a 29–30 Oct publication
 window, **147** for 27–30 Oct. Ran the narrower window with `core` at page size 100: **73 hits, 73 returned,
 passed on the first `core` call.** **Third consecutive run to pass first time since the practice was adopted.**
+
+## 2026-10-30 (guidelines watch) — the divergence mechanism named, a third grading scheme, and a routing rule fixed
+
+### A ROUTING RULE, FIXED BECAUSE I BROKE IT YESTERDAY
+
+**This morning's brief logged the thoracic non-cardiac guideline appraisal to the literature queue, writing
+that a review of guidelines "belongs here" rather than in the watch. That was inconsistent with practice:**
+the ESC guideline commentaries, the JCVA summary of what the 2026 stroke guidelines changed, and the Italian
+ESC cardiac-rehabilitation editorial are all carried in the **guidelines** backlog.
+
+**RULE, stated so it stops drifting: a document whose subject is what guidelines say or how they have changed
+belongs to the GUIDELINES WATCH, whatever journal it appears in.** Research articles go to the brief; a
+commentary, appraisal or delta-summary of guidelines does not. **Published in today's watch with the
+correction stated on the page.**
+
+**And the dedupe is what caught it** — the hit was against this morning's brief, in the queue section, with my
+own misrouting note. **That is the third use of the whole-archive dedupe for something other than novelty
+checking in three days** (27 Oct hand-off note, 29 Oct deferral note, 30 Oct misrouting note). **The dedupe is
+functioning as a cross-run consistency check; keep running it before drafting.**
+
+### THE DIVERGENCE MECHANISM, NAMED AT LAST
+
+Four of the last five watch entries reported guidelines disagreeing without being able to say what kind of
+thing the disagreement is: **26 Oct STS vs APHRS inverted on two drugs · 27 Oct a four-society crosswalk
+written because guidelines do not align · 29 Oct an Italian working group reading down a Class I its own
+international society co-authored · 30 Oct this appraisal.**
+
+**Today's decomposition, from the thoracic non-cardiac appraisal:**
+
+| | |
+| --- | --- |
+| **Converge strongly** | **Process measures** — multimodal opioid-sparing analgesia, a single chest drain, early ambulation, avoidance of reflex ICU admission |
+| **Diverge** | **Every number** — exercise-testing cut-offs, transfusion triggers, drain-removal volumes |
+| **Drift with vintage** | Newer documents are **more permissive**, and weight frailty, sarcopenia, patient-reported outcomes |
+
+**RULE: the processes agree and the thresholds do not, and the thresholds carry a date stamp.** The review's
+own instruction is the operative one: *"ascertain the underlying guideline generation for any numerical
+threshold before its implementation."* **This is far more tractable than "guidelines disagree" and a clinician
+can act on it: adopt the convergent process content from any recent source, and date every number.**
+
+**TEMPER IT with the review's second sentence:** *"A significant number of intraoperative decisions are still
+made based on expert opinion rather than guideline-grade evidence."* **Convergence on process is not
+convergence on evidence — guidelines can agree because they copied one another.** Telling those apart is part
+of what the structure catalogue is for.
+
+**LIMITATION, and it is real: the appraisal names neither the guidelines it reviewed nor how many.** *"The
+reviewed documents"* is as specific as it gets. **A paper whose central finding is that sources diverge should
+list its sources; the finding is credible and the audit trail is absent.**
+
+### A THIRD GRADING SCHEME FOR THE CATALOGUE — USPSTF
+
+NANS implantable peripheral nerve stimulation guidelines (`10.1016/j.neurom.2026.09.002`, *Neuromodulation*,
+17 Sep). Multidisciplinary panel with stated COI governance; Ovid MEDLINE, Embase, Cochrane CENTRAL, Scopus;
+modified Delphi; **graded on USPSTF recommendation grades and levels of certainty.**
+
+**Catalogue now holds three schemes: GRADE · ACC/AHA class-and-level pairs · USPSTF grades with certainty
+levels.**
+
+**Structure: stratified by ANATOMICAL REGION** (craniofacial/neck, upper extremity, lower extremity, truncal,
+pelvic), **then by indication within region.** **13 graded indications: 4 Grade A, 9 Grade B**, plus
+"insufficient or small net benefit" for several nociplastic and visceral conditions.
+Grade A: hemiplegic shoulder pain · lower-extremity post-amputation pain · nonsurgical axial low back pain ·
+low back pain with multifidus dysfunction. Condition on the offer: after conservative measures have failed
+**≥ 3 months**.
+
+**RULE — note the organising axis.** **Recommendations indexed by anatomy then syndrome is the same
+structural idea as yesterday's GIHP-SFAR procedure-specific bleeding-risk tables: indexed by WHERE, not by
+WHAT.** **Two documents two days apart choosing anatomy, for the same reason — the clinician arrives with a
+location, not a question.** Worth watching whether this is a trend.
+
+**Honest negatives to credit:** functional outcomes reported inconsistently; clinical and methodological
+heterogeneity; **"the durability of relief varied by indication and device type, limiting the certainty of
+evidence."** **Durability is THE question for an implanted device, and a guideline written to inform payer
+policy conceding it is to its credit.**
+
+**AND THE UNCOMFORTABLE DETAIL: the systematic search closed 1 July 2025; an "additional manual search" was
+conducted on 30 July 2026; publication 17 September 2026.** **394 days from search close to manual top-up,
+443 days to publication.** **A one-day manual search is not a systematic search, and thirteen months of a
+fast-moving device literature was covered by one** — in a guideline whose own conclusion calls for
+target-specific randomised trials, i.e. exactly the studies most likely to move a grade.
+**RULE: check the search close date against the publication date, and treat a "manual update" as a
+disclosure of a gap rather than a closure of it.**
+
+**Archive pair:** `_briefs/2026-09-17.md` carried the position that *"a neuromodulation device beats 8 mg of
+dexamethasone, and the burden is on the device."* **This guideline is the device side's best case, graded, and
+it concedes durability. The two together are the honest state of the question.**
+
+### TITLE/METHODS MISMATCH — SECOND INSTANCE IN TWO DAYS
+
+"Teaching Loss of Resistance to Trainees: **A Stepwise Expert-Consensus Approach**…" (`10.52965/001c.172702`,
+*Orthopedic Reviews*, 26 Oct). **Its own text calls it "this expert educational perspective" describing "a
+progressive approach used by the authors", and says "We believe…". No panel, no Delphi, no threshold, no
+statement count, no grading, no literature search.**
+
+**29 Oct: the Italian cardiac surgery working group document titled "Expert Review of Evidence and Consensus
+Guidelines" whose methods described "a narrative, evidence-based synthesis."** **Two documents, two days, both
+claiming consensus in the title and describing something else in the text.** **The check is cheap and is
+standing: read the methods sentence against the title before filing anything as a consensus.**
+
+**The content is good and should be recorded as content:** loss of resistance has a **tactile** endpoint that
+description cannot convey, and making a trainee advance the needle AND interpret an unfamiliar endpoint
+*"unnecessarily combine[s] two distinct learning tasks."* **The transitional stage is the idea — supervisor
+retains complete control of needle advancement while the trainee operates the LOR syringe and attends only to
+the tactile endpoint**, then needle control transfers progressively. **A specific, implementable split of one
+procedure into two learning tasks, keeping the hazardous half with the supervisor.**
+First document in this archive on epidural technique teaching or on acquiring a tactile skill — **which is
+why the genre label matters: do not record it as a consensus.**
+
+### FOUR ABSTRACT-FREE GUIDELINE COMMENTARIES IN ONE WINDOW — LOG AS ONE PATTERN
+
+Each attaches to something this archive holds or tracks, and none can be read (no PMCID, not OA):
+
+1. **"Penetrating Brain Injury: Neurocritical Care Perspectives on the Updated Brain Trauma Foundation
+   Guidelines"** (`10.1007/s12028-026-02710-0`, 28 Oct) — **parent document held in full:
+   `_guidelines/2026-10-07.md`, BTF penetrating TBI second edition, no includable study for 12 of 26 key
+   questions plus a consensus algorithm companion.**
+2. **"From evidence to implementation in sepsis: caution against overinterpreting the 2026 Surviving Sepsis
+   Campaign Guidelines"** (`10.20452/pamw.17437`) — **archive holds adult and paediatric SSC 2026
+   (`_guidelines/2026-09-01.md`) and a hospitalist highlights version (`_guidelines/2026-10-23.md`).**
+3. **"Distinguishing uncertainty from ineffectiveness in peripheral nerve corticosteroid recommendations"**
+   (`10.1136/rapm-2026-108682`, 28 Oct) — **this archive's structure thread stated exactly in a title, and
+   unreadable.**
+4. **"When guidelines downgrade durability: Transparent evidence standards for coronary artery bypass
+   grafting"** (`10.1016/j.xjon.2026.101985`) — **yesterday's Italian aortic-stenosis durability argument from
+   the coronary side.**
+
+**RULE/OBSERVATION: the most on-point commentary on guidelines is consistently the least readable material in
+the index, because editorials and perspectives are deposited without abstracts.** **Six of the eight named
+gaps logged before today were ESC-related; these four extend the pattern beyond ESC — it is a genre problem,
+not a publisher problem.**
+
+### SOCIETY ROUTE — DISTINGUISH A BLANK FROM A DENIAL
+
+Seven consecutive days in which the lead document came from the index. **But today the route had nothing to
+deny: an ordinary blank, not an assertion that a published document does not exist.** **28 and 29 October are
+the two instances of denial** (ESICM's own page said "development in progress"; the French search said no 2026
+GIHP/SFAR document exists). **Keep the two categories separate in the log — a blank is weak evidence about the
+route, a denial is strong evidence.**
+
+### METHOD — SIZING IS FOUR FOR FOUR
+
+`idlist` count over `FIRST_IDATE` 29–30 Oct: **35**. Then `core` at page size 60: **35 hits, 35 returned,
+passed on the first `core` call.** **Fourth consecutive run since adoption, second today.**
