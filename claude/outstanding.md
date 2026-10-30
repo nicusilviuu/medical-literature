@@ -5038,3 +5038,93 @@ never for status — and keep running it first.**
   provided the backlog entry names it, which it did.**
 - **Not-a-duplicate dedupe hit, second instance.** The dedupe flagged WSES against yesterday's entry, where it
   appears only in the backlog note. **Check whether a hit sits in an items block or in prose.**
+
+## 2026-10-30 (brief) — index baselines, queue, sweep log
+
+### Index baselines (for tomorrow)
+
+**Two readings, and this time they DIFFER** — 14:12:28 and 14:17:39:
+
+- **Start: whole 49,172,973, residual 0, DOWN 1,874** on 29 Oct. `MED` 41,303,083 (+6,512) ·
+  `PPR` 1,273,787 (+927) · `CTX` 3,925 (+1) · **`PMC` 1,013,660 (−9,314)** · `NBK` 5 (0) · others unchanged.
+  Four changes sum to −1,874 exactly.
+- **End (5 min 11 s later): whole 49,172,922 (−51), `PMC` 1,013,609 (−51)** — the whole of the change.
+  **PMC was shedding ~10 records a minute WHILE being read. First time observed.** Windows also moved:
+  September −7 to 167,703, 1–7 October −29 to 54,702.
+- **NOT A ROLLBACK** (30 Oct bucket 7,502, 29 Oct 5,363, both non-zero).
+- **Bucket 2026-10-30: 7,502** = MED 6,512 + PPR 945 + PMC 44 + CTX 1. Exact.
+- **Bucket 2026-10-29: 5,363 — UNCHANGED**, every component identical. **SIXTH OUTCOME, AND IT IS ZERO:
+  +4,555, +6, +121, +16,506, −15, 0.**
+- Windows at start: 1–30 Sep **167,710 (−1,391)**; 1–7 Oct **54,731 (−5,532)** — now below its 28 Oct value.
+
+**PMC five-reading trail: 1,014,847 → 1,011,638 → 1,022,973 → 1,022,974 → 1,013,660. Range 11,336.**
+**"Transient" is the wrong word — there is no stable baseline. Read the number, date it, do not characterise
+it.**
+
+**TOMORROW:** read today's 7,502 and 29 Oct's 5,363, and re-read `PMC` — **but set no test; the bucket series
+is closed and the PMC level is not a question with an answer.**
+
+### Queue after today: 33 held + 4 added = 37
+
+**Added from today's sweep (4):** chlorhexidine in a standardised oral-care bundle for VAP prevention
+(`10.1186/s13054-026-06217-0`, *Critical Care*) — **pairs with the neonatal VAP prevention review held**;
+timing of adrenaline in witnessed paediatric OHCA (`10.1097/pcc.0000000000004094`); three guideline lipid
+emulsion regimens for local anaesthetic systemic toxicity, in silico (`10.12771/emj.2026.01648`) — **bears on
+the LAST thread and on guideline comparison**; consensus-derived clinical sepsis profiles across six
+international cohorts (`10.1097/shk.0000000000002954`).
+
+**Noted, abstract-free:** tracheal intubation-associated cardiac arrest in critically ill children, editorial
+(`10.1097/ccm.0000000000007409`); perioperative calls for help and associated management changes
+(`10.1213/ane.0000000000008299`); mechanical power and postoperative lung injury comment and reply
+(`10.1097/aln.0000000000006383`, `…006384`).
+
+**For a future brief, not the watch:** a critical appraisal of the latest guidelines for perioperative
+management of the thoracic noncardiac patient (`10.1097/aco.0000000000001718`) — **a review OF guidelines, so
+it belongs in the brief, and the structure catalogue should read it.**
+
+**Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### Published today (brief) — five delirium papers, five levers
+
+1. **Remimazolam vs propofol TIVA, POD in neurovascular surgery** — `10.1016/j.bja.2026.09.021`, *BJA*,
+   29 Oct. **Double-blind randomised noninferiority, 686 mITT. POD 44/344 (12.79%) vs 37/342 (10.82%); RD
+   1.97 (−2.85 to 6.80); margin 10 points = 92.4% of the control rate; upper bound = 62.8% of it.**
+   Hypotensive burden median 0 vs 7.5 mm Hg·min; extubation in theatre 85.2% vs 67.3%. NCT06115031.
+   **First remimazolam RCT here.**
+2. **Dexmedetomidine vs propofol, POD under regional anaesthesia** — `10.1016/j.redare.2026.502211`, 29 Oct.
+   **5 RCTs, 1,613 patients; 7.7% vs 16.7%; RR 0.48 (0.36–0.64); I² 13.4%; TSA sufficient; GRADE moderate;
+   ARR 9.0 points, NNT 11.**
+3. **ARB continuation vs withholding and POD** — `10.1177/00912174261501856`, 29 Oct. **42 analysed, 21/group.
+   POD 4/21 vs 12/21; ARD −38.1 (−59.7 to −8.7). BUT orthopaedic cases 12 vs 20 (P = 0.009) — randomisation
+   broke on the strongest confounder, and the authors say the result is unattributable.**
+4. **Burst suppression duration and ICU delirium** — `10.1007/s10877-026-01508-x`, 29 Oct. **300 patients,
+   130 (43.3%) delirious. BSD 81.1 s vs 17.2 s; OR 1.018/s (≈3.1 across the median difference); AUC 0.871;
+   cutoff 41.5 s, sens 80.8%, spec 78.2%; BSD+BIS AUC 0.914. PPV 73.9% / NPV 84.2% computed here.**
+   **Probably a mediator of sedation depth, and the design supports association, not diagnosis.**
+5. **Nurse-led target-directed light sedation in septic ventilated patients** —
+   `10.1177/08850666261496192`, 29 Oct. **221 patients by protocol change; delirium 20.4% (20/98) vs 37.4%
+   (46/123); adjusted OR 0.428 (0.215–0.854); mortality 28.6% vs 26.0%, P = .671. Before-and-after design.
+   DFD-28 named and never reported.**
+
+### STANDING DEFECT TO KEEP COUNTING — a named outcome with no reported result
+
+**Three instances in five days:** 26 Oct prone-airway trial (conversion of airway technique, a *primary*
+outcome, no result); 29 Oct DOAC-vs-VKA meta-analysis (six named secondary outcomes, none reported); 30 Oct
+nurse-led sedation (DFD-28). **Check every abstract's named outcomes against its reported results, and report
+the omission.**
+
+### Symmetry-check exceptions — now two, both recorded
+
+1. **29 Oct:** a median odds ratio's interval (variance-derived statistic, skewed sampling distribution).
+2. **30 Oct:** a risk-difference interval at 21 per group (exact or continuity-corrected method).
+**Do not flag asymmetry in either case.**
+
+### Brief sweep-pattern log — day 11
+
+| Step | Query | Result |
+| --- | --- | --- |
+| size | `idlist`, title-scoped, pub window 29–30 Oct | **73** |
+| size | `idlist`, pub window 27–30 Oct | 147 |
+| run | `core` pageSize 100, pub window 29–30 Oct | **73 / 73 — PASSED first `core` call** |
+
+**Three for three since the practice was adopted.**

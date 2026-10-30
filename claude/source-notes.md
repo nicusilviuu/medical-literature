@@ -7319,3 +7319,178 @@ Yesterday the same pattern appeared with the ESICM and Singapore DOIs against th
 WSES paper was held on 28 October *"for a fuller read rather than compressed into a fourth slot"*. **Record
 that deferral works and is preferable to a compressed fourth item** — but only if the backlog entry names it,
 which it did.
+
+## 2026-10-30 (brief) — PMC caught shrinking mid-run, a sixth bucket outcome of zero, and five delirium levers in one window
+
+### THE BUCKET SERIES IS COMPLETE: SIX OUTCOMES, INCLUDING ZERO
+
+**29 October bucket: 5,363 → 5,363. Every component identical** (MED 4,620, PPR 742, PMC 1).
+
+**Six outcomes from the identical end-of-run observable: +4,555, +6, +121, +16,506, −15, 0.**
+Three orders of magnitude up, fifteen down, and exact stasis. **Nothing about the series is open any more.
+Read buckets daily as a measurement; never frame them as a question.**
+
+### PMC CAUGHT SHRINKING WHILE BEING READ — A FIRST
+
+Start of run **14:12:28**: whole **49,172,973**, residual 0, **−1,874** on yesterday — `MED` +6,512,
+`PPR` +927, `CTX` +1, **`PMC` −9,314**; sum exact. Not a rollback (30 Oct bucket 7,502, 29 Oct 5,363, both
+non-zero).
+
+End of run **14:17:39**, five minutes eleven seconds later: whole **49,172,922 (−51)**, **`PMC` 1,013,609
+(−51)** — the whole of the change. `MED`, `PPR`, `NBK`, `CTX` unchanged; both buckets unchanged; September
+window −7, 1–7 October window −29.
+
+**So PMC shed 51 records DURING the run, about ten a minute, while no bucket moved.** **First time this
+archive has observed PMC shrinking while it was being read.** **That settles the kind of event: today's
+−9,314 is not an overnight step but an ongoing process still running at read time.**
+
+**RULE: correction 11 applies to a RATE exactly as it applies to a level.** Ten records a minute over five
+minutes is ten records a minute over five minutes. **Do not extrapolate it to an hour or a day.**
+
+### PMC'S FIVE-READING TRAIL — "TRANSIENT" IS THE WRONG WORD
+
+| Reading | `PMC` | Change |
+| --- | --- | --- |
+| 26 Oct | 1,014,847 | — |
+| 27 Oct | 1,011,638 | −3,209 |
+| 28 Oct | 1,022,973 | **+11,335** |
+| 29 Oct | 1,022,974 | +1 |
+| 30 Oct | 1,013,660 | **−9,314** |
+
+**Range 11,336 records across five days.** **On 27 Oct this page inferred a 1,120-record shortfall was
+probably durable; 28 Oct falsified it (correction 11); today the correction can be stated more strongly: these
+are not transients against a stable baseline, because there is no stable baseline. A ten-thousand-record swing
+either way is how PMC behaves.** **Replacement statement, shortened: read the number, date it, do not
+characterise it.**
+
+Both publication-date windows fell sharply, consistent with PMC records leaving rather than arriving:
+1–30 Sep **−1,391** to 167,710; **1–7 Oct −5,532 to 54,731**, now below its 28 October value.
+Today's bucket **7,502 = MED 6,512 + PPR 945 + PMC 44 + CTX 1**, exact.
+
+### FIVE DELIRIUM PAPERS, ONE WINDOW, FIVE LEVERS — AND FIVE DIFFERENT DEFECTS
+
+A genuinely complete set in one two-day index window: **drug choice (twice), a preoperative medication
+exposure, an EEG marker, and a nursing process.** Each one's weakness is a different one, and together they
+map what can and cannot be known about this outcome. **Record the set, not just the papers.**
+
+### RULE — A NONINFERIORITY MARGIN MUST BE READ AGAINST THE OBSERVED CONTROL RATE
+
+Remimazolam vs propofol TIVA, neurovascular surgery, **double-blind randomised noninferiority**, 686 mITT.
+POD within 5 days: **44/344 (12.79%) vs 37/342 (10.82%); risk difference 1.97 points (−2.85 to 6.80),
+one-sided P < 0.001 for noninferiority; margin prespecified at 10 points.** Interval symmetric at 4.82 either
+side; stated difference equals the difference of proportions exactly.
+
+**A 10-point absolute margin against an observed control rate of 10.82% is a RELATIVE margin of 92.4%** — the
+trial would declare noninferiority if remimazolam almost doubled delirium. **The interval's upper bound of
+6.80 points is 62.8% of the control rate, so a 63% relative increase remains compatible with the data.**
+**"Noninferior" is true against the margin and must not be read as "no difference".**
+
+**Credit where due: the authors say this themselves** — *"Interpretation should take into account that the
+observed incidence of postoperative delirium was lower than anticipated when the noninferiority margin was
+defined."* **RULE: always convert an absolute noninferiority margin into a percentage of the observed control
+rate, and report the interval's upper bound the same way.**
+
+**The trial's real content is its secondaries:** hypotensive burden below MAP 65 of **median 0 vs
+7.5 mm Hg·min** (P < 0.001) and **extubation in theatre 85.2% vs 67.3% — a 17.9-point difference.** **Honest
+summary: remimazolam gives markedly better haemodynamics and faster emergence and was not shown to cause more
+delirium, with a substantial increase not excluded.** First remimazolam RCT in this archive.
+
+### THE PAIR — SAME COMPARATOR, DIFFERENT QUESTION
+
+Dexmedetomidine vs propofol for POD under regional anaesthesia, ≥ 60 years: **5 RCTs, 1,613 patients;
+7.7% vs 16.7%; RR 0.48 (0.36–0.64), p < 0.001; I² 13.4%; Egger's test negative; TSA says the evidence is
+SUFFICIENT; GRADE MODERATE.** Log-symmetric; pooled 0.48 against crude 0.46; **ARR 9.0 points, NNT 11.**
+
+**Two papers the same day, both against propofol, very different conclusions — and the difference is mostly
+the question.** One asked "not worse" with a margin at 92% of the control rate; the other asked "better" and
+found a 52% relative reduction at moderate certainty. **On the published evidence dexmedetomidine is the
+better-supported choice for avoiding delirium; remimazolam's case is haemodynamics and emergence.**
+
+**CAUTION: the populations differ** (regional-anaesthesia sedation in over-60s vs general anaesthesia for
+intracranial surgery) — **this is a comparison between questions and designs, not a head-to-head.** **And the
+archive holds the other side of the dexmedetomidine ledger:** 25 Oct, a dexmedetomidine meta-analysis whose
+outcome joined delirium and cognitive impairment with a slash at 24 hours; 27 Oct, dexmedetomidine causing
+significantly more intraoperative hypotension during pulsed field ablation. **Its delirium benefit is the
+best-supported thing about it and its haemodynamic cost is the recurring complaint — the exact trade
+remimazolam offers to reverse.**
+
+### RULE — A BROKEN RANDOMISATION IS A RESULT, NOT A CAVEAT
+
+ARB continuation vs withholding, ≥ 65 years, elective surgery: **44 randomised, 42 analysed, 21 per group.**
+POD **4/21 (19.05%) vs 12/21 (57.14%); ARD −38.1 points (−59.7 to −8.7), P = 0.025** (equals the difference of
+proportions exactly). DRS-R-98 median 0 (0–7) vs 18 (5–26); delirium duration 0 (0–40) vs 40 (12–100) h.
+
+**AND: orthopaedic procedures were 57.1% of the continuation group and 95.2% of the withholding group
+(P = 0.009) — twelve against twenty, in groups of twenty-one.** **Orthopaedic surgery in the elderly is the
+highest-delirium setting in perioperative medicine, so randomisation failed on the single strongest
+confounder.** At 21 per group that is expected behaviour, not bad luck, and **the 38-point difference is
+unattributable.**
+
+**The authors say so twice** — *"preclude independent attribution"*, *"hypothesis-generating"* — and add of
+the biomarkers (smaller rises in NfL, GFAP and IL-8; IL-6 and CRP null after FDR) that they *"should not be
+interpreted as evidence of causal or mechanistic effects."* **A paper that reports a dramatic result and tells
+the reader not to believe it: respect the second half.**
+
+**SECOND SYMMETRY-CHECK EXCEPTION, recorded so it does not fire wrongly:** the risk-difference interval is
+asymmetric (21.6 points below the estimate, 29.4 above). **Expected for an exact or continuity-corrected risk
+difference at this sample size.** (The first exception was 29 Oct's median odds ratio.)
+
+**Weight comparison worth keeping:** this is the second paper in three days on a modifiable preoperative
+medication exposure and POD. **28 Oct: anticholinergic burden, 10,457 participants, OR 1.22 per point, graded.
+30 Oct: 42 patients, broken randomisation.**
+
+### RULE — ASK WHETHER A MARKER IS A MEDIATOR OF THE EXPOSURE IT IS ADJUSTED ALONGSIDE
+
+Burst suppression duration and ICU delirium: prospective observational, **300 ventilated adults**, continuous
+video-EEG, CAM-ICU. **130/300 (43.3%) delirious. BSD median 81.1 s (IQR 41.5–148.5) vs 17.2 s (5.8–32.9),
+P < 0.001.** Adjusted ORs: **BSD 1.018/s (1.012–1.023)**, BIS 0.964, age 1.024, **hypertension 1.748
+(1.002–3.051), P = 0.049.** **AUC 0.871 (0.829–0.913); cutoff 41.5 s, sensitivity 80.8%, specificity 78.2%;
+BSD + BIS AUC 0.914.**
+
+**Three things the abstract omits and the standing rules require.**
+1. **PPV 73.9% and NPV 84.2% at the stated 43.3% prevalence** (standing rule: compute them whenever
+   sensitivity, specificity and prevalence are all given). **At a 10% prevalence the PPV would be near 29% —
+   the performance is a property of the population as much as of the marker.**
+2. **An OR of 1.018 per second is uninterpretable as printed. Across the 63.9-second difference in medians it
+   compounds to about 3.1.** **RULE: convert a per-unit OR to the observed between-group difference.**
+3. **Burst suppression is a consequence of sedation depth, which is itself the strongest modifiable risk
+   factor for ICU delirium. So BSD may be a MEDIATOR on the path from deep sedation to delirium rather than an
+   independent marker — and adjusting for BIS in the same model does not resolve it, because BIS measures the
+   same exposure.** The paper's framing (*"reflecting profound cerebral dysfunction"*) is one reading; "it
+   reflects how much sedative the patient got" is the other.
+
+**And the design cannot support "diagnostic": BSD was measured during the same ICU stay in which delirium was
+assessed, so this is concurrent discrimination, not prediction.** **The actionable version of the finding is
+already the recommendation — keep patients out of burst suppression — and that it is MODIFIABLE matters more
+than that it discriminates.**
+
+### A NAMED OUTCOME WITH NO REPORTED RESULT — THIRD INSTANCE IN FIVE DAYS
+
+Nurse-led target-directed light sedation in septic ventilated patients: **221 consecutive patients assigned by
+a PROTOCOL CHANGE — control n = 123, exposed n = 98, Jan 2022–May 2024.** Delirium **20.4% (20/98) vs 37.4%
+(46/123), P = .007; adjusted OR 0.428 (0.215–0.854), P = .016** (log-symmetric); crude ARR **17.0 points.**
+Mortality **28.6% (28/98) vs 26.0% (32/123), P = .671**; MV duration and EICU stay shorter; airway adverse
+events no different; subgroup-consistent.
+
+**Design is the whole of it: a BEFORE-AND-AFTER comparison, sequential cohorts rather than concurrent.**
+Everything else that changed at that centre over 29 months loads onto the exposure. **Subgroup consistency
+across age, severity and comorbidity is reassuring about those variables and says nothing about confounding by
+time.** The internal pattern is coherent — delirium down, ventilation and stay shorter, mortality unchanged —
+**which is the expected shape of a process intervention, and the absence of a mortality claim is to its
+credit.**
+
+**BUT: delirium-free days to 28 is listed among the secondary outcomes and no result for it appears.** **That
+is the number distinguishing "fewer patients became delirious" from "delirium was shorter", and it is the
+outcome the intervention most plausibly affects.**
+
+**THIRD INSTANCE IN FIVE DAYS of a named outcome with no reported result:** 26 Oct prone-airway trial
+(conversion of airway technique, a PRIMARY outcome, no result); 29 Oct anticoagulation meta-analysis (six named
+secondary outcomes, none reported); 30 Oct this paper (DFD-28). **RULE promoted: when an abstract names an
+outcome, check that it reports it, and report the omission as a finding. Three in five days is a property of
+the literature, not of one abstract.**
+
+### METHOD — SIZING THE SWEEP IS NOW THREE FOR THREE
+
+`idlist` counts of the title-scoped query over `FIRST_IDATE` 29–30 Oct: **73** for a 29–30 Oct publication
+window, **147** for 27–30 Oct. Ran the narrower window with `core` at page size 100: **73 hits, 73 returned,
+passed on the first `core` call.** **Third consecutive run to pass first time since the practice was adopted.**
