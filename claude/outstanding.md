@@ -5331,3 +5331,94 @@ new kind).** **Extend the check: a direction without a magnitude counts as incom
 **Only cite the archive for what the archive PUBLISHED.** The APHRS POAF incidence figures were extracted on
 26 October but never published, so today's 2.5-fold baseline-rate observation is attributed to the papers' own
 case mix. **An extraction in the working notes is not a holding.**
+
+## 2026-10-31 (guidelines watch) — backlog, named gaps, sweep log
+
+### TWO RULES CORRECTED IN TWO DAYS
+
+1. **30 Oct (routing):** a document whose subject is what guidelines say or how they have changed belongs to
+   the **guidelines watch**, whatever journal it appears in.
+2. **31 Oct (scope):** **a definitional document for a condition managed in intensive care is IN SCOPE,
+   whatever specialty publishes it.** The Global ACLF "Istanbul Document" was passed over as out of scope on
+   28 September while this archive was already carrying ACLF research (`_briefs/2026-09-19.md`). Corrected.
+
+### NEW DOCUMENT CLASS — "the definition"
+
+**Catalogue now holds four genres: the guideline · the consensus statement · the risk classification · the
+definition.** A definition is a measuring instrument. **Grading schemes still three: GRADE · ACC/AHA
+class-and-level · USPSTF grades with certainty levels.**
+
+### Guidelines backlog after today
+
+**Readable (3):** ESPNIC neonatal hypothermia comparison (`10.1016/j.lanepe.2026.101874`); Vascular Access
+Society + EKTA position paper (`10.1177/11297298261468406`); **WSES-PSOGI-SICO peritoneal surface
+malignancies (`10.1186/s13017-026-00718-7`) — NO LONGER a deferral. Deferred twice (28 and 30 Oct), which is
+once more than the practice justifies; it is now a standing backlog item ranked below in-scope leads.**
+
+**In scope, secondary, logged today (2):** Joint Expert Consensus Report on pulmonary arterial hypertension
+in Türkiye (`10.14744/anatoljcardiol.2026.6648`, 1 Oct) — **second resource-stratified regional cardiology
+consensus in a week, after the Inter-American HCM document**; regional divergence in infective endocarditis
+prophylaxis, practice vs guidelines (`10.1007/s00246-026-04543-2`, 31 Oct) — **this week's dominant theme
+measured from the implementation end.**
+
+**Named targets (4):** the two-part **2020 EUSEM** guidelines; the **2024 GIHP/SFAR/SFTH/SFMV**
+thromboprophylaxis update (web-search lead); the **OAA remifentanil PCA** guideline; **NEW — the military
+physicians' position paper on regional anaesthesia in combat settings**, named by abstract-free
+correspondence (`10.1136/military-2026-003564`, *BMJ Mil Health*, 30 Oct). **Both the correspondence and its
+parent are sought.**
+
+**Named gaps — abstract-free, no PMCID, not OA (13):** the six ESC-related; `10.1177/17511437261497938`
+(*J Intensive Care Soc*); the ESEM/ACEP harmonisation (`10.1097/mej.0000000000001390`); **the four
+guideline-commentary cluster logged 30 Oct** (Brain Trauma Foundation penetrating brain injury; Surviving
+Sepsis Campaign overinterpretation caution; peripheral nerve corticosteroid recommendations; CABG durability
+standards); **NEW — the combat regional-anaesthesia correspondence.**
+
+**Dormant (3), unchanged. Needs a PDF (10 + 1), unchanged.**
+
+**Out of scope, logged today (7):** an Italian orthopaedic society Delphi on NSAIDs (abstract-free); planetary
+health in oral health guidelines; central venous thrombosis; paediatric endothelial keratoplasty; a skin-aging
+biomarker framework; dietary/diabetes guideline items; two French cervical cancer reviews.
+
+**Dated:** index-date month audit for October **1 November — TOMORROW**; AHA/ACC perioperative re-check
+**7 November**; next lagged pass **~10 November**.
+
+### Published today (guidelines)
+
+1. **Comparative review of five perioperative GLP-1 guidelines** — `10.4103/sja.sja_314_26`,
+   *Saudi J Anaesth*, 1 Oct, **open access PMC13719104**. **Jan 2023–Mar 2026; 5 eligible documents; AGREE-REX
+   by two independent reviewers. 4 of 5 recommend continuation with modified fasting, superseding the 2023 ASA
+   cessation policy; fasting protocols diverge substantially (SPAQI 2025 alone distinguishes high- from
+   low-calorie liquids); 3 of 5 state that absent GI symptoms cannot stratify risk; ALL 5 endorse gastric
+   ultrasound and NONE defines a threshold. Endocrinology and obesity medicine absent from most authoring
+   groups.** **The archive holds 3 of the 5, and its 17 Sep headline is two of this review's findings.**
+2. **ACLF global multisociety consensus on definitions** — `10.1097/hep.0000000000001891`, 30 Oct.
+   **FOUR index records, four DOIs, four journals; three share an identical 840-character abstract; the
+   *J Hepatol* copy is abstract-free with fpd 2027-02-01 — future-print-date hazard in a THIRD journal
+   family.** **No societies named, no criteria count, no grading, no consensus method in the abstract.**
+   **TEST, checkable in two years: do phase II/III trials adopt it.**
+3. **Brighton Collaboration aMOD case definition** — `10.1016/j.vaccine.2026.129264`, *Vaccine*, 30 Oct.
+   **6 organ systems, ≥2 involved, onset within 7 days, same clinical episode; 5 levels of certainty per organ
+   and 5 overall (Definite / Probable / Possible / Insufficient information / Not a case). States it is not
+   for clinical management and that case definitions are separate from causality.** **First Brighton
+   Collaboration document and first case definition in this archive.**
+
+### Guidelines sweep-pattern log — day 12
+
+| Step | Query | Result |
+| --- | --- | --- |
+| size | `idlist`, type + title-keyword, `FIRST_IDATE` 30–31 Oct | **49** |
+| run | `core` pageSize 70 | **49 / 49 — PASSED first `core` call** |
+
+**Six for six since adoption.**
+
+### Society-route log
+
+**Eighth consecutive day with the lead from the index. Today a BLANK, not a denial.** Denials remain two:
+28 Oct ESICM's own page ("development in progress"); 29 Oct the French GIHP/SFAR search.
+
+### RULE WORTH KEEPING — seek out cross-guideline appraisals
+
+**The watch tells you what one document says; only an appraisal tells you how many of the others agree.**
+*Symptoms cannot rule out a full stomach* read as a strong claim from one guideline on 17 September; knowing
+it is **3 of 5** makes it contested. **Appraisals convert single-document readings into field-level
+statements.**

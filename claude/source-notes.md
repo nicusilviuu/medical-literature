@@ -7776,3 +7776,112 @@ postoperative-AF incidence figures (20–40% after CABG, up to 50–60% after va
 (40–43% in valve surgery vs 16.8% in a mostly-CABG cohort) **is attributed to their own case mix rather than
 to this archive.** **RULE: only cite the archive for what the archive published. An extraction in the working
 notes is not a holding.**
+
+## 2026-10-31 (guidelines watch) — a cross-guideline appraisal validates a six-week-old entry, and a scope rule corrected
+
+### A SCOPE CORRECTION — the second correction in two days
+
+**The Global ACLF "Istanbul Document" was logged in `_guidelines/2026-09-28.md` in a list of items "out of
+scope and passed over."** Today its successor arrives: a **global multi-society consensus on ACLF
+definitions**, which names **"critical care management"** as one of five frameworks it establishes.
+
+**That pass-over is not defensible.** **ACLF is an intensive care condition**, and **this archive was already
+carrying ACLF research while passing over ACLF definitions** — `_briefs/2026-09-19.md` reported a CRRT study
+in cirrhosis and ACLF with a CLIF-C ACLF hazard ratio.
+
+**RULE CORRECTED: a definitional document for a condition managed in intensive care is IN SCOPE, whatever
+specialty publishes it.** **Second correction in two days, after yesterday's routing fix (commentary on
+guidelines belongs to the watch).** **Both corrections were found by the dedupe or by checking an archive
+cross-reference before asserting it — the pre-draft checks are earning their place.**
+
+### A NEW DOCUMENT CLASS FOR THE CATALOGUE — THE DEFINITION
+
+**Two definitional consensus documents landed in one two-day window and they are opposites in reporting.**
+**Record "the definition" as a distinct genre alongside the guideline, the consensus statement and the risk
+classification — because a definition is a measuring instrument, and the week just spent on instruments is
+the argument for cataloguing them.**
+
+| | ACLF multisociety consensus | Brighton Collaboration aMOD |
+| --- | --- | --- |
+| Abstract length | **840 characters** | 2,287 characters |
+| Societies named | **none** | Brighton Collaboration / CEPI-funded SPEAC |
+| Criteria shown | **none** | **6 organ systems; ≥2 involved; onset within 7 days; same clinical episode** |
+| Certainty scheme | **none stated** | **5 levels per organ AND 5 overall: Definite / Probable / Possible / Insufficient information / Not a case** |
+| Consensus method | **not stated** | scoping review + expert consensus, Reference Group peer review |
+| Boundary statements | — | **"not intended to guide clinical management"; "AEFI case definitions are separate from causality assessment"** |
+
+**RULE — credit a definition that makes "we could not tell" a reportable CATEGORY.** aMOD Level 4,
+*Insufficient information*, is an outcome rather than a missing value. **In surveillance that is the
+difference between a denominator you can trust and one you cannot** — the same distinction as the 28 October
+denominator asymmetry and the 30 October Brier-score-without-a-base-rate point.
+
+**Limits of aMOD to state:** it is a vaccine-safety instrument for trials and pharmacovigilance and says so;
+and **"≥2 of 6 organ systems within 7 days" is looser than a SOFA-type score**, deliberately, to be
+implementable where laboratory access is limited. **Not a severity score.**
+
+**ACLF's ambition is nevertheless right:** competing European, Asian-Pacific and North American definitions
+have made trials non-comparable, so **a harmonised definition with regulatory-aligned endpoints is
+infrastructure, not guidance.** **TEST, checkable in two years: do phase II/III trials adopt it.**
+
+**AND A PUBLICATION OBSERVATION: one consensus, FOUR index records, four DOIs** — *Hepatology*,
+*Journal of Hepatology*, *Annals of Hepatology*, *Hepatology International*. Three carry the identical
+840-character abstract; **the *Journal of Hepatology* copy is abstract-free with `firstPublicationDate`
+2027-02-01 — the future-print-date hazard in a THIRD journal family** (after *Acta Anaesthesiol Scand*,
+logged 26–27 October). **A reader meeting only that copy finds no abstract and a date three months away.**
+
+### A CROSS-GUIDELINE APPRAISAL, AND IT VALIDATES A SIX-WEEK-OLD ENTRY
+
+Comparative review of perioperative GLP-1 guidance (`10.4103/sja.sja_314_26`, *Saudi J Anaesth*, 1 Oct,
+**open access, PMC13719104**). Systematic search Jan 2023 – Mar 2026; **five eligible documents**; **each
+independently appraised by two reviewers with AGREE-REX**; primary studies reviewed against four
+pre-specified questions.
+
+- **4 of 5 recommend continuation with structured fasting modification, superseding the 2023 ASA cessation
+  policy.**
+- **Fasting protocols "diverge substantially" — SPAQI 2025 uniquely distinguishes high-calorie from
+  low-calorie liquids.**
+- **3 of 5 explicitly state that absent gastrointestinal symptoms cannot stratify risk** — so two do not.
+- **All 5 endorse gastric ultrasound; NONE defines validated decision thresholds.**
+- AGREE-REX: **AAGBI/RCoA 2025** broadest multidisciplinary representation and most transparent process;
+  **SPAQI 2025** most rigorous evidence base but most complex implementation. **Different virtues; the review
+  does not pick a winner.**
+- **"Endocrinologist and obesity medicine representation is absent from most authoring groups, and the
+  recommendations reflect this."**
+
+**THE ARCHIVE HOLDS THREE OF THE FIVE, and its own 17 September headline is two of this review's
+five-document findings:** *"ANZCA says continue the drug, and says plainly that symptoms cannot rule out a
+full stomach."* **Reached here six weeks earlier from a single source.**
+Holdings: 2025 ADS/ANZCA/GESA/NACOS and the Korean Society of Anesthesiologists consensus
+(`_guidelines/2026-09-17.md`); the January 2025 *Anaesthesia* multidisciplinary consensus
+(`_guidelines/2026-09-20.md`) — **published as LIKELY the review's "AAGBI/RCoA 2025", not confirmed, since
+the labels differ**; plus SPAQI's **SGLT2** consensus, a sibling document, not its GLP-1 guidance.
+
+**RULE — what a cross-guideline appraisal gives that a daily watch cannot.** **The watch tells you what one
+document says; only the appraisal tells you how many of the others agree.** *Symptoms cannot rule out a full
+stomach* read as a strong claim from one guideline; knowing it is **3 of 5** makes it a contested one.
+**Seek out appraisals; they are the only way to convert this archive's single-document readings into
+field-level statements.**
+
+**And the shared gap is the clinical one: all five endorse gastric ultrasound and none says what measurement
+changes the plan.** **A unanimous recommendation to use a test with no threshold is a recommendation to look
+and then decide on grounds the guideline does not supply** — which is what the 26 October brief inferred from
+the other end (the surrogate had denominators, the aspiration events did not; a panel cannot specify a
+threshold from case reports).
+**Checklist from the closing sentences:** incomplete gastric emptying; **hypoglycaemia in insulin-dependent
+patients — a harm of fasting MODIFICATION rather than of the drug, easily lost in an aspiration-focused
+document**; absent ultrasound thresholds.
+
+### DEFERRAL DISCIPLINE — a deferral used twice is not a deferral
+
+The WSES-PSOGI-SICO peritoneal-surface-malignancy guidelines were held on 28 October "for a fuller read" and
+again on 30 October. **Twice is one more than the practice justifies.** **RULE: a document may be deferred
+once with the backlog entry naming it; after that it is a standing backlog item ranked below in-scope leads,
+and that is stated plainly rather than repeated as a deferral.** Recorded as such today.
+
+### METHOD — SIZING IS SIX FOR SIX
+
+`idlist` count over `FIRST_IDATE` 30–31 Oct: **49**. Then `core` at page size 70: **49 hits, 49 returned,
+passed first call. Sixth consecutive run.**
+
+**Society route: eighth consecutive day with the lead from the index. Today a blank, not a denial** — the two
+denials remain 28 October (ESICM's own page) and 29 October (the French GIHP/SFAR search).
