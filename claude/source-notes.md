@@ -7637,3 +7637,142 @@ route, a denial is strong evidence.**
 
 `idlist` count over `FIRST_IDATE` 29–30 Oct: **35**. Then `core` at page size 60: **35 hits, 35 returned,
 passed on the first `core` call.** **Fourth consecutive run since adoption, second today.**
+
+## 2026-10-31 (brief) — the observable dissolves, and two pairs each test convergence
+
+### THE SERIES ENDS BECAUSE ITS PREMISE STOPPED HOLDING
+
+30 Oct bucket **7,502 → 7,543 (+41)**: **MED 6,512 → 6,502 (−10)** while **PMC 44 → 92 (+48)** and
+**NBK 0 → 3**; PPR and CTX unmoved; parts sum to 7,543 exactly. **A net gain concealing a component loss —
+the pattern first recorded 29 October.**
+
+**Seventh outcome: +4,555, +6, +121, +16,506, −15, 0, +41.**
+
+**AND TODAY THE OBSERVABLE DOES NOT OBTAIN.** The tracked state was *PMC at zero or near zero for the day's
+own bucket with MEDLINE flat at end of run*. **Today PMC delivered 1,527 records to today's bucket — 21% of
+it — at the FIRST reading of the day**, having sat at 0, 1 or 44 for the current date all week.
+
+**RULE/CLOSURE: the premise that generated the series is false today, which is a cleaner reason to stop than
+the series itself. The question was never well-formed, and the state it was asked about has gone.** **Read
+buckets daily as a measurement. Do not reconstruct the observable.**
+
+Today: whole **49,179,000** at 14:03:59, residual 0, **+6,078** on yesterday's end-of-run (`MED` +4,795,
+`PPR` +897, `PMC` +382, `NBK` +3, `CTX` +1; sum exact). Bucket **7,269 = MED 4,837 + PMC 1,527 + PPR 904 +
+CTX 1**, exact. Windows: 1–30 Sep **−29** to 167,674; 1–7 Oct **+462** to 55,164. Saturday MED 4,837 against
+Friday 6,512, factor 1.35.
+
+**PMC settled for now:** yesterday's end-of-run caught it shedding ~10/min, finishing 1,013,609; today
+**1,013,991 (+382)**. **End-of-run today, same five-minute interval: NO movement at all.** **Two readings, two
+behaviours, five minutes each — the clearest small illustration of why this archive stopped characterising the
+source and only dates the number.**
+
+### RULE — COUNT THE EVENTS BEHIND A SECONDARY OUTCOME BEFORE CREDITING IT
+
+Stellate ganglion block for POAF: **randomised, double-blind, placebo-controlled**, 140 assigned, **132 mITT
+(65 block / 67 saline)**, right SGB with 7 mL 0.5% ropivacaine vs 7 mL saline, valve surgery with CPB.
+**Primary: POAF 43% vs 40%, OR 0.99 (0.46–2.15), adjusted P = 0.989** — about 28/65 vs 27/67. **A flat null.**
+
+Three secondaries turn positive:
+- VF/VT needing defibrillation after cross-clamp release **6% vs 19%** (≈**4 vs 13**), OR 0.21 (0.06–0.80),
+  P = 0.022.
+- hs-troponin I median difference **−2,562 ng/L (−4,301 to −45)**, P = 0.045.
+- AKI **5% vs 18%** (≈**3 vs 12**), OR 0.24 (0.06–0.98), P = 0.046.
+
+**The two binary secondaries rest on 19 and 15 events in total; both upper bounds nearly touch 1 (0.80,
+0.98); and the troponin interval misses zero by 45 ng/L against a −2,562 estimate — 1.8% of it.**
+**"Adjusted P" is not defined in the abstract and nothing indicates a multiplicity correction. With a null
+primary and three marginal secondaries, multiplicity is the first thing a reader needs.**
+
+**Keep the defibrillation signal as a hypothesis:** reperfusion ventricular arrhythmia has a plausible
+sympathetic component, it is observed in theatre rather than ascertained later, and 13-to-4 in a double-blind
+trial deserves its own primary outcome. **Honest statement: SGB does not prevent POAF.**
+**THIRD SYMMETRY-CHECK EXCEPTION:** the troponin interval is asymmetric (ratio 0.69) — **expected for a median
+difference**, after the 29 Oct median odds ratio and the 30 Oct small-sample risk difference.
+First stellate ganglion block document in this archive; **fifth POAF document in six days.**
+
+### RULE — A NULL IS ONLY AS GOOD AS THE RANGE IT COVERED
+
+Plasma magnesium and POAF: retrospective, **435 adults**, isolated CABG 46.6%, mortality 3.2%, **POAF 16.8%**.
+Magnesium assessed three ways (ICU admission, mean, lowest). **None independently associated with POAF.**
+Age, procedure type, severe LV dysfunction and postoperative AKI were.
+
+**AND: "under active repletion, hypomagnesemia occurred in only 3.4% of patients" — about FIFTEEN people of
+435.** **A cohort in which the exposure is almost absent cannot test whether that exposure causes the
+outcome**, and the conclusion restricts its claim to magnesium *"within the observed normal-to-high range"*.
+**RULE: a restriction-of-range null should be reported as what it is — not "magnesium does not matter" but
+"once everybody is repleted, further variation in the normal range does not matter."** **Named rather than
+papered over, which is the right way to publish a null.**
+
+**AND A DIRECTION-OF-INFERENCE PAIR, same day:** this paper warns that AKI *"may act as a marker of shared
+postoperative risk factors rather than a causal factor"*; the SGB trial reports less AKI in its block arm.
+**Two papers one day, both touching the AKI–POAF link, neither establishing direction.** **A shared marker of
+perioperative insult will correlate with everything.**
+
+### THE MECHANISTIC CHAIN CLOSES — YESTERDAY'S MARKER, TODAY'S INTERVENTION
+
+Processed-EEG-guided anaesthesia: **87 RCTs, 30,611 patients (13,586 pEEG / 17,025 not — sums exactly)**,
+searches 11 Apr 2025, PROSPERO CRD420251067170.
+Propofol SMD **−0.42** (−0.74 to −0.10) · volatile SMD **−1.27** (−1.88 to −0.66) · **POD RR 0.73
+(0.63–0.84) — 27% reduction** · extubation **−2.90 min** · wake-up **−1.83 min** · orientation **−4.11 min** ·
+PACU **−2.81 min**. Benefits most consistent for **BIS**; Entropy and SEDLine less precise.
+**"Heterogeneity was substantial for several outcomes."**
+
+**This is the intervention yesterday's burst-suppression paper implied.** Yesterday: BSD discriminated
+delirium at AUC 0.871 and this archive argued it was probably a **mediator of sedation depth**, so the
+actionable version was already *keep patients out of burst suppression.* **Today: guide the depth, give less
+drug, get 27% less delirium, in 87 randomised trials.** **Less agent → less excessive depth → less delirium,
+coherent end to end, assembled from two papers a day apart.** **Record the chain; it is the clearest this
+archive has built.**
+
+**RULE — SIGNIFICANCE WITHOUT IMPORTANCE, and name it when the N is huge.** **All four "efficiency" outcomes
+are significant and all four are under five minutes** (2.90, 1.83, 4.11, 2.81). **At 30,611 patients a
+three-minute difference is statistically unassailable and operationally meaningless — no theatre list,
+recovery roster or staffing model runs on three minutes.** **Reporting them together as "efficiency outcomes
+favored pEEG" invites a reader to add them into something they are not. The delirium result does not need
+them.**
+Further cautions: **substantial heterogeneity declared, no certainty rating offered**; 87 trials spanning
+surgical, endoscopic and dental procedures is enormous clinical heterogeneity; **the evidence is really about
+BIS**, so Entropy or SEDLine users are extrapolating from "less precise" estimates.
+
+### A CONVERGENCE TEST THE FIELD RARELY GETS, AND IT PASSES
+
+| | 30 Oct brief (REDAR) | 31 Oct brief (Eur Geriatr Med) |
+| --- | --- | --- |
+| Design | 5 RCTs, 1,613 patients | **22 RCTs, 4,161 patients** |
+| Setting | sedation for **regional** anaesthesia, ≥60 | **general** anaesthesia, older patients |
+| Comparator | **propofol** | control / non-dexmedetomidine |
+| **POD** | **RR 0.48 (0.36–0.64)** | **RR 0.56 (0.47–0.66)** |
+| I² | 13.4% | 24% |
+
+**Two meta-analyses of dexmedetomidine for POD, one day apart, different techniques and comparators, 0.48 and
+0.56 with OVERLAPPING intervals.** **The effect survives changing the anaesthetic technique and the
+comparator — a stronger claim than either paper makes alone, visible only because both landed in one window.**
+**RULE: when two syntheses of one question land days apart, tabulate design against estimate; the agreement
+or disagreement is a finding neither paper can report.**
+
+Today's paper also gives **PONV RR 0.79 (0.62–0.99), I² 0%** — a genuine bonus that only just clears — **and
+the harms yesterday's omitted: higher intraoperative AND postoperative bradycardia, and higher intraoperative
+hypotension.** **That closes the ledger assembled all week** (25 Oct slash-composite outcome; 27 Oct PFA
+hypotension; 30 Oct the pair). **Dexmedetomidine reduces delirium reliably and costs heart rate and blood
+pressure reliably. The open question is in whom the cost is acceptable, and neither synthesis is designed to
+answer it.**
+
+**REPORTING DEFECT, FOURTH IN THE FAMILY IN SIX DAYS — and the first of a new kind: direction given, magnitude
+withheld.** The adverse events are named secondary outcomes reported only as *"was associated with a higher
+incidence"*, with **no risk ratios and no intervals.** **A reader cannot weigh a 44% delirium reduction
+against an unquantified bradycardia risk — which is exactly the trade being asked for.** Prior three:
+26 Oct prone-airway (primary outcome, no result); 29 Oct DOAC-vs-VKA (six secondaries, none reported);
+30 Oct nurse-led sedation (DFD-28). **Extend the standing check: an outcome reported as a direction without a
+magnitude counts as incompletely reported.**
+
+### METHOD — AND A CROSS-REFERENCE DELIBERATELY NOT USED
+
+Sizing: `idlist` gave **60** for a 30–31 Oct publication window and 145 for 28–31 Oct; `core` at page size 80
+returned **60 hits, 60 returned, passed first call. Fifth consecutive run.**
+
+**A cross-reference was checked and NOT used, which is worth recording as the rule working.** The APHRS
+postoperative-AF incidence figures (20–40% after CABG, up to 50–60% after valve surgery) were **extracted on
+26 October but never published**, so today's observation that the two papers' baseline rates differ 2.5-fold
+(40–43% in valve surgery vs 16.8% in a mostly-CABG cohort) **is attributed to their own case mix rather than
+to this archive.** **RULE: only cite the archive for what the archive published. An extraction in the working
+notes is not a holding.**

@@ -5225,3 +5225,109 @@ in progress"; 29 Oct the French search said no 2026 GIHP/SFAR document exists.**
 **Four for four since adoption; second today.** **And the dedupe did consistency work again — third day
 running it caught a cross-run note rather than a duplicate (27 Oct hand-off, 29 Oct deferral, 30 Oct
 misrouting).**
+
+## 2026-10-31 (brief) — index baselines, queue, sweep log
+
+### Index baselines (for tomorrow)
+
+Two readings, **14:03:59 and 14:08:52 — every figure identical** (unlike yesterday, when the same interval
+caught PMC shedding 51):
+
+- **Whole 49,179,000, residual 0, up 6,078** on yesterday's end-of-run. `MED` 41,307,878 (+4,795) ·
+  `PPR` 1,274,684 (+897) · `PMC` 1,013,991 (+382) · `NBK` 8 (+3) · `CTX` 3,926 (+1) · others unchanged.
+  Five changes sum to 6,078 exactly.
+- **Bucket 2026-10-31: 7,269** = MED 4,837 + **PMC 1,527** + PPR 904 + CTX 1. Exact.
+- **Bucket 2026-10-30: 7,543** = MED 6,502 + PMC 92 + PPR 945 + CTX 1 + NBK 3. Exact.
+  **Was 7,502: +41, with MEDLINE −10 against PMC +48 and NBK +3.**
+- Windows: 1–30 Sep **167,674 (−29)**; 1–7 Oct **55,164 (+462)**.
+
+**SERIES CLOSED, AND NOT BY EXHAUSTION.** Seventh outcome +41 (series: +4,555, +6, +121, +16,506, −15, 0,
++41). **But today the observable does not obtain: PMC supplied 1,527 records — 21% — to today's own bucket at
+the first reading, having sat at 0, 1 or 44 for the current date all week.** **Read buckets daily as a
+measurement; do not reconstruct the observable.**
+
+**PMC trail: 1,014,847 · 1,011,638 · 1,022,973 · 1,022,974 · 1,013,660 · (end-run 1,013,609) · 1,013,991.**
+
+**TOMORROW, 1 NOVEMBER: the dated index-date month audit for October is due.** Also still dated: AHA/ACC
+perioperative re-check **7 November**; next lagged pass **~10 November**.
+
+### Queue after today: 36 held + 4 added = 40
+
+**Thirty-six, not thirty-seven** — the thoracic non-cardiac guideline appraisal was reclaimed by yesterday's
+watch as guideline-tracking material and published there.
+
+**Added from today's sweep (4):** Sepsis-Induced Coagulopathy update 2026 on simplifying diagnosis and dynamic
+monitoring (`10.1055/a-2988-1455`) — **pairs with the two fibrinolysis-resistance preprints held as a set**;
+opioid-free analgesia for acute renal colic, randomised double-blind head-to-head
+(`10.1007/s11739-026-04579-5`); *"From failed to failing epidural"* on labour epidural analgesia
+(`10.23736/s0375-9393.26.20181-5`) — **pairs with the loss-of-resistance teaching document in yesterday's
+watch**; regional anaesthesia in low- and middle-income countries (`10.1007/s11916-026-01572-7`).
+
+**Noted, abstract-free — three continue threads opened this week:** hepatic dysfunction and recovery after
+remimazolam-based general anaesthesia (`10.1016/j.bja.2026.08.064`) — **the day after this archive's first
+remimazolam RCT**; reusable versus disposable absorbent pads, a life cycle assessment
+(`10.1016/j.bja.2026.08.068`) — **sustainability thread**; the anaesthetist's role in transfemoral TAVI
+(`10.1016/j.bja.2026.08.071`) — **the aortic-stenosis thread from Thursday's watch**; and hyperoxaemia under
+extracorporeal circulation (`10.1016/j.bja.2026.08.067`).
+
+**Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### Published today (brief) — two pairs
+
+1. **Stellate ganglion block for POAF** — `10.1161/jaha.126.051373`, *JAHA*, 30 Oct. **Randomised,
+   double-blind, placebo-controlled; 132 mITT (65/67). PRIMARY NULL: POAF 43% vs 40%, OR 0.99 (0.46–2.15),
+   P = 0.989. Three secondaries positive on few events: VF/VT ≈4 vs 13, OR 0.21 (0.06–0.80); troponin
+   −2,562 ng/L (−4,301 to −45); AKI ≈3 vs 12, OR 0.24 (0.06–0.98). No multiplicity correction indicated.**
+   ChiCTR2300068572. **First stellate ganglion block item here; fifth POAF document in six days.**
+2. **Plasma magnesium and POAF** — `10.1093/icvts/ivag289`, *ICVTS*, 30 Oct. **435 adults; POAF 16.8%;
+   hypomagnesaemia in only 3.4% (~15 patients) under active repletion; none of three magnesium measures
+   associated. Age, procedure type, severe LV dysfunction and AKI were. A restriction-of-range null, named as
+   such.**
+3. **Processed-EEG-guided anaesthesia** — `10.1016/j.jclinane.2026.112351`, *J Clin Anesth*, 30 Oct.
+   **87 RCTs, 30,611 patients. POD RR 0.73 (0.63–0.84) — 27% reduction. Propofol SMD −0.42, volatile SMD
+   −1.27. Four efficiency outcomes all significant and ALL UNDER FIVE MINUTES. Strongest for BIS;
+   heterogeneity substantial; no certainty rating.** **Closes the chain with yesterday's burst-suppression
+   marker.**
+4. **Updated dexmedetomidine POD meta-analysis** — `10.1007/s41999-026-01636-2`, *Eur Geriatr Med*, 30 Oct.
+   **22 RCTs, 4,161 patients. POD RR 0.56 (0.47–0.66), I² 24%; PONV RR 0.79 (0.62–0.99). Higher
+   intra- and postoperative bradycardia and intraoperative hypotension — direction only, no magnitudes.**
+
+### CONVERGENCE TABLE TO KEEP — dexmedetomidine for POD, two syntheses one day apart
+
+| | 30 Oct (REDAR) | 31 Oct (Eur Geriatr Med) |
+| --- | --- | --- |
+| Trials / patients | 5 / 1,613 | **22 / 4,161** |
+| Setting | regional anaesthesia sedation | **general anaesthesia** |
+| POD | **RR 0.48 (0.36–0.64)** | **RR 0.56 (0.47–0.66)** |
+
+**Intervals overlap. The effect survives changing technique and comparator.** **RULE: when two syntheses of
+one question land days apart, tabulate design against estimate — the agreement is a finding neither paper can
+report.**
+
+### STANDING DEFECT COUNT — incompletely reported outcomes, now four in six days
+
+26 Oct prone-airway (primary outcome, no result) · 29 Oct DOAC-vs-VKA (six secondaries, none reported) ·
+30 Oct nurse-led sedation (DFD-28) · **31 Oct dexmedetomidine harms (direction given, magnitude withheld — a
+new kind).** **Extend the check: a direction without a magnitude counts as incompletely reported.**
+
+### Symmetry-check exceptions — now three
+
+1. 29 Oct: median odds ratio (variance-derived).
+2. 30 Oct: risk difference at 21 per group (exact/continuity-corrected).
+3. **31 Oct: median difference in troponin (Hodges–Lehmann/bootstrap).**
+
+### Brief sweep-pattern log — day 12
+
+| Step | Query | Result |
+| --- | --- | --- |
+| size | `idlist`, pub window 30–31 Oct | **60** |
+| size | `idlist`, pub window 28–31 Oct | 145 |
+| run | `core` pageSize 80, pub window 30–31 Oct | **60 / 60 — PASSED first `core` call** |
+
+**Five for five since adoption.**
+
+### Rule reaffirmed by not using it
+
+**Only cite the archive for what the archive PUBLISHED.** The APHRS POAF incidence figures were extracted on
+26 October but never published, so today's 2.5-fold baseline-rate observation is attributed to the papers' own
+case mix. **An extraction in the working notes is not a holding.**
