@@ -7885,3 +7885,128 @@ passed first call. Sixth consecutive run.**
 
 **Society route: eighth consecutive day with the lead from the index. Today a blank, not a denial** — the two
 denials remain 28 October (ESICM's own page) and 29 October (the French GIHP/SFAR search).
+
+## 2026-11-01 — FIRST_IDATE is restamped: the bucket-as-delivery reading is withdrawn
+
+**THE MOST IMPORTANT METHOD FINDING SINCE THE 16 OCTOBER ROLLBACK. Read this before reading any bucket.**
+
+**A `FIRST_IDATE` bucket does not measure a day's delivery. It measures the most recent bulk restamping of
+whatever records currently carry that date.** Europe PMC rewrites first-index dates during large reloads, so a
+quiet day can hold one record while the day of a reload holds sixty-three thousand.
+
+**The demonstration, 1 November, full per-day scan of October (range query and the sum of thirty-one daily
+buckets both return 267,729):**
+
+| Oct | n | | Oct | n | | Oct | n |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 6,527 | | 12 | 2,876 | | 22 | 891 |
+| 2 | 6,110 | | **13** | **63,095** | | 23 | 7,469 |
+| 3 | 4,008 | | **14** | **2** | | 24 | 7,760 |
+| 4 | 2,503 | | **15** | **1** | | 25 | 11,175 |
+| 5 | 3,099 | | **16** | **35,517** | | 26 | 3,008 |
+| 6 | 2,902 | | 17 | 3,630 | | 27 | 9,270 |
+| 7 | 2,706 | | **18** | **0** | | 28 | 13,697 |
+| 8 | 2,701 | | **19** | **42,099** | | 29 | 5,355 |
+| 9 | 2,774 | | 20 | 842 | | 30 | 7,543 |
+| 10 | 2,899 | | 21 | 9,815 | | 31 | 7,270 |
+| 11 | 185 | | | | | | |
+
+- **Three days hold 140,711 — 52.56% of the month. Three others (14, 15, 18 Oct) hold 2, 1 and 0.**
+- **Thirteen of thirty-one days sit below 3,000.**
+- **The four Sundays read 2,503 (4th), 185 (11th), 0 (18th), 11,175 (25th).**
+
+**THE AIRTIGHT ARGUMENT, which needs no per-source history and should be reused:** the whole index rose by
+exactly 157 overnight and all 157 are accounted for (`PPR` +155, `PMC` +1, `NBK` +1, `MED` and the other seven
+exactly unchanged). **So at most 157 records in the database are new. The 1–30 September window rose 10,806.
+Therefore at least 10,649 of that gain is REDATING of records already present.** That is subtraction, not
+inference. Symmetrically the 1–7 October window fell 27,309 (55,164 → 27,855) while no source's total fell, so
+nothing of that size was deleted.
+
+**RULES ADOPTED:**
+
+1. **WITHDRAWN: the 31 October instruction "read buckets daily as a measurement."** Reading them was never
+   wrong; treating a bucket as a day's ingestion was. **Read a bucket as the current contents of a date label.**
+2. **The eight-value bucket series (+4,555, +6, +121, +16,506, −15, 0, +41, +1) is closed for a SECOND and
+   better reason: every one of those eight numbers is a difference between two restampings.** The first reason
+   (the premise stopped holding on 31 Oct) was correct but weaker.
+3. **WITHDRAWN: the three Sunday observations of this week (18 Oct zero, 25 Oct 10,915, 1 Nov zero).** They
+   were never a comparison. 18 October holds zero records of EVERY source, which no account of weekend
+   publishing can produce; and 25 October now reads 11,175 where it read 10,915 when measured. **Retiring
+   "Sunday is quiet" was the right act for the wrong reason.**
+4. **A source's TOTAL is still a sound measurement.** `MED` unchanged at 41,307,878 over twenty-four hours is a
+   real fact about MEDLINE ingestion. **Today's empty MEDLINE bucket is NOT independent evidence for it.**
+   Separate the two whenever reporting either.
+5. **Any query over a `FIRST_IDATE` RANGE can fall without a deletion.** Today's sizing pass counted 101 for a
+   fixed query and 86 minutes later. **Restamping is a sufficient explanation; it is not a demonstration that
+   it happened, and the honest report is the count and its instant.** Never call such a drop a loss.
+6. **SWEEP CONSEQUENCE: size and run a sweep inside ONE session, back to back.** A count measured earlier in
+   the run may not hold.
+7. **MONTH-AUDIT CONSEQUENCE: sweep a month as a RANGE, never day by day.** A day-by-day pass over October
+   would have put 52.56% of the month in three queries and missed nothing on 18 October while believing it had
+   checked that day.
+8. **The rollback signature test still discriminates.** The 16 October rollback zeroed every `FIRST_IDATE`
+   after its boundary; today both the current and previous buckets are populated (157 and 7,270), so this is
+   restamping, not rollback. **Two distinct phenomena, two distinct signatures — keep them apart.**
+
+### Analytic rules added today
+
+- **A process measure can move without the outcome it proxies** — reconfirmed on the clearest case yet.
+  Proportional assist ventilation raised weaning success (RR 1.09) and left reintubation (0.82) and mortality
+  (0.89) untouched. **Weaning success is defined by the protocol; reintubation is defined by the patient.**
+  **When a mode improves the first and not the second, it improves the weaning trial, and liberation is the
+  claim not yet demonstrated.**
+- **NEW: reconstruct the p-values of the NULLS as well as the positives.** Today's meta-analysis reproduced all
+  three significant p-values to the third decimal from log-symmetric intervals and **failed on both nulls —
+  0.26 against a reported 0.21, 0.51 against a reported 0.4.** Because the intervals are symmetric this is not
+  an exact-method signature. **Report the inconsistency; do not adjudicate which number is the typo.**
+- **NEW: a rank-biserial correlation and an area under the curve are the SAME statistic.** AUC = (r + 1) / 2.
+  Today: r = 0.185 gives 0.5925, the paper's reported 0.59. **So a headline p of 0.000243 and an AUC of 0.59
+  were one finding on two scales, not a strong result and a weak one.** Apply this conversion whenever both
+  are reported, and whenever only one is.
+- **NEW: calibration-in-the-large exponentiates to a clinically readable number.** CITL −1.02 means predicted
+  odds 2.77x observed; −0.86 → 2.36x; −1.34 → 3.82x. **Always convert before quoting a calibration figure.**
+- **NEW: read the decision threshold against the base rate.** A threshold of 0.10 against a prevalence of
+  4.70% in a model overpredicting about threefold is exactly how good discrimination yields negative net
+  benefit in a subgroup. **Compute threshold ÷ prevalence as a routine step.**
+- **NEW: when an adjusted estimate RISES on a complete-case subset, say so.** Today 1.30 (N = 535) became 1.47
+  (N = 292), dropping 45.4%. **The larger estimate from the smaller, more selected subset is the inverse of
+  the attenuation signature — and neither direction is reassuring at that attrition.**
+- **NEW AND IMPORTANT: immortal time where the exposure starts after the outcome clock.** The counterpulsation
+  preprint counts graft occlusion at one year from surgery while the therapy begins at month three and runs 35
+  sessions. **Everyone treated survived three months and was well enough to attend.** The fix is a
+  landmark-anchored analysis from the start of exposure. **Check every "adjuvant therapy begun at N months"
+  design for this.**
+- **NEW: exposure at patient level with the outcome at graft (or limb, or lesion) level — the effective n is
+  the number of PATIENTS.** Today's per-graft intervals spanned 5.6-fold against the per-patient 9.1-fold.
+  **If the graft-level model does not cluster by patient, the narrowing is manufactured.** This is the
+  cluster-exposure rule inverted and should be checked whenever both levels are reported.
+- **Interval width reads back the event count.** 9.1, 10.4 and 10.9-fold spans on 39 treated patients; 6.9-fold
+  on four events. **Count the events behind an estimate before crediting its size.**
+- **FOURTH SYMMETRY-CHECK EXCEPTION: a Firth penalised profile-likelihood interval.** Today's sPESI odds ratio
+  2.75 (1.23–8.44) is log-asymmetric by a factor of 1.394 and the Wald reconstruction (implied p 0.0395
+  against a reported 0.012) does NOT apply. **Do not flag it, and do not reconstruct it.** After the median
+  odds ratio (29 Oct), the small-sample risk difference (30 Oct) and the median troponin difference (31 Oct).
+- **An IQR computed from four observations is close to the range of the four numbers.** Today: 3.5
+  (IQR 2.5–4.2) from four progressors. **Say the n before quoting a quartile.**
+- **Credit the right things in an underpowered paper.** Today's authors labelled the analysis exploratory, used
+  Firth penalisation, and reported a six-event stratum as "not estimable" rather than reporting it (the other
+  paper). **Both are the correct acts and most papers skip them.**
+- **Intervention claims and prognostic claims are judged on different quantities.** Yesterday's processed-EEG
+  meta-analysis supported a strong intervention claim (POD RR 0.73 across 87 trials) from the same signal
+  source that supports only a weak prognostic one today (AUC 0.59). **An intervention is judged on an average
+  effect, a prognostic test on an individual one.**
+
+### Routing applied today
+
+**SIC-2** (`10.1055/a-2988-1455`, *Semin Thromb Hemost*, 30 Oct) — drops the SOFA component from the 2017 ISTH
+sepsis-induced coagulopathy criteria, leaving platelet count and PT-INR. **Routed to the guidelines watch**
+under the 31 October scope rule (a definitional document for a condition managed in intensive care is in scope
+whatever specialty publishes it) and the 30 October routing rule (a document whose subject is what criteria say
+or how they have changed belongs to the watch). **Second consecutive day the routing rule has moved a document.**
+
+### Dedupe did real work today
+
+**The four highest-ranked candidates in today's sweep were all four of yesterday's published items**, because
+the 29 October to 1 November publication window overlaps the window yesterday swept. **A publication window
+that reaches back past the previous run's window will re-surface that run's output; the dedupe is what makes
+that safe, so never draft before running it.** All five published items cleared as new.

@@ -5422,3 +5422,117 @@ biomarker framework; dietary/diabetes guideline items; two French cervical cance
 *Symptoms cannot rule out a full stomach* read as a strong claim from one guideline on 17 September; knowing
 it is **3 of 5** makes it contested. **Appraisals convert single-document readings into field-level
 statements.**
+
+## 2026-11-01 (brief) — index baselines, queue, sweep log
+
+### Index baselines (for tomorrow) — READ THE WARNING FIRST
+
+**WARNING: `FIRST_IDATE` buckets are RESTAMPED by bulk reloads. A bucket is the current contents of a date
+label, not a day's delivery. See today's entry in `source-notes.md`. Source TOTALS remain sound.**
+
+Two readings, **14:11:23 and 14:17:17 — every figure identical** (second such pair in two days):
+
+- **Whole 49,179,157, residual 0, up 157** on yesterday's first reading of 49,179,000.
+  **`MED` 41,307,878 — UNCHANGED, zero MEDLINE in 24 h** · `PPR` 1,274,839 (+155) · `PMC` 1,013,992 (+1) ·
+  `NBK` 9 (+1) · `CTX` 3,926 unchanged · `AGR` 1,026,549 · `PAT` 4,229,296 · `ETH` 176,799 · `CBA` 142,377 ·
+  `HIR` 2,868 · `CIT` 624. Four changes sum to 157 exactly.
+- **Bucket 2026-11-01: 157** = PPR 156 + PMC 1, **MED 0**. Exact.
+- **Bucket 2026-10-31: 7,270** = MED 4,837 + PMC 1,527 + PPR 904 + CTX 1 + NBK 1. Exact.
+  **Was 7,269: +1, the whole of it one Bookshelf record (NBK 0 to 1).**
+- **Bucket 2026-10-30: 7,543, unchanged.**
+- **WINDOWS BROKE: 1–30 Sep 167,674 to 178,480 (+10,806); 1–7 Oct 55,164 to 27,855 (−27,309).**
+  At most 157 records are new, so **at least 10,649 of September's gain is REDATING.**
+  September by source: MED 139,689 + PMC 8,374 + PPR 22,492 + AGR 7,917 + CTX 8 = 178,480, exact.
+  1–7 Oct by source: MED 18,090 + PMC 5,178 + PPR 4,584 + AGR 1 + CTX 2 = 27,855, exact.
+- **October month total 267,729** by range AND by the sum of thirty-one daily buckets. Mean 8,636.4/day.
+  **Full per-day scan is in `source-notes.md` — three days hold 52.56%, and 14/15/18 Oct hold 2/1/0.**
+
+**SERIES CLOSED A SECOND TIME.** Eighth outcome +1 (series: +4,555, +6, +121, +16,506, −15, 0, +41, +1).
+**Every one of the eight is a difference between two restampings.** Do not extend it.
+
+**PMC trail: 1,011,638 · 1,022,973 · 1,022,974 · 1,013,660 · (end-run 1,013,609) · 1,013,991 · 1,013,992.**
+
+**STILL DATED: the October index-date month audit, DUE TODAY, assigned to this afternoon's guidelines watch**
+under the 30 October routing rule (it is guideline-class work). **Its aggregate is 267,729 and it MUST be swept
+as a range, never day by day.** Also dated: AHA/ACC perioperative re-check **7 November**; next lagged pass
+**~10 November**.
+
+### Queue after today: 40 held − 1 routed = 39, + 5 added = 44
+
+**NONE of today's five published items came from the queue — all five were fresh finds in today's sweep, so
+the queue is not drawn down.** The only removal is the routed SIC document.
+
+**Removed (1):** the SIC update (`10.1055/a-2988-1455`), **routed to the guidelines watch** — see
+source-notes. Regional anaesthesia in low- and middle-income countries (`10.1007/s11916-026-01572-7`)
+re-surfaced in today's sweep and **remains held**, not published.
+
+**Added from today's sweep (5), all DOIs read from the record, not reconstructed:**
+
+- *Candida auris* and pathogenic yeast surveillance across anaesthesia workspace reservoirs, multicentre —
+  `10.1016/j.ajic.2026.10.015`, *AJIC*, 30 Oct.
+- Endpoint-specific mortality with malignancy in sepsis and septic shock, systematic review —
+  `10.1080/07853890.2026.2752656`, *Annals of Medicine*, 30 Oct.
+- Empirical linezolid target attainment in critically ill patients — `10.1007/s00210-026-06023-z`,
+  *Naunyn-Schmiedeberg's Arch Pharmacol*, 31 Oct.
+- Types of adult ICU and admissions in Türkiye 2018–2023, nationwide cohort — `10.1007/s12630-026-03205-4`,
+  *Can J Anaesth*, 30 Oct.
+- Rebound pain after regional anaesthesia in orthopaedic surgery, narrative review — **no DOI in the record**,
+  PMC13720677, 31 Oct. **Continues the rebound-pain thread, fifth entry.**
+
+**Noted, abstract-free (5):** nocturnal intravenous gamma-hydroxybutyrate and sleep architecture in non-sedated
+ICU patients, `10.1186/s13054-026-06429-4`, *Critical Care*, 30 Oct — **a sleep-in-the-ICU item, new thread**;
+tunneled dialysis catheter for kidney replacement therapy in the ICU, the CON side of a paired debate,
+`10.34067/kid.0000001469`, *Kidney360*, 30 Oct — **hold for its PRO sibling**; levosimendan and venoarterial
+ECMO weaning, `10.1097/mat.0000000000002902`, *ASAIO J*, 30 Oct; tiered emergency care structures in 2026,
+`10.1007/s00063-026-01508-4`, *Med Klin Intensivmed Notfmed*, 30 Oct; dapagliflozin and AKI after cardiac
+surgery, `10.1007/s00101-026-01760-5`, *Die Anaesthesiologie*, 30 Oct.
+
+**NOTE ON A CAUGHT ERROR: the AJIC DOI was first written here as `10.1016/j.ajic.2026.09.016` from memory of
+the pattern rather than from the record. It is `10.1016/j.ajic.2026.10.015`. RULE: never write a DOI that was
+not read from the record in this session.**
+
+**The combat regional-anaesthesia correspondence (`10.1136/military-2026-003564`) re-surfaced in today's sweep
+and is STILL abstract-free — second sighting.** Named gaps stand at 13.
+
+**Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### Published today (brief) — a lead and two pairs
+
+1. **PAV vs PSV for liberation** — `10.1155/ccrp/7536067`, *Crit Care Res Pract*, 29 Oct, OA.
+   **8 RCTs, 1,057 patients. Weaning success RR 1.09 (1.01–1.18), vent duration MD −1.06 (−1.82 to −0.29),
+   ICU stay MD −1.49 (−2.43 to −0.54) — all three p-values reproduce exactly. Reintubation RR 0.82
+   (0.58–1.16) and mortality 0.89 (0.63–1.25) NULL, and their stated p-values (0.21, 0.4) do NOT match their
+   log-symmetric intervals (0.26, 0.51).** Year-only publication date (monthOfPublication 0).
+2. **Perioperative infection model deployment audit** — `10.1093/jamia/ocag184`, *JAMIA*, 30 Oct.
+   **10,719 procedures, 504 events (4.70%). AUROC 0.876 (women 0.878, men 0.875) but CITL −1.02 overall
+   (odds 2.77x), −0.86 frail (2.36x), −1.34 prefrail (3.82x). Nonfrail stratum 6 events, NOT ESTIMABLE.
+   Recalibration −1.020 to −0.007. Temporal AUROC 0.851. Threshold 0.10 against a 4.70% base rate.**
+3. **EEG microstate after cardiac arrest** — `10.1007/s10548-026-01267-7`, *Brain Topography*, 29 Oct.
+   **I-CARE/PhysioNet, 601 screened, 567 analysed (209 favourable / 358 unfavourable). M2 GEV median 0.0852 vs
+   0.0564, r = 0.185, p = 0.000243 — AND AUC 0.59, WHICH IS THE SAME STATISTIC: (0.185+1)/2 = 0.5925.
+   Adjusted OR 1.30 (1.07–1.58) at N = 535, rising to 1.47 (1.10–1.97) at N = 292 (45.4% dropped). Temporal
+   parameters all null.** Authors state it is not a standalone test.
+4. **EECP and saphenous vein graft patency** — `10.21203/rs.3.rs-10800060/v1`, **PREPRINT**, 30 Oct.
+   **145 patients, 39 treated, therapy starting three months postoperatively against a one-year outcome
+   clock — IMMORTAL TIME. Per-patient 1-y OR 0.325 (0.102–0.931), 2-y 0.296 (0.088–0.916); per-graft 0.336
+   (0.137–0.768) and 0.232 (0.084–0.58); HRs 0.245 and 0.384. All clinical secondaries null. Per-graft
+   intervals narrower than per-patient with no stated clustering.** NCT03235323, "retrospectively registered".
+5. **sPESI in severe PE in the ICU** — `10.1016/j.medcli.2026.107664`, *Medicina Clínica*, 30 Oct.
+   **64 patients (57 intermediate-high 89.1%, 7 high 10.9%); FOUR progressions of 57 (7.0%); five deaths
+   (7.8%). Firth OR per point 2.75 (1.23–8.44), 6.86-fold span, log-asymmetric by 1.394 — FOURTH
+   symmetry-check exception. Median 3.5 (IQR 2.5–4.2) from four observations.**
+
+### Sweep log
+
+**Sized before run; passed on the first `core` call for the SEVENTH consecutive run.** `idlist` counts over
+`FIRST_IDATE` 31 Oct–1 Nov: **32** for a 31 Oct–1 Nov publication window; **101** for 29 Oct–1 Nov at the
+first pass and **86** on re-measurement minutes later; **206** for all sources with no publication window.
+**Run at the 29 Oct–1 Nov window, pageSize 100, returning 86 hits and 86 results.** **New standing practice:
+size and run inside ONE session, back to back — a count measured earlier in the run may not hold.**
+
+**Dedupe caught yesterday's entire output: the four highest-ranked candidates were all four of the 31 October
+items**, because the publication window reached back past yesterday's window. **Fifth day running the dedupe
+did consistency work rather than only duplicate-catching** (27 Oct hand-off, 29 Oct deferral, 30 Oct
+misrouting, 31 Oct unpublished-extraction, 1 Nov window overlap).
+
+**`END_OF_RUN_PLACEHOLDER` held for the fifth consecutive run.**
