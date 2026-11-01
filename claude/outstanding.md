@@ -5536,3 +5536,62 @@ did consistency work rather than only duplicate-catching** (27 Oct hand-off, 29 
 misrouting, 31 Oct unpublished-extraction, 1 Nov window overlap).
 
 **`END_OF_RUN_PLACEHOLDER` held for the fifth consecutive run.**
+
+## 2026-11-01 (guidelines watch) — audit done, dated action closed
+
+### DATED ACTION CLOSED: the October index-date month audit
+
+**Ran here under the routing rule. 71 in-scope guideline-class records / 8 duplicate deposits / 63 distinct /
+39 reported / 8 MISSED / 5 out of scope / 9 not guideline-class / 2 historical restamps. Hit rate 39 of 47 =
+82.98%, against September's 10 of 18 = 55.56%.** Full detail in `source-notes.md`.
+
+**NEXT AUDIT DUE: start of December, for November.** Sweep as a RANGE.
+
+**Still dated:** AHA/ACC perioperative re-check **7 November**; next lagged pass **~10 November**.
+
+### Published today (guidelines watch) — the eight misses, six with substance
+
+1. **EACTS robotic cardiac surgery minimum standards** — `10.1093/ejcts/ezag187`, *EJCTS*, 1 Oct, idx 16 Oct.
+   **With EACTAIC and EBCP. No grades and none required — institutional prerequisites, not clinical
+   decisions. Hardware/software minimums, training-centre prerequisites, stepwise competency pathway,
+   society-driven registry for learning-curve oversight. TRACKED SOCIETY, MISSED BY THE SOCIETY ROUTE.**
+2. **Bronchoscopy anaesthesia consensus** — `10.1213/ane.0000000000008366`, *Anesth Analg*, 9 Oct.
+   **Four societies: SAM, SHANA, SAMBA, AABIP. ABSTRACT-FREE, no PMCID, not OA — NOT recovered. Content not
+   claimed. The co-signature is the finding.**
+3. **PROSPECT hallux valgus** — `10.1097/eja.0000000000002483` (abstract-free) / content from
+   `10.1097/eja.0000000000002302` (vol 43 iss 1, 21 Oct 2025, PMC, OA, 2,087 chars), plus the 2020 original
+   `10.1136/rapm-2020-101479`. **ONE substantive change since 2020: minimally invasive / percutaneous
+   osteotomy now RECOMMENDED over open (2020: conflicting). Analgesic regimen unchanged. Liposomal
+   bupivacaine still insufficient evidence. 24 of 375 vs 56 of 836 — yields 6.4% vs 6.7%.**
+4. **CGM in critically ill patients, 2026 edition** — `10.3760/cma.j.cn112137-20260616-01560`, 1 Oct.
+   **27 recommendations / 12 questions. Covers eligible populations AND accessibility and economic cost as a
+   domain of the consensus itself. Grade scheme not stated either way — disclosure axis UNSCORED.**
+5. **Brazilian bloodless surgery Part 3 (postoperative)** — `10.1002/jso.70348`, 30 Sep.
+   **Opens on judicious laboratory testing to reduce IATROGENIC anaemia. "Adapted evidence classification
+   system" claimed, no distribution given — the WITHHOLDING branch, first clear instance.**
+   **Part 1 = `10.1002/jso.70333` (12 Jul). PART 2 ABSENT from a 25-result title sweep — NAMED GAP.**
+6. **Inguinal lymphadenectomy Delphi** — `10.1016/j.urolonc.2026.09.018`, 16 Oct. **101 experts / 25
+   countries / 86 statements / consensus on 51 (59.3%) / 35 without. No consensus on OPTIMAL DURATION OF
+   ANTIBIOTIC THERAPY. 70% threshold; agreement distribution for passing statements not reported.**
+7. **AATS mitral annular calcification commentary** — `10.21037/jovs-2026-1-0009`, idx 19 Oct. Abstract-free.
+8. **"The clinical side of Icarus" sepsis guidelines editorial** — `10.1016/j.jcrc.2026.155758`, idx 2 Oct.
+   Abstract-free. **FIFTH commentary on the 2026 Surviving Sepsis Campaign guidelines in this archive.**
+
+### Society route
+
+**Ninth consecutive day with no lead.** SFAR, SPILF, SRLF, ESAIC, ESICM, ESC, SCCM, EACTS, STS, ESPEN, ASA all
+searched. **Four already-held documents re-identified.** The SFAR/SFPC 24 June 2026 date returned for a
+**fourth sighting in six days** (hits 27–29 Oct, absent 30 Oct, absent 31 Oct, present 1 Nov) — **the source
+is unreliable rather than consistently wrong, confirmed again.**
+
+### Named gaps: 13 -> 15
+
+**Added:** `10.21037/jovs-2026-1-0009`, `10.1016/j.jcrc.2026.155758`. **Also abstract-free and unrecovered:**
+`10.1213/ane.0000000000008366` (two-field route does not apply — no PMCID, not OA).
+**Bloodless Surgery Part 2 added to named targets (now 5).**
+
+### Guidelines backlog — readable, unchanged (3)
+
+ESPNIC neonatal hypothermia (`10.1016/j.lanepe.2026.101874`); Vascular Access Society + EKTA position paper
+(`10.1177/11297298261468406`); WSES-PSOGI-SICO peritoneal surface malignancies (`10.1186/s13017-026-00718-7`,
+standing backlog item).

@@ -8010,3 +8010,107 @@ or how they have changed belongs to the watch). **Second consecutive day the rou
 the 29 October to 1 November publication window overlaps the window yesterday swept. **A publication window
 that reaches back past the previous run's window will re-surface that run's output; the dedupe is what makes
 that safe, so never draft before running it.** All five published items cleared as new.
+
+## 2026-11-01 (guidelines watch) — the October month audit, and the aperture test returns a positive
+
+**THE AUDIT RESULT. 71 guideline-class records in scope across October's index dates; 8 duplicate deposits;
+63 distinct documents.**
+
+| Classification | n |
+| --- | --- |
+| Already reported here | **39** |
+| **In scope, guideline-class, MISSED** | **8** |
+| Guideline-class, out of scope | 5 |
+| Not guideline-class on reading | 9 |
+| Historical records restamped into October | 2 |
+| **Total distinct** | **63** |
+
+**Hit rate 39 of 47 in-scope guideline-class = 82.98%. September: 10 of 18 = 55.56%. The miss count is 8 in
+BOTH months while the in-scope population grew from 18 to 47 (x2.6).** So coverage improved; there was not
+less to find.
+
+**THE APERTURE TEST RETURNED A POSITIVE ON THE CLEAREST POSSIBLE CASE.** The missed
+**EACTS** expert consensus on robotic cardiac surgery (`10.1093/ejcts/ezag187`, with **EACTAIC** and **EBCP**,
+indexed 16 Oct) is from a **TRACKED SOCIETY** and nine consecutive days of society searches did not find it.
+**RULE CHANGE: run the index sweep ALONGSIDE the society route, not after it.** The society route still goes
+first for identity; it is no longer treated as the primary discovery channel.
+
+**The eight misses, now published:** EACTS robotic cardiac surgery (`10.1093/ejcts/ezag187`); bronchoscopy
+anaesthesia consensus from four societies (`10.1213/ane.0000000000008366`, abstract-free);
+PROSPECT hallux valgus (`10.1097/eja.0000000000002483`, abstract-free, content recovered from a sibling);
+CGM in critically ill patients, 2026 edition (`10.3760/cma.j.cn112137-20260616-01560`); Brazilian bloodless
+surgery Part 3 (`10.1002/jso.70348`); inguinal lymphadenectomy Delphi (`10.1016/j.urolonc.2026.09.018`);
+AATS mitral annular calcification commentary (`10.21037/jovs-2026-1-0009`, abstract-free); and the sepsis
+guidelines editorial "The clinical side of Icarus" (`10.1016/j.jcrc.2026.155758`, abstract-free).
+
+### The restamping finding, confirmed from an independent query
+
+**This matters more than the audit's own result.** Three of the 63 records are dated **1998-12-01** (European
+Resuscitation Council guidelines, book-review record) and **1984-12-15** (consensus development conference on
+coronary artery bypass surgery, deposited TWICE), all three first-indexed **13 October 2026** — the month's
+63,095-record spike day. So I measured the bucket's publication-date composition:
+
+| Publication date | 13 Oct bucket | 31 Oct bucket |
+| --- | --- | --- |
+| Before 2000 | **60,856** | 1 |
+| 2000–2019 | 1,660 | 3 |
+| 2020–2025 | 219 | 22 |
+| 2026 | **8** | **7,218** |
+| Residual, no usable date | 352 | 26 |
+| **Total** | **63,095** | **7,270** |
+
+**96.45% of the 13 October bucket predates the year 2000, and eight of its records are from 2026. On
+31 October, 99.28% is 2026 literature.** **A spike day is a retrospective backfill of twentieth-century
+literature; a normal day is current publishing.** This is the same phenomenon as the long-recorded
+"aggregator lists old papers under today's date", seen in bulk instead of one record at a time. **Residuals
+are stated, not absorbed.**
+
+### Rules adopted
+
+1. **Run the index sweep alongside the society route** (see above).
+2. **A fifth publication-date pattern: the same title under TWO DOIs in the same journal and volume, a year
+   apart, one with an abstract and one without.** The hallux valgus PROSPECT is `…002302` (vol 43 issue 1,
+   online 21 Oct 2025, in PMC, OA, 2,087-char abstract) and `…002483` (vol 43 issue 11, print 1 Nov 2026,
+   abstract-free, no PMCID). **Neither is typed as an erratum and the relationship CANNOT be established from
+   the records.** Catalogue it alongside the dual-deposit placeholder, the future print issue and the
+   year-only date, and **say the relationship is unresolved rather than guessing.**
+3. **Where a document claims a grading system and gives no distribution, that is the WITHHOLDING branch of the
+   22 October format-decision rule — the first clear instance.** The Brazilian bloodless-surgery guideline
+   states "an adapted evidence classification system" and reports no grade distribution. **Contrast the EACTS
+   consensus, which needs no grades at all because its object is institutional prerequisites, not a clinical
+   decision: that is the category-difference branch.**
+4. **Where an abstract says nothing either way about grading, score the disclosure axis UNSCORED, not zero.**
+   Applied to the CGM consensus.
+5. **Read a Delphi's no-consensus list as data.** 51 of 86 statements reached consensus on inguinal
+   lymphadenectomy; the 35 that did not include **optimal duration of antibiotic therapy** — the most
+   consequential stewardship question in the document. **A panel of 101 could agree to give prophylaxis and
+   not for how long.** Also: a 70% threshold lets a statement pass with 30 of 101 against, and the agreement
+   distribution for the passing statements is usually not reported.
+6. **A guideline that attracts five commentaries in a month is itself a finding.** The 2026 Surviving Sepsis
+   Campaign guidelines now have five in this archive: the overinterpretation caution, the ESEM/ACEP
+   harmonisation, the hospitalist highlights, the reinforcement-learning discordance paper, and the Icarus
+   editorial.
+7. **When a guideline update is readable and its predecessor is too, PULL THE PREDECESSOR and tabulate.**
+   Done for PROSPECT hallux valgus 2020 against the update: the one substantive change is **surgical**
+   (minimally invasive or percutaneous osteotomy now recommended over open, where 2020 found conflicting
+   evidence), the analgesic regimen is unchanged in six years, and **liposomal bupivacaine still has
+   insufficient evidence** as extended-release bupivacaine did in 2020. **Treat the stability of an
+   "insufficient evidence" verdict across five further years as informative, not provisional.**
+8. **A shrinking evidence base in an update is not a weakening when the search window is narrowed.** 24
+   publications of 375 screened against 56 of 836: the **screening yields, 6.4% and 6.7%, are the comparable
+   quantity.** Compute them before commenting on the counts.
+9. **A series can be incomplete in the index.** Bloodless Surgery Part 1 (`10.1002/jso.70333`) and Part 3 are
+   in Europe PMC; **Part 2 does not appear in a 25-result title sweep.** Recorded as a named gap, never as a
+   claim that Part 2 does not exist.
+10. **PRE-COMMIT SUITE REFINEMENT: table rows are EXEMPT from the long-line check.** A markdown table row must
+    be on one line, so wrapping one breaks the table. The check now exempts lines starting with `|` and adds a
+    new test instead: **every row within one table must have the same pipe count.** Both of today's files pass
+    it, three tables each.
+
+### Named gaps now 15 (was 13)
+
+**Added:** the AATS mitral annular calcification commentary (`10.21037/jovs-2026-1-0009`) and the Icarus
+sepsis editorial (`10.1016/j.jcrc.2026.155758`). **The bronchoscopy consensus is also abstract-free with no
+PMCID and not open access** — the two-field route does not apply and a nine-record sibling search on its topic
+phrase did not contain it. **The combat regional-anaesthesia correspondence re-surfaced for a second sighting
+and is still abstract-free.**
