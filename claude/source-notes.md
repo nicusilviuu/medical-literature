@@ -8114,3 +8114,121 @@ sepsis editorial (`10.1016/j.jcrc.2026.155758`). **The bronchoscopy consensus is
 PMCID and not open access** — the two-field route does not apply and a nine-record sibling search on its topic
 phrase did not contain it. **The combat regional-anaesthesia correspondence re-surfaced for a second sighting
 and is still abstract-free.**
+
+## 2026-11-02 (guidelines watch) — the society route was being read for the wrong field
+
+**BIGGEST PRACTICE CHANGE SINCE THE INDEX-SWEEP RULE. Read each tracked society's IN-DEVELOPMENT page, not
+only its published list.** Nine of the last ten days produced no published society document while SCCM's
+guidelines page carried **thirteen documents in development with tentative windows** the whole time.
+**Fetched from the page directly, not from a search snippet.**
+
+**SCCM pipeline, 2026–2027 (5):** Managing Post-Intensive Care Syndrome (PICS) and PICS – Family Guideline ·
+Adult Skin as an Organ (SOS) Consensus Statement · **SCCM/ELSO Joint Adult ECMO Consensus Statement** ·
+Adjunct and Alternative Sedatives Guideline · Endotracheal Intubation of Critically Ill Pediatric Patients in
+the PICU Guideline.
+
+**SCCM pipeline, 2027–2028 (8):** Alcohol Withdrawal in Adults in the ICU · Mitigation of and Non-Transfusion
+Treatments for Anemia in Adult Critically Ill Patients · Management of Critical Bronchiolitis in Pediatrics ·
+Pediatric Critical Care Ultrasonography · POCUS-Guided Assessment for Mechanical Ventilation Weaning in
+Adults · Massive Blood Loss in the ICU · Adult AKI Management in the ICU · Early vs Late Tracheostomy in the
+ICU.
+
+**Five of the thirteen land on threads already running here** (PICS, extracorporeal, sedatives, alcohol
+withdrawal, tracheostomy). **Treat the pipeline as a CALENDAR TO CHECK, not a forecast** — these are tentative
+windows on a planning page, and ESICM's own framework states it does not endorse guidelines developed
+independently by external groups, so a society's intentions and its outputs are different lists.
+
+**TO DO: fetch the equivalent in-development page for ESICM, ESAIC, ESC, ESPEN, EACTS, STS and ASA.**
+
+### Delphi consensus thresholds are a free parameter — catalogue them
+
+**Three thresholds now recorded and they are NOT comparable across documents:**
+
+| Document | Threshold |
+| --- | --- |
+| Inguinal lymphadenectomy (1 Nov) | **≥70%** |
+| SMA permanent-ventilation (2 Nov) | **≥75%** |
+| ESICM very old patients (Feb 2025) | **≥90% strong, ≥80% moderate**, 9-point Likert |
+
+**A Delphi's threshold determines how many statements survive, so quote it before quoting the pass rate.**
+
+### A Delphi in which nothing fails asked nothing contested
+
+**SMA-PV: all 22 statements reached consensus after two rounds, agreement 89–100%, at a 75% threshold.**
+Contrast yesterday's inguinal lymphadenectomy document: **51 of 86, with 35 failing — and the failures carried
+the information** (no consensus on optimal antibiotic duration). **A 22-for-22 result is a signal that the
+statement set was drafted to pass, not a strength.**
+
+**But credit the opposite move where it appears:** the SMA panel **revised and re-voted a statement that had
+100% agreement in round 1**, to incorporate non-voting patient-panel feedback. **That is the single best thing
+in those methods.**
+
+**And put industry funding in the FIRST line, not the last.** The SMA-PV abstract ends "Roche Products Ltd."
+and its central recommendation is that access restrictions to that therapy class be reconsidered. **Not a
+reason to dismiss it — the clinical argument stands and the restriction was arguably indefensible — but a
+manufacturer-funded panel recommending wider access to the manufacturer's own therapy class is a conflict
+that belongs up front.** The study was also not prospectively registered.
+
+### Rules adopted
+
+1. **A scope call made from a TITLE ALONE is provisional, and is re-made when the abstract becomes readable.**
+   Applied today: the SMA-PV Delphi was excluded from yesterday's month audit as a title-only PMC record and
+   is **included today**, on the narrow and stated ground that it governs whether ventilator dependence may be
+   used as an access barrier. **State the ground when reversing; never widen scope silently.**
+2. **A PROTOCOL is still not guideline-class, but it IS a calendar entry** now that the archive tracks
+   forthcoming documents. Report it labelled as a protocol.
+3. **A protocol that defers its consensus threshold to "predefined thresholds" forgoes most of the benefit of
+   publishing a protocol.** Name that weakness BEFORE the result, not after. (ANZ very-old-patients protocol;
+   ESICM stated 90% and 80%.)
+4. **SECOND ROUTE TO CHINESE SOCIETY DOCUMENTS, better than the 6 October one: the English republication.**
+   `10.1016/j.xkme.2026.101528` is the Chinese HA-MHD consensus "adapted English republication" in
+   *Kidney Medicine* — fully readable, GRADE and modified Delphi named, 27 recommendations, and it carries its
+   predecessor's identity (the 2021 Shanghai consensus) so the change is measurable. **Sweep for "English
+   republication" and variants; the transliterated-journal route will not find these.**
+5. **The HAS label LAGS the SFAR publication.** A HAS fiche or labelling page will keep re-surfacing documents
+   already held here (today: the 28 Sep 2026 in-hospital life-threatening emergency fiche, published here
+   30 September). **Identity work, not news.**
+6. **DATE EVERY AGGREGATE IN AN AUDIT AND SAY IT WILL NOT REPRODUCE.** Yesterday's month audit reported
+   267,729 October index dates; today the same query returns **267,320, down 409.** The classification of the
+   71 records stands; the aggregate was a reading at an instant.
+7. **PRE-COMMIT SUITE: new check for NESTED `**` INSIDE A BLOCKQUOTE LINE.** Caught three nested-bold
+   blockquotes today, one of which made the global `**` count odd. **Bold inside an already-bold quote renders
+   unpredictably even when the count is even, so de-nest it: quote plainly and put the emphasis in the
+   surrounding prose.** The check flags any `>` line with more than two `**`.
+
+### The restamping finding, confirmed within ONE DAY
+
+**Yesterday's withdrawal of the bucket-as-delivery reading predicted this and it happened overnight.**
+
+| 1 November bucket | 1 Nov 14:11 | 2 Nov 14:23 |
+| --- | --- | --- |
+| MEDLINE | **0** | **3,346** |
+| PMC | 1 | **395** |
+| Preprints | **156** | **156** |
+| Total | **157** | **3,897** |
+
+**THE LAG DIFFERS BY SOURCE. Preprints are stamped on the day — frozen at exactly the 156 measured yesterday.
+MEDLINE and PMC are stamped into the PREVIOUS day's bucket.** So a current-day bucket showing MEDLINE zero
+means *not yet stamped*, never *nothing delivered*. **MEDLINE's TOTAL is the sound measurement and it moved
++3,344 overnight, essentially all of it into yesterday's date.**
+
+**And the series' eighth value is gone.** The 31 October bucket fell 7,270 to **6,957 (−313: PMC −312,
+NBK −1)**, so the +1 published yesterday as one Bookshelf record has been removed. **That bucket's Bookshelf
+count went 0, 1, 0 while Bookshelf's total went 8, 9, 6. A source oscillating in single digits over three days
+is the third independent reason the series measured nothing.**
+
+### Backlog addition
+
+**ESICM consensus-based recommendations for the management of very old patients in intensive care** —
+`10.1007/s00134-025-07794-4`, *Intensive Care Medicine*, 17 Feb 2025, pubType Consensus Statement, 110 experts
+(28 steering + 82), **48 statements plus 2 checklists**, thresholds 90%/80% on a 9-point Likert. **Verified
+from the index, not from a search result. Not previously in this archive — it predates it.** Readable
+backlog item, not a gap.
+
+**PREDICTION TO CHECK when the ANZ consensus publishes:** it will agree with ESICM on the process — that
+time-limited trials, goals-of-care conversations and structured post-ICU pathways are the right architecture —
+and differ on every threshold, including the age cut-off and the trial duration.
+
+**NEAR-MISS RECORDED: two haemadsorption consensus documents in eight days** — polymyxin B in endotoxic septic
+shock (26 Oct, in scope) and HA in maintenance haemodialysis (today, out of scope on content). **Same
+technology, different populations. Do not treat them as duplicates in a future sweep.**

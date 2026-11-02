@@ -5595,3 +5595,59 @@ is unreliable rather than consistently wrong, confirmed again.**
 ESPNIC neonatal hypothermia (`10.1016/j.lanepe.2026.101874`); Vascular Access Society + EKTA position paper
 (`10.1177/11297298261468406`); WSES-PSOGI-SICO peritoneal surface malignancies (`10.1186/s13017-026-00718-7`,
 standing backlog item).
+
+## 2026-11-02 (guidelines watch)
+
+### THE LITERATURE BRIEF DID NOT RUN TODAY
+
+**Reported, not passed over.** Slot 14:02:31; **no brief notification reached this session, the queue was
+empty, and `_briefs/2026-11-02.md` does not exist.** **Routine state checked rather than inferred
+(`get_trigger`): ENABLED, last fired 2026-11-01T14:03:39Z, next_run_at 2026-11-02T14:02:31Z — already past at
+14:21 when the watch began.** So **overdue, not cancelled**; it has fired 29 minutes late before (27 Oct).
+**Nothing fabricated in its place.** **If the notification arrives, run the brief then.**
+
+### Index baselines (for tomorrow) — bucket warning still applies, and now has a source-specific form
+
+- **Whole 49,182,879 at 14:23:06, residual 0, up 3,722** on yesterday. `MED` **41,311,222 (+3,344)** ·
+  `PPR` 1,275,294 (+455) · `PMC` **1,013,918 (−74)** · `NBK` **6 (−3)** · others unchanged. Four changes sum
+  to 3,722 exactly. **Two sources LOST records while the whole grew (29 Oct pattern).**
+- **Bucket 2026-11-02: 456** = PPR 455 + PMC 1, **MED 0**. Exact. **Read as NOT YET STAMPED.**
+- **Bucket 2026-11-01: 157 -> 3,897** = MED **3,346** + PMC **395** + PPR **156 (unchanged)**. Exact.
+- **Bucket 2026-10-31: 7,270 -> 6,957** = MED 4,837 + PMC **1,215 (−312)** + PPR 904 + NBK **0 (−1)** + CTX 1.
+- Windows: 1–30 Sep **178,417 (−63)**; 1–7 Oct **27,854 (−1)**; **Oct month 267,320 (−409 on yesterday's
+  267,729 — the audit aggregate does not reproduce).**
+- **PMC trail: 1,022,974 · 1,013,660 · 1,013,991 · 1,013,992 · 1,013,918.**
+- **NBK trail: 5 · 8 · 9 · 6.**
+
+**STAMPING LAG BY SOURCE (new, and the most useful index fact yet): preprints same-day; MEDLINE and PMC into
+the PREVIOUS day's bucket.** So tomorrow expect today's bucket of 456 to grow by roughly a MEDLINE batch.
+
+### Published today (guidelines watch)
+
+1. **SCCM in-development pipeline** — 13 documents, 5 in 2026–2027 and 8 in 2027–2028, read from
+   `https://sccm.org/Guidelines`. **Five land on live threads here.** Full list in `source-notes.md`.
+2. **ANZ very-old-patients Delphi PROTOCOL** — `10.1111/imj.70687`, *Intern Med J*, 31 Oct. **Central
+   question: time-limited ICU trials. Consensus threshold NOT stated in the protocol.** Tabulated against
+   ESICM Feb 2025.
+3. **SMA permanent-ventilation UK Delphi** — `10.1016/j.eclinm.2026.104278`, *EClinicalMedicine*, 24 Oct.
+   **22/22 statements consensus, 18 voters, 75% threshold, agreement 89–100%, one revised from 72%, one
+   revised despite 100%. Funder: Roche Products Ltd. Not prospectively registered. SCOPE CALL REVERSED from
+   yesterday's title-only exclusion.**
+4. **Chinese HA-MHD consensus, English republication** — `10.1016/j.xkme.2026.101528`, *Kidney Medicine*,
+   11 Sep. **Out of scope on content; reported for the ROUTE. 27 GRADE recommendations, updates the 2021
+   Shanghai consensus.**
+
+### Backlog and targets
+
+**Added to readable backlog (1):** ESICM very-old-patients consensus `10.1007/s00134-025-07794-4` (Feb 2025,
+48 statements + 2 checklists, 110 experts). **Readable backlog now 4.**
+
+**Named gaps unchanged at 15. Named targets unchanged at 5.**
+
+**Guidelines backlog — readable (4):** ESICM very old patients (`10.1007/s00134-025-07794-4`); ESPNIC neonatal
+hypothermia (`10.1016/j.lanepe.2026.101874`); Vascular Access Society + EKTA position paper
+(`10.1177/11297298261468406`); WSES-PSOGI-SICO peritoneal surface malignancies (`10.1186/s13017-026-00718-7`).
+
+**Dated:** fetch in-development pages for ESICM, ESAIC, ESC, ESPEN, EACTS, STS, ASA — **next watch**;
+AHA/ACC perioperative re-check **7 November**; next lagged pass **~10 November**; **November month audit at
+the start of December.**
