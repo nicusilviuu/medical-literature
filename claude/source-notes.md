@@ -8232,3 +8232,147 @@ and differ on every threshold, including the age cut-off and the trial duration.
 **NEAR-MISS RECORDED: two haemadsorption consensus documents in eight days** — polymyxin B in endotoxic septic
 shock (26 Oct, in scope) and HA in maintenance haemodialysis (today, out of scope on content). **Same
 technology, different populations. Do not treat them as duplicates in a future sweep.**
+
+## 2026-11-02 (brief) — a difference in significance is not a significant difference
+
+**THE RULE OF THE DAY, and it is the commonest error in subgroup reporting. TWO papers in one sweep set up a
+subgroup story and then refused it, which is why both were published.**
+
+**1. SOFA-2 vs SOFA-1** (`10.21203/rs.3.rs-10993609/v1`, preprint). Significant in patients aged ≥85 on all
+three mortality endpoints, significant in 60–84 on only ICU mortality. **That shape gets reported as "works
+better in the very old." The authors ran the formal heterogeneity test on ΔAUC and got 0.013 (−0.012 to
+0.038) p=0.308, 0.018 (−0.005 to 0.041) p=0.128, 0.014 (−0.008 to 0.036) p=0.214 — all null, all intervals
+exactly symmetric.** Their own words: *"suggest, but do not establish."*
+
+**2. Fluid after echo** (`10.21203/rs.3.rs-11247095/v1`, preprint). All interaction tests null (LVEF
+multiplicative p=0.44, additive p=0.56; RV 0.65 and 0.16; LVEF continuous 0.82).
+
+**RULE: significant in one stratum and not in another is a statement about two SAMPLE SIZES (here 635 against
+337), not about whether the effect differs. Only the interaction test speaks to that. Never report the
+pattern without it, and when a paper reports the null interaction, say so prominently — it is the paper's
+contribution, not its limitation.**
+
+### The exchange rate of a score revision
+
+**SOFA-2 changed the total score in 65.3% of 972 patients (45.7% down, 19.6% up — sums exactly) and bought
+ΔAUC of +0.032 / +0.024 / +0.015.** **RULE: for any score revision, compute the RECLASSIFICATION RATE against
+the DISCRIMINATION GAIN. Rescoring two patients in three for three hundredths of AUC is a poor exchange.**
+**And all eighteen reported AUCs lie between 0.667 and 0.726 — neither version discriminates well, so the
+choice is being made inside a 0.059 span at the bottom of the useful range.**
+
+**Coincidence flagged so nobody builds on it: the proportion rescored and the proportion aged ≥85 are both
+65.3% and are unrelated quantities.**
+
+**CONNECTION TO YESTERDAY: two 2026 revisions of the same instrument moving in OPPOSITE directions.** SIC-2
+(routed to the watch 1 Nov) *removes* SOFA from the sepsis-coagulopathy criteria to simplify; SOFA-2 *revises*
+SOFA to predict better, and is worth about 0.03.
+
+### Baseline covariates must be ascertained BEFORE the index admission
+
+**THE BEST METHODOLOGICAL FINDING IN WEEKS, and it killed a published subgroup result.** The fluid emulation
+could not reproduce a previously observed protective association of fluid in hyperdynamic hearts without
+cardiac disease **once cardiac disease was ascertained from PRE-ADMISSION diagnoses rather than the index
+admission: HR 1.33 (0.90–1.97), the wrong side of one.**
+
+**RULE: ascertaining a baseline covariate from the admission during which the outcome occurs is how a subgroup
+finding gets manufactured. Check the ascertainment window of every covariate that defines a subgroup.**
+
+**Other transferable items from that paper:**
+- **E-value translated: 2.60 (2.29 at the confidence bound) means an unmeasured confounder would need a risk
+  ratio of about 2.6 with BOTH exposure and outcome, beyond everything adjusted, to explain the result away.**
+  **Always translate an E-value into that sentence; the bare number means nothing to a reader.**
+- **Negative control outcomes taken from PRIOR admissions** — diagnoses the exposure cannot cause. Residual
+  bias indicated toward the null. **A design to copy.**
+- **Confounding by indication will be quoted as a drug effect: vasopressin initiation HR 2.55 (2.13–3.06).**
+  Vasopressin is started when noradrenaline is failing. **Say so explicitly whenever a vasopressor or
+  rescue-therapy "effect" appears in an emulation.**
+- **Treated fraction given for the two secondary emulations (8.3% and 5.6%) and NOT for the primary one.**
+  The archive's target-trial rule asks for it; record when it cannot be stated.
+- **16.3% of the cohort (1,209 of 7,398) sits outside the ventricular stratification and the abstract does
+  not say why.** Check that strata sum to the analysed n.
+
+### A cumulative-sum breakpoint without decision limits is a description, not a finding
+
+**`10.1007/s11701-026-04147-1`, 47 robotic lobectomies, one surgeon. The whole observed CUSUM path stayed
+inside a 95% envelope built from 10,000 permutations of case order, global p = 0.73.** The two candidate peaks
+differ by **4.5 units** (265.0 at case 20, 260.5 at case 10) — that is all that separates "a 20-case learning
+curve" from "a 10-case" one here. **RULE: never quote a CUSUM case number unless decision limits were
+constructed. Most learning-curve papers do not construct them.**
+
+**AND THE DENOMINATOR RULE, which is the paper's best disclosure: by lobectomy case 20 the surgeon had 39
+robotic console cases** once segmentectomy, wedge and single-port cases are counted — **a ratio of 1.95. "Case
+20" is the twentieth of ONE KIND, not the twentieth operation.** **Any learning-curve or volume-threshold
+claim must state which case count it indexes.** **This is the practical gap in yesterday's EACTS robotic
+cardiac surgery consensus: a society registry for learning-curve oversight is only as good as the case count
+it defines.**
+
+**Also credit: the authors tested whether the surgeon was selecting easier cases.** Charlson index ROSE with
+case sequence (rho 0.34, p=0.02), malignant histology 65%→89%, concomitant procedures 5%→19%, while operative
+time did not move (rho 0.01, p=0.93). **Complexity up, time flat, and they still decline to infer a learning
+effect.** **RULE: a learning-curve paper that does not test case-mix drift cannot distinguish learning from
+cherry-picking.**
+
+### A mechanistic randomised trial can reverse the field's direction of travel
+
+**HERACLES (`10.1161/circinterventions.126.017625`, *Circ Cardiovasc Interv*): 24 patients on VA-ECMO for
+cardiogenic shock, 96% SCAI D/E, median LVEF 10%. The IABP improved the myocardial oxygen supply-demand ratio
+(1.48 [1.23–2.10]) and the micro-axial flow pump did not (0.97 [0.92–1.39]), p=0.036.** **Mechanism:
+the balloon pump cut the systolic pressure-time integral differentially and raised coronary flow marginally
+(DFR 1.16); the mAFP raised coronary PRESSURE with flow unchanged (DFR 1.00).** **PRESSURE WITHOUT FLOW is
+the distinction, and only an invasive mechanistic trial sees it.**
+
+**Do not credit its mortality comparison: 38% vs 45% in 24 patients is about five deaths against five, ten in
+total.** **And 46% male in a cardiogenic shock trial, where 70–80% is usual — no inference at n=24, but note
+it before comparing these haemodynamics with a larger trial's.**
+
+**COUNTERPULSATION THREAD, three items in three days:** external counterpulsation and vein-graft patency
+(1 Nov brief), balloon-pump timing after CABG (in today's sweep, held), and HERACLES. **The mechanistic case
+for counterpulsation is currently in better shape than its outcome case.**
+
+### Routine behaviour
+
+**The brief fired at 14:54:56 against a 14:02:31 slot — FIFTY-TWO MINUTES LATE, the latest recorded here**
+(previous worst 29 minutes, 27 October). **The guidelines watch ran first at 14:21 and reported it OVERDUE
+rather than missed, having read the routine's state (`get_trigger`: enabled, last fired 1 Nov, next_run_at
+already past). That call was correct.** **RULE CONFIRMED: before calling a routine missed, read its state,
+not its absence — and when both routines run on one day, share the index reading rather than re-deriving it.**
+
+**Window choice from the stamping-lag finding, not habit:** today's MEDLINE delivery sits under YESTERDAY's
+index date, so the sweep spanned `FIRST_IDATE` 1–2 November. **Three of the four published papers came from
+the 1 November bucket.**
+
+### NAMED GAP CLOSED MID-RUN by a title-stem sibling search — second consecutive day
+
+**Two abstract-free *BJA* records sat in the named gaps on the same subject: `10.1016/j.bja.2026.08.066`
+("absence of evidence or evidence of absence of long-term effects", 30 Oct) and `10.1016/j.bja.2026.08.072`
+(31 Oct, in today's sweep). A title-stem search returned a THIRD record — `10.1016/j.bja.2026.05.010`,
+volume 137 issue 2, 23 June 2026, 1,793 characters.** Gap closed and published as today's fifth item.
+
+**RULE, now established practice after two consecutive successes (yesterday's PROSPECT hallux valgus, today's
+RELIEF follow-up): when a record is abstract-free, search its TITLE STEM across all dates before logging it
+as a gap.** Both recoveries found a readable sibling published MONTHS EARLIER under a different DOI in the
+same journal. **The two-field PMCID-plus-open-access route only works where the document is in PMC; the
+title-stem route works wherever a sibling deposit exists, which is more often.**
+
+**Content, and the finding is not the one the abstract leads with.** RELIEF long-term follow-up: **no
+randomised difference in new or progressive CKD stage ≥3 — 422/754 (55.97%) restrictive vs 409/766 (53.39%)
+liberal, adjusted OR 1.13 (0.91–1.41), implied p = 0.27.** **But 831 of 1,520 followed-up patients — more
+than HALF — had new or progressive CKD stage ≥3 within 48 months of major abdominal surgery.** **RULE: when a
+paper reports a null, read the shared baseline rate before accepting that nothing was found. Here the
+denominator is the finding and the abstract reports it only as the denominator of a non-difference.**
+
+**Attrition must be stated with it: mITT 2,983 -> followed up 1,670 (56.0%) -> analysed 1,520. 1,463 patients,
+49.0% of the trial, are absent.** Patients lost to a four-year post-surgical follow-up are not lost at random,
+and **the direction of that bias is genuinely unclear** — the sickest may be dead and untraceable, or the
+sickest may be in renal clinics and easiest to trace. **Say "direction unknown" rather than guessing.**
+
+**Published-abstract defect noted gently: the conclusion reads "no difference was found in the incidence of
+new or progressive CKD was not related to a restrictive perioperative fluid regimen" — a duplicated predicate
+with no single grammatical reading.** Nothing turns on it; recorded because an abstract is the part most often
+read alone.
+
+**PAIRING WITH TODAY'S ITEM 2:** the target trial emulation found fluid volume strongly associated with
+mortality in sepsis observationally; **RELIEF is the randomised evidence on the same exposure in a different
+population and its long-term renal outcome is flat.** **Fluid strategy has real short-term renal
+consequences (RELIEF's original AKI result) and no detectable four-year randomised effect. What is not flat,
+and what nobody randomised, is the 56%.**

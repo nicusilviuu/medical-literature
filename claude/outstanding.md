@@ -5651,3 +5651,101 @@ hypothermia (`10.1016/j.lanepe.2026.101874`); Vascular Access Society + EKTA pos
 **Dated:** fetch in-development pages for ESICM, ESAIC, ESC, ESPEN, EACTS, STS, ASA — **next watch**;
 AHA/ACC perioperative re-check **7 November**; next lagged pass **~10 November**; **November month audit at
 the start of December.**
+
+## 2026-11-02 (brief) — fired 52 minutes late; index shared with the watch
+
+### Index baselines (for tomorrow)
+
+**THREE readings — 14:23:06 (watch), 14:55:17 (brief start), 14:59:51 (brief end) — EVERY FIGURE IDENTICAL
+across thirty-seven minutes. Longest unchanged interval recorded here.**
+
+- **Whole 49,182,879, residual 0.** `MED` 41,311,222 · `PPR` 1,275,294 · `PMC` 1,013,918 · `NBK` 6 ·
+  `CTX` 3,926 · `AGR` 1,026,549 · `PAT` 4,229,296 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624.
+- **Bucket 2026-11-02: 456** = PPR 455 + PMC 1, MED 0. **NOT YET STAMPED, not a delivery of nothing.**
+- **Bucket 2026-11-01: 3,897** = MED 3,346 + PMC 395 + PPR 156.
+- **Bucket 2026-10-31: 6,957.**
+- Windows: 1–30 Sep **178,417**; 1–7 Oct **27,854**; Oct month **267,320**.
+
+**STAMPING LAG BY SOURCE (use this to pick tomorrow's sweep window): preprints same-day; MEDLINE and PMC into
+the PREVIOUS day's bucket. Expect today's 456 to grow by roughly a MEDLINE batch overnight.**
+
+### Published today (brief)
+
+1. **SOFA-2 vs SOFA-1 in older sepsis** — `10.21203/rs.3.rs-10993609/v1`, **PREPRINT**, 1 Nov.
+   **972 patients aged ≥60, 635 (65.3%) aged ≥85. Score changed in 65.3% (45.7% down, 19.6% up). ΔAUC +0.032
+   ICU / +0.024 28-day / +0.015 6-month. All 18 AUCs between 0.667 and 0.726. Subgroup pattern (sig on 3/3 in
+   ≥85, 1/3 in 60–84) REFUSED by formal heterogeneity tests: p=0.308, 0.128, 0.214.**
+2. **Fluid volume after early echo, three target trial emulations** — `10.21203/rs.3.rs-11247095/v1`,
+   **PREPRINT**, 1 Nov. **MIMIC-IV, 7,819 screened / 7,398 analysed. ≥30 vs <30 mL/kg: HR 1.74 (1.54–1.97),
+   38.7% vs 24.8%, RD +13.9% (10.8–17.0). NO phenotype modification on any test. Hyperdynamic protective
+   association NOT reproduced once cardiac disease came from pre-admission diagnoses: 1.33 (0.90–1.97).
+   E-value 2.60. Dobutamine 1.57 (0.95–2.60) on 100 new-users; vasopressin 2.55 — confounding by indication.**
+3. **HERACLES: IABP vs micro-axial flow pump on VA-ECMO** — `10.1161/circinterventions.126.017625`,
+   *Circ Cardiovasc Interv*, 31 Oct. **RANDOMISED, 24 patients, 96% SCAI D/E, LVEF 10%. Supply-demand ratio
+   1.48 (IABP) vs 0.97 (mAFP), p=0.036. mAFP raised coronary pressure with flow UNCHANGED (DFR 1.00); IABP
+   flow DFR 1.16. 30-day mortality 38% vs 45%, p=0.84 — about ten deaths, uninformative. 46% male.**
+4. **Robotic lobectomy learning curve** — `10.1007/s11701-026-04147-1`, *J Robot Surg*, 31 Oct.
+   **47 cases, one surgeon. CUSUM path INSIDE a 10,000-permutation 95% envelope, global p=0.73. Peaks 265.0
+   at case 20 and 260.5 at case 10 — 4.5 apart. Operative time null 3 ways. Charlson ROSE (rho 0.34, p=0.02)
+   while time did not (rho 0.01, p=0.93). 39 CONSOLE CASES BY LOBECTOMY CASE 20 — ratio 1.95.**
+
+### Queue after today: 44 held + 8 added = 52
+
+**None of today's four came from the queue — all four were fresh finds in today's sweep.**
+
+**Added from today's sweep (8), every DOI read from the record in this session:**
+
+- Timing of intra-aortic balloon pump support and early mortality after isolated CABG —
+  `10.21203/rs.3.rs-10984219/v1`, preprint. **Counterpulsation thread, third item in three days.**
+- Timing of ACE inhibitor / ARB restart after cardiac surgery — `10.21203/rs.3.rs-11548906/v1`, preprint,
+  3,048-character abstract.
+- Transportability, dataset shift and local recalibration of early ICU deterioration prediction —
+  `10.21203/rs.3.rs-11054375/v1`, preprint. **Continues the 1 November calibration audit directly.**
+- Perioperative beta-blockers and postoperative MACCE — `10.21203/rs.3.rs-11015334/v1`, preprint.
+- J-shaped association between 72-hour net fluid balance and 90-day mortality —
+  `10.21203/rs.3.rs-11022198/v1`, preprint. **Pairs with today's item 2.**
+- Cell salvage volume and haemostatic changes in cardiac surgery — `10.1016/j.jclinane.2026.112362`,
+  *J Clin Anesth*, 31 Oct. **Pairs with the 1 November bloodless-surgery guideline.**
+- Vitamin D and reduced requirement for mechanical ventilation — `10.1016/j.nut.2026.113447`, *Nutrition*,
+  31 Oct.
+- Operationalizing quantitative neuromuscular monitoring, pharmacy-led framework — `10.1093/ajhp/zxag364`,
+  *AJHP*, 31 Oct. **Third neuromuscular-monitoring item.**
+
+**Noted, abstract-free (4), all DOIs read from the record:** *"Postoperative Delirium in the ICU: Not One
+Syndrome, but Many?"* — `10.1016/j.accpm.2026.101972`, **delirium thread**; *"Completing surgery after a
+grade III perioperative hypersensitivity reaction"* — `10.1016/j.accpm.2026.101973`, **allergy thread, third
+item**; *"Better aligning perioperative care with evidence in liver surgery"* —
+`10.1016/j.accpm.2026.101969`; and **perioperative intravenous fluid and chronic kidney disease, the LONG-TERM
+FOLLOW-UP of the restrictive versus liberal trial — `10.1016/j.bja.2026.08.072`, *BJA*, 31 Oct. Sibling of
+the named gap `10.1016/j.bja.2026.08.0xx` family already held; still abstract-free, second sighting of this
+thread.**
+
+**Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### Sweep log
+
+**Sized and run back to back in ONE session under the 1 November practice; first `core` call, EIGHTH
+consecutive pass.** `idlist` over `FIRST_IDATE` 1–2 Nov: **67** for pub window 31 Oct–2 Nov; **72** for
+29 Oct–2 Nov; **127** with no pub window; **28** for 2 Nov index alone. **Run at 67, pageSize 100, returning
+67 hits and 67 results.** **Window chosen FROM the stamping-lag finding — three of four papers came from the
+1 November bucket.**
+
+**`END_OF_RUN_PLACEHOLDER` held for the sixth consecutive run.**
+
+### Named gaps: 15 -> 14 (one CLOSED mid-run)
+
+**CLOSED:** the perioperative-fluid/CKD pair. `10.1016/j.bja.2026.08.066` and `10.1016/j.bja.2026.08.072` are
+both abstract-free; **the readable sibling is `10.1016/j.bja.2026.05.010`** (*BJA* 137(2), 23 Jun 2026,
+1,793 chars), now published as the 2 November brief's fifth item. **Both October records stay logged as
+abstract-free siblings, not as gaps.**
+
+**Published today as item 5:** RELIEF long-term follow-up. **No randomised difference in new/progressive CKD
+stage >=3 — 422/754 (55.97%) vs 409/766 (53.39%), adjusted OR 1.13 (0.91-1.41), implied p 0.27. BUT 831 of
+1,520 (more than half) had new or progressive CKD stage >=3 within 48 months. mITT 2,983 -> 1,670 followed up
+(56.0%) -> 1,520 analysed; 1,463 absent (49.0%).** NCT01424150.
+
+**Brief count today: FIVE items, not four** (four from the sweep plus one recovered mid-run).
+
+**STANDING PRACTICE ADDED: before logging an abstract-free record as a named gap, search its TITLE STEM across
+all dates.** Two consecutive successes — PROSPECT hallux valgus (1 Nov) and RELIEF follow-up (2 Nov).
+**Re-run this check against the remaining 14 named gaps on the next quiet day.**
