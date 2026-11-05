@@ -5862,3 +5862,85 @@ alone. **Run at 102, pageSize 150, returning 102 hits and 102 results.**
 **PRE-COMMIT SUITE: the em-nesting check fired for the first time** — `<em>` journal names inside the italic
 method-record block gave depth 2. **Fixed by removing the inner tags (the block is already italic).**
 **RULE: never put `<em>` inside the `<em>` footer blocks; journal names there go in plain text.**
+
+## 2026-11-05 (brief) — three lost runs; sweep incomplete
+
+### LOST RUNS — NOT BACK-FILLED
+
+**3 Nov guidelines watch, 4 Nov brief, 4 Nov watch: all three did not run (worker restarts).** **NOT
+back-filled — a search run today cannot be dated to a day it was not run.** The 3 Nov brief was published
+4 Nov with a dated publication notice. **The society route has not run since 2 November; run it when the
+watch next fires.**
+
+### SWEEP INCOMPLETE — HELPER DEFECT, FIX THIS FIRST
+
+**107 in-scope hits, 73 returned. `page=2` gave the same head of the list; `cursorMark=*` with
+`resultType=core` returned no `resultList`. 34 records unretrieved.**
+
+**ACTION, HIGHEST PRIORITY: rebuild the sweep as `idlist` + `cursorMark` paging for IDs, then `core` per ID.
+And add to the pre-flight: COMPARE `len(result)` against `hitCount` on every `core` call.** **The nine-day-old
+page-size check only verified that hitCount fitted the page size, never that the records arrived.**
+
+### Index baselines (for tomorrow)
+
+Two readings, **14:12:48 and 14:19:17 — every figure identical** (fifth such pair in five runs):
+
+- **Whole 49,193,995, residual 0, up 4,786 over a TWO-DAY interval** (no 4 Nov reading). `MED` 41,319,355
+  (+2,957) · `PPR` 1,278,112 (+1,944) · `PMC` **1,014,081 (−118)** · `NBK` **7 (+3)** · `CTX` 3,927 ·
+  `AGR` 1,026,549 · `PAT` 4,229,296 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624. Sum exact.
+- **Bucket 2026-11-05: 0.** **Bucket 2026-11-04: 6,381** = MED 3,120 + PMC 1,306 + PPR 1,955, exact.
+  **Bucket 2026-11-03: 6,342** (was 7,687; PMC 1,609 -> 267). **Bucket 2026-11-02: 456, MED 0, third reading.**
+- Windows: 1–30 Sep **178,410**; 1–7 Oct **27,844**; **Oct month 266,257 (−1,472 from the 1 Nov 267,729).**
+- **PMC trail: 1,013,992 · 1,013,918 · 1,014,199 · 1,014,081.** **NBK trail: 5 · 8 · 9 · 6 · 4 · 7.**
+
+### Published today (brief) — four items from 73 of 107 records
+
+1. **TTM/TTM2 heterogeneity analysis** — `10.1186/s13054-026-06414-x`, *Critical Care*, 2 Nov, **OA**.
+   **All 2,789 patients; causal forests + BART + TEM-VIP. NO heterogeneity: ITE range −1.2 to 2.1 points
+   (causal forest, p=0.99) and −0.5 to 1.5 (BART); posterior probability of hypothermia benefit 42–53%.
+   Mortality 49.4% (33 °C) vs 47.9% (normothermia).**
+2. **POAF temporal validation** — `10.21203/rs.3.rs-11295554/v1`, **PREPRINT**, 3 Nov. **Dev 347/189 events
+   (54.5%, case-enriched); temporal 167/44 (26.3%). Predicted 0.442 vs observed 0.263 (1.68x); ICI 0.173 ->
+   0.048. LAVI aOR/SD 3.19 (1.66–6.12). RF internal AUROC 0.827; frozen ridge temporal 0.723. Six-month claim
+   rests on EIGHT events (7/43 vs 1/112, OR 21.58, no interval); composite HR 3.22 (1.00–10.34).**
+3. **Early warning scores at ICU discharge, scoping review** — `10.1007/s12630-026-03211-6`, *CJA*, 2 Nov.
+   **7,977 -> 4,824 -> 58 -> 20 studies (14 adult, 6 paediatric). 17 positive, 3 null, NO RCTs. Bias highest
+   in patient selection and index-test blinding. Readmission 1–12% globally.**
+4 and 5. **The EASIX pair, both preprints, both 3 Nov** — `10.21203/rs.3.rs-11595897/v1` (stage 4 CKM,
+   **n=9,766**, HR/doubling 1.243 at day 1 -> 1.131 at day 30, Q4 vs Q1 1.660, **E-value 1.40**, eICU external
+   validation n=1,103 HR 1.121) and `10.21203/rs.3.rs-11570748/v1` (**ECMO, n=155**, HR/doubling 1.169, T3 vs
+   T1 3.347, no external validation). **63-fold size gap, near-identical HRs. Neither compares with SOFA.**
+
+### Routed to the watch (1)
+
+`10.1007/s00101-026-01753-4` — SSC 2026 vs German Sepsis Society 2025, *Die Anaesthesiologie*, 2 Nov.
+**Publish in the next guidelines watch.** Details in `source-notes.md`.
+
+### Queue after today: 58 held + 7 added = 65
+
+**None of today's items came from the queue.**
+
+**Added from today's sweep (7), DOIs read from the record where shown:** "Documented Thermoregulation
+Strategies Alone Do Not Benefit Comatose In-Hospital Cardiac Arrest Survivors" (*Crit Care Med*, 3 Nov,
+abstract-free) — **pairs with today's item 1, a TTM pair**; transcutaneous low-level vagus nerve stimulation
+for POAF prevention (*BMC Complement Med*, 6 Aug) — **pairs with the next one as a NEUROMODULATION pair**;
+perioperative non-invasive brain stimulation for POD prevention (preprint, 3 Nov); "Opening the Door for the
+New Era of Managing Sepsis-induced Coagulopathy" (*Juntendo Med J*, 7 Sep) — **THIRD SIC-thread item**;
+INR as an effect modifier of the heparin–mortality association in sepsis (preprint, 3 Nov) — **SIC thread**;
+resuscitation and 30-day mortality in acute type A aortic dissection (*ICVTS*, 2 Nov); extubation failure and
+duration of respiratory support post-extubation in children (*Pediatr Crit Care Med*, 3 Nov).
+
+**Noted, abstract-free, all *Critical Care Medicine* 3 Nov:** hypercapnia in ventilated sepsis; dual
+protective mechanisms of neostigmine in septic shock; certainty of evidence for inhaled antibiotics in VAP;
+family CAM scoring in delirium screening. **Also *Critical Care* 2 Nov: deconstructing cardiovascular
+heterogeneity in septic shock (V0-LV invariance, vasopressin mismatch); coronary microvascular dysfunction in
+sepsis-associated myocardial injury.**
+
+**Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### Sweep log
+
+**Sized first as usual: 32 (idx 4–5 Nov, pub 3–5 Nov), 41 (idx 3–5 Nov, pub 3–5 Nov), 107 (idx 4–5 Nov, no
+pub window). Ran the 107 at pageSize 150 — RETURNED 73. INCOMPLETE; declared on the page.**
+
+**`END_OF_RUN_PLACEHOLDER` held for the eighth consecutive run.**

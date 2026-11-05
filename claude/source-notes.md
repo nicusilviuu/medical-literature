@@ -8487,3 +8487,112 @@ Summary) and `10.1001/jama.2026.7477` — **the same trial has at least four rec
 found Bayesian analyses in EIGHTEEN prior entries.** **The counter-case rule — before any sentence containing
 first, only, never or an ordinal, grep for the COUNTER-case — working as intended, for the first time as a
 pre-publication catch rather than a post-publication correction.**
+
+## 2026-11-05 (brief) — three lost runs, an incomplete sweep, and a helper defect to fix
+
+**SESSION RELIABILITY. Four worker restarts since Monday. THREE SCHEDULED RUNS LOST: the 3 November
+guidelines watch, the 4 November brief, the 4 November watch.** The 3 November brief was stranded uncommitted
+by a restart and published 4 November with a dated publication notice on its own page.
+
+**RULE, and it is the important one: DO NOT BACK-FILL A MISSED RUN.** A society search or an index sweep run
+today returns today's state; writing it into a page dated 3 or 4 November would date the evidence to a day on
+which it was not gathered. **`_guidelines/2026-11-03.md`, `_briefs/2026-11-04.md` and
+`_guidelines/2026-11-04.md` will not exist, and the absence IS the record.** **What IS recoverable: widen the
+next sweep to span the unswept index dates** — today's covered 4 and 5 November, so the literature itself was
+not lost.
+
+**AND: when a page is published later than its date, say so ON THE PAGE** — a publication notice stating the
+date it carries, the date it was published, that every figure was measured at the stated instants, and that
+the index readings will not match a query run on the publication date.
+
+### HELPER DEFECT — `core` retrieval is capped and paging does not work as assumed
+
+**TODAY'S SWEEP IS INCOMPLETE AND THE PAGE SAYS SO. The index reported 107 in-scope records and the
+`epmc … core 150` call returned 73.** Two recovery attempts failed:
+
+- **`page=2` returned the same head of the list**, not the continuation.
+- **`cursorMark=*` with `resultType=core` returned a body with NO `resultList`** — the helper's hitCount guard
+  would not even have caught this as an error shape.
+
+**So 34 records were not retrieved and the day's items were selected from 73 of 107.**
+
+**FIX TO IMPLEMENT (next piece of work): page with `idlist` + `cursorMark` to collect IDs, then fetch `core`
+records per ID.** `idlist` is the resultType that has always worked for counting; test whether it also pages.
+**Until then: after every `core` sweep, COMPARE `len(result)` AGAINST `hitCount` and report the shortfall.
+The page-size check I have run for nine days only ever verified that hitCount fitted the page size — it never
+verified that the records actually arrived.** **That is a nine-day-old blind spot in my own pre-flight check.**
+
+### A fourth distinct same-day bucket behaviour in four days
+
+| Current-day bucket, read early afternoon | Total | MEDLINE |
+| --- | --- | --- |
+| 2 November | 456 | **0** |
+| 3 November | 7,687 | **5,188** |
+| 5 November | **0** | **0** |
+
+**Correction 12 (2 Nov) is further vindicated: any rule about where a batch lands would have been wrong
+again.** **And the 2 November bucket is still exactly 456 with zero MEDLINE at a THIRD reading — that calendar
+day has no MEDLINE first-index dates and has not acquired any in three days.** A hole, settled.
+
+### Analytic rules added today
+
+- **THIRD CONSECUTIVE BRIEF in which a paper builds a subgroup story and then refuses it**, and today's is the
+  strongest because the analysis was BUILT to find heterogeneity. **TTM + TTM2, all 2,789 patients, causal
+  forests and BART with a treatment-effect-modifier importance step: individualised mortality risk differences
+  span only 3.3 and 2.0 percentage points, and posterior probabilities for hypothermia benefit run 42–53%,
+  straddling the coin flip.** **RULE: an absence of effect modification within a well-specified search space,
+  using methods chosen to detect it, is a MUCH stronger claim than an ordinary null — and it is still limited
+  to the variables the trials recorded.** Quote the authors' own hedge ("available clinical correlates").
+- **CASE-ENRICHED DEVELOPMENT IS A CALIBRATION DEFECT WITH A MEASURABLE SIZE.** 54.5% event rate in
+  development against 26.3% in the temporal cohort gave **mean predicted 0.442 vs observed 0.263, a factor of
+  1.68; intercept-only recalibration cut the integrated calibration index 72%, from 0.173 to 0.048.**
+  **SAME SHAPE as the 1 November perioperative infection audit (CITL −1.02, odds 2.8x, fixed by common
+  recalibration). Two independent papers in five days: the defect is in the INTERCEPT, the ranking is sound.**
+- **THE INTERNALLY BEST MODEL IS NOT THE ONE TO DEPLOY.** Random forest AUROC 0.827 internally; the frozen
+  preoperative RIDGE model best temporally at 0.723. **Eleven classifiers ranked one way inside the
+  development sample and another under temporal shift.** **Credit where it is due: the authors HYPOTHESISED
+  this in advance** (chronic-substrate marker more transportable than perioperative stress variables;
+  regularised models generalising better). **A preprint that states its generalisation hypothesis and then
+  confirms it is doing something different from one reporting the best number it found.**
+- **"ASSOCIATED WITH" vs "USED TO DECIDE" — the question a scoping review can and cannot answer.**
+  Early warning scores at ICU discharge: **20 studies, 17 positive, THREE null, and NO randomised trials.**
+  85% positive for an association nobody doubts. **RULE: when every study is observational, the finding is the
+  absence of trials, not the proportion positive.** Also: risk of bias was highest in **patient selection and
+  index-test blinding** — precisely the domains that manufacture an association between a severity score and a
+  severity-driven outcome. And **a 1–12% global readmission rate is a six-fold spread, which means the
+  threshold cannot be shared between units.**
+- **AN E-VALUE OF 1.40 UNDERCUTS THE USE A PAPER PROPOSES.** EASIX in 9,766 stage-4 CKM patients: E-value
+  **1.40 (1.29 at the bound)** — an unmeasured confounder with a risk ratio of only 1.40 to both exposure and
+  outcome explains it away. **Compare the 3 November fluid emulation at 2.60.** **In a critically ill cohort,
+  illness severity is associated with everything, so 1.40 is a very low bar.** Quartiles 2 and 3 did not
+  differ from quartile 1, so the signal sits only in the top quartile — where unmeasured severity
+  concentrates.
+- **ABSENCE OF NON-LINEARITY IN A SMALL COHORT IS ABSENCE OF POWER, NOT A CONTRARY FINDING.** The 9,766-patient
+  EASIX study found non-linearity (p 0.002 to <0.001) and time-varying attenuation (HR 1.243 at day 1 falling
+  to 1.131 at day 30, γ = −0.0277); **the 155-patient ECMO study found a linear, constant association
+  (p for non-linearity 0.745).** **The two would be read as disagreeing and they do not disagree.**
+- **ASK WHAT A NOVEL INDEX ADDS TO THE SCORES ALREADY RECORDED.** Neither EASIX preprint compares with SOFA,
+  reports incremental discrimination, or runs a decision curve. **Cheap and reproducibly associated with death
+  is not the same as useful.**
+
+### A publication-behaviour finding
+
+**TWO preprints on the SAME index, from the SAME database, posted the SAME day, with near-identical titles —
+and they are NOT duplicates.** `10.21203/rs.3.rs-11595897/v1` (stage 4 CKM, n=9,766, with eICU external
+validation) and `10.21203/rs.3.rs-11570748/v1` (ECMO, n=155). **Cohorts differ 63-fold, median index values
+5.8-fold, baseline mortality 2.2-fold — and the hazard ratios per doubling are 1.243 and 1.169.**
+
+**THE TRANSFERABLE OBSERVATION: the same database, the same index and the same analytic recipe will generate
+a publishable association in almost any critically ill subpopulation anyone cares to define. Two appeared on
+one day.** **Record this before reading the next MIMIC-IV biomarker preprint.**
+
+### Routed to the guidelines watch
+
+**[New sepsis guidelines: Surviving Sepsis Campaign 2026 and German Sepsis Society 2025 — competing or
+complementary?]** — `10.1007/s00101-026-01753-4`, *Die Anaesthesiologie*, 2 Nov, 2,277-char abstract.
+**A structured comparison of two sepsis guidelines: guideline-tracking material under the 30 October routing
+rule.** **First document here comparing SSC 2026 against a NATIONAL adaptation (DSG 2025).** Names as new in
+SSC 2026: **graded sepsis terminology (definite/probable/possible/unlikely), MAP target 60–65 mmHg for
+patients aged ≥65, prehospital treatment initiation, source control within 6 h.** Agreement on early
+anti-infectives, balanced crystalloids, norepinephrine first-line, capillary refill time, and prolonged or
+continuous beta-lactam infusion. **SIXTH document logged here commenting on SSC 2026.**
