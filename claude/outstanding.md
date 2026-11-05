@@ -5749,3 +5749,116 @@ stage >=3 — 422/754 (55.97%) vs 409/766 (53.39%), adjusted OR 1.13 (0.91-1.41)
 **STANDING PRACTICE ADDED: before logging an abstract-free record as a named gap, search its TITLE STEM across
 all dates.** Two consecutive successes — PROSPECT hallux valgus (1 Nov) and RELIEF follow-up (2 Nov).
 **Re-run this check against the remaining 14 named gaps on the next quiet day.**
+
+## 2026-11-03 (brief) — correction 12 published; fresh container survived
+
+### Index baselines (for tomorrow) — AND A WITHDRAWN RULE
+
+**THE 2 NOVEMBER STAMPING-LAG RULE IS WITHDRAWN (correction 12). Do NOT predict tomorrow's bucket.** A bucket
+reading describes that bucket at that instant. **Pick tomorrow's sweep window by SIZING it, not by predicting
+where the batch will land.**
+
+Two readings, **14:05:53 and 14:11:42 — every figure identical** (fourth such pair in four days):
+
+- **Whole 49,189,209, residual 0, up 6,330.** `MED` **41,316,398 (+5,176)** · `PPR` 1,276,168 (+874) ·
+  `PMC` 1,014,199 (+281) · `NBK` **4 (−2)** · `CTX` 3,927 (+1) · `AGR` 1,026,549 · `PAT` 4,229,296 ·
+  `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624. Five changes sum to 6,330 exactly.
+- **Bucket 2026-11-03: 7,687** = MED **5,188** + PMC **1,609** + PPR 889 + CTX 1. Exact. **FULL BATCH
+  SAME-DAY.**
+- **Bucket 2026-11-02: 456 — UNCHANGED, MED STILL 0.** A calendar day with zero MEDLINE records.
+- **Bucket 2026-11-01: 3,527** (was 3,897; PMC 395 -> 29, MED 3,346 -> 3,342, PPR 156 unchanged).
+- **Bucket 2026-10-31: 6,125** (was 6,957; PMC 1,215 -> 389, MED 4,837 -> 4,831).
+- Windows: 1–30 Sep **178,411**; 1–7 Oct **27,845**; **Oct month 266,346 (−974 overnight, −1,383 from the
+  267,729 published 1 Nov).**
+- **PMC trail: 1,013,660 · 1,013,991 · 1,013,992 · 1,013,918 · 1,014,199.** **NBK trail: 5 · 8 · 9 · 6 · 4.**
+
+**RESTAMPING IN MOTION: two older buckets shed 1,192 PMC records while PMC's total ROSE 281 and today's bucket
+holds 1,609.** Not closed exactly — would need a scan of every bucket.
+
+### Published today (brief) — five items
+
+1. **Sodium bicarbonate for metabolic acidosis, Bayesian meta-analysis** — `10.1007/s00134-026-08602-3`,
+   *ICM*, 2 Nov. **4 RCTs / 1,544 patients. Mortality RR 0.94 (CrI 0.73–1.22), posterior probability of
+   benefit 72.1%. RRT initiation RR 0.74 (0.59–0.98), posterior probability 97.2% — INCONSISTENT with an
+   equal-tailed 95% CrI ending at 0.98, which implies >97.5%. CrI log-asymmetric by 1.24.** PROSPERO
+   CRD420251246519.
+2. **ECPR long-term survival, two centres** — `10.1016/j.resuscitation.2026.111379`, *Resuscitation*, 2 Nov.
+   **728 treated, 211 (29.0%) to discharge (138 Minnesota + 73 Prague). Among survivors 76.9% at 1 yr, 67.2%
+   at 5 yr. UNCONDITIONAL 5-yr survival = 19.5%, about 1 in 5. CPC 1–2 78.7% at discharge -> 93.4–94.2% among
+   survivors — SURVIVORSHIP, not recovery. No patients lost to follow-up. 68/211 (32.2%) reached 5 yr.
+   Age gradient 91.6% (18–39) to 52.9% (>70).**
+3. **Coagulation-fibrinolysis trajectory phenotypes in sepsis** — `10.1055/a-2994-8962`,
+   *Thromb Haemost*, 2 Nov. **Training 1,672 + prospective multicentre validation 1,393 = 3,065. Compensate
+   51.9% / Coupled 35.5% / Consumptive 12.6% (sums to 100.0). Consumptive 28-day mortality 52.1%; adjusted
+   HR 2.69 training -> 3.78 validation, NO INTERVALS for either. PT–D-dimer Z-balance score.**
+4. **Rebound pain and unscheduled healthcare after distal radius fixation** — `10.1177/15589447261496339`,
+   *Hand*, 2 Nov. **619 -> 417 (32.6% excluded). Adjusted RR 4.0 (1.3–12.1) day 1, 3.9 (1.4–10.5) by day 2,
+   3.2 (1.4–7.5) by day 3 — NESTED windows, not three results. No adjustment for fracture severity or
+   baseline pain. SIXTH rebound-pain item and the FIRST to measure a system cost.**
+5. **Wearable cardiac arrest detection, systematic review** — `10.1016/j.resuscitation.2026.111378`,
+   *Resuscitation*, 2 Nov. **6,344 screened -> 13 studies (0.2%); participants 18–1,423. Sensitivity
+   43.8–100%, ten of thirteen >=90%. FALSE POSITIVES "multiple per day" to "one per twenty-one user-years" —
+   about 7,700x at one a day, 15,300x at two. Nine of thirteen use photoplethysmography; one uses ECG.**
+   QUADAS-2, PRISMA, OSF protocol.
+
+### DEDUPE REJECTIONS TODAY (keep this list — the dapagliflozin cluster will re-surface)
+
+**REJECTED as already published 10 October:** `10.7326/annals-26-04076-jc` (*Ann Intern Med* ACP Journal Club,
+95-char abstract) — a summary of **`10.1001/jama.2026.9268`**, the dapagliflozin cardiac-surgery AKI RCT
+already in the archive. **The same trial has at least FOUR records across three journals:**
+`10.1001/jama.2026.9268` (the trial), `10.1001/jama.2026.9483` (Research Summary),
+`10.1001/jama.2026.7477`, `10.7326/annals-26-04076-jc` (Journal Club), plus the German commentary
+`10.1007/s00101-026-01760-5` held in the queue since 31 Oct. **Do not re-admit any of them.**
+
+### Queue after today: 52 held + 6 added = 58
+
+**None of today's five came from the queue.** **Five queue items re-surfaced in today's sweep and remain held**
+(IABP timing after CABG, ACEi/ARB restart, transportability/dataset shift, beta-blockers and MACCE, J-shaped
+net fluid balance) — **and two queue items were PUBLISHED yesterday**, so the sweep window overlap is now a
+known property, not a surprise.
+
+**Added from today's sweep (6), every DOI read from the record in this session:**
+
+- Long-term outcomes of endoscopic vs open vein harvesting for CABG, 10-year —
+  `10.1161/circulationaha.126.083153`, *Circulation*, abstract-free. **Vein-graft thread, third item.**
+- Post-resuscitation ST-segment elevation and coronary angiographic phenotypes —
+  `10.1016/j.resuscitation.2026.111380`, *Resuscitation*, 2 Nov.
+- Statewide trends in morbidity and mortality in octogenarians undergoing isolated CABG —
+  `10.1016/j.athoracsur.2026.10.016`, *Ann Thorac Surg*, 2 Nov.
+- Racial and ethnic differences in paediatric perioperative cardiac arrest survival —
+  `10.1542/peds.2026-077013`, *Pediatrics*, 3 Nov.
+- Vasoactive-adjusted shock index for risk stratification in adult sepsis — `10.1097/shk.0000000000002958`,
+  *Shock*, 2 Nov.
+- V-V ECMO for refractory near-fatal asthma, 12-year single centre — `10.1016/j.rmed.2026.109265`,
+  *Respir Med*, 2 Nov.
+
+**Noted, abstract-free (3), DOIs read from the record:** a methodological note on dexmedetomidine and
+mechanical ventilation after cardiac surgery — `10.1213/ane.0000000000008384`, **dexmedetomidine thread**;
+"Estimand Ambiguity, Time to Surgery, and the Limits of Causal Inference in Anesthesia Comparisons" —
+`10.1213/ane.0000000000008382`, **pairs with today's item 4 and the 2 November target-trial item**; and the
+SHORT-duration antibiotic RCT for sepsis — `10.1136/bmjopen-2026-119173`, *BMJ Open*, 2 Nov.
+
+**NOTE ON A SECOND CAUGHT NEAR-MISS: I began writing `10.1016/j.resuscitation.2026.111377` as a "family" DOI
+for the post-resuscitation item from the pattern of its neighbours. It is `…111380`. Second consecutive day
+this slip was caught before publishing. THE RULE STANDS AND IS NOT OPTIONAL: never write a DOI that was not
+read from the record in this session.**
+
+**A comment-and-reply pair held as a set:** "Can full-stay lactate burden predict ICU mortality? The
+importance of a defined prediction time" (`10.1186/s40560-026-00941-z`) and its reply
+(`10.1186/s40560-026-00959-3`), both *J Intensive Care*, 3 Nov. **Both are Letters with real methodological
+content — a landmark-time critique of a time-weighted average and the authors' post hoc landmark reanalysis.
+Directly continues the 1–2 November prediction-model thread.**
+
+**Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### Sweep log
+
+**Sized and run back to back; first `core` call, NINTH consecutive pass.** `idlist` over `FIRST_IDATE`
+2–3 Nov: **102** for pub window 1–3 Nov; **106** for 31 Oct–3 Nov; **176** no pub window; **148** for 3 Nov
+alone. **Run at 102, pageSize 150, returning 102 hits and 102 results.**
+
+**`END_OF_RUN_PLACEHOLDER` held for the seventh consecutive run.**
+
+**PRE-COMMIT SUITE: the em-nesting check fired for the first time** — `<em>` journal names inside the italic
+method-record block gave depth 2. **Fixed by removing the inner tags (the block is already italic).**
+**RULE: never put `<em>` inside the `<em>` footer blocks; journal names there go in plain text.**

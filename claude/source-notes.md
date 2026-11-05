@@ -8376,3 +8376,114 @@ mortality in sepsis observationally; **RELIEF is the randomised evidence on the 
 population and its long-term renal outcome is flat.** **Fluid strategy has real short-term renal
 consequences (RELIEF's original AKI result) and no detectable four-year randomised effect. What is not flat,
 and what nobody randomised, is the 56%.**
+
+## 2026-11-03 (brief) — CORRECTION 12: the stamping-lag rule and its prediction are both withdrawn
+
+**I published an inference and a prediction yesterday. Both are wrong, and the falsification took one day.**
+
+**The inference (2 Nov):** the index-date stamping lag is a property of the SOURCE — preprints same-day,
+MEDLINE and PMC into the previous day's bucket. **The prediction (2 Nov notes):** *expect today's bucket of
+456 to grow by roughly a MEDLINE batch overnight.*
+
+| Bucket | 2 Nov | 3 Nov | Change |
+| --- | --- | --- | --- |
+| **2 November** | **456** (MED 0) | **456** (MED **still 0**) | **0** |
+| 1 November | 3,897 | **3,527** | **−370** |
+| **3 November** | — | **7,687** (MED **5,188**) | — |
+
+**Three days, three behaviours: 1 Nov's batch stamped to 1 Nov and seen a day late; 2 Nov had NO batch
+stamped at all and still has zero MEDLINE records; 3 Nov's batch stamped SAME-DAY.** **2 November is a HOLE,
+not a lag** — zero MEDLINE between a day holding 3,342 and a day holding 5,188.
+
+**CORRECTION 12, and it is the SIXTH member of the over-generalisation family** (corrections 4–8, 11).
+**REPLACEMENT STATEMENT, and it is deliberately weaker than what it replaces: a bucket reading describes that
+bucket at that instant. It licenses no rule about how stamping works and no prediction about tomorrow.**
+**The only durable statement remains the 1 November one: a first-index date is restamped, so a bucket is the
+current contents of a date label.**
+
+**RULE: do not publish a prediction derived from two readings of one series.** The 1 November finding rested
+on a 31-day scan plus an airtight subtraction; the 2 November rule rested on two readings of one bucket. **The
+difference in evidential weight was visible at the time and I did not act on it.**
+
+### What survives, and is better than the discarded rule: restamping caught in motion
+
+**PMC's TOTAL rose 281 overnight while PMC's count fell in two older buckets: 31 Oct 1,215 -> 389 (−826) and
+1 Nov 395 -> 29 (−366), losing 1,192 between them, and today's bucket holds 1,609 PMC records.** **Records are
+being MOVED FORWARD, not added.** **I did not close that arithmetic exactly (it needs a scan of every bucket)
+and said so rather than asserting a figure.**
+
+**Month aggregate drift, now two days: October `FIRST_IDATE` total 267,729 (1 Nov) -> 267,320 (2 Nov) ->
+266,346 (3 Nov). Down 1,383 in two days.** **Sunday's rule to date every aggregate and say it will not
+reproduce is vindicated.**
+
+### Analytic rules added today
+
+- **A Bayesian posterior probability is a better report of a null than a p-value.** Bicarbonate mortality:
+  **RR 0.94 (95% CrI 0.73–1.22), posterior probability of benefit 72.1%.** A frequentist report would give
+  p ≈ 0.64 and the words "no difference". **72.1% is what the evidence actually says: rather more likely than
+  not, nowhere near enough to act on.** Prefer the posterior probability when it is given.
+- **NEW AND PRECISE: check a stated posterior probability against its own credible interval.** A 95%
+  EQUAL-TAILED CrI whose upper bound is 0.98 places **more than 97.5%** of the posterior below 1 by
+  construction. **The paper states 97.2%, which is LESS.** Three explanations, none adjudicable from the
+  abstract: a highest-density rather than equal-tailed interval; a "benefit" threshold other than no effect;
+  or rounding that crosses. **The CrI is log-asymmetric by 1.24, which makes the first most likely but is an
+  inference.** **RULE: a Bayesian paper must state its interval type and its benefit threshold; when it does
+  not, report the inconsistency and the candidate explanations, and do not pick one.**
+- **COMPOSE CONDITIONAL SURVIVAL FRACTIONS THAT A PAPER KEEPS APART.** ECPR: **29.0% survived to discharge;
+  67.2% of THOSE alive at 5 years; so unconditional 5-year survival from ECPR is 0.290 x 0.672 = 19.5%, about
+  one in five** (22.3% at one year). **"Two-thirds alive at five years" is true and conditional on an event
+  seven patients in ten never reach. The composed number is the one a patient or a commissioner needs and it
+  was not in the abstract.**
+- **"REMAINED HIGH" IS A SURVIVORSHIP VERB.** CPC 1–2 was 78.7% at discharge and 93.4–94.2% among survivors
+  beyond one year. **Nobody's category improved; the worse categories died**, most within 90 days of
+  discharge, which the same sentence says. **Watch for a proportion rising because mortality selected its
+  denominator.**
+- **AN EFFECT ESTIMATE THAT GROWS ON EXTERNAL VALIDATION IS UNEXPLAINED, NOT REASSURING.** Sepsis coagulopathy
+  phenotype: **adjusted HR 2.69 (training, n=1,672) -> 3.78 (external validation, n=1,393), a factor of
+  1.41 — the opposite direction to optimism shrinkage.** Three readings available (case mix, differing
+  adjustment sets, imprecision) and **none choosable because NO INTERVALS ARE REPORTED for either HR.**
+  **Fifth instance in nine days of a named outcome reported without the quantity that makes it
+  interpretable.**
+- **NESTED CUMULATIVE WINDOWS ARE NOT INDEPENDENT RESULTS.** Rebound pain: adjusted RR **4.0 on day 1, 3.9
+  within 2 days, 3.2 within 3 days** over the same 417 patients. **The attenuation is dilution of a day-one
+  signal by two quieter days, not a decaying effect**, and presenting three nested windows makes the evidence
+  look broader than it is.
+- **FOR AN ALERTING DEVICE A THIRD QUANTITY GOVERNS: false alarms per user-year.** Wearable arrest detection:
+  **sensitivity 43.8–100% (a factor of 2.3, ten of thirteen above 90%) against false positives from "multiple
+  per day" to "one per twenty-one user-years" — a ratio of about 7,700 at one a day, 15,300 at two. Four
+  orders of magnitude in the quantity that decides deployability, reported as a PHRASE while sensitivity is
+  reported to one decimal.** **Extends the discrimination/calibration rule: discrimination is about
+  individuals, calibration about groups, and alarm burden about whether the device stays on the wrist.**
+- **CONFOUNDING BY INDICATION RUNNING WITH THE FINDING.** The rebound-pain cohort adjusted for age, gender,
+  mechanism, time to surgery and intraoperative local anaesthetic — **not for fracture severity or baseline
+  pain.** **Patients who get a block are plausibly the ones expected to hurt more, which produces the result
+  with no rebound effect at all.** **Always ask which direction the indication bias runs.**
+
+### Two threads joined
+
+**SEPSIS COAGULOPATHY, two 2026 proposals that share ONE variable.** **SIC-2** (routed to the watch 1 Nov)
+removes the organ-failure score and keeps **platelet count + PT-INR** — static, two variables, simpler.
+**Today's paper goes the other way: PT + D-dimer measured DAILY for seven days, trajectory-modelled, reduced
+to a Z-balance score.** **One makes the measurement simpler, one makes it longitudinal.** Neither has an
+anticoagulant therapy with established benefit to act on, which both acknowledge.
+
+**SODIUM BICARBONATE, two indications 18 days apart.** The *JAMA* in-hospital cardiac arrest RCT (published
+here 16 Oct: 913 randomised, null, alkalosis and hypernatraemia) and today's metabolic-acidosis
+meta-analysis (4 RCTs, 1,544 patients; mortality null at 72.1% posterior probability, RRT initiation RR 0.74
+at 97.2%). **The arrest trial CANNOT be in the meta-analysis: it published 1 August 2026 and the updated
+search closed 2 April 2026.** **Different indication anyway — the exclusion is correct.**
+
+### Dedupe did real work for a THIRD consecutive day, and a novelty claim was removed
+
+**The sweep's most promising-looking item was an *Annals of Internal Medicine* structured abstract reporting
+that perioperative dapagliflozin reduced AKI after elective cardiac surgery** (`10.7326/annals-26-04076-jc`,
+95 characters). **It is an ACP Journal Club summary of the *JAMA* randomised trial this archive published on
+10 October**, which it quotes at 392 patients per arm. **RULE: a structured-abstracting service re-surfaces a
+trial WEEKS after its primary publication, with a new DOI, a new journal and a 95-character abstract. Only a
+DOI-and-content dedupe distinguishes it from a new paper.** Also found: `10.1001/jama.2026.9483` (Research
+Summary) and `10.1001/jama.2026.7477` — **the same trial has at least four records across three journals.**
+
+**AND: a drafted novelty claim that a Bayesian meta-analysis was new to this archive was REMOVED after a grep
+found Bayesian analyses in EIGHTEEN prior entries.** **The counter-case rule — before any sentence containing
+first, only, never or an ordinal, grep for the COUNTER-case — working as intended, for the first time as a
+pre-publication catch rather than a post-publication correction.**
