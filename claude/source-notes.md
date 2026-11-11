@@ -8596,3 +8596,105 @@ SSC 2026: **graded sepsis terminology (definite/probable/possible/unlikely), MAP
 patients aged ≥65, prehospital treatment initiation, source control within 6 h.** Agreement on early
 anti-infectives, balanced crystalloids, norepinephrine first-line, capillary refill time, and prolonged or
 continuous beta-lactam infusion. **SIXTH document logged here commenting on SSC 2026.**
+
+## 2026-11-10 and 2026-11-11 — two index stalls with DIFFERENT signatures, and the test that separates them
+
+**The 10 November notes were owed from a restart-interrupted run and are combined here with 11 November's.**
+
+### THE DISCRIMINATING TEST, and it is the most valuable thing built this month
+
+**Publication dates are NOT restamped; index dates are.** That asymmetry, established 1–3 November, is what
+makes the following possible. **Build the test to PROVE a freeze and it also DISPROVES a freeze of the wrong
+kind — which is a better test than one that only confirms.**
+
+| Query, all sources | 8 Nov | 10 Nov | 11 Nov |
+| --- | --- | --- | --- |
+| Whole database | 49,193,995 | **49,220,380** | 49,220,380 |
+| First-index date in the window | 0 | back-filled | **0** |
+| **Publication date in the window** | **0** | **4,890** | **10 (37 over 9–11 Nov)** |
+
+- **8 November: zero by index date AND zero by publication date -> AN ABSENCE OF RECORDS.**
+- **11 November: zero by index date, 37 by publication date, whole total unchanged in 24 h -> AN ABSENCE OF
+  STAMPING.** Those 37 were already present, stamped to 9 Nov or earlier by the 10 Nov burst.
+
+**RULE: on any apparent freeze, run BOTH queries. Index-date-zero alone cannot distinguish "nothing arrived"
+from "nothing was stamped".**
+
+### The 10 November back-fill, and what it answered
+
+**The three empty days were back-filled ONTO THEIR OWN DATES: 6 Nov 0 -> 5,527, 7 Nov 0 -> 11,562, 8 Nov
+0 -> 3,576 — 20,665 records.** Whole database +26,385; **the publication-date query went 0 -> 4,890.**
+**So the 5–9 November pause was in DELIVERY and the backlog kept its dates.** That answered one of the three
+things the 8 November entry refused to assert. **Cause and start time remain unanswered and are not guessed
+at.** **The window drift stopped during the freeze and restarted with it — then stopped AGAIN on 11 Nov.**
+
+**BURST CHARACTERISATION, stated with the correction-12 caveat attached:** six days, two stalls, one burst of
+20,665 in between; **the index appears to move in bursts rather than continuously.** **This is a description
+of TWO OBSERVED CYCLES. It is not a mechanism and not a prediction. Correction 12 was earned by generalising
+from two readings of one bucket; two cycles of a different phenomenon license no rule either.**
+
+### Analytic rules added
+
+- **NEW AND IMPORTANT: READ THE PREDICTION INTERVAL, not only the confidence interval, whenever a
+  random-effects meta-analysis reports one.** Cardiac-index GDT: **OR 0.59 (CI 0.45–0.78, excludes the null)
+  with PI 0.20–1.74 (spans 8.7-fold, CROSSES the null), I² 62.9%.** **The CI asks where the average true
+  effect lies; the PI asks what the NEXT trial in the next hospital should expect.** **Most meta-analyses do
+  not report a PI — this is the first in roughly twenty published here to give one in its abstract — and
+  where it is absent with substantial I², the CI is being read as though heterogeneity were zero.**
+  **Also flag the internal inconsistency: that paper graded certainty HIGH while stating the benefit may not
+  be consistent across settings. GRADE's inconsistency domain exists to downgrade exactly this.**
+- **NEW: ASK WHETHER THE DRUG CAN MOVE THE ENDPOINT WITHOUT TOUCHING THE ORGAN.** The *Ann Thorac Surg*
+  review of 33 cardiac-surgery AKI trials across 22 years names it as a recurrent failure mode: **"direct
+  drug effects on creatinine or urine output that mimic or mask injury."** **And the field is SPLIT BY ITS
+  ENDPOINT: short-term creatinine endpoints produced the positive signals, 90-day major-adverse-kidney-event
+  composites produced the negatives, and NO AGENT HAS BENEFITED BOTH.** **Before crediting any
+  kidney-protection trial, ask which of the two literatures it belongs to.** **This applies directly to the
+  dapagliflozin trial published here 10 October: an SGLT2 inhibitor alters tubular handling BY DESIGN.** Not
+  a reason to discount it — the question its endpoint cannot answer.
+- **NEW: A NON-INFERIORITY TRIAL THAT OVERSHOOTS ITS MARGIN BY A LARGE FACTOR WAS DESIGNED FOR THE WRONG
+  QUESTION.** Remimazolam vs propofol for TAVI: **margin 2 minutes, observed difference 11.1 minutes —
+  5.6-fold.** **Credit the authors for labelling superiority POST HOC rather than claiming it.**
+- **NEW: RECONSTRUCT THE STANDARD ERROR AND ASK WHETHER THE PRECISION IS PLAUSIBLE FOR THE POPULATION.**
+  That trial's 1.6-minute interval on an 11.1-minute difference implies **SE ≈ 0.41 minutes** from 76
+  patients, with SDs of 1.5 and 2.0 minutes on emergence in 65–80-year-olds having structural heart
+  intervention. **Emergence times that tight are not what most units see; ask for the measurement protocol
+  before transporting the number.** **And the assessor who recorded the primary outcome was UNBLINDED on a
+  subjective endpoint — disclosed, and the most consequential limitation.**
+- **NEW: A PROTECTIVE LOW-EXPOSURE CATEGORY BREAKS A PER-UNIT ESTIMATE.** Cardiac-arrest burdens: continuous
+  models gave OR 1.71 per 10 mmHg hypoxaemia burden, **but the categorical analysis put the LOW-exposure
+  group BELOW the no-exposure group (0.68, 0.47–0.98, excluding one)**, with formally tested non-linearity for
+  hypocapnia (p = 0.014). **A monotonic exposure-response and a protective low category cannot both describe
+  one causal relation.** **And "no exposure" is not a neutral reference here: zero hypoxaemia burden over 24 h
+  post-arrest is constituted by a management decision as much as by physiology.** **Interrogate the reference
+  category whenever it is "none".**
+- **NEW: COMPUTE THE REVERSE CONDITIONAL.** Paediatric extubation failure: the abstract gives **28% of
+  failures had stridor**; the clinician needs **173 of 874 children with stridor failed = 19.8%**, so four in
+  five with stridor do not need reintubation. **Materially different message, computable, absent from the
+  abstract.** Add to the PPV/NPV family of rules.
+- **DEFINITIONAL MISMATCH TO WATCH: 48 vs 72 HOURS for reintubation.** This paper uses 48 h (6.7% failure);
+  **yesterday's core outcome set made "no reintubation within 72 hours" the second tier of its hierarchical
+  endpoint.** **A field that has just agreed 72 h cannot pool the 48 h literature without saying which — the
+  exact heterogeneity the core outcome set was built to end.**
+
+### Guidelines-watch rules from 10 November
+
+- **THE TWO BRANCHES OF THE 22 OCTOBER FORMAT RULE, SHOWN AS A PAIR ON ONE PAGE.** **ILCOR 2026 claims GRADE
+  and deposits a 989-character abstract with no recommendation, no certainty rating and no knowledge gap —
+  the WITHHOLDING branch** (second clear instance after the Brazilian bloodless-surgery guideline). **The
+  ANZICS percutaneous tracheostomy consensus claims NO grading scheme and says why — the CATEGORY-DIFFERENCE
+  branch.** **Keep the pair; it is the clearest teaching case of the rule.**
+- **A FIFTH DELPHI THRESHOLD, AND THE STRICTEST: TWO-SIDED.** Core outcome set for ventilation trials in
+  acute brain injury: **>70% rating an outcome "critical" AND ≤15% rating it "not important".** Catalogue:
+  **70% (inguinal, 1 Nov) · 75% (SMA, 2 Nov) · 90/80% (ESICM, Feb 2025) · two-sided (10 Nov).**
+  **A two-sided rule FAILS OUTCOMES THAT POLARISE A PANEL, which a single threshold hides.**
+- **A HIERARCHICAL COMPOSITE RESOLVES TIES BY WHAT MATTERS MOST rather than summing dissimilar events** —
+  ICU survival, then no reintubation at 72 h, then days alive without ventilation. **Contrast OPTIPAM's
+  death-or-AKI-or-neurological composite.** **And that process OVERRULED ITS OWN VOTE on three outcomes for
+  disease-specificity and applicability, which is a consensus process working.**
+- **FOURTH SURFACING OF A PRINT ISSUE BY THE SOCIETY ROUTE.** The SFAR/SOFMER withhold/withdraw guidance
+  dated November 2026 is the print issue of `10.1016/j.accpm.2026.101892`, published here 19 October. **Now a
+  known property of the route, not a surprise.**
+- **SSC 2026 now has EIGHT commentaries in this archive**, and the pattern across them is consistent:
+  **the disagreements are about DEFINITIONS AND TRIGGERS, not drugs.**
+- **THE DEDUPE'S TWO HITS ON 10 NOVEMBER WERE MY OWN ROUTING NOTES** — sixth time it has done consistency
+  work rather than duplicate-catching.

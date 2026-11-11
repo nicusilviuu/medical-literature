@@ -5944,3 +5944,74 @@ sepsis-associated myocardial injury.**
 pub window). Ran the 107 at pageSize 150 — RETURNED 73. INCOMPLETE; declared on the page.**
 
 **`END_OF_RUN_PLACEHOLDER` held for the eighth consecutive run.**
+
+## 2026-11-10 and 2026-11-11 — combined (10 Nov notes were owed from a restart)
+
+### Index baselines (for tomorrow) — RUN BOTH FREEZE QUERIES
+
+**Whole database 49,220,380, residual 0, UNCHANGED between 10 Nov 14:06:36 and 11 Nov 14:04:44 and again at
+the end of today's run.** `MED` 41,341,779 · `PMC` 1,014,453 · `PPR` 1,281,697 · `NBK` 6 · `CTX` 3,932 ·
+`AGR` 1,026,549 · `PAT` 4,229,296 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624.
+
+- **Buckets: 11 Nov 0 · 10 Nov 0 · 9 Nov 172 · 8 Nov 3,576 · 7 Nov 11,562 · 6 Nov 5,527.**
+- Windows: 1–30 Sep **178,385**; 1–7 Oct **27,826**; Oct month **266,011** — **all three unchanged for a
+  second day; the drift has stopped again.**
+- **ON ANY APPARENT FREEZE RUN BOTH: `FIRST_IDATE` range AND `FIRST_PDATE` range. 8 Nov gave 0/0 (no
+  records); 11 Nov gives 0/37 (no stamping).**
+- **PMC trail: 1,014,081 · 1,014,453 · 1,014,453. NBK trail: 5 · 8 · 9 · 6 · 4 · 7 · 6 · 6.**
+
+### Published 10 November
+
+**Brief (5):** OPTIPAM `10.1097/aln.0000000000006471` · ADJUST `10.1016/j.chest.2026.10.033` ·
+pip-tazo meta-analysis `10.1159/che/aceag002` · colchicine `10.1007/s40256-026-00831-7` ·
+sepsis-survivor mortality `10.1097/ccm.0000000000007415`.
+
+**Watch (6):** ILCOR 2026 CoSTR `10.1016/j.resuscitation.2026.111328` · ANZICS percutaneous tracheostomy
+`10.1177/0310057x261500117` · core outcome set `10.1007/s00134-026-08659-0` · SSC-vs-DSG comparison
+`10.1007/s00101-026-01753-4` · ERC 2025 Hungarian summary `10.1556/650.2026.33739` · SSC hypoperfusion letter
+`10.1016/j.medine.2026.502665` (abstract-free, content not claimed).
+
+### Published 11 November (brief, 5) — all from the held queue
+
+1. **Cardiac-surgery AKI: why trials failed** — `10.1016/j.athoracsur.2026.10.022`, *Ann Thorac Surg*, 5 Nov.
+   **33 trials 2004–2026. Short-term creatinine endpoints positive, MAKE-90 negative, NO agent benefited
+   both. Proposed: persistent KDIGO stage 2–3 AKD at 30 days as primary, preoperative albuminuria as
+   enrichment.**
+2. **Remimazolam vs propofol, TAVI** — `10.21203/rs.3.rs-11033086/v1`, **PREPRINT**, 5 Nov.
+   **118 assessed / 76 randomised (39+37). LMA removal 9.7±1.5 vs 20.8±2.0 min, MD −11.1 (−11.9 to −10.3)
+   against a 2-MINUTE MARGIN = 5.6x. SE ≈ 0.41 min. UNBLINDED assessor. Retrospectively registered,
+   single-centre. LOS 10 vs 11, p=0.06.**
+3. **Cardiac-index-guided GDT meta-analysis** — `10.1186/s13741-026-00760-8`, *Perioper Med*, 7 Nov, **OA**.
+   **21 RCTs / 20 contributing. Complications OR 0.59 (0.45–0.78) but PI 0.20–1.74 CROSSING THE NULL,
+   I² 62.9%, certainty graded HIGH. Mortality OR 0.77 (0.57–1.05), I² 0%.**
+4. **Hypoxaemia/hypocapnia burdens after cardiac arrest** — `10.1016/j.rmed.2026.109271`, *Respir Med*, 5 Nov.
+   **MIMIC-IV, 1,028 patients, 487 (47.4%) died, complete-case 972. Continuous OR 1.71/10 mmHg and
+   1.88/5 mmHg — but LOW-exposure vs NO-exposure 0.68 (0.47–0.98). Non-linearity p=0.014 for hypocapnia.**
+5. **Paediatric extubation failure, SandWiCh secondary** — `10.1097/pcc.0000000000004075`, *PCCM*, 5 Nov.
+   **9,215 patients, 618 failures (6.7%) at 48 h. Stridor 874 (9.4%) overall, 173/618 (28%) among failures —
+   and the REVERSE CONDITIONAL is 173/874 = 19.8%.** Post hoc, non-prespecified.
+
+### Queue
+
+**65 held + 7 added (10 Nov) − 5 published (10 Nov) − 5 published (11 Nov) = 62.** **None of the 10 or
+11 November items came from outside the sweep or the queue respectively.** Still held from the 10 Nov sweep
+of 166: hour-1 bundle compliance (`10.1016/...` — DOI not yet read from the record, hold by title);
+vibroacoustic music therapy for POD, VIMUD-ICU (abstract-free); apelin and atrial fibrosis in POAF;
+epicardial adipose tissue and POAF; milrinone population pharmacokinetics in cardiac surgery; prolonged
+mechanical ventilation after isolated CABG; hybrid coronary revascularisation, Dutch experience.
+
+**Named gaps 16. Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.**
+
+### Dated actions
+
+**OVERDUE: the AHA/ACC perioperative re-check was dated 7 November and the runs on 6–9 November were lost to
+restarts. Do it on the next run that has capacity.** **Next lagged pass ~10 November — also overdue.**
+**November month audit at the start of December, swept as a RANGE.**
+
+### Sweep log
+
+**10 Nov: sized 166 / 6 / 426; ran the 166, returned 166, SHORTFALL ZERO — first proper exercise of the check
+added after the 5 November retrieval defect.** Guideline-class sweep 6/6, shortfall zero.
+**11 Nov: sized 0 and 0; the sweep returned 0 hits, 0 returned, shortfall zero.**
+
+**`END_OF_RUN_PLACEHOLDER` held for the tenth and eleventh consecutive runs.**
