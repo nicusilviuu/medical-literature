@@ -6015,3 +6015,34 @@ added after the 5 November retrieval defect.** Guideline-class sweep 6/6, shortf
 **11 Nov: sized 0 and 0; the sweep returned 0 hits, 0 returned, shortfall zero.**
 
 **`END_OF_RUN_PLACEHOLDER` held for the tenth and eleventh consecutive runs.**
+
+## 2026-11-11 (guidelines watch) — dated action CLEARED
+
+### AHA/ACC perioperative re-check: DONE, and the premise retired
+
+**Overdue from 7 November (runs on 6–9 Nov lost to restarts). Result in `source-notes.md`.**
+**The 2026 guideline's deposited abstract is the 2024 abstract with the year changed — md5-proven.**
+Publisher still blocked, fifth month: both pages **403**, resolver a **2.7 kB stub**.
+
+**CALENDAR CHANGE: the monthly check now asks ONLY whether the publisher has opened the full text. Next on or
+after 11 DECEMBER.** The index record will not improve.
+
+**Named gaps: 16 -> 17** (the 2026 AHA/ACC guideline reclassified from "abstract-only" to "effectively
+title-and-date only").
+
+### Published today (watch) — items: [] (empty list, deliberately)
+
+**No new guidelines from tracked societies; the index is frozen so the index route added nothing. The entry's
+substance is the re-check, which is method rather than a document, so the items list is empty by design** —
+the same convention as a quiet day.
+
+### Still dated / still overdue
+
+1. **Lagged pass (~10 November) — NOT attempted; pointless on a frozen index. Carry to the first run after
+   the index moves.**
+2. **November month audit — start of December, swept as a RANGE.**
+3. **AHA/ACC — 11 December, re-framed (publisher only).**
+4. **ESICM, ESAIC, ESC, ESPEN, EACTS, STS, ASA in-development pages — still not fetched** (SCCM's was read
+   2 November). **Do this on the next frozen-index day; it needs no index access.**
+
+### Queue unchanged at 62. Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.

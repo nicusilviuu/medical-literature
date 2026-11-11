@@ -8698,3 +8698,67 @@ from two readings of one bucket; two cycles of a different phenomenon license no
   **the disagreements are about DEFINITIONS AND TRIGGERS, not drugs.**
 - **THE DEDUPE'S TWO HITS ON 10 NOVEMBER WERE MY OWN ROUTING NOTES** — sixth time it has done consistency
   work rather than duplicate-catching.
+
+## 2026-11-11 (guidelines watch) — the AHA/ACC re-check CLOSES, by md5
+
+**THE RESULT. The 2026 AHA/ACC perioperative cardiovascular guideline's deposited abstract IS THE 2024
+GUIDELINE'S ABSTRACT WITH THE YEAR CHANGED.** Proven by comparing the four co-publication deposits byte for
+byte:
+
+| Record | Published | Abstract md5 (first 16) |
+| --- | --- | --- |
+| `10.1016/j.jacc.2026.06.017` *JACC* | 2026-09-01 | **83d9b2f919bf9a34** |
+| `10.1161/cir.0000000000001472` *Circulation* | 2026-09-28 | **83d9b2f919bf9a34** |
+| `10.1016/j.jacc.2024.06.013` *JACC* | 2024-09-24 | **c5bb693f4cfccd49** |
+| `10.1161/cir.0000000000001285` *Circulation* | 2024-09-24 | **c5bb693f4cfccd49** |
+
+**The 2026 pair is identical to itself; the 2024 pair is identical to itself; and the 2026 text differs from
+the 2024 text in EXACTLY ONE RESPECT — the year inside the quoted guideline title.** Verbatim carried over:
+the search window "August 2022 to March 2023" and the claim to supersede the **2014** guideline.
+
+**CONSEQUENCE, AND IT RETIRES THE CHECK'S PREMISE: the abstract-only record cannot describe the 2026 revision
+IN PRINCIPLE, because none of its content was written about the 2026 edition.** **The monthly check has been
+asking whether the full text became reachable; the better answer is that the index record was never a partial
+substitute and will not improve.**
+
+**RE-FRAME THE CALENDAR ITEM: ask only whether the PUBLISHER has opened the full text. Next on or after
+11 DECEMBER.** Publisher status unchanged, **fifth consecutive month**: `jacc.org` **403** (5.5 kB),
+`ahajournals.org` **403** (5.5 kB), DOI resolver 200 but a **2.7 kB stub**. **Report status codes AND response
+sizes — a 200 at 2.7 kB is not an article, and summarising it as "reachable" would be wrong.**
+
+**REPRODUCIBILITY NOTE: this archive recorded 1,214 characters; after tag-stripping it is 1,192. The
+22-character difference is markup.**
+
+### New rules
+
+1. **COMPARE DEPOSITS BY HASH, NOT BY EYE, when two records of different editions have the same abstract
+   length.** Four records at the same length was the signal; md5 was the test. **Equal abstract lengths across
+   editions of one guideline is a RED FLAG for a recycled deposit.**
+2. **NEAR-MISS CATALOGUED: a PMCID WITHOUT the open-access flag.** `10.1053/j.jvca.2025.05.014` (JVCA
+   highlights of the 2024 guideline, 14 May 2025, 1,082 chars) has **pmcid PMC12904102 but `isOpenAccess` N**,
+   so the two-field route's precondition is HALF MET and the route does NOT apply. **This is the complement of
+   the WSES procalcitonin inversion (OA copy abstract-free, paywalled copy carrying 2,565 chars). Record both
+   so a future sweep does not waste a call.**
+3. **A 403 IS A HARDER REFUSAL THAN A JAVASCRIPT CHALLENGE.** Earlier months recorded a Cloudflare challenge;
+   both pages now return 403 outright. **The position has not improved — say so rather than calling it
+   unchanged.**
+
+### THE COUNTER-CASE RULE WORKED AGAIN — third success, second as a pre-publication catch
+
+**I drafted the recycled-abstract finding as NEW. The counter-case rule — before any sentence containing
+first, only, never or an ordinal, grep the notes for the COUNTER-case — found that the 30 September entry had
+already flagged BOTH anomalies from internal evidence alone**, writing that a reader of the abstract "is told
+the evidence review stopped in March 2023 and that the 2024 guideline does not exist."
+**The sentence was rewritten to credit that entry and claim only what is actually new: the byte-level proof
+that it is a verbatim carry-over rather than an editing slip.**
+
+**Successes so far: 27 Oct (published correction, Bookshelf "first time"), 10 Nov (pre-publication, Bayesian
+novelty), 11 Nov (pre-publication, this).** **The rule is now earning its cost.**
+
+### Society route, 11 November
+
+**No new guidelines.** Returned only 2012–2025 documents, all already held or out of scope: SRLF/SFAR/SFMU
+intrahospital transport (2012); SFAR/SRLF intubation and extubation; 2021 fluid choice; 2024 SRLF/SFMU oxygen
+therapy consensus conference; 2025 SRLF nutrition guideline with the French clinical nutrition society.
+**Nothing from ESAIC or ESPEN.** **Index route returned ZERO because the index is frozen — guideline-class
+sweep over 10–11 November, 0 hits, 0 shortfall.**
