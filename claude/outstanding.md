@@ -6046,3 +6046,53 @@ the same convention as a quiet day.
    2 November). **Do this on the next frozen-index day; it needs no index access.**
 
 ### Queue unchanged at 62. Backstop unchanged: 1–25 August window, 343 unseen; next window 1–31 July.
+
+## 12 NOVEMBER — STATE AFTER THE RUN
+
+**Index: UNFROZEN, SECOND BURST CYCLE.** Whole **49,243,770 at 14:04:16** (+23,390, residual 0) →
+**49,243,766 at 14:09:20 and 14:13:37** (−4, entirely `PMC` 1,017,980 → 1,017,976).
+Baselines: `MED` 41,358,183 · `PMC` 1,017,976 · `PPR` 1,285,157 · `NBK` 5 · `CTX` 3,932.
+Windows: 1–30 Sep **178,377** · 1–7 Oct **27,810** · October month **265,872**.
+Buckets: 12 Nov **10,233** · 11 Nov **7,256** · 10 Nov **6,282** · 9 Nov **449**.
+
+**Published today:** `_briefs/2026-11-12.md`, 5 items, commit `b2a0513`, push verified by `git ls-remote`,
+Pages HTTP 200, zero rendered asterisks.
+
+**Queue: 62 held, + 5 added today = 67, − 5 published = 62 net. The queue is not drawn down by publishing;
+today's five came from today's sweep.**
+
+**TOP OF QUEUE, figures already extracted — FRAGILE** (`10.1161/circulationaha.125.078842`, *Circulation*,
+10 Nov): off-pump vs on-pump CABG in prefrail/frail patients, 508 patients (258 OPCAB / 250 ONCAB), primary
+composite 28 (10.85%) vs 40 (16.0%), **RR 1.47 (0.94–2.31), P = 0.09 — and the RR is ONCAB/OPCAB, i.e. the
+reference is REVERSED relative to the title order** (16.0/10.9 = 1.468); wound infection 20/250 (8.0%) vs
+9/258 (3.49%), P = 0.04; 1-year survival 96.1% vs 92.8%, P = 0.099; enrolled Jan 2018–Dec 2024 (72.6/yr);
+open-label; NCT02338947. **Held deliberately to keep today's entry at five items, and flagged on the page.**
+
+**Also held from today's sweep:** melatonin for POD meta-analysis (PMC, abstract-free); sugammadex vs
+neostigmine in paediatrics (*Paediatr Anaesth*, abstract-free); withholding or continuing glucose-lowering
+drugs for elective surgery (*BJA*, abstract-free); circulating cell-free mitochondrial DNA and delirium
+(*CCM*, 2,022 chars); continuous regional anaesthesia practical review (*Pain Ther*, 2,555 chars).
+
+**Named gaps: 17. Named targets: 5.** Backstop unchanged: 1–25 August window, 343 unseen; next window
+1–31 July.
+
+### DATED ACTIONS
+
+1. **The lagged pass — overdue since ~10 Nov. The index is moving again, so the reason for deferring it is
+   gone. Do it on the next run that has room.**
+2. **November month audit — start of December, swept as a RANGE** (not per-day; the October scan established
+   that per-day buckets are restamped).
+3. **AHA/ACC re-check — 11 December**, re-framed to ask ONLY whether the publisher has opened the full text.
+   The recycled-abstract premise is retired (byte-level proof, 11 Nov).
+4. **In-development pages still unread: ESICM, ESAIC, ESC, ESPEN, EACTS, STS, ASA.** SCCM's was read 2 Nov.
+   Queued for a frozen-index day — needs no index access, and the stalls are now a recurring opportunity.
+5. **Re-run the title-stem check against the remaining 17 named gaps** on a quiet day. Two successes so far
+   (PROSPECT hallux valgus, RELIEF long-term follow-up).
+6. **Implement the helper fix:** `idlist` + `cursorMark` paging for IDs, then `core` per ID. **Still not
+   done.** Today's sweep fitted in one page, so the defect was dodged, not fixed.
+
+### PREDICTION STILL OPEN
+
+The ANZ very-old-patients consensus will agree with ESICM on PROCESS (time-limited trials, goals-of-care
+conversations, structured post-ICU pathways) and differ on EVERY THRESHOLD, including the age cut-off and
+trial duration.

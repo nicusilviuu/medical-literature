@@ -8762,3 +8762,92 @@ intrahospital transport (2012); SFAR/SRLF intubation and extubation; 2021 fluid 
 therapy consensus conference; 2025 SRLF nutrition guideline with the French clinical nutrition society.
 **Nothing from ESAIC or ESPEN.** **Index route returned ZERO because the index is frozen — guideline-class
 sweep over 10–11 November, 0 hits, 0 shortfall.**
+
+## 12 NOVEMBER — SECOND BURST CYCLE, AND PMC CAUGHT SHRINKING AGAIN
+
+### THE BURST IS NOW A TWO-CYCLE REGULARITY — AND WHY THAT IS SOUNDER THAN CORRECTION 12'S BASIS
+
+Start of run **14:04:16**: whole **49,220,380 → 49,243,770 (+23,390)**; `MED` +16,404, `PMC` +3,527,
+`PPR` +3,460, `NBK` −1, `CTX` unchanged; the four changes sum to 23,390 exactly, residual 0.
+
+**Buckets: 12 Nov (own) 10,233 — the largest current-day figure recorded here; 11 Nov 0 → 7,256;
+10 Nov 0 → 6,282; 9 Nov 172 → 449.** Publication date 10–12 Nov: **10 → 8,578**. Windows resumed drifting:
+1–30 Sep −8, 1–7 Oct −16, October month −139.
+
+**The sequence across both cycles:** stall 5–9 Nov (static at 49,193,995, zero by index AND publication
+date) → burst 10 Nov (+26,385, back-filling 20,665 onto 6/7/8 Nov) → stall 10–11 Nov (static at
+49,220,380) → **burst 12 Nov (+23,390, back-filling 13,538 onto 10 and 11 Nov).**
+
+**RULE (and the reason the caveat was relaxed today): correction 12's error was treating a BUCKET reading as
+evidence about mechanism. Buckets are restamped and carry no such information. What repeats across these two
+cycles is the WHOLE-DATABASE TOTAL, which has been this archive's one sound measurement since 1 November.**
+**Two cycles of a sound measurement is a different class of evidence from two readings of an unsound one, and
+that distinction — not the number two — is what licenses the upgrade.** **Still not claimed: cause, period,
+or a third cycle.** A two-cycle regularity gives no period.
+
+### PMC SHED 4 DURING THE RUN — AND THE COUNTER-CASE RULE STOPPED A "FIRST"
+
+Second reading **14:09:20**: whole **49,243,766 (−4)**. Third reading **14:13:37** decomposed it:
+**`PMC` 1,017,980 → 1,017,976, the whole of the change; every other source unchanged; residual 0.**
+
+**I began writing that an intra-run change had never been caught before. The counter-case rule found
+line 7343 of this file: on 31 October `PMC` shed 51 records across a five-minute run — same source, same
+direction.** **Fourth consecutive success of the counter-case rule as a PRE-publication catch** (27 Oct was
+a published correction; 10 Nov, 11 Nov and today were caught before publishing).
+
+**So an overnight burst of +23,390 and a small `PMC` contraction at read time were running at the same
+time.** Correction 11 applies to the rate: four records over five minutes is four records over five minutes.
+
+### SWEEP — SECOND CLEAN EXERCISE OF THE SHORTFALL CHECK
+
+302 in scope for idx 11–12 Nov; 444 for 10–12 Nov; publication-window sizings 91 (11–12 Nov), **147
+(10–12 Nov)**, 153 (9–12 Nov). Ran the 147 at pageSize 200 — **147 hits, 147 returned, SHORTFALL ZERO.**
+Second clean run of the check added after the 5 November `core` retrieval defect (10 Nov was 166/166).
+**The helper fix — `idlist` + `cursorMark` for IDs, then `core` per ID — is still NOT implemented; today's
+sweep fitted inside one page, so the defect was avoided rather than fixed.**
+
+### ANALYTIC POINTS BANKED TODAY
+
+- **An incidence difference and a duration difference can point opposite ways, and the pair is the finding.**
+  BMJ ACEi/ARB: hypotension incidence down 14.4 points (45.52% → 31.15%, NNT 6.96) but duration down only
+  **1.3 minutes**. The outcome definition did the work — "or a 30% fall from baseline REQUIRING TREATMENT" is
+  an event a clinician noticed and corrected, hence few minutes per event.
+- **"High certainty evidence" is a GRADE judgement about a BODY of evidence and no single trial can confer it
+  on itself.** Flagged in the BMJ abstract's conclusion. Watch for guideline committees quoting it.
+- **A recruitment rate conditioned on "active recruitment periods" is not the trial's recruitment rate.**
+  Guanfacine pilot: 0.9/wk = 3.9/month against a target of ≥2, so it reads as exceeding target — while the
+  preceding sentence says recruitment was significantly impacted by the pandemic. **The check the abstract
+  withholds: 100 patients over ~27 months = 3.7/month overall, so the conditioning happens not to matter —
+  but the reader cannot know that from the page.**
+- **A journal published a trial and a critique of that trial's endpoint in the same issue week.** CCM:
+  "Composite Endpoints in Critical Care Delirium Trials" says delirium- and coma-free days "have not been
+  rigorously evaluated"; the guanfacine pilot's clinical signal is DCFD, 2 (IQR 0–6) vs 1 (IQR 0–4),
+  p = 0.02 unadjusted and NOT significant adjusted. **Both IQRs start at zero — the floor effect the methods
+  paper is about.** **DCFD makes death and delirium exchangeable at a rate nobody chose; the ranked
+  alternative is the same hierarchical move as the 10 Nov core outcome set.**
+- **RULE: a delirium trial's effect is not comparable across trials until you know WHICH composite it used
+  and how death was ranked.**
+- **Third independent document in a week converging on the composite-endpoint problem** — OPTIPAM's
+  death-or-AKI-or-neurological composite (10 Nov), the acute brain injury core outcome set's hierarchical
+  endpoint (10 Nov), and today's pair.
+- **Seven criteria tested, two associated: the negative result is the finding.** AJRCCM sepsis time zero,
+  624,416 of 1,849,729 encounters (33.76%). Delay 1–3h vs 0–1h associated with death only for hypotension
+  (aRR 1.07, 1.03–1.10) and lactate ≥4.0 (1.10, 1.05–1.15); 3–6h vs 0–3h only for acute respiratory failure
+  (1.11, 1.05–1.18). **An argument about DEFINITIONS, not antibiotics — the sharpest instance of the
+  "definitions and triggers" pattern named across the eight SSC-2026 commentaries.**
+- **NEW SYMMETRY-CHECK EXCEPTION (fifth): an interval reported to two decimal places around a point estimate
+  near 1.** 1.07 (1.03–1.10) looks log-asymmetric, but the rounding is larger than the asymmetry. **Report
+  that the rounding dominates; draw no inference.** Do not add this to the flag list.
+- **A 2:1 asymmetric interval on a DIFFERENCE IN PROPORTIONS is not a Wald interval.** CO-ROAM: 3.7%
+  (−0.3 to 5.7) is 4.0 below and 2.0 above. Plausibly bootstrap or exact, or medians are being differenced;
+  the abstract does not say. **Flagged, not called a defect — and the usual reconstruction cannot be
+  applied.**
+- **Zero events in an arm, twice, carries the whole claim through its p-values.** Oliceridine 0% vs 4.6%
+  (p = 0.015) and 0% post-extubation vs 7.9% (p = 0.005) — on 153 remifentanil patients that is **about seven
+  and twelve events**, so nought against nineteen events in total. Suggestive and thin.
+- **An IRR of 0.72 with an upper bound of exactly 1.00 and p = 0.049 is the least informative significant
+  result available** — logged shape, seen before.
+- **A G-protein-biased μ-opioid agonist showing less respiratory depression is mechanistically EXPECTED, not
+  surprising** — which is a reason to credit it and not a reason to call it a discovery.
+- **Second consecutive non-inferiority trial to overshoot its own margin** (margin −10% against +3.7%; the
+  remimazolam trial yesterday did the same). Designed for a question the drug had already answered.
