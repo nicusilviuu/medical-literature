@@ -8851,3 +8851,109 @@ sweep fitted inside one page, so the defect was avoided rather than fixed.**
   surprising** — which is a reason to credit it and not a reason to call it a discovery.
 - **Second consecutive non-inferiority trial to overshoot its own margin** (margin −10% against +3.7%; the
   remimazolam trial yesterday did the same). Designed for a question the drug had already answered.
+
+## 12 NOVEMBER (guidelines watch) — A 2025 GUIDELINE WITH A 2026 INDEX DATE
+
+### THE DATING CATCH, AND A NEW VERIFICATION ROUTE
+
+The sweep returned **ASRA Evidence-Based Guidelines (fifth edition), regional anaesthesia in the patient
+receiving antithrombotic or thrombolytic therapy** (`10.1136/rapm-2024-105766`) with
+**`firstPublicationDate` 2026-11-05**, print November 2026, vol 51 issue 11, **abstract deposited: ZERO
+characters.** Taken at face value it was this week's major guideline.
+
+**It was published 31 January 2025 — a gap of about twenty-one months.**
+
+| Evidence | Date |
+| --- | --- |
+| Index record | 2026-11-05 |
+| DOI stem `rapm-2024-…` | 2024 submission |
+| **Response to the fifth edition "by Kopp et al", same six authors** (`10.1136/rapm-2025-106881`) | **2025-06-08** |
+| ASRA's own guideline page (web) | **2025-01-31** |
+
+**NEW RULE AND NEW ROUTE: a Response, Comment or Correction record dated EARLIER than its target's own
+`firstPublicationDate` bounds the target's real publication date, from inside the index.** You cannot reply
+to an unpublished document. **The title-stem sibling search — built to recover missing abstracts — does this
+job too.** This is the first use of it to date a document rather than to read one.
+
+**Second instance in the same sweep, harmless but the same failure mode:** the ICM editorial
+"Refractory septic shock new definition: a first stone to pave a long way" (`10.1007/s00134-026-08371-z`)
+carries 2026-05-01, while its **Correction** (`10.1007/s00134-026-08423-4`) carries **2026-04-01** — a
+correction a month before what it corrects.
+
+**What the fifth edition CHANGED is unverified and labelled as such on the page.** No abstract is deposited,
+so no quotation was possible. An ESRA newsletter (promotional secondary source) describes: low/high dose
+language replacing prophylactic/therapeutic; lab monitoring incl. drug-specific assays; P2Y12 updates;
+revised VKA and DOAC reversal; changed discontinuation timing. **Press-release rule applied verbatim.**
+
+### CO-PUBLICATION HASHES — THE COMPLEMENT OF THE AHA/ACC CASE
+
+SCCM/ESICM refractory septic shock definition, co-published 24 March 2026:
+- CCM `10.1097/ccm.0000000000007124` — **2,283 chars, md5 `da8e0c25b32cbfd5`**
+- ICM `10.1007/s00134-026-08344-2` — **2,275 chars, md5 `b8c908e9b85ec794`**
+
+Differences: one comma, one hyphen, and "µg/kg/min" spelled out. **NEAR-identical, NOT byte-identical —
+the complement of the 11 November AHA/ACC proof where both 2026 co-publications were byte-identical
+(`83d9b2f919bf9a34`).** **Rule confirmed from both ends: compare co-publications by HASH. A near-match is as
+informative as an exact one, and only the hash distinguishes them.**
+
+### DELPHI THRESHOLD CATALOGUE — SIXTH ENTRY, AND IT IS TWO-SIDED IN A NEW WAY
+
+**SCCM/ESICM: ≥75% in agreement OR DISAGREEMENT on the three highest or lowest levels of a 7-point
+Likert.** **A statement can therefore reach consensus BY BEING REJECTED** — which is how 5 of 34 statements
+were thrown out after round 2 as a result rather than as an inconclusive. **Numerically the same 75% as
+PrECiSIOn and SMA-PV; operationally a different instrument.** The catalogue now holds: 70% · 75% (SMA-PV) ·
+75% on a 7-point Likert (PrECiSIOn) · 90/80 on a 9-point Likert (ESICM very old) · two-sided >70% critical
+AND ≤15% not important (core outcome set) · **two-sided 75% agree-or-disagree (SCCM/ESICM).** None
+comparable.
+
+### TWO CONSENSUS DEFINITIONS OF ONE CONDITION, FIVE WEEKS APART, THAT DISAGREE
+
+- **SCCM/ESICM (24 Mar 2026):** pharmacological and physiological — NE equivalent **>0.5 µg/kg/min**, fluid
+  unresponsiveness, lactate or CRT, CCUS when mixed shock suspected. 56 participants, 5 rounds, **13 of 29
+  statements** reached consensus (45%).
+- **Spanish (`10.1016/j.medine.2026.502448`, 29 Apr 2026):** temporal — **persistent hypotension and global
+  hypoperfusion for >1 hour despite optimised treatment, NO vasopressor dose threshold.** 30 experts,
+  **23 of 28 statements** (82%). Reached consensus on **hydrocortisone**, which the joint document does not
+  address.
+
+**RULE: a patient on 0.3 µg/kg/min, hypotensive and hypoperfused for ninety minutes, has refractory septic
+shock under one definition and not the other. When two consensus definitions of one condition exist, state
+the discriminating case rather than summarising both.**
+
+**ALSO: round count is part of a Delphi result and most reports drop it.** Fluid responsiveness took **five
+rounds** to reach 92.9% — the slowest item to converge despite one of the highest final figures. **The
+percentage alone does not tell you how contested an item was.**
+
+### THE WITHIN-SERIES METHOD DIVERGENCE — A THIRD BRANCH FOR THE 22 OCTOBER RULE
+
+EXTRACCT abdominal blast injury (`10.1002/wjs.70669`, 10 Nov) states **"a semi-structured literature
+review"** and names **no appraisal framework, no grading scheme, no consensus process.** Its own sibling,
+the EXTRACCT TBI guideline (`10.1002/wjs.70522`, 31 Aug, reported 7 Oct), stated a targeted narrative review
+following **AGREE II**.
+
+**So the 22 October rule's two branches — withholding, and category difference — do not cleanly apply when a
+SIBLING DOCUMENT FROM THE SAME COLLABORATION stated a framework.** **Third branch: differential REPORTING
+within one series.** **And the honest conclusion is that a reader cannot tell from the abstracts whether the
+underlying processes differed or only the reporting did.** Do not resolve it; state it.
+
+### A DOCUMENT THAT DISCLAIMS ITS OWN STATUS
+
+`10.2196/103138` (JMIR, 9 Nov, OA PMC13747319): proposes adequacy-based fluid phenotypes
+("insufficient"/"optimal"/"excessive"), and its abstract's last sentence says the matrix is **provisional,
+with no formal consensus, no clinical validation and no testing in an AI system.** **Worth recording as the
+honest version of what several documents here have done less clearly.** Routed to the watch under the
+31 October rule: a definitional document for a condition managed in intensive care is in scope whatever
+specialty publishes it.
+
+### ROUTE STATE
+
+**Fifth print surfacing of an already-held document:** the November `Anaesth Crit Care Pain Med` issue holds
+the LAT withholding/withdrawal RFE (`101892`, reported 19 Oct) and the liver resection guidelines
+(`101879`, reported 11 Oct). **A known property of the route; keep running it first and read it for identity,
+never for status.** French web route returned only pre-existing référentiels (SPILF/SPLF CAP 2025, SRLF
+neutropenia 2024, SRLF/SFAR antibiotics 2014). **Guidance sweep 5–12 Nov: 33 hits, 33 returned, shortfall
+zero — third clean exercise of the post-5-November check.**
+
+**Gastric POCUS:** today's `10.1136/rapm-2025-106926` is an **infographic**; its parent narrative review
+(`10.1136/rapm-2024-106346`) was published 6 July 2026. **A companion infographic is a different document
+from its parent — not a duplicate, not new guidance.**

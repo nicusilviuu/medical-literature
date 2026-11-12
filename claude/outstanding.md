@@ -6096,3 +6096,43 @@ drugs for elective surgery (*BJA*, abstract-free); circulating cell-free mitocho
 The ANZ very-old-patients consensus will agree with ESICM on PROCESS (time-limited trials, goals-of-care
 conversations, structured post-ICU pathways) and differ on EVERY THRESHOLD, including the age cut-off and
 trial duration.
+
+## 12 NOVEMBER (guidelines watch) — STATE AFTER THE RUN
+
+**Published:** `_guidelines/2026-11-12.md`, **6 items**, commit `3548fda`, push verified by `git ls-remote`,
+Pages HTTP 200, zero rendered asterisks. **No new guidance from any tracked society.**
+
+**Three new this week:** PrECiSIOn PPC definition (`10.1016/s2213-2600(26)00296-1`, 11 Nov); ESC/ACVC
+ambulatory follow-up consensus statement (`10.1093/ehjacc/zuag133`, 10 Nov); EXTRACCT abdominal blast injury
+(`10.1002/wjs.70669`, 10 Nov). **Three reported with their real, older dates:** ASRA fifth edition
+(31 Jan 2025); SCCM/ESICM refractory septic shock (24 Mar 2026); fluid terminology call for consensus
+(9 Nov 2026, new but self-disclaimed).
+
+### NEW NAMED GAPS AND TARGETS FROM TODAY
+
+- **ASRA fifth edition — no abstract deposited anywhere (0 chars).** What it changed is known here only from
+  a promotional ESRA newsletter. **TARGET: find a readable summary of the fifth edition's actual intervals.**
+  Try the PubMed record, ASRA's page, or a review citing it.
+- **Gastric POCUS parent review** (`10.1136/rapm-2024-106346`, 6 Jul 2026) — never read here. **Queue it.**
+- **Spanish refractory septic shock consensus** (`10.1016/j.medine.2026.502448`) — read only via abstract;
+  the full statement list (23 of 28) is unread.
+- **The ICM editorial on the new definition** (`10.1007/s00134-026-08371-z`) and its correction — both
+  abstract-free. Low priority.
+
+### PREDICTION LOGGED TODAY
+
+**The two refractory septic shock definitions will be reconciled by a document that keeps the SCCM/ESICM
+vasopressor threshold and adds the Spanish one's time criterion** — i.e. dose AND duration — **rather than
+by either panel conceding.** Check if a third definition appears.
+
+### DATED ACTIONS — UNCHANGED EXCEPT WHERE NOTED
+
+1. **The lagged pass — still overdue** (index moved today; not attempted in either run).
+2. **November month audit — start of December, swept as a RANGE.**
+3. **AHA/ACC re-check — 11 December**, publisher-only question.
+4. **In-development pages: ESICM, ESAIC, ESC, ESPEN, EACTS, STS, ASA — STILL UNREAD, owed and stated on
+   today's page.** Queued for a frozen-index day; the index moved today, so it waits again.
+5. **Title-stem check against the remaining 17 named gaps** — not run today, but **the route proved a new
+   use today (dating, not just abstract recovery), which raises its value.**
+6. **Helper fix (`idlist` + `cursorMark`, then `core` per ID) — still not implemented.** Both of today's
+   sweeps fitted in one page.
