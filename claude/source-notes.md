@@ -8957,3 +8957,149 @@ zero — third clean exercise of the post-5-November check.**
 **Gastric POCUS:** today's `10.1136/rapm-2025-106926` is an **infographic**; its parent narrative review
 (`10.1136/rapm-2024-106346`) was published 6 July 2026. **A companion infographic is a different document
 from its parent — not a duplicate, not new guidance.**
+
+## 13 NOVEMBER — A THIRD KIND OF DAY, CORRECTION 13, AND THE LAGGED PASS PAYING OFF
+
+### THE DAY'S INDEX READING, AND WHY YESTERDAY'S REFUSAL MATTERED
+
+Start **14:36:43**: whole **49,243,766 → 49,250,443 (+6,677)**, residual 0 — `MED` +5,293, `PPR` +1,382,
+`PMC` +1, `CTX` +1, the four summing exactly. Buckets: **13 Nov (own) 7,036 same-day; 12 Nov 10,233 →
+10,225; 11 Nov 7,256 → 6,923 (−333); 10 Nov 6,282 → 6,281; 9 Nov 449 unchanged.** Windows 1–30 Sep 178,376
+(−1), 1–7 Oct 27,810 (unchanged), Oct month 265,865 (−7). pdate 10–13 Nov 12,817.
+
+**SUBTRACTION, NOT INFERENCE: today's own bucket (7,036) EXCEEDS the whole-database gain (6,677), so at
+least 359 records in it are REDATED rather than new.** Corroborated from the other side: the three older
+buckets lost 342 and the two older windows 8.
+
+**THE POINT OF THE DAY.** Yesterday the burst description was upgraded to a two-cycle regularity **and a
+period was explicitly NOT claimed.** **Today falsifies the period: the previous cycle stalled the day after
+a burst (11 Nov, static at 49,220,380) and this cycle did not (+6,677, same-day stamping).** **The
+two-cycle regularity in the TOTALS stands; the thing that was refused is the thing that turned out false.**
+**Record this as the clearest payoff the correction-12 discipline has had — the temptation was real, because
+two cycles of the same shape is exactly the evidence that invites a period.**
+
+**A THIRD DAY TYPE is now named: stall (0), burst (+23k to +26k), and moderate same-day growth (+6,677).**
+Three types from nine days of readings. **No period, no cause, no prediction.**
+
+### CORRECTION 13 — THE 5 NOVEMBER DIAGNOSIS OF THE RETRIEVAL DEFECT WAS WRONG
+
+On 5 November a sweep reported 107 and returned 73. Two causes were recorded: `page=2` returned the same
+head of the list, and **`cursorMark` with `resultType=core` returned a body with NO `resultList`.**
+
+**Tested directly today. BOTH claims about `core` are withdrawn:**
+
+- **`cursorMark` + `resultType=core` WORKS.** pageSize 25 → 25 records, pageSize 100 → 100, `resultList`
+  present, `nextCursorMark` returned. **Paged 750 records in 8 pages with shortfall zero.**
+- **`core` does NOT truncate at large page sizes.** On a 241-hit query: pageSize 150 → 150, 200 → 200,
+  241 → 241, 300 → 241, 1000 → 241. Exactly as asked, every time.
+
+**So the planned fix — `idlist` + `cursorMark` for IDs then `core` per ID — rested on a wrong diagnosis.
+THE STANDING TO-DO IS CLOSED AS UNNECESSARY, NOT DONE.** **The 73-of-107 observation stands as an
+observation; its cause is unidentified and has not reproduced.** Candidate not excluded: the sizing call and
+the fetch call may have carried different query text that day.
+
+**WHAT SURVIVES IS THE CHECK, NOT THE DIAGNOSIS: compare `len(result)` against `hitCount` on every
+retrieval.** It caught the defect without anyone knowing the cause, it is cheap, and it is cause-agnostic.
+**Seventh member of the over-generalisation family (4–8, 11, 12) — and the FIRST in which the error was a
+diagnosis of a TOOL rather than a claim about the literature.** **RULE: a tool diagnosis deserves the same
+suspicion as a literature claim, and is cheaper to test.**
+
+**NEW INSTRUMENT, kept in `/tmp/claude-0/epmc_all.sh`: `epmc_all QUERY OUTFILE [resultType] [pageSize]`** —
+cursorMark paging with per-page retry, writes one JSON array, de-duplicates by id, prints
+`hitCount / collected / SHORTFALL`. **First use: 750/750.** (First draft had a `read`-parsing bug that fed
+the page size back as the cursor and drew six HTTP 503s; fixed by writing the three values to a file.)
+
+### THE LAGGED PASS FOUND FOUR TRIALS THE DAILY ROUTE MISSED — AND THE OBVIOUS EXCUSE DOES NOT HOLD
+
+**Window 6 Oct – 5 Nov by PUBLICATION date, trial titles, in scope: 750 hits, 750 collected, shortfall zero.
+After dedupe against the whole archive: 166 unreported in-scope records with abstracts ≥900 chars.**
+
+**Never reported here:**
+- `10.1001/jama.2026.21333` **VASSPR** (JAMA, 14 Oct) — published today as the lead item
+- `10.1001/jama.2026.18471` isoflurane inhaled sedation in hypoxaemic respiratory failure (JAMA, 14 Oct)
+- `10.1001/jama.2026.21322` intraoperative dobutamine + noradrenaline for postoperative AKI (JAMA, 14 Oct)
+- `10.1177/08850666261479700` vasopressin initiation timing, target trial emulation (7 Oct)
+
+**I CHECKED THE OBVIOUS EXCUSE AND IT FAILS.** All three JAMA records carry **`firstIndexDate` 2026-10-19**
+and the emulation **2026-10-16** — **ordinary dates, both days this archive published on.** **So mid-October
+restamping is NOT the explanation and NONE is offered in its place.** 16 October was the rollback day (every
+record first indexed on or after 25 Sep briefly absent, ~19 minutes, brief written inside it) — a candidate
+for the emulation, **no candidate at all for the three trials.** The 5 November retrieval defect is the other
+candidate and is unproven.
+
+**RULE CONFIRMED BY CONSEQUENCE: the publication-date lagged pass catches what the index-date daily route
+misses. Three days of deferral cost three weeks of delay on a 3,959-patient trial. Do not defer it again for
+a large same-day sweep.**
+
+### VASSPR SETTLES A STANDING ARCHIVE RULE
+
+**13 hospitals (Idaho/Utah), cluster-crossover monthly, Feb 2024 – Jul 2025, 3,959 patients.** Vasopressin
+at 0.1 vs 0.4 µg/kg/min NE-equivalent. **Practice separated: 1,034/1,521 (68.0%) vs 651/1,526 (42.7%)
+received vasopressin = 25.3 points; median dose at initiation 0.14 (0.10–0.22) vs 0.34 (0.16–0.42).**
+**Mortality 628/1,975 (31.80%) vs 655/1,984 (33.01%); aOR 0.98 (0.87–1.06), P = .62; aRD −0.4 (−2.7 to
+1.3) points.** KRT-free days median 29 both, aOR 1.01 (0.91–1.14). Differential subset 3,047/3,959 = 77.0%.
+
+**The archive's standing example — an observational vasopressin HR of 2.55 read as a drug effect — now has
+a randomised answer: the threshold does not move mortality.** **RULE: the cleanest refutation of a
+confounded observational estimate is a trial that randomises the timing and finds nothing.**
+
+**BOTH VASSPR INTERVALS ARE ASYMMETRIC** — log arms 1.5:1 for the aOR, 1.35:1 for the aRD. **A marginal
+estimate from a generalised linear mixed model does not give a symmetric Wald interval, so the
+reconstruction does NOT apply.** **Sixth symmetry-check exception; do not flag this shape.**
+**And adjustment SHRANK the crude 1.21-point difference to −0.4 — the right direction for a
+cluster-crossover trial where months and hospitals differ.**
+
+### ANALYTIC POINTS BANKED TODAY
+
+- **A relative risk whose reference is the reverse of the title's order.** FRAGILE: "OPCAB (10.9%) and
+  ONCAB (16.0%; RR 1.47)" — **16.0/10.853 = 1.474, so the RR is ONCAB/OPCAB.** OPCAB/ONCAB is 0.68.
+  **RULE: recompute every reported ratio from the two percentages before repeating it.**
+- **Reconstruct p from a log-symmetric interval, then identify the test when it misses.** FRAGILE primary:
+  z = 1.68, p = 0.093 vs stated 0.09 (exact). Wound infection: uncorrected two-proportion z gives p = 0.028
+  vs stated 0.04 — **that identifies an exact or continuity-corrected test rather than contradicting it.**
+  **A reconstruction that lands HIGHER than the stated p is an inconsistency; one that lands LOWER usually
+  identifies a correction.**
+- **"Underpowered, not null."** FRAGILE: primary P = 0.09, 1-year survival P = 0.099, and the only
+  significant result is a harm in the other arm — all three pointing the same way, 508 patients over seven
+  years (72.6/yr), 68 primary events.
+- **An open-label composite containing components the unblinded team adjudicates** (reoperation for
+  bleeding, ARDS).
+- **TWO QUOTED EFFECT SIZES FROM ONE MODEL THAT DO NOT AGREE.** Bypass DO₂i: OR 1.16 per 10 units across a
+  69.4-unit IQ spread implies **1.16^6.94 = 2.80**; the quoted percentile mortalities (1.69% vs 0.74%) imply
+  **2.31**. **Report the discrepancy; do not adjudicate.** A spline or different covariate values would
+  explain it; the abstract does not say.
+- **Check a quoted percentile risk against the cohort's crude risk.** DO₂i 25th-percentile adjusted mortality
+  1.69% ≈ crude 1.72%: **the contrast is "the top quartile is unusually safe", not "the bottom quartile is
+  dangerous"** — same data, different sentence, different threshold implication.
+- **The cardiac-surgery endpoint split again:** DO₂i associates with mortality and creatinine-defined AKI,
+  **not with stroke (OR 1.00, 0.95–1.06)** — the shape the 33-trial/22-year pattern predicts.
+- **A feasibility pilot's exploratory mortality comparison must be reported with EVENT COUNTS AND
+  DIRECTION.** NEWS-1 TRIPS: "no significant difference" covers **four deaths of 102 (3.9%) vs nine of 98
+  (9.2%)**, ARD 5.3 points (−1.6 to 12.1) — more than double in the intervention arm, interval admitting a
+  12-point harm. Symmetric Wald arms (6.9/6.8), so the statistics are fine and carry almost nothing.
+- **The usable number in an implementation pilot is the compliance figure: 56.1% bundle compliance under an
+  objective trigger with dedicated support.** That is what a guideline committee should read.
+- **THE MEASUREMENT-DEFINITION THEME, third form this week.** QTc: prevalence of QTc ≥500 ms in 130 children
+  after cardiac surgery is **13 (10.0%) by Bazett, 1 (0.8%) by Fridericia and Framingham, 2 (1.5%) by
+  Hodges, 6 (4.6%) by Rautaharju — a thirteen-fold ratio**, and 12 of 13 Bazett-positives are negative by
+  two others. **Same patients, same ECGs, label moves 13-fold.** Alongside PrECiSIOn (what counts as a PPC)
+  and the two refractory-shock definitions (whether a vasopressor dose is in the definition).
+- **Credit a paper that declines to adjudicate.** The QTc authors state they can show disagreement and not
+  accuracy, with no reference standard and no torsade, and recommend only that the formula be reported.
+  **Contrast the BMJ trial of 11 Nov claiming "high certainty evidence" for itself.**
+- **Bazett over-corrects at high rates and postoperative children are tachycardic** — so the DIRECTION was
+  predictable; **what the paper supplies is the SIZE, in the population where the correction is worst.**
+
+### BYTE-IDENTICAL CO-PUBLICATION, SECOND INSTANCE — THE EQUAL-LENGTH FLAG FIRED CORRECTLY
+
+German **ECPR consensus statement of nine societies** (DGK, DGTHG, DGAI, DGPTM, DIVI, GRC, DRG, ALKK,
+DGIIN), updating the 2018 document: `10.1007/s00101-026-01770-3` (*Die Anaesthesiologie*) and
+`10.1007/s00063-026-01519-1` (*Med Klin Intensivmed Notfmed*), both 12 Nov, **both 917 characters, both
+md5 `92ab97ca10ea9f96` — BYTE-IDENTICAL.**
+
+**The equal-length red flag (established 22 Oct) fired and the hash confirmed it in the same run — the first
+time that sequence has completed.** **Second byte-identical pair after AHA/ACC (`83d9b2f9…`), and the
+opposite of yesterday's SCCM/ESICM pair (2,283 vs 2,275, different hashes).** **ROUTED TO THE GUIDELINES
+WATCH** under the 30 October rule. Content note: *"There is currently no robust evidence for the superiority
+of ECPR over conventional cardiopulmonary resuscitation"* — a consensus statement whose own abstract says
+the evidence for the intervention is not robust.

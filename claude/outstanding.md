@@ -6136,3 +6136,70 @@ by either panel conceding.** Check if a third definition appears.
    use today (dating, not just abstract recovery), which raises its value.**
 6. **Helper fix (`idlist` + `cursorMark`, then `core` per ID) — still not implemented.** Both of today's
    sweeps fitted in one page.
+
+## 13 NOVEMBER — STATE AFTER THE RUN
+
+**Published:** `_briefs/2026-11-13.md`, 5 items, commit `65fc930`, push verified by `git ls-remote`, Pages
+HTTP 200, zero rendered asterisks. **Fired 34 minutes late (scheduled 14:02:31, fired 14:36:15).**
+
+**Index baselines (for tomorrow).** Whole **49,250,444** (end of run 14:48:41; start 49,250,443 at
+14:36:43, +1 within the run, entirely `PMC`). `MED` **41,363,476** · `PMC` **1,017,978** ·
+`PPR` **1,286,539** · `NBK` **5** · `CTX` **3,933** · `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 ·
+`CBA` 142,377 · `HIR` 2,868 · `CIT` 624. Windows: 1–30 Sep **178,376** · 1–7 Oct **27,810** ·
+Oct month **265,865**. Buckets: 13 Nov **7,036** · 12 Nov **10,225** · 11 Nov **6,923** · 10 Nov **6,281** ·
+9 Nov **449**.
+
+### QUEUE — RESTOCKED HEAVILY BY THE LAGGED PASS
+
+**62 held − 5 published = 57, + 166 candidates from the lagged pass − overlap = the queue is no longer the
+constraint.** The 166 are in-scope, abstract-bearing and dedupe-checked records from 6 Oct – 5 Nov.
+**Do NOT treat the 166 as vetted items — they are deduped candidates, not read papers.**
+
+**TOP OF QUEUE, figures already extracted:**
+
+1. **Isoflurane-based inhaled sedation in mechanically ventilated adults with acute hypoxaemic respiratory
+   failure** (`10.1001/jama.2026.18471`, *JAMA*, 14 Oct). **Not yet read — fetch the abstract first.**
+   **Check against the volatile-sedation item flagged highest priority on 30 September.**
+2. **Intraoperative dobutamine plus noradrenaline to prevent postoperative AKI** (`10.1001/jama.2026.21322`,
+   *JAMA*, 14 Oct). **Not yet read.**
+3. **Vasopressin initiation timing — target trial emulation** (`10.1177/08850666261479700`, 7 Oct).
+   **Pairs with VASSPR: read them together and compare the emulation's estimate with the randomised null.**
+4. **New-onset AF in critical illness, Bayesian review** (`10.1097/ccm.0000000000007412`, CCM, 12 Nov) —
+   **figures extracted:** 54 studies, 367,896 patients; incidence 10.6% (CrI 8.6–12.9); post-discharge
+   thromboembolism 7.1% (4.5–11.0); RR 1.94 (1.23–3.29) **from six studies only**, adjusted 2.01
+   (1.54–2.80) — **both larger AND narrower than crude, worth flagging**; anticoagulation 32.9%
+   (14.6–57.9, a fourfold span) in-hospital and 35.9% (19.7–55.9) after; 23.9% later diagnosed with AF.
+   Follow-up 1.5 months to 5 years.
+5. **Perioperative pregabalin for persistent postsurgical pain after lumbar spine surgery**
+   (`10.1093/pm/pnag149`, *Pain Medicine*, 13 Nov) — **figures extracted:** 5 RCTs, 335 participants;
+   pain at 3 months SMD 0.03 (−0.41 to 0.47), I² 69%, low certainty; **functional disability SMD −0.51
+   (−0.86 to −0.16) but BELOW the minimal important change threshold, very low certainty**; exploratory
+   favourable-outcome RR 1.44 (1.11–1.86), very low certainty; PROSPERO CRD420261401910. **The headline
+   point: a statistically significant result the authors themselves call clinically unimportant.**
+6. **COP-AF colchicine and perioperative AKI substudy** (`10.1053/j.ajkd.2026.06.019`, 30 Oct, 3,687 chars).
+
+### ROUTED, NOT QUEUED
+
+**German ECPR consensus of nine societies** — `10.1007/s00101-026-01770-3` and
+`10.1007/s00063-026-01519-1`, byte-identical (917 chars, md5 `92ab97ca10ea9f96`). **For the 14 November
+guidelines watch.** Updates the 2018 document; its own abstract concedes no robust evidence for ECPR over
+conventional CPR.
+
+### DATED ACTIONS
+
+1. **~~Lagged pass~~ — DONE today**, window 6 Oct – 5 Nov. **Next lagged window: 6 November – 5 December,
+   due around 10 December.** **Do not defer it for a large same-day sweep; today proved the cost.**
+2. **November month audit — start of December, swept as a RANGE.**
+3. **AHA/ACC re-check — 11 December**, publisher-only question.
+4. **In-development pages: ESICM, ESAIC, ESC, ESPEN, EACTS, STS, ASA — STILL UNREAD.** Queued for a frozen
+   index; **three day-types now exist, so stop waiting for a stall and just do it on the next modest day.**
+5. **Title-stem check against the remaining 17 named gaps** — not run. **Raised in value: on 12 November the
+   route proved it can DATE a document, not only recover an abstract.**
+6. **~~Helper fix~~ — CLOSED AS UNNECESSARY (correction 13).** Replaced by `epmc_all` in
+   `/tmp/claude-0/epmc_all.sh`, verified at 750/750.
+
+### NEW NAMED TARGET
+
+**Find out why four trials with ordinary index dates (16 and 19 October) were missed by the daily route.**
+The restamping explanation is excluded. Next step: re-run the 19 October sweep query as recorded and see
+whether the three JAMA records come back.
