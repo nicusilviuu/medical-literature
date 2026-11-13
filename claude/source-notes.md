@@ -9103,3 +9103,128 @@ opposite of yesterday's SCCM/ESICM pair (2,283 vs 2,275, different hashes).** **
 WATCH** under the 30 October rule. Content note: *"There is currently no robust evidence for the superiority
 of ECPR over conventional cardiopulmonary resuscitation"* — a consensus statement whose own abstract says
 the evidence for the intervention is not robust.
+
+## 13 NOVEMBER (guidelines watch) — THE IN-DEVELOPMENT ERRAND WAS NOT LOW-VALUE
+
+### THE SECOND HOLE IN THE DAILY ROUTE, FOUND BY A SECOND INSTRUMENT IN TWO DAYS
+
+**Reading ESAIC's own published list found the largest single gap this archive has recorded.** The
+**2025 ESAIC and ESPA Guidelines on neuromuscular block in anaesthetised children** exist in the index as
+FOUR records, every one abstract-free, none ever reported here:
+
+| Record | Online | Issue | What it is |
+| --- | --- | --- | --- |
+| `10.1097/eja.0000000000002357` | 2026-03-04 | 43(4) | **the guideline** (Veyckemans + 20) |
+| `10.1097/eja.0000000000002428` | 2026-06-10 | 43(7) | **erratum** |
+| `10.1097/eja.0000000000002434` | 2026-07-08 | 43(8) | letter (Jelacic, Bowdle) |
+| `10.1097/eja.0000000000002456` | 2026-09-09 | 43(10) | **authors' reply** (Schmartz, Veyckemans, Afshari, Fuchs-Buder) |
+
+**Core scope, tracked society, seven-month trail, all four missed.** **Yesterday a PUBLICATION-DATE pass
+found three JAMA trials the daily route missed; today a SOCIETY WEB PAGE found a guideline and three
+satellites.** **Two instruments, two days, same conclusion: the daily index-date sweep has holes that only a
+different angle of attack reveals.** **And the in-development check was deferred eleven days as a low-value
+errand. RULE: a route that costs nothing and looks at the literature from a different direction is not
+low-value, and deferring it is not free.**
+
+**DATING FINDING — YESTERDAY'S INVERTED.** The document is titled **"2025 ESAIC and ESPA Guidelines"** and
+was published **4 March 2026**. **ASRA (12 Nov): title text fine, metadata off by 21 months. ESAIC today:
+metadata correct, WRONG YEAR IN THE TITLE.** **RULE: a guideline's year misleads from either direction.
+Check the title against the metadata AND the metadata against a reply; never report either alone.**
+
+**NAMED GAP: the erratum's content.** An erratum to a paediatric NMB guideline is where dose tables and
+monitoring thresholds get corrected, and all four records deposit zero characters. Title-stem route run and
+recovered nothing readable.
+
+### IN-DEVELOPMENT PAGES — 4 OF 7 DONE (ESC, EACTS, STS, ASA STILL OWED)
+
+**ESICM — six in development, no public dates:** Human-Centred Partnership in the ICU (in progress); joint
+EANM-ESICM consensus on PET in the critically ill; antimicrobial stewardship for severe infections and
+sepsis (in progress); **Transfusion Guideline Part III: reversal of anticoagulants in the bleeding
+critically ill**; **weaning from mechanical ventilation, joint with the ERS**; SHINE Delphi on ICU nurses'
+roles in 2030 (round 3 closed 2 Sep 2026).
+
+**Two land on live threads.** The ERS weaning guideline arrives after PAV-vs-PSV moved weaning success
+(RR 1.09) and left reintubation and mortality untouched — **it will have to say what weaning success is
+FOR.** And Transfusion Part III sits beside the ASRA fifth edition's unread reversal revisions: **two
+societies writing on anticoagulant reversal in parallel.**
+**With SCCM's thirteen (read 2 Nov), the two largest ICU societies have NINETEEN documents in progress.**
+
+**ESPEN — guidelines page last updated 8 SEPTEMBER 2023, no in-development section, most recent
+publications listed are six 2023 documents.** **Stated as what the page shows, NOT as a claim that ESPEN has
+published nothing since.** **Operational consequence: for ESPEN the society route cannot be relied on and
+the index route must carry the society entirely.**
+
+**ESAIC — "Ongoing" tab present and EMPTY.** Published list newest-first: paediatric NMB (Mar 2026, the gap
+above), failing epidural (Feb 2025), preoperative assessment (Nov 2024), VTE first update (Aug 2024),
+**reversal of direct anticoagulants in life-threatening bleeding (May 2024)**, airway in neonates and
+infants (Jan 2024), postoperative delirium (Feb 2024), cardiac biomarkers (Dec 2023), perioperative cardiac
+arrest (Oct 2023), severe perioperative bleeding (Apr 2023), neuromuscular blockade (Feb 2023),
+**regional anaesthesia in patients on antithrombotic drugs (Feb 2022)**.
+**That last is the European counterpart to the ASRA fifth edition of 31 Jan 2025 — the two guidelines on one
+question, three years apart, which is exactly what the ESRA newsletter was contrasting yesterday.**
+
+### THE EQUAL-LENGTH FLAG FIRED AND THE HASH CONFIRMED IT INSIDE ONE RUN — A FIRST
+
+German **ECPR consensus of nine societies** (DGK, DGTHG, DGAI, DGPTM, DIVI, GRC, DRG, ALKK, DGIIN), updating
+2018: `10.1007/s00101-026-01770-3` (*Die Anaesthesiologie*) and `10.1007/s00063-026-01519-1` (*Med Klin
+Intensivmed Notfmed*), **both 917 chars, both md5 `92ab97ca10ea9f96` — BYTE-IDENTICAL.**
+**Second byte-identical pair after AHA/ACC (`83d9b2f9…`); opposite of the 12 Nov SCCM/ESICM pair (2,283 vs
+2,275, different hashes).** **The 22 October flag-then-hash sequence completed within a single run for the
+first time.**
+
+**CONTENT NOTE WORTH KEEPING: the abstract says "There is currently no robust evidence for the superiority
+of ECPR over conventional cardiopulmonary resuscitation."** **A consensus statement that concedes the
+evidence for its own intervention and then governs PROGRAMME QUALITY rather than patient selection.**
+**Pairs with ILCOR 2026 as a matched set: 989 characters deposited with no recommendation and no certainty
+rating (the withholding branch) against 917 characters spent saying what the evidence does not show.**
+**Same deposit size, opposite use.**
+
+### SEVENTH DELPHI THRESHOLD SCHEME — THE FIRST THAT IS A MEAN, NOT A PROPORTION
+
+**CHNC gastroschisis antibiotic consensus (`10.1016/j.jpedsurg.2026.163573`, 9 Nov): "mean score >80%" on a
+5-POINT Likert, 23 respondents, 7/10 in round one, all 10 after editing.**
+
+**Every other scheme in the catalogue counts PANELLISTS; this one averages SCORES.** **A mean clears 80%
+with a polarised panel because enthusiasts offset dissenters — so this is the ONLY one of the seven whose
+criterion is insensitive to the panel's distribution**, the opposite property to the 10 November core outcome
+set's two-sided rule (>70% critical AND ≤15% not important), adopted precisely to fail polarising items.
+**Catalogue: 70% · 75% · 75% on a 7-point (PrECiSIOn) · 90/80 on a 9-point · two-sided >70%/≤15% ·
+two-sided 75% agree-or-disagree (SCCM/ESICM) · mean >80% on a 5-point (CHNC).** None comparable.
+
+**ALSO: 3 of 10 statements failed round one and passed after EDITING.** **A statement that passes after
+being rewritten is not the statement that failed, so a final "all achieved consensus" covers two different
+texts.** Record the round-one count, not only the final one.
+
+### TITLE-STEM ROUTE — A LINEAGE RECOVERED, NO CONTENT (its clean negative case)
+
+**BSH transfusion guideline for fetuses, neonates and older children**: 2016 original
+(`10.1111/bjh.14233`, 11 Nov 2016, *Br J Haematol*) → **Addendum August 2020** (`10.1111/bjh.17109`,
+18 Nov 2020) → **this edition** (`10.1111/tme.70117`, 12 Nov 2026, **and the journal CHANGED to
+*Transfusion Medicine***, title plural → singular). **All three deposit ZERO characters.**
+
+**What titles and metadata alone yielded:** the 2020 record's title carries the citation it amends
+("Br J Haematol. 2016;175:784-828" — a 45-page guideline) and declares itself an Addendum.
+**RULE: the title-stem route recovers IDENTITY and LINEAGE even when it recovers no content — and a journal
+change between editions means a reader searching the previous journal will not find the new edition.**
+
+### ROUTE AND ROUTING NOTES
+
+- **A SIXTH KIND OF RE-SURFACING: the same French recommendation under a second body's label and date.**
+  The in-hospital life-threatening emergency organisation document, reported here 30 September with society
+  date 3 September, re-appears as a **HAS-labelled publication dated 28 September 2026.** **HAS labels and
+  republishes French society recommendations with its own date — a route to check, not a new document.**
+- **`JACC: Advances` multivessel CAD "Boundaries of Guidelines"** (ACC Interventional + Cardiac Surgery
+  Leadership Councils, 11 Nov) routed HERE under the 30 October rule. **Its argument — the landmark trials
+  predate physiologic lesion assessment, intracoronary imaging and modern arterial grafting — is the honest
+  version of the standard excuse for ignoring guidelines.** Note: **if the surgical arm of those trials was
+  single-arterial-graft surgery, the surgical option in a 2026 Heart Team discussion is not what was
+  randomised.**
+- **An update that states its own delta.** The German 2026 LRTI-in-severe-neurological-impairment update
+  (`10.1007/s00431-026-07482-5`, OA) carries a **"What is New" block naming five changes against its 2024
+  version.** **Praise it and copy it: most updates leave the reader to diff two documents.**
+- **Positioning document** (`10.1007/s00064-026-00962-9`) kept for ONE sentence: **in Germany positioning is
+  a joint medical responsibility (surgeon, anaesthetist), primarily the surgeon's, with a mandatory joint
+  check at the start.** **An anaesthetist is named in a harm whose liability allocation is national — look
+  it up locally.** Not society guidance, no grading scheme; reported as such.
+- Sweep **23/23 for 6–13 Nov against 33 for 5–12 Nov** — a shorter list for an equally long window one day
+  later. **Churn, not a quieter week.**

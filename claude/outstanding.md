@@ -6203,3 +6203,55 @@ conventional CPR.
 **Find out why four trials with ordinary index dates (16 and 19 October) were missed by the daily route.**
 The restamping explanation is excluded. Next step: re-run the 19 October sweep query as recorded and see
 whether the three JAMA records come back.
+
+## 13 NOVEMBER (guidelines watch) — STATE AFTER THE RUN
+
+**Published:** `_guidelines/2026-11-13.md`, **7 items**, commit `3f4baad`, push verified by `git ls-remote`,
+Pages HTTP 200, zero rendered asterisks. **No new guidance from any tracked society. Fired ~60 minutes late
+(scheduled 14:20:00, fired 15:19:51).**
+
+### NEW NAMED GAPS (both routes already attempted)
+
+1. **The ESAIC/ESPA paediatric NMB guideline and its ERRATUM** — `10.1097/eja.0000000000002357` and
+   `…002428`, plus the letter `…002434` and reply `…002456`. **All four abstract-free.** **The erratum's
+   content is the priority: errata to a paediatric NMB guideline are where dose tables and monitoring
+   thresholds get corrected.** Try the publisher, an ESAIC PDF, or a review citing it.
+2. **BSH transfusion guideline, all three editions abstract-free** (`10.1111/tme.70117`,
+   `10.1111/bjh.17109`, `10.1111/bjh.14233`). Lineage recovered, content not.
+
+### DATED ACTIONS
+
+1. **In-development pages — 4 of 7 DONE today** (ESICM ✓, ESPEN ✓, ESAIC ✓; SCCM done 2 Nov).
+   **STILL OWED: ESC, EACTS, STS, ASA.** **Do them on the next run; today proved the errand is not
+   low-value.**
+2. **Next lagged window: 6 November – 5 December, due around 10 December.** Do not defer.
+3. **November month audit — start of December, swept as a RANGE.**
+4. **AHA/ACC re-check — 11 December**, publisher-only question.
+5. **Title-stem check against the remaining 17 named gaps** — still not run. **Now has three demonstrated
+   uses: recover an abstract, DATE a document (12 Nov), and recover a LINEAGE with no content (today).**
+
+### WATCHLIST ADDED TODAY — DOCUMENTS IN PROGRESS TO EXPECT
+
+**ESICM (6):** Human-Centred Partnership in the ICU · joint EANM-ESICM consensus on PET in the critically
+ill · antimicrobial stewardship for severe infections and sepsis · **Transfusion Part III, reversal of
+anticoagulants in the bleeding critically ill** · **weaning from mechanical ventilation, joint with the
+ERS** · SHINE Delphi on ICU nursing roles 2030. **No public dates.**
+**With SCCM's thirteen, nineteen documents are in progress at the two largest ICU societies.**
+
+**PREDICTION LOGGED:** the ESICM/ERS weaning guideline will adopt a **composite or hierarchical** weaning
+endpoint rather than weaning success alone, because the PAV-vs-PSV result (success RR 1.09, reintubation
+0.82, mortality 0.89) makes success-alone indefensible. **Check when it appears.**
+
+**PREDICTION LOGGED:** ESICM Transfusion Part III and the ASRA fifth edition will differ on **DOAC reversal
+timing thresholds**, as ESAIC and ASRA already do on regional anaesthesia intervals (ESAIC Feb 2022 vs ASRA
+Jan 2025). **The ESRA newsletter claims ASRA uses predefined interruption intervals where ESAIC/ESRA
+prefer real-time patient-tailored reversal — UNVERIFIED, promotional source, and worth testing against both
+documents when Part III lands.**
+
+### QUEUE NOTE
+
+**Routed to the brief, not the watch:** the out-of-hospital cardiac arrest multimodal neuroprognostication
+**preprint** (`10.20944/preprints202611.1107.v1`, 11 Nov) — preprint, not society guidance.
+**Left to the brief:** the BJA letter on delayed gastric emptying with GLP-1 agonists
+(`10.1016/j.bja.2026.10.006`, 10 Nov, abstract-free) — correspondence about a research paper, and its own
+title is a methods point: separate drug effects from disease effects.
