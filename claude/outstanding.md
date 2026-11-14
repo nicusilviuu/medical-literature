@@ -6309,3 +6309,44 @@ Oct month **265,860**. Buckets: 14 Nov **8,218** · 13 Nov **7,026** · 12 Nov *
 **New check: inside any paragraph, no line after the first may match `^\d+[.)] ` — it is parsed as an
 ordered-list marker and silently ends the paragraph.** Caught today only by the Pages asterisk count.
 **The rewrapper is the hazard: any reflow can move a year or a number to the start of a line.**
+
+## 14 NOVEMBER (guidelines watch) — STATE AFTER THE RUN
+
+**Published:** `_guidelines/2026-11-14.md`, **4 items**, commit `b187494`, push verified by `git ls-remote`,
+Pages HTTP 200, zero rendered asterisks. **No new guidance from any tracked society.** Fired ~60 min late
+(scheduled 14:20:00, fired 14:20:35 — on time).
+
+### DATED ACTIONS
+
+1. **~~In-development pages~~ — COMPLETE for six of seven societies across 13–14 November.**
+   **ASA STILL OWED: the page I constructed 404'd. Find the right URL (try the ASA site map or a search for
+   "ASA practice guidelines and advisories") on the next watch.**
+2. **Next lagged window: 6 November – 5 December, due around 10 December. Do not defer.**
+3. **November month audit — start of December, swept as a RANGE.**
+4. **AHA/ACC re-check — 11 December**, publisher-only question.
+5. **Title-stem check against the remaining 17 named gaps** — still not run.
+6. **NEW AND HIGH VALUE: re-run the daily sweep query against the whole of 2026 for each tracked society by
+   name.** Two gaps in two days (ESAIC 4 Mar, STS 18 Apr) were found by reading society pages. **A
+   society-name sweep across the year would find the rest in one pass.** Suggested form:
+   `("Society of Thoracic Surgeons" OR "ESAIC" OR "EACTS" OR "ESICM" OR …) AND FIRST_PDATE:[2026-01-01 TO
+   2026-11-14] AND (TITLE:"guideline" OR TITLE:"guidelines" OR TITLE:"consensus")`, deduped against the
+   archive. **Do this before the November month audit.**
+
+### WATCHLIST ADDED TODAY
+
+**ESC planned documents (9, with chairpersons):** 2027 — acute coronary syndromes · focused update of the
+2023 cardiomyopathies guidelines · obesity and CVD · **pulmonary embolism** · syncope and cardiovascular
+autonomic disorders. 2028 — **myocardial revascularization** · adult congenital heart disease · CVD
+prevention · **universal definition of cardiogenic shock (no chairpersons listed yet).**
+
+**Running total of documents in progress at tracked societies: SCCM 13 · ESICM 6 · ESC 9 = 28.**
+
+**PREDICTION LOGGED:** the ESC 2028 myocardial revascularization guideline will cite the November 2026 ACC
+Interventional/Cardiac Surgery councils' document as part of its rationale, because that document's argument
+(the landmark trials predate physiologic lesion assessment, intracoronary imaging and modern arterial
+grafting) is precisely the case for revising it. **Check on publication.**
+
+### NEW NAMED GAP
+
+**The STS POAF guideline's full recommendation text** — the abstract gives the grade counts (2 I, 2 IIa,
+8 IIb, 3 III) but not the eight Class IIb statements, which are the interesting half. Paywalled.

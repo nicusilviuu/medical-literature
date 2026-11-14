@@ -9349,3 +9349,141 @@ trial (both JAMA, 14 Oct) and the vasopressin emulation (7 Oct)**, after VASSPR 
   i.e. evidence AGAINST the common claim that the two routes are interchangeable because both act
   systemically.** **The most mechanistically informative result on the page and not what it will be cited
   for.**
+
+## 14 NOVEMBER (guidelines watch) — THE TWO ROUTES LEAK IN OPPOSITE DIRECTIONS, AND THE HASH RULE HAS A FLOOR
+
+### SECOND TRACKED-SOCIETY GAP IN TWO DAYS
+
+**`10.1016/j.athoracsur.2026.04.002` — The Society of Thoracic Surgeons 2026 Clinical Practice Guidelines
+for the Prevention and Treatment of New-Onset Postoperative Atrial Fibrillation After Cardiac Surgery**,
+*Ann Thorac Surg* 122, online **18 April 2026**, print August 2026, pubType **Practice Guideline**,
+2,022-character abstract. **NEVER REPORTED HERE. Found by checking STS directly, not by the index.**
+
+**Grade distribution, published in full by the guideline itself — 15 recommendations:**
+**2 Class I** (perioperative oral amiodarone; rhythm cardioversion for haemodynamically unstable POAF) ·
+**2 Class IIa** (posterior pericardiotomy; perioperative β-blockers) · **8 Class IIb** ("areas of
+uncertainty and limited data") · **3 Class III** (no demonstrated benefit).
+**Eight of fifteen — a clear majority — are IIb.** **The clearest instance yet of the archive's rule that a
+published grade distribution beats a confident summary: the document's own arithmetic tells the reader how
+much of it is settled.** Note **posterior pericardiotomy sits at the same grade as β-blockers**, so the
+strongest non-pharmacological evidence is for draining the pericardium.
+Questions formulated **in 2025**, so the evidence base closes before this autumn's trials; no SR
+registration named.
+
+**PAIRS WITH THE 12 NOVEMBER BRIEF ITEM** (CCM Bayesian review of NOAF in general critical illness: 54
+studies, 367,896 patients, incidence 10.6%, post-discharge thromboembolism RR 1.94, anticoagulation 32.9%
+in-hospital with a FOURFOLD credible interval). **Cardiac surgery now has a fifteen-recommendation guideline
+for this condition and the general ICU has none, while general-ICU practice varies fourfold. The two
+documents together make the case for the guideline the general literature lacks.**
+
+### THE ROUTES LEAK IN BOTH DIRECTIONS — NOW EVIDENCED WITH NAMED CASES ON EACH SIDE
+
+- **Index finds what a society page omits:** EACTS robotic cardiac surgery consensus
+  (`10.1093/ejcts/ezag187`, 1 Oct 2026), found by the October index audit and recorded on 1 November as
+  "missed by the society route and found only by the index". **CONFIRMED TODAY: the EACTS CPG page lists 35
+  documents, the most recent dated 9 October 2025, and NOTHING from 2026 — six weeks on it still does not
+  list that consensus.** The 1 November inference is now an observation.
+- **A society page finds what the daily index sweep misses:** ESAIC/ESPA paediatric NMB guideline
+  (4 Mar 2026, + erratum + letter + reply) found 13 Nov; **STS POAF guideline (18 Apr 2026) found today.**
+
+**CONCLUSION, and it is the week's most useful structural finding: THREE tracked-society documents in two
+days were each invisible to one route and visible to the other, in opposite directions. Neither route
+dominates; neither is redundant.** **RULE: the society route is not a formality that confirms the index, and
+the index cannot be trusted to cover societies. Read the societies' PUBLISHED lists, not only their
+announcements — that is how both gaps were found.**
+
+### IN-DEVELOPMENT DATED ACTION COMPLETE (7 societies, 2 days)
+
+**SCCM** 13 documents (2 Nov) · **ESICM** 6 · **ESPEN** page stale since 8 Sep 2023 · **ESAIC** empty
+"Ongoing" tab (all 13 Nov) · **ESC** 9 planned, with chairpersons · **EACTS** no in-development section and
+nothing from 2026 (today) · **ASA NOT REACHED — the page I constructed returned 404; that is my failure, not
+evidence about the ASA. Still owed.**
+
+**ESC schedule, read from the page:** 2027 — acute coronary syndromes, focused update of the 2023
+cardiomyopathies guidelines, obesity and CVD, **pulmonary embolism**, syncope and cardiovascular autonomic
+disorders. 2028 — **myocardial revascularization**, adult congenital heart disease, CVD prevention,
+**universal definition of cardiogenic shock (NO CHAIRPERSONS LISTED — the only entry in that state).**
+
+**Two archive connections.** **Myocardial revascularization is due 2028 and the ACC councils' document of
+11 November argues the revascularisation evidence base is outdated** (trials predate physiologic lesion
+assessment, intracoronary imaging, modern arterial grafting) — complaint and scheduled revision now both on
+record, two years apart. **And a universal definition of cardiogenic shock is two years away while French
+expert recommendations on cardiogenic shock management (SRLF/SFC/SFAR/SFCTCV) have existed since March
+2026 — the management guidance arrives first, the definition follows.**
+
+### A SECONDARY SOURCE MISDESCRIBED A PRIMARY ONE, SECOND TIME IN THREE DAYS
+
+**A search summary placed "a focused update of the 2019 dyslipidaemia guidelines" in the ESC's 2027 column.
+The page itself shows the 2027 focused update is on the 2023 CARDIOMYOPATHIES guidelines, and the 2019
+dyslipidaemias update sits under 2025 as already PUBLISHED.** The summary conflated two entries.
+**After the ESRA newsletter's characterisation of the ASRA fifth edition (12 Nov, labelled unverified).**
+**RULE REINFORCED: read the page, not the summary about the page — and when only a summary is available, say
+so on the published entry.**
+
+### A FLOOR UNDER THE HASH RULE — FOUND TODAY
+
+**EACTS/STS/AATS Guidelines on temporary mechanical circulatory support in adult cardiac surgery** is
+deposited across four journals:
+
+| DOI | Journal | First pub | Chars | md5 |
+| --- | --- | --- | --- | --- |
+| `10.1016/j.athoracsur.2025.09.005` | Ann Thorac Surg | 2025-10-09 | **0** | `d41d8cd98f00b204` |
+| `10.1016/j.jtcvs.2025.09.046` | J Thorac Cardiovasc Surg | 2025-10-09 | **0** | `d41d8cd98f00b204` |
+| `10.1093/ejcts/ezaf330` | Eur J Cardiothorac Surg | 2026-07-01 | **0** | `d41d8cd98f00b204` |
+| `10.1053/j.jvca.2026.09.028` | J Cardiothorac Vasc Anesth | 2026-09-21 | **0** | `d41d8cd98f00b204` |
+
+**All four hash identically — to the md5 of the EMPTY STRING. The comparison carries ZERO information.**
+**The equal-length flag also fires on four zeroes and is equally meaningless.**
+**RULE: compare co-publications by hash ONLY when the deposits are non-empty. A set of empty deposits is a
+GAP, not a match.** **This is the floor under the rule built on 22 October and exercised on 11, 12 and
+13 November — and it was never going to show up on a pair, only on a set.**
+**Also note the JCVA record is a DIFFERENT document — a companion "Expert Analysis for Cardiac
+Anesthesiologists" (21 Sep 2026) — so the set is one guideline in three journals plus a companion analysis in
+a fourth, and the guideline's two first deposits are the SAME DAY (9 Oct 2025) with the third NINE MONTHS
+LATER.**
+
+### EIGHTH DELPHI THRESHOLD SCHEME — AND THE SCALE LENGTH NOW MATTERS MORE THAN THE NUMBER
+
+**Anaesthesia technologist EPAs (`10.21203/rs.3.rs-11402268/v1`, preprint, 9 Nov): ≥75% of panellists rating
+3 or 4 on a FOUR-POINT scale.** **On a four-point scale with no neutral option "3 or 4" is simply the top
+half — so this asks whether three quarters of the panel are on the positive side of a forced choice, which
+is a weaker instrument than 75% of the top three of seven and NOT comparable to it.**
+**Catalogue now spans FOUR scale lengths — 4, 5, 7 and 9 points — and the same nominal 75% means something
+different on each.** **RULE: record the SCALE LENGTH with every threshold; the percentage alone is not
+interpretable.**
+
+**Panel problems worth keeping:** **30% attrition between rounds (20 → 14), so every round-two percentage
+rests on fourteen people and 75% means eleven**; the two failing activities sat at **71.4% = 10/14**;
+**19 of 20 panellists were technologists and ONE was an anaesthesiologist**, in a document about what
+technologists may be entrusted to do under anaesthesiologist supervision, where the top-scoring activities
+are assisting with airway management (100%) and with anaesthesia and airway complications (98.2%).
+**And one high-scoring activity was removed by JUDGEMENT, not threshold** (continuing education, excluded
+"on conceptual grounds"). **RULE: a Delphi's output is curated after scoring, so the final list is never
+simply what the panel voted for.**
+
+### THE ASYMMETRIC-DECISION RULE — NEW AND GENERAL
+
+**RhD position statement** (`10.1097/xcs.0000000000002099`, 13 Nov, five organisations, pubTypes Practice
+Guideline AND Consensus Statement): **D-alloimmunisation after trauma transfusion 8–43% (five-fold range);
+any HDFN-complicated future pregnancy 0.6–6.5% (eleven-fold range); modelled perinatal death risk ~0.04%;
+combined severe HDFN plus perinatal death ~0.24%.** Recommendation nonetheless firm: **do not withhold
+RhD-positive products when RhD-negative are unavailable and transfusion is indicated.**
+
+**RULE: a wide-interval estimate CAN support a firm recommendation when the decision is asymmetric. What
+matters is whether the conclusion survives the WHOLE range, not whether the range is narrow.** Here even the
+top of every range leaves future reproductive risk orders of magnitude below the immediate mortality of not
+transfusing.
+
+**AND THE DOCUMENT'S ORIGIN IS AN INEQUITY, NOT A TRIAL: national data show FCPs with traumatic haemorrhage
+are ~40% less likely to receive low-titer group O whole blood than comparable males.** **A position
+statement that begins from an observed inequity rather than from new evidence — first one this archive has
+recorded this quarter.** Operative word in the recommendation: **SELECTIVE** Rh immunoglobulin for
+low-volume exposures. **The infrastructure items (antibody surveillance, counselling, multidisciplinary
+follow-up, institutional protocols) are the parts that fail silently if nobody owns them.**
+
+### THIRD CONSECUTIVE YEAR-IN-TITLE MISMATCH, AND THE HONEST VERSION
+
+`10.1007/s00104-026-02615-w` — "[Guidelines ulcerative colitis: surgery : **Status November 2025**]",
+published **13 November 2026**. Out of scope (colorectal). **But it is the third in three days after ASRA
+(metadata wrong) and ESAIC (title year wrong) — and this one is the HONEST form: "Status November 2025"
+STATES the version date rather than disguising it.** **That is how a guideline should carry a version year.**
