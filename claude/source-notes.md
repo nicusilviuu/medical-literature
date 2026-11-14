@@ -9228,3 +9228,124 @@ change between editions means a reader searching the previous journal will not f
   it up locally.** Not society guidance, no grading scheme; reported as such.
 - Sweep **23/23 for 6–13 Nov against 33 for 5–12 Nov** — a shorter list for an equally long window one day
   later. **Churn, not a quieter week.**
+
+## 14 NOVEMBER — A PRECONDITION I DID NOT STATE, AND A RENDERING DEFECT THE SUITE CANNOT SEE
+
+### THE SUBTRACTION BOUND NEEDS A NON-NEGATIVE DECOMPOSITION
+
+Start **14:03:51**: whole **49,250,444 → 49,257,564 (+7,120)**, residual 0.
+**`MED` +6,875 · `PPR` +1,322 · `CTX` +1 · `PMC` −1,078.** The four sum to 7,120 exactly.
+
+**Yesterday I wrote that a bucket exceeding the whole-database gain bounds how many of its records are
+redated — "at least 359, by subtraction, not inference".** **That subtraction has a precondition I did not
+state: it holds ONLY when no source shed records.** With a shrinking source, GROSS additions can exceed the
+NET gain, so a bucket larger than the net gain proves nothing.
+
+**Today: bucket 8,218 vs net gain 7,120, but the three growing sources added 8,198 — so today's bucket could
+be almost entirely new. NO BOUND IS AVAILABLE and none was stated.**
+**Yesterday's bound STANDS: every source was flat or rising (`MED` +5,293, `PPR` +1,382, `PMC` +1,
+`CTX` +1).**
+
+**RULE: before using the subtraction bound, check the decomposition for a negative term. The bound is only
+valid on a non-negative decomposition.** **Not a correction — the bound was right where it was used — but a
+precondition that was implicit and is now explicit.** Logged as a METHOD REFINEMENT, not as correction 14.
+
+### FIRST ARITHMETIC LOCALISATION OF A PMC CONTRACTION TO ONE INDEX DATE
+
+| Bucket | 13 Nov | 14 Nov | Change |
+| --- | --- | --- | --- |
+| 12 Nov | 10,225 | **9,150** | **−1,075** |
+| 13 Nov | 7,036 | 7,026 | −10 |
+| 11 Nov | 6,923 | 6,922 | −1 |
+| 10 Nov | 6,281 | 6,281 | 0 |
+| 14 Nov (own) | — | 8,218 | — |
+
+**`PMC` −1,078 against the 12 November bucket's −1,075. Difference: THREE.**
+**On 31 October `PMC` shed 9,314 and NO bucket moved** — which is why that was reported as an ongoing
+process rather than a dated removal. **Today the removal has a date attached.**
+**Stated as strong evidence of a common cause, NOT as an identity of records: two quantities matching to
+three parts in a thousand is not proof the records are the same.** **What it establishes is that a PMC
+contraction CAN be localised to one index date, which the 31 October episode suggested was impossible.**
+
+### A RENDERING DEFECT THE PRE-COMMIT SUITE CANNOT DETECT — NEW CHECK ADDED
+
+**The Pages asterisk check found 4 rendered asterisks — the first non-zero count this archive has
+recorded** — on a page where the full pre-commit suite had passed.
+
+**Cause, diagnosed and confirmed by the fix: a rewrapped CONTINUATION LINE began `2025. Adults ventilated
+…`. A line starting with a digit, a period and a space is an ORDERED-LIST MARKER.** Kramdown ended the
+paragraph there, so the `**…**` span opened on the line above and closed two lines below never matched and
+both delimiters rendered literally.
+
+**NEW SUITE CHECK: inside any paragraph, no line after the first may match `^\d+[.)] `.** Added and run.
+Fixed by reflowing so "March 2025." does not start a line; re-polled Pages to **0 rendered asterisks** with
+`<strong>Pragmatic` present in the HTML.
+
+**RULE: the pre-commit suite checks SOURCE balance and cannot see RENDERING. The Pages asterisk count is not
+a formality — it is the only gate that catches a well-formed source file that renders wrong.** **And the
+rewrapper is the hazard: every long-line reflow can move a number to the start of a line.**
+
+### THE LAGGED PASS HAS NOW SUPPLIED FOUR LEAD ITEMS IN TWO DAYS
+
+Three of today's five items came from the 13 November publication-date pass: **SAVE-ICU and the dobutamine
+trial (both JAMA, 14 Oct) and the vasopressin emulation (7 Oct)**, after VASSPR yesterday.
+**Confirms the instrument beyond doubt and the cost of having deferred it three days.**
+
+### ANALYTIC POINTS BANKED TODAY
+
+- **A strategy trial in which half the intervention arm receives the comparator is not a drug comparison.**
+  SAVE-ICU: **49.9–55.4% of the inhaled arm received concomitant IV sedation on any day in the first 14
+  days.** What was compared is isoflurane-plus-IV against IV.
+- **DENOMINATORS ARE NOT ARM SIZES, second instance.** SAVE-ICU arms 385 + 395 = 780 analysed; mortality
+  denominators 379 + 390 = **769**, eleven short, unexplained in the abstract. **Same shape as COVALENT
+  (16 Oct).** **A recurring reporting habit, not a one-off — check the denominator against the arm size
+  every time.**
+- **DELIRIUM- AND COMA-FREE DAYS, THIRD APPEARANCE IN ONE WEEK**, and the first as a HARM: SAVE-ICU
+  **−0.95 days (−1.69 to −0.22)**. After the `CCM` methods paper saying the composite has never been
+  rigorously evaluated and the guanfacine pilot resting its whole signal on it. **A 780-patient JAMA trial
+  reports a harm on an endpoint a methods paper in the same month says nobody has validated. The field's
+  best trials and its own methodologists are out of step.**
+- **THE SUPPORTING SECONDARIES WERE THE PRIMARY MEASURED AGAIN.** Dobutamine trial: primary is KDIGO AKI
+  (creatinine and urine output); **the only two of eleven secondaries that moved are day-1 SOFA, which
+  CONTAINS a creatinine/urine-output renal sub-score, and urine output at one hour.** **Nine of eleven were
+  null and the two that were not are the two closest to the primary. That is not corroboration.**
+  **RULE: before crediting a secondary as support, check whether it is a component or a container of the
+  primary.**
+- **And the mechanism makes the circularity predictable:** dobutamine raises cardiac output and renal
+  perfusion, which raises urine output and lowers creatinine — **which is the endpoint definition.** The
+  33-trial/22-year cardiac-surgery pattern applies: short-term creatinine endpoints produce positives,
+  MAKE-90 produces negatives. **No mortality or 90-day renal endpoint appears in the abstract at all.**
+  Effect size: **11.94 points absolute, NNT 8.4, p = 0.0009, with a severity gradient (stage 2 halved,
+  stage 3 down 44%)** — real-looking and on the wrong endpoint class to act on.
+- **THE VASOPRESSIN SERIES IS NOW COMPLETE AND IS A TEACHING CASE.** Observational **HR 2.55** → emulation
+  **HR 2.87** at >0.75 µg/kg/min (authors concede residual confounding) → emulation's claimed **therapeutic
+  window 0.1–0.5, best around 0.25** → **VASSPR randomised 0.1 vs 0.4, BOTH INSIDE THAT WINDOW, and found
+  aOR 0.98 with practice separated by 25 points.** **RULE: a target trial emulation can control immortal
+  time bias impeccably and still report the shape of CONFOUNDING rather than of a treatment effect — and the
+  only way to know is a trial that randomises across the claimed window.**
+  **Also: the emulation's late benefit is a subgroup of a four-threshold stratified analysis with no
+  interaction test reported — a difference in significance between strata is not a significant difference.**
+- **A mortality benefit from a ventilator MODE across nine small trials deserves the small-pool
+  scepticism.** NAVA: 842 patients ≈ 94 per trial; **ICU mortality RR 0.72 (0.53–0.99), p = 0.039 — upper
+  bound 0.99, the least informative significant result**; hospital mortality 0.71 (0.56–0.90), p = 0.005.
+  **Credit the structure, not the size: benefit in invasive ventilation, absent in non-invasive with I² 0%,
+  and the authors declined to pool the two.** Mechanistically coherent (diaphragm-triggered support should
+  matter more in a sedated, instrumented patient).
+  **Feeds the ESICM/ERS weaning guideline found yesterday: "mechanical ventilation success rate" 1.13
+  (1.04–1.22) is the same weaning-success family a proportional-assist trial moved while leaving
+  reintubation and mortality untouched. The committee must decide whether weaning success is a benefit on
+  its own.**
+- **A NULL PRIMARY WITH AN OVERWHELMING SECONDARY, and the secondary is what gets quoted.** PENG block
+  trial: time to first rescue opioid **HR 0.56 (0.28–1.08), p = 0.08** (reconstructs to 0.092); opioid
+  consumption **−41.8%, p < 0.001**. **Reconcilable — same onset, less depth — but n = 60 is powered for
+  neither.**
+- **STATE THE ABSOLUTE SIZE OF A RELATIVE REDUCTION IN A SMALL TRIAL.** 42% relative, and
+  **1.90 mg morphine equivalents over 48 hours for a 20-kg child** — a fraction of one nalbuphine dose.
+  **p < 0.001 on a difference this small is a statement about measurement precision in a trial with zero
+  missing data.**
+- **A SIDE-EFFECT MEASUREMENT CAN BE EVIDENCE ABOUT ROUTE.** Perineural dexamethasone gave blood glucose
+  **27 mg/dL lower at 12 hours** than the intravenous route. **Dexamethasone raises glucose systemically, so
+  a lower systemic glucose after perineural administration is evidence the perineural dose acts LOCALLY —
+  i.e. evidence AGAINST the common claim that the two routes are interchangeable because both act
+  systemically.** **The most mechanistically informative result on the page and not what it will be cited
+  for.**

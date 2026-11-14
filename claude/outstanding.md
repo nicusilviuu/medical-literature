@@ -6255,3 +6255,57 @@ documents when Part III lands.**
 **Left to the brief:** the BJA letter on delayed gastric emptying with GLP-1 agonists
 (`10.1016/j.bja.2026.10.006`, 10 Nov, abstract-free) — correspondence about a research paper, and its own
 title is a methods point: separate drug effects from disease effects.
+
+## 14 NOVEMBER — STATE AFTER THE RUN
+
+**Published:** `_briefs/2026-11-14.md`, 5 items, commits `05bf7eb` (entry) and `8cf5576` (rendering fix),
+pushes verified by `git ls-remote`. **Pages: 4 rendered asterisks on the first poll — the first non-zero
+count recorded — diagnosed, fixed and re-verified at 0.** Fired on time (14:03:17).
+
+**Index baselines.** Whole **49,257,564** (start and end of run identical at 14:03:51 and the end-of-run
+reading; `PMC` unchanged within the run). `MED` **41,370,351** · `PMC` **1,016,900** · `PPR` **1,287,861** ·
+`NBK` **5** · `CTX` **3,934** · `PAT` 4,229,296 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 ·
+`HIR` 2,868 · `CIT` 624. Windows: 1–30 Sep **178,375** · 1–7 Oct **27,810** (unchanged two days running) ·
+Oct month **265,860**. Buckets: 14 Nov **8,218** · 13 Nov **7,026** · 12 Nov **9,150** · 11 Nov **6,922** ·
+10 Nov **6,281**.
+
+### QUEUE
+
+**The 166 lagged-pass candidates minus the three published today.** **Top of queue, figures extracted:**
+
+1. **Peripheral perfusion target resuscitation meta-analysis** (`10.1016/j.jcrc.2026.155829`, 13 Nov) —
+   5 RCTs, 2,180 patients; 28/30-day mortality **RR 0.92 (0.78–1.09), I² 10%, moderate certainty**; 90-day
+   **0.94 (0.83–1.05), I² 0%, low**; **fluid −264.53 mL (−425.28 to −103.77) in the first 6–8 h, I² 1%**;
+   no difference in LOS, organ dysfunction, vasopressor-, ventilator- or RRT-free days. **Authors' own
+   caveat: differing algorithms and comparators prevent attributing the finding to peripheral perfusion
+   monitoring itself.** **On-theme: capillary refill time is one of the SCCM/ESICM refractory-shock
+   criteria.**
+2. **Pregabalin for persistent postsurgical pain after lumbar spine surgery** (`10.1093/pm/pnag149`) —
+   figures in the 13 November entry. **Headline: the only significant result is below its own minimal
+   important change threshold.**
+3. **New-onset AF in critical illness, Bayesian review** (`10.1097/ccm.0000000000007412`) — figures in the
+   13 November entry.
+4. **COP-AF colchicine and perioperative AKI substudy** (`10.1053/j.ajkd.2026.06.019`, 30 Oct).
+5. From today's sweep, unread: ultrasound-guided vs surgeon-delivered parasternal intercostal block
+   (`10.1016/j.redare.2026.502215`, 2,715 ch); care intensity and cost-effectiveness in sepsis
+   (`10.1097/ccm.0000000000007435`, 2,134 ch); lactate-to-albumin ratio SR (`10.1016/j.jcrc.2026.155804`);
+   ECMO after cardiac arrest and organ donation (`10.1111/aor.70284`).
+
+### DATED ACTIONS
+
+1. **In-development pages: ESC, EACTS, STS, ASA — still owed** (ESICM, ESPEN, ESAIC done 13 Nov; SCCM
+   2 Nov). **Do these on the next watch.**
+2. **Next lagged window: 6 November – 5 December, due around 10 December.** **Do not defer — it has now
+   supplied four lead items in two days.**
+3. **November month audit — start of December, swept as a RANGE.**
+4. **AHA/ACC re-check — 11 December**, publisher-only question.
+5. **Title-stem check against the remaining 17 named gaps** — still not run. Three demonstrated uses now:
+   recover an abstract, date a document, recover a lineage.
+6. **NEW: find out why four trials with ordinary index dates (16 and 19 October) were missed.** Next step is
+   to re-run the 19 October sweep query as recorded and see whether the three JAMA records come back.
+
+### SUITE CHANGE LOGGED
+
+**New check: inside any paragraph, no line after the first may match `^\d+[.)] ` — it is parsed as an
+ordered-list marker and silently ends the paragraph.** Caught today only by the Pages asterisk count.
+**The rewrapper is the hazard: any reflow can move a year or a number to the start of a line.**
