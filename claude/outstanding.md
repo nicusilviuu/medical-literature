@@ -6396,3 +6396,58 @@ defect reached the page). Fired on time (14:03:27).
 **The rewrapper now carries the ordered-list guard inline:** after wrapping, any continuation line matching
 `^\d+[.)] ` has its leading token pulled back onto the previous line. **Zero rendered asterisks today on the
 first poll, which is the first run since the guard was added.**
+
+## 15 NOVEMBER (guidelines watch) — STATE AFTER THE RUN
+
+**Published:** `_guidelines/2026-11-15.md`, **5 items**, commit `b88eec9`, push verified by `git ls-remote`,
+Pages HTTP 200, zero rendered asterisks. **No new guidance from any tracked society.** Fired on time.
+
+### DATED ACTIONS
+
+1. **~~In-development pages~~ — COMPLETE for all seven societies** (SCCM 2 Nov; ESICM, ESPEN, ESAIC 13 Nov;
+   ESC, EACTS 14 Nov; **ASA 15 Nov at `https://www.asahq.org/standards-and-practice-parameters`** — record
+   the working URL).
+2. **~~2026 society-name audit~~ — DONE today.** **Rebuild its exclusion filter as a reusable classifier
+   before the December audit; the hand-built regex is not durable.**
+3. **NOVEMBER MONTH AUDIT — start of December. CHANGED BY TODAY: run a TITLE-WORD sweep ALONGSIDE the
+   pubType sweep and compare them.** A pubType sweep cannot find guidance the index does not type as
+   guidance — two of today's four EACTS documents are typed only "Journal Article".
+4. **NEW AND TESTABLE: re-run the 16 OCTOBER sweep as recorded.** Five missed documents now share
+   `firstIndexDate` 2026-10-16 (four EACTS + the vasopressin emulation), found by two unrelated
+   investigations. **The three missed JAMA trials are idx 19 October, so 16 October is not the whole
+   story.**
+5. **Next lagged window: 6 November – 5 December, due around 10 December.**
+6. **AHA/ACC re-check — 11 December.**
+7. **Title-stem check against the remaining 17 named gaps** — still not run.
+8. **Record PANEL SIZES beside all nine Delphi thresholds** (logged 15 Nov from the brief).
+
+### THE COUNTED BACKLOG — 48 PRE-COVERAGE SOCIETY DOCUMENTS
+
+**These are dated, in scope, and were published before this archive existed. Not misses. A queue.**
+Priority order for the brief or watch when a quiet day allows:
+
+1. **SCCM guidelines, March 2026 (4):** neuromuscular blockade in ARDS (`10.1097/ccm.0000000000007002`,
+   2,266 ch) · crisis resource allocation (`10.1097/ccm.0000000000006998`, 1,889) · older adults in the ICU
+   (`10.1097/ccm.0000000000007085`, 2,524) · 2026 paediatric/neonatal (`10.1097/pcc.0000000000003914`,
+   1,899).
+2. **2026 ESAIC consensus on mitigation strategies in intensive care medicine**
+   (`10.1097/eja.0000000000002420`, 3 Jul, 2,099 ch).
+3. **Two ASRA corticosteroid guidelines** (`10.1136/rapm-2024-105593`, 2,683 ch;
+   `10.1136/rapm-2024-105656`, 2,745 ch).
+4. **EACTS Ross procedure** (`10.1093/ejcts/ezaf295`, 1,736) and **protected cardiac surgery / pre-emptive
+   TMCS** (`10.1093/ejcts/ezaf296`, 1,947).
+5. **Three AATS 2026 expert consensus documents** (3–5 May, `10.1016/j.jtcvs.2026.03.620`, `…02.039`,
+   `…03.617`).
+6. **Updated SFAR/SFA perioperative immediate hypersensitivity** (`10.1016/j.accpm.2026.101899`, 13 Jul,
+   abstract-free).
+7. **Two ESPEN practical guidelines** (`10.1016/j.clnu.2026.106622` ethics, 2,022; `…106723` PN weaning,
+   2,008).
+8. **STS expert consensus documents** (robotic training `…2026.01.003`; screen-detected lung nodules
+   `…2026.01.004`; pleural mesothelioma `…2026.03.074`; sublobar resection `…2026.06.015`; tricuspid valve
+   endocarditis in PWID `…2026.06.065`; three STS/WSPCHS/ECHSA documents).
+
+### LOGGED FOR THE ARCHIVE'S OWN RECORD
+
+**Two ASA statements inside coverage, newly noted:** Statement on Fatigue **revised** 20 Oct 2026; Statement
+on Anesthetic Care during Interventional Pain Procedures for Adults **reaffirmed** 20 Oct 2026.
+**A reaffirmation is a dated editorial act the index does not carry — only the society page does.**

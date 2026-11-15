@@ -9625,3 +9625,122 @@ analysis 7 cohorts, 3,601 patients, 1,161 events; **pooled incidence 29.7% (23.4
 NO observed heterogeneity, p < 0.0001**; age OR 1.07/year (1.04–1.10). Candidate factors insufficiently
 homogeneous: nutrition, hypothermia, catheter discomfort, urinary catheterisation, preoperative anxiety.
 **Fourth appearance of delirium as an endpoint in this archive in one week.**
+
+## 15 NOVEMBER (guidelines watch) — THE 2026 SOCIETY-NAME AUDIT, AND TWO REASONS DOCUMENTS ESCAPE
+
+### THE AUDIT AND ITS CLASSIFICATION
+
+**Query: 24 tracked-society names/abbreviations in TITLE, `FIRST_PDATE:[2026-01-01 TO 2026-11-15]`, plus a
+guidance word in TITLE. 176 records, 176 collected, shortfall zero. 142 absent from the archive.**
+
+| Category | n |
+| --- | --- |
+| **Not primary guidance** (commentaries on guidelines, corrections, errata, retractions, adherence/LLM studies, "ten commandments", implementation appraisals) | **85** |
+| **Genuine society guidance, in scope, published BEFORE the archive existed** (< 2026-08-17) | **48** |
+| **Genuine society guidance, in scope, INSIDE coverage** | **9** |
+
+**LESSON ABOUT THE INSTRUMENT: a society-name-plus-guidance-word sweep catches every paper ABOUT a guideline
+as well as the guideline — and in cardiology that is most of the yield.** **85 of 142 were derivative.** The
+filter that worked was a hand-built exclusion regex, **which is not a durable instrument — rebuild it as a
+reusable classifier before the December audit.**
+
+**The 48 are now a COUNTED, DATED BACKLOG rather than a blind spot.** In-scope highlights:
+four **SCCM** guidelines from 3–20 March (neuromuscular blockade in ARDS `10.1097/ccm.0000000000007002`;
+crisis resource allocation `…006998`; older adults in the ICU `10.1097/ccm.0000000000007085`; 2026
+paediatric/neonatal `10.1097/pcc.0000000000003914`) · **2026 ESAIC consensus on mitigation strategies in
+intensive care** (`10.1097/eja.0000000000002420`, 3 Jul) · **ESPEN** ethical aspects of medical nutrition
+therapy (`10.1016/j.clnu.2026.106622`) and PN weaning (`…106723`) · **three 2026 AATS** expert consensus
+documents (3–5 May) · **two ASRA corticosteroid guidelines** (`10.1136/rapm-2024-105593`,
+`10.1136/rapm-2024-105656`) · **updated SFAR/SFA perioperative immediate hypersensitivity**
+(`10.1016/j.accpm.2026.101899`, 13 Jul) · EACTS Ross procedure (`10.1093/ejcts/ezaf295`) and protected
+cardiac surgery (`…ezaf296`) · several STS expert consensus documents.
+
+### THE FOUR EACTS OCTOBER DOCUMENTS — AND TWO INDEPENDENT REASONS THEY WERE MISSED
+
+**Published and in scope, never reported here:**
+`10.1093/ejcts/ezag182` aortic valve repair / valve-sparing root replacement (1 Oct) ·
+`10.1093/icvts/ivag217` civil aviation after cardiothoracic surgery (1 Oct) ·
+`10.1093/ejcts/ezag221` iatrogenic aortic dissection (7 Oct) ·
+`10.1093/ejcts/ezag226` lung volume reduction for emphysema (7 Oct).
+
+**REASON ONE — 16 OCTOBER, NOW IMPLICATED FIVE TIMES.** All FIVE EACTS documents from that week, including
+`ezag187` (the robotic consensus the 1 November audit DID find), carry **`firstIndexDate` 2026-10-16 — the
+rollback day.** On 13 November the rollback was called "a real candidate" for ONE missed document (the
+7 Oct vasopressin emulation, idx 16 Oct) "and no candidate at all" for three missed JAMA trials (idx 19 Oct).
+**Today adds four more at 16 October, found by an unrelated investigation.** **NOT PROOF — the fifth
+document with the same index date WAS found — but 16 October is now the most-implicated date in this
+archive's history. TESTABLE: re-run the 16 October sweep as recorded and see what returns.**
+
+**REASON TWO — NO GUIDANCE pubType AT ALL.** `ezag182` → Systematic Review + **Consensus Statement** +
+Journal Article. `ivag217` → Review + **Consensus Statement** + Journal Article.
+**`ezag221` → ["Journal Article"] ONLY. `ezag226` → ["Journal Article"] ONLY.**
+**The 1 November October month audit was a "guideline-pubType sweep", so it COULD NOT have found those two
+however well it was run — a structural limit of the instrument, not an execution error. And its reported
+83.0% hit rate was measured against a denominator that excluded two documents it had no way to see.**
+
+**RULE, and it changes the November audit due at the start of December: A pubType SWEEP CANNOT FIND GUIDANCE
+THE INDEX DOES NOT TYPE AS GUIDANCE. Run a TITLE-WORD sweep alongside the pubType sweep and compare the
+two.** Today's title-word sweep found both untyped documents precisely because it did not key on pubType.
+
+### CONTENT NOTES ON THE FOUR
+
+- **Aortic valve repair:** states in its own abstract that "Where high-quality evidence is unavailable, the
+  guidance relies on the collective experience and expert judgement" — the format-decision rule honoured.
+  **Addressed to cardiologists, echocardiographers, imaging specialists and cardiac surgeons — NOT to
+  anaesthetists, though intraoperative assessment is one of its four domains.**
+- **Civil aviation:** **names TWO different risk frameworks explicitly — an engineering tolerance for sudden
+  incapacitation that governs aircrew licensing, and a physiological-exposure framework for passengers.**
+  **The clearest statement this fortnight of why ONE clinical fact produces TWO different decisions — the
+  definitional theme in a new setting.**
+- **Iatrogenic aortic dissection:** **the strongest claim on an anaesthesia/ICU readership and the most
+  invisible record.** Caused by cannulation, clamping, catheter manipulation or device deployment — i.e. in
+  theatre with the anaesthetist present — and its course "strongly influenced by … the speed of
+  recognition". **First dedicated guidance on the condition, and it includes DEFINITIONS AND
+  CLASSIFICATION, so the 31 October rule puts it in scope whatever specialty publishes it.**
+- **Lung volume reduction:** names under-use as the problem and attributes it to "a paucity of practice
+  guidelines"; first multidisciplinary statement to cover LVRS as well as endobronchial LVR; **details
+  perioperative risks as well as benefits — LVRS on maximal medical therapy for emphysema is among the
+  highest-risk elective thoracic anaesthetics.**
+
+### ASA REACHED — THE SEVEN-SOCIETY ACTION IS COMPLETE
+
+**`https://www.asahq.org/standards-and-practice-parameters` works (yesterday's constructed URL 404'd).**
+**No documents in development, under revision or open for comment. "Date of last update" 20 October 2026 —
+the most current of the seven pages, against ESPEN's 8 September 2023.** 15 practice guidelines, 10
+advisories, 3 standards, 110 statements.
+
+**Inside coverage and newly logged: Statement on Fatigue REVISED 20 Oct 2026; Statement on Anesthetic Care
+during Interventional Pain Procedures for Adults REAFFIRMED 20 Oct 2026.** **A REAFFIRMATION is a dated
+editorial act that the index does not carry — only the society page does. Add it to what the society route
+uniquely supplies.**
+
+**NEAR-MISS, AND THE DEDUPE WORKED:** the page's "New!" guideline — **2026 ASA Practice Guideline on
+Perioperative Pain Management Using Local and Regional Analgesia** (`10.1097/aln.0000000000005790`) — is
+**NOT a gap: published here 22 August 2026** with its January 2026 date and journal citation.
+**FOURTH YEAR-IN-TITLE VARIANT IN FOUR DAYS, and the first in the opposite direction: titled 2026, first
+indexed 9 DECEMBER 2025 — a year AHEAD.** (ASRA: metadata 21 months late. ESAIC: title a year early.
+German UC: title honestly dated. ASA: title a year ahead.) **Ordinary journal practice for a guideline dated
+to its issue year; recorded only because four variants appeared in four days.**
+
+**Seven-society in-development state: SCCM 13 · ESICM 6 · ESC 9 (scheduled, with chairpersons) · ESAIC empty
+tab · EACTS no section · ESPEN page 3 years stale · ASA no section, page current. 28 documents in progress
+at the three societies that publish a list.**
+
+### THE HASH RULE IS COMPLETE — FINAL TAXONOMY
+
+**SCA/STS joint consensus on DOACs in cardiac surgery** (`10.1016/j.athoracsur.2026.01.005` and
+`10.1213/ane.0000000000007868`, both 29 Jan 2026): **both deposits exactly 777 characters; md5
+`81d0e3066c2c7c36` vs `c9898f92a808e3e2`; a character-level diff returns a SINGLE opcode — position 65,
+"The Society of Thoracic Surgeons" against "the Society of Thoracic Surgeons". Similarity 0.998713.**
+
+| Case | Lengths | Hashes | Meaning |
+| --- | --- | --- | --- |
+| AHA/ACC 2026 | equal | identical | byte-identical |
+| German ECPR | 917/917 | identical | byte-identical |
+| SCCM/ESICM shock | 2,283/2,275 | different | near-identical, real edits |
+| EACTS/STS/AATS support ×4 | 0/0/0/0 | identical | **no information** |
+| **SCA/STS DOAC** | **777/777** | **different** | **differ by ONE LETTER'S CASE** |
+
+**FINAL RULE: equal length NEVER settles identity. A differing hash NEVER establishes a substantive
+difference. Empty deposits say nothing. USE THE LENGTH AS A FLAG, THE HASH TO DETECT, AND A DIFF TO
+INTERPRET.**
