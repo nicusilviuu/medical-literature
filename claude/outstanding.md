@@ -6350,3 +6350,49 @@ grafting) is precisely the case for revising it. **Check on publication.**
 
 **The STS POAF guideline's full recommendation text** — the abstract gives the grade counts (2 I, 2 IIa,
 8 IIb, 3 III) but not the eight Class IIb statements, which are the interesting half. Paywalled.
+
+## 15 NOVEMBER — STATE AFTER THE RUN
+
+**Published:** `_briefs/2026-11-15.md`, 5 items, commit `5da4972`, push verified by `git ls-remote`, Pages
+HTTP 200, **zero rendered asterisks** (the new ordered-list guard was built into the rewrapper and no
+defect reached the page). Fired on time (14:03:27).
+
+**Index baselines.** Whole **49,262,989** (start and end of run identical). `MED` **41,376,231** ·
+`PMC` **1,016,234** · `PPR` **1,288,069** · **`NBK` 8** · `CTX` **3,934** · `PAT` 4,229,296 ·
+`AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624. Windows: 1–30 Sep **178,375** ·
+1–7 Oct **27,810** · Oct month **265,809**. Buckets: 15 Nov **6,091** · 14 Nov **8,221** · 13 Nov **7,026** ·
+12 Nov **8,595** · 11 Nov **6,922**.
+
+### QUEUE — top, with figures extracted
+
+1. **Emergence delirium/agitation in older adults SR** (`10.1016/j.jopan.2026.10.003`, 14 Nov) — figures in
+   today's notes. **Strong: pain OR 1.29 per NRS point with zero heterogeneity.**
+2. **COP-AF colchicine and perioperative AKI substudy** (`10.1053/j.ajkd.2026.06.019`, 30 Oct, 3,687 ch).
+3. **Pregabalin for persistent postsurgical pain** (`10.1093/pm/pnag149`) — figures in the 13 Nov entry.
+4. **Perioperative concussion**: now published. **Unread leads from today's sweep:** endothelial/haemostatic
+   markers and 28-day sepsis mortality (`10.1177/08850666261506293`); oxygen delivery location during
+   non-invasive home ventilation (`10.1159/res/aepag028`).
+5. **Still unread from the 13 Nov lagged pass (166 candidates):** ultrasound vs surgeon-delivered
+   parasternal block (`10.1016/j.redare.2026.502215`); care intensity and cost-effectiveness in sepsis
+   (`10.1097/ccm.0000000000007435`); lactate-to-albumin ratio SR (`10.1016/j.jcrc.2026.155804`); ECMO after
+   cardiac arrest and organ donation (`10.1111/aor.70284`); isoflurane/dobutamine trials now published.
+
+### DATED ACTIONS
+
+1. **ASA in-development page — still owed** (the constructed URL 404'd on 14 Nov). **Find the right URL.**
+2. **HIGH VALUE, logged 14 Nov: a single sweep of the whole of 2026 by tracked-society NAME**, deduped
+   against the archive, to find the remaining society gaps in one pass. **Two gaps in two days (ESAIC
+   4 Mar, STS 18 Apr) argue for it. Do it before the November month audit.**
+3. **Next lagged window: 6 November – 5 December, due around 10 December.**
+4. **November month audit — start of December, swept as a RANGE.**
+5. **AHA/ACC re-check — 11 December.**
+6. **Title-stem check against the remaining 17 named gaps** — still not run.
+7. **NEW: go back through the Delphi threshold catalogue and record each panel's SIZE.** Today's finding —
+   one rater is 2.86 points on a 35-person panel — means every threshold in the catalogue needs its panel
+   size beside it before any of them can be compared or quoted.
+
+### SUITE CHANGE
+
+**The rewrapper now carries the ordered-list guard inline:** after wrapping, any continuation line matching
+`^\d+[.)] ` has its leading token pulled back onto the previous line. **Zero rendered asterisks today on the
+first poll, which is the first run since the guard was added.**

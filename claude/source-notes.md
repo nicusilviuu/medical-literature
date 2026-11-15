@@ -9487,3 +9487,141 @@ follow-up, institutional protocols) are the parts that fail silently if nobody o
 published **13 November 2026**. Out of scope (colorectal). **But it is the third in three days after ASRA
 (metadata wrong) and ESAIC (title year wrong) — and this one is the HONEST form: "Status November 2025"
 STATES the version date rather than disguising it.** **That is how a guideline should carry a version year.**
+
+## 15 NOVEMBER — CORRECTION 14: A PAST BUCKET CAN GROW
+
+### THE CORRECTION, WITH ITS MECHANISM IDENTIFIED
+
+**Standing rule since 19 October, itself already a correction:** "A past `FIRST_IDATE` bucket cannot grow
+and can shrink, which makes it an upper bound rather than a count."
+
+**WITHDRAWN.** The **14 November bucket rose from 8,218 to 8,221** — confirmed by reads at 14:05:27 and
+14:05:42 (both 8,221) and a third time at end of run.
+
+**Mechanism identified, which is what lifts this above an anomaly:**
+- `NBK` (Bookshelf) **5 → 8 records overnight, exactly +3**
+- `SRC:NBK AND FIRST_IDATE:2026-11-14` returns **exactly 3**
+- the same for 15 November returns **0**
+
+**Three records entered the index overnight stamped with YESTERDAY's date, so yesterday's bucket grew by
+three.**
+
+**REPLACEMENT RULE, deliberately minimal and not to be improved on: a past `FIRST_IDATE` bucket is a reading
+at an instant, which can rise or fall. Not a count, not an upper bound. Read it, date it, label it, assert
+nothing about what it must do next.**
+
+**EIGHTH MEMBER OF THE OVER-GENERALISATION FAMILY (4–8, 11, 12, 14), and the most instructive: the
+19 October statement was ALREADY a retreat from "complete by construction" and still over-reached, because
+"cannot grow" is a claim about MECHANISM and the only defensible claims here are about READINGS.**
+
+### YESTERDAY'S PMC/BUCKET ALIGNMENT DID NOT REPRODUCE — REPORTED, NOT BURIED
+
+| Day | `PMC` change | 12 Nov bucket change | Gap |
+| --- | --- | --- | --- |
+| 14 Nov | **−1,078** | **−1,075** | 3 |
+| 15 Nov | **−666** | **−555** | **111 (16.7% of the contraction)** |
+
+**Direction reproduces — PMC falls and the 12 November bucket is the one that falls with it. Magnitudes do
+not.** **Yesterday's three-record alignment was closer than the relationship warrants and is NOT a rule.**
+Yesterday's page said "strong evidence of a common cause, NOT an identity of records", which is why this is a
+weakening rather than a correction. **RULE: a one-day numerical coincidence gets one day of credit; check it
+the next day before it hardens.**
+
+### INDEX
+
+Start **14:04:15**: whole **49,257,564 → 49,262,989 (+5,425)**, residual 0 — `MED` +5,880, `PMC` −666,
+`PPR` +208, `NBK` +3, `CTX` flat; sum exact. **Second consecutive day with a shrinking source, so the
+subtraction bound stays unavailable.** Buckets: 15 Nov **6,091**; 14 Nov **8,221** (up 3); 13 Nov 7,026
+unchanged; 12 Nov 9,150 → **8,595**; 11 Nov 6,922 unchanged. Windows: Sep unchanged (2nd day), 1–7 Oct
+unchanged (3rd day), **October month −51, the largest single-day drift this month.**
+
+### A NEW AND GENERAL POINT ABOUT EVERY THRESHOLD IN THE CATALOGUE
+
+**Concussion Delphi (`10.1016/j.jclinane.2026.112370`, 14 Nov): 35 experts, 33 of them anaesthesiologists
+(94.3%), two rounds, consensus ≥75%, STRONG consensus ≥85% on a five-point Likert, "do not know" excluded
+from the denominator. 13 of 16 round-2 statements reached consensus.**
+
+**ONE RATER ON A 35-PERSON PANEL IS 2.86 PERCENTAGE POINTS.** The three failures sat at **74%, 73% and
+69%** against a 75% bar — **so the 74% statement (regional or monitored anaesthesia over general) missed by
+LESS THAN A THIRD OF ONE VOTE**, and excluding "do not know" makes the effective denominator smaller and the
+grid coarser still.
+
+**RULE: a consensus threshold quoted to the percentage point is meaningless unless the panel can resolve it.
+At n = 35 the grid is 2.86 points wide, so 74% and 75% are the same reading. Report the PANEL SIZE with
+every threshold, and treat a near-miss within one rater as undetermined rather than failed.**
+**This applies retrospectively to the whole catalogue — go back and record panel sizes.**
+
+**NINTH THRESHOLD SCHEME, and the first with TWO TIERS** (75% consensus / 85% strong). Catalogue: 70% ·
+75% · 75% on a 7-point (PrECiSIOn, 44 panellists) · 90/80 on a 9-point · two-sided >70%/≤15% · two-sided 75%
+agree-or-disagree (SCCM/ESICM, 56) · mean >80% on a 5-point (CHNC, 23) · 75% top-half of a 4-point
+(technologists, 14 in round 2) · **two-tier 75/85 on a 5-point with "do not know" excluded (concussion,
+35).** **Four scale lengths, nine schemes, none comparable.**
+
+### A CONSENSUS THAT REACHES 97% ON A THRESHOLD AND LEAVES THE THRESHOLD UNDEFINED
+
+**The concussion panel's own abstract: "The panel did not define symptom resolution and established no
+symptom-independent waiting interval or concussion-specific numeric physiologic threshold."** Yet **97%
+agreed on "generally deferring elective surgery until concussion symptoms resolve."**
+
+**So the document's strongest recommendation is unactionable as written.** **This is the fortnight's
+definitional theme seen from INSIDE a panel** — after PrECiSIOn (what counts as a PPC), the two refractory
+septic shock definitions, and five QTc formulas disagreeing 13-fold. **RULE: when a panel reaches
+near-unanimity on a threshold, check whether it defined the threshold.**
+
+**Usable content: UNANIMITY on preoperative screening for concussion symptoms and neurological red flags,
+and on avoiding hypoxaemia, abnormal CO2 tension, sustained hypotension and marked hypertension** —
+physiological aims that need no definition of resolution. Unresolved: anaesthetic technique, EEG depth
+monitoring, long-acting neuraxial opioids. **Self-disclaiming closing line ("an expert-informed framework,
+not an evidence-based practice guideline") — SECOND self-disclaiming document in a week** after the
+fluid-terminology matrix.
+
+### ANALYTIC POINTS BANKED TODAY
+
+- **A perfusion target can be a good DIAGNOSTIC marker and a poor TREATMENT goal, and the two literatures
+  answer different questions.** Capillary refill time reached 76.8% consensus as a criterion in the
+  SCCM/ESICM refractory shock definition, while the perfusion-target meta-analysis
+  (`10.1016/j.jcrc.2026.155829`, 5 RCTs, 2,180 patients) finds 28/30-day mortality RR 0.92 (0.78–1.09,
+  p = 0.33, I² 10%, MODERATE certainty), 90-day 0.94 (0.83–1.05, p = 0.30), and only **fluid −264.53 mL
+  (−425.28 to −103.77, symmetric at 160.75 each side)** in the first 6–8 h.
+- **Credit a meta-analysis that disclaims its own attribution:** "Differences in intervention algorithms and
+  comparators limit attribution of these findings to peripheral perfusion monitoring itself."
+- **COUNT THE STUDIES BEHIND THE NUMBER THAT WILL BE QUOTED.** NOAF review: 54 studies carry the incidence
+  (10.6%, CrI 8.6–12.9); **the doubled post-discharge thromboembolism risk rests on SIX.**
+- **An adjusted estimate that is both LARGER and MORE PRECISE than the crude one is unexplained.** NOAF:
+  1.94 (1.23–3.29) → 2.01 (1.54–2.80), **log interval width 0.98 → 0.60.**
+- **A pooled absolute risk across follow-ups ranging 1.5 months to 5 years is a number without a denominator
+  in time** — the authors say so.
+- **A fourfold credible interval on a TREATMENT rate is not uncertainty about biology, it is a description of
+  practice.** NOAF anticoagulation 32.9% (14.6–57.9) in hospital. **And 23.9% were later diagnosed with AF,
+  so the arrhythmia is frequently not transient.**
+- **CREDIT THE RIGHT INSTRUMENT WHEN IT APPEARS.** Sex/PPC study (`10.1007/s12630-026-03218-z`, 1,202
+  patients, ASA III): asked whether sex modifies risk, **fitted the interaction, reported no interaction
+  p < 0.05, and concluded "predominantly not modified by sex".** **After four consecutive briefs complaining
+  about subgroup stories built without interaction tests, this one is the counter-example and should be
+  named as such.**
+- **A BASELINE CHARACTERISTIC CAN BE THE MOST ACTIONABLE SENTENCE IN A PAPER.** Same study: **female
+  patients received higher tidal volumes per PREDICTED body weight and higher driving pressures.**
+  Predicted body weight derives from height, **so a systematic difference per predicted kilogram means the
+  calculation is not being applied** — reported as a baseline characteristic, not a finding.
+- **One surviving interaction from a secondary analysis after all primary interactions were null needs the
+  opposite caution.** GERD and atelectasis, relative OR 0.27 (0.13–0.57), p = 0.0005, log-symmetric; no
+  multiplicity correction described. The authors propose it for prospective study — correct handling.
+- **STATE THE RATIO A PAPER LEAVES IMPLICIT.** Preoperative cardiology referrals (`10.1016/j.accpm.2026.101990`):
+  **52 postponements for 6 invasive interventions = 8.7 to 1**, median delay **81 days [47–145]**, and the
+  paper does not compute it. **A design that observes referrals without outcomes cannot distinguish a
+  prudent delay from an unnecessary one, and no outcome of the 52 postponed operations is reported.**
+- **DENOMINATOR WRINKLE:** 138/9,621 = 1.43% (reported 1%, rounding); 111/138 = 80.4% (reported 80%, exact);
+  **but 19/138 = 13.8% against a reported 15%, which 19/128 would give — the abstract does not say which
+  denominator.**
+- **PrECiSIOn's comparability problem, four days old, is already live.** The sex/PPC study's primary outcome
+  is a day-7 PPC composite and its interesting signal is on one component (atelectasis). **The same data
+  under the PrECiSIOn severity-ranked ordinal construct could report something different.**
+
+### HELD WITH FIGURES (queue)
+
+**Emergence delirium/agitation SR** (`10.1016/j.jopan.2026.10.003`, 14 Nov): 12 reports, 8 cohorts; main
+analysis 7 cohorts, 3,601 patients, 1,161 events; **pooled incidence 29.7% (23.4–36.8) against a crude
+32.24%** (logit random-effects pulls it down); **pain at early recovery OR 1.29 per NRS point (1.21–1.37),
+NO observed heterogeneity, p < 0.0001**; age OR 1.07/year (1.04–1.10). Candidate factors insufficiently
+homogeneous: nutrition, hypothermia, catheter discomfort, urinary catheterisation, preoperative anxiety.
+**Fourth appearance of delirium as an endpoint in this archive in one week.**
