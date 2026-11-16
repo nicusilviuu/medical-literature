@@ -9744,3 +9744,128 @@ at the three societies that publish a list.**
 **FINAL RULE: equal length NEVER settles identity. A differing hash NEVER establishes a substantive
 difference. Empty deposits say nothing. USE THE LENGTH AS A FLAG, THE HASH TO DETECT, AND A DIFF TO
 INTERPRET.**
+
+## 16 NOVEMBER — THE 16 OCTOBER HYPOTHESIS FAILS ITS OWN TEST
+
+### WITHDRAWN, AND THE REPLACEMENT IS GENERAL
+
+**Yesterday's watch called 16 October "the most-implicated date in this archive's history" after five missed
+documents turned out to share that `firstIndexDate`, said it was not proof, and named the test: re-run the
+16 October sweep.**
+
+**The test ran. It does not support the claim.**
+
+| The 16 October bucket | |
+| --- | --- |
+| Records in the bucket | **35,391** |
+| In-scope guidance records | **60 of 60, shortfall zero** |
+| Already in the archive | **7** — including ALL FIVE EACTS documents |
+| Secondary (commentary/correction/letter) | 6 |
+| Remainder | 47 |
+
+**The 47 kills it: wild boar injuries, periprosthetic joint infection, a Bangladeshi dialysis diet audit,
+sublingual immunotherapy, spinal ependymoma, return-to-sport after cervical spine injury, radiotherapy
+capacity, electroacupuncture for back pain, guideline-methodology papers.** **They are in the list because
+the scope filter matches "analgesia" or "critical care" ANYWHERE in a record. There is NO concentration of
+missed in-scope documents on that date.**
+
+**REPLACEMENT EXPLANATION, and it is a general fact about the index worth keeping: A JOURNAL'S ISSUE BATCH
+TAKES ONE INDEX DATE.** EJCTS and ICVTS issues dated 1 and 7 October were all first indexed on 16 October
+together. **So a single index date can carry one society's whole month of output, and five documents sharing
+a date is a PUBLISHING COINCIDENCE, not a loss event.** **The four that were missed are fully explained
+without any date: two carry no guidance pubType, and the scope filter would not have caught them.**
+
+**THREE CLAIMS WERE PUT TO A STATED TEST THIS WEEK AND ALL THREE FAILED:**
+1. **the burst period** — refused on 12 Nov, and 13 Nov's reading would have falsified it;
+2. **the PMC / 12-November-bucket alignment** — 3-record match on 14 Nov, 111-record gap on 15 Nov;
+3. **the 16 October date** — tested and withdrawn today.
+
+**RULE: a claim that cannot name its own test should not be published. All three of these named one, and
+that is why all three could be killed within days instead of hardening.**
+
+### CORRECTION 14 CONFIRMED FROM THE OTHER SIDE
+
+| Reading | 14 Nov bucket | `NBK` total | `NBK` stamped 14 Nov |
+| --- | --- | --- | --- |
+| 14 Nov | 8,218 | 5 | — |
+| 15 Nov | **8,221** | **8** | **3** |
+| 16 Nov | **8,220** | **7** | **2** |
+
+**One Bookshelf record withdrawn, bucket down exactly one.** **The bucket rose 3 and fell 1 across three
+days, tracking the SAME SOURCE exactly in BOTH directions.** **The replacement rule — a past bucket is a
+reading at an instant, which can rise or fall — is now demonstrated in both directions inside 48 hours by
+one identified mechanism.**
+
+### INDEX — SMALLEST NON-ZERO DAY, AND ZERO WINDOW DRIFT
+
+Whole **49,262,989 → 49,265,094 (+2,105)**, residual 0 — `MED` +2,016, `PPR` +86, `PMC` +4, `NBK` −1; sum
+exact. **Smallest non-zero growth recorded here** (against 5,425 / 7,120 / 6,677 / 23,390 / 26,385 / 0).
+**Today's own bucket 2,104 — ONE BELOW the whole gain**, so essentially all growth landed on today's date
+with no visible redating. **FIRST DAY ON WHICH ALL THREE DRIFT WINDOWS ARE UNCHANGED TOGETHER** (Sep
+178,375; 1–7 Oct 27,810; October month 265,809).
+
+### ANALYTIC POINTS BANKED TODAY
+
+- **THE OUTCOME-HIERARCHY FINDING, and it is the week's definitional theme reaching an endpoint
+  hierarchy.** Paediatric crystalloids (6 RCTs, 10,308 children): **AKI differs by 9.9 points and is NOT
+  significant (RR 0.76, 0.46–1.27); dialysis differs by 0.6 points and IS (RR 0.67, 0.48–0.92, p = 0.016).
+  Dialysis is 16× rarer, so it should have had LESS power.** **The AKI interval's log width is 1.016 against
+  dialysis at 0.651 — the estimate for the outcome 15.4× more common is 1.56× LESS precise.** **That can
+  only mean the trials disagree about what AKI IS, while dialysis either happened or did not.**
+  **RULE: when a meta-analysis reports both a definition-based and an event-based renal endpoint, the
+  event-based one is the answer.**
+- **And it is the exact converse of the 14 November dobutamine trial**, where a creatinine endpoint gave a
+  strong positive in 584 open-label patients with no dialysis or mortality endpoint reported. **Read
+  together: when both are measured, the soft endpoint is the noisy one.**
+- **AN INTERVAL THAT TIGHT ON A MECHANISM-DEFINED OUTCOME IS AN ADHERENCE CHECK, NOT A FINDING.**
+  Hyperchloraemia RR 0.65 (0.61–0.69), z = −13.7 — it confirms the children got the fluid they were
+  randomised to.
+- **NNT on the hard endpoint: 0.6 points absolute → about 170.** A real benefit, honestly small.
+- **A MEAN DIFFERENCE IS SYMMETRIC BY CONSTRUCTION, SO AN ASYMMETRIC ONE IS AN ERROR.** QL vs TAP: pain at
+  rest **MD −0.25 (−0.37 to −0.21) — arms 0.120 and 0.040, a 3:1 asymmetry.** Pain on movement (0.120/0.110)
+  and opioid use (2.650/2.640) are symmetric. **So one of the three numbers in that result is wrong and the
+  abstract gives no way to tell which. Flag; do not adjudicate.** **NEW CHECK: verify symmetry on every
+  reported MEAN difference, not only on ratios.**
+- **SIGNIFICANCE BELOW THE MINIMAL IMPORTANT CHANGE, TWICE IN ONE WEEK IN THE SAME FIELD.** QL vs TAP: pain
+  −0.25 and −0.40 points, against a conventional MIC of ~1–1.5, **and the review never makes the
+  comparison**. Pregabalin (13 Nov): functional disability SMD −0.51 significant, **and the authors state it
+  is below MIC thresholds themselves**. **RULE: in a regional-anaesthesia or analgesia meta-analysis, read
+  the pain difference against the MIC BEFORE the p-value — and note which reviews state the threshold and
+  which do not.**
+- **GRADE CERTAINTY HIGHEST WHERE THERE IS NO EFFECT.** QL vs TAP rated **high** for the two null outcomes
+  (PONV, operative time) and only **moderate** for every outcome that moved, with I² 85% and 93% on four
+  trials. **An I² of 85% on four trials means the trials measure different things and the pooled estimate
+  averages disagreement.**
+- **A MASKED 2,947-PATIENT NULL AGAINST AN OPEN-LABEL 584-PATIENT POSITIVE ON THE SAME ENDPOINT CLASS.**
+  COP-AF colchicine substudy: AKI RR **1.07 (0.76–1.50)**, RD 0.3% (−1.2 to 1.8), **pre-specified CKD
+  interaction reported and NULL (P = 0.62)**, limitation stated in the right currency (power for
+  dialysis-treated AKI). **Credit the pre-specified null interaction — the instrument this archive spent the
+  week asking for, used where a subgroup story would have been easy.**
+- **DENOMINATORS ARE NOT ARM SIZES — THIRD INSTANCE IN A MONTH.** COP-AF: **67/1,476 = 4.54% against a
+  stated 4.7%; 63/1,471 = 4.28% against 4.4%** → implied denominators near **1,425 and 1,431**, about 50 and
+  40 fewer than the randomised arms, unexplained. After COVALENT (16 Oct) and SAVE-ICU (14 Nov).
+  **None changes its result; all three mean: recompute from the arm size, and when it disagrees the
+  denominator is doing something unstated.**
+- **ZERO HETEROGENEITY IS A WARNING IN A SMALL POOL — EXCEPT ON A DOSE-RESPONSE WITHIN ONE INSTRUMENT.**
+  Emergence delirium: pain **OR 1.29 per NRS point (1.21–1.37) with no observed heterogeneity** — studies
+  SHOULD agree on a dose-response measured on one scale. **Age 1.07/year is real and not modifiable; pain at
+  early recovery is modifiable, and 6/10 against 3/10 is roughly double the odds.**
+- **CREDIT A REVIEW THAT DECLINES TO POOL.** The same paper mapped nutritional risk, hypothermia,
+  catheter discomfort, urinary catheterisation and preoperative anxiety as candidate factors rather than
+  pooling them. **Declining to pool is the error most reviews make in the other direction.**
+- **Crude vs pooled incidence: 1,161/3,601 = 32.2% against a pooled 29.7%** — logit random-effects pulls it
+  down; quote both and they bracket the answer.
+- **FIFTH APPEARANCE of delirium as an endpoint in a week, and the fourth document in that week to name its
+  own definitional problem** ("fragmented across different definitions").
+
+### ROUTED TO THE WATCH — AND A TENTH THRESHOLD SCHEME, THE FIRST NOT A DELPHI
+
+**IgM-enriched polyclonal immunoglobulin in critical illness, Italian expert consensus**
+(`10.1186/s44158-026-00459-8`, 26 Sep, 3,130 chars; a second OA deposit at PMC13647806 has 0 chars).
+**Modified RAND/UCLA Appropriateness Method: anonymous 9-point Likert, classification by MEDIAN —
+appropriate 7–9, uncertain 4–6, inappropriate 1–3 — with interpanel disagreement measured by the
+INTERPERCENTILE RANGE ADJUSTED FOR SYMMETRY.**
+**TENTH scheme in the catalogue and the FIRST that is not a Delphi; the first that classifies by MEDIAN
+rather than by a proportion of panellists or a mean score.** Seven phenotypes rated; IgM-enriched
+preparations consistently preferred (median 8–9); uncertain for hyperinflammation without shock (6),
+transplant prophylaxis (5), post-cardiac-surgery hyperinflammation (6).

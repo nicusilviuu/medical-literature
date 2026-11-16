@@ -6451,3 +6451,50 @@ Priority order for the brief or watch when a quiet day allows:
 **Two ASA statements inside coverage, newly noted:** Statement on Fatigue **revised** 20 Oct 2026; Statement
 on Anesthetic Care during Interventional Pain Procedures for Adults **reaffirmed** 20 Oct 2026.
 **A reaffirmation is a dated editorial act the index does not carry — only the society page does.**
+
+## 16 NOVEMBER — STATE AFTER THE RUN
+
+**Published:** `_briefs/2026-11-16.md`, 5 items, commit `4217a16`, push verified by `git ls-remote`, Pages
+HTTP 200, zero rendered asterisks. Fired on time (14:04:33 for a 14:02:31 slot).
+
+**Index baselines.** Whole **49,265,094** (start and end of run identical). `MED` **41,378,247** ·
+`PMC` **1,016,238** · `PPR` **1,288,155** · **`NBK` 7** · `CTX` **3,934** · `PAT` 4,229,296 ·
+`AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624. Windows: 1–30 Sep **178,375** ·
+1–7 Oct **27,810** · Oct month **265,809** — **all three unchanged for the first time.**
+Buckets: 16 Nov **2,104** · 15 Nov **6,093** · 14 Nov **8,220** · 13 Nov **7,026** · 12 Nov **8,595**.
+**16 October bucket 35,391.**
+
+### DATED ACTIONS
+
+1. **~~16 October test~~ — DONE. Hypothesis WITHDRAWN.** Replacement: a journal's issue batch takes one
+   index date. **The three missed JAMA trials (idx 19 Oct) remain unexplained — that question is still
+   open.**
+2. **NOVEMBER MONTH AUDIT — start of December. Run a TITLE-WORD sweep alongside the pubType sweep.**
+   **And rebuild the society-sweep exclusion filter as a reusable classifier first.**
+3. **Next lagged window: 6 November – 5 December, due around 10 December.**
+4. **AHA/ACC re-check — 11 December.**
+5. **Title-stem check against the remaining 17 named gaps** — still not run.
+6. **Record PANEL SIZES beside all ten threshold schemes.**
+7. **NEW: the scope filter needs narrowing.** Today's 16 October test showed it matches "analgesia" and
+   "critical care" anywhere in a record, so 47 of 60 hits were out of scope. **Restrict scope terms to
+   TITLE and JOURNAL fields rather than full text for audit sweeps.**
+
+### QUEUE — top, with figures extracted
+
+1. **IgM-enriched immunoglobulin consensus** (`10.1186/s44158-026-00459-8`) — **ROUTED to the watch**, not
+   the brief. Figures and method in today's notes.
+2. **Endothelial/haemostatic markers and 28-day sepsis mortality** (`10.1177/08850666261506293`, 14 Nov).
+3. **Educational Priorities in Oncologic Critical Care, modified Delphi** (`10.1093/atsscholar/aapag064`,
+   6 Oct, 2,673 ch) — found by today's 16 October test.
+4. **Phased discharge planning for airway stenting, Delphi** (`10.3389/fmed.2026.1851329`, 22 Sep, 2,019).
+5. **ICU nursing research priorities Delphi** (`10.1111/nicc.70735`, 1 Nov, 1,066).
+6. **Still unread from the 13 Nov lagged pass:** parasternal block (`10.1016/j.redare.2026.502215`); care
+   intensity in sepsis (`10.1097/ccm.0000000000007435`); lactate-to-albumin ratio SR
+   (`10.1016/j.jcrc.2026.155804`); ECMO after arrest and organ donation (`10.1111/aor.70284`).
+7. **The 48-document pre-coverage society backlog** listed in the 15 November notes.
+
+### NEW NAMED GAP
+
+**The QL-vs-TAP pain-at-rest result** (`10.1007/s10151-026-03405-6`): MD −0.25 (−0.37 to −0.21) is
+arithmetically impossible as printed. **The full text would say which of the three numbers is wrong.**
+Paywalled.
