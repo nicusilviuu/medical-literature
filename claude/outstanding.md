@@ -6498,3 +6498,45 @@ Buckets: 16 Nov **2,104** · 15 Nov **6,093** · 14 Nov **8,220** · 13 Nov **7,
 **The QL-vs-TAP pain-at-rest result** (`10.1007/s10151-026-03405-6`): MD −0.25 (−0.37 to −0.21) is
 arithmetically impossible as printed. **The full text would say which of the three numbers is wrong.**
 Paywalled.
+
+## 16 NOVEMBER (guidelines watch) — STATE AFTER THE RUN
+
+**Published:** `_guidelines/2026-11-16.md`, **5 items**, commit `4bc2fc6`, push verified by `git ls-remote`,
+Pages HTTP 200, zero rendered asterisks. **No new guidance from any tracked society.**
+
+### INSTRUMENT CHANGE ADOPTED — RECORD THE QUERY
+
+**The scope filter now keys on TITLE and JOURNAL, not full text.** Validated: 16 October test 60 → 16 with
+**5 of 5 EACTS documents retained**; window 9–16 Nov 25 → 11. **The full term and journal lists are in
+today's source-notes entry.** **RE-RUN THE 16 OCTOBER RECALL TEST AFTER EVERY CHANGE to those lists.**
+
+### DATED ACTIONS
+
+1. **NOVEMBER MONTH AUDIT — start of December.** **Now use: the NEW title/journal scope filter, a TITLE-WORD
+   sweep alongside the pubType sweep, and the reusable exclusion classifier (still to be built).**
+2. **Build the society-sweep exclusion classifier** (replacing the hand-built regex of 15 Nov). **Before the
+   month audit.**
+3. **Next lagged window: 6 November – 5 December, due around 10 December.**
+4. **AHA/ACC re-check — 11 December.**
+5. **Title-stem check against the remaining 17 named gaps** — still not run.
+6. **Record PANEL SIZES beside all ten threshold schemes.** Known so far: PrECiSIOn 44 · SCCM/ESICM 56 ·
+   CHNC 23 · technologists 20→14 · concussion 35 · IgM-enriched (today) **not stated in the abstract**.
+7. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.** The 16 October hypothesis is
+   withdrawn and does not touch them.
+
+### NEW NAMED GAPS
+
+1. **The PUMA tracheal extubation editorial** (`10.1111/anae.70436`, 7 Oct, *Anaesthesia*) — 0 characters
+   deposited, journal paywalled. **Its argument is unread.**
+2. **The IgM-enriched consensus panel SIZE** — the abstract names the disciplines but not the number of
+   panellists, which today's panel-size rule needs.
+
+### QUEUE ADDITIONS FROM TODAY'S FILTER
+
+- **Educational Priorities in Oncologic Critical Care, modified Delphi** (`10.1093/atsscholar/aapag064`,
+  6 Oct, 2,673 ch).
+- **Chest wall trauma guideline adherence and critical care burden** (`10.21203/rs.3.rs-11141721/v1`,
+  14 Oct, preprint).
+- **Propofol waste management in Paris hospitals** (`10.1016/j.accpm.2026.101946`, 6 Oct) — a Letter;
+  environmental recommendations versus practice, so watch material if it is ever readable.
+- **ICU nursing research priorities Delphi** (`10.1111/nicc.70735`, 1 Nov, 1,066 ch).

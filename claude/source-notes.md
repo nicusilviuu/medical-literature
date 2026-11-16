@@ -9869,3 +9869,111 @@ INTERPERCENTILE RANGE ADJUSTED FOR SYMMETRY.**
 rather than by a proportion of panellists or a mean score.** Seven phenotypes rated; IgM-enriched
 preparations consistently preferred (median 8–9); uncertain for hyperinflammation without shock (6),
 transplant prophylaxis (5), post-cardiac-surgery hyperinflammation (6).
+
+## 16 NOVEMBER (guidelines watch) — THE FILTER REBUILT AND VALIDATED
+
+### THE NEW SCOPE FILTER — AND IT WAS VALIDATED, NOT ASSUMED
+
+**Old filter matched scope terms against the WHOLE RECORD. New filter keys on TITLE and JOURNAL only.**
+
+| Test | Old | New | Change |
+| --- | --- | --- | --- |
+| Window 9–16 Nov | 25 | **11** | −56% |
+| 16 October test set | 60 | **16** | **−73%** |
+| **EACTS documents retained (16 Oct)** | 5/5 | **5/5** | **no loss** |
+
+**The recall test is the point: four of the five EACTS documents have titles containing NO scope term**
+("EACTS Expert Consensus Document on aortic valve repair and valve-sparing aortic root replacement
+procedures"). **They survive only because the filter also keys on JOURNAL — `Eur J Cardiothorac Surg` is on
+the list.** **DESIGN RULE: a TITLE-ONLY filter loses them; a FULL-TEXT filter drowns them. Key on title OR
+journal.**
+
+**Journal list used:** Anaesthesia · Anesthesiology · Crit Care Med · Intensive Care Med · Br J Anaesth ·
+Anaesth Crit Care Pain Med · Eur J Cardiothorac Surg · Ann Thorac Surg · J Thorac Cardiovasc Surg ·
+Reg Anesth Pain Med · Resuscitation · J Crit Care · Crit Care. **Title terms:** anaesthesia/anesthesia,
+anaesthetic/anesthetic, intensive care, critical care, critically ill, resuscitation, sepsis/septic,
+cardiac surgery, thoracic surgery, cardiothoracic, perioperative, postoperative, ICU, ventilation/ventilated,
+intubation, extubation, analgesia, sedation, delirium, cardiac arrest, ECMO, nerve block.
+**ADD AS NEEDED and re-run the 16 October recall test after every change.**
+
+### A TOOL-LEVEL NEAR-MISS — THIRD IN TWO WEEKS
+
+**The first validation run was issued with `resultType=idlist`, which returns identifiers and NO titles. The
+script reported "EACTS records retained: 0" and would have condemned the new filter.** Re-run with `lite`:
+**5 of 5.**
+
+**RULE: a recall test cannot be run on a result type that does not carry the field being tested. Check what
+the response CONTAINS before believing what the script says about it.**
+**Third tool-level error caught in two weeks** — after the `core` paging misdiagnosis (5 Nov) and its
+withdrawal as correction 13 (13 Nov). **The pattern across all three: the tool behaved as documented and the
+HARNESS AROUND IT was wrong.**
+
+### TENTH THRESHOLD SCHEME — AND THE FIRST THAT IS NOT A DELPHI
+
+**IgM-enriched immunoglobulin consensus** (`10.1186/s44158-026-00459-8`, 26 Sep, Italian panel):
+**modified RAND/UCLA Appropriateness Method — anonymous 9-point Likert, classification by MEDIAN
+(appropriate 7–9, uncertain 4–6, inappropriate 1–3), interpanel disagreement measured SEPARATELY by the
+Interpercentile Range Adjusted for Symmetry.**
+
+**All nine previous schemes count panellists or average their scores. This one classifies by the MEDIAN and
+reports disagreement with a dedicated statistic.** **A median is robust to a few extreme raters where a mean
+is not, and separating "what does the panel think?" from "do they agree?" is the better instrument.**
+**FIRST scheme in this catalogue to make that separation.**
+
+**Substance worth keeping — the pattern of where the panel STOPS:** appropriate for severe CAP with
+hyperinflammation **plus shock** (median 8), IgM <60 mg/dL (8), prior immunosuppression (8), overwhelming
+septic shock with severe hyperinflammation (8), toxin-mediated syndromes (9); **UNCERTAIN for
+hyperinflammation WITHOUT shock (6), transplant prophylaxis (5), post-cardiac-surgery hyperinflammation
+(6).** **The panel endorses where there is shock or measured immunoglobulin deficiency and declines where
+there is inflammation alone — the phenotype argument doing real work.** Adverse events "likely to be
+underreported".
+
+### FOUR DOCUMENTS ABOUT WHAT BECOMES OF GUIDANCE IN PRACTICE
+
+**1. SUGAMMADEX AGAINST THE LABEL** (`10.1016/j.accpm.2026.101993`, 15 Nov, DELPO secondary analysis,
+43 Spanish hospitals). **1,278/1,331 (96.0%) overall; 1,248/1,296 (96.3%) in G1–G3; 30/35 (85.7%,
+70.6–93.7) in G4–G5 or dialysis; 16/20 (80.0%, 58.4–91.9) on dialysis.** 1,296 + 35 = 1,331 and
+1,278 − 1,248 = 30 exactly; **the G4–G5 group is 2.63% of the cohort.**
+**TWO BOUNDS: (a) the denominator is 35 patients and the interval says so; (b) THE DENOMINATOR IS
+CONDITIONED ON HAVING RECEIVED PHARMACOLOGICAL REVERSAL — so it cannot say what anaesthetists do when facing
+a dialysis patient who needs reversal, only what they used when they reversed.**
+**The useful establishment: the gap between label and practice is not a few outliers, it is the
+overwhelming majority in a 43-hospital prospective cohort.**
+
+**2. A PROTOCOL FOLLOWED A QUARTER OF THE TIME, AND FOLLOWING IT DID NOT HELP**
+(`10.1016/j.aucc.2026.101691`, 7 Oct, 148 patients). **Loading 82% (101/123) · maintenance 49% (49/101) ·
+monitoring timing 51% (46/91) · ALL DOMAINS 27% (17/64). Therapeutic levels in 20% of episodes. "Protocol
+compliance was not associated with therapeutic levels."**
+**THE COMBINATION FORECLOSES THE EASY CONCLUSION: an adherence audit normally ends with "improve
+adherence", and this one cannot, because the compliant cases did no better.** **Either the protocol's doses
+are wrong for this population or fixed-dose protocols cannot hit a vancomycin target in ICU — and the risk
+factors point at the second: augmented renal clearance OR 15.1 (subtherapeutic), CNS infection 9.5,
+impaired renal function 3.6 (supratherapeutic).** Those are exactly the three states where weight-based
+dosing must miss, and all are common in ICU. **Practical message: concentration-guided, not
+protocol-guided.**
+**DENOMINATOR CASCADE, a new form of an old problem: four domains with denominators 123, 101, 91, 64,
+unexplained — so "27% across all domains" is a statement about 64 of 148 patients.** Log widths 2.5–3.0
+(12- to 20-fold spans) from 148 patients; the 3.6 barely excludes unity.
+
+**3. AN ERA EFFECT CREDITED TO A GUIDELINE** (`10.1002/ohn.70510`, 10 Nov; TriNetX, 1:1 PSM, 66,844 per
+cohort = 133,688). **2014–2017 against 2021–2025.** Pre-2019 higher for dehydration RR 1.27 (1.17–1.38), IV
+fluids 1.27, ED visits 1.21 (1.16–1.27), nausea 1.24; **haemorrhage stable (P = .145)**; opioid
+prescriptions RR 1.47 (1.44–1.50) with a **25-fold fall in codeine**; **NNT 101.7, "$3.2 million cost
+avoidance".**
+**THE DESIGN PROBLEM IS IN THE TITLE: "Impact of ... Guidelines" is causal, and propensity matching balances
+the covariates it is given — it cannot balance EIGHT YEARS** containing a pandemic, changed admission and
+discharge thresholds, changed fluid and antiemetic practice, and an independent national opioid policy
+shift. Authors' prose is hedged ("concomitant with", "suggesting"); the title and the cost figure are not.
+**CREDIT: the haemorrhage null is the right NEGATIVE CONTROL for an opioid-sparing hypothesis and they
+report it. And the mechanism chain hangs together — less opioid → less nausea (1.24) → better intake →
+less dehydration (1.27) → fewer IV fluids (1.27) → fewer ED visits (1.21).**
+**EXPOSE THE COST ARITHMETIC: NNT 101.7 over 66,844 implies ~657 ED visits prevented; $3.2M / 657 ≈ $4,870
+per visit — the assumption carrying the headline, and the abstract does not state it.**
+**The one unambiguous result is the exposure: a 25-fold fall in codeine, which matters specifically because
+of ultra-rapid metabolisers after paediatric adenotonsillectomy.**
+
+**4. PUMA TRACHEAL EXTUBATION EDITORIAL** (`10.1111/anae.70436`, 7 Oct, *Anaesthesia*, **0 chars**).
+**Reported as identified, NOT summarised — the rule is to say an abstract is absent rather than infer a
+position from a title, however suggestive ("towards clarity or complexity?").** Named gap, both routes
+attempted. **Worth recording as the new filter's own proof: "tracheal extubation" is not a scope term, and
+the record was retained because *Anaesthesia* is on the journal list.**
