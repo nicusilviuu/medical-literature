@@ -6540,3 +6540,46 @@ today's source-notes entry.** **RE-RUN THE 16 OCTOBER RECALL TEST AFTER EVERY CH
 - **Propofol waste management in Paris hospitals** (`10.1016/j.accpm.2026.101946`, 6 Oct) — a Letter;
   environmental recommendations versus practice, so watch material if it is ever readable.
 - **ICU nursing research priorities Delphi** (`10.1111/nicc.70735`, 1 Nov, 1,066 ch).
+
+## 17 NOVEMBER — STATE AFTER THE RUN
+
+**Published:** `_briefs/2026-11-17.md`, 5 items, commit `480bccd`, push verified by `git ls-remote`, Pages
+HTTP 200, zero rendered asterisks. Fired on time.
+
+**Index baselines.** Whole **49,269,968** (start and end of run identical). `MED` **41,382,168** ·
+`PMC` **1,016,237** · `PPR` **1,289,109** · `NBK` **7** · `CTX` **3,934** · `PAT` 4,229,296 ·
+`AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624. Windows: 1–30 Sep **178,374** ·
+1–7 Oct **27,810** (4th static day) · Oct month **265,807**. Buckets: 17 Nov **4,889** · 16 Nov **2,103** ·
+15 Nov **6,089** · 14 Nov **8,217** · 13 Nov **7,025**.
+
+### SUITE AND INSTRUMENT STATE
+
+**Brief sweep now uses the title-and-journal filter** with the major general journals added (list in today's
+source-notes). **45 → 25 on today's window.** **New pre-extraction check: WITHDRAWN / RETRACTED title
+prefix.**
+
+### QUEUE — top
+
+1. **Norepinephrine alone versus combination, haemodynamics and outcomes** (`10.21203/rs.3.rs-11060196/v1`,
+   16 Nov, preprint, 3,203 ch).
+2. **Remimazolam tosilate with flumazenil versus etomidate for procedural sedation**
+   (`10.21203/rs.3.rs-11134296/v1`, 16 Nov, preprint, 2,587 ch).
+3. **Neuromuscular blockade reversal and early postoperative pulmonary function**
+   (`10.1080/07853890.2026.2763165`, 16 Nov, 1,831 ch).
+4. **Albumin in septic shock, systematic review** (`10.1097/jxx.0000000000001390`, 16 Nov, 1,590 ch).
+5. **Low-dose glucocorticoid at induction** (`10.1007/s00586-026-10501-6`, 16 Nov, 2,388 ch).
+6. **Critically ill trauma in Portugal, frailty cohort** (`10.1007/s00068-026-03385-0`, 16 Nov, 1,952 ch).
+7. **Emergence delirium SR** — published 16 Nov. **Still unread from the 13 Nov lagged pass:** parasternal
+   block; care intensity in sepsis; lactate-to-albumin SR; ECMO after arrest and organ donation.
+8. **The 48-document pre-coverage society backlog** (15 Nov notes).
+
+### DATED ACTIONS
+
+1. **NOVEMBER MONTH AUDIT — start of December.** Use the new title/journal filter, a TITLE-WORD sweep
+   alongside the pubType sweep, and the reusable exclusion classifier (**still to be built**).
+2. **Build the society-sweep exclusion classifier.** Before the month audit.
+3. **Next lagged window: 6 November – 5 December, due around 10 December.**
+4. **AHA/ACC re-check — 11 December.**
+5. **Title-stem check against the remaining 17 named gaps** — still not run.
+6. **Record PANEL SIZES beside all ten threshold schemes.**
+7. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**

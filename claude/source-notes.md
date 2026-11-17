@@ -9977,3 +9977,108 @@ of ultra-rapid metabolisers after paediatric adenotonsillectomy.**
 position from a title, however suggestive ("towards clarity or complexity?").** Named gap, both routes
 attempted. **Worth recording as the new filter's own proof: "tracheal extubation" is not a scope term, and
 the record was retained because *Anaesthesia* is on the journal list.**
+
+## 17 NOVEMBER — THE FILTER ON THE BRIEF, A WITHDRAWAL NOTICE, AND CORRECTION 14 QUALIFIED
+
+### THE NEW FILTER'S FIRST BRIEF RUN
+
+**Window 16–17 Nov: 45 records under the old full-text filter, 25 under the new title-and-journal one, with
+nothing of value lost — a 44% cut, the same order as the 56% on yesterday's guidance window.** **The
+narrowing is now applied to BOTH routes.** **Brief variant adds the major general journals to the journal
+list:** Anesth Analg · Can J Anaesth · Eur J Anaesthesiol · J Cardiothorac Vasc Anesth · Circulation · JAMA ·
+N Engl J Med · Lancet · BMJ · Am J Respir Crit Care Med · Chest, on top of yesterday's list.
+
+### A WITHDRAWAL NOTICE RETURNED AS A RECORD — NEW RULE
+
+`10.2174/0115748863420846251028103616`, *Current Drug Safety*, firstPub 2026-11-16:
+**"WITHDRAWN: A Meta-Analysis of Efficacy and Safety of Penehyclidine for Postoperative Nausea and
+Vomiting"** — and the entire 254-character abstract is the withdrawal notice: the authors did not respond to
+the editorial office, the article has been withdrawn, the publisher apologises.
+
+**This archive has handled retractions and corrections before but never a withdrawal notice OCCUPYING THE
+ABSTRACT FIELD.** **RULE: check the title for a WITHDRAWN or RETRACTED prefix before extracting any figure.
+A sweep can return a paper that no longer exists, with its figures replaced by an apology, and the prefix is
+the only flag.** Had the notice been longer, or the prefix absent, an antiemetic meta-analysis would have
+read as an ordinary lead.
+
+### CORRECTION 14 QUALIFIED — THE MECHANISM EXPLAINS TWO MOVES OF THREE
+
+| Reading | 14 Nov bucket | `NBK` |
+| --- | --- | --- |
+| 14 Nov | 8,218 | 5 |
+| 15 Nov | **8,221** | **8** |
+| 16 Nov | **8,220** | **7** |
+| 17 Nov | **8,217** | **7 (unchanged)** |
+
+**Today the bucket fell by THREE with `NBK` unchanged.** **So the Bookshelf mechanism identified on Saturday
+accounts for two of this bucket's three movements and NOT the third, which came from a source not
+decomposed.** **The replacement rule holds without strain (a bucket is a reading that can rise or fall).**
+**NARROWER LESSON, worth keeping: identifying a mechanism for ONE movement does not make it the mechanism
+for ALL of them.** Fifth day running in which a structural claim about the index needed weakening rather
+than strengthening.
+
+### INDEX
+
+Whole **49,265,094 → 49,269,968 (+4,874)**, residual 0 — `MED` +3,921, `PPR` +954, `PMC` −1; sum exact.
+**Today's bucket 4,889, fifteen ABOVE the net gain — and with a negative term the subtraction bound is
+unavailable, so no claim was made.** Windows: Sep −1, Oct month −2, **1–7 Oct unchanged for a FOURTH
+consecutive day.** Yesterday's all-three-static day was a one-off.
+
+### ANALYTIC POINTS BANKED TODAY
+
+- **A NON-INFERIORITY MARGIN MUST BE READ AGAINST THE BASELINE RATE.** ABLATION: margin **−5 percentage
+  points on a 1.90% pacemaker rate**, so it would tolerate **6.90% — a 3.63-fold increase — and the margin
+  itself is 2.6× the baseline risk.** The observed difference was −1.1 (1-sided lower bound −3.9).
+  **RULE: divide the margin by the control-arm event rate before accepting "non-inferior".**
+- **ONE-SIDED INTERVALS REMOVE THE UPPER BOUND.** Both ABLATION results are reported with 1-sided 95% lower
+  bounds — legitimate and declared for a superiority-plus-non-inferiority pair — **but the reader learns the
+  benefit is at least 3 points and never how large it might be.**
+- **VERIFYING WHAT THE SURGEON DID.** ABLATION trained and certified surgeons pre-trial, **videorecorded
+  every procedure and centrally reviewed all recordings.** **First surgical ablation trial in this archive
+  to verify the intervention rather than assume it — credit it and look for it in future surgical trials.**
+- **Population caveat: rheumatic mitral disease, 72.1% women, mean age 56.5, mean LA diameter 51.9 mm.**
+  Common in much of the world, uncommon where most surgical-ablation guidance is written.
+- **THE PREDICTION-INTERVAL RULE, APPLIED BY AUTHORS TO THEMSELVES — the cleanest instance yet.** Sugammadex
+  ≥60 review: PRNB **CI 0.18–0.64 (p = 0.0009) against PREDICTION interval 0.11–1.03 (p = 0.059, crosses
+  one); log widths 1.269 vs 2.237, so the PI is 1.76× wider**, with I² 54%. **The CI answers "average effect
+  across these eight trials"; the PI answers "what should I expect in the next hospital" — and the second
+  includes no effect.**
+- **AND TWO OF THREE SECONDARY POSITIVES DID NOT SURVIVE THE AUTHORS' OWN HARTUNG-KNAPP ADJUSTMENT**
+  (hypoxaemia RR 0.61, hospital LOS MD −1.12). **So "sugammadex reduces hypoxaemia in older adults" is a
+  result the paper withdraws inside its own abstract.** What survives: less residual blockade on average,
+  and **8.84 fewer minutes in recovery with I² = 0% — an operational benefit, not a patient-centred one.**
+- **A COMPETING-OUTCOME DECOMPOSITION DONE PROPERLY, and the finding is dependency rather than death.**
+  Korean Sepsis Alliance, 2,204 ventilated septic patients: **ICU death vs recovery-off-ventilator adjusted
+  OR 1.22 (0.97–1.53), p = 0.087 — NULL. Survival-STILL-VENTILATED vs recovery-off-ventilator OR 1.94
+  (1.26–2.98), p = 0.0025.** **Frailty does not move these patients toward death; it moves them toward
+  survival in a dependent state.** **RULE: when a composite lumps death and dependency, ask for the pairwise
+  split — it can invert the clinical conversation.**
+- **ADJUSTMENT CREATED THE ASSOCIATION, not shrank it.** Crude 52.9% vs 49.7%, **3.2 points at P = 0.152
+  (null)**, becoming **adjusted OR 0.73 at p = 0.0035** after age, comorbidity, day-1 SOFA and infection
+  site. **Legitimate — frailty's effect was masked by age — and the configuration most vulnerable to model
+  misspecification, because the whole finding lives in the adjustment.**
+- **A DICHOTOMY THAT INCLUDES A NULL STRATUM DILUTES ITS OWN ESTIMATE.** Exposure defined as CFS 5–8, yet
+  **CFS 5 alone gives OR 1.08 (0.78–1.49), p = 0.64.** Signal starts at CFS 6. **The real threshold is one
+  point above the exposure definition.** Spline 58.6% at CFS 1 → 43.3% at CFS 8 (15.3 points), no
+  non-linearity (p = 0.55).
+- **A REFERENCE CATEGORY IS NEVER NEUTRAL — and compute the event counts the abstract gives only as
+  percentages.** MAP trajectory classes after sleeve gastrectomy, 1,379 patients, 78 AKI events (5.66%):
+  **C1 ≈ 25 events, C2 ≈ 22, C3 ≈ 8, C4 ≈ 23. The reference is C3 — both the LOWEST-RISK class and the one
+  with the FEWEST events — so the headline OR 3.21 compares 22 events against 8, and even stable C1 reaches
+  2.22 against it.**
+- **The class the paper does not dwell on is the interesting one: C3, GRADUALLY RISING pressure, had the
+  lowest AKI at 2.7%.** **A rising intraoperative pressure is at least as plausibly a marker of a patient
+  doing well as a cause of renal protection, and a retrospective cohort cannot separate them.**
+- **CREDIT AN OPTIMISM-CORRECTED AUC.** Apparent 0.692–0.743 reported alongside a
+  bootstrap-corrected **0.717**, with the incremental value called "modest". Rare and right.
+- **CONFOUNDING BY INDICATION IN THE HARM DIRECTION, and the subgroup that strengthens the null.** Empiric
+  antifungals after surgery for severe intra-abdominal infection, 1,061 patients, 488 treated:
+  **30-day mortality OR 1.53 (0.83–2.78), p = 0.168; no renal signal; no fewer reinterventions; ICU and
+  hospital stays LONGER after overlap weighting.** **The null held in the YEAST-POSITIVE subgroup (25.2% of
+  957 sampled) — and that is the stronger argument, because if empiric therapy worked anywhere it should
+  work where the organism was present, and that is where confounding is weakest since indication and
+  pathogen coincide.**
+- **An exposure defined by TIMING rather than intent misclassifies:** "treatment within 24 hours of surgery"
+  puts a patient treated at 30 hours on culture results into the untreated group.
+- **21.4% of sampled patients grew NOTHING** — a comment on how often "severe intra-abdominal infection" is
+  a surgical rather than a microbiological diagnosis.
