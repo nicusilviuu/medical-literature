@@ -6583,3 +6583,41 @@ prefix.**
 5. **Title-stem check against the remaining 17 named gaps** — still not run.
 6. **Record PANEL SIZES beside all ten threshold schemes.**
 7. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
+
+## 17 NOVEMBER (guidelines watch) — STATE AFTER THE RUN
+
+**Published:** `_guidelines/2026-11-17.md`, **2 items**, plus **`claude/tools/classify_guidance.py`**,
+commit `d8a0c44`, push verified by `git ls-remote`, Pages HTTP 200, zero rendered asterisks.
+**No new guidance from any tracked society.**
+
+### DATED ACTIONS
+
+1. **~~Build the society-sweep exclusion classifier~~ — DONE and IN THE REPO at
+   `claude/tools/classify_guidance.py`.** Validated at 95.5% agreement with 5/5 recall on the EACTS
+   documents. **Decision order and the four bugs found are in today's source-notes.**
+2. **NOVEMBER MONTH AUDIT — start of December. Use: the title/journal scope filter (16 Nov), a TITLE-WORD
+   sweep alongside the pubType sweep (15 Nov), and `classify_guidance.py` for the exclusions.**
+   **All three instruments are now built and validated.**
+3. **Next lagged window: 6 November – 5 December, due around 10 December.**
+4. **AHA/ACC re-check — 11 December.**
+5. **Title-stem check against the remaining 17 named gaps** — still not run.
+6. **Record PANEL SIZES beside all ten threshold schemes.**
+7. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
+
+### NEW NAMED GAP
+
+**Maximum dose recommendations for local anaesthetics: a scoping review**
+(`10.1136/rapm-2026-108172`, *Reg Anesth Pain Med*, 16 Nov) — **zero characters, and the title-stem route
+returns only itself.** **Both routes exhausted.** **High value: these are the most-quoted weakly-evidenced
+numbers in anaesthesia.** Try the publisher, an ESRA/ASRA summary, or a citing paper later.
+
+### CLASSIFIER — KNOWN RESIDUAL ISSUES (do not re-discover)
+
+1. **The ceiling: a guidance record whose TITLE carries no guidance word and whose pubType omits it is
+   invisible.** Worked example: the environmental-stressors statement is PRIMARY in its `Circulation`
+   deposit and OTHER in its `Eur Heart J` deposit. **Not fixable by pattern work.**
+2. **One false positive from the bare-"statement" rule:** a qualitative study of perspectives ON a policy
+   statement (`10.1016/j.chstcc.2026.100244`) comes out PRIMARY.
+3. **`10.1016/j.clnu.2026.106810`** ("From the ESPEN NEMS position paper to a practical teaching tool")
+   comes out PRIMARY by pubType; arguably SECONDARY.
+**If the December audit needs them fixed, fix 2 and 3; 1 is the ceiling.**

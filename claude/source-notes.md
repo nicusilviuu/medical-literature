@@ -10082,3 +10082,102 @@ consecutive day.** Yesterday's all-three-static day was a one-off.
   puts a patient treated at 30 hours on culture results into the untreated group.
 - **21.4% of sampled patients grew NOTHING** — a comment on how often "severe intra-abdominal infection" is
   a surgical rather than a microbiological diagnosis.
+
+## 17 NOVEMBER (guidelines watch) — THE CLASSIFIER, BUILT AND VALIDATED TWICE
+
+### IT LIVES IN THE REPOSITORY — `claude/tools/classify_guidance.py`
+
+**Deliberate: the Europe PMC helpers in `/tmp/claude-0/` have survived every container BY LUCK, and a tool
+needed for the December audit must not depend on that.** **RULE: any instrument this archive will need on a
+dated action goes in the repo, not the scratch directory.**
+
+**Usage:** `python3 claude/tools/classify_guidance.py records.json` — takes a JSON array of EPMC records (or
+a raw EPMC response), prints PRIMARY / SECONDARY / OTHER counts and a reason beside every record.
+
+**Decision order (the order is the design):**
+1. **APPARATUS** — title begins with comment/commentary/reply/correction/corrigendum/erratum/retraction/
+   withdrawn/editorial/letter/perspective, or contains "commentary on", "retraction note",
+   "expression of concern", "guideline commentary" → SECONDARY.
+2. **ABOUT_OVERRIDES_PUBTYPE** — "appraisal of", "application of", "commentary on", "implications for",
+   "adherence", "concordance", "compliance with" → SECONDARY **even if the pubType says guidance.**
+3. **GUIDANCE pubType** (practice guideline / guideline / consensus statement) → PRIMARY, unless an ABOUT
+   phrase fires without a self-guidance phrase.
+4. **ABOUT** (adherence, implementation, uptake, impact of the, chatgpt/LLM, ten commandments, key updates,
+   summary of the YYYY, insights from, guideline-concordant/-directed/-based, …) → SECONDARY.
+5. **SELF_GUIDANCE** (guideline(s), consensus statement/document/report, position paper/statement, joint /
+   scientific / society statement, bare "statement", clinical or expert consensus, practice advisory,
+   practice parameter, declaration, standards, recommendations, appropriateness criteria/method) → PRIMARY.
+6. else OTHER.
+
+### VALIDATION — AGAINST THE SET IT WAS BUILT FOR, NOT ASSUMED
+
+| | Round 1 | Final |
+| --- | --- | --- |
+| Agreement with the 15 Nov hand regex (176 records) | **89.2%** (157/176) | **95.5%** (168/176) |
+| Disagreements | 19 | **8** |
+| PRIMARY / SECONDARY / OTHER | 115 / 51 / 10 | **116 / 57 / 3** |
+| **Five EACTS October documents** | 5/5 PRIMARY | **5/5 PRIMARY** |
+| Two EACTS corrigenda | — | **SECONDARY, correctly** |
+
+**FOUR BUGS found by inspecting all nineteen round-one disagreements one at a time:**
+1. **`^comment\b` does not match "Commentary"** — "Commentary on: Treatment of Antithrombotic-Associated
+   Intracranial Hemorrhage" was called PRIMARY. Fixed with `commentar(y|ies)`.
+2. **An "Appraisal of Clinical Practice Guideline: SCCM Guidelines on Caring for Older Adults" was called
+   PRIMARY because the pubType check ran FIRST and the index types an appraisal like its target.** Fixed by
+   adding an override stage BEFORE the pubType check. **This is the 15 November lesson from the other
+   direction: a pubType is evidence that a record IS guidance and NOT evidence that it is the guidance
+   rather than a paper about it.**
+3. **"application of" had been dropped** from the exclusion list (it was in the old regex). Restored.
+4. **"position paper" was recognised, bare "statement" was not.** Adding it recovered two documents and
+   created ONE false positive — a qualitative study of surrogate decision-makers' perspectives ON a policy
+   statement. **Net better, not clean, recorded as not clean.**
+
+**Six of the eight remaining disagreements are cases where the CLASSIFIER is right and the hand regex was
+wrong** (key updates / surgical implications; "Updated insights from the 2025 ERC-ESICM guidelines";
+"Reconciling the 2025 ESC/EACTS Guideline With ACC/AHA Guidance"; an AI study of ASA physical status).
+
+### THE CEILING, WITH A WORKED EXAMPLE — THE SAME DOCUMENT CLASSIFIED TWO WAYS
+
+**The statement on environmental stressors and cardiovascular health is deposited in at least three
+journals.** **Its `Circulation` deposit (`10.1161/circulationaha.125.079034`) is titled "…: A Statement…" →
+PRIMARY. Its `Eur Heart J` deposit (`10.1093/eurheartj/ehaf915`) is titled "Environmental stressors and
+cardiovascular health: acting locally for global impact in a changing world." → OTHER.** Same document,
+same month, two titles, two classifications. (Also `10.1093/eurheartj/ehaf646`, "Abnormal electrocardiogram
+findings in athletes." — an EAPC consensus statement whose deposited title carries no guidance word → OTHER.)
+
+**RULE: this is the CEILING, not a bug. No pattern work recovers a signal the record does not carry — which
+is exactly why the society route runs alongside the index route, and why 15 November concluded that neither
+is redundant.** **The classifier's job is to make the index route cheap enough to run wide, not to replace
+reading the societies.**
+
+**Contribution to the December audit: a STATED REASON beside every exclusion**, which a hand-written regex
+could never give, and which makes the next audit's counts checkable rather than asserted.
+
+### TWO NEW IN-SCOPE DOCUMENTS
+
+**1. MAXIMUM DOSE RECOMMENDATIONS FOR LOCAL ANAESTHETICS: A SCOPING REVIEW**
+(`10.1136/rapm-2026-108172`, *Reg Anesth Pain Med*, 16 Nov) — **ZERO characters deposited.**
+**Both routes run and both failed: the index has no abstract, and the title-stem search returns EXACTLY ONE
+record — itself — so there is no sibling, no companion editorial, no earlier edition.** **A CLEAN NEGATIVE
+for the title-stem route, which has three demonstrated uses (recover an abstract, date a document, recover a
+lineage) and NONE of them applies to the first document of its kind.**
+**Why it matters: maximum local anaesthetic doses are among the most-quoted and least-evidenced numbers in
+anaesthesia, and a scoping review is commissioned when a field suspects its own numbers.** Named gap.
+
+**2. EGFR TESTING AFTER LUNG RESECTION — GUIDELINE CONCORDANCE**
+(`10.1016/j.athoracsur.2026.10.053`, *Ann Thorac Surg*, 16 Nov, 1,695 ch). NCDB 2021–2023, 25,124 patients,
+906 hospitals, risk- and reliability-adjusted hierarchical model.
+**14,061/25,124 = 55.97% tested (stated 56.0%) → 11,063 untested. Quintile spread 20.8% to 89.7% = 68.9
+points, a 4.31-fold difference ON ADJUSTED RATES, so not case mix.**
+**Routed here under the 30 October rule and it is the cleanest example of the genre: adjuvant osimertinib
+depends on the test, so a hospital at 20.8% is not practising a different philosophy — it is failing to
+order a test.**
+**FLAGGED, NOT INTERPRETED: "academic centers (40.2% vs 38.6%, p=0.009)" and "metropolitan area (84.2% vs
+81.8%, p<0.001)" CANNOT be testing rates — the overall rate is 56.0% and the quintiles run 20.8–89.7%, and a
+1.6-point difference reaching p = 0.009 is describing some other quantity. The abstract gives no way to
+resolve which.**
+**Patient-level aORs — female 1.13, Asian 1.45, never-smoker 1.22 — are exactly the groups with the highest
+EGFR prevalence: the guideline says test everyone regardless of demographics and the data say clinicians
+still test by phenotype.** Limits: a registry cannot see a test ordered and unrecorded, so 56% is a FLOOR for
+documented testing; and 2021–2023 is early in the adjuvant-osimertinib era, so a 2024–2026 repeat would say
+whether the gap is closing.
