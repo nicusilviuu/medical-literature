@@ -6672,3 +6672,47 @@ commit `357070f`, push verified by `git ls-remote`, Pages HTTP 200, zero rendere
 5. **Record PANEL SIZES beside all ten threshold schemes.**
 6. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
 7. **TRACK: the NMB-reversal trial NCT07309393 (240 patients, FEV1 at 1 h) — expect a result around 2028.**
+
+## 2026-11-18 (guidelines watch)
+
+**DATED ACTION ADDED — NOVEMBER MONTH AUDIT (start of December) now carries four deferred classifier fixes,
+to be scored OUT-OF-SAMPLE on a held-out set:**
+1. `SELF_GUIDANCE` bare words (`standard`, `guideline(s)`, `statement`) must not fire when the word appears
+   in an ABOUT construction — three of today's five failures are this one fault.
+2. `ABOUT`'s `insights from` must require a guidance noun or a year after it, not a panel.
+3. Add "Delphi method consensus study" / "consensus study" to `SELF_GUIDANCE`.
+4. Add `guideline-defined` and a bare `impact of ... guidelines` to `ABOUT`.
+**Scoring rule for that audit: the fixes are written against the November set and scored on a HELD-OUT set,
+or the score is reported as "agreement on the set the fixes were written against".**
+
+**DONE 18 Nov:** `APPARATUS_PUBTYPE` stage added (letter/comment/editorial/news/erratum/retraction demote
+when no guidance pubType present) — **unscored**; moved exactly one of today's sixteen records.
+**DONE 18 Nov:** `claude/tools/verify_page.py` written and calibrated against the published corpus.
+**DONE 18 Nov:** `_briefs/2026-10-09.md` live rendering defect fixed (odd `**`, two rendered asterisks,
+forty days old).
+
+**NEW STANDING ACTION: run the Pages rendered-asterisk check over the WHOLE archive, not only the day's
+page.** Candidate cadence: once a week, and at every month audit. Not yet scheduled.
+
+**PRE-COVERAGE SOCIETY BACKLOG now 49 counted documents** — `10.1093/ejcts/ezag157` added, and it is the
+first in that backlog identified by a JOURNAL's published list rather than a society's own page.
+
+**NEW NAMED TARGET: the EJCTS/ICVTS guidelines page is a route this archive had not been using.** It listed
+six 2026 EACTS documents; five were already held and the sixth was not. **Check it at every month audit, and
+look for the equivalent published list at the other tracked societies' journals** (*Ann Thorac Surg*,
+*Intensive Care Med*, *Br J Anaesth*, *Eur J Anaesthesiol*, *Clin Nutr*).
+
+**ESPEN in-development list is confirmed useless for anticipation** — `10.1016/j.clnu.2026.106622` published
+14 March 2026 without the list moving. **Read the journal, not the list.**
+
+**THRESHOLD CATALOGUE now twelve schemes. Panel sizes known:** PrECiSIOn 44 · SCCM/ESICM 56 · CHNC 23 ·
+anaesthesia technologists 20→14 · concussion 35 · **delirium bundle 12 (smallest)** · IgM-enriched not
+stated · **ESPEN MNT ethics not stated**. **Two of twelve state no threshold at all.**
+
+**STILL OPEN, unchanged:** why the three JAMA trials indexed 19 October were missed; the title-stem check
+against the remaining 17 named gaps; the AHA/ACC re-check on 11 December; the lagged window 6 Nov – 5 Dec
+due around 10 December (do not defer).
+
+**NAMED GAPS ADDED:** `10.1016/j.bja.2026.10.006` (*BJA* letter on GLP-1 agonists and standard fasting
+guidance, **0 characters**, both routes exhausted) — and it is the record that exposed the
+`APPARATUS_PUBTYPE` gap.

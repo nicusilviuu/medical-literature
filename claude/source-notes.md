@@ -10290,3 +10290,188 @@ added yesterday was run and found nothing.
   splinting (pain scores measured alongside — the right partial control); and ≤1 segment is the mildest
   thoracic surgery, chosen to isolate the reversal effect at the cost of applying least to the highest-risk
   patients.** **Recorded with registration and endpoint so the result can be looked for (~2028).**
+
+## 18 NOVEMBER — THE GUIDELINES WATCH: AN IN-SAMPLE SCORE NAMED AS ONE, AND THE SUITE PUT IN THE REPO
+
+### CORRECTION 15 — 95.5% WAS AN IN-SAMPLE NUMBER AND WAS NOT PUBLISHED AS ONE
+
+**The 17 November entry recorded "agreement rose 89.2% to 95.5%" after four bugs were found by inspecting
+all nineteen disagreements on the 15 November set, with the fixes written against those nineteen cases and
+the agreement then re-measured ON THAT SAME SET.** Fitting to a set and scoring on it is an in-sample
+measurement. **Today the classifier ran on sixteen fresh in-scope records and got FIVE wrong — 31%.**
+
+**The 95.5% was arithmetically correct and is not withdrawn. What is withdrawn is its presentation as a
+quality figure.** It should have read "agreement on the set the fixes were written against."
+**RULE: a score measured on the set that produced the fixes is reported with that phrase attached, or not
+reported.** Eighth member of the over-generalisation family; second about a TOOL (after correction 13).
+
+### THE FIVE FAILURES, CAUSES CONFIRMED BY RUNNING THE REGEXES, NOT GUESSED
+
+| Record | Verdict | Should be | Regex that fired |
+| --- | --- | --- | --- |
+| `10.1016/j.bja.2026.10.006` | PRIMARY | apparatus | `SELF_GUIDANCE` on bare **`standard`** ("standard preoperative fasting guidelines") |
+| `10.1002/ohn.70510` | PRIMARY | about | `SELF_GUIDANCE` on **`Guidelines`** ("Impact of ... Guidelines") |
+| `10.1186/s12885-026-16754-0` | PRIMARY | about | `SELF_GUIDANCE` on **`guideline`** ("guideline-defined") |
+| `10.1016/s2213-2600(26)00296-1` | SECONDARY | PRIMARY | `ABOUT` on **`insights from`** — PrECiSIOn's OWN subtitle "insights from an international Delphi expert panel" |
+| `10.1186/s13104-026-07954-9` | OTHER | PRIMARY | nothing fired — "Delphi method consensus study" absent from `SELF_GUIDANCE` |
+
+**THREE OF FIVE ARE ONE FAULT: the bare-word rules (`standard`, `guideline(s)`, `statement`) fire because
+the word is present BECAUSE THE DOCUMENT DISCUSSES GUIDANCE.** 17 November recorded the bare-`statement`
+false positive as "not clean"; **it is the classifier's PRINCIPAL failure mode, not an exception.**
+**And the `insights from` case is the sharper lesson: a term keyed on how a document describes its
+PROVENANCE cannot separate "insights from a guideline" (secondary) from "insights from a panel" (primary).**
+
+### A FOURTH TOOL-LEVEL ERROR OF THE SAME SHAPE IN THREE WEEKS
+
+**Today's sweeps were collected with `resultType=lite`, which carries NO `pubTypeList`, so the first
+classifier run classified sixteen records with the pubType field empty on all sixteen.** Found while
+diagnosing the misclassifications, not before the run. **Same rule as 16 November: a test cannot be run on a
+result type that does not carry the field being tested.**
+
+**Re-collected as `core` and re-run: NOT ONE VERDICT CHANGED. The reason is worth more than the re-run —
+NOT ONE of the sixteen in-scope records carries a guidance pubType at all** (Review · Journal Article ·
+Letter · Preprint · research-article · English Abstract). **Stage 3, the pubType stage whose ordering was
+yesterday's hardest fix, was DEAD on this window either way.**
+
+### WHAT WAS CHANGED AND WHAT WAS DELIBERATELY NOT
+
+**NOT the four regexes.** Fixing them today and re-scoring on today's sixteen records repeats correction 15
+exactly. **DEFERRED TO THE NOVEMBER MONTH AUDIT (start of December), where a held-out set exists and the
+score can be out-of-sample.**
+
+**ONE change made, justified without reference to today's examples:** `APPARATUS_PUBTYPE` =
+{letter, comment, editorial, news, published erratum, retraction of publication}, demoting to SECONDARY
+when no guidance pubType is also present. **Rationale: pubType was read only as evidence FOR guidance and
+never against, so a record could not be demoted by its own type — a design asymmetry, not a tuning
+parameter.** **RECORDED AS UNSCORED.** Effect on today's sixteen: 9/4/4 → **7/5/4**, exactly one record
+changed (the BJA letter). **Four of five failures remain, by design.**
+
+### THE PUBTYPE ROUTE CONTRIBUTED NOTHING — THE 15 NOVEMBER RULE FROM THE OTHER SIDE
+
+| Route (FIRST_IDATE 11–18 Nov) | Hits | Collected | Shortfall | Survive scope filter |
+| --- | --- | --- | --- | --- |
+| pubType guidance sweep | 17 | 17 | 0 | **0** |
+| title-word guidance sweep | 370 | 370 | 0 | **17** |
+
+**Run alone, a pubType sweep would have produced an EMPTY guidelines watch today.** Its 17 records are
+prenatal cfDNA, athlete channelopathies, paternal age, information blocking, paediatric PH, Fontan,
+older-adult oncology, prostate, colon, AI transplantation, autoimmune pancreatitis, membranous nephropathy,
+drug-induced kidney injury, anticoagulation in CKD, adolescent health, gestational diabetes, aircrew.
+
+### THE CEILING IS WORSE THAN RECORDED — BOTH TWINS INVISIBLE
+
+| Deposit | DOI | firstPub | firstIdx | pubTypes |
+| --- | --- | --- | --- | --- |
+| *Eur J Cardiothorac Surg* | `10.1093/ejcts/ezag157` | 2026-05-01 | 2026-05-13 | Review · Journal Article |
+| *Eur Heart J* | `10.1093/eurheartj/ehag164` | 2026-08-01 | 2026-05-13 | Review · Journal Article |
+
+**The recorded ceiling (environmental-stressors statement) was a case where ONE of two twins was findable.
+This nine-society ESC/EACTS clinical consensus statement has NEITHER twin typed as guidance and NEITHER
+title carrying a guidance word — invisible to BOTH routes.** Found only because the EJCTS guidelines page
+lists it. **SIXTH time a society or journal published list found what the daily index sweep cannot.**
+**Also: both deposits first indexed 13 May although dated May and August — the 16 November issue-batch fact,
+visible across two journals at once.**
+
+### THE VERIFICATION SUITE IS NOW A FILE — AND THE SUITE IN THE NOTES WAS NOT THE SUITE THAT RAN
+
+`claude/tools/verify_page.py`. **Re-typed from the notes on every run for two months; by the 17 November
+rule it should have been written down that day.**
+
+**Run against the published corpus the reconstruction failed on SIXTY files that had all passed the real
+suite.** Three checks mis-calibrated, corrected **against the corpus, not against memory**:
+
+| As recorded | What the corpus showed | Resolution |
+| --- | --- | --- |
+| no body line over 110 chars | rewrapper emits up to **111 VISIBLE** chars; raw length inflated by HTML tags and link targets | measure visible length, flag at 112 |
+| no nested `**` in a blockquote LINE | a bold span legally wraps across lines of a quote | per-BLOCK check |
+| `.***` count must be 0 | **ten published entries contain `.***` legitimately** (bold span closing at the end of an italic paragraph) | **CHECK WITHDRAWN**; checks 3 and 5 cover the real defect |
+
+**RULE: a reconstruction that disagrees with two months of passing files is wrong about the files, not the
+other way round. The corpus is the specification.**
+
+### A LIVE RENDERING DEFECT, FORTY DAYS OLD
+
+**`_briefs/2026-10-09.md`: odd `**` count (269), never reported by any gate** — the source suite only ever
+ran on the day's own file and the Pages asterisk check only ever on the day's own page. **Live page fetched:
+TWO rendered asterisks**, at "...and today almost none is. \*\*Stated plainly: the deposit rate...". A bold
+span opened at "So in that window" was never closed. **Fixed today.**
+
+**NEW RULE: the Pages rendered-asterisk check applies to the WHOLE ARCHIVE, not only the day's page.** A
+defect that escapes its own day is never looked at again; this one survived forty days.
+
+**AND ONE SUSPICION RAISED BY THE SUITE AND REFUTED BY THE PAGE.** The 14 November ordered-list-marker check
+fired on `_briefs/2026-10-14.md` (`2000. **Every other source unchanged...`) — the exact pattern that
+produced four rendered asterisks on 14 November. **The live 14 October page renders ZERO asterisks. The
+check is a RISK FLAG whose consequence depends on context, not a proof of a defect.** Page not touched.
+**Fetching the page before editing it is the only thing that distinguished the two cases.**
+
+**And one URL error of my own, recorded so it is not repeated: the brief permalink is `/brief/:path/`,
+SINGULAR. I fetched `/briefs/2026-11-18/`, got 404, and spent a 300-second Pages poll treating a path
+mistake as a site outage.** **RULE: before reporting a 404 as a site failure, check the permalink in
+`_config.yml`.**
+
+### ELEVENTH THRESHOLD SCHEME — AND THE FIRST THAT STATES NO THRESHOLD AT ALL
+
+**ESPEN practical guideline on ethics of MNT (`10.1016/j.clnu.2026.106622`, 14 Mar 2026):** "two Delphi
+rounds and a consensus conference", **"solely consensus-based"** — **no threshold and NO PANEL SIZE stated.**
+**Of eleven schemes this is the only one whose abstract does not permit the reader to know what consensus
+meant.**
+**TWELFTH, and the smallest panel in the catalogue:** peri-anaesthetic delirium bundle
+(`10.1186/s13104-026-07954-9`, 13 Aug 2026) — **12 experts, two rounds, NO threshold stated. One rater on
+twelve is 8.3 percentage points**, so a threshold to the nearest percent is unsupportable on that panel.
+**Two of the day's five documents are consensus products whose abstracts do not say what agreement was
+required.**
+
+### A FIFTH USE OF THE TITLE-STEM ROUTE — THE FIRST WHERE BOTH EDITIONS HAVE CONTENT
+
+**DGEM 2013 → ESPEN 2016 (`10.1016/j.clnu.2016.02.006`, 1,983 ch) → ESPEN 2026 (2,022 ch).** Three
+generations, both ESPEN editions with abstracts, **so a changed-versus-prior reading is possible rather than
+inferred** — unlike the BSH transfusion lineage (13 Nov), where all three editions were abstract-free.
+**What changed: method (Congress discussion + ONLINE MEMBER SURVEY → two Delphi rounds + consensus
+conference); content (+3 palliative-care statements, +1 human-rights statement, shortened, flowcharts);
+terminology ("artificial nutrition and hydration" → "medical nutrition therapy").**
+**NOT inferable from the abstract and NOT inferred: whether the 2016 cultural/religious chapter, the
+voluntary-refusal section and the hunger-strike section survive.**
+**And the ESPEN in-development list was recorded 15 Nov as three years stale — this March publication is
+what that staleness costs: the society publishes without the list moving.**
+
+### THE WITHIN-COHORT TEST THAT SEPARATES A GUIDELINE FROM ITS ERA
+
+**ERC-ESICM prognostication validation (`10.20944/preprints202611.1107.v1`, preprint, 11 Nov, Careggi,
+121 + 122 patients).** 2014 guidelines on the old cohort **48.7%** (59/121); 2025 guidelines on the new
+cohort **86.8%** (106/122); **2025 guidelines applied RETROSPECTIVELY to the OLD cohort 76.8%** (93/121).
+**DECOMPOSITION: 76.8 − 48.7 = 28.1 points from the CRITERIA on identical patients; 86.8 − 76.8 = 10.0
+points from the cohort and era. Three-quarters guideline, one-quarter everything else.**
+**TWO DAYS after criticising a 133,688-patient PSM study ("Impact of ... Guidelines", eight years incl. a
+pandemic) for being unable to separate the two, a 243-patient preprint does it with an analysis that costs
+nothing once the old cohort's data exist.** **RULE: when a study claims a guideline changed outcomes, ask
+whether it applied the new rule to the OLD patients. That is the within-cohort comparison and it is
+available to anyone with two cohorts.** Arithmetic checks: 46 + 60 = 106.
+**ASYMMETRY: 60/60 favourable vs 46/62 poor — perfect on the easy side, missing 16 of 62 on the hard side.
+The 86.8% is carried by the favourable half.**
+**AND THE CIRCULARITY THE ABSTRACT NAMES WITHOUT NAMING:** its last line is that accuracy matters most in
+poor-outcome patients "who were more frequently managed with withdrawal of life-sustaining treatment".
+**A poor-outcome prediction leads to WLST, WLST produces death, so the outcome is partly produced by the
+prediction.** Self-fulfilling prophecy; a validation study cannot measure poor-outcome accuracy without
+confronting it. **Stated as unknown from the abstract; preprint, not peer reviewed.**
+
+### A COMPLIANCE SURVEY THAT ASKS FOR THE GUIDELINE TO CHANGE
+
+`10.4103/ija.ija_470_26` (*Indian J Anaesth*, 22 Oct, **first indexed TODAY**, 597 respondents).
+Peribulbar 34.2% · topical 32.8% · adrenaline adjuvant ~45% · hyaluronidase >15 IU/mL 20% · **17% UNAWARE
+of the doses they administer** · antiplatelets continued 16.1% · anticoagulants 13.6% · fasting advised for
+sedation 31% · skin test 22.8% · **ECG 26% · NIBP 44% · pulse oximetry NOT REPORTED AT ALL.**
+**Most adherence audits end by asking for better adherence; this one ends by asking for the GUIDELINE to
+change — "should be incorporated in guidelines for the Indian population".** **The rarer direction: a survey
+as evidence the standard does not fit the setting.**
+**BOUND: electronic distribution, 597 responses, NO denominator and therefore NO response rate; half
+private practitioners. A self-selected survey measures what the people who answered do, and the direction
+of that bias is unknown.** Not a national estimate.
+
+### A STALL STRONGER THAN THE USUAL KIND
+
+**14:04:37 and 14:35:02 — WHOLE 49,273,782 both times, ALL ELEVEN SOURCES identical, residual 0 both, and
+all five date buckets identical (8,215 · 6,089 · 2,103 · 5,724 · 3,036).**
+**A net zero in the whole is compatible with offsetting source movements. THIS IS NOT. Nothing ingested and
+nothing redated across thirty minutes.** `NBK` = 7 (5 on 14 Nov, 8 on 15 Nov, 7 on 16 Nov) — **recorded,
+not investigated**, per the 18 November closure.

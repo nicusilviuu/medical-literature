@@ -59,11 +59,23 @@ SELF_GUIDANCE = re.compile(
     r'clinical consensus|expert consensus|practice advisory|practice parameter|'
     r'declaration|standards?\b|statement\b|recommendations?|appropriateness (criteria|method))\b', re.I)
 
+# e) pubTypes that are evidence a record is APPARATUS rather than guidance.
+#    Added 2026-11-18 after the classifier called a Letter PRIMARY: pubType was
+#    read only as evidence FOR guidance and never against, so a record could not
+#    be demoted by its own type. UNSCORED — the four regex fixes found the same
+#    day are deliberately deferred to the month audit, where a held-out set
+#    exists; this one is a design asymmetry rather than a term tuned to those
+#    examples. See claude/source-notes.md, 18 November.
+APPARATUS_PUBTYPE = {'letter', 'comment', 'editorial', 'news',
+                     'published erratum', 'retraction of publication'}
+
 def classify(rec):
     t = (rec.get('title') or '').strip()
     pts = {p.lower() for p in (rec.get('pubTypeList') or {}).get('pubType', [])}
     if APPARATUS.search(t):
         return 'SECONDARY', 'editorial apparatus'
+    if pts & APPARATUS_PUBTYPE and not (pts & GUIDANCE_PUBTYPE):
+        return 'SECONDARY', 'apparatus pubType'
     if ABOUT_OVERRIDES_PUBTYPE.search(t):
         return 'SECONDARY', 'about guidance (overrides pubType)'
     if pts & GUIDANCE_PUBTYPE:
