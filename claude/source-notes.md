@@ -10181,3 +10181,112 @@ EGFR prevalence: the guideline says test everyone regardless of demographics and
 still test by phenotype.** Limits: a registry cannot see a test ordered and unrecorded, so 56% is a FLOOR for
 documented testing; and 2021–2023 is early in the adjuvant-osimertinib era, so a 2024–2026 repeat would say
 whether the gap is closing.
+
+## 18 NOVEMBER — CORRECTION 14 SETTLED AT 278× SCALE, AND THE HELPERS MOVED INTO THE REPO
+
+### THE BUCKET GREW BY 835
+
+| Bucket | 17 Nov | 18 Nov |
+| --- | --- | --- |
+| 17 Nov | 4,889 | **5,724 (+835)** |
+| 16 Nov | 2,103 | 2,103 (unchanged) |
+| 15 Nov | 6,089 | 6,089 (unchanged) |
+| 14 Nov | 8,217 | 8,215 (−2) |
+| 18 Nov (own) | — | 3,036 |
+
+**Correction 14 rested on Bookshelf adding three records to the 14 November bucket. Today the 17 November
+bucket grew by 835 — 278× the original observation.** **A rule overturned by three records and then
+confirmed by 835 is in a different position: today's reading does not test the replacement statement so much
+as SETTLE it.**
+
+**It also closes yesterday's loose end.** Yesterday the 14 November bucket fell by three with `NBK`
+unchanged and this archive could only say the mechanism explained two of three movements. **RESOLVED: a
+bucket moves for reasons beyond any single source, and at this scale chasing the source of each movement is
+not the right use of a daily run.** **Read it, date it, label it. That is the whole rule and it is now
+adequately evidenced; stop re-litigating it.**
+
+### THE SUBTRACTION BOUND, AVAILABLE AGAIN AND USED
+
+Whole **49,269,968 → 49,273,782 (+3,814)**, residual 0 — `MED` +2,530, `PPR` +1,235, `PMC` +49, all others
+flat. **EVERY SOURCE NON-NEGATIVE, so the precondition is met for the first time since 13 November.**
+**Gross additions therefore equal the net gain: at most 3,814 records are new. Today's bucket 3,036 plus
+yesterday's growth 835 = 3,871 > 3,814, so AT LEAST 57 RECORDS IN THOSE TWO BUCKETS ARE REDATED.**
+By subtraction, precondition checked and stated.
+Windows: Sep unchanged, **1–7 Oct −1 after FOUR static days**, Oct month −39.
+
+### THE HELPERS NOW LIVE IN THE REPO — `claude/tools/`
+
+`epmc.sh`, `epmc_all.sh`, `classify_guidance.py`, plus a `README.md` recording what each does and the
+shortfall check, and a `.gitignore` for `__pycache__`.
+**Source them with `source claude/tools/epmc.sh`.** They still write scratch JSON to `/tmp/claude-0/`, which
+is fine — that is output, not instrument.
+**Reason: yesterday's rule that an instrument needed on a dated action must not depend on a scratch
+directory surviving. These had survived 24 days (25 Oct – 18 Nov) BY LUCK, and waiting for a container to
+make the point would have been the wrong way to learn it.**
+
+### RUN CONDITION — A SLOW INDEX
+
+**The opening reading (fifteen sequential queries) took about EIGHT MINUTES against well under two on every
+previous day, and two command batches had to be moved to the background to finish.** **Nothing failed and no
+retry fired — the API was simply slower.**
+**Consequence adopted: on a slow day re-read only the WHOLE at end of run, not the eleven-source
+decomposition, and SAY SO on the page.** Today's end-of-run reading at 14:18:20 was identical at
+49,273,782. **The placeholder procedure was kept by taking the one reading that matters, not skipped.**
+Sweep 17–18 Nov: **6 hits, 6 collected, shortfall zero — thinnest recorded.** The WITHDRAWN-prefix check
+added yesterday was run and found nothing.
+
+### ANALYTIC POINTS BANKED TODAY
+
+- **AN ICER CONFIDENCE INTERVAL OF ±4% IS NOT CREDIBLE.** Japanese care-intensity study: ICER for the
+  GCS ≤12 subgroup **47,738 USD/QALY (45,918–49,558), half-width ±3.8%**; SOFA ≥6 **55,319
+  (52,018–58,624), ±6.0%**. **An ICER is a ratio of two uncertain quantities built on 3-year costs and
+  MODELLED quality-adjusted survival; ±4% implies essentially no uncertainty in the utility weights, the
+  survival extrapolation or the cost attribution.** **Cost-effectiveness analyses conventionally report wide
+  or unbounded intervals, and a ratio near a decision threshold is normally given as a PROBABILITY of being
+  cost-effective.** **RULE: treat a tightly-bounded ICER as an estimate, never as a measurement, and say so.**
+- **A clean, useful null at scale:** 28,211 patients (18,349 GW + 8,706 HDU + 1,156 ICU, summing exactly);
+  HDU vs GW RR 0.99 (p = 0.78), ICU vs GW 1.06 (p = 0.42). **For sepsis needing no organ support on arrival,
+  a higher level of care does not change survival.** Subgroups: HDU benefit at **GCS ≤12 (0.81, p = 0.0014 —
+  the firmer and more plausible: a confused septic patient needs watching)** and **SOFA ≥6 (0.86, upper
+  bound exactly 0.99, p = 0.033 — least-informative-significant shape)**. **No interaction test reported for
+  either.**
+- **VOTE COUNTING IS THE PRACTICE META-ANALYSIS EXISTS TO REPLACE.** Albumin "systematic review" is a review
+  of THREE systematic reviews: **"two of the three meta-analyses demonstrated a statistically significant
+  reduction in 90-day mortality"** — a tally of p-values across three OVERLAPPING reviews of a largely
+  shared trial literature, discarding effect sizes, precision and overlap at once. **No pooled estimate
+  anywhere in the abstract.** **And the recommendation is a PROTOCOL (concentration, sequence, trigger
+  volume: "early hyperoncotic albumin after an initial 30 mL/kg balanced crystalloid bolus") while the
+  TITLE asserts the conclusion: "It is not a question of if but a question of when."** **RULE: when a review
+  of reviews counts significance instead of pooling, treat it as a position paper.**
+  Credit: the microvascular/endothelial phenotype hypothesis is the right SHAPE, and echoes the
+  IgM-enriched immunoglobulin consensus (17 Nov) endorsing therapy where a deficiency is measured.
+- **AN SD LARGER THAN THE MEAN ON A NON-NEGATIVE QUANTITY MEANS THE MEAN IS NOT A SUMMARY.** Epidural-to-
+  spinal study, ephedrine **8.3 ± 9.8 mg vs 5.9 ± 11.1 mg — SD/mean = 1.18 and 1.88.** Heavily right-skewed:
+  most women got little or none, a few got a great deal. **A comparison of means at p = 0.036 on that shape
+  is fragile; a median with IQR would have said more. Direction consistent, MAGNITUDE NOT QUOTABLE.**
+- **The primary was null and uninformative and the title leads with the secondary — correctly.** GA
+  conversion 3.3% vs 2.5% on 161 per group is **about five events against four**; hypotension 55.9% vs
+  30.4% is **25.5 points, 90 patients against 49, p < 0.001.**
+  **Mechanism worth stating: residual epidural local anaesthetic extends the spinal block, so the same
+  intrathecal dose gives a higher sympathetic block. The practical answer is NOT a smaller dose (which
+  risks failure) but anticipating the vasopressor requirement.**
+- **A SENSITIVITY ANALYSIS THAT ANSWERS THE OBVIOUS OBJECTION, WITH ITS NUMBER.** Burn surgery:
+  **max intraoperative vasoactive-inotropic score aOR 1.18 (1.10–1.26) per point, and 1.16 (1.08–1.25) when
+  preoperatively intubated patients are EXCLUDED** — so the haemodynamic signal is not an artefact of the
+  sickest already being intubated. **Credit this pattern and look for it.**
+- **Set aside the near-tautological predictors:** preoperative intubation aOR **11.8 (3.02–46.4)** — a
+  fifteen-fold span, and largely "arrives intubated, leaves intubated"; age **1.03 with a lower bound of
+  exactly 1.00**, p = 0.047.
+- **What the VIS ADDS: %TBSA measures injury SIZE before the operation; the VIS measures how much
+  pharmacological support the circulation needed DURING it — a within-operation measure of reserve.**
+- **AN OUTCOME THAT IS A DECISION, NOT AN EVENT.** "Continuation of mechanical ventilation" is what the
+  anaesthetist chose, so the model predicts clinical judgement as much as physiology and the coefficients
+  would differ in a unit with another extubation culture. **75 events / 5 predictors = 15 per variable, at
+  the lower limit.**
+- **A PROTOCOL IS WORTH REPORTING WHEN IT TARGETS AN OPEN QUESTION THE ARCHIVE JUST NAMED.** NMB-reversal
+  trial protocol (240 patients, NCT07309393, primary outcome the % fall in FEV1 at ONE HOUR) aims at exactly
+  the pulmonary question yesterday's sugammadex meta-analysis left open after its hypoxaemia result failed
+  the Hartung-Knapp adjustment. **Reservations: one hour post-thoracoscopy, FEV1 is dominated by pain and
+  splinting (pain scores measured alongside — the right partial control); and ≤1 segment is the mildest
+  thoracic surgery, chosen to isolate the reversal effect at the cost of applying least to the highest-risk
+  patients.** **Recorded with registration and endpoint so the result can be looked for (~2028).**

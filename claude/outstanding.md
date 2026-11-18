@@ -6621,3 +6621,54 @@ numbers in anaesthesia.** Try the publisher, an ESRA/ASRA summary, or a citing p
 3. **`10.1016/j.clnu.2026.106810`** ("From the ESPEN NEMS position paper to a practical teaching tool")
    comes out PRIMARY by pubType; arguably SECONDARY.
 **If the December audit needs them fixed, fix 2 and 3; 1 is the ceiling.**
+
+## 18 NOVEMBER — STATE AFTER THE RUN
+
+**Published:** `_briefs/2026-11-18.md`, 5 items, plus the Europe PMC helpers moved into `claude/tools/`,
+commit `357070f`, push verified by `git ls-remote`, Pages HTTP 200, zero rendered asterisks.
+
+**Index baselines.** Whole **49,273,782** (start 14:04:37 and end 14:18:20 identical). `MED` **41,384,698** ·
+`PMC` **1,016,286** · `PPR` **1,290,344** · `NBK` **7** · `CTX` **3,934** · `PAT` 4,229,296 ·
+`AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 · `HIR` 2,868 · `CIT` 624. Windows: 1–30 Sep **178,374** ·
+1–7 Oct **27,809** · Oct month **265,768**. Buckets: 18 Nov **3,036** · 17 Nov **5,724** · 16 Nov **2,103** ·
+15 Nov **6,089** · 14 Nov **8,215**.
+
+### INSTRUMENT STATE — ALL IN THE REPO NOW
+
+`claude/tools/epmc.sh` · `claude/tools/epmc_all.sh` · `claude/tools/classify_guidance.py` · `README.md`.
+**Nothing the routines depend on lives in `/tmp` any more.**
+
+### RUN CONDITION TO WATCH
+
+**The index was slow today — about eight minutes for fifteen sequential queries, two batches backgrounded.**
+**If it is slow again: re-read only the WHOLE at end of run and say so on the page.** Nothing failed.
+
+### QUEUE — top
+
+1. **Norepinephrine alone versus combination** (`10.21203/rs.3.rs-11060196/v1`, 16 Nov, preprint, 3,203 ch).
+2. **Remimazolam + flumazenil versus etomidate for procedural sedation**
+   (`10.21203/rs.3.rs-11134296/v1`, 16 Nov, preprint, 2,587 ch).
+3. **Low-dose glucocorticoid at induction** (`10.1007/s00586-026-10501-6`, 16 Nov, 2,388 ch).
+4. **Critically ill trauma in Portugal, frailty cohort** (`10.1007/s00068-026-03385-0`, 16 Nov, 1,952 ch).
+5. **Heterogeneous effects of labour analgesia on labour duration and perineal trauma**
+   (`10.21203/rs.3.rs-11320016/v1`, 17 Nov, preprint, 2,612 ch).
+6. **mNGS of bronchoalveolar lavage versus culture** (`10.21203/rs.3.rs-11581502/v1`, 17 Nov, 2,604 ch).
+7. **Conduction system pacing versus conventional RV pacing after cardiac surgery**
+   (`10.1093/europace/euag321`, 17 Nov, **abstract-free**).
+8. **Postoperative pulmonary function after VATS using epidural** (`10.1097/eja.0000000000002537`, 17 Nov,
+   **abstract-free**).
+9. **Still unread from the 13 Nov lagged pass:** parasternal block (`10.1016/j.redare.2026.502215`);
+   lactate-to-albumin ratio SR (`10.1016/j.jcrc.2026.155804`); ECMO after arrest and organ donation
+   (`10.1111/aor.70284`).
+10. **The 48-document pre-coverage society backlog** (15 Nov notes).
+
+### DATED ACTIONS
+
+1. **NOVEMBER MONTH AUDIT — start of December.** All three instruments built and validated: title/journal
+   scope filter, title-word sweep alongside pubType, `classify_guidance.py`.
+2. **Next lagged window: 6 November – 5 December, due around 10 December.**
+3. **AHA/ACC re-check — 11 December.**
+4. **Title-stem check against the remaining 17 named gaps** — still not run.
+5. **Record PANEL SIZES beside all ten threshold schemes.**
+6. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
+7. **TRACK: the NMB-reversal trial NCT07309393 (240 patients, FEV1 at 1 h) — expect a result around 2028.**
