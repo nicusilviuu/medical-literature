@@ -6770,3 +6770,29 @@ clean.** Decide once whether to raise the limit or rewrap them, rather than re-d
 4. **Title-stem check against the remaining 17 named gaps** — still not run.
 5. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
 6. **TRACK: NMB-reversal trial NCT07309393 — expect a result around 2028.**
+
+## 2026-11-19 (guidelines watch)
+
+**DECEMBER AUDIT — classifier fix list is now FIVE items** (four from 18 Nov plus):
+5. `ABOUT` needs **"assessing the evidence base for"** — `10.1097/xcs.0000000000002293` came out PRIMARY.
+**All five scored OUT-OF-SAMPLE on a held-out set, or the score carries the in-sample phrase.**
+**The bare-word fault is now the DOMINANT failure mode, not a tail case: a false positive on two
+consecutive days of fresh data. That is an out-of-sample observation.**
+
+**DONE 19 Nov:** `epmc_all` shortfall now computed from the DE-DUPLICATED count, not the page-sum; line
+prints `hitCount / pages / unique / SHORTFALL`. README corrected.
+**DONE 19 Nov:** `claude/tools/scan_rendered.py` added to the repo (the action logged earlier today).
+
+**NEW NAMED ACTION — TWO DEAD SOCIETY URLS, re-find both:**
+- `sfar.org/espace-professionel/outils-professionnels/referentiels/` → 404
+- `sts.org/resources/clinical-practice-guidelines` → 404
+**Until re-found, "nothing new from SFAR/STS" rests on search alone for those two, not on their own pages.**
+
+**OPEN QUESTION worth one test at the December audit:** the pubType guidance route's in-scope yield is
+**0 of 36 across 18 and 19 November**. Two days is not a basis for dropping a route. **Decide at the audit
+whether to keep running it, on a month of data rather than two days.**
+
+**STILL OUTSTANDING, unchanged:** November month audit (start of December); lagged window 6 Nov – 5 Dec due
+~10 December, do not defer; AHA/ACC re-check 11 December; title-stem check against the remaining 17 named
+gaps; why the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
+**Pre-coverage society backlog: 49 documents.**

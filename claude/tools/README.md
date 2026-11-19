@@ -16,9 +16,21 @@ Source them with `source claude/tools/epmc.sh`. Both shell helpers still write
 their scratch JSON under `/tmp/claude-0/`, which is fine — that is output, not
 instrument.
 
-**Always compare `collected` against `hitCount`.** The check was added after a
-5 November sweep reported 107 records and returned 73; the cause was never
-identified and the check is cause-agnostic.
+**Always compare `unique` against `hitCount`** — not the page-sum. The check was
+added after a 5 November sweep reported 107 records and returned 73; the cause
+was never identified and the check is cause-agnostic.
+
+**And it was comparing the wrong number until 19 November.** `epmc_all` computed
+the shortfall in the shell from the running page-sum while the de-duplicated
+count was printed from a separate Python block and passed nowhere, so the two
+numbers that must be compared were one line apart and never met. A duplicated
+page made the shortfall read **negative**, which is how it was found; the
+direction that matters is the other one, because duplicates padding the page-sum
+back up to the hit count would make a real shortfall read as zero — exactly the
+failure the check exists to catch. The line now prints
+`hitCount=N pages=N unique=N SHORTFALL=N` so all three are visible together.
+**A check that reads the wrong quantity is worse than no check, because it is
+trusted.**
 
 **The two gates are not interchangeable.** `verify_page.py` reads source and runs
 before a commit; `scan_rendered.py` reads the published page and runs after. A

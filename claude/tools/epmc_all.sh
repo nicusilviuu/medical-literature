@@ -40,6 +40,16 @@ seen={}
 for r in recs: seen[r.get('id') or r.get('doi') or json.dumps(r)[:80]]=r
 json.dump(list(seen.values()),open(sys.argv[2],'w',encoding='utf-8'))
 print("collected",len(recs),"unique",len(seen))
+open(sys.argv[2]+'.unique','w').write(str(len(seen)))
 PY
-  echo "epmc_all: hitCount=$hc collected=$n SHORTFALL=$((hc-n))"
+  # SHORTFALL must be computed from the DE-DUPLICATED count, not the running
+  # page-sum. Until 2026-11-19 it used $n, the page-sum, and the unique count
+  # was printed on a different line where nothing compared it. Two consequences:
+  # a duplicated page made SHORTFALL read negative (harmless), and -- the
+  # reason this matters -- duplicates could mask a REAL shortfall by padding
+  # the page-sum back up to hitCount, which is precisely the failure the check
+  # was added for on 5 November.
+  local u
+  u=$(cat "${out}.unique" 2>/dev/null || echo "$n")
+  echo "epmc_all: hitCount=$hc pages=$n unique=$u SHORTFALL=$((hc-u))"
 }

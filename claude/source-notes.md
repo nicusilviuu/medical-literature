@@ -10654,3 +10654,135 @@ records) fails. Nothing can be inferred about how many records were redated.**
 **Index slow for the third consecutive day — about eight minutes for fifteen sequential queries.** The title
 sweep threw one HTTP 500 and one HTTP 503 mid-paging and `epmc_all`'s per-page retry recovered both, with
 shortfall zero. **Nothing failed.**
+
+## 19 NOVEMBER — THE GUIDELINES WATCH: A CHECK THAT READ THE WRONG QUANTITY
+
+### FIRST NEGATIVE SHORTFALL EVER RECORDED — AND IT IS A BUG IN THE CHECK
+
+**Title-word sweep printed `hitCount=394 collected=395 SHORTFALL=-1`. A negative shortfall is not something
+the index can produce.**
+
+**THE OBVIOUS EXPLANATION WAS WRONG AND THE TEST REFUTED IT.** Index growth mid-run would do it (window's
+last day is today, sweep took minutes). **Hit count re-read immediately after: still 394. The index did not
+grow.**
+
+**THE REAL CAUSE WAS ON THE LINE ABOVE ALL ALONG:**
+```
+collected 395 unique 394
+epmc_all: hitCount=394 collected=395 SHORTFALL=-1
+```
+**395 arrived, 394 unique, and 394 IS the hit count exactly.** One page was fetched twice (the run took an
+HTTP 500 and retried), dedupe removed the repeat correctly, **and the data were never wrong at any point.**
+
+**WHAT IS WRONG IS WHICH NUMBER THE CHECK COMPARES: the shortfall was computed in the SHELL from the running
+page-sum `$n`, while the de-duplicated count was computed in a separate Python block that printed it and
+passed it NOWHERE. The two numbers that must be compared were printed ONE LINE APART and never met.**
+
+**HARMLESS DIRECTION (fired today): a duplicate inflates the page-sum, shortfall goes negative, and the
+anomaly is visible precisely BECAUSE negative is impossible.**
+**DANGEROUS DIRECTION (never fired): miss two records AND fetch two duplicates → page-sum reaches hitCount,
+SHORTFALL READS ZERO, unique is quietly two short. The check would report success on EXACTLY the failure it
+exists to detect — the 5 November 107-vs-73 episode it was built for.**
+
+**FIXED: unique count written to `${out}.unique`, shortfall computed from it, line now reads
+`hitCount=N pages=N unique=N SHORTFALL=N` so all three are visible together.**
+
+**GENERAL RULE, and it is not about this helper: A CHECK IS A CLAIM ABOUT A QUANTITY, AND THE QUANTITY IT
+READS CAN DIFFER FROM THE ONE IT NAMES. A check that reads the wrong quantity is WORSE THAN NO CHECK,
+BECAUSE IT IS TRUSTED.**
+**CONSEQUENCE FOR THE RECORD: every "shortfall zero" in this archive before today means "page-sum matched
+hitCount", which is weaker than it appeared. The unique counts were printed alongside and DID match on
+every run whose output survives, so NO PAST SWEEP IS KNOWN TO BE WRONG — but the reassurance came from a
+line nobody was reading rather than from the check.** The README said "always compare `collected` against
+`hitCount`" **and the tool was comparing the wrong one of the two things it printed.** README corrected.
+
+### THE PUBTYPE ROUTE'S IN-SCOPE YIELD IS NOW 0 OF 36 OVER TWO DAYS
+
+| Route (FIRST_IDATE 12–19 Nov) | Hits | Unique | Shortfall | In scope |
+| --- | --- | --- | --- | --- |
+| pubType guidance sweep | 19 | 19 | 0 | **0** |
+| title-word guidance sweep | 394 | 394 | 0 | **14** |
+
+**Two consecutive days on which a pubType sweep run ALONE would have produced an empty guidelines watch.**
+**The 15 November rule gains a quantity: 0 in-scope records out of 36 across the two days.**
+
+**YESTERDAY'S `lite` ERROR CORRECTED IN PRACTICE, NOT JUST NOTED: today's sweeps used `core` from the start
+and the pubType stage DID fire** — `10.1097/won.0000000000001335`, typed `Consensus Statement`, classified
+PRIMARY by pubType rather than title. Wound/ostomy, out of scope. **So the stage worked and contributed
+nothing, which is different from yesterday when it COULD NOT work.**
+
+### FIFTH INSTANCE OF THE BARE-WORD FAULT — AND NOW AN OUT-OF-SAMPLE RATE
+
+**`10.1097/xcs.0000000000002293`** ("Assessing the Evidence Base for the ... AORN **Guideline** for Sterile
+Technique") **→ PRIMARY, on the word `Guideline`.** A methodological review OF a guideline.
+**Fifth instance in two days**, after `standard`, `Guidelines` ("Impact of ... Guidelines"),
+`guideline` ("guideline-defined") and the 17 November bare-`statement` false positive.
+**NOT FIXED TODAY — same reasoning as yesterday: the deferred regex fixes are scored OUT-OF-SAMPLE at the
+December audit, and writing a fifth fix against a fifth example found today repeats correction 15.**
+**FIFTH ITEM ADDED TO THE DECEMBER LIST: `ABOUT` needs "assessing the evidence base for".**
+**WHAT TODAY ESTABLISHES IS THE RATE: the bare-word fault has produced a false positive on TWO CONSECUTIVE
+DAYS OF FRESH DATA, making it the DOMINANT failure mode rather than a tail case — and that is an
+out-of-sample observation, unlike the 95.5%.**
+
+### A SURROGATE-ENDPOINT AUDIT APPLIED TO A GUIDELINE INSTEAD OF A TRIAL
+
+**AORN sterile technique evidence base** (`10.1097/xcs.0000000000002293`, 17 Nov, *J Am Coll Surg*;
+268 references, **188 primary studies**).
+**38 (20.2%) evaluated postoperative SSI · 106 (56.4%) surrogate contamination · 57 (30.3%) other
+nonclinical (categories NOT mutually exclusive: 38+106+57 = 201 vs 188 ✓).** Among SSI studies 23 (60.5%)
+reported ≥1 significant infection-related difference. **Exactly ONE randomised trial showed an SSI
+reduction ATTRIBUTABLE to a sterile technique intervention.** COI disclosed in 30 (16.0%), **17 "plausibly
+relevant"** (the hedge is theirs).
+**SAME STRUCTURE AS THE 33-TRIAL CARDIAC-SURGERY AKI SERIES: the short-term surrogate produced the
+positives and the patient-centred outcome produced the negatives. Contamination is the creatinine; SSI is
+the MAKE-90.**
+**THE ARITHMETIC THE ABSTRACT DOES NOT DO: 23 of 38 is 60.5%, but 23 of 188 PRIMARY STUDIES is 12.2% — and
+"≥1 significant infection-related difference" is far looser than "an SSI reduction attributable to the
+intervention", of which there is ONE trial. The distance between 23 and 1 is the paper, and both numbers
+are in the abstract without the comparison being drawn.** 38/188, 23/38, 30/188 all reproduce ✓.
+**TWO BOUNDS. (i) It audits the CITATIONS, not the field — a guideline can be sound and cite badly, or cite
+well and recommend past its citations. (ii) AND THE ONE THAT STOPS THIS BEING AN ATTACK: patients cannot be
+randomised to NON-sterile technique, so a shortage of SSI-endpoint trials is partly a statement about what
+is ETHICALLY POSSIBLE rather than about neglect.**
+**CREDIT: the authors do not overreach. Their conclusion asks that interpretation "distinguish contamination
+reduction from demonstrated SSI prevention" — a claim about how to READ the evidence, not a call to withdraw
+the recommendations. More disciplined than the title invites.**
+
+### NON-ADHERENCE THAT LOOKS PROTECTIVE BECAUSE THE THRESHOLD IS A SEVERITY MARKER
+
+**ERS/ATS NIV adherence in ECOPD** (`10.1016/j.ejim.2026.107269`, 17 Nov, prospective, 9 Italian hospitals,
+**456 patients**). Adherent 315 (69%) · **underuse 60 (13%)** · **overuse 81 (18%)**; 315+60+81 = 456 ✓.
+Composite (death or intubation) 48 (11%); 48/456 = 10.5% ✓. **Adjusted: underuse OR 0.85 (0.33–2.20);
+overuse OR 0.54 (0.20–1.46); SAPS II OR 1.05 (1.02–1.08) the ONLY significant estimate.**
+**BOTH POINT ESTIMATES ARE BELOW ONE, AND THAT IS THE RESULT TO EXPLAIN RATHER THAN THE NULL.** The
+recommendation is keyed to **pH**. Underuse happened in **MILD acidosis**, overuse in patients **WITHOUT
+acidosis** — **so in BOTH directions "non-adherent" is partly a label for "LESS ACIDOTIC", and the exposure
+is correlated with severity BY THE CONSTRUCTION OF THE THRESHOLD.**
+**NEW RULE: a guideline whose TRIGGER is a severity marker cannot be audited for outcomes without that
+confounding, and adjusting for a severity score does not remove it, because the trigger is UPSTREAM of the
+classification rather than a covariate alongside it.**
+**AND THE INTERVALS SAY IT CANNOT BE SETTLED EITHER WAY: log widths 1.90 and 1.99 (≈7- and 8-fold spans) on
+48 EVENTS ACROSS THREE GROUPS. Underuse upper bound 2.20 — a DOUBLING of death or intubation from
+withholding NIV is entirely compatible with this data set.** A null on 48 events is not evidence of no
+harm.
+**SECOND CONSECUTIVE DAY of the configuration where the exposure of interest is null and the SEVERITY
+COVARIATE carries the only significant estimate** (yesterday: FAERS, opioid use aOR 2.12).
+**THE GENUINELY USEFUL FINDING IS A GAP IN THE GUIDELINE, NOT IN THE CLINICIANS: underuse was predominantly
+HIGH-FLOW NASAL CANNULA given instead of NIV in mild acidosis — 13% of a prospective cohort treated with a
+modality the pH thresholds were written before.**
+**CREDIT THE DESIGN CHOICE THAT MADE IT VISIBLE: deviations classified BY DIRECTION rather than as a binary
+adherent-or-not. A binary would have hidden both patterns.**
+
+### TWO SOCIETY URLS DEAD — SAID ON THE PAGE RATHER THAN PASSED OVER
+
+**`sfar.org/espace-professionel/outils-professionnels/referentiels/` → HTTP 404.**
+**`sts.org/resources/clinical-practice-guidelines` → HTTP 404.**
+**Both need re-finding. Recorded as a named action rather than reported as "nothing new from those
+societies".**
+
+### NO SEPARATE INDEX READING — RECORDED AS A CHOICE
+
+**The brief fifteen minutes earlier took two readings (14:04:23 and 14:11:11, identical on every number).**
+**A third reading NOW would be the longer gap that yesterday's weak-observation note said the test needs,
+and it was NOT TAKEN: the index has been slow for three consecutive days and this run's sweeps already cost
+about six minutes of it.** **Stated on the page as a choice rather than left as a gap.**
