@@ -10475,3 +10475,182 @@ all five date buckets identical (8,215 · 6,089 · 2,103 · 5,724 · 3,036).**
 **A net zero in the whole is compatible with offsetting source movements. THIS IS NOT. Nothing ingested and
 nothing redated across thirty minutes.** `NBK` = 7 (5 on 14 Nov, 8 on 15 Nov, 7 on 16 Nov) — **recorded,
 not investigated**, per the 18 November closure.
+
+## 19 NOVEMBER — A DEFECT CLASS DIAGNOSED IN OCTOBER AND FIXED FOR THREE DAYS ONLY
+
+### THE WHOLE-ARCHIVE ASTERISK SCAN, FIRST RUN: TWENTY-ONE LIVE PAGES
+
+**Yesterday's new rule run for the first time. 21 published pages carried rendered asterisks** — 12 briefs
+and 9 guidelines entries, clustered 20–29 September and early October, counts of 2, 4 and once 8.
+
+**SEVENTEEN OF THE TWENTY-ONE PASS THE SOURCE SUITE WITH NO FINDINGS AT ALL.** The suite ran on each of
+those files on the day it was written, passed seventeen, and the pages were wrong anyway. **This is the
+6 October boundary ("counting characters in the source is not a rendering check") measured for the first
+time.**
+
+**THE CAUSE ON MOST OF THEM WAS DIAGNOSED ON 6 OCTOBER.** That entry recorded verbatim: "This was present
+on 4, 5 and 6 October and I did not catch it on any of them... All three entries are fixed."
+**All three WERE fixed. Nothing else was. Fifteen earlier pages already carrying the identical defect were
+never looked at.**
+
+**THE GENERALISABLE FAILURE, AND IT IS NOT ABOUT ASTERISKS: a defect diagnosed on a given day gets fixed on
+the pages in view that day. Unless something sweeps the BACK CATALOGUE, the diagnosis protects the future
+and leaves the past as it was.** Every rendering rule here has that shape — 6 Oct, 7 Oct, 8 Oct, 3 Nov,
+14 Nov — and **only this one has now been swept.** **RULE: when a rendering defect class is diagnosed,
+sweep the archive for it the same day.**
+
+### THREE DISTINCT CAUSES ACROSS THE TWENTY-ONE
+
+**(a) NESTED EMPHASIS IN A SINGLE-ASTERISK ITALIC FOOTER — 18 of 21.** `*…*` footer containing
+`*Critical Care*`. Fixed by converting inner journal names to plain text (the 3 November rule).
+
+**(b) `***X***` OR `***X**` NESTED IN THE SAME FOOTER — `_briefs/2026-09-28.md`, `_briefs/2026-10-02.md`.**
+The footer fixer skipped both because it required the block to END in a lone asterisk and these end `.***`.
+**NOTE AGAINST YESTERDAY'S OWN DECISION: the `.***` check was withdrawn yesterday because ten entries
+contain `.***` legitimately. That withdrawal was right — and `.***` still appears in two of today's three
+non-footer faults. A pattern can be useless as a TEST and still be present in real faults.**
+
+**(c) AN ORDERED-LIST MARKER INSIDE A BLOCKQUOTE — `_guidelines/2026-10-03.md`.** A bold span across four
+wrapped quote lines, the third beginning `5. Penetrating traumatic brain injury` after the `> ` marker.
+**Identical mechanism to the 14 November defect.**
+**AND THE SUITE COULD NOT HAVE CAUGHT IT: the 14 November check returns early on any block whose first line
+starts with `>`.** The exclusion was written to avoid false positives on quoted guideline text containing
+numbered recommendations, **and it excluded the one place the defect was live.**
+**Check extended today to probe inside blockquotes (strip `^> ?` then test).** Archive-wide it now flags
+exactly one more blockquote case, `_guidelines/2026-09-30.md` (`2) et 28 sont des avis d'experts.**`) —
+**which renders CLEAN and was left alone.**
+**FIRST REFLOW OF 10-03 WAS WRONG: it moved the marker rather than removing it, putting
+`7. Pediatric specificities.**` at a line start. Caught by re-running the extended check. Reflowed again.**
+
+### THE COUNTER-CASE THAT KEEPS THE LIVE PAGE AS THE ONLY GROUND TRUTH
+
+**Four pages still contain the nested-emphasis footer pattern in SOURCE and render ZERO asterisks:**
+`_briefs/2026-08-29.md` · `_briefs/2026-09-30.md` · `_briefs/2026-10-01.md` · `_guidelines/2026-09-20.md`.
+**LEFT UNTOUCHED.**
+**The source pattern predicts the defect in NEITHER direction: absent from 17 broken pages, present on 4
+sound ones. Editing on the strength of a source pattern would have changed four correct pages.** Same
+discipline as the 14 October page yesterday.
+
+### TODAY'S FIVE — ANALYTIC POINTS WORTH KEEPING
+
+**1. GLP-1 RA AND PERIOPERATIVE ASPIRATION, FAERS** (`10.1007/s00210-026-06090-2`, 17 Nov, 41,308
+perioperative reports). ROR 1.27 (P = 0.56); **Firth penalised aOR 2.08 (P = 0.185)**; SGLT-2 aOR 0.27
+(P = 0.059); **concomitant opioid use aOR 2.12 (P < 0.001) — the only significant estimate, and it is a
+COVARIATE.** 158 GLP-1 and 174 SGLT-2 reports = **0.38% and 0.42% of the cohort.**
+**CREDIT, AND IT IS RARE: the authors disarm their OWN most quotable number** — the SGLT-2 estimate "rests
+on a single event and should not be interpreted as a protective effect", in the abstract.
+**TWO BOUNDS: (i) "perioperative" was constructed by restricting to reports LISTING a general anaesthetic
+or NMB agent as a surrogate marker — so the denominator is reports that named an anaesthetic drug, and an
+aspiration report is more likely to name them than an unrelated report is, which works AGAINST the null
+they found; (ii) FAERS has no exposure denominator, so an ROR is a reporting ratio, never a risk.**
+**WITHHELD: not one confidence interval anywhere — every estimate is a point value plus a p-value. For
+aOR 2.08 the reader cannot see the UPPER bound, the only quantity that says whether an important effect was
+EXCLUDED or merely NOT DETECTED.** On a Firth fit with sparse events that interval is wide — **and a Firth
+profile-likelihood interval is one of this archive's six symmetry-check exceptions, which is a reason to
+PRINT it, not omit it.**
+**Connects to yesterday's named gap** (`10.1016/j.bja.2026.10.006`, GLP-1 and standard fasting guidance,
+0 chars): the pharmacovigilance side returns nothing, **which makes the inaccessible letter MORE worth
+recovering, not less.**
+
+**2. AUTOMATED HEAD-UP CPR, 5-YEAR REGISTRY** (`10.1080/10903127.2026.2762131`, 17 Nov, 3,709 OHCA, 10 EMS
+agencies, 1.5M population). ROSC 29.5% · HD 13.1% · **HD-FN 10.5%**. By rhythm: **shockable/Utstein 33.9% ·
+PEA 11.8% · asystole 2.0% — a 17-fold spread.** 391 favourable survivors, **91% CPC 1**; survivor age
+56.8 ± 16.3.
+**THE CONCLUSION'S VERB IS THE DEFECT: "was associated with survival to HD of 13.1%" — a SINGLE-ARM
+registry has nothing to be associated WITH.** No comparator, no matched control, no historical benchmark
+reported, no adjusted contrast. **The stated basis is ANIMAL MODELS, named in the first sentence, and an
+animal model is not a control group for a human registry.**
+**RULE: a single-arm cohort can report an INCIDENCE and cannot report an ASSOCIATION.**
+**AND THE INTERVENTION IS DEFINED BY AN INTERVAL THE PAPER DOES NOT REPORT: the protocol is "immediate
+conventional CPR followed by rapid transition to AHUP-CPR", so EVERY patient got conventional CPR first and
+the TRANSITION TIME is the entire exposure — it appears nowhere.** The only interval given (9.62 ± 5.78 min
+call-to-professional-CPR) measures EMS response.
+**No conventional-CPR figure was quoted on the page that was not read in this paper — because the paper
+contains none.** 391/3,709 = 10.54% ✓.
+**The rhythm spread means the headline 10.5% is largely a statement about these systems' RHYTHM MIX.**
+
+**3. NEONATAL CPB PREOPERATIVE BIOMARKERS** (`10.1097/cce.0000000000001520`, 17 Nov, 144 neonates,
+**29 ICU-30 events (20%)**, 37 biomarkers, top 20 features). XGBoost combined **AUROC 0.74**; biomarkers
+alone 0.72 vs clinical alone 0.67; RF 0.72, LASSO 0.70.
+**37 CANDIDATE PREDICTORS AGAINST 29 EVENTS = 0.78 events per predictor.** Ten-per-variable would allow ~3.
+**NO CI ON ANY AUROC. At 29 events against 115 non-events the SE on 0.74 is ≈0.05, so a 95% interval spans
+roughly 0.64–0.84 — and 0.74 vs 0.72 vs 0.70, and 0.72 vs 0.67, are indistinguishable. "Outperformed" is
+carrying an inference the sample cannot support.**
+**CREDIT: "moderate discrimination" is the AUTHORS' phrase and the conclusion asks for further
+investigation — the hedging is better calibrated than the comparative verbs.**
+**COMPONENT-OR-CONTAINER CHECK FIRES: ICU-30 = death ≤30 d OR ICU stay >30 d OR readmission ≤30 d. The top
+feature is NGAL, a renal tubular injury marker, and postoperative AKI PROLONGS ICU STAY — so NGAL predicts
+a complication that is itself a route INTO the composite.** **And the abstract does not report how the 29
+events split across the three components, so the reader cannot tell whether this is a mortality model or a
+length-of-stay model.**
+**The coherent part worth following: NGAL + TFF3 (renal and GI epithelial injury) and ADAMTS13 + Ang-2
+(vascular injury and inflammation) — a preoperative gut/kidney/endothelial profile before bypass.**
+
+**4. LLMs FOR 7-DAY ICU MORTALITY** (`10.21203/rs.3.rs-11428570/v1`, preprint 18 Nov; eICU-CRD 124,020 ·
+MIMIC-IV 84,926 · K-MIMIC 6,673). Supervised best AUROC **0.936 / 0.858 / 0.957**; GPT-5 **0.925 / 0.822 /
+0.926** with NO training.
+**THE REPORTING ASYMMETRY IS THE FINDING: AUROC to THREE DECIMALS for every model in every cohort; AUPRC
+given only as a DIRECTION ("generally lower"). On a rare outcome AUROC is dominated by easy negatives and
+AUPRC is the metric that tracks whether the positive predictions are any good. The flattering metric is
+precise and the discriminating one is qualitative.** Lower specificity at evaluated thresholds points the
+same way.
+**DO NOT READ K-MIMIC 0.957 AS GENERALISATION: a validation cohort scoring ABOVE development has shown it
+is EASIER, not transportable** — 6,673 stays, one Korean tertiary hospital, against 124,020 from 208 US
+hospitals. **The honest summary of external validation is the 0.858.**
+**LLM arm rests on 2,000-stay samples per cohort — ~1/60th of eICU.**
+**REASONING ALIGNMENT, over-read: overlap with the top-5 concepts is precision 0.47 / recall 0.55 — about
+HALF. The abstract then reports mentioned concepts outranking non-mentioned in 98.1% of patients
+(P < 0.001), which READS as corroboration and is far weaker: it says the mentioned SET outranks the
+unmentioned SET on average, a bar any model naming plausible variables clears. The 0.47 is the informative
+number; the 98.1% is the comfortable one.**
+**CLINICIAN RATING HAS NO AGREEMENT STATISTIC: 150 rationales, 2 raters, mean 4.03 ± 0.63 on a 5-point
+scale, and in place of a kappa or ICC the abstract offers "within one point in 83% of cases". On a 5-point
+scale that is a wide band, and with mean 4.03 / SD 0.63 most of the distribution already sits within one
+point of itself — the 83% is close to what chance gives at that spread.**
+**CREDIT the narrow conclusion: supervised models "generally achieved the highest discrimination", and
+prospective evaluation of reasoning faithfulness "required before clinical use".**
+
+**5. HRV SAMPLING RATE AS A NEGATIVE-CONTROL EXPOSURE** (`10.64898/2026.11.15.26368154`, medRxiv 17 Nov;
+1,445 ICU stays, 141 deaths). RMSSD distortion **1.1575 (1.0835–1.2492)** at 250→62.5 Hz and **1.0588
+(1.0294–1.1033)** at 125→62.5 Hz; HF power more affected than LF (1.2033 vs 1.0716). Crude OR 1.802 →
+corrected band **1.8335–1.915**.
+**FOUR REFUSALS, AND ALL FOUR ARE WHY THIS IS THE BEST-REPORTED PAPER OF THE FIVE:**
+(i) **its own falsification test came back NEGATIVE and is reported as negative**, with an explicit refusal
+to read it as evidence that measurement bias is absent — an under-powered negative test is uninformative in
+both directions and saying so is the correct and unusual move;
+(ii) **it states the bias it set out to quantify is DWARFED by the confounding it did not: correction moves
+the estimate ~0.1 while AGE ADJUSTMENT ALONE moves 1.802 → 1.116 — about one-seventh the size of a single
+confounder.** A methods paper subordinating its own thesis to the evidence;
+(iii) **it names the LARGER bias as the one nobody models — DICHOTOMISATION: 33.70% and 20.72% of low-HRV
+recordings reclassified across a 20 ms threshold by the sampling rate alone. A third of a binary exposure
+misclassified by a recording setting beats a 16% multiplicative distortion on a continuous scale**, and the
+recommendation (report a sensitivity band BEFORE dichotomising) costs nothing;
+(iv) **Part I argues AGAINST the stronger design it could have claimed**, setting out why a strict
+instrumental-variable analysis is inappropriate.
+**TWO CAUTIONS: the corrected band lies ENTIRELY ABOVE the crude estimate, which is what a multiplicative
+deflation model MUST produce and is NOT a confidence interval — the authors call it a sensitivity band,
+correctly, but a skimming reader will take it for one. And 141 deaths is why every corrected interval
+crosses 1: the falsification test was negative in cohorts that could not have shown much else.**
+
+### INDEX — A SECOND IDENTICAL PAIR, REPORTED AS THE WEAKER OBSERVATION
+
+**Start 14:04:23 and end 14:11:11 identical on every number:** WHOLE **49,281,275** · `MED` 41,391,025 ·
+`PMC` 1,016,327 · `PPR` 1,291,470 · `CTX` 3,935 · **`NBK` 5** · residual 0 · buckets 8,211 · 6,089 · 2,103 ·
+5,724 · **6,656**.
+**REPORTED AS WEAKER THAN YESTERDAY'S AND IT IS: yesterday's identical pair was THIRTY MINUTES apart;
+today's two readings START seven minutes apart and EACH TAKES ABOUT EIGHT MINUTES of sequential queries, so
+the two query windows very nearly ABUT. Two readings whose windows touch are close to ONE reading.**
+**A stall is the likely explanation and THIS RUN CANNOT DEMONSTRATE IT. The test is simply a longer gap,
+which this run did not leave.** **RULE: state the gap between readings, not just that they matched.**
+**Whole up 7,493 on yesterday — a moderate day.** **18 Nov bucket 3,036 → 6,656 (+3,620), more than
+doubling: the ordinary consequence of reading a bucket while its day is still filling.**
+**14 Nov bucket 8,215 → 8,211 (−4)** and **`NBK` 7 → 5** (now 5, 8, 7, 7, 5 on five consecutive days) —
+**both recorded, not investigated**, per the 18 November closure.
+**SUBTRACTION BOUND NOT AVAILABLE: `NBK` shed two records, so the 14 November precondition (no source shed
+records) fails. Nothing can be inferred about how many records were redated.**
+
+### RUN CONDITION
+
+**Index slow for the third consecutive day — about eight minutes for fifteen sequential queries.** The title
+sweep threw one HTTP 500 and one HTTP 503 mid-paging and `epmc_all`'s per-page retry recovered both, with
+shortfall zero. **Nothing failed.**

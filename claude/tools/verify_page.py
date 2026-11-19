@@ -115,14 +115,25 @@ def check(path, want_date=None, want_items=None):
             fail(f"single asterisk nested inside a bold span in a blockquote: {qlines[0][:48]!r}")
 
     # 10. inside a paragraph, no line after the first may open an ordered list  (14 November)
+    #     Extended 19 November to look INSIDE blockquotes: the original check
+    #     returned early on any block beginning with '>', to avoid false
+    #     positives on quoted guideline text containing numbered
+    #     recommendations — and that exclusion hid a live defect on
+    #     _guidelines/2026-10-03.md, where a bold span in a blockquote was
+    #     broken by a wrapped line beginning "5. Penetrating...".
+    #     A flag here is a RISK, not a proof: the 14 October page carries the
+    #     pattern and renders clean. Check the live page before editing.
     for blk in paragraphs(body):
         lines = blk.split('\n')
-        if lines[0].strip().startswith(('|', '>', '#', '-', '*')):
+        quoted = lines[0].strip().startswith('>')
+        if lines[0].strip().startswith(('|', '#', '-', '*')):
             continue
         for j, line in enumerate(lines[1:], 2):
-            if re.match(r'^\d+[.)] ', line):
-                fail(f"continuation line opens an ordered-list marker: {line[:48]!r} "
-                     "— Kramdown ends the paragraph there")
+            probe = re.sub(r'^>\s?', '', line) if quoted else line
+            if re.match(r'^\d+[.)] ', probe):
+                where = 'blockquote' if quoted else 'paragraph'
+                fail(f"{where} continuation line opens an ordered-list marker: "
+                     f"{probe[:48]!r} — Kramdown ends the paragraph there")
 
     # 11. placeholder removed
     if 'END_OF_RUN_PLACEHOLDER' in text:

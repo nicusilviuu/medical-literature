@@ -6716,3 +6716,57 @@ due around 10 December (do not defer).
 **NAMED GAPS ADDED:** `10.1016/j.bja.2026.10.006` (*BJA* letter on GLP-1 agonists and standard fasting
 guidance, **0 characters**, both routes exhausted) — and it is the record that exposed the
 `APPARATUS_PUBTYPE` gap.
+
+## 2026-11-19 (brief)
+
+**Published:** `_briefs/2026-11-19.md`, 5 items. **Plus 21 live pages fixed** and the suite's ordered-list
+check extended into blockquotes.
+
+**DONE — the standing action added yesterday is now done once:** whole-archive rendered-asterisk scan run,
+21 pages found, all 21 traced to source and fixed. **Script: `/tmp/claude-0/scan_pages.sh` — NOT in the
+repo, and by the 17 November rule it should be. PUT IT IN `claude/tools/` on the next run.**
+**Cadence to settle: weekly, and at every month audit.**
+
+**LEFT DELIBERATELY UNTOUCHED (render clean despite carrying the source pattern):** `_briefs/2026-08-29.md`
+· `_briefs/2026-09-30.md` · `_briefs/2026-10-01.md` · `_guidelines/2026-09-20.md` (nested-emphasis footer);
+`_guidelines/2026-09-30.md` (`2)` at a blockquote line start); `_briefs/2026-10-14.md` and the nine other
+paragraph-level ordered-list flags. **Do not edit these without fetching the page first.**
+
+**COSMETIC, NOT FIXED:** a handful of 112–118 visible-character body lines across the corpus, and one
+blockquote nesting flag on `_briefs/2026-09-26.md`. **Not defects; the suite flags them and they render
+clean.** Decide once whether to raise the limit or rewrap them, rather than re-deciding each run.
+
+### QUEUE — top
+
+1. **Prognostic factors in severe trauma, Douala, Cameroon** (`10.21203/rs.3.rs-11130889/v1`, 18 Nov
+   preprint, 2,785 ch). **62 patients, 50 died (80.6%), 30-day survival 17.4%.** Worth a slot for the
+   confounding structure alone: the "exposures" are **absence of sedation (aHR 2.35), absence of
+   transfusion (aHR 3.02), absence of normal blood pressure (aHR 2.21)** — three treatments you do not give
+   a patient who is dying in front of you, so indication and immortal time both point one way. **And the
+   delay result is INVERTED: ICU admission at 1–3 h worse than at 3–6 h (aHR 2.21), with the overall
+   log-rank p = 0.061.** The authors flag it.
+2. **Blood pressure estimation from reduced PPG features in ICU** (`10.2196/105057`, 17 Nov, 3,114 ch) —
+   100 patients, 10-minute recordings; MAE 8.61 / 3.50 / 2.62 mmHg; AAMI and BHS Grade A claimed for MAP
+   and DBP. **Check the AAMI criterion against 100 patients and 10 minutes each.**
+3. **LMA Protector vs intubating LMA for fibreoptic intubation** (`10.4103/aam.aam_646_26`, 18 Nov RCT,
+   68 patients). **"Tracheal intubation time was significantly shorter in Group I" with NO figure and NO
+   p-value given for the primary comparison** — the one number the abstract omits.
+4. **Carry-overs, unchanged:** norepinephrine alone vs combination (`10.21203/rs.3.rs-11060196/v1`);
+   remimazolam + flumazenil vs etomidate (`10.21203/rs.3.rs-11134296/v1`); low-dose glucocorticoid at
+   induction (`10.1007/s00586-026-10501-6`); Portugal frailty cohort (`10.1007/s00068-026-03385-0`);
+   labour-analgesia causal forest (`10.21203/rs.3.rs-11320016/v1`); mNGS of BAL (`10.21203/rs.3.rs-11581502/v1`);
+   conduction-system pacing after cardiac surgery (`10.1093/europace/euag321`, abstract-free); VATS
+   epidural pulmonary function (`10.1097/eja.0000000000002537`, abstract-free).
+5. **Purinergic signalling in perioperative ischaemia-reperfusion** (`10.1016/j.jclinane.2026.112367`,
+   17 Nov, 2,590 ch) — narrative pharmacology review, low priority.
+6. **The 49-document pre-coverage society backlog.**
+
+### DATED ACTIONS — unchanged except as noted
+
+1. **NOVEMBER MONTH AUDIT — start of December**, now also carrying the four deferred classifier regex fixes
+   to be scored OUT-OF-SAMPLE (see 18 Nov), and the EJCTS/ICVTS published-list check.
+2. **Next lagged window: 6 November – 5 December, due around 10 December. Do not defer.**
+3. **AHA/ACC re-check — 11 December.**
+4. **Title-stem check against the remaining 17 named gaps** — still not run.
+5. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
+6. **TRACK: NMB-reversal trial NCT07309393 — expect a result around 2028.**
