@@ -52,4 +52,10 @@ PY
   local u
   u=$(cat "${out}.unique" 2>/dev/null || echo "$n")
   echo "epmc_all: hitCount=$hc pages=$n unique=$u SHORTFALL=$((hc-u))"
+  if [ "$((hc-u))" -gt 0 ]; then
+    echo "epmc_all: POSITIVE SHORTFALL — cursorMark paging dropped record(s)." >&2
+    echo "epmc_all: REMEDY (demonstrated 2026-11-20): split the window into" >&2
+    echo "epmc_all: single-day FIRST_IDATE queries and re-collect. Each day then" >&2
+    echo "epmc_all: matches its own hitCount and the days sum to the window total." >&2
+  fi
 }

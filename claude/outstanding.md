@@ -6860,3 +6860,47 @@ month-of-data question, not a two-day one.**
 5. **Two dead society URLs to re-find** (SFAR référentiels, STS clinical practice guidelines).
 6. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
 7. **TRACK: NCT07309393 — expect a result around 2028.**
+
+## 2026-11-20 (guidelines watch)
+
+**DONE 20 Nov:** `epmc_all` now prints the per-day-split remedy on any POSITIVE shortfall.
+**DONE 20 Nov:** both dead society URLs re-found AND WRITTEN DOWN — SFAR `sfar.org/category/rfe`,
+STS `www.sts.org/node/8174`.
+
+**ANSWERED — KEEP THE PUBTYPE GUIDANCE ROUTE.** Today it returned 34 records, exactly ONE in scope, and that
+one is the week's lead document (`10.1016/j.athoracsur.2026.10.056`). Three-day yield 1 of 70.
+**A 1.4% yield that delivers the lead is worth keeping. December decision settled on this basis.**
+
+**NEW STANDING RULE — RECORD THE URL whenever a society page produces a find.** A grep of the whole archive
+finds not one `sts.org` address, so the page that produced the 14 November POAF find is unrecoverable.
+**Start a URL table in the notes and add to it each run.**
+
+**DECEMBER AUDIT — classifier fix list is now SIX items** (five from 19 Nov plus):
+6. `recommendations` in a title alongside "author", "narrative review" or "our" is NOT society guidance —
+   `10.1186/s13019-026-04617-5` came out PRIMARY. **Scored OUT-OF-SAMPLE, as before.**
+
+**NEW NAMED GAPS:**
+1. **Paediatric regional anaesthesia, SFAR RFE, 11 September 2026** — on the SFAR index, in this archive's
+   outstanding list, and in NO published entry. **Close it: it is a tracked society's RFE.**
+2. **The CONTENT of `10.1093/ehjvshd/xwaf005`** (ESC WG ACHD + ESAIC + EACTAIC + ISACHD, anaesthesia for
+   adults with congenital heart disease in non-cardiac surgery). The deposited abstract gives aim, societies
+   and method and **not one recommendation**; no statement count, threshold or panel size.
+3. **`10.1093/ehjvshd/xwag001`** — 2025 ESC/EACTS valvular heart disease guidelines, **zero characters**,
+   first indexed today. Probably recoverable from the primary *Eur Heart J* deposit.
+
+**NEW ACTION — read SFAR `sfar.org/category/rfe` PAGE 2.** Only page 1 was read today.
+
+**OBSERVATION TO CARRY: a journal's back catalogue can enter the index in a single day** (two ESC-journal
+records, Oct 2025 and Jan 2026, both first indexed 20 Nov). **A date-windowed sweep therefore surfaces old
+society documents in bulk — always read the actual publication date.** Eight 2020 SEMICYUC/SEDAR COVID
+documents arrived in this same window.
+
+**THRESHOLD CATALOGUE now thirteen schemes, and the last THREE IN A ROW state no threshold at all**
+(ESPEN MNT ethics · 12-expert delirium bundle · the cardiac-surgery delirium consensus). Panel size is also
+unstated for the delirium consensus.
+
+**STILL OUTSTANDING, unchanged:** November month audit (start of December) with the six out-of-sample
+classifier fixes and the EJCTS/ICVTS published-list check; lagged window 6 Nov – 5 Dec due ~10 December, do
+not defer; AHA/ACC re-check 11 December; title-stem check against the remaining 17 named gaps; why the three
+JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028; read the date buckets in the START
+index pass as well as the end pass. **Pre-coverage society backlog: 50 documents** (`xwaf005` added).

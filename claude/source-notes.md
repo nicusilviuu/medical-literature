@@ -10995,3 +10995,204 @@ across 18–19 November, with a December decision logged about whether to keep i
 `Practice Guideline` AND IS IN SCOPE, so the yield is no longer zero. Two days of nothing followed
 immediately by a hit is exactly why that decision was deferred to a MONTH of data rather than taken on two
 days.**
+
+## 20 NOVEMBER — THE GUIDELINES WATCH: THE DANGEROUS DIRECTION FIRED ONE DAY LATER
+
+### A GENUINE POSITIVE SHORTFALL, CAUGHT BY YESTERDAY'S FIX
+
+**Yesterday's entry said of the corrected shortfall check: "the dangerous direction ... has never fired."
+IT FIRED TODAY, ONE DAY LATER.** Title-word sweep: `hitCount=462 pages=461 unique=461 SHORTFALL=1`.
+**Under the old computation this would have been invisible, or read as ZERO with one duplicate page.**
+
+**THREE HYPOTHESES, AND THE TWO WRONG ONES WERE TESTED RATHER THAN ASSUMED:**
+**(a) index shed a record mid-run** — plausible today of all days (the brief an hour earlier recorded `PMC`
+shedding 269 inside eight minutes). **REFUTED: hitCount re-read TWICE, 462 both times.**
+**(b) de-duplication removed it** — **REFUTED by the tool's own output: `collected 461` = `unique 461`,
+nothing was de-duplicated.**
+**(c) the paging dropped it — CONFIRMED, and the log carries the signature:**
+```
+page: +61  total=461 / 462
+page: +0   total=461 / 462
+```
+**The final page returned NOTHING while the count was still one short: the cursor advanced past a record
+and then ran out.**
+
+### THE REMEDY: SPLIT THE WINDOW BY DAY
+
+| Index date | hitCount | unique |
+| --- | --- | --- |
+| 13 Nov | 65 | 65 |
+| 14 Nov | 47 | 47 |
+| 15 Nov | 35 | 35 |
+| 16 Nov | 25 | 25 |
+| 17 Nov | 47 | 47 |
+| 18 Nov | 67 | 67 |
+| 19 Nov | 38 | 38 |
+| 20 Nov | 138 | 138 |
+| **Sum** | — | **462** |
+
+**EVERY DAY MATCHED ITS OWN hitCount EXACTLY AND THE EIGHT SUM TO 462.** Diffing the per-day union against
+the whole-window set named the dropped record: **`10.1002/erv.70199`, *Eur Eat Disord Rev*, adverse-event
+reporting in digital eating-disorder trials. OUT OF SCOPE — so nothing was lost today BY LUCK, NOT BY
+DESIGN. Had it been the delirium consensus statement, this entry would have reported "nothing new".**
+
+**WHAT THIS DOES TO 5 NOVEMBER (107 reported, 73 returned, "cause never identified"): `cursorMark` paging
+over a MULTI-DAY window can silently drop records, and PER-DAY sub-queries recover them. A 34-record loss is
+a different order from one, so this does NOT prove it was the 5 November cause — but it is the FIRST
+CONFIRMED INSTANCE OF THE MECHANISM in this archive and is now the leading candidate.**
+
+**REMEDY WRITTEN INTO THE TOOL, NOT INTO A MEMORY: `epmc_all` now prints, on ANY positive shortfall, the
+instruction to split the window into single-day queries. RULE: a check that detects a fault and does not say
+what to do about it costs the next run the diagnosis again.**
+
+### THE PUBTYPE ROUTE QUESTION IS ANSWERED — KEEP IT
+
+**Today: pubType sweep 34 records → EXACTLY ONE survives the scope filter, and that one is
+`10.1016/j.athoracsur.2026.10.056`, THE WEEK'S LEAD DOCUMENT.**
+**Three-day yield: 1 in-scope out of 70. A route with a 1.4% yield that delivers the week's LEAD is worth
+keeping. The December decision can be taken on that basis rather than on the 18–19 November zero.**
+
+### THE DELIRIUM CONSENSUS — THE RECOMMENDATION STRENGTHS ARE THE CONTENT
+
+`10.1016/j.athoracsur.2026.10.056` (*Ann Thorac Surg*, 19 Nov, **pubType Practice Guideline**, 14 statements,
+modified Delphi, PICOT over four perioperative phases).
+**READ THE VERBS: "recommended" = screening (MoCA + Clinical Frailty Scale), multicomponent optimisation,
+opioid-sparing multimodal analgesia. "May be considered" = dexmedetomidine instead of benzodiazepines,
+cerebral oximetry, processed-EEG depth monitoring, optimised oxygen delivery.**
+**THE PANEL PUT EVERY DEVICE AND DRUG INTERVENTION IN THE WEAKER TIER AND EVERY PROCESS INTERVENTION IN THE
+STRONGER ONE — defensible on this evidence base and the OPPOSITE of where commercial and research attention
+sits.**
+**Incidence 14% to >50% "depending on patient population and operative complexity" — a FOURFOLD spread, so
+the denominator of any delirium-prevention claim in cardiac surgery is institution-specific.** Delirium as
+an endpoint has now appeared on SEVEN of the last TWELVE days.
+**NO evidence grading, NO vote distribution, NO consensus threshold, NO panel size ("an international
+multidisciplinary expert panel", no number). THIRTEENTH entry in the threshold catalogue and the THIRD IN A
+ROW to state no threshold at all.**
+**Two commitments worth noting: ICU delirium screening is PAIRED WITH SEDATION ASSESSMENT (the correct
+dependency, not a standalone) and "circadian-supportive environments" is a STRUCTURAL intervention most
+institutions cannot retrofit; and the post-ICU section asks for ward screening plus structured
+post-discharge COGNITIVE FOLLOW-UP — territory no cardiac surgical service owns. Recommending follow-up
+nobody is funded to deliver is where consensus statements go unimplemented, which the document's own "core
+institutional priority" closing concedes.**
+
+### A FOUR-SOCIETY STATEMENT WHOSE JUSTIFICATION IS A SEAM BETWEEN TWO GUIDELINES
+
+`10.1093/ehjvshd/xwaf005` — **ESC WG on ACHD + ESAIC + EACTAIC + ISACHD**, clinical consensus statement on
+anaesthetic management of adults with congenital heart disease for NON-CARDIAC surgery. **firstPub January
+2026, FIRST INDEXED TODAY. ESAIC is a tracked society and this was never reported.**
+**ITS OWN STATED REASON FOR EXISTING IS A GAP BETWEEN TWO GUIDELINES, NOT A GAP IN EVIDENCE: the 2020 ESC
+ACHD guidelines do not cover non-cardiac surgery; the 2022 ESC non-cardiac-surgery guidelines do not cover
+ACHD physiology. TWO COMPREHENSIVE GUIDELINES WITH A SEAM, AND THE PATIENTS LIVE IN THE SEAM.**
+**NEW PATTERN TO NAME: a consensus statement justified by the BOUNDARY between two existing documents is
+doing editorial work the guideline programme should have done, and it only appears when a working group
+notices.**
+**RETRIEVAL POINT: its journal companion `10.1093/ehjvshd/xwag001` (2025 ESC/EACTS valvular heart disease
+guidelines, firstPub Oct 2025, ZERO chars) was ALSO first indexed today. Two records from one ESC journal
+arriving the same day, ten and twelve months after publication = THE INDEX BACKFILLING A JOURNAL, not a
+publication event. CONSEQUENCE: a journal's back catalogue can enter in a single day, so a date-windowed
+sweep surfaces old society documents IN BULK and the actual publication date must be read every time.**
+**The abstract gives aim, societies and method and NOT ONE RECOMMENDATION. No statement count, no threshold,
+no panel size. NAMED AS A GAP: the content of this statement.**
+
+### TAIWAN SOCIETY OF ANESTHESIOLOGISTS — A SCOPE-OF-PRACTICE LINE DRESSED AS PHARMACOLOGY
+
+`10.6859/aja.202611/pp.0002` (*Asian J Anesthesiol*, **16 Nov**, genuinely new).
+**THE FIRST SENTENCE IS THE ARGUMENT: "Procedural sedation exists on a dynamic continuum. Some patients may
+rapidly and unintentionally progress to deep sedation or general anesthesia." Every recommendation follows
+from treating sedation depth as something that DRIFTS rather than something that is CHOSEN — which is why
+RESCUE CAPABILITY, not drug choice, is the organising requirement.**
+**THE HARD LINE, and it is the news: "propofol should be restricted to personnel trained in advanced airway
+rescue." A scope-of-practice statement in pharmacology clothing, contested internationally — the position
+anaesthesiology societies take and non-anaesthesiologist sedation providers resist.**
+**Waveform capnography "recommended" during MODERATE sedation (the band where hypoventilation is common and
+pulse oximetry LAGS); pulse oximetry and CV monitoring only "routinely performed" — the weaker verb, reading
+as DESCRIBING practice rather than raising it.**
+**TWO BOUNDS: no evidence levels, no voting method, no panel size, no threshold — the FOURTH consecutive
+guidance document here to omit all four. AND the risk list (ASA ≥ III, obesity, OSA, anticipated difficult
+airway, severe CV disease, advanced age, organ failure) describes a LARGE FRACTION of procedural-sedation
+patients, so "require careful evaluation and planning by anesthesiologists" is either a substantial
+expansion of anaesthetic involvement or a line that will be applied selectively.**
+
+### THE SHARPEST OBJECTION TO A LIVE RECOMMENDATION THIS ARCHIVE HAS RECORDED
+
+`10.1093/jac/dkag373` (*JAC*, 1 Nov, first indexed today, **994 chars**) on the **2026 SSC guideline's NEW
+suggestion to use selective digestive decontamination** in ventilated adults with sepsis.
+**THE ARGUMENT IS STRUCTURAL AND IT IS ABOUT WHERE THE BENEFIT LIVES: mortality benefit appears in OLD RCTs
+with CONCURRENT controls and DISAPPEARS in recent large CLUSTER trials with NON-CONCURRENT groups. Those
+design features are confounded with each other AND with era.**
+**THE INVERSION: instead of SDD lowering VAP in the TREATED, antimicrobial SPILLOVER may be RAISING VAP and
+mortality in CONCURRENT CONTROLS SHARING THE UNIT — manufacturing a between-arm difference with no benefit
+to the treated patient. "Equally supported by the evidence and remains on the table."**
+**NEW RULE: A DESIGN IN WHICH THE CONTROL GROUP CAN BE CONTAMINATED BY THE INTERVENTION CANNOT DISTINGUISH
+"TREATMENT HELPS" FROM "CONTROL IS HARMED", AND POOLING THIRTY SUCH TRIALS DOES NOT RESOLVE IT — IT AVERAGES
+IT.**
+**THE TELL IS AN ABSENCE: "unusually high VAP incidences" in the old control arms. An atypically high
+control event rate is the classic signature of a different population or a contaminated comparison, and
+exactly where a pooled RELATIVE effect looks largest.**
+**And the closing line is for a guideline committee: "The new suggestion fails to consider whether SDD is
+safe for ICU populations." An intervention working by suppressing gut flora ACROSS A SHARED UNIT has a
+population-level AMR question a patient-level mortality meta-analysis cannot address.**
+**BOUNDS: single-author commentary, 994 chars, a CRITIQUE not a reanalysis, NO new data and NO quantitative
+reanalysis of the pooled estimate; the contrary inference is offered as EQUALLY SUPPORTED, not demonstrated.
+A well-aimed objection, NOT a refutation.**
+
+### REPORTED AS WHAT IT SAYS IT IS — AND THE SIXTH BARE-WORD FALSE POSITIVE
+
+`10.1186/s13019-026-04617-5` — glycaemic control in cardiac surgery, **"narrative review and AUTHOR
+recommendations"**, 24 Aug, first indexed today. **NOT society guidance and its own title says so.**
+Reported because it addresses a gap the authors establish (no UK/European perioperative glycaemic guidance
+for cardiac surgery) **and because a reader searching for that guidance will find this and may not notice.**
+Targets: HbA1c **58 mmol/mol (7.5%)**, intraoperative glucose **6–10 mmol/L (110–180 mg/dL)**, universal
+HbA1c screening regardless of diabetes status, **moderate rather than intensive** control.
+**THE RISK IS THE SPECIFICITY: concrete thresholds with no grading, no consensus process, no external panel,
+no voting. A narrative review with numbered targets READS like a guideline and has NONE of a guideline's
+machinery.** The best-supported and least novel line is "moderate rather than intensive".
+**CLASSIFIER: PRIMARY, on `recommendations` in the title. SIXTH instance in three days of the bare-word
+fault** (after `standard`, `Guidelines`, `guideline-defined`, bare-`statement`, `Guideline`).
+**NOT FIXED — deferred regex fixes are scored OUT-OF-SAMPLE at the December audit. SIXTH ITEM FOR THE
+DECEMBER LIST: `recommendations` in a title alongside "author", "narrative review" or "our" is not society
+guidance.**
+
+### BOTH DEAD URLS RE-FOUND — AND THIS TIME WRITTEN DOWN
+
+| Society | Dead URL | WORKING URL | What it is |
+| --- | --- | --- | --- |
+| SFAR | `sfar.org/espace-professionel/.../referentiels/` | **`sfar.org/category/rfe`** | dated, paginated index of RFE |
+| STS | `sts.org/resources/clinical-practice-guidelines` | **`www.sts.org/node/8174`** | "Clinical Practice Documents and Policies", sectioned |
+
+**SFAR page 1: ten RFE, NOTHING dated Oct or Nov 2026, most recent September 2026 and ALL ALREADY HELD** —
+anticoagulants for planned invasive procedures, adult OR airway management, in-hospital life-threatening
+emergencies, perioperative/critical-care clinical nutrition, procedural sedation in emergency medicine,
+intra-abdominal infections. **ONE September item is in `outstanding.md` and in NO published entry:
+paediatric regional anaesthesia, 11 Sep 2026 — NAMED AS A GAP TO CLOSE.** Page 2 not read.
+
+### A PROCESS FINDING ABOUT THIS ARCHIVE, NOT ABOUT STS
+
+**STS `node/8174` is sectioned and dated and its MOST RECENT ENTRY OF ANY KIND IS APRIL 2025. It does NOT
+list the society's own 2026 POAF guideline (18 April 2026) that this archive reported on 14 November.**
+**The 14 November entry says the guideline was "found by checking the Society of Thoracic Surgeons directly"
+AND RECORDS NO URL. A grep of every page in this archive finds NOT ONE `sts.org` ADDRESS EVER WRITTEN DOWN.
+So the page that produced the find CANNOT BE IDENTIFIED.**
+**NEW RULE: WHEN A SOCIETY PAGE PRODUCES A FIND, RECORD THE URL ON THE PAGE. Six weeks of society-page
+reading, repeated findings that the two routes leak in opposite directions, and not one of those pages is
+identifiable. THE CLAIM THAT A ROUTE WORKS IS NOT REPRODUCIBLE WITHOUT THE ADDRESSES.**
+
+### EIGHT 2020 DOCUMENTS ARRIVED IN ONE WEEK — THE AGGREGATOR HABIT AT SCALE
+
+**All Spanish, all SEMICYUC and SEDAR, all COVID-era, firstPub January to September 2020, FIRST INDEXED
+13–20 NOVEMBER 2026 — six and a half years later.** Ethical recommendations for difficult ICU decisions ·
+perioperative management of suspected/confirmed infection · CPR in suspected/confirmed infection · elective
+and urgent thoracic surgery in the pandemic · "do and do not" in critically ill patients · three SEMICYUC
+consensus documents.
+**Real society documents and NOT NEWS. The brief skill's aggregator warning at a scale not previously
+recorded here: EIGHT documents from one country's societies, all from one year, entering the index inside
+ONE WEEK. Reported as an INDEX EVENT with actual dates stated — the 30 October never-blur-new-and-old rule
+applied to a BULK arrival rather than a single paper.**
+
+### THE 18 NOVEMBER CLASSIFIER CHANGE FIRED ON A REAL RECORD FOR THE FIRST TIME
+
+`10.1007/s00101-026-01765-0` (*Die Anaesthesiologie* editorial on why Germany lags in labour epidural
+analgesia, **0 chars**, pubType `Editorial`) → **`APPARATUS_PUBTYPE` correctly demoted it to SECONDARY on
+its TYPE ALONE.** Until today that stage had only ever moved a record in a re-run of the day it was written.
+**STILL RECORDED AS UNSCORED — one correct demotion is not a score — but the design change is doing the work
+it was added for.**
