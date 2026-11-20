@@ -6796,3 +6796,67 @@ whether to keep running it, on a month of data rather than two days.**
 ~10 December, do not defer; AHA/ACC re-check 11 December; title-stem check against the remaining 17 named
 gaps; why the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
 **Pre-coverage society backlog: 49 documents.**
+
+## 2026-11-20 (brief)
+
+**Published:** `_briefs/2026-11-20.md`, 5 items. **`claude/tools/scope_filter.py` added to the repo** —
+all four instruments the routines depend on are now in the repository.
+
+**DONE 20 Nov:** scope filter written into the repo with its 16 October recall test built in and an
+`idlist` guard; test run and passed (304 → 16, 5/5 EACTS, both journal lists).
+
+**NEW ACTION — read the date BUCKETS in the START pass as well as the end pass.** Today's subtraction bound
+(at least 612 redated) mixes a whole-database gain measured at 14:04:27 with a bucket measured at ~14:14,
+which is the thing this archive's label-every-number-with-its-instant rule exists to prevent. **One extra
+pass of five queries removes the mixing.**
+
+**ANSWERED — the pubType guidance route is NOT dead.** `10.1016/j.athoracsur.2026.10.056` (Ann Thorac Surg,
+19 Nov, pubType Practice Guideline, international expert consensus on postoperative delirium in cardiac
+surgery) is in scope, ending the 0-of-36 run. **Keep the route; the December decision stands as a
+month-of-data question, not a two-day one.**
+
+**ROUTED TO THE GUIDELINES WATCH (do not re-report in a brief):**
+`10.1016/j.athoracsur.2026.10.056` — report it in today's watch.
+
+### QUEUE — top
+
+1. **Prognostic factors in severe trauma, Douala, Cameroon** (`10.21203/rs.3.rs-11130889/v1`) — carried a
+   second day. 62 patients, 80.6% ICU mortality; "absence of sedation/transfusion/normal BP" as exposures;
+   inverted delay result. **Still the best unused teaching case in the queue.**
+2. **ICU mortality with clinically important upper GI bleeding, multistate model**
+   (`10.1097/ccm.0000000000007452`, *Crit Care Med*, 18 Nov, 2,245 ch).
+3. **COMA LATAM — prevalence and characteristics of coma in Latin American ICUs**
+   (`10.1097/ccm.0000000000007440`, *Crit Care Med*, 19 Nov, 1,962 ch).
+4. **Prefrontal haemodynamics and functional connectivity under propofol vs sevoflurane**
+   (`10.1097/aln.0000000000006486`, *Anesthesiology*, 19 Nov, 2,169 ch).
+5. **High vs standard protein and muscle loss by muscle ultrasound in critical illness**
+   (`10.1016/j.clnu.2026.106848`, *Clin Nutr*, 13 Nov, 1,938 ch).
+6. **FFP during cardiopulmonary bypass and postoperative outcome** (`10.1007/s00540-026-03962-y`,
+   *J Anesth*, 20 Nov, 1,884 ch).
+7. **Physiological impact of chest wall closure in infants after cardiac surgery**
+   (`10.1097/pcc.0000000000004110`, *Pediatr Crit Care Med*, 19 Nov, 2,428 ch).
+8. **Bedside ECMO cannulation by intensivists and emergency physicians** (`10.1016/j.chest.2026.10.051`,
+   *Chest*, 19 Nov, 1,396 ch).
+9. **SAPS II versus SAPS 3 prognostic performance** (`10.1016/j.accpm.2026.101959`, *ACCPM*, 18 Nov) —
+   pairs with item 3 of today's brief on calibration.
+10. **Carry-overs:** PPG blood-pressure estimation (`10.2196/105057`); LMA Protector RCT
+    (`10.4103/aam.aam_646_26`, primary comparison has no figure or p-value); norepinephrine alone vs
+    combination (`10.21203/rs.3.rs-11060196/v1`); remimazolam + flumazenil vs etomidate
+    (`10.21203/rs.3.rs-11134296/v1`); low-dose glucocorticoid at induction
+    (`10.1007/s00586-026-10501-6`); Portugal frailty cohort (`10.1007/s00068-026-03385-0`);
+    labour-analgesia causal forest (`10.21203/rs.3.rs-11320016/v1`); mNGS of BAL
+    (`10.21203/rs.3.rs-11581502/v1`); conduction-system pacing (`10.1093/europace/euag321`,
+    abstract-free); VATS epidural pulmonary function (`10.1097/eja.0000000000002537`, abstract-free).
+11. **The 49-document pre-coverage society backlog.**
+
+### DATED ACTIONS — unchanged
+
+1. **NOVEMBER MONTH AUDIT — start of December**, carrying the five deferred classifier regex fixes to be
+   scored OUT-OF-SAMPLE, the EJCTS/ICVTS published-list check, and the keep-or-drop decision on the pubType
+   guidance route.
+2. **Lagged window 6 November – 5 December, due around 10 December. Do not defer.**
+3. **AHA/ACC re-check — 11 December.**
+4. **Title-stem check against the remaining 17 named gaps** — still not run.
+5. **Two dead society URLs to re-find** (SFAR référentiels, STS clinical practice guidelines).
+6. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
+7. **TRACK: NCT07309393 — expect a result around 2028.**

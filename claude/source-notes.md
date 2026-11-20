@@ -10786,3 +10786,212 @@ societies".**
 **A third reading NOW would be the longer gap that yesterday's weak-observation note said the test needs,
 and it was NOT TAKEN: the index has been slow for three consecutive days and this run's sweeps already cost
 about six minutes of it.** **Stated on the page as a choice rather than left as a gap.**
+
+## 20 NOVEMBER — THE WHOLE DATABASE FELL WITHIN THE RUN, AND VOTE COUNTING REFUTED AT THE LEVEL OF METHOD
+
+### `PMC` SHED 269 RECORDS INSIDE EIGHT MINUTES — SECOND INSTANCE, SAME SOURCE
+
+| Source | 14:04:27 | 14:12:12 | Change |
+| --- | --- | --- | --- |
+| `PMC` | 1,021,232 | **1,020,963** | **−269** |
+| `MED` · `PPR` · all others | — | — | **0** |
+| **Whole** | **49,296,286** | **49,296,017** | **−269** |
+
+**One source moved, it moved DOWN, and it accounts for the entire change EXACTLY. Residual 0 at both
+readings. The cleanest within-run attribution this archive has recorded.**
+**PRECEDENT, SAME SOURCE: source-notes line 7343 records `PMC` −51 within a single run on 31 October**,
+found when an over-claim about live ingestion had to be withdrawn. **Today is the same phenomenon at 5.3×
+the size and the SECOND instance, so it is a BEHAVIOUR OF `PMC`, not an anomaly.**
+**And `PMC` gained 4,905 day-over-day before shedding 269 in eight minutes — the source CHURNS, it does not
+merely grow.**
+
+### THE SUBTRACTION BOUND, AVAILABLE AND INSTANT-MIXED — SAY SO
+
+**Day-over-day NO source shed: `MED` +9,120 · `PMC` +4,905 · `PPR` +986 · all others 0, and
+9,120 + 4,905 + 986 = 15,011 = the whole-database gain EXACTLY.** Precondition (14 Nov) holds.
+**Today's bucket 15,623 exceeds the gain 15,011 by 612 → AT LEAST 612 records in today's bucket were
+already in the database and were REDATED into it.** First time available since 18 November.
+**TWO QUALIFICATIONS, STATED BECAUSE THE NUMBERS COME FROM DIFFERENT INSTANTS:**
+**(i) the gain is measured at 14:04:27 and the bucket at ~14:14. MIXING INSTANTS is exactly what this
+archive's own label-every-number-with-its-instant rule exists to prevent, AND THIS BOUND DOES IT**, because
+the bucket is only read in the end-of-run pass.
+**(ii) the tighter end-to-end version is UNAVAILABLE: against the end whole the gain is 14,742 and the
+apparent bound would be 881 — but `PMC` shed 269 between the readings, so a source DID shed and the
+precondition fails. 612 IS DEFENSIBLE AND 881 IS NOT.**
+**ACTION for a future run: read the buckets in the START pass too, so the bound stops being instant-mixed.**
+End buckets: 16 Nov 2,102 · 17 Nov 5,723 · 18 Nov 6,654 · 19 Nov 4,063 · 20 Nov 15,623. **17 and 18 Nov
+each fell by one against yesterday. `NBK` 5 for a second day** (5, 8, 7, 7, 5, 5). Recorded, not
+investigated.
+**Whole up 15,011 day-over-day — largest single-day gain since the burst period, and NOT a burst by the
+three-band classification. `PMC` alone is 32.7% of it (4,905/15,011).**
+
+### VOTE COUNTING REFUTED AT THE LEVEL OF METHOD — AND IT DATES THE 16 NOVEMBER CRITICISM
+
+**`10.1186/s13054-026-06471-2`** (*Critical Care*, 19 Nov): meta-research on **42 SRs of corticosteroids in
+sepsis, 2015–2025, 121 unique RCTs.**
+**MORE THAN HALF OF ALL PAIRWISE SR COMPARISONS SHARE *NO* RCT. Only 3 pairs reach J > 0.8.**
+38 SRs with short-term mortality MAs: **15 (39%) benefit · 23 (61%) no effect.**
+**ON 16 NOVEMBER this archive criticised an albumin review for concluding from "two of the three
+meta-analyses demonstrated a statistically significant reduction" — called vote counting, the practice
+meta-analysis exists to replace. THIS PAPER IS THE REFUTATION AT THE LEVEL OF METHOD: three reviews of the
+same question may have NO TRIAL IN COMMON, so counting how many reached significance counts how many
+DISJOINT EVIDENCE BASES happened to tip one way. Vote counting is not weak evidence here, it is NOT
+EVIDENCE.**
+**AND IT REFRAMES "CONFLICTING EVIDENCE": the reviews are mostly not disagreeing about the same trials.
+Non-comparability wearing the costume of conflict.**
+**THE MOST USEFUL FINDING IS WHERE DISCORDANCE STOPS: EXCLUSIVELY among SRs of "corticosteroids" as a BROAD
+category. Where the intervention is specified exactly the field AGREES — hydrocortisone + fludrocortisone
+benefit; hydrocortisone + ascorbic acid + thiamine no effect. SO THE DISCORDANCE IS A PROPERTY OF THE
+QUESTION, NOT OF THE DRUG.**
+Subgroup: sepsis ± shock 62% benefit vs septic-shock-only 22% — **authors' own hedge, in the abstract: "based
+on only 22 SRs ... estimates were imprecise."**
+**CREDIT: "No single methodological or clinical factor consistently explained discordance" — a meta-research
+study reporting a NEGATIVE result about its own hypothesis rather than promoting 62-vs-22 into an
+explanation.**
+**NEW APPRAISAL CRITERION worth adopting: when choosing an SR, ask not only about methodological quality and
+reported PICO but WHETHER ITS INCLUDED RCTs REPRESENT THE INTENDED QUESTION. Most appraisal tools lack it.**
+
+### DENOMINATORS OF A SYNTHESIS: 98 STUDIES, 6 POOLABLE, 47% WITH AN INTERVAL
+
+**`10.1016/j.accpm.2026.102005`** (*ACCPM*, 18 Nov; 98 studies, 24,505 patients).
+**415 predictor-outcome estimates · 194 CARRY A CONFIDENCE INTERVAL (47%) · 6 STUDIES (6.1%) contributed to
+the pooled adjusted estimates.** The headline rests on **4 studies out of 98.**
+**Authors name the cause and it is not biology: "mainly for remediable reporting reasons."** Minimum
+reporting set proposed. **RULE: more than half the published estimates in a field can be point values with
+no precision, and a synthesis's real denominator is the POOLABLE count, not the eligible count.**
+Cough: OR 2.47 (1.46–4.19) REML/Hartung-Knapp; posterior median 2.55 (1.54–4.71); P(OR>1) = 0.999;
+I² = 0%; **GRADE MODERATE, not high** — the 10 November distinction honoured.
+**PROJECTION RECONCILES ONLY ON THE RIGHT READING: "about 30% vs 15%" at an illustrative 19% failure rate —
+odds 0.1765 × 2.47 = 0.436 → 30.4%. So 15% is the REFERENCE group and 19% is the MIXED overall rate.**
+**I² = 0% on 4 studies would normally be a warning (11 Nov) — EXCEPTION APPLIES: the pool was restricted BY
+DESIGN to one scale and one instrument.**
+Motor GCS posterior OR 5.99 (2.42–16.1) from **2 studies, VERY LOW certainty** — authors' own label; the
+number will be quoted without it.
+**CREDIT THE SENTENCE MOST SYNTHESES WOULD BURY: "The pre-specified comparison between families could not be
+validly estimated from published data." The study's headline purpose, reported as UNESTIMABLE rather than
+estimated badly.** Provenance complete to self-incrimination: PROSPERO submitted 6 Jul, **registered 2 Sep**,
+searches through Jul 2026, protocol v2.3 pre-dated the searches, deviations tabulated.
+
+### A SCORE THAT STRATIFIES WITHOUT DISCRIMINATING, AND A FIELD THAT ILLUSTRATES MORE THAN IT CALIBRATES
+
+**`10.21203/rs.3.rs-11244575/v1`** (preprint, 19 Nov; 800 adults, Bogotá at 2,600 m, **71 failures (8.9%)**).
+**THE BEST SENTENCE IN TODAY'S FIVE PAPERS: "a spread of 0.028 in a design that cannot detect less than
+0.068." They computed their own detectable difference, observed less than HALF of it, and reported NO
+DIFFERENCE rather than ranking three models. Most comparisons of this kind rank the models.**
+RF 0.630 · GB 0.627 · **ordinary logistic regression 0.655**. All 42 variables + tuning + ensembling +
+rebalancing: **nothing exceeded the original parsimonious score.**
+**THE UNCOMFORTABLE FINDING ABOUT A VALIDATED SCORE: ABCDMed reproduced EXACTLY, four strata 4.4% / 7.7% /
+11.6% / 23.0% — a 5-fold gradient that LOOKS like success — "but the score distributions of patients who
+failed and succeeded overlap almost completely."**
+**NEW RULE: STRATIFICATION AND DISCRIMINATION ARE DIFFERENT PROPERTIES. A score can deliver clinically
+meaningful GROUP rates while being near-useless for the INDIVIDUAL patient. AUROC 0.655 is what that
+overlap looks like as a number.**
+**Published literature on this outcome reports AUROC "up to 0.98" against 0.655 here under repeated
+stratified CV with imputation, scaling, resampling, variable selection and hyperparameter search ALL INSIDE
+the training folds. The gap measures leakage and optimism.**
+**CONCRETE HARM FROM A ROUTINE STEP: SMOTE left discrimination UNCHANGED while inflating predicted risk by
+75% and driving NET BENEFIT BELOW TREAT-NOBODY. A rebalancing step that preserves ranking and destroys
+calibration makes a model WORSE THAN DOING NOTHING, and decision-curve analysis is what shows it.**
+**THE APPRAISAL THAT WILL OUTLIVE THE PAPER — 14 published ML studies of this outcome: 12 explainability
+figure · 7 calibration · 4 any external validation · 3 net benefit · 3 shared code · 0 repeated or nested
+CV. EXPLAINABILITY FIGURES OUTNUMBER CALIBRATION REPORTS. A field that illustrates why its models decide
+more often than it checks whether their probabilities mean anything.**
+**TWO BOUNDS: single centre at 2,600 m with 71 events, so absolute discrimination is not transportable;
+AND the methods disclose AI was used BOTH to appraise the 14 studies against the reporting items AND to
+produce an adversarial peer review "every claim of which was verified by re-analysis". The verification is
+the right safeguard and it is SELF-REPORTED. The 14-study appraisal is therefore a MACHINE-GENERATED
+EXTRACTION, which bounds those five numbers, and an AI adversarial review IS NOT PEER REVIEW — preprint.**
+
+### THE SEPSISPAM SUBGROUP TESTED AS AN INTERACTION AND ESSENTIALLY EXCLUDED
+
+**`10.21203/rs.3.rs-11493996/v1`** (preprint, 18 Nov; **13,714** adults, MIMIC-IV 7,181 + eICU-CRD 6,533;
+Bayesian g-formula, time-varying confounders, competing risks; MAP ≥73 vs 65–72 mmHg sustained 48 h from
+hour 6).
+RRT interaction OR **1.20 (0.88–1.65)**; mortality **1.04 (0.73–1.48)**.
+**THE DECISIVE SENTENCE IS NOT THE NULL, IT IS THE EXCLUSION: posterior probability of an interaction as
+protective as SEPSISPAM implied (OR ≤ 0.53) is BELOW 0.01%. Far stronger than "we found no interaction".**
+**AND A PRIOR CENTRED ON THE SEPSISPAM SUBGROUP ITSELF still yields 0.89 (0.69–1.16) — the result survives
+being given the benefit of the doubt it is testing.** 17 sensitivity analyses.
+**HONEST COUNTERWEIGHT IN THE SAME SENTENCE: P(0.80 ≤ interaction ≤ 1.25) = 59%. A region of practical
+equivalence holds only MODERATE posterior mass. Excludes a large protective interaction confidently; does
+NOT establish equivalence. Different claims, both reported.**
+**INTERNAL TENSION THE ABSTRACT STATES AND DOES NOT RECONCILE: both multiplicative interactions null, while
+the ADDITIVE mortality interaction is −1.3 pp (−2.6 to −0.1), EXCLUDING ZERO. Additive and multiplicative
+interaction need not agree and which matters depends on absolute vs relative decisions. Narrow interval
+close to zero — recorded as something the full text must address, NOT read as a finding.**
+**THIS IS THE INTERACTION TEST THIS ARCHIVE KEEPS ASKING FOR, PRE-SPECIFIED AS THE ESTIMAND.**
+**VASOPRESSOR/MAP SERIES NOW FOUR ENTRIES: observational HR 2.55 · emulation 2.87 above 0.75 µg/kg/min ·
+VASSPR randomised 0.98 across that window · and now an emulation reaching a CONFIDENT NULL with no apparent
+confounding signature — the OPPOSITE outcome from the vasopressin emulation, which controlled immortal time
+impeccably and still reported the shape of confounding. THE METHOD IS CAPABLE OF BOTH RESULTS, WHICH IS THE
+ARGUMENT FOR IT.**
+
+### THE SAME JOURNAL THREE DAYS LATER — PHARMACOVIGILANCE DONE WELL
+
+**`10.1007/s00210-026-06119-6`** (*Naunyn-Schmiedeberg's*, 20 Nov; **2,505 DEX reports, 717 bradycardia**
+— FAERS 327, JADER 390; 2004Q1–2025Q3).
+**READ AGAINST YESTERDAY'S ITEM 1 FROM THE SAME JOURNAL (GLP-1 aspiration FAERS, 17 Nov): 158 exposed
+reports, NOT ONE confidence interval, a null. TODAY: 717 events, TWO independent national databases,
+intervals on every estimate, a time-to-onset model. SAME METHOD FAMILY, SAME JOURNAL, THREE DAYS APART, and
+the difference is almost entirely SAMPLE SIZE AND REPORTING DISCIPLINE. A reader who concluded from
+yesterday that pharmacovigilance cannot answer anything would be wrong.**
+**THE MOST PERSUASIVE NUMBER IS ONE NOBODY WOULD DESIGN FOR: Weibull shape β = 0.849 (FAERS) and 0.847
+(JADER) — two independent systems, different countries and reporting cultures, agreeing to THREE DECIMALS
+on the shape of the onset distribution. β < 1 ⇒ DECREASING hazard, events concentrate EARLY; median onset
+0 days in both. Bradycardia after DEX is an INDUCTION-PERIOD event — a monitoring recommendation, not a
+statistical curiosity.**
+**BUT TWO OF THREE RISK FACTORS ARE NOT FINDINGS ABOUT DEX, AND THE DESIGN IS WHY: a case-non-case analysis
+WITHIN DEX reports asks which DEX reports mention bradycardia. β-blocker exposure OR 1.85 (1.08–3.13) says
+β-BLOCKERS CAUSE BRADYCARDIA, which was known; pre-existing CV disease OR 4.88 (3.92–6.09) includes people
+with conduction disease who would be bradycardic on any sedative. The design identifies WHO IS REPORTED,
+not what DEX does to them.**
+**A PATTERN ACROSS TWO DAYS, FLAGGED PRECISELY BECAUSE IT MAY BE AN ARTEFACT: concomitant opioid use was the
+one significant covariate in yesterday's GLP-1 aspiration study (aOR 2.12) and is significant again here
+(OR 1.74, 1.37–2.22) for a COMPLETELY DIFFERENT adverse event. Opioids plausibly cause both — and they also
+MARK sicker, more intensively treated, more heavily documented patients, so a covariate turning up
+significant in consecutive spontaneous-reporting studies of unrelated outcomes may be telling us WHO GETS
+REPORTED. Two instances is a pattern to watch, not a conclusion.**
+**Authors' own bound, in the abstract: spontaneous reporting "cannot establish causality or quantify
+incidence." 717 of 2,505 is NOT a 29% incidence and nothing in the paper is a rate.**
+
+### THE SCOPE FILTER IS IN THE REPO, AND ITS OWN TEST WAS RUN
+
+`claude/tools/scope_filter.py` — **the last of the three 16 November instruments still living in a scratch
+directory.** Both journal lists, the title-OR-journal rationale and the measured cuts written into the file.
+
+| Recall test (16 October set) | In | Kept | EACTS retained |
+| --- | --- | --- | --- |
+| guidance journal list | 304 | **16** | **5/5** |
+| brief journal list | 304 | **19** | **5/5** |
+
+**16 November reported 60 → 16 on that day's test set. Today starts from 304 — a FIVE-FOLD larger set from a
+broader query — AND LANDS ON THE SAME 16. Stronger than the original validation: THE FILTER'S OUTPUT IS
+DETERMINED BY THE RECORDS, NOT BY THE QUERY THAT FETCHED THEM.**
+**AND THE 16 NOVEMBER TOOL-LEVEL ERROR IS NOW IMPOSSIBLE TO MAKE SILENTLY: `--recall-test` ABORTS if the
+records carry no title. Verified by deliberately feeding it an `idlist` result →
+`recall test aborted: records carry no title — wrong resultType`.**
+
+### A HIT COUNT EQUAL TO THE PAGE SIZE IS WORTH ONE QUERY
+
+**The journal route returned EXACTLY 100 hits at pageSize 100 — the shape that would mask truncation.
+Re-queried independently at pageSize 1: still 100. The count is real.**
+**RULE: "hitCount equals pageSize" is indistinguishable from "pageSize capped the result" without a second
+query at a different page size. One query settles it.**
+
+### THE SCOPE FILTER DID ALMOST NOTHING TODAY, AND THAT IS EXPECTED
+
+**451 → 450.** **A sweep already keyed on the same title terms cannot be narrowed by a filter keyed on those
+terms. The filter earns its place on sweeps that are NOT pre-filtered — the guidance title-word sweep, where
+it cut 396 → 14.** Said on the page rather than reported as a 451 → 450 "cut".
+
+### ONE DOCUMENT ROUTED AWAY FROM THE BRIEF — AND IT ENDS A TWO-DAY ZERO
+
+**`10.1016/j.athoracsur.2026.10.056`** — "International Expert Consensus Statement on Contemporary
+Prevention and Management of Postoperative Delirium in Cardiac Surgery", *Ann Thorac Surg*, 19 Nov,
+**pubType `Practice Guideline`**, 14 consensus statements, modified Delphi, PICOT framework across four
+perioperative phases. **Routed to the guidelines watch per the 30 October rule.**
+**AND IT BEARS ON YESTERDAY'S LOGGED QUESTION: the pubType guidance route's in-scope yield was 0 of 36
+across 18–19 November, with a December decision logged about whether to keep it. THIS DOCUMENT IS TYPED
+`Practice Guideline` AND IS IN SCOPE, so the yield is no longer zero. Two days of nothing followed
+immediately by a hit is exactly why that decision was deferred to a MONTH of data rather than taken on two
+days.**

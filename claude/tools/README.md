@@ -10,6 +10,7 @@ directory**: the helpers below survived every container between 25 October and
 | `epmc_all.sh` | `epmc_all QUERY OUTFILE [resultType] [pageSize]` — `cursorMark` paging, collects every hit, de-duplicates, prints `hitCount / collected / SHORTFALL`. |
 | `verify_page.py` | `verify_page.py FILE [--date D] [--items N]` — the pre-commit source suite. Checks emphasis balance, nesting, table pipes, line length and the ordered-list-marker trap. Every check was earned by a defect; three were recalibrated against the published corpus on 18 November because the version carried in the notes was not the version that had been running. |
 | `scan_rendered.py` | `scan_rendered.py [paths]` — fetches every published page and counts rendered asterisks outside code spans. The other gate: the source suite cannot see rendering. First run, 19 November, found 21 live pages, 17 of which pass the source suite cleanly. |
+| `scope_filter.py` | `scope_filter.py IN OUT [--list brief\|guidance]` — narrows records to this archive's subject scope, keying on TITLE **or** JOURNAL. `--recall-test FILE` re-runs the 16 October test and asserts all five EACTS consensus documents survive; it aborts if the records carry no title, so the 16 November `idlist` error cannot recur silently. |
 | `classify_guidance.py` | Classifies records as PRIMARY guidance, SECONDARY (about guidance) or OTHER, with a reason for each. Validated 2026-11-17 at 95.5% agreement against the 15 November society sweep. |
 
 Source them with `source claude/tools/epmc.sh`. Both shell helpers still write
