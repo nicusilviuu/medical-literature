@@ -11196,3 +11196,171 @@ analgesia, **0 chars**, pubType `Editorial`) → **`APPARATUS_PUBTYPE` correctly
 its TYPE ALONE.** Until today that stage had only ever moved a record in a re-run of the day it was written.
 **STILL RECORDED AS UNSCORED — one correct demotion is not a score — but the design change is doing the work
 it was added for.**
+
+## 21 NOVEMBER — A TENFOLD CRUDE GAP THAT COLLAPSES TO 1.43, AND PMC'S ROUND TRIP CLOSES
+
+### THE PER-DAY COLLECTION RULE APPLIED FROM THE START
+
+**Yesterday's watch established that cursorMark paging over a MULTI-DAY window can silently drop a record.
+Today's brief sweeps were collected PER DAY from the start:** 270, 93, 203, 45, **every one matching its own
+hitCount, shortfall zero on all four.** 611 collected, 557 unique, 555 after the scope filter.
+**The scope filter cut 557 → 555, near-nothing, AS EXPECTED on a sweep already keyed on the same title
+terms — the 20 November observation repeating.**
+
+### ETOMIDATE — READ THE TWO PROPOFOL MORTALITY FIGURES AGAINST EACH OTHER FIRST
+
+`10.1213/ane.0000000000008407` (*Anesth Analg*, 20 Nov; **155,667** adults, one academic health system;
+etomidate **3,846 (2.5%)** vs propofol **151,821 (97.5%)**).
+Crude mortality **227/3,846 (5.9%) vs 924/151,821 (0.61%)**. Adjusted aOR **1.44 (1.21–1.72)**. Matched
+(3,832 pairs) aOR **1.43 (1.14–1.78)**, observed **225/3,832 (5.9%) vs 157/3,832 (4.1%)**, ARD **1.8%**,
+**NNH 56** (1/0.018 = 55.6 ✓). SMD **0.398 → 0.023**.
+**THE GOVERNING OBSERVATION: in the WHOLE propofol population mortality is 0.61%; in the MATCHED propofol
+group it is 4.1% — NEARLY SEVEN TIMES HIGHER. Matching did not improve the etomidate arm; it FOUND THE
+SICKEST 2.5% OF PROPOFOL PATIENTS. Crude OR ≈ 10.2, matched 1.43, so ROUGHLY 88% OF THE APPARENT EFFECT WAS
+CONFOUNDING BY INDICATION.**
+**CREDIT: the BEFORE-matching SMD (0.398) is printed. Most papers give only the after figure.**
+**THE ONE FINDING THAT DOES NOT HAVE THE SHAPE OF RESIDUAL CONFOUNDING: post-induction hypotension was 60%
+LOWER with etomidate (aOR 0.40, 0.32–0.49). The drug delivered exactly the haemodynamic effect it is chosen
+for AND THE PATIENTS STILL DIED MORE — so whatever drives the mortality signal is NOT acting through
+induction-period blood pressure. That rules out one of the two obvious confounding routes and leaves the
+other wide open.**
+**NEW RULE, AND THE MOST IMPORTANT THING HERE: secondary outcomes ALL elevated by a SIMILAR MODEST AMOUNT
+(sepsis 1.28 · ACS 1.24 · cardiogenic shock 1.56 · AKI 1.27) READS as a robust drug effect and IS THE EXACT
+SIGNATURE OF AN EXPOSURE THAT MARKS UNMEASURED SEVERITY, because residual confounding raises everything at
+once. A MECHANISM-SPECIFIC harm — adrenal suppression, the stated concern — would predict a SELECTIVE
+pattern, strongest in sepsis and shock and weak in ACS. The pattern here is FLAT ACROSS ORGAN SYSTEMS.**
+**Bound: 2.5% exposure prevalence, and the whole result rests on 382 deaths in the matched sample.** Authors'
+own closing register is correct: "Given the observational design, results should be interpreted with
+caution."
+
+### TWO PAPERS THAT PUBLISHED THE ANALYSIS UNDERCUTTING THEIR OWN HEADLINE
+
+**(a) `10.1213/ane.0000000000008394`** (*Anesth Analg*, 17 Nov; NIS **250,630** rib-fracture
+hospitalisations, 2016–2022). Regional analgesia in **7,179 (2.9%)**. **23.9% of variation in utilisation is
+BETWEEN HOSPITALS.** For-profit OR **0.42 (0.34–0.53)** vs government; private nonprofit 0.75; large bed
+size 2.08; urban teaching 1.39; private insurance 1.24; top income quartile 1.21. Highest utilisation New
+England. **Disparities "either persisted or widened from 2016 to 2022."**
+Outcomes: mortality OR **0.52 (0.42–0.64)**, tracheostomy **0.48 (0.36–0.63)**.
+**AND THEN: "In instrumental variable analysis with leave-one-out hospital-year regional analgesia rate as
+the instrument, these associations were attenuated." A 48% mortality reduction from a NERVE BLOCK is not a
+plausible effect size, the authors evidently thought so, BUILT AN INSTRUMENT, and REPORTED THAT IT KILLED
+THEIR OWN HEADLINE — IN THE ABSTRACT.**
+**CREDIT STRONGLY. THE ONE GAP: "attenuated" carries NO NUMBER. Attenuated to 0.8 and to 1.0 are different
+papers.**
+**Equity, quoted plainly: "Private insurance, White race, highest income quartile, government ownership and
+urban teaching status were also associated with EARLIER receipt" — and earlier matters independently of
+receipt for rib fracture, where the purpose is preserving ventilation in the first days.**
+
+**(b) `10.1213/ane.0000000000008399`** (*Anesth Analg*, 20 Nov; billing records, 47 states, 2018–2024).
+Care-team vs physician-alone: **+1.67 min (1.11–2.23)** and **+0.11 total billing units (0.04–0.18)**.
+**THE TWO HEADLINE OUTCOMES ARE ARITHMETICALLY THE SAME OUTCOME: US anaesthesia billing counts time in
+15-minute units. 1.67 / 15 = 0.111. THE REPORTED BILLING DIFFERENCE IS 0.11 — the time finding converted
+into units, to three significant figures.** Presenting them as two outcomes with two intervals and two
+p-values implies two pieces of evidence where there is one. Ratio-level figures carry a little extra
+(1 CRNA −2.52 min ⇒ −0.168 vs −0.23 reported; 4 CRNAs +6.99 ⇒ +0.466 vs +0.50), **so modifier/conditional
+units contribute at the margin but the dominant term is MECHANICAL.**
+**SET THAT ASIDE AND THE GRADIENT IS THE REAL FINDING, AND IT IS NOT WHAT THE HEADLINE SAYS: 1 CRNA is
+FASTER than physician-alone (−2.52 min) · 2 CRNAs indistinguishable (−0.13) · 3 CRNAs +3.03 · 4 CRNAs
++6.99. So NOT "supervision costs time" but "ONE-TO-ONE SAVES TIME AND DILUTION COSTS IT", crossover between
+2 and 3. The averaged +1.67 CONCEALS it.**
+Medicare gross payments: overall −$3.53 (−5.13 to −1.92); **1 CRNA −$10.44 → 4 CRNAs +$3.74.**
+**Authors call the differences "small overall" — accurate and more restrained than the framing invites. With
+millions of encounters P < .001 is a statement about SAMPLE SIZE, not magnitude.**
+**BOUND THE ABSTRACT IS EXPLICIT ABOUT: these are BILLING records from a revenue-cycle company. Anaesthesia
+minutes in a billing record are a BILLED quantity, not a stopwatch, and billing practice can itself vary
+with staffing model. This is a study of WHAT WAS BILLED under different ratios — legitimate and narrower
+than how long the anaesthetic took.**
+
+### ANAEMIA AT EXTUBATION — THREE ANALYSES, THREE NULLS, AND ONE INCIDENTAL NUMBER
+
+`10.21203/rs.3.rs-11662145/v1` (preprint, 20 Nov; **1,445** observational + **128** physiological).
+7-day reintubation **21.6% (Hb<9) vs 23.5% (Hb≥9)**; adjusted **sHR 0.95 (0.76–1.18), p = 0.640.**
+**COMPETING-RISK HANDLING IS THE METHODOLOGICAL CREDIT THIS ARCHIVE KEEPS ASKING FOR: Aalen–Johansen +
+Fine–Gray with DEATH AS A COMPETING EVENT. A patient who dies before day 7 cannot be reintubated, and
+censoring that would bias incidence UPWARD in exactly the sicker, more anaemic group under study.**
+**THE NUMBER WORTH KEEPING IS INCIDENTAL TO THE PAPER'S QUESTION: INSPIRATORY EFFORT INCREASED 59% ACROSS
+EXTUBATION in the whole physiological cohort, by oesophageal pressure, in patients judged READY. Removing a
+tube nearly DOUBLES the work of breathing — a fact about extubation, not about anaemia, and the most
+transferable thing here. It quantifies the step every weaning decision is implicitly a bet on.**
+Practice trend: median Hb at extubation **9.9 (2016) → 9.2 g/dL (2024), p-for-trend 0.048** — significance
+by 0.002 on a spline across nine years. **NOT established on that p-value alone; what makes it credible is
+that it is CONSISTENT IN DIRECTION with the null outcome** (practice drifted to extubating at lower Hb and
+reintubation did not follow).
+Effort vs Hb: **+7.4% PTP per 1 g/dL decrease (−3.3% to 18.2%), p = 0.174.**
+**ONE PLACE THE PAPER LEANS PAST ITS NUMBERS: calling that "a modest trend toward increased effort" on an
+interval that INCLUDES A 3% DECREASE. Mild, and the headline conclusion is still the null.**
+**THIRD EXTUBATION-FAILURE PAPER IN THREE DAYS, AND TOGETHER THEY SAY SOMETHING: cough doubles the odds
+(OR 2.47, 20 Nov) · no ML model beats a parsimonious clinical score (AUROC 0.655, 20 Nov) · haemoglobin
+does not matter (today). BEDSIDE ASSESSMENT KEEPS SURVIVING AND THE LABORATORY AND THE ALGORITHM KEEP NOT
+ADDING.**
+
+### PAEDIATRIC OHCA — 85% AGAINST 41%, AND THE DIFFERENCE IS PROBABLY A PROCEDURE
+
+`10.1080/10903127.2026.2761025` (*Prehosp Emerg Care*, 20 Nov; LA County, CARES + ePCR, 2021–2022;
+**176** cases, median age **10 months**, **92% non-shockable**).
+**Defibrillation before transport 11/13 shockable (85%). Adrenaline before transport 58/143 non-shockable
+(41%). Fluids 12/143 (8%).** BVM documented **80/156 (51%)**, timing undeterminable. On-scene median
+**10 min (IQR 5–18)**. Survival to discharge **10 (6%)**, favourable neurological **6 (3%)**.
+**THE EXPLANATION IS TECHNICAL, NOT COGNITIVE: defibrillation is a DEVICE action with an immediate machine
+prompt; adrenaline in a 10-month-old during CPR requires IV or IO ACCESS IN AN INFANT — the hardest
+procedure in paediatric resuscitation. The gap is not a failure to know adrenaline is indicated; it is
+plausibly a failure to GET A LINE. The 8% fluid figure points the same way (same access).**
+**THE ORGANISING FACT IS THE MEDIAN AGE OF TEN MONTHS: a predominantly infant, 92%-non-shockable population
+is an ASPHYXIAL arrest population where VENTILATION matters most and the shockable pathway is nearly
+irrelevant — AND THE SHOCKABLE PATHWAY IS THE ONE BEING EXECUTED 85% OF THE TIME. The system performs best
+on the intervention its patients least often need.**
+**WHICH MAKES BVM AT 51% THE MOST UNCOMFORTABLE NUMBER: in asphyxial arrest, assisted ventilation IS the
+intervention, and the paper cannot tell whether half these children went without it or half the records do
+not record it — AND IT SAYS SO RATHER THAN CHOOSING THE FLATTERING READING. Either answer matters: one is a
+care failure, the other makes the registry unable to measure the thing it most needs to measure.**
+**BOUNDS: 176 cases over two years in a county of ~10 million; THIRTEEN shockable cases carry the 85%; NO
+confidence intervals given. And the 6%/3% must NOT be set against the 19 November adult head-up CPR figures
+(HD 13.1%, HD-FN 10.5%) — an infant asphyxial cohort and an adult cohort with 10% shockable presentations
+are DIFFERENT DISEASES.**
+
+### PMC'S ROUND TRIP CLOSED IN 48 HOURS
+
+| Reading | `PMC` | Change |
+| --- | --- | --- |
+| 19 Nov | 1,016,327 | — |
+| 20 Nov start | 1,021,232 | **+4,905** |
+| 20 Nov end | 1,020,963 | −269 |
+| 21 Nov start | **1,016,266** | **−4,697** |
+
+**`PMC` is now 61 records BELOW where it stood on 19 November. Yesterday's "PMC churns, it does not merely
+grow" rested on a 269-record within-run fall; TODAY THE FULL SHAPE IS VISIBLE — a batch of ~4,900 entered on
+20 November and was substantially REMOVED by 21 November, leaving the source MARGINALLY SMALLER than before
+it arrived. A LOAD-AND-REVERSE, not growth, and far larger than the 31 October precedent of −51.**
+**Whole-database gain small and the decomposition EXACT: `MED` +5,779 · `PMC` −4,966 · `PPR` +1,497 ·
+`CTX` +4 · all others 0, and 5,779 − 4,966 + 1,497 + 4 = 2,314 = the whole change from 49,296,286.**
+**SUBTRACTION BOUND UNAVAILABLE: `PMC` shed day-over-day, so the 14 November precondition fails. For the
+record today's bucket 7,597 exceeds the gain 2,314 by 5,283, and IF the precondition held that would be the
+floor on redated records — IT DOES NOT HOLD, SO NO BOUND IS CLAIMED.**
+
+### FOUR OF FIVE BUCKETS FELL AND NONE GREW
+
+| Index date | 20 Nov | 21 Nov @ 14:04–14:05 | Change |
+| --- | --- | --- | --- |
+| 17 Nov | 5,723 | 5,720 | −3 |
+| 18 Nov | 6,654 | 6,652 | −2 |
+| 19 Nov | 4,063 | 4,063 | 0 |
+| 20 Nov | 15,623 | **15,610** | **−13** |
+| 21 Nov | — | 7,597 | — |
+
+**NO past bucket grew; four of five fell or held — the OPPOSITE of the pattern that forced correction 14 on
+18 November (17 Nov bucket +835). A past bucket is a reading at an instant which moves EITHER way, and today
+it moved DOWN across the board.** Consistent with a reversed load rather than ingestion. **Recorded, not
+investigated.**
+
+### WITHIN-RUN: MINUS TWO, AND IN PMC AGAIN
+
+**14:04:04 → 14:06:16: whole 49,298,600 → 49,298,598 (−2); `PMC` 1,016,266 → 1,016,264 (−2); every other
+source identical; residual 0 both; all five buckets unchanged.**
+**THIRD CONSECUTIVE DAY the whole database moved within a run, THIRD on which ONE source accounts for the
+entire movement exactly, and ALL THREE TIMES THAT SOURCE IS `PMC`: −269 in eight minutes yesterday, −2 in
+132 seconds today. The magnitudes differ by two orders; the attribution does not.**
+**HONEST BOUND: the gap is 132 SECONDS. A trickle, not a stall and not a batch — but a two-minute window.
+THE LONGER-GAP TEST THIS ARCHIVE SAID ON 19 NOVEMBER IT NEEDED HAS STILL NOT BEEN RUN. It would cost one
+extra pass an hour later and would settle whether the quiet readings are quiet PERIODS or short WINDOWS.**
+**Every index number today carries the SECOND it was read — the fix for yesterday's instant-mixed bound.
+The index was fast: the whole first pass took 80 seconds.**
