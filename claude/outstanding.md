@@ -6966,3 +6966,51 @@ standing property of the source and should be written into the tools README rath
 5. **Close the named gap: paediatric regional anaesthesia, SFAR RFE, 11 September 2026.**
 6. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
 7. **TRACK: NCT07309393 — expect a result around 2028.**
+
+## 2026-11-21 (guidelines watch)
+
+**DONE 21 Nov — THE LONGER-GAP INDEX TEST, logged on 19 and 20 November, is run and answered.**
+132 s → −2; next 14 min 39 s → **+39**, all `PMC`. **The index runs at ~2.6 records/minute; the quiet
+readings were SHORT WINDOWS, not quiet periods.** The 18 November 30-minute identical pair is therefore a
+GENUINE stall and is now better evidenced. **NEW METHOD TO KEEP: take a third index reading ~15 minutes
+after the run — 17 queries, and it makes the subtraction bound clean instead of instant-mixed.**
+**Today's within-run bound: whole +39, bucket +49 ⇒ at least 10 redated in 15 minutes (±2 for instant
+slop).**
+
+**NEW STRUCTURAL GAP — a whole journal series, not a document.**
+`TITLE:"Guideline review" AND JOURNAL:"Archives of disease in childhood. Education and practice edition"`
+→ 29 hits, 25 retrieved, **ALL 25 zero characters.** Plain-language reviews of newly published NATIONAL
+guidance (NICE, RCPCH, BTS, BSACI, UK Kidney Association) — **invisible to an abstract-based route by
+design.** **RULE ADOPTED: when two documents from the same journal and series both deposit nothing, test the
+series before naming either as an individual gap.**
+
+**DECEMBER AUDIT — classifier tally over four days of fresh data (score against this, do not re-derive):**
+bare-word false positives **7** · bare "Delphi consensus" false negatives **2** · `insights from` false
+negative **1**. **The two failure modes are not symmetric — a false negative costs a DOCUMENT, a false
+positive costs a READ — so fix the Delphi gap first.**
+**REFINEMENT to the fix list: "Guideline review:" as a TITLE PREFIX belongs in `APPARATUS`, not `ABOUT`; it
+behaves like "Comment on".**
+
+**SOCIETY INDEX URLS (recorded per yesterday's rule — add to this table every run):**
+- ESAIC **`esaic.org/guidelines/`** — works, month+year, newest March 2026. **Page 2 unread.**
+- ESC `escardio.org/Guidelines/Clinical-Practice-Guidelines` — works but **dates nothing better than a
+  year; unusable for detection.** Use the ESC publication schedule instead.
+- SFAR `sfar.org/category/rfe` — page 1 works (newest Sep 2026); **page 2 returns HTTP 403, still unread.**
+- STS `www.sts.org/node/8174` — works, newest April 2025.
+
+**NEW NAMED GAPS:**
+1. **`10.1213/ane.0000000000008349`** — Delphi consensus on frailty assessment tools in perioperative care,
+   *Anesth Analg*, 18 Nov, **0 chars**, title-stem route exhausted. **HIGH VALUE: this archive's frailty
+   findings (CFS 5–8 dilution, the ventilated-sepsis competing-outcome decomposition, the CFS screen in the
+   cardiac-surgery delirium consensus) all depend on which instrument is right, and this is the document
+   that would settle it.**
+2. **`10.1136/archdischild-2026-331149`** — NICE 2026 IV-to-oral antibiotics in suspected early-onset
+   neonatal sepsis, **0 chars**, and part of the series gap above.
+
+**STILL OUTSTANDING, unchanged:** November month audit (start of December) with the six-plus classifier
+fixes scored out-of-sample, the EJCTS/ICVTS published-list check, SFAR page 2 and ESAIC page 2; lagged
+window 6 Nov – 5 Dec due ~10 December, do not defer; AHA/ACC re-check 11 December; title-stem check against
+the remaining named gaps; close the paediatric regional anaesthesia RFE gap (11 Sep 2026); why the three
+JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
+**Pre-coverage society backlog: 50 documents. PMC watch: four consecutive days of within-run movement, every
+time attributable entirely to `PMC`.**

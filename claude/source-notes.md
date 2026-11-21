@@ -11364,3 +11364,130 @@ THE LONGER-GAP TEST THIS ARCHIVE SAID ON 19 NOVEMBER IT NEEDED HAS STILL NOT BEE
 extra pass an hour later and would settle whether the quiet readings are quiet PERIODS or short WINDOWS.**
 **Every index number today carries the SECOND it was read — the fix for yesterday's instant-mixed bound.
 The index was fast: the whole first pass took 80 seconds.**
+
+## 21 NOVEMBER — THE GUIDELINES WATCH: THE LONGER-GAP TEST, RUN AND ANSWERED
+
+### THE TEST LOGGED TWICE IS DONE, AND IT SETTLES THE QUESTION
+
+| Reading | WHOLE | `PMC` | 21 Nov bucket |
+| --- | --- | --- | --- |
+| 14:04:04 | 49,298,600 | 1,016,266 | 7,597 @ 14:05:23 |
+| 14:06:16 | 49,298,598 | 1,016,264 | 7,597 @ 14:06:42 |
+| **14:20:55** | **49,298,637** | **1,016,303** | **7,646 @ 14:21:28** |
+
+**132 seconds → −2. The next 14 min 39 s → +39. `MED`, `PPR`, `CTX` and every other source BYTE-IDENTICAL
+across all three, so `PMC` accounts for the entire movement in BOTH directions — the FOURTH exact
+single-source attribution in four days.**
+**ANSWER: THE QUIET READINGS WERE SHORT WINDOWS, NOT QUIET PERIODS. The index runs continuously at roughly
+2.6 RECORDS PER MINUTE on this measure, and a two-minute window cannot resolve it.**
+**RULE: a within-run comparison needs a window of at least ~10 minutes to mean anything at this rate. State
+the GAP with every such pair.**
+**AND THE 18 NOVEMBER PAIR IS STRENGTHENED, NOT UNDERMINED: it was THIRTY MINUTES apart with all eleven
+sources and all five buckets identical. At 2.6/min, thirty minutes predicts ~78 records. ZERO across a
+window that long IS A GENUINE STALL — and today's measurement makes that claim QUANTITATIVE rather than
+impressionistic. Nothing from that entry needs withdrawing; one of its claims is now BETTER evidenced than
+when it was made.** The 19 and 20 November short-window pairs were flagged weak at the time — correct call.
+
+### A WITHIN-RUN SUBTRACTION BOUND — THE INSTANT-MIXING PROBLEM GONE
+
+**Yesterday's bound mixed a whole-database gain from one pass with a bucket from another. TODAY BOTH NUMBERS
+COME FROM THE SAME TWO PASSES.**
+**14:06 → 14:21: whole +39, today's bucket +49. NO source shed in that window (`PMC` rose, everything else
+held). ⇒ AT LEAST 10 RECORDS WERE REDATED INTO TODAY'S BUCKET INSIDE FIFTEEN MINUTES.**
+**RESIDUAL SLOP STATED: whole read 14:06:16 / 14:20:55, bucket 14:06:42 / 14:21:28 — the windows are offset
+~30 s at each end, ≈ ±2 records at 2.6/min. So "at least 10" is "at least 8–12".**
+**THE USEFUL PART: REDATING HAPPENS CONTINUOUSLY AT A MEASURABLE RATE, NOT IN DAILY BATCHES.**
+**NEW METHOD: take the third reading ~15 min after the run. It costs 17 queries and converts the bound from
+instant-mixed to clean.**
+
+### A JOURNAL SERIES THAT IS ABSTRACT-FREE BY DESIGN — AND A NEW RULE
+
+**Chasing a zero-character record found a lineage, and the lineage was the finding.**
+`10.1136/archdischild-2026-331149` (NICE 2026 IV-to-oral antibiotics in suspected early-onset neonatal
+sepsis, *Arch Dis Child Educ Pract*, 20 Nov, **0 chars**) → title-stem route found
+`10.1136/archdischild-2021-322822` (NICE 2021, same topic, **also 0 chars**). Two editions five years
+apart, both empty, prompted a series test:
+> `TITLE:"Guideline review" AND JOURNAL:"Archives of disease in childhood. Education and practice edition"`
+> → **29 hits, 25 retrieved, ALL 25 DEPOSIT ZERO CHARACTERS.**
+Sample spans 2023–2026: NICE meningitis · child maltreatment · BAPTB tuberculosis · BTS paediatric asthma
+monitoring · NICE impetigo · RCPCH refugee health · BSACI penicillin allergy · NICE paediatric type 2
+diabetes · UK Kidney Association IgA vasculitis · both neonatal sepsis editions.
+**THIS GENERALISES SOMETHING THIS ARCHIVE HAD ONLY EVER RECORDED PER DOCUMENT. A named gap has always been
+ONE paper with a missing abstract. THIS IS A WHOLE RECURRING SERIES — plain-language reviews of newly
+published NATIONAL guidance, exactly the genre a guidelines watch most wants — THAT AN ABSTRACT-BASED ROUTE
+CANNOT SEE AT ALL. Not an accident of one deposit; it is how the journal publishes into the index.**
+**NEW RULE: WHEN TWO DOCUMENTS FROM THE SAME JOURNAL AND SERIES BOTH DEPOSIT NOTHING, TEST THE SERIES BEFORE
+NAMING EITHER AS AN INDIVIDUAL GAP. One query converts 29 invisible documents from a sequence of future
+surprises into a KNOWN blind spot.** Query recorded above so it can be re-tested.
+
+### THE CLASSIFIER'S ONLY RECURRING FALSE NEGATIVE — SECOND INSTANCE
+
+`10.1213/ane.0000000000008349` ("Balancing Feasibility and Validity: A Delphi Consensus on Frailty
+Assessment Tools in Perioperative Care", *Anesth Analg*, 18 Nov, **0 chars**) → **OTHER, "no guidance
+signal".**
+**SECOND occurrence of the SAME known false negative in fresh data three days apart** — after the 18 November
+twelve-expert delirium bundle. Cause recorded then: **`SELF_GUIDANCE` knows "consensus statement",
+"consensus document", "clinical consensus" and NOT a bare "Delphi consensus".** December fix list item 3.
+**FOUR-DAY TALLY, so the audit scores against it rather than re-discovering it:**
+
+| Fault | Instances | Direction |
+| --- | --- | --- |
+| bare word in `SELF_GUIDANCE` (`standard`, `guideline(s)`, `statement`, `recommendations`) | **7** | false positive |
+| bare "Delphi consensus" absent from `SELF_GUIDANCE` | **2** | **FALSE NEGATIVE** |
+| `insights from` in `ABOUT` firing on a primary document's own subtitle | 1 | false negative |
+
+**THE TWO FAILURE MODES ARE NOT SYMMETRIC: A FALSE NEGATIVE COSTS A DOCUMENT, A FALSE POSITIVE COSTS A
+READ.** Bare-word is the commonest fault; **Delphi is the only recurring false negative and therefore the
+costlier one to leave.**
+**SEVENTH bare-word instance is today's `archdischild-2026-331149` → PRIMARY on `Guideline` when the title
+LITERALLY BEGINS "Guideline review:".** **NEW REFINEMENT FOR THE DECEMBER FIX: "Guideline review:" as a
+TITLE PREFIX belongs in the `APPARATUS` stage, not `ABOUT` — it behaves exactly like "Comment on", a series
+label at the start announcing the article is ABOUT another document.**
+
+### WHY THE FRAILTY DELPHI IS WORTH REPORTING BLIND
+
+**Frailty assessment is where this archive has repeatedly found the decisive variable:** the Clinical
+Frailty Scale is a recommended preoperative screen in yesterday's cardiac surgery delirium consensus; the
+14 November dichotomy finding showed "CFS 5–8" DILUTES ITS OWN ESTIMATE because CFS 5 alone is null
+(1.08, p = 0.64) so the real threshold is CFS 6; and the ventilated-sepsis frailty cohort gave the
+competing-outcome decomposition in which **frailty does not kill these patients, it leaves them
+ventilated**. **A consensus specifically on WHICH TOOL, explicitly framed as feasibility versus validity, is
+the document that would settle which instrument all of those findings should be built on.** Named as a gap,
+both routes attempted and exhausted.
+
+### SPLF/GAVO2 HOME NIV — TWO THINGS ABOUT ITS CONSTRUCTION BEAT ITS TOPIC
+
+`10.1016/j.rmr.2026.10.003` (*Rev Mal Respir*, 18 Nov, **791 chars** — a DESCRIPTION, not a summary).
+**(i) "These guidelines are annually updated." ALMOST NOTHING THIS ARCHIVE TRACKS IS.** ESAIC's index runs
+2022–2026 at one or two a year; the ESPEN nutrition-ethics guideline (18 Nov) updated a 2016 predecessor
+after TEN years; EACTS's own page listed nothing from 2026 as of 14 November. **An annually updated
+guideline is a DIFFERENT OBJECT from a decennial one — it trades the authority of a long evidence review for
+CURRENCY, and the VERSION NUMBER matters as much as the title.** And this is the **2023** edition appearing
+in the index in late 2026, which is its own comment on how well annual updating survives publication.
+**(ii) CHOOSING WISELY METHODOLOGY IS AN UNUSUAL CHOICE FOR A GUIDELINE AND IT SHAPES THE OUTPUT: it is
+built to identify practices to STOP, not to START, and the abstract's own word for the product is
+"practical tips" — NOT graded recommendations, no statement strengths, no threshold, no panel size.** Fifth
+consecutive guidance document here to state none of the four.
+**Bound: first of THREE articles, covering MONITORING; the efficacy/tolerance material the title promises is
+distributed across the series.**
+
+### SOCIETY INDEXES — URLS RECORDED, PER YESTERDAY'S RULE
+
+| Society | Index URL | Newest | Usable dated index? |
+| --- | --- | --- | --- |
+| ESAIC | **`esaic.org/guidelines/`** | NMB in Anaesthetised Children, **March 2026** | YES (month + year) |
+| ESC | `escardio.org/Guidelines/Clinical-Practice-Guidelines` | four 2026 guidelines, **no per-item dates** | **NO** |
+| SFAR p.2 | `sfar.org/category/rfe/page/2/` | — | **HTTP 403, unread** |
+
+**ESAIC URL IS NEW TO THIS ARCHIVE AND WORKS.** Newest entry already held. Page 2 unread.
+**THE ESC PAGE IS NOT A DATED INDEX AND THAT IS A PROPERTY OF THE PAGE, NOT AN ABSENCE OF GUIDANCE: four
+2026 guidelines (heart failure · cardiac rehabilitation · CVD with CKD · Fifth Universal Definition of MI)
+with NO MONTH against any, and the full archive page gives YEAR ONLY. All four already held.**
+**A page that dates nothing better than a year CANNOT BE USED TO DETECT A NEW PUBLICATION — which is why the
+ESC publication SCHEDULE has been the more useful ESC route.**
+**SFAR page 2: 403. RECORDED AS REFUSED, NOT AS CHECKED.**
+
+### PUBTYPE ROUTE — FOURTH CONSECUTIVE LOW-BUT-NON-ZERO DAY
+
+**31 unique pubType records, 1 in scope, and the one is yesterday's lead (the cardiac surgery delirium
+consensus). The keep-the-route decision taken yesterday stands.**
