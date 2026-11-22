@@ -11491,3 +11491,182 @@ ESC publication SCHEDULE has been the more useful ESC route.**
 
 **31 unique pubType records, 1 in scope, and the one is yesterday's lead (the cardiac surgery delirium
 consensus). The keep-the-route decision taken yesterday stands.**
+
+## 22 NOVEMBER — A NEAR-STALL OF 92 RECORDS, AND A WITHIN-RUN TEST WITH NO POWER
+
+### THE SMALLEST DAILY GAIN THIS ARCHIVE HAS RECORDED — AND MEDLINE IS FLAT
+
+**Whole 49,298,637 (21 Nov 14:20:55) → 49,298,729 (22 Nov 14:03:50) = +92 IN 23 h 43 min.**
+**The three-band classification (stall 0 · moderate +2,105 to +7,120 · burst +23k to +26k) HAS NO BAND FOR
+92. FOURTH CATEGORY: A NEAR-STALL.** Last three days: **+15,011 · +2,314 · +92.**
+**DECOMPOSITION SAYS EXACTLY WHERE: `MED` reads 41,405,924, IDENTICAL TO ALL THREE OF YESTERDAY'S READINGS
+— MEDLINE, 84% of the database, TOOK NOTHING IN 24 HOURS. The entire gain is `PMC` +31 and `PPR` +61;
+31 + 61 = 92, residual 0, every other source unchanged.**
+**FIFTH CONSECUTIVE DAY the day's movement decomposes exactly onto one or two named sources, and the FIRST on
+which MEDLINE is the flat one.**
+
+### A WITHIN-RUN TEST WITH NO POWER — AND THIS SHARPENS YESTERDAY'S RULE
+
+**End of run 14:06:23 IDENTICAL on every number to 14:03:50. Gap 153 SECONDS.**
+**YESTERDAY'S TEST WOULD CALL THAT A STALL AND TODAY IT CANNOT, FOR A REASON YESTERDAY'S TEST ITSELF
+SUPPLIES. Yesterday the index ran at ~2.6 records/min, so 153 s predicts ~6–7 records and zero would be
+informative. TODAY'S DAILY RATE IS 92 / 1,423 min = 0.065 RECORDS/MIN — FORTY TIMES LOWER. At that rate
+153 s predicts 0.17 RECORDS. Observing zero is what an INACTIVE index and a BARELY-ACTIVE one both produce,
+so the reading distinguishes NOTHING.**
+**CORRECTION TO YESTERDAY'S RULE, not a restatement: yesterday concluded a within-run window needs ~10
+minutes. THE REQUIRED WINDOW IS NOT A CONSTANT — IT DEPENDS ON THE DAY'S RATE, AND THE DAY'S RATE VARIES BY
+A FACTOR OF FORTY. At today's rate even a FIFTEEN-minute window predicts a SINGLE record, so NO within-run
+comparison available on a day like this could demonstrate a stall.**
+**NEW RULE: BEFORE REPORTING A WITHIN-RUN READING AS A STALL, COMPUTE WHAT THE DAY'S OWN RATE PREDICTS FOR
+THAT WINDOW. IF THE PREDICTION IS UNDER ~3 RECORDS, THE COMPARISON HAS NO POWER AND MUST BE REPORTED AS
+HAVING NONE.**
+**And this retroactively re-grades the 18 November 30-minute identical pair: it was reported yesterday as a
+genuine stall on the basis of 2.6/min × 30 min ≈ 78 predicted records. THAT ARGUMENT NEEDS THE 18 NOVEMBER
+DAY'S OWN RATE, NOT THE 21 NOVEMBER RATE.** 18 Nov whole was 49,273,782 and 19 Nov 49,281,275 → **+7,493/day
+= 5.2/min**, so 30 minutes predicts ~156 records. **The 18 November stall therefore stands and is in fact
+STRONGER than yesterday's calculation made it** — but the calculation yesterday used the wrong day's rate
+and happened to reach the right conclusion. **Recorded as a correct conclusion reached by a method that was
+not valid, which is worth as much as a withdrawal.**
+
+### THE LARGEST SUBTRACTION BOUND YET, AND THE CLEANEST
+
+**21 Nov bucket: 7,646 @ 14:21 yesterday → 7,900 @ 14:04:53 today = +254. Whole across the same interval
+= +92. NO source shed (`MED` 0, `PMC` +31, `PPR` +61, rest unchanged), so the 14 November precondition
+HOLDS.**
+**254 − 92 = 162. AT LEAST 162 RECORDS ADDED TO THE 21 NOVEMBER BUCKET OVERNIGHT WERE ALREADY IN THE
+DATABASE AND WERE REDATED INTO IT.** Largest bound computed here, **and the cleanest: bucket and whole are
+read within about a minute of each other inside each pass, so the 20 November instant-mixing does not
+apply.**
+**The other three buckets did not move AT ALL** (18 Nov 6,652 · 19 Nov 4,063 · 20 Nov 15,610, identical).
+**So on a day MEDLINE took nothing, the ONLY bucket that moved is the most recent COMPLETED one, and it moved
+by MORE THAN THE WHOLE DATABASE GREW.**
+
+### TODAY'S INDEX DATE HOLDS 61 RECORDS — AND THE CALENDAR RULE STAYS RETIRED
+
+**`FIRST_IDATE:2026-11-22` → 61 records total @ 14:04, against 7,900 for 21 Nov. BOTH scoped sweeps returned
+ZERO, and that was CHECKED against an unscoped count rather than assumed — none of the 61 is in scope.**
+**Today is a SUNDAY and the 26 October entry forbids the inference: "Sunday is quiet" was retired 18 October
+and contradicted again 25 October when a Sunday took 10,915. "Stop proposing them: batch size is not a
+function of the calendar. Four attempts to make it one have failed."**
+**TODAY IS THE FIFTH OBSERVATION IN THAT FAMILY AND IT CONFIRMS THE RETIREMENT RATHER THAN REOPENING IT:
+two Sundays, 10,915 and 61 — A 179-FOLD DIFFERENCE. No calendar explanation offered; the 61 is recorded as a
+fact about TODAY, not about Sundays.**
+
+### THIRD INSTANCE IN A FORTNIGHT OF SIGNIFICANCE BELOW THE MID — AND THE BEST-HANDLED
+
+`10.1111/anae.70462` (*Anaesthesia*, 20 Nov; **315** patients, 158 vs 157, Mar–Sep 2025).
+OBAS 0–28 (lower better) at 24 h: **2.2 (2.4) vs 3.4 (3.1); adjusted MD −1.3 (−1.8 to −0.8), p < 0.001,
+against a PRE-SPECIFIED 3-POINT clinical-relevance threshold.** Conclusion: **"did not achieve a clinically
+meaningful improvement... These findings do not support its routine adoption."**
+**THIRD INSTANCE IN A FORTNIGHT and the BEST-HANDLED of the three** (QL-vs-TAP gave −0.25/−0.40 with NO
+comparison supplied; pregabalin gave SMD −0.51 and stated the problem). **Here the threshold was
+PRE-SPECIFIED, reported, and the conclusion FOLLOWS it. A trial that hits p < 0.001 and recommends AGAINST
+its own intervention has done what pre-specification exists for.**
+**BUT THE THRESHOLD ITSELF IS THE DESIGN CRITICISM: both arms scored UNDER 4 on a 0–28 scale. A 3-point MID
+where the CONTROL arm averages 3.4 means the trial could only succeed by driving the score to ~ZERO. The
+threshold was almost certainly derived from a population in MORE pain. SDs confirm the floor effect: 2.4 on
+a mean of 2.2 and 3.1 on 3.4 — both distributions pressed against the scale floor and right-skewed.**
+**THE HYPOTENSION FINDING IS NEAR-TAUTOLOGICAL AND THE LABEL INVITES THE WRONG READING: "opioid-free" =
+DEXMEDETOMIDINE + ESKETAMINE; "opioid-inclusive" = SUFENTANIL. Esketamine is sympathomimetic and RAISES BP;
+sufentanil lowers it. So 19.6% vs 35.7% (RR 0.55, 0.37–0.80) is substantially "ESKETAMINE RAISES BLOOD
+PRESSURE", not "avoiding opioids protects perfusion" — and it is the more interesting for being a NET
+effect, because dexmedetomidine causes hypotension in its own right (yesterday's 717-event pharmacovigilance
+study). THE REGIMEN reduced hypotension; the LABEL does not explain why.**
+**THE NUMBER THAT MATTERS MOST IS NOT ABOUT EITHER ARM: chronic postsurgical pain at 90 days 16.1% vs 15.5%
+— ABOUT ONE IN SIX after the most common abdominal operation in the world, unchanged by technique. The null
+is uninformative (aRR 1.03, 0.55–1.91, a 3.5-fold interval); THE INCIDENCE IS NOT.**
+PONV 23.4% vs 33.8% (RR 0.69, 0.48–0.98) — **and ALL patients had prophylactic anti-emetics, so 33.8% is
+PONV DESPITE prophylaxis.** Upper bound 0.98: the one borderline result.
+
+### A PROCESS MEASURE AND A DECISION, BOTH RULES AT ONCE
+
+`10.23736/s0375-9393.26.20175-x` (*Minerva Anestesiol*, 20 Nov; **206** retrospective, IPTW on 7 covariates).
+MV **300 vs 420 min**; **RMST −65.8 min (−94.2 to −41.6)**; prolonged intubation >480 min **6.5% vs 20.2%,
+Firth OR 0.29 (0.11–0.75)**; pain lower at ALL timepoints (BH q<0.001); opioid **−28%** (IRR 0.719).
+**AND NO DIFFERENCE IN PaO2/FiO2 OR ICU LENGTH OF STAY — THE TWO NULLS ARE THE FINDING.**
+**The authors' stated mechanism was better analgesia → better respiratory mechanics, AND THE OXYGENATION
+MEASURE THAT WOULD SHOW THAT IS NULL. What moved was TIME TO EXTUBATION.**
+**TWO STANDING RULES AT ONCE: (i) a process measure can move without the outcome it proxies — an hour of
+ventilation saved that does not shorten ICU stay has not changed the trajectory; (ii) EXTUBATION TIMING
+AFTER CARDIAC SURGERY IS A DECISION, NOT AN EVENT — a patient in less pain on 28% less opioid is JUDGED
+ready sooner. A real benefit to the PATHWAY and to experience; NOT evidence the lung did better.**
+**CREDIT, unusually careful for a 206-patient single-centre retrospective: IPTW; RMST alongside KM and Cox
+(right choice when the question is "how much TIME" not "what HAZARD"); Firth for 7 events in one arm; BH
+across pain timepoints. Four choices most papers this size skip.**
+**BOUND NOT CLOSEABLE BY WEIGHTING: groups formed "based on the postoperative analgesic strategy employed"
+— by CLINICIAN CHOICE, which is exactly the channel propensity methods leave open, and the clinicians
+placing blocks may be selecting patients they already expected to extubate early. Control is only
+"conventional multimodal analgesia", undefined.**
+
+### A HEAD-TO-HEAD WHOSE TWO ARMS SHARE NO TRIAL BY CONSTRUCTION
+
+`10.1080/19490976.2026.2765035` (*Gut Microbes*, 19 Nov; **9 SDD trials / 19,907** vs **29 biotic trials /
+5,483**). Mortality: SDD **0.96 (0.88–1.05)**, biotics **0.93 (0.87–1.00)** — neither significant.
+Infections: SDD **0.76 (0.60–0.98)** vs biotics **0.82 (0.64–1.05)**, no significant difference. Pneumonia:
+SDD **0.50 (0.26–0.96)** vs **prebiotics and synbiotics 0.70 (0.54–0.90)**.
+**THE ABSTRACT NAMES THE DESIGN HONESTLY — "in the absence of RCTs directly comparing these two
+interventions... compare the EFFECT SIZES" — and it still cannot bear the comparison: an indirect comparison
+with NO adjustment, and THE TWO ARMS SHARE NO TRIAL BY CONSTRUCTION.** The 20 November lead (42
+corticosteroid SRs mostly sharing no trial) is the same problem; here it is EXPLICIT.
+**THE ASYMMETRY EXPLAINS THE HEADLINE ON ITS OWN: 19,907/9 = 2,212 per SDD trial vs 5,483/29 = 189 per
+biotic trial — AN 11.7-FOLD DIFFERENCE. "No statistically significant difference" between 0.76 and 0.82 is
+close to arithmetic: the biotic interval is wide BECAUSE ITS TRIALS ARE SMALL.**
+**THE PNEUMONIA LINE IS LEAST DEFENSIBLE AND CHANGES ITS OWN EXPOSURE DEFINITION: probiotics silently drop
+out of the biotic arm between the infection outcome and the pneumonia outcome ("prebiotics and
+synbiotics"). And the SDD estimate is BOTH LARGER AND WIDER — the signature of FEWER EVENTS, not a stronger
+effect.**
+**SHARPEST POINT, A CROSS-REFERENCE TO YESTERDAY: the JAC critique reported in yesterday's watch argues the
+2026 SSC SDD suggestion cannot distinguish benefit-to-treated from harm-to-concurrent-controls via
+antimicrobial spillover. THAT OBJECTION APPLIES DIRECTLY TO THE RR 0.50 FOR PNEUMONIA HERE — THIS PAPER'S
+STRONGEST NUMBER — AND IS NOT MENTIONED. Two papers one day apart, one of which is the methodological
+objection to the other's headline.**
+**Further bound the abstract does NOT list among its own: PUBMED ONLY.**
+
+### AN EXPOSURE THAT IS A CODED DISORDER, NOT A HABIT
+
+`10.1016/j.bja.2026.08.002` (*BJA*, 20 Nov; TriNetX, **3,817 matched pairs**).
+Composite 30-day respiratory complications **10.7% vs 5.1%, RR 2.11 (1.79–2.49)**; pneumonia **3.20
+(2.40–4.28)**; respiratory failure 2.48; bronchospasm 1.92; NIV 2.56. Vaping+cigarette vs cigarette alone
+1.98 (1.55–2.53); vaping alone vs neither 3.11 (2.56–3.76).
+**THE EXPOSURE IS IN THE TITLE AND IT IS NOT WHAT THE CONCLUSION GENERALISES TO: "vaping-related DISORDER",
+a CODED DIAGNOSIS, against "cigarette nicotine DEPENDENCE", also coded. THOSE CODES DO NOT SELECT COMPARABLE
+POPULATIONS. Nicotine dependence is coded routinely for anyone who smokes and says so; a vaping-related
+DISORDER is coded when vaping has been clinically identified as CAUSING A PROBLEM — selecting SYMPTOMATIC
+vapers including vaping-associated lung injury. A SYMPTOMATIC SUBGROUP AGAINST AN UNSELECTED ONE, which can
+generate a 2-fold composite with NO excess risk attaching to vaping as a HABIT.**
+**THE INTERNAL PATTERN SUPPORTS THAT READING: pneumonia at 3.20 is the LARGEST component, and
+vaping-associated lung injury presents as PNEUMONITIS — the outcome most likely to BE the coded disorder's
+own manifestation is the most elevated.**
+**SO THE CONCLUSION'S STEP IS TOO LARGE: "vaping HISTORY should be specifically assessed" moves from a coded
+DISORDER to a HISTORY, and the data speak only to the former. Asking about vaping preoperatively is sensible
+on other grounds; this study does not establish the risk estimate that would justify it.**
+**GRADIENT CAVEAT: vaping-alone-vs-neither (3.11) and vaping+cigarette-vs-cigarette-alone (1.98) have
+DIFFERENT REFERENCE GROUPS, so they are NOT points on one scale and must not be read as dose-response** —
+though both clear unity comfortably, which is the strongest element.
+**CREDIT: four components reported separately with intervals, so the composite is not carrying the result
+alone.** Composite rates imply ~408 and ~195 events across the pairs.
+
+### THE PAPER THE 20 NOVEMBER APPRAISAL SAID DOES NOT EXIST
+
+`10.1213/ane.0000000000008405` (*Anesth Analg*, 17 Nov; MIMIC-III/IV + eICU).
+Internal MIMIC-III **AUROC 0.90 (0.886–0.906), AUPRC 0.53 (0.496–0.564)**. COVID-period external **AUROC
+0.90 (0.894–0.913), AUPRC 0.57 (0.534–0.602)**. **Eight individual held-out eICU hospitals: AUROC 0.86–0.91,
+AUPRC 0.35–0.52.**
+**READ AGAINST 20 NOVEMBER: that appraisal of 14 published ML studies of extubation failure found 7 reported
+calibration, 4 had ANY external validation, 3 reported net benefit, 0 used nested CV, and explainability
+figures OUTNUMBERED calibration reports. THIS PAPER REPORTS AUPRC ALONGSIDE EVERY SINGLE AUROC, validates on
+a temporally distinct COVID-era cohort, AND validates on eight INDIVIDUAL held-out hospitals.**
+**AND REPORTING BOTH METRICS IS EXACTLY HOW IT PRODUCES ITS MOST USEFUL FINDING: across the eight hospitals
+AUROC spans 0.05 (0.86–0.91) while AUPRC spans 0.17 (0.35–0.52) — NEARLY 50% IN RELATIVE TERMS. THE METRIC
+THAT LOOKS STABLE ACROSS HOSPITALS IS THE UNINFORMATIVE ONE; THE METRIC THAT DECIDES WHETHER THE ALARMS ARE
+WORTH ANSWERING VARIES BY HALF. A reader given only the AUROCs would conclude it transports well. VISIBLE
+ONLY BECAUSE THEY PRINTED BOTH — the argument for the reporting standard in a single pair of numbers.**
+**WHAT AUPRC 0.35 MEANS OPERATIONALLY, SAID PLAINLY: at the worst of the eight hospitals a usable
+sensitivity comes with a LARGE MAJORITY OF ALARMS FALSE. Acceptable for "prompt closer nephrology
+evaluation"; not for anything with a cost attached.**
+**FRAMING CREDIT: the abstract calls the RRT decision "highly complex and SUBJECTIVE" and positions the model
+as TRIAGE, not as a recommendation to initiate — and names its target "documented RRT initiation" rather
+than "need for RRT". A MODEL THAT PREDICTS A DECISION IS PREDICTING WHAT CLINICIANS WILL DO, AND THE HONEST
+LABEL SAYS SO.**
+**THE ONE DEFICIT NOT FIXED is the one its genre is worst at: NO net benefit / decision-curve analysis
+(present in 3 of 14 on 20 Nov). FOUR OF FIVE REPORTING DEFICITS ADDRESSED, THE FIFTH LEFT.**

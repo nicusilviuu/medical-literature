@@ -7014,3 +7014,67 @@ the remaining named gaps; close the paediatric regional anaesthesia RFE gap (11 
 JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
 **Pre-coverage society backlog: 50 documents. PMC watch: four consecutive days of within-run movement, every
 time attributable entirely to `PMC`.**
+
+## 2026-11-22 (brief)
+
+**Published:** `_briefs/2026-11-22.md`, 5 items. Item 2 taken from the queue, where 21 November flagged it
+as worth a full slot.
+
+**NEW INDEX RULE — WITHIN-RUN READINGS NEED A POWER CALCULATION.** Yesterday concluded a within-run window
+needs ~10 minutes. **The required window is NOT A CONSTANT: it depends on the day's rate, which varies by a
+factor of forty** (21 Nov 2.6 records/min · 22 Nov 0.065/min). **Before calling a within-run reading a
+stall, compute what the day's own rate predicts for that window; under ~3 records predicted, the comparison
+has NO POWER and must be reported as having none.** Today's had none.
+**AND the 18 November stall argument made yesterday used the WRONG DAY'S RATE** (21 Nov's 2.6/min instead of
+18 Nov's own 5.2/min). **The conclusion was right and the method was not — recorded as such.**
+
+**FOURTH INDEX BAND ADDED: NEAR-STALL.** Whole gained **+92 in 23 h 43 min**, with **MEDLINE entirely flat**
+and the whole gain being `PMC` +31 and `PPR` +61. Bands are now: near-stall (~92) · stall (0) · moderate
+(+2,105 to +7,120) · burst (+23k to +26k). Last three days +15,011 · +2,314 · +92.
+
+**LARGEST SUBTRACTION BOUND YET AND THE CLEANEST: at least 162 records redated into the 21 November bucket
+overnight** (bucket +254, whole +92, no source shed). Bucket and whole read within a minute of each other
+inside each pass, so no instant-mixing.
+
+**CALENDAR RULE STAYS RETIRED — fifth observation.** `FIRST_IDATE:2026-11-22` holds **61 records** against
+7,900 for 21 November, and both scoped sweeps returned zero (checked against an unscoped count, not
+assumed). **Two Sundays: 10,915 and 61, a 179-fold difference. No calendar explanation offered.**
+
+### QUEUE — top
+
+1. **Prognostic factors in severe trauma, Douala, Cameroon** (`10.21203/rs.3.rs-11130889/v1`) — **carried a
+   FOURTH day. DECIDE: lead it tomorrow or strike it from the queue.**
+2. **Glycaemic variability and ICU mortality** (`10.21203/rs.3.rs-11448774/v1`, 20 Nov, 3,176 ch).
+3. **ICD-10 algorithm for cause of acute respiratory failure** (`10.64898/2026.11.18.26368330`, 20 Nov).
+4. **Admission D-dimer and NIV failure in AECOPD** (`10.21203/rs.3.rs-11609290/v1`, 20 Nov).
+5. **Surrogate consent in the ICU, PICTURE-ICU** (`10.1186/s40560-026-00963-7`, *J Intensive Care*, 20 Nov,
+   2,286 ch) — 14 French ICUs, 125 relatives, three clusters, HADS moderate-to-high across all. Research
+   ethics, unusual and in scope.
+6. **Inhaled nitric oxide and the kidney in critical illness** (`10.4103/mgr.medgasres-d-26-00116`, 20 Nov).
+7. **ICU mortality with clinically important upper GI bleeding** (`10.1097/ccm.0000000000007452`).
+8. **COMA LATAM** (`10.1097/ccm.0000000000007440`).
+9. **Prefrontal haemodynamics under propofol vs sevoflurane** (`10.1097/aln.0000000000006486`).
+10. **High vs standard protein and muscle loss** (`10.1016/j.clnu.2026.106848`).
+11. **FFP during cardiopulmonary bypass** (`10.1007/s00540-026-03962-y`).
+12. **Chest wall closure in infants after cardiac surgery** (`10.1097/pcc.0000000000004110`).
+13. **Bedside ECMO cannulation by intensivists** (`10.1016/j.chest.2026.10.051`).
+14. **SAPS II vs SAPS 3** (`10.1016/j.accpm.2026.101959`).
+15. **Carry-overs:** PPG blood-pressure estimation (`10.2196/105057`); LMA Protector RCT
+    (`10.4103/aam.aam_646_26`); norepinephrine alone vs combination (`10.21203/rs.3.rs-11060196/v1`);
+    remimazolam + flumazenil vs etomidate (`10.21203/rs.3.rs-11134296/v1`); low-dose glucocorticoid at
+    induction (`10.1007/s00586-026-10501-6`); Portugal frailty cohort (`10.1007/s00068-026-03385-0`);
+    labour-analgesia causal forest (`10.21203/rs.3.rs-11320016/v1`); mNGS of BAL
+    (`10.21203/rs.3.rs-11581502/v1`); conduction-system pacing (`10.1093/europace/euag321`,
+    abstract-free); VATS epidural pulmonary function (`10.1097/eja.0000000000002537`, abstract-free).
+16. **The 50-document pre-coverage society backlog.**
+
+### DATED ACTIONS — unchanged
+
+1. **NOVEMBER MONTH AUDIT — start of December.** Six-plus classifier fixes scored OUT-OF-SAMPLE (fix the
+   Delphi false negative FIRST); EJCTS/ICVTS published-list check; SFAR page 2 (403) and ESAIC page 2.
+2. **Lagged window 6 November – 5 December, due around 10 December. Do not defer.**
+3. **AHA/ACC re-check — 11 December.**
+4. **Title-stem check against the remaining named gaps.**
+5. **Close the paediatric regional anaesthesia RFE gap (SFAR, 11 September 2026).**
+6. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
+7. **TRACK: NCT07309393 — expect a result around 2028.**
