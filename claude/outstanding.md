@@ -7078,3 +7078,71 @@ assumed). **Two Sundays: 10,915 and 61, a 179-fold difference. No calendar expla
 5. **Close the paediatric regional anaesthesia RFE gap (SFAR, 11 September 2026).**
 6. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
 7. **TRACK: NCT07309393 — expect a result around 2028.**
+
+## DEDUPE LOG — RECORDS EXAMINED AND SET ASIDE
+
+**Why this section exists (22 November).** The dedupe log is harvested from what the archive has
+**published**. Anything examined and deliberately **not** published is invisible to it and resurfaces as
+"new" on every subsequent run until its index window rolls past. **Eight 2020 Spanish society documents did
+exactly that for three consecutive days, and they are also DOI-less, so a DOI-only regex could never have
+matched them.** From today, identifiers of records examined and set aside are recorded here, and
+`claude/tools/build_dedupe_log.py` harvests DOIs, PMC ids and PMIDs from `claude/*.md` as well as from the
+entries.
+
+### DOI-less — eight SEMICYUC / SEDAR COVID-era documents, all 2020
+
+Reported as an **index event** in the 20 November watch (eight 2020 documents arriving in one week) and
+correctly not reported as items, since they are six years old. **PMC ids, recorded so they dedupe:**
+
+PMC7158790 · PMC7102628 · PMC7229968 · PMC7470699 · PMC7142677 · PMC7283053 · PMC7205735 · PMC7211599
+
+### Examined and set aside as out of scope
+
+- `10.1111/vec.70174` — RECOVER CPR guidelines. **Veterinary** (*J Vet Emerg Crit Care*).
+- `10.1186/s12917-026-05812-1` — peri-anaesthetic mortality in dogs and cats. **Veterinary.**
+- `10.1097/won.0000000000001335` — mucocutaneous dehiscence and convexity in ostomy care. **Wound/ostomy.**
+- `10.3760/cma.j.cn112137-20260628-01630` — interpreting 2026 immune-checkpoint-inhibitor consensus
+  guidance. **Oncology.**
+- `10.1016/j.surg.2026.110759` — expanding the Tokyo Guidelines 2018 for acute cholecystitis. **General /
+  biliary surgery, outside primary and secondary scope.**
+- `10.1186/s12885-026-16754-0` — clinico-radiomic nomogram for guideline-defined indications. **Oncology**
+  (and the classifier's third bare-word false positive).
+- `10.1016/j.oraloncology.2026.108230` — comment on a guideline-concordant post-treatment paper.
+  **Oral oncology.**
+
+**Rule: when a record is examined and rejected, record its identifier here the same run. The cost of not
+doing so is re-reading it every day for a week.**
+
+## 2026-11-22 (guidelines watch)
+
+**Published:** `_guidelines/2026-11-22.md`, **items: [] — nothing new in scope.** Daily confirmation
+recorded.
+
+**DONE 22 Nov — `claude/tools/build_dedupe_log.py` added.** Harvests DOIs + PMC ids + PMIDs from the
+entries and `claude/*.md`, excludes the backtick, falls back to the exact title. **`--check IN.json` reports
+what is new — USE IT every run instead of re-deriving a regex.**
+**Verified in three stages on today's sweep: 14 "new" → 6 → 0.** Clean log 1,200 identifiers against the
+old 1,553 (353 were malformed).
+**MY OWN TOOL HAD THE SAME BACKTICK BUG ON FIRST WRITE and `--check` caught it. Run the check, do not trust
+the build.**
+
+**DONE 22 Nov — ESAIC index closed out.** `esaic.org/guidelines/` has two pages, **18 published documents,
+2018–2026, newest March 2026 (held).** **Nothing Oct/Nov 2026.**
+
+**OPEN QUESTION, recorded as unestablished rather than answered:** ESAIC's "Ongoing" filter returns no items
+to a static fetch, which is as consistent with client-side rendering as with an empty list. **Do NOT record
+ESAIC as having nothing in development.** Needs a route that renders JavaScript, or a different source.
+
+**STANDING RULE ADDED: when a record is examined and REJECTED, record its identifier the same run** — see
+the `DEDUPE LOG — RECORDS EXAMINED AND SET ASIDE` section above. Eight documents were re-read on three
+consecutive days for want of this.
+
+**SUITE LESSON: an odd backtick count can manufacture a spurious bold-span failure**, because the
+code-stripper consumes the wrong range. **Fix backticks first, then re-run before chasing the `**` count.**
+
+**STILL OUTSTANDING, unchanged:** November month audit (start of December) — six-plus classifier fixes
+scored OUT-OF-SAMPLE with the Delphi false negative first, EJCTS/ICVTS published-list check, SFAR page 2
+(HTTP 403); lagged window 6 Nov – 5 Dec due ~10 December, do not defer; AHA/ACC re-check 11 December;
+title-stem check against the remaining named gaps; close the paediatric regional anaesthesia RFE gap
+(SFAR, 11 Sep 2026); why the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
+**Pre-coverage society backlog: 50 documents.**

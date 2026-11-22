@@ -11670,3 +11670,105 @@ than "need for RRT". A MODEL THAT PREDICTS A DECISION IS PREDICTING WHAT CLINICI
 LABEL SAYS SO.**
 **THE ONE DEFICIT NOT FIXED is the one its genre is worst at: NO net benefit / decision-curve analysis
 (present in 3 of 14 on 20 Nov). FOUR OF FIVE REPORTING DEFICITS ADDRESSED, THE FIFTH LEFT.**
+
+## 22 NOVEMBER — THE GUIDELINES WATCH: A 147-RECORD HOLE IN THE DEDUPE LOG
+
+### NO NEW GUIDANCE, AND THE DAY WAS AN INSTRUMENT FAULT
+
+**`FIRST_IDATE:2026-11-22` holds 61 records TOTAL; the title-word guidance sweep returns ONE of them and the
+pubType sweep NONE.** Sixteen collections 15–22 Nov, all shortfall zero. 29 unique pubType → **1** in scope
+(yesterday's delirium consensus, already held); 501 unique title-word → 29 in scope, **and NONE new.**
+**The old dedupe log said 14 of those 29 were new. That gap is the day's work.**
+
+### EIGHT DOCUMENTS THAT KEPT COMING BACK — TWO INDEPENDENT CAUSES
+
+**Eight 2020 SEMICYUC/SEDAR documents appeared in the "new" list on 20, 21 AND 22 November**, having been
+correctly reported on 20 November as an INDEX EVENT (six years old; never blur new and old).
+**Three consecutive days of re-reading the same eight records is cheap AND a symptom, so it was traced.**
+
+**CAUSE ONE — THEY HAVE NO DOI.** All eight are PMC-only deposits with **no DOI and no PMID**:
+`PMC7158790` · `PMC7102628` · `PMC7229968` · `PMC7470699` · `PMC7142677` · `PMC7283053` · `PMC7205735` ·
+`PMC7211599`. **No amount of correct reporting could have made them dedupe against a DOI-based log.**
+
+**CAUSE TWO, AND THE LARGER ONE — THE REGEX EXCLUDED THE WRONG CHARACTERS.** The ad-hoc regex rebuilt each
+run was `10\.[0-9]{4,}/[^ )"]+`: it excluded space, closing paren and quote and **NOT THE BACKTICK.** This
+archive writes DOIs inside code spans throughout its notes and outstanding list, **so a backticked DOI
+entered the log as DOI+backtick and could NEVER match a clean DOI from the index.**
+
+**MEASURED, NOT ESTIMATED, across `_briefs/`, `_guidelines/` and `claude/`:**
+
+| | Count |
+| --- | --- |
+| Distinct DOIs appearing OUTSIDE code spans | 829 |
+| Distinct DOIs appearing INSIDE code spans | 493 |
+| **Distinct DOIs appearing ONLY inside code spans** | **147** |
+
+**147 DOIs this archive has reported or examined were invisible to its own dedupe log.**
+**AND THE OLD REGEX'S APPARENT RICHNESS WAS THE TELL NOBODY READ: it produced 1,344 distinct strings where a
+backtick-safe regex produces 957, because it counted each backticked DOI twice — once cleanly where the
+entry also wrote it bare, once with a trailing backtick.** A log that is 40% larger than the true identifier
+set is not richer; it is malformed.
+
+**TWO OF THE 147 MATTER CONCRETELY: `10.1002/erv.70199` is THE RECORD cursorMark PAGING DROPPED ON
+20 NOVEMBER — the one document this archive has PROVED it lost to a paging fault was ALSO invisible to its
+dedupe. And `10.1007/s00068-026-03385-0` (Portugal frailty cohort) is still in the brief queue and would
+have read as new whenever it resurfaced.**
+
+### WHAT WAS BUILT AND HOW IT WAS VERIFIED
+
+**`claude/tools/build_dedupe_log.py`** — in the repo per the 17 November rule. Harvests **DOIs + PMC ids +
+PMIDs** from the entries AND `claude/*.md`, excludes the backtick, **falls back to the record's EXACT TITLE**
+for anything with no identifier. `--check IN.json` reports what is new.
+
+| Dedupe log | Of 29 scoped records, "new" |
+| --- | --- |
+| old DOI-only regex | **14** |
+| plus the eight PMC ids recorded | 6 |
+| **plus the backtick fix** | **0** |
+
+**Verified against today's own sweep in three stages rather than asserted. Clean log 1,200 identifiers
+against the old 1,553 — FEWER, because 353 were malformed.**
+**AND MY OWN NEW TOOL HAD THE SAME BUG ON FIRST WRITE** — its DOI regex excluded space/paren/quote/bracket/
+angle and not the backtick. **Caught by running `--check` instead of trusting it: 6 records still read new
+when they should have read 0.** Fixed and re-verified.
+
+### THE POLICY FAULT UNDERNEATH BOTH
+
+**The dedupe log was harvested ONLY from what the archive PUBLISHED. A record examined and deliberately NOT
+published leaves no trace and returns EVERY DAY until its window rolls past.**
+**NEW RULE: WHEN A RECORD IS EXAMINED AND REJECTED, RECORD ITS IDENTIFIER THE SAME RUN. The cost of not
+doing so is re-reading it every day for a week** — which is what happened, three times over, to eight
+documents. **Seven such records identified and recorded today with reasons, in a new
+`DEDUPE LOG — RECORDS EXAMINED AND SET ASIDE` section of `claude/outstanding.md`.**
+
+### AND THE SUITE CAUGHT MY OWN MALFORMED CODE SPAN
+
+Writing the measurement up, I wrote a nested double-backtick span to show a DOI with a trailing backtick.
+**It left an odd backtick count (49), which in turn made the code-stripped `**` count odd (81) because the
+stripper consumed the wrong range.** **The suite reported BOTH symptoms from ONE cause**, and the sentence
+was rewritten in plain words. **Worth recording: an odd backtick count can manufacture a spurious bold-span
+failure, so fix the backticks FIRST and re-run before chasing the emphasis count.**
+
+### ESAIC CLOSED OUT — EIGHTEEN DOCUMENTS, EIGHT YEARS
+
+`esaic.org/guidelines/` page 2 read, closing yesterday's action. **Two pages, 18 published documents.**
+Page 2: Fasting in children Jan 2022 · PERSEUS ultrasound Mar 2021 · PONV management Aug 2020 ·
+Noninvasive respiratory support Apr 2020 · Procedural sedation and analgesia in adults Jan 2018 ·
+Perioperative fasting in adults and children **no date shown**.
+**Nothing on either page dated Oct or Nov 2026; newest is NMB in Anaesthetised Children, March 2026 (held).**
+**18 documents across eight years ≈ TWO A YEAR — which is the cadence that makes yesterday's SPLF document,
+describing itself as ANNUALLY UPDATED, the outlier it is.**
+**ONE THING RECORDED AS UNESTABLISHED: the page carries "Published", "Ongoing" and "Infographics" filters,
+and a static fetch returns NO items under "Ongoing" — which is as consistent with CLIENT-SIDE RENDERING as
+with an empty list. NOT recorded as "none in development".** ESICM, SCCM and ESC in-development lists were
+readable on 2 and 14 November; ESAIC's was recorded then as an empty tab, **and today cannot distinguish an
+empty tab from an unrendered one either.** Carried as an open question.
+
+### CLASSIFIER — NO NEW FAULT TYPE, WHICH IS WHAT SHOULD HAPPEN
+
+Four-day tally stands unchanged: **7 bare-word false positives · 2 "Delphi consensus" false negatives ·
+1 `insights from` false negative.** **No new fault type on a day with no new records is the expected result
+and is recorded as such rather than as a clean run.**
+**PubType route: 1 in scope of 29 this window, 1 of ~100 across five days, the single hit still yesterday's
+delirium consensus. Keep-the-route decision stands; five days is still not the month the December audit
+will have.**

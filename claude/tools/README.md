@@ -11,6 +11,7 @@ directory**: the helpers below survived every container between 25 October and
 | `verify_page.py` | `verify_page.py FILE [--date D] [--items N]` — the pre-commit source suite. Checks emphasis balance, nesting, table pipes, line length and the ordered-list-marker trap. Every check was earned by a defect; three were recalibrated against the published corpus on 18 November because the version carried in the notes was not the version that had been running. |
 | `scan_rendered.py` | `scan_rendered.py [paths]` — fetches every published page and counts rendered asterisks outside code spans. The other gate: the source suite cannot see rendering. First run, 19 November, found 21 live pages, 17 of which pass the source suite cleanly. |
 | `scope_filter.py` | `scope_filter.py IN OUT [--list brief\|guidance]` — narrows records to this archive's subject scope, keying on TITLE **or** JOURNAL. `--recall-test FILE` re-runs the 16 October test and asserts all five EACTS consensus documents survive; it aborts if the records carry no title, so the 16 November `idlist` error cannot recur silently. |
+| `build_dedupe_log.py` | `build_dedupe_log.py [OUT]` writes the log; `--check IN.json` reports which records are new. Harvests DOIs, PMC ids and PMIDs from the entries and from `claude/*.md`, excludes the backtick, and falls back to the exact title for a record with no identifier. **Replaces the ad-hoc DOI-only regex, which had a 147-record hole.** |
 | `classify_guidance.py` | Classifies records as PRIMARY guidance, SECONDARY (about guidance) or OTHER, with a reason for each. Validated 2026-11-17 at 95.5% agreement against the 15 November society sweep. |
 
 Source them with `source claude/tools/epmc.sh`. Both shell helpers still write
@@ -43,3 +44,18 @@ suspect pattern rendered clean. **Fetch the page before editing it.**
 defect it found on 19 November was diagnosed on 6 October and fixed only for the
 three days then in view; fifteen earlier pages carried it for six weeks because
 nothing ever looked at a page again after the day it was published.
+
+**The dedupe log is not a DOI list.** Until 22 November it was rebuilt each run
+with `10\.[0-9]{4,}/[^ )"]+`, which excluded space, parenthesis and quote and
+**not the backtick** — so every DOI this archive writes inside a code span
+entered the log as the DOI plus a backtick and could never match a clean DOI
+from the index. Measured that day: **147 DOIs appear only inside code spans**,
+including the record cursorMark paging dropped on 20 November. Eight 2020
+SEMICYUC and SEDAR documents compounded it by carrying **no DOI at all**, only a
+PMC id, and read as new on three consecutive runs.
+
+**And the log must cover records examined and SET ASIDE, not only records
+published.** A rejected record leaves no trace in the entries and returns every
+day until its window rolls past. `claude/outstanding.md` now carries a
+`DEDUPE LOG — RECORDS EXAMINED AND SET ASIDE` section for that, and this tool
+harvests it.
