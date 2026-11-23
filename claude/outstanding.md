@@ -7146,3 +7146,76 @@ scored OUT-OF-SAMPLE with the Delphi false negative first, EJCTS/ICVTS published
 title-stem check against the remaining named gaps; close the paediatric regional anaesthesia RFE gap
 (SFAR, 11 Sep 2026); why the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
 **Pre-coverage society backlog: 50 documents.**
+
+## 2026-11-23 (brief)
+
+**Published:** `_briefs/2026-11-23.md`, 5 items, **all five recovered from Europe PMC full text by a route
+built today.** Without it the day's readable material was six Research Square preprints.
+
+**DONE 23 Nov — `claude/tools/epmc_fulltext.py` added.** Recovers an abstract from
+`{PMCID}/fullTextXML` when the search index deposits none. **Measured on BOTH populations: 15 of 33
+abstract-free PMC records recovered (45%); 0 of 6 standing NAMED GAPS, because five report `inEPMC=N`.**
+**READ `inEPMC` BEFORE FETCHING. This does NOT solve the named-gap problem.**
+
+**NAMED GAPS — ROUTE TESTED AND STILL OPEN (do not re-test without a new route):**
+`10.1136/rapm-2026-108172` (local-anaesthetic maximum dose) · `10.1111/anae.70436` (PUMA extubation
+editorial) · `10.1213/ane.0000000000008349` (frailty assessment Delphi) ·
+`10.1136/archdischild-2026-331149` (NICE IV-to-oral neonatal sepsis) · `10.1016/j.bja.2026.10.006` (GLP-1
+fasting letter) — **all five `inEPMC=N`.** `10.1093/ehjvshd/xwag001` (2025 ESC/EACTS valvular) — **PMCID
+exists, `fullTextXML` HTTP 500.**
+**What would be needed: a publisher-side route, or a citing paper that quotes the content.**
+
+**UNCHARACTERISED: 15 of 33 `fullTextXML` calls returned HTTP 500.** One identifier tried three times gave
+500 each time — weak evidence of a structural property of those deposits, **not a characterisation.**
+**If tomorrow's yield differs markedly from 45%, that is the test.**
+
+**CONFIRMED BY MEASUREMENT — WHY THE SWEEP WINDOW IS TWO DAYS.** `FIRST_IDATE:2026-11-22` held **61**
+records yesterday with both scoped sweeps at zero; today it holds **429** and yields **18 in scope**.
+**A day swept while still filling gives about a seventh of what it will hold.** Keep the two-day window.
+
+**INDEX RULE APPLIED BOTH WAYS IN TWO DAYS.** Yesterday 153 s at 0.065/min → 0.17 predicted → no power.
+Today 1,434 s at 0.397/min → 9.5 predicted → **a real stall.** **The power calculation is now the thing that
+decides whether a within-run reading means anything; compute it before reporting.**
+
+### QUEUE — top
+
+1. **Prognostic factors in severe trauma, Douala, Cameroon** (`10.21203/rs.3.rs-11130889/v1`) — **FIFTH day
+   carried. STRIKE IT or lead with it; five days of carry is a decision not being made.**
+2. **Six Research Square preprints from 22 November, all with abstracts, none yet read:**
+   `10.21203/rs.3.rs-11059794/v1` (continuous fascia iliaca vs epidural) ·
+   `10.21203/rs.3.rs-10747015/v1` (modified thoracoabdominal nerve block, perichondrial approach) ·
+   `10.21203/rs.3.rs-11318566/v1` (early arterial blood gases at ICU readmission — prognostic increment) ·
+   `10.21203/rs.3.rs-11438034/v1` (claim-specific evidence for reusing data-derived patient labels — a
+   measurement/methods paper) · `10.21203/rs.3.rs-11552783/v1` · `10.21203/rs.3.rs-11324592/v1`.
+3. **Ten abstracts recovered today and not used**, in `/tmp/claude-0/ft_today.txt` — **NOT durable; re-run
+   `epmc_fulltext.py --json` to regenerate.** Includes esketamine induction and emergence agitation,
+   remimazolam spontaneous-breathing sedation for ERCP, NLR-albumin index and invasive ventilation in
+   AECOPD, risk factors for septic shock, heart failure in critically ill COVID patients, humanising ICU
+   care, patient- and family-reported outcomes as core ICU business.
+4. **Glycaemic variability and ICU mortality** (`10.21203/rs.3.rs-11448774/v1`).
+5. **ICD-10 algorithm for cause of acute respiratory failure** (`10.64898/2026.11.18.26368330`).
+6. **Admission D-dimer and NIV failure in AECOPD** (`10.21203/rs.3.rs-11609290/v1`).
+7. **Inhaled nitric oxide and the kidney** (`10.4103/mgr.medgasres-d-26-00116`).
+8. **ICU mortality with upper GI bleeding** (`10.1097/ccm.0000000000007452`) · **COMA LATAM**
+   (`10.1097/ccm.0000000000007440`) · **prefrontal haemodynamics propofol vs sevoflurane**
+   (`10.1097/aln.0000000000006486`) · **high vs standard protein**
+   (`10.1016/j.clnu.2026.106848`) · **FFP during CPB** (`10.1007/s00540-026-03962-y`) · **chest wall closure
+   in infants** (`10.1097/pcc.0000000000004110`) · **bedside ECMO cannulation**
+   (`10.1016/j.chest.2026.10.051`) · **SAPS II vs SAPS 3** (`10.1016/j.accpm.2026.101959`).
+9. **Carry-overs:** `10.2196/105057` · `10.4103/aam.aam_646_26` · `10.21203/rs.3.rs-11060196/v1` ·
+   `10.21203/rs.3.rs-11134296/v1` · `10.1007/s00586-026-10501-6` · `10.1007/s00068-026-03385-0` ·
+   `10.21203/rs.3.rs-11320016/v1` · `10.21203/rs.3.rs-11581502/v1` · `10.1093/europace/euag321`
+   (abstract-free) · `10.1097/eja.0000000000002537` (abstract-free).
+10. **The 50-document pre-coverage society backlog.**
+
+### DATED ACTIONS — unchanged
+
+1. **NOVEMBER MONTH AUDIT — start of December.** Six-plus classifier fixes scored OUT-OF-SAMPLE, Delphi
+   false negative first; EJCTS/ICVTS published-list check; SFAR page 2 (HTTP 403).
+2. **Lagged window 6 November – 5 December, due around 10 December. Do not defer.**
+3. **AHA/ACC re-check — 11 December.**
+4. **Title-stem check against the remaining named gaps** — **and note the full-text route has now been
+   tried on six of them and failed on all six.**
+5. **Close the paediatric regional anaesthesia RFE gap (SFAR, 11 September 2026).**
+6. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
+7. **TRACK: NCT07309393 — expect a result around 2028.**

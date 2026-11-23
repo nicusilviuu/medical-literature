@@ -12,6 +12,7 @@ directory**: the helpers below survived every container between 25 October and
 | `scan_rendered.py` | `scan_rendered.py [paths]` — fetches every published page and counts rendered asterisks outside code spans. The other gate: the source suite cannot see rendering. First run, 19 November, found 21 live pages, 17 of which pass the source suite cleanly. |
 | `scope_filter.py` | `scope_filter.py IN OUT [--list brief\|guidance]` — narrows records to this archive's subject scope, keying on TITLE **or** JOURNAL. `--recall-test FILE` re-runs the 16 October test and asserts all five EACTS consensus documents survive; it aborts if the records carry no title, so the 16 November `idlist` error cannot recur silently. |
 | `build_dedupe_log.py` | `build_dedupe_log.py [OUT]` writes the log; `--check IN.json` reports which records are new. Harvests DOIs, PMC ids and PMIDs from the entries and from `claude/*.md`, excludes the backtick, and falls back to the exact title for a record with no identifier. **Replaces the ad-hoc DOI-only regex, which had a 147-record hole.** |
+| `epmc_fulltext.py` | Recovers an abstract from Europe PMC full text when the search index deposits none. `PMCID...`, `--resolve DOI...`, or `--json FILE` for a whole sweep. **Works only where the search record says `inEPMC=Y` — read that field first.** |
 | `classify_guidance.py` | Classifies records as PRIMARY guidance, SECONDARY (about guidance) or OTHER, with a reason for each. Validated 2026-11-17 at 95.5% agreement against the 15 November society sweep. |
 
 Source them with `source claude/tools/epmc.sh`. Both shell helpers still write
@@ -59,3 +60,17 @@ published.** A rejected record leaves no trace in the entries and returns every
 day until its window rolls past. `claude/outstanding.md` now carries a
 `DEDUPE LOG — RECORDS EXAMINED AND SET ASIDE` section for that, and this tool
 harvests it.
+
+**The full-text route fixes one population and not the other, and the
+discriminator is free.** Found 23 November, when 33 of 39 in-scope records were
+PMC deposits with no `abstractText` field at all. One said `inEPMC=Y`, so the
+full text was in Europe PMC while the search index held no abstract; fetching
+`{PMCID}/fullTextXML` and reading its `<abstract>` element recovered 1,836
+characters. **Measured the same day on both populations: 15 of 33 abstract-free
+PMC records recovered (45%), and 0 of 6 standing named gaps, because five of
+those report `inEPMC=N` — Europe PMC indexes them but does not hold them.**
+So this does NOT solve the named-gap problem; it solves the open-access
+deposit problem. **Read `inEPMC` before fetching.** Fifteen of the 33 returned
+`fullTextXML` HTTP 500; one retried three times returned 500 each time, which is
+weak evidence of a structural property of those deposits and not a
+characterisation of the fault.

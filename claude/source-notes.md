@@ -11772,3 +11772,176 @@ and is recorded as such rather than as a clean run.**
 **PubType route: 1 in scope of 29 this window, 1 of ~100 across five days, the single hit still yesterday's
 delirium consensus. Keep-the-route decision stands; five days is still not the month the December audit
 will have.**
+
+## 23 NOVEMBER — A RETRIEVAL ROUTE THAT DID NOT EXIST IN THE MORNING
+
+### 33 OF 39 IN-SCOPE RECORDS HAD NO ABSTRACT FIELD AT ALL
+
+**Today's sweep: 39 in-scope records, and 33 carry NO `abstractText` key.** Not short — absent. The six with
+one are Research Square preprints. **This morning that made the day close to unreportable.**
+**ONE record's search entry said `inEPMC=Y` and `isOpenAccess=Y` — the index stating the FULL TEXT IS IN
+EUROPE PMC while depositing no abstract of its own.** Fetching
+`https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13788852/fullTextXML` and reading its `<abstract>`
+element yielded **1,836 characters.**
+**Built as `claude/tools/epmc_fulltext.py` (PMCID / `--resolve DOI` / `--json FILE`), in the repo per the
+17 November rule.**
+
+### MEASURED ON BOTH POPULATIONS — AND IT FAILS ON THE ONE IT WAS WANTED FOR
+
+| Population | Attempted | Recovered | Why not |
+| --- | --- | --- | --- |
+| Today's abstract-free PMC records | **33** | **15 (45%)** | 15 × `fullTextXML` HTTP 500; 2 full texts with no `<abstract>` |
+| Standing NAMED GAPS | **6** | **0** | **5 are `inEPMC=N`** — EPMC indexes them, does not HOLD them; 1 HTTP 500 |
+
+**THE COUNTERWEIGHT IS THE MORE IMPORTANT HALF. The named gaps are EXACTLY what this route was wanted for —
+the local-anaesthetic maximum-dose scoping review, the PUMA extubation editorial, the frailty Delphi, the
+NICE guideline review, the GLP-1 fasting letter — AND IT RECOVERED NONE OF THEM. Five report `inEPMC=N`:
+PUBLISHER deposits that Europe PMC indexes but does not hold.**
+**RULE: a route that works on OPEN-ACCESS PMC deposits and fails on PAYWALLED publisher deposits does not
+solve the named-gap problem; it solves a different problem that happened to be today's. THE DISCRIMINATOR IS
+FREE AND READABLE BEFORE ANY FETCH: `inEPMC`. Read it first; do not fetch blind.**
+**NOT CHARACTERISED, AND RECORDED AS NOT CHARACTERISED: 15 of 33 returned HTTP 500. One (`PMC13788512`) was
+tried three times — 500 every time. Weak evidence of a STRUCTURAL property of those deposits rather than a
+transient fault, AND IT IS ONE IDENTIFIER TRIED THREE TIMES, which is not a characterisation. The named gap
+that also returned 500 is a DIFFERENT record, tried once. 45% today; may differ tomorrow.**
+
+### THE RIGHT DENOMINATOR FOR THE FEAR ABOUT ECPR
+
+`PMC13788592` (406 ECPR-treated, one tertiary centre, 2013–2024; **63 (16%) discharged alive**).
+Median follow-up **3.1 y (IQR 0.6–6.9)**: **38/62 (61%) alive, 31/38 (82%) favourable.**
+**AND THE SENTENCE THAT IS THE WHOLE ARGUMENT: "Only 7 of all 406 treated patients (1.7%) were alive with
+poor neurological outcome."**
+**THE STANDING OBJECTION TO ECPR IS THAT IT MANUFACTURES SURVIVORS WITH SEVERE DISABILITY. THE NUMBER THAT
+ANSWERS IT IS NOT 7/38 SURVIVORS BUT 7 OF ALL 406 TREATED. Most papers would report the survivor-based
+figure. PUTTING THE DENOMINATOR AT THE POPULATION OFFERED THE INTERVENTION IS THE CORRECT FRAMING FOR A
+QUESTION ABOUT WHETHER THE INTERVENTION CREATES HARM — and it is in the abstract.**
+**Second structural finding: discharge neurological status is close to DETERMINISTIC for long-term survival
+— five-year mortality 86% vs 13% (p < 0.001). Bleak, AND it is what makes the 1.7% STABLE rather than a
+snapshot: the poor-outcome group does not accumulate.**
+**QoL half rests on 17 survivors and 19 caregivers out of 406 treated / 63 discharged. EQ VAS 70 vs 80
+"preserved and comparable" — NO intervals, and on 17 people none would be narrow.** MCI 6/16, poor sleep
+10/17 are COUNTS not rates.
+**THE ONE ASYMMETRY WORTH ACTING ON INVOLVES PEOPLE NOBODY FOLLOWS UP: anxiety 6/18 CAREGIVERS vs 1/17
+survivors. The survivor is the patient; the caregiver is in nobody's clinic. 7/15 previously employed
+survivors returned to work and ALL caregivers did — carrying anxiety and working.**
+
+### 39% NON-RESPONSE, AND EIGHT PREDICTORS COLLAPSE TO ONE
+
+`PMC13788745` (DETECT secondary analysis, NCT04722445, **75** ventilated patients).
+**29/75 (39%) NMES NON-RESPONDERS at maximum 120 mA.** Responders median **72.8 [61.5–91] mA**.
+Univariable, all higher in non-responders: RF thickness 1.5 vs 1.2 cm · BMI 30 vs 24.8 · **fluid
+accumulation 6.5 [2–8] vs 1 [−1.5–2.5] kg (p < 0.001)** · SOFA 7 vs 6 · diabetes 20.7% vs 4.4% · sepsis
+34.5% vs 6.7% · **aminoglycosides 41.4% vs 4.4%** · vasopressor 0.2 vs 0 µg/kg/min.
+**MULTIVARIABLE: ONLY FLUID ACCUMULATION SURVIVES — OR 1.30 per kg (1.04–1.63), p = 0.02.**
+**THE HEADLINE AND ITS CONSEQUENCE FOR AN ENTIRE TRIAL LITERATURE: if 39% of ventilated patients cannot be
+made to extend a knee at MAXIMUM deliverable intensity, then an NMES trial that does not VERIFY A VISIBLE
+CONTRACTION is allocating ~A THIRD of its intervention arm to a SHAM. A mechanism for the heterogeneous
+NMES results that needs no biology.**
+**ANALYTIC SHAPE: eight univariable associations, ONE survivor. They are not eight mechanisms; they are
+eight markers of SEVERITY AND OEDEMA, and adjustment says so.**
+**MILD OVER-REACH NAMED: the conclusion lists thickness, BMI, diabetes, severity, sepsis, aminoglycosides
+and vasopressor dose as factors that "could also decrease responsiveness" AFTER reporting that none survived
+adjustment. The paper's own analysis supports ONE determinant.**
+**THE SURVIVOR IS ACTIONABLE — fluid between electrode and muscle — and PREDICTS that NMES should work
+better AFTER de-resuscitation than during it, which is testable.** Bound: 75 patients, 29 non-responders,
+lower bound 1.04.
+
+### AUROC 0.91 AND AUPRC 0.05 IN THE SAME TABLE — THIRD DAY RUNNING
+
+`PMC13788783` (17 Hong Kong public hospitals, 11 y; emergency 43,601 train / 16,143 validate; elective
+151,016 / 37,586; temporal validation 2022–24 against 2014–21).
+Mortality AUROC **0.89/0.89/0.89** emergency, **0.91/0.90/0.90** elective. **AUPRC 0.27/0.36/0.41 emergency
+and 0.05/0.10/0.13 ELECTIVE.**
+**THE STARKEST VERSION YET, IN ONE PAIR: AUROC 0.91 AND AUPRC 0.05 FOR 30-DAY MORTALITY AFTER ELECTIVE
+SURGERY. The event is very rare so the negatives are overwhelming and easy — which is what 0.91 measures.
+AUPRC 0.05 says that among the patients the model flags as highest risk, ALMOST NONE WILL DIE.**
+**THE EMERGENCY FIGURES CONFIRM THE MECHANISM FROM THE OTHER SIDE: identical AUROCs (0.89) with AUPRCs 5–8×
+HIGHER, because the event is commoner. THE AUROC CANNOT TELL THE TWO SETTINGS APART; THE AUPRC SEPARATES
+THEM BY A FACTOR OF FIVE.**
+**THIRD INSTANCE IN FOUR DAYS AND THE REPORTING QUALITY IS ASCENDING: 20 Nov AUPRC as a DIRECTION only;
+22 Nov alongside every AUROC, revealing a 0.17 cross-hospital spread; TODAY AUROC + AUPRC + Brier +
+calibration intercept and slope + ICI + E50 + E90, and the abstract SAYS calibration was variable and
+recalibration is needed before implementation.**
+**AND IT DOES WHAT THE OTHER TWO DID NOT: recalibrates, and reports that this improved Brier and calibration
+"WITHOUT CHANGING AUROC OR AUPRC". A CLEAN EXPERIMENTAL DEMONSTRATION THAT DISCRIMINATION AND CALIBRATION
+ARE INDEPENDENT PROPERTIES — most papers assert it; this one shows it in its own results.**
+Bounds: 124 candidate predictors → 67 → 13, and the 13-predictor model "retained useful discrimination,
+although performance was lower" **WITHOUT SAYING HOW MUCH LOWER — the number a clinician needs.** Validation
+is TEMPORAL within the same 17 hospitals: a test of DRIFT, not of transportability.
+
+### A THREE-CLUSTER TYPOLOGY WITH FOUR PEOPLE IN ONE CLUSTER
+
+`10.1186/s40560-026-00963-7` / `PMC13786550` (PICTURE-ICU; 14 French ICUs, **125** relatives; MCA + HCA).
+**Cluster 1 n = 4 (3.2%) · Cluster 2 n = 59 · Cluster 3 n = 62.**
+**THE ABSTRACT CALLS IT "A ROBUST TYPOLOGY" AND REPORTS A CLUSTER OF FOUR. In substance it is a TWO-cluster
+finding with four outliers — and cluster 1 (lower knowledge, ambivalent about legitimacy) is the group most
+worth understanding and the one with least data. 3% of 125 cannot support a profile.**
+**THE TWO-CLUSTER FINDING UNDERNEATH NEEDS NO ALGORITHM AND IS USEFUL: older SPOUSES consent with HIGH TRUST
+and HIGH STRESS; adult CHILDREN consent with more health knowledge and want CLEARER INFORMATION. Two
+different communication tasks.**
+**THE MOST IMPORTANT SENTENCE IS THE DISCLAIMER: HADS moderate-to-high anxiety and depression across ALL
+clusters, "though this was not directly attributed to the research participation itself." THE DISTRESS
+BELONGS TO HAVING A RELATIVE IN ICU, NOT TO BEING ASKED FOR CONSENT. The obvious misreading is that research
+consent distresses families; the data say families in ICU are distressed and some are also asked.**
+**BOUND: everyone in the sample said YES. NO comparison with relatives who DECLINED — the group whose
+perceptions would most change how consent is sought.**
+
+### SENIORITY AND PROCEDURAL EXPERIENCE HAVE COME APART
+
+`PMC13786554` (four NSW ICUs serving 1.2 M; **40/70 (57%)** responded; 8 interviewed).
+**26/40 (65%) were PGY5 OR ABOVE — and HALF had never performed a blunt-dissection chest drain in their
+CAREER.** 13/40 (32.5%) never a Seldinger drain; 15/40 (37.5%) five or fewer. **19/40 (47.5%) had performed
+NO chest drain of any type in the previous TWELVE MONTHS**; only 3/40 (7.5%) more than five. Formal training:
+pleural interventions 19/40 (47.5%), thoracic ultrasound 14/40 (35%). **38/40 (95%) want simulation.**
+**THE JUXTAPOSITION IS THE FINDING AND THE PAPER DOES NOT SPELL IT OUT: 65% PGY5+, half never a
+blunt-dissection drain.**
+**AND THE CONFIDENCE FIGURE SHOULD BE READ AS REASSURING, NOT ALARMING: 37.5% felt confident to insert
+independently, close to the 42.5% who had placed ANY drain in the past year. SELF-ASSESSED CONFIDENCE IS
+TRACKING ACTUAL RECENT EXPERIENCE — correct calibration, and the OPPOSITE of the usual finding in this
+genre. The problem is the experience, not the self-assessment.**
+**BOUND THAT GOVERNS: a 57% response rate on a self-reported survey about a PROCEDURAL SKILL is precisely
+where non-response is least likely to be random — the doctors who place the most drains and those who place
+none both have reasons to answer or not, AND THE DIRECTION IS UNKNOWN.** 40 respondents: each is 2.5 points.
+All volumes SELF-REPORTED, not audited.
+
+### MEDLINE SHED 18 RECORDS, AND THE BOUND IS UNAVAILABLE
+
+**Whole 49,298,729 → 49,299,300 = +571 in 23 h 59 min.** Running list of daily gains: **15,011 · 2,314 ·
+92 · 571.**
+**`MED` 41,405,924 → 41,405,906 = −18.** Decomposition exact: **`MED` −18 · `PMC` +475 · `PPR` +114 · all
+others 0, and −18 + 475 + 114 = 571.**
+MEDLINE losing records is known (26 October recorded it as the only source then observed doing so).
+**SUBTRACTION BOUND UNAVAILABLE: the 14 November precondition requires that NO source shed records.**
+
+### THE BUCKET THAT WAS 61 YESTERDAY IS 429 TODAY — WHY THE WINDOW IS TWO DAYS
+
+| Index date | 22 Nov | 23 Nov | Change |
+| --- | --- | --- | --- |
+| 19 Nov | 4,063 | 4,063 | 0 |
+| 20 Nov | 15,610 | 15,601 | −9 |
+| 21 Nov | 7,900 | 7,879 | −21 |
+| 22 Nov | **61** | **429** | **+368** |
+| 23 Nov | — | 385 | — |
+
+**Yesterday `FIRST_IDATE:2026-11-22` held 61 records with BOTH scoped sweeps returning zero, so yesterday's
+brief was built from 21 November. TODAY the same index date holds 429 and its title sweep returns 18 IN
+SCOPE.**
+**A QUANTIFIED DEMONSTRATION OF WHY THE SWEEP WINDOW IS TWO DAYS WIDE AND NOT ONE: a day swept while still
+filling yields a FRACTION — here about a SEVENTH — and yesterday's zero was a statement about the HOUR, not
+the day. The two-day window is what recovered those 18 records, and it is the design choice doing the work.**
+**Two past buckets fell again (20 Nov −9, 21 Nov −21): FOURTH consecutive day on which past buckets moved
+DOWN and none grew.** Recorded, not investigated.
+
+### THE WITHIN-RUN READING IS IDENTICAL AND TODAY IT HAS POWER
+
+**14:05:23 → 14:29:17: whole 49,299,300 both times, every source identical, residual 0, all five buckets
+unchanged.**
+**Gap 1,434 s = 23.9 min. Today's rate = 571 / 1,439 min = 0.397 records/min → PREDICTS ~9.5 RECORDS over
+the window. Yesterday's rule: report no power below ~3 predicted. 9.5 IS ABOVE IT, SO THIS COMPARISON CAN
+SEE A STALL AND DOES — nothing ingested and nothing redated between 14:05 and 14:29.**
+**THE CONTRAST IS THE WHOLE POINT OF HAVING WRITTEN THE RULE DOWN. Yesterday: 153 s at 0.065/min → 0.17
+predicted → NO POWER. Today: 1,434 s at 0.397/min → 9.5 predicted → A REAL STALL. IDENTICAL OBSERVATIONS,
+OPPOSITE EVIDENTIAL VALUE, and the difference is COMPUTABLE IN ADVANCE rather than argued afterwards.**
+**Honest limit: the index was slow for this pass (14:26:23 → 14:37:40, whole at 14:29:17, last bucket at
+14:37:40), so the buckets are compared across a window ~3 min wider at the far end — about ONE record of
+slop at 0.397/min, which does not change the conclusion.**
