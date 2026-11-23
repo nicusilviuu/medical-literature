@@ -11945,3 +11945,152 @@ OPPOSITE EVIDENTIAL VALUE, and the difference is COMPUTABLE IN ADVANCE rather th
 **Honest limit: the index was slow for this pass (14:26:23 → 14:37:40, whole at 14:29:17, last bucket at
 14:37:40), so the buckets are compared across a window ~3 min wider at the far end — about ONE record of
 slop at 0.397/min, which does not change the conclusion.**
+
+## 23 NOVEMBER — THE GUIDELINES WATCH: FIFTEEN ASA STATEMENTS AT A URL THIS ARCHIVE HAD WRITTEN DOWN
+
+### THE INDEX ROUTE PRODUCED NOTHING; THE SOCIETY ROUTE PRODUCED FIFTEEN DOCUMENTS
+
+Sixteen per-day collections 16–23 Nov, all shortfall zero. 26 unique pubType → **1** in scope; 467 unique
+title-word → 28 in scope; **the dedupe log built yesterday recognised ALL 28 as already reported.** Second
+consecutive day of nothing new from the index.
+**The ASA standards page carries FIFTEEN statements dated 20 OCTOBER 2026 — three NEW, eleven REVISED, one
+REAFFIRMED — and NONE of the fifteen was in this archive.**
+
+### WHY NO SWEEP COULD EVER HAVE FOUND THEM — A NEW CLASS OF BLIND SPOT
+
+**THE ASA DOES NOT PUBLISH ITS STATEMENTS TO A JOURNAL.** They are documents on `asahq.org` with an
+"Original Approval" date and a developing committee. **No DOI, no PMID, no journal of record ⇒ NOT IN EUROPE
+PMC AND NEVER WILL BE.** Searching EPMC for each new statement's distinctive title words returns unrelated
+papers.
+**BOTH of this archive's routes operate on Europe PMC, so for a society whose output is WEB-published rather
+than JOURNAL-published both routes have a yield of EXACTLY ZERO, PERMANENTLY.**
+**THIS IS A STRONGER BLIND SPOT THAN THE TWO ALREADY RECORDED. 17–18 Nov: a document can be missed because
+the index does not TYPE it as guidance. 21 Nov: a whole journal series can deposit NO ABSTRACT. TODAY: THERE
+IS NOTHING IN THE INDEX TO MISS.**
+
+### AND THE GAP IN THIS ARCHIVE'S OWN PRACTICE IS NARROWER AND WORSE
+
+**The working ASA URL has been recorded here SINCE 15 NOVEMBER** (source-notes line 9707:
+`https://www.asahq.org/standards-and-practice-parameters` works, where the previous day's constructed URL
+404'd). **THE URL WAS FOUND, RECORDED, AND THE PAGE'S ITEMS WERE NEVER READ.**
+**The 20 October statements were already on the page on 15 November — its footer reads "Date of last update:
+October 20, 2026" — so FIVE WEEKS of daily watches passed over fifteen documents sitting at a URL this
+archive had written down.**
+**NEW RULE: A SOCIETY PAGE IS NOT CHECKED UNTIL ITS *ITEMS* HAVE BEEN READ AND DEDUPED. Recording that a URL
+resolves is a note about the URL, not a check of the society.** **The URL table started 20 November needs a
+SECOND COLUMN: the date the ITEMS were last read, not the date the URL was last confirmed.**
+
+### THE FIVE PAGES TRIED TODAY, AND ONLY ONE IS A USABLE DATED INDEX
+
+| Page | Status | Usable as a dated index? |
+| --- | --- | --- |
+| `asahq.org/standards-and-practice-parameters` | 200 | **YES — PER-ITEM dates (day precision for the Oct batch) and New/Revised/Reaffirmed labels** |
+| `academic.oup.com/ejcts/pages/guidelines` | 200 | **NO** — grouped by YEAR, no per-item dates; diff-only |
+| `sccm.org/clinical-resources/guidelines` | 200 | **NO** — published list is on a SEPARATE page; this one gives tentative YEAR RANGES for upcoming only |
+| `espen.org/guidelines/espen-guidelines` | **202, EMPTY BODY** | unknown — nothing returned |
+| `iacts.org/guidelines/` | **404** | unknown — nothing returned |
+
+**THE ONE SOCIETY PAGE THAT CAN ACTUALLY BE DIFFED FOR NEW PUBLICATIONS IS THE ONE THAT WAS RECORDED AND NOT
+READ.**
+**SCCM upcoming list worth keeping — tentatively 2026–2027: post-intensive care syndrome · adult skin as an
+organ · SCCM/ELSO adult ECMO consensus · adjunct and alternative sedatives · paediatric endotracheal
+intubation. FIVE in-scope documents with a year range rather than a date.**
+EJCTS lists the same six 2026 EACTS documents already held, dating none — confirms the 18 November reading.
+
+### EVERY FIGURE RE-VERIFIED AGAINST THE PRIMARY SOURCE, AND IT CHANGED ONE QUOTATION
+
+**The three new statements were read from their own pages and then EVERY figure, threshold and quoted phrase
+was RE-FETCHED and checked against the HTML directly.** All three HTTP 200; all three "Original Approval:
+October 20, 2026"; **NONE carries "Approved by the ASA House of Delegates" wording** — only "Developed by"
+and an original-approval date.
+**THE RE-VERIFICATION CHANGED A QUOTATION: the statement says "uniquely qualified", not "uniquely, and
+exceptionally, well-qualified". Checking rather than relaying is what caught it.**
+
+### 1. CARDIAC CRITICAL CARE — A SCOPE-OF-PRACTICE CASE THAT ARGUES AGAINST ITSELF
+
+Ad Hoc Committee on Advancing Anesthesiology-Based Cardiac Critical Care Medicine; Committee of Review:
+Critical Care Medicine. **No numbered recommendations, no thresholds, no evidence grading.** 9 references
+incl. ACGME requirements and a 2025 AHA scientific statement.
+**CLAIM: anaesthesiologists dual-trained in cardiothoracic anaesthesiology and critical care are "uniquely
+qualified to lead multidisciplinary cardiac ICU teams due to broad perioperative exposure, competencies, and
+procedural expertise."**
+**AND THEN IT ARGUES AGAINST ITSELF: "Impella insertion, resternotomy for CALS, and fluoroscopy are not
+standard in anesthesiology training", and MCS, TEE and POCUS "require maintenance of skills". A STATEMENT
+CLAIMING A LEADERSHIP ROLE THAT THEN NAMES THE PROCEDURES ITS CANDIDATES ARE NOT TRAINED IN HAS GIVEN THE
+READER WHAT THEY NEED TO WEIGH THE CLAIM — more than most scope-of-practice documents do.**
+**USABLE PART: a nine-domain competency table** (neurologic · cardiac · MCS · pulmonary · renal ·
+haematologic · imaging · emergency · leadership and systems), core vs advanced, **advanced tier described as
+not yet mature in early practice.** A curriculum skeleton for a fellowship that does not formally exist.
+**UNUSUALLY BLUNT OBSTACLES SECTION: "burnout, credentialing limitations, reimbursement, as well as
+territory battles over patients, billing, and procedures." Naming billing and territory in a clinical
+position statement is a recognition that the barrier is NOT competency.**
+**BOUND: nothing here to be empirically right or wrong about; the conclusion that institutions "can expect"
+better continuity, efficiency, quality and safety is an EXPECTATION, and no data are offered.**
+
+### 2. REMIFENTANIL FOR LABOUR ANALGESIA — A FULL DOSING TABLE AND TWO WEIGHT BASES
+
+Committee on Obstetric Anesthesia. **Original approval 20 Oct 2026; page "Date of last update: 17 November
+2026" — AMENDED SIX DAYS AGO, inside this archive's window, WITH NO REVISION HISTORY SHOWN.**
+**VERIFIED FROM THE PAGE: "associated with maternal respiratory depression and oxygen desaturation,
+occuring in 14% of women; a three-fold increased risk compared to epidural." Dizziness 20% vs 1% with
+neuraxial.** Onset 60–90 s, peak <2 min, context-sensitive half-life 3–5 min.
+Framed as a HIGH-RISK option for relative contraindication to epidural (bleeding disorder, anticoagulation,
+spinal hardware), citing FDA guidance. **Severe OSA, baseline respiratory depression/sedation, concurrent
+sedating medication ⇒ "not suitable".** Epidural > RPCA; RPCA > meperidine; vs fentanyl PCA mixed.
+**MONITORING AMOUNTS TO A STATEMENT THAT THIS CANNOT BE DONE CASUALLY:** 1:1 nursing with in-person
+respiratory observation · dedicated IV with carrier infusion, PCA on the most proximal port · continuous
+monitoring for the first 30 min · RR, pain and sedation scores every 30 min · BP at least every 30 min ·
+anaesthesia practitioner available 24/7 · NO additional opioids during RPCA · careful sedation assessment if
+opioids in the preceding 4 h. **Notification triggers: sedation "not arousable to voice", RR < 8/min, SpO2
+< 90% on room air.**
+**AND IT STATES THE CENTRAL CONTRADICTION OF ITS OWN MONITORING PLAN IN CONSECUTIVE SENTENCES: supplemental
+oxygen to maintain SpO2 > 94% — AND THEN "Supplemental oxygen may delay recognition of apnea." That is the
+real problem with pulse oximetry as primary monitor for an opioid respiratory event, and the statement NAMES
+it rather than leaving the reader to find it — which makes its hedge that capnography "may increase the
+safety margin" read as UNDER-stated.**
+**DOSING TABLE (verified): 20 mcg/mL = 1 mg in 50 mL NS 0.9%, pharmacy-prepared where possible · NO basal
+rate, NO loading dose · starting bolus 0.25 mcg/kg (IBW) or 10–20 mcg · titration 0.05–0.1 mcg/kg · maximum
+bolus 0.5 mcg/kg or 50 mcg (70 mcg with opioid use disorder) · lockout 2–3 min.**
+**INCONSISTENCY FLAGGED AND VERIFIED AGAINST THE PAGE: the starting bolus is per kg IBW and the titration
+increment per kg "IDW". IDW IS NOT A STANDARD ABBREVIATION, and a table that appears to switch weight basis
+between starting dose and increment is AMBIGUOUS AT EXACTLY THE POINT OF USE. On a 90 kg patient with IBW
+60 kg the two readings of a 0.1 mcg/kg increment differ by 3 mcg against a 50 mcg maximum. Almost certainly
+a typo for IBW — and almost certainly not how a national-society dosing table should read.**
+
+### 3. EPIDURAL CATHETERS FOR CAESAREAN — A CONCRETE CRITERION AND ONE SENTENCE THAT MATTERS MOST
+
+Committee on Obstetric Anesthesia, 23 references. **No numbered recommendations, no grading, no consensus
+method, no panel size — SIXTH CONSECUTIVE guidance document here to state none of the four**, mattering less
+than usual because its claims are procedural rather than comparative.
+**REPLACEMENT CRITERION, VERBATIM: "persistent inadequate analgesia after two physician-administered
+top-ups, rather than prolonged troubleshooting without analgesic efficacy". TWO TOP-UPS IS A NUMBER A LABOUR
+WARD CAN ACT ON, and "rather than prolonged troubleshooting" is a direct criticism of common practice.**
+**BLOCK TESTING GIVES TWO TARGETS FROM TWO LITERATURES AND DOES NOT RECONCILE THEM: straight leg raise for
+motor block, then sensory "with a goal of T5 to light Touch" — and "Other publications have recommended a
+T4 to pinprick may be necessary". TWO MODALITIES AND TWO LEVELS; the reader at the point of care must
+choose. Naming both is more honest than picking one silently and leaves the decision where the evidence
+leaves it.**
+**THE SENTENCE THAT MATTERS MOST, VERBATIM: "General anesthesia should be offered, including prior to
+delivery of the fetus, whenever adequate surgical anesthesia cannot be achieved or maintained." THE CLAUSE
+"INCLUDING PRIOR TO DELIVERY OF THE FETUS" IS THE WHOLE POINT — reluctance to convert before delivery is
+exactly where patients experience pain during caesarean section.**
+**HIGH-SPINAL WARNING IS THE COUNTERWEIGHT TO ITS OWN REPLACEMENT ADVICE: after a large-volume epidural
+bolus, "subsequent full dose spinal carries a higher risk of high spinal complication" — the hazard of the
+commonest replacement named in the same passage.**
+Risk factors for failed conversion (conventional): prolonged catheter use · higher BMI · difficult placement
+· multiple boluses · higher labour pain · urgency · chorioamnionitis.
+**QUIET CRITICISM: perform frequent OBJECTIVE assessments and document them, "since visual assessment may
+be inadequate."**
+
+### THE OTHER TWELVE — NAMED, NOT READ, AND THAT IS DELIBERATE
+
+In scope: **Neuraxial Analgesia or Anesthesia in Obstetrics** (revised) · **Optimal Goals for Anesthesia
+Care in Obstetrics** (revised) · **Transesophageal Echocardiography** (revised) · **Anesthetic Care During
+Interventional Pain Procedures for Adults** (reaffirmed). Out of scope: burnout · well-being · fatigue ·
+quality incentive programmes · maternal peripartum racial and ethnic disparities · students in anaesthesia
+care · substance use disorder · third-party payor regulation.
+**A "Revised" LABEL WITH NO REVISION HISTORY CANNOT BE REPORTED AS A CHANGE WITHOUT READING THE PREVIOUS
+VERSION, WHICH THE PAGE DOES NOT PROVIDE. Logged as an action rather than claimed as covered.**
+**Also on the page, month precision: "Perioperative Pain Management Using Local and Regional Analgesia for
+Cardiothoracic Surgeries, Mastectomy, and Abdominal Surgeries" — Practice Guideline, New, published January
+2026, resources added February 2026. IN SCOPE AND NOT HELD. Add to the backlog.**

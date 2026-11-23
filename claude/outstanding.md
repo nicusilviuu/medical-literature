@@ -7219,3 +7219,62 @@ decides whether a within-run reading means anything; compute it before reporting
 5. **Close the paediatric regional anaesthesia RFE gap (SFAR, 11 September 2026).**
 6. **STILL OPEN: why the three JAMA trials indexed 19 October were missed.**
 7. **TRACK: NCT07309393 — expect a result around 2028.**
+
+## 2026-11-23 (guidelines watch)
+
+**Published:** `_guidelines/2026-11-23.md`, 3 items — **three NEW ASA statements dated 20 October 2026,
+found on the society page, none in any index and none previously held.**
+
+**THE FINDING THAT MATTERS MOST IS ABOUT THIS ARCHIVE'S OWN PRACTICE.** The working ASA URL has been
+recorded here since **15 November** and **its items were never read.** Fifteen statements dated 20 October
+sat at that URL through five weeks of daily watches.
+**NEW RULE: A SOCIETY PAGE IS NOT CHECKED UNTIL ITS ITEMS HAVE BEEN READ AND DEDUPED.**
+**ACTION: add a second column to the URL table — "items last read", distinct from "URL last confirmed".**
+
+### SOCIETY URL TABLE — with items-read dates
+
+| Society | URL | Status | Items last read |
+| --- | --- | --- | --- |
+| ASA | `asahq.org/standards-and-practice-parameters` | 200, **per-item dates, New/Revised/Reaffirmed labels — the only diffable page found** | **23 Nov 2026** |
+| ESAIC | `esaic.org/guidelines/` (2 pages) | 200, month+year | 22 Nov 2026 |
+| STS | `www.sts.org/node/8174` | 200, month+year | 20 Nov 2026 |
+| ESICM | `esicm.org/guidelines` | 200 | 19 Nov 2026 |
+| SFAR | `sfar.org/category/rfe` | 200 p.1; **p.2 HTTP 403** | 20 Nov 2026 (p.1 only) |
+| ESC | `escardio.org/Guidelines/Clinical-Practice-Guidelines` | 200 but **YEAR only — unusable for detection** | 21 Nov 2026 |
+| EJCTS | `academic.oup.com/ejcts/pages/guidelines` | 200, **YEAR only — diff-only** | 23 Nov 2026 |
+| SCCM | `sccm.org/clinical-resources/guidelines` | 200, **upcoming only; published list on a separate page NOT YET READ** | 23 Nov 2026 |
+| ESPEN | `espen.org/guidelines/espen-guidelines` | **HTTP 202, empty body** | never |
+| IACTS | `iacts.org/guidelines/` | **HTTP 404** | never |
+
+**NEW BLIND-SPOT CLASS, stronger than the two already recorded: a society that publishes to its WEBSITE and
+not to a journal is invisible to BOTH Europe PMC routes PERMANENTLY — there is nothing in the index to
+miss.** (17–18 Nov: wrong pubType. 21 Nov: a journal series with no abstracts. Today: not in the index at
+all.)
+
+**NEW ACTIONS:**
+1. **Read the SCCM published-guidelines list** at `sccm.org/clinical-resources/guidelines/guidelines` — not
+   yet read; today's page only carries upcoming items.
+2. **Find a working ESPEN URL** (`espen.org/guidelines/espen-guidelines` returns an empty HTTP 202) **and a
+   working IACTS URL** (404). Two tracked societies with no readable index.
+3. **The twelve revised/reaffirmed ASA statements of 20 October** are named and not read. **A "Revised"
+   label with no revision history needs the previous version to report a change.** In scope: Neuraxial
+   Analgesia in Obstetrics · Optimal Goals for Anesthesia Care in Obstetrics · Transesophageal
+   Echocardiography · Anesthetic Care During Interventional Pain Procedures.
+4. **ASA Practice Guideline NOT HELD, month precision, in scope:** "Perioperative Pain Management Using
+   Local and Regional Analgesia for Cardiothoracic Surgeries, Mastectomy, and Abdominal Surgeries",
+   published January 2026, resources added February 2026. **Add to the pre-coverage backlog (now 51).**
+5. **SCCM upcoming, tentatively 2026–2027, five in scope:** post-intensive care syndrome · adult skin as an
+   organ · SCCM/ELSO adult ECMO consensus · adjunct and alternative sedatives · paediatric endotracheal
+   intubation. **Expect these; year range only, no dates.**
+6. **The remifentanil statement was amended 17 November, six days ago, with no revision history shown.**
+   If a route to ASA revision histories exists, it would turn every "Revised" label into readable content.
+
+**VERIFICATION NOTE WORTH KEEPING:** every figure in today's three items was re-fetched and checked against
+the ASA HTML directly rather than taken on report, **and that caught a misquotation** ("uniquely qualified",
+not "uniquely, and exceptionally, well-qualified"). **Re-verify quoted phrases from the primary source.**
+
+**STILL OUTSTANDING, unchanged:** November month audit (start of December) with the classifier fixes scored
+OUT-OF-SAMPLE, Delphi false negative first; lagged window 6 Nov – 5 Dec due ~10 December, do not defer;
+AHA/ACC re-check 11 December; title-stem check against the remaining named gaps (**and the full-text route
+has now failed on six of them**); close the paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026);
+why the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
