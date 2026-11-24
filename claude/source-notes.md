@@ -12094,3 +12094,106 @@ VERSION, WHICH THE PAGE DOES NOT PROVIDE. Logged as an action rather than claime
 **Also on the page, month precision: "Perioperative Pain Management Using Local and Regional Analgesia for
 Cardiothoracic Surgeries, Mastectomy, and Abdominal Surgeries" — Practice Guideline, New, published January
 2026, resources added February 2026. IN SCOPE AND NOT HELD. Add to the backlog.**
+
+---
+
+## 2026-11-24 — THE CONTAINER TOOK AN INSTRUMENT, AND THE DEDUPE LOG HANDED BACK YESTERDAY'S PAPER
+
+**Container replaced overnight.** `/home/user/medical-literature` absent; `git rev-parse HEAD` returned
+no such file or directory. Re-attached (`add_repo` reported `already_present`), cloned `--depth 1` at
+`67f6631`, `register_repo_root` called. **Pushes from this clone must use
+`git -c push.negotiate=true push`**, because a shallow clone can be rejected with HTTP 413.
+
+**THE INSTRUMENT LOST: `/tmp/claude-0/idx.sh`.** The daily index reading lived in scratch. **The 17 November
+rule — any instrument needed on a dated action goes in the repo, not scratch — was written the same day
+four Europe PMC helpers were moved into `claude/tools/` with the note that they had survived every container
+from 25 October to 17 November by luck. The index script was not moved. Six days later it was lost.**
+Rebuilt from the notes as `claude/tools/index_reading.sh`, header carrying the rules it encodes.
+**Generalisation: the rule was applied to the instruments then in view and not swept across everything that
+was already running. Same shape as the 19 November finding that a defect class diagnosed on one day gets
+fixed only on the pages then in view unless the back catalogue is swept.**
+
+### THE DEDUPE LOG REPORTED A PAPER FROM YESTERDAY'S OWN BRIEF AS NEW
+
+`10.1016/j.lanwpc.2026.102027` (Lancet Reg Health West Pac, Hong Kong surgical-mortality model) **was item 3
+of `_briefs/2026-11-23.md`**, where it is linked as `PMC13788783`. Both routes of the log failed:
+
+**Identifier route** — an item whose abstract came from the full-text route is linked on the page by its PMC
+id, so **the DOI never enters the log** and the paper reads as new the day the DOI is indexed. Same shape as
+the 22 November 147-record backtick hole: **the log is only as complete as what the pages happen to write.**
+
+**Title route** — compared titles as written, by substring containment on the lower-cased string. Yesterday's
+page: `30-, 60- and 90-day`. Today's record: `30-, 60-, and 90-day`. **One comma defeated it.**
+
+**FIXES, both in `claude/tools/build_dedupe_log.py`:** `norm_title()` strips every non-alphanumeric
+character before comparing; `LINK_TEXT` harvests markdown link texts as well as items blocks (840 reported
+titles now, up from the items-only set); `MIN_TITLE = 40` so a short heading cannot swallow a record; and
+`--resolve-pmc` asks Europe PMC for the DOI of every PMC id in the log and caches pairs in the committed
+`claude/pmc-doi-map.txt`, which `harvest()` reads.
+
+**MEASURED, NOT ASSERTED — and smaller than first thought.** First estimate from an ad-hoc prefix scan was
+**three** of yesterday's five items recurring and missed. Running today's sweep against the old and the new
+code and diffing (`comm` on the two `--check` outputs) showed **the patch excludes exactly ONE record of
+189.** The other two recurrences were **already caught by the old containment route, because for those two
+the published title was copied from the record verbatim.** **Correction recorded: the "three missed" figure
+was wrong and was not published.**
+
+**The worse property, stated on the page:** the title fallback was never broken in general. It worked
+whenever a title was not shortened and failed the moment one was — **a fault that looks like a working
+check.**
+
+### FULL-TEXT ROUTE, SECOND DAY
+
+54 of 189 records carry no abstract; **27 of those are not duplicated by a record that does.** Five of the
+27 report `inEPMC=Y`; the route was tried on all five. **1 recovered (610 chars, PMC13788603), 2 HTTP 500,
+1 HTTP 503, 1 full text with no `<abstract>` element.** The one recovery was of a paper already readable
+through its DOI, **so the route added nothing today.** Running yield **16 of 38 (42%) over two days.**
+Failures reported as uncharacterised: one attempt does not separate transient from structural.
+
+### INDEX READING — ONE PASS ONLY, STATED AS A DEPARTURE
+
+**The two-pass rule was not met**, time having gone to the container rebuild and the script rewrite. **No
+within-run comparison and no subtraction bound today.**
+
+**Whole 49,304,892 @ 14:08:09; eleven buckets summed to 49,304,892; RESIDUAL 0.**
+`MED` 41,410,345 · `PMC` 1,016,353 · `PAT` 4,229,296 · `PPR` 1,295,737 · `AGR` 1,026,549 · `ETH` 176,799 ·
+`CBA` 142,377 · `CTX` 3,939 · `HIR` 2,868 · `NBK` 5 · `CIT` 624.
+
+**Day over day: 49,299,300 (23 Nov 14:05:23) → 49,304,892 = +5,592 in 24 h 03 min. `MED` 41,405,906 →
+41,410,345 = +4,439.** **No `PMC` delta claimed**: yesterday's note recorded `PMC` as a change (+475) and
+not as a level, so the level is not in hand and the arithmetic cannot be closed. **Do not guess it.**
+**NOTE FOR index_reading.sh USAGE: record LEVELS for every bucket, not just the ones that moved.**
+
+**Daily gain bands: 92 · 571 · 2,314 · 5,592 · 7,493 · 15,011, bursts 23k–26k.** Today moderate.
+
+**Per-day index counts:** 20 Nov 15,600 @ 14:13:57 · 21 Nov 7,851 @ 14:14:19 · 22 Nov 428 @ 14:14:35 ·
+23 Nov 5,335 @ 14:14:42 · 24 Nov 1,615 @ 14:14:43 (partial).
+
+**22 November was a Sunday: 428 records. SIXTH observation against the retired calendar rules.** Three
+Sundays now: 10,915 · 61 · 428, spanning 61 to 10,915. **The 26 October note stands: batch size is not a
+function of the calendar, and four attempts to make it one have failed.**
+
+### SWEEP
+
+Four collections, title and journal routes over `FIRST_IDATE` 23 and 24 November: **159 · 24 · 17 · 0, every
+one matching its own hit count, shortfall zero.** 200 collected, 190 unique, **189 after the scope filter**
+— the filter removes almost nothing because the sweep queries are already scoped; the 304 → 16/19 recall
+test of 20 November started from a much broader set.
+
+**Five items published:** POPPY persistent opioid use after day-case surgery (`10.1111/anae.70447`) · UK
+national ICU antimicrobial stewardship audit (`10.1111/anae.70460`) · ARDS transition-phase ventilation
+crossover (`10.1016/j.aicoj.2026.100200`, NCT04196738) · CRRT during ECMO (`10.1053/j.jvca.2026.10.051`) ·
+iloprost and NO biomarkers, COMBAT-SHINE sub-study (`10.1111/aas.70397`).
+
+**ARITHMETIC CHECKED RATHER THAN QUOTED, three findings worth the habit:**
+1. POPPY prints **11.8% with 95%CI 11.1-13.2%, not centred on the estimate.** Reported as printed, no reason
+   invented.
+2. The stewardship audit prints **1,592 twice**, as a patient count and an order count. **Both ratios hold**
+   (1,592/2,626 = 60.6%; 1,592/2,116 = 75.2%) and the non-compliance counts partition exactly
+   (253 + 69 + 202 = 524 = 2,116 − 1,592). **Coincidence, not a typo — and stated, because normally it is.**
+3. The ECMO cohort's **survival denominators do not close: 513 + 700 = 1,213, eleven short of 1,224, and the
+   CRRT arm is 513 where 519 are reported as receiving CRRT.** The post-decannulation denominators do
+   (230 + 446 = 676). Reported as printed.
+
+Also noted as printed: the iloprost record's **lay summary says "epithelial injury" where the entry
+criterion is endotheliopathy** — endothelial. Structured abstract consistent throughout.

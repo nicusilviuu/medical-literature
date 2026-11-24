@@ -7278,3 +7278,37 @@ OUT-OF-SAMPLE, Delphi false negative first; lagged window 6 Nov – 5 Dec due ~1
 AHA/ACC re-check 11 December; title-stem check against the remaining named gaps (**and the full-text route
 has now failed on six of them**); close the paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026);
 why the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
+
+---
+
+## 2026-11-24
+
+**STRUCK FROM THE QUEUE, as the fifth-day rule required:** Douala / Cameroon severe-trauma prognostic
+preprint (`10.21203/rs.3.rs-11130889/v1`), carried 18–23 November. **Set aside, not left to reappear.**
+
+**CLEARED FROM THE QUEUE, read and reported at its real strength rather than carried again:** glycaemic
+variability and postoperative delirium in elderly cardiac surgery (`10.1016/j.hrtlng.2026.103003`,
+Heart and Lung). 2,499 patients, 322 (12.9%) delirium, top tertile of coefficient of variation only,
+**OR 1.39 (95%CI 1.02-1.90, p = 0.035), middle tertile not significant.** Weak; no gradient; no slot.
+
+**NEW ACTIONS:**
+1. **Re-run `build_dedupe_log.py --resolve-pmc` after publishing any item linked by PMC id**, and commit the
+   refreshed `claude/pmc-doi-map.txt`. Without it the identifier fault returns for that item.
+2. **Record LEVELS for every index bucket, not only the ones that moved.** Today's `PMC` delta could not be
+   computed because yesterday's note kept the change and not the level.
+3. **Sweep the whole practice for instruments still outside the repository**, not only the ones in view.
+   The 17 November rule was applied to four helpers and the index script was left behind for six days.
+   **Check scratch for anything else being relied on daily.**
+4. **This clone is `--depth 1`.** Push with `git -c push.negotiate=true push`.
+
+**CORRECTION RECORDED:** an ad-hoc prefix scan first suggested **three** of yesterday's five items had
+recurred unmatched. Diffing the old and new `--check` outputs showed **one**. The wrong figure was caught
+before publication and the page carries the measured one.
+
+**STILL OUTSTANDING, unchanged:** November month audit at the start of December with the classifier fixes
+scored OUT-OF-SAMPLE, **Delphi false negative first**; lagged window 6 Nov – 5 Dec due ~10 December, do not
+defer; AHA/ACC re-check 11 December; title-stem check against the remaining named gaps (the full-text route
+has now failed on six of them); SCCM published-guidelines list; working ESPEN and IACTS URLs; the twelve
+revised/reaffirmed ASA statements of 20 October; ASA perioperative regional analgesia practice guideline not
+held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why the three JAMA trials
+indexed 19 October were missed; NCT07309393 expected ~2028.

@@ -4,6 +4,11 @@ Instruments the daily routines depend on. **They live here, not in a scratch
 directory**: the helpers below survived every container between 25 October and
 17 November by luck, and a tool needed on a dated action must not depend on that.
 
+**That rule was written on 17 November and applied only to the four helpers then
+in view.** The daily index reading was left in `/tmp/claude-0/idx.sh`, and on
+24 November the container was replaced and took it. **When a rule like this is
+written, sweep everything already running against it, not just what prompted it.**
+
 | File | What it is |
 | --- | --- |
 | `epmc.sh` | `epmc QUERY [resultType] [pageSize]` — one Europe PMC search with six retries and a body check; writes `/tmp/claude-0/epmc.json`. |
@@ -11,7 +16,8 @@ directory**: the helpers below survived every container between 25 October and
 | `verify_page.py` | `verify_page.py FILE [--date D] [--items N]` — the pre-commit source suite. Checks emphasis balance, nesting, table pipes, line length and the ordered-list-marker trap. Every check was earned by a defect; three were recalibrated against the published corpus on 18 November because the version carried in the notes was not the version that had been running. |
 | `scan_rendered.py` | `scan_rendered.py [paths]` — fetches every published page and counts rendered asterisks outside code spans. The other gate: the source suite cannot see rendering. First run, 19 November, found 21 live pages, 17 of which pass the source suite cleanly. |
 | `scope_filter.py` | `scope_filter.py IN OUT [--list brief\|guidance]` — narrows records to this archive's subject scope, keying on TITLE **or** JOURNAL. `--recall-test FILE` re-runs the 16 October test and asserts all five EACTS consensus documents survive; it aborts if the records carry no title, so the 16 November `idlist` error cannot recur silently. |
-| `build_dedupe_log.py` | `build_dedupe_log.py [OUT]` writes the log; `--check IN.json` reports which records are new. Harvests DOIs, PMC ids and PMIDs from the entries and from `claude/*.md`, excludes the backtick, and falls back to the exact title for a record with no identifier. **Replaces the ad-hoc DOI-only regex, which had a 147-record hole.** |
+| `build_dedupe_log.py` | `build_dedupe_log.py [OUT]` writes the log; `--check IN.json` reports which records are new; `--resolve-pmc` refreshes `claude/pmc-doi-map.txt`. Harvests DOIs, PMC ids and PMIDs from the entries and from `claude/*.md`, excludes the backtick, and falls back to a punctuation-stripped title for a record whose identifiers do not match. **Replaces the ad-hoc DOI-only regex, which had a 147-record hole**, and the title fallback was made punctuation-proof on 24 November after one comma hid a paper published the day before. |
+| `index_reading.sh` | `index_reading.sh LABEL [YYYY-MM-DD ...]` — the daily Europe PMC index reading: whole database, all eleven source buckets with their sum and residual, then one count per day, each stamped with the second it was read. **It lived in a scratch directory until the container was replaced on 24 November and took it. It was the one daily instrument the 17 November rule above was not applied to.** |
 | `epmc_fulltext.py` | Recovers an abstract from Europe PMC full text when the search index deposits none. `PMCID...`, `--resolve DOI...`, or `--json FILE` for a whole sweep. **Works only where the search record says `inEPMC=Y` — read that field first.** |
 | `classify_guidance.py` | Classifies records as PRIMARY guidance, SECONDARY (about guidance) or OTHER, with a reason for each. Validated 2026-11-17 at 95.5% agreement against the 15 November society sweep. |
 
