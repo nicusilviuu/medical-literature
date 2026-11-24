@@ -37,12 +37,18 @@ as well as from items blocks, because a page often names a paper only in a link.
 A normalised string must be at least MIN_TITLE characters before it is allowed
 to match, so that short labels cannot swallow unrelated records.
 
-The identifier fault itself is closed by --resolve-pmc, which asks Europe PMC
-for the DOI of every PMC id in the log and caches the pairs in
-claude/pmc-doi-map.txt, committed so it survives the container. harvest() reads
-that file, so a paper recorded on a page by PMC id alone is matched the day its
-DOI is indexed, whatever the page called it. Re-run it after publishing an item
-that is linked by PMC id.
+Two measures address the identifier fault, and only the second one works for
+the record that exposed it.
+
+--resolve-pmc asks Europe PMC in batches for the DOI of every PMC id in the log
+and caches the pairs in claude/pmc-doi-map.txt, committed so it survives the
+container; harvest() reads that file. It is PARTIAL: twelve of the log's forty
+PMC records carry no DOI and no PMID at all, so there is nothing to resolve.
+
+--alias DOI... is the check that works. A DOI: query returns every record
+Europe PMC holds for that work, so a paper reported earlier under a PMC id with
+no DOI of its own is still recognised. Run it on the day's shortlist before
+publishing.
 
 Usage:  build_dedupe_log.py [OUT]            # default /tmp/claude-0/known.txt
         build_dedupe_log.py --check IN.json  # report which records are new
@@ -115,60 +121,127 @@ def record_ids(r):
 
 REST = 'https://www.ebi.ac.uk/europepmc/webservices/rest/search'
 
+def _search(query, page_size):
+    """One Europe PMC search, six retries with a body check. Same contract as
+    claude/tools/epmc.sh, which has had it for weeks."""
+    for attempt in range(6):
+        cmd = ['curl', '-sS', '--max-time', '45', '-G', REST,
+               '--data-urlencode', 'query=' + query,
+               '--data-urlencode', 'format=json',
+               '--data-urlencode', 'resultType=lite',
+               '--data-urlencode', 'pageSize=' + str(page_size)]
+        try:
+            body = subprocess.run(cmd, capture_output=True, text=True,
+                                  timeout=60).stdout
+            if body.strip():
+                d = json.loads(body)
+                if 'hitCount' in d:
+                    return d['resultList']['result'], ''
+            why = 'empty body' if not body.strip() else 'body has no hitCount'
+        except Exception as exc:
+            why = str(exc)[:60]
+        time.sleep(15)
+    return None, why
+
+# PMC ids per query. The first version of resolve_pmc asked for ONE id per
+# request, 40 requests in a row, and the endpoint began returning empty bodies:
+# 29 of 40 failed. Adding retries made it correct and far too slow, because a
+# persistently refused id costs six timeouts and six sleeps. Batching fixed
+# that: the whole log is two or three requests, which the endpoint answers.
+#
+# AND THEN THE PREMISE TURNED OUT TO BE WRONG. PMC13788783, the record this
+# whole map was built for, resolves to NO DOI, because Europe PMC holds that
+# paper as TWO SEPARATE RECORDS: a PMC record carrying only a PMC id (no doi,
+# no pmid at all) and a MEDLINE record carrying the DOI and no pmcid. Twelve of
+# the log's forty PMC ids are like that. So no identifier bridges the two
+# records and the map CANNOT close the identifier fault for the records that
+# motivated it. It is still worth keeping for the 18 PMC records that do carry
+# a DOI, but it is a partial measure, not the fix.
+#
+# The bridge exists at the SEARCH level rather than in the record fields: a
+# DOI: query returns BOTH records, so Europe PMC knows they are one work.
+# --alias uses that, and it is the actual check. See aliases() below.
+BATCH = 20
+
+def aliases(dois):
+    """For each DOI, print every Europe PMC record id for that work and say
+    whether any of them is already in the dedupe log.
+
+    This is the check that actually catches the 24 November failure. A DOI:
+    query returns every record Europe PMC holds for the work, including a PMC
+    record that carries no DOI of its own, so a paper reported earlier under a
+    PMC id is recognised here even though no identifier field links the two.
+
+    It costs one request per DOI, so run it on the day's SHORTLIST as a
+    pre-publication gate, not on the whole sweep.
+    """
+    ids, _ = harvest()
+    bad = 0
+    for doi in dois:
+        recs, why = _search('DOI:"%s"' % doi.lower().rstrip('.,);:'), 25)
+        if recs is None:
+            print(f'{doi}: LOOKUP FAILED ({why}) — do not treat as unreported')
+            bad += 1
+            continue
+        found = []
+        for r in recs:
+            for key in (r.get('id'), r.get('pmcid'), r.get('doi')):
+                if not key:
+                    continue
+                k = key.upper() if key.upper().startswith('PMC') else key.lower()
+                if k in ids or ('PMID' + str(key)) in ids:
+                    found.append(key)
+        all_ids = [r.get('id') for r in recs]
+        if found:
+            print(f'{doi}: ALREADY REPORTED as {sorted(set(found))} '
+                  f'(records for this work: {all_ids})')
+            bad += 1
+        else:
+            print(f'{doi}: not in the log (records for this work: {all_ids})')
+    return 1 if bad else 0
+
+
 def resolve_pmc():
-    """Ask Europe PMC for the DOI of every PMC id already in the log."""
+    """Resolve every PMC id in the log to its DOI, in batched queries.
+
+    PARTIAL BY NATURE — see the note on BATCH above.
+    """
     ids, _ = harvest()
     pmcids = sorted(i for i in ids if i.startswith('PMC'))
-    pairs, missing, failed = {}, [], []
-    for pmcid in pmcids:
-        # SIX RETRIES AND A BODY CHECK, the same contract as claude/tools/epmc.sh.
-        # The first version of this function used a bare curl, and on its first
-        # real run 29 of 40 lookups came back with an EMPTY BODY -- including
-        # PMC13788783, the one record the map exists to resolve. The repository
-        # already had the hardened helper; a new network call was written
-        # without it. Any call to this endpoint needs retries.
-        recs, why = None, 'no attempt'
-        for attempt in range(6):
-            cmd = ['curl', '-sS', '--max-time', '45', '-G', REST,
-                   '--data-urlencode', 'query=PMCID:' + pmcid,
-                   '--data-urlencode', 'format=json',
-                   '--data-urlencode', 'resultType=lite']
-            try:
-                body = subprocess.run(cmd, capture_output=True, text=True,
-                                      timeout=60).stdout
-                if not body.strip():
-                    why = 'empty body'
-                else:
-                    recs = json.loads(body)['resultList']['result']
-                    break
-            except Exception as exc:
-                why = str(exc)[:60]
-            time.sleep(2 * (attempt + 1))
+    pairs, failed = {}, []
+    for i in range(0, len(pmcids), BATCH):
+        chunk = pmcids[i:i + BATCH]
+        query = ' OR '.join('PMCID:' + p for p in chunk)
+        recs, why = _search(query, BATCH * 2)
         if recs is None:
-            failed.append((pmcid, why))
+            failed.append((f'batch {i // BATCH + 1}', why))
             continue
-        doi = (recs[0].get('doi') if recs else None)
-        if doi:
-            pairs[pmcid] = doi.lower()
-        else:
-            missing.append(pmcid)
+        for r in recs:
+            pmcid = (r.get('pmcid') or '').upper()
+            if pmcid and r.get('doi'):
+                pairs[pmcid] = r['doi'].lower()
+    missing = [p for p in pmcids if p not in pairs]
     with open(PMC_DOI_MAP, 'w', encoding='utf-8') as fh:
         fh.write('# PMC id -> DOI, for the dedupe log. Built by\n'
                  '# build_dedupe_log.py --resolve-pmc. See that file for why.\n')
         for pmcid in sorted(pairs):
             fh.write(f'{pmcid} {pairs[pmcid]}\n')
-    print(f"{len(pmcids)} PMC ids in the log: {len(pairs)} resolved to a DOI, "
-          f"{len(missing)} carry no DOI, {len(failed)} failed")
+    print(f"{len(pmcids)} PMC ids in the log, "
+          f"{(len(pmcids) + BATCH - 1) // BATCH} batched queries: "
+          f"{len(pairs)} resolved to a DOI, {len(missing)} unresolved, "
+          f"{len(failed)} batches failed")
     for pmcid in missing:
-        print('  no DOI in the index:', pmcid)
-    for pmcid, why in failed:
-        print('  FAILED:', pmcid, why)
-    return 0 if not failed else 1
+        print('  unresolved:', pmcid)
+    for label, why in failed:
+        print('  FAILED:', label, why)
+    return 1 if failed else 0
 
 def main():
     args = sys.argv[1:]
     if args and args[0] == '--resolve-pmc':
         return resolve_pmc()
+    if args and args[0] == '--alias':
+        return aliases(args[1:])
     ids, titles = harvest()
     if args and args[0] == '--check':
         recs = json.load(open(args[1], encoding='utf-8'))

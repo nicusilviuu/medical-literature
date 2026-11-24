@@ -12272,3 +12272,37 @@ through a commentary on it is a gap.
 
 **scan_rendered.py:** 176 pages, 2 to look at — `brief/2026-09-26` HTTP 503 (transient) and
 `guidelines/2026-11-18` with its 2 deliberately escaped asterisks. **Today's brief page clean.**
+
+### 2026-11-24, LATE — THE IDENTIFIER FIX WAS PUBLISHED AS A FIX AND IS NOT ONE
+
+**CORRECTION 16.** The brief as first published said both dedupe-log faults were fixed and that
+`--resolve-pmc` closed the identifier one. **Checking it broke the claim.**
+
+`PMCID:PMC13788783` returns a record with **doi = None and pmid = None.** Europe PMC holds this paper as
+**TWO SEPARATE RECORDS:**
+- `PMC13788783` — source PMC, pmcid only, **no doi, no pmid**
+- `43068119` — source MED, pmid and `10.1016/j.lanwpc.2026.102027`, **no pmcid**
+
+**NO IDENTIFIER FIELD LINKS THEM.** Twelve of the log's forty PMC ids are of this kind. **So the map cannot
+close the fault for the record that motivated it.** It resolves the other 18 and is kept as a partial
+measure, with that stated in the code.
+
+**WHAT DOES WORK, found in the same check: a `DOI:` query returns BOTH records.** The bridge exists at the
+SEARCH level, not in the record fields. Implemented as **`build_dedupe_log.py --alias DOI...`** — one
+request per DOI, for the day's SHORTLIST, not the whole sweep. Verified: it reports the Hong Kong DOI as
+already reported **by way of `PMC13788783`**, listing both records.
+
+**A SECOND NEAR-MISS IN THE SAME TITLE, not noticed this morning:** Europe PMC writes **"Machine
+learning–based" with an EN DASH** where the page has a hyphen. The punctuation-stripping normalisation
+absorbs it, but the title route was two characters from failing twice over, in two different ways.
+
+**THE LESSON, and it is the sharper one of the day:** the brief had already been published, pushed and
+mirrored before this was found. **The claim was written from the design of the fix rather than from running
+it against the case it was built for.** The run that would have falsified it — `--resolve-pmc` on that one
+id — was started and then reported as "still in flight" instead of being waited for and read. **Do not
+publish a fix as closed until it has been run against the specific record that exposed the fault.**
+
+**Also corrected: the resolver's own shape.** The one-id-per-request version was replaced by batched
+queries (`BATCH = 20`, two or three requests for the whole log) after the retry version proved correct and
+unusably slow. The empty bodies were a consequence of forty rapid sequential requests, **not** of the
+endpoint being down — a single probe answered immediately.

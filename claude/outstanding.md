@@ -7336,3 +7336,14 @@ indexed 19 October were missed; NCT07309393 expected ~2028.
 (`10.1016/j.accpm.2026.101867`, 23 Jun 2026) · ESICM circulatory shock and haemodynamic monitoring
 (Intensive Care Med Nov 2025, 50 statements) · SCCM heat stroke (`10.1097/ccm.0000000000006551`,
 21 Feb 2025) · SCCM/ASHP stress-related GI bleeding (`10.1097/ccm.0000000000006330`, 15 Jul 2024).
+
+**NEW ACTION, highest priority of the day:** **run `build_dedupe_log.py --alias` on the day's shortlist
+before writing any entry.** It is the only check that catches a paper held by Europe PMC as two unlinked
+records. Add it to the brief and watch routines as a pre-publication gate.
+
+**RULE ADDED:** **do not publish a fix as closed until it has been run against the specific record that
+exposed the fault.** The 24 November brief announced the identifier fix while the run that would have
+falsified it was still in flight; the claim was corrected the same day.
+
+**`claude/pmc-doi-map.txt` is a PARTIAL measure, not the identifier fix.** 18 of 40 PMC ids resolve; the
+other 12 carry no DOI and no PMID in their PMC record. Do not describe it as closing the fault.
