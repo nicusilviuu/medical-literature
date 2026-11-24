@@ -12197,3 +12197,78 @@ iloprost and NO biomarkers, COMBAT-SHINE sub-study (`10.1111/aas.70397`).
 
 Also noted as printed: the iloprost record's **lay summary says "epithelial injury" where the entry
 criterion is endotheliopathy** — endothelial. Structured abstract consistent throughout.
+
+### 2026-11-24 GUIDELINES WATCH — A TRACKED SOCIETY'S JOURNAL WAS NOT ON THE LIST
+
+**pubType route:** Practice Guideline / Guideline / Consensus Development Conference over
+`FIRST_IDATE:[2026-11-15 TO 2026-11-24]` → **32 records.** Scope filter as it stood this morning: **32 → 1**,
+and the dedupe log correctly recognised that one (`10.1016/j.athoracsur.2026.10.056`, cardiac-surgery
+delirium consensus) as reported on 20 November. **On the tools alone, an empty day.**
+
+**READING THE 31 DISCARDS BY EYE FOUND A REAL MISS.** `10.1016/j.healun.2026.09.024` — ISHLT second
+Transplant Nursing Consensus Conference (Boston, 26 Apr 2025), J Heart Lung Transplant, first published
+**5 November 2026**, pubType `Practice Guideline`. **ISHLT has been tracked since 13 September.**
+
+**BOTH ROUTES OF THE SCOPE FILTER FAILED, FOR DIFFERENT REASONS.**
+- **Journal route:** matched against the journal abbreviation, and `JOURNALS_GUIDANCE` did not contain
+  `j heart lung transplant`.
+- **Title route:** the title says "Thoracic Transplantation", and `TERMS` has `thoracic surgery`, not
+  `thoracic transplantation`.
+
+**A tracked society with its journal off the list and its vocabulary outside TERMS is invisible to the whole
+filter — and the 20 November recall test could not catch it, because that test asserts the five EACTS
+documents survive and EACTS publishes in a journal that IS on the list. A recall test only guards the
+journals it names.**
+
+**ADDED to `JOURNALS_GUIDANCE`:** `j heart lung transplant` · `interact cardiovasc thorac surg` ·
+`eur heart j` · `ann intensive care`. Re-run: **32 → 3, two of them new.**
+
+### THE RECALL TEST'S FIXTURE WAS ALSO IN SCRATCH — SECOND INSTANCE TODAY
+
+`--recall-test` is in the repository; **its input file was in `/tmp/claude-0/` and went with the container.**
+So the guard on the instrument being changed could not be run at the moment it was needed. **Same failure
+class as the lost `idx.sh`, found twice in one run.**
+
+**Now `claude/fixtures/recall-eacts.json`, committed, and `--recall-test` defaults to it.** Patched filter
+passes **5/5 EACTS on both journal lists.** **CAVEAT RECORDED IN THE CODE: the fixture is a
+RECONSTRUCTION** — 37 records (five EACTS + today's 32 guidance decoys) against the original 304. **The 5/5
+is meaningful; the 37 → 8 ratio is NOT comparable to 304 → 16/19 and must not be quoted as if it were.**
+
+### MY OWN RESOLVER FAULT, CAUGHT ON ITS FIRST REAL RUN
+
+`--resolve-pmc` was written with a **bare curl** and no retries. First run: **29 of 40 lookups returned an
+EMPTY BODY**, including **`PMC13788783` — the one record the map exists to resolve.** `claude/tools/epmc.sh`
+has had six retries and a body check for weeks. **A new network call was written without the contract the
+repository already had.** Patched to six retries with a body check and backoff, and the reason is in the
+code. **FIFTH tool-level error of the shape "wrote a new call without the hardening the old one has".**
+
+### SOCIETY ROUTE
+
+**SCCM published-guidelines list READ AT LAST** (open action from 23 Nov, now closed). HTTP 200,
+215,448 bytes. **Three in-scope documents on it are absent from this archive, all pre-coverage:**
+- **Pediatric and Neonatal ICU Patients at the End of Life 2026** — SCCM lists a 2026 label; **a Europe PMC
+  title search did not return it, so no retrievable date. NAMED AND UNREAD.**
+- **Heat Stroke** — `10.1097/ccm.0000000000006551`, Crit Care Med, 21 Feb 2025. Backlog.
+- **SCCM/ASHP stress-related GI bleeding** — `10.1097/ccm.0000000000006330`, Crit Care Med, 15 Jul 2024,
+  executive summaries 2024–2025. Backlog.
+
+**SFAR/SFA perioperative immediate hypersensitivity reactions 2025** — `10.1016/j.accpm.2026.101867`,
+`Practice Guideline`, 23 June 2026, 23 experts, GRADE, four fields, 24-year literature search, GRADE-grid
+voting. **Not held. Pre-coverage (archive starts 17 Aug 2026 for briefs, 28 Aug for guidelines).** Its two
+siblings in the same series ARE held: `101879` liver resection, `101892` life-sustaining treatment with
+SOFMER. **That is what made the gap visible — a series where two of three are present.**
+
+**ESICM circulatory shock and haemodynamic monitoring** — Intensive Care Med Nov 2025, 51(11):1971–2012,
+reported as 50 statements. **The phrase "circulatory shock" returns NOTHING anywhere in this archive.**
+Flagship guideline from a tracked society, a year pre-coverage. Backlog.
+
+**ESICM/ESAIC: nothing new in the trailing window.** Items already held: ESAIC mitigation strategies,
+human-centred partnership statement, quantitative lung ultrasound consensus, very old patients.
+
+**SECONDARY, recorded as a pointer not an item:** `10.1016/j.healun.2026.08.002` (issue-dated 1 Dec 2026,
+0 chars) is "A Perspective on an ISHLT Expert Consensus Statement" on engagement of social support systems.
+**It names an underlying ISHLT consensus statement this archive does not hold.** A document known only
+through a commentary on it is a gap.
+
+**scan_rendered.py:** 176 pages, 2 to look at — `brief/2026-09-26` HTTP 503 (transient) and
+`guidelines/2026-11-18` with its 2 deliberately escaped asterisks. **Today's brief page clean.**

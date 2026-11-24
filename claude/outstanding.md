@@ -7312,3 +7312,27 @@ has now failed on six of them); SCCM published-guidelines list; working ESPEN an
 revised/reaffirmed ASA statements of 20 October; ASA perioperative regional analgesia practice guideline not
 held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why the three JAMA trials
 indexed 19 October were missed; NCT07309393 expected ~2028.
+
+### 2026-11-24, guidelines watch
+
+**CLOSED:** the SCCM published-guidelines list is read.
+
+**NEW ACTIONS:**
+1. **Find and read the underlying ISHLT Expert Consensus Statement on engagement of social support systems**
+   in advanced heart and lung surgical therapies. Known only through `10.1016/j.healun.2026.08.002`, a
+   perspective on it. **A document known only through a commentary is a gap.**
+2. **Date and read SCCM's "Pediatric and Neonatal Intensive Care Patients at the End of Life 2026."**
+   Listed by the society with a 2026 label; a Europe PMC title search does not return it.
+3. **Audit `TERMS` and `JOURNALS_*` against the full tracked-society list.** Today's miss was a tracked
+   society whose journal was absent from the list and whose vocabulary was absent from TERMS. **For every
+   tracked society, check that at least one journal it publishes guidance in is on the list.** The recall
+   test cannot find this class of hole: it only guards the journals it names.
+4. **Extend the recall test beyond EACTS**, adding the ISHLT transplant-nursing statement as a second known
+   true positive, so the journal-list hole closed today cannot silently reopen.
+5. **Any new network call must carry the retry contract of `claude/tools/epmc.sh`** — six retries and a body
+   check. `--resolve-pmc` was written without it and 29 of 40 lookups came back empty on its first run.
+
+**PRE-COVERAGE BACKLOG ADDED (four):** SFAR/SFA perioperative immediate hypersensitivity reactions
+(`10.1016/j.accpm.2026.101867`, 23 Jun 2026) · ESICM circulatory shock and haemodynamic monitoring
+(Intensive Care Med Nov 2025, 50 statements) · SCCM heat stroke (`10.1097/ccm.0000000000006551`,
+21 Feb 2025) · SCCM/ASHP stress-related GI bleeding (`10.1097/ccm.0000000000006330`, 15 Jul 2024).

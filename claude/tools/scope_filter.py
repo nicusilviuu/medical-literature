@@ -42,11 +42,19 @@ TERMS = [
     "ecmo", "nerve block",
 ]
 
+# Matched against the record's journal abbreviation, so these are written as
+# abbreviations. 24 November: "j heart lung transplant" was missing, and the
+# ISHLT transplant-nursing consensus statement of 5 November was dropped
+# because of it — ISHLT has been a tracked society since 13 September, and
+# nothing in that document's title carries a TERMS word ("thoracic
+# transplantation" is not "thoracic surgery"). A tracked society whose journal
+# is absent from this list is invisible to the journal route entirely.
 JOURNALS_GUIDANCE = [
     "anaesthesia", "anesthesiology", "crit care med", "intensive care med",
     "br j anaesth", "anaesth crit care pain med", "eur j cardiothorac surg",
     "ann thorac surg", "j thorac cardiovasc surg", "reg anesth pain med",
-    "resuscitation", "j crit care", "crit care",
+    "resuscitation", "j crit care", "crit care", "j heart lung transplant",
+    "interact cardiovasc thorac surg", "eur heart j", "ann intensive care",
 ]
 
 JOURNALS_BRIEF = JOURNALS_GUIDANCE + [
@@ -79,6 +87,15 @@ def load(path):
 # The five EACTS October consensus documents: the known true positives.
 EACTS_FIVE = ["ezag182", "ezag187", "ezag221", "ezag226", "ivag217"]
 
+# The recall test needs an input file, and until 24 November that file lived in
+# a scratch directory and was lost when the container was replaced -- so the
+# test was in the repository and its fixture was not. claude/fixtures is the
+# committed default: the five EACTS documents plus decoys. It is a
+# RECONSTRUCTION. The original input held 304 records and this holds far fewer,
+# so the pass/fail on the five is meaningful and the ratio is not comparable to
+# the 304 -> 16/19 figure of 20 November.
+DEFAULT_FIXTURE = "claude/fixtures/recall-eacts.json"
+
 def main():
     args = sys.argv[1:]
     journals = JOURNALS_BRIEF
@@ -87,7 +104,7 @@ def main():
         journals = JOURNALS_GUIDANCE if args[i + 1] == "guidance" else JOURNALS_BRIEF
         del args[i:i + 2]
     if args and args[0] == "--recall-test":
-        recs = load(args[1])
+        recs = load(args[1] if len(args) > 1 else DEFAULT_FIXTURE)
         if recs and not (recs[0].get("title") or ""):
             sys.exit("recall test aborted: records carry no title — wrong resultType "
                      "(use lite or core, never idlist)")

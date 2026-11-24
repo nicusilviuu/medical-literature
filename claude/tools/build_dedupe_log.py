@@ -48,7 +48,7 @@ Usage:  build_dedupe_log.py [OUT]            # default /tmp/claude-0/known.txt
         build_dedupe_log.py --check IN.json  # report which records are new
         build_dedupe_log.py --resolve-pmc    # refresh claude/pmc-doi-map.txt
 """
-import glob, json, re, subprocess, sys
+import glob, json, re, subprocess, sys, time
 
 # The backtick MUST be excluded. This archive writes DOIs inside code spans in
 # its notes and in outstanding.md, and the ad-hoc regex used until 2026-11-22
@@ -121,15 +121,31 @@ def resolve_pmc():
     pmcids = sorted(i for i in ids if i.startswith('PMC'))
     pairs, missing, failed = {}, [], []
     for pmcid in pmcids:
-        cmd = ['curl', '-sS', '-G', REST, '--data-urlencode',
-               'query=PMCID:' + pmcid, '--data-urlencode', 'format=json',
-               '--data-urlencode', 'resultType=lite']
-        try:
-            body = subprocess.run(cmd, capture_output=True, text=True,
-                                  timeout=40).stdout
-            recs = json.loads(body)['resultList']['result']
-        except Exception as exc:
-            failed.append((pmcid, str(exc)[:60]))
+        # SIX RETRIES AND A BODY CHECK, the same contract as claude/tools/epmc.sh.
+        # The first version of this function used a bare curl, and on its first
+        # real run 29 of 40 lookups came back with an EMPTY BODY -- including
+        # PMC13788783, the one record the map exists to resolve. The repository
+        # already had the hardened helper; a new network call was written
+        # without it. Any call to this endpoint needs retries.
+        recs, why = None, 'no attempt'
+        for attempt in range(6):
+            cmd = ['curl', '-sS', '--max-time', '45', '-G', REST,
+                   '--data-urlencode', 'query=PMCID:' + pmcid,
+                   '--data-urlencode', 'format=json',
+                   '--data-urlencode', 'resultType=lite']
+            try:
+                body = subprocess.run(cmd, capture_output=True, text=True,
+                                      timeout=60).stdout
+                if not body.strip():
+                    why = 'empty body'
+                else:
+                    recs = json.loads(body)['resultList']['result']
+                    break
+            except Exception as exc:
+                why = str(exc)[:60]
+            time.sleep(2 * (attempt + 1))
+        if recs is None:
+            failed.append((pmcid, why))
             continue
         doi = (recs[0].get('doi') if recs else None)
         if doi:
