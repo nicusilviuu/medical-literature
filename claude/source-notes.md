@@ -12306,3 +12306,151 @@ publish a fix as closed until it has been run against the specific record that e
 queries (`BATCH = 20`, two or three requests for the whole log) after the retry version proved correct and
 unusably slow. The empty bodies were a consequence of forty rapid sequential requests, **not** of the
 endpoint being down — a single probe answered immediately.
+
+---
+
+## 2026-11-25 — THREE SEPSIS TRIALS, ALL NULL, AND A META-ANALYSIS THAT PRECEDED THEM BY EIGHT DAYS
+
+**SWEEP:** `claude/tools/sweep_brief.sh` (moved into the repo today) over `FIRST_IDATE` 24 and 25 November:
+**159 · 53 · 144 · 27, every one matching its own hit count, SHORTFALL 0.** 383 collected, 357 unique,
+**356 after the scope filter.** **356 of 356 read as not previously reported, and that was CHECKED** —
+none of yesterday's five items, nor `10.1016/j.lanwpc.2026.102027`, nor `10.1016/j.hrtlng.2026.103003`
+appears in today's window. The figure is a property of the window, not another miss.
+
+**`--alias` RAN IN PRODUCTION FOR THE FIRST TIME** over all five shortlisted DOIs. Each resolves to a single
+Europe PMC record, none in the log. **A clean pass and a weak test: the check exists for a work with two
+records and today none of the five has one.**
+
+### THE THREE TRIALS
+
+**PITSTOP-Fluids and PITSTOP-Antibiotics ARE ONE TRIAL** — one 2x2 factorial under `NCT03068741`, Ontario,
+enrolled 23 Mar 2020 to 20 Aug 2025, reported as two JAMA papers each pointing at the other.
+- Fluids: 1,686 randomized / 1,669 eligible / **1,646 analysed**; **149/830 (18.0%) vs 149/816 (18.3%),
+  RR 0.98 (0.80–1.20), P = .82**; all 17 secondary outcomes similar.
+- Antibiotics: 2,091 randomized / **2,048 eligible**; study drug at 37 vs 39 min from paramedic arrival,
+  hospital antibiotics at 247.3 vs 252.8 min — **the intervention moved the first dose ~3.5 h earlier**;
+  **182/1,009 (18.0%) vs 186/1,011 (18.4%), RR 0.97 (0.81–1.17), P = .77**; all 17 similar.
+
+**FISSH** (`10.1016/s2213-2600(26)00347-4`), Ringer's lactate vs 0.9% saline, 30 hospitals Canada + Saudi
+Arabia, blinded to clinicians, patients, caregivers, research staff and biostatisticians. Screened 2,457,
+randomized 1,113, 10 excluded after randomization → 557 / 546. Mean APACHE II 24.7, mean study fluid
+5,844 mL. **187/557 (33.6%) vs 180/546 (33.0%), RR 1.02 (0.86–1.21), p = 0.80.** **Enrolment 6 Oct 2018 to
+1 Feb 2026 — 7 y 4 mo across 30 sites for 1,113 patients, ~13/month.**
+
+**ARITHMETIC CHECKED RATHER THAN QUOTED — four items, all reported as printed:**
+1. **PITSTOP-Antibiotics' mortality denominators are 28 SHORT of its own analysis set:** 1,009 + 1,011 =
+   2,020 vs 2,048 stated eligible.
+2. Its hospital-antibiotic denominators are **795 and 792** against randomized groups of 1,026 and 1,022,
+   unexplained in the abstract.
+3. **PITSTOP-Fluids' volume difference, 910.1 mL (857.3–962.9), is NOT the difference of its quoted
+   medians** (1,500 − 500 = 1,000). Evidently a difference in means printed beside medians.
+4. **FISSH states "there were no serious adverse events" in a trial with 33% mortality.** Can only mean none
+   attributed; the sentence as written sits oddly.
+
+**The two PITSTOP papers report DIFFERENT randomized totals for the same factorial trial, 1,686 vs 2,091.**
+**Reconciliation inferred from the criteria, NOT claimed by either paper:** the fluids paper requires
+obtainable IV access, the antibiotics paper does not, so a patient without access could be randomized to
+IM ceftriaxone but not to a fluid strategy. **Labelled as inference on the page.**
+
+### THE FOURTH ITEM IS WHY IT IS A PATTERN
+
+**Sepsis trial landscape** (`10.1186/s13054-026-06393-z`, Crit Care, **17 November — EIGHT DAYS BEFORE the
+three trials**), PROSPERO CRD420261289221. **62 RCTs, 36,739 patients, six domains, NO benefit in any:**
+resuscitation 0.88 (0.77–1.01) · fluid quantity 0.96 (0.88–1.05) · fluid type 0.95 (0.89–1.01) ·
+vasopressors 0.97 (0.88–1.07) · corticosteroids 0.92 (0.84–**1.00**) · vitamin C 0.95 (0.83–1.09).
+
+**BOTH NEW FLUID RESULTS SIT INSIDE THE POOLED INTERVALS THAT ALREADY EXISTED:** quantity 0.96 vs
+PITSTOP-Fluids 0.98; type 0.95 vs FISSH 1.02.
+
+**THE SHARPEST POINT OF THE DAY:** the landscape paper's own explanation for two decades of nulls names
+**delayed intervention timing** as a recurrent constraint. **PITSTOP-Antibiotics set out to fix exactly that,
+moved the first dose 3.5 h earlier, and changed nothing.** The week's best explanation was tested in the
+same week and did not hold.
+
+**Corticosteroids at 0.92 with an upper bound of EXACTLY 1.00** — a domain called null resting on the
+boundary. Framing reported as the paper's, not endorsed.
+
+### FIFTH ITEM, AND AN INTERVAL THAT CANNOT BE RIGHT
+
+OHCA temperature-control quality (`10.1016/j.annemergmed.2026.09.026`), 4 centres, 2021–2024, 356 patients,
+GCS motor < 6, 33–36 °C by feedback device, quality score 0–6. 262 (73.6%) non-shockable, 225 (63.2%) no
+layperson CPR, median PCAC 4, mean lactate 9.1, mean pH 7.09. **Survival per point OR 1.32 (1.07–1.64)**,
+direction consistent across all four centres.
+
+**THE CPC RESULT IS PRINTED AS OR 1.28, 95% CI 0.05 to 1.55, AND THAT CANNOT BE RIGHT.** A lower bound of
+0.05 with a point estimate of 1.28 does not support the stated shift towards improved CPC. **Almost certainly
+1.05. Reproduced exactly as published; the conclusion is NOT endorsed on the strength of the interval as
+printed.** Authors' own limitation — confounding by site, injury severity or **perceived prognosis** — is the
+one that matters: a patient believed unsalvageable gets less exacting care.
+
+### HELD BACK, NOT MISSED
+
+**PEEP and the injured brain** (`10.1186/s13054-026-06294-1`, Crit Care), dose-response meta-analysis, 37
+studies of 4,471 records. Within-patient layer, 410 patients: **ICP +0.118 mmHg per cmH2O = +0.59 per 5,
+ENTIRELY BELOW the pre-anchored 2 mmHg MID**, linear across 3–21 cmH2O. **CPP −0.177 per cmH2O, under a
+fifth of its 5 mmHg MID.** Certainty low for both; PbtO2 not estimable. Evidence above 15 cmH2O is two
+contrasts from one study. **The useful form: not "PEEP is safe for the injured brain" but "its average
+effect is smaller than the smallest difference anyone agreed in advance would matter."**
+
+### INSTRUMENTS
+
+**THE BRIEF SWEEP WAS THE LAST DAILY TOOL IN SCRATCH.** Now `claude/tools/sweep_brief.sh`. It sat in
+`/tmp/claude-0/` through yesterday's container replacement and **survived only because the container did**;
+the index reading, in the same directory, did not.
+
+**ITS JOURNAL QUERY CARRIED THE SAME HOLE FIXED IN scope_filter.py YESTERDAY.** The filter learned
+`j heart lung transplant` after the ISHLT miss; **the sweep query that FEEDS the filter did not**, so the
+collection side could not see the journal the filter had just been taught to keep. **Fixing the consumer and
+leaving the producer is the same partial-sweep mistake the 17 November rule was written about.** Found by
+reading the script while moving it, not by any check. Three journals added.
+
+**RECALL TEST EXTENDED AND PROVED CAPABLE OF FAILING.** Six known true positives now (`MUST_KEEP`), the
+sixth being the ISHLT statement. **Removing `j heart lung transplant` gives 5/6, names the missing document
+and exits 1; restoring gives 6/6 and exits 0.** **The EACTS five could never have caught that class of hole
+— all five sit in journals already on the list. A recall test guards only the journals its fixtures name.**
+
+### INDEX READING — TWO PASSES, THE SECOND FROM MY OWN ERROR
+
+**I STOPPED A HEALTHY PASS ON A MISDIAGNOSIS.** Seeing the sweep and the index reading on the same output
+line I concluded they shared a scratch file and killed the index pass. **They do not collide:** `epmc_all`
+writes only `/tmp/claude-0/_pg.json` and `_meta`; `epmc` writes only `/tmp/claude-0/epmc.json`; `epmc_all`
+never calls `epmc`. **Nor was anything stalled** — the passes are stamped 14:05:03 and 14:06:52, under two
+minutes apart. **CHECK BEFORE ACTING, not after.** **Real hazard at its actual size: two concurrent
+`epmc_all` calls, or two concurrent `epmc` calls, WOULD corrupt each other. Today's pairing was one of each.**
+
+**The accident produced a real within-run comparison. Whole 49,313,223 @ 14:05:21 → 49,313,167 @ 14:07:05 =
+−56. `MED` IDENTICAL at 41,420,716. `PMC` 1,012,925 → 1,012,869 = −56. Decomposition exact: `PMC` accounts
+for the whole within-run change. FIFTH CONSECUTIVE DAY one source does.**
+
+**Complete pass: whole 49,313,167, eleven buckets summing to 49,313,167, RESIDUAL 0.** `MED` 41,420,716 ·
+`PMC` 1,012,869 · `PAT` 4,229,296 · `PPR` 1,297,124 · `AGR` 1,026,549 · `ETH` 176,799 · `CBA` 142,377 ·
+`CTX` 3,940 · `HIR` 2,868 · `NBK` 5 · `CIT` 624.
+
+**Day over day +8,275 in 23 h 57 min**, from 49,304,892 @ 14:08:09, comparing yesterday's single pass with
+today's complete one. **Today's FIRST pass gives +8,331, and the 56-record spread IS the within-run change —
+which is why the pass must be named.** **`MED` +10,371 while `PMC` −3,428**, so the whole grew by less than
+MEDLINE did. **Subtraction bound UNAVAILABLE: a source shed.** Gains: 92 · 571 · 2,314 · 5,592 · 7,493 ·
+**8,275** · 15,011, bursts 23k–26k.
+
+### NEW TO THIS ARCHIVE: PER-DAY COUNTS ARE NOT MONOTONIC
+
+**Three settled past days hold FEWER records today than yesterday:** 21 Nov 7,851 → 7,841 (**−10**) ·
+22 Nov 428 → 425 (**−3**) · 23 Nov 5,335 → 5,239 (**−96**). **109 records gone from three already-complete
+days.**
+
+**THE 20 NOVEMBER INVESTIGATION SPECIFICALLY REFUTED INDEX SHRINKAGE — with two stable re-reads MINUTES
+apart. These are a DAY apart, and the direction matches the 3,428 `PMC` shed.** **Consequence: a record
+present when a day is swept can be absent later. A SWEEP IS A SNAPSHOT, NOT AN INVENTORY.**
+
+### THE PARTIAL-DAY EFFECT NOW HAS TWO MEASUREMENTS THAT DISAGREE
+
+Yesterday's sweep of 24 November ran at ~14:06 UTC.
+- **Title route: 17 yesterday → 159 today = 10.7%.** Journal route: **0 → 53.**
+- **Whole-database count for that date: 1,615 yesterday → 7,010 today = 23.0%.**
+
+**Two independent measures of the same partial day differing by MORE THAN A FACTOR OF TWO, and the scoped
+subset was the LESS complete of the two at that hour.** No explanation offered. **Recorded as a
+disagreement to watch, not resolved.**
+
+**Per-day counts today:** 21 Nov 7,841 @ 14:12:40 · 22 Nov 425 @ 14:13:10 · 23 Nov 5,239 @ 14:13:26 ·
+24 Nov 7,010 @ 14:14:07 · 25 Nov 6,431 @ 14:14:08 (partial).

@@ -7347,3 +7347,40 @@ falsified it was still in flight; the claim was corrected the same day.
 
 **`claude/pmc-doi-map.txt` is a PARTIAL measure, not the identifier fix.** 18 of 40 PMC ids resolve; the
 other 12 carry no DOI and no PMID in their PMC record. Do not describe it as closing the fault.
+
+---
+
+## 2026-11-25
+
+**CLOSED:** the brief sweep is in the repository (`claude/tools/sweep_brief.sh`); the recall test is
+extended to six true positives and verified to fail when the journal list regresses.
+
+**NEW ACTIONS:**
+1. **WATCH PER-DAY INDEX SHRINKAGE.** Three settled days lost 109 records between 24 and 25 November
+   (21 Nov −10, 22 Nov −3, 23 Nov −96). **Record every past day's count every day and keep the series.**
+   If it continues, a record can vanish between sweeps and **a day swept once is not a day covered.**
+2. **RESOLVE THE PARTIAL-DAY DISAGREEMENT.** At ~14:06 the scoped title route had 10.7% of 24 November's
+   eventual records while the whole-database count for that date had 23.0%. **Two measures, factor of two
+   apart, scoped subset the less complete.** Measure again on the next two days before theorising.
+3. **AUDIT EVERY PRODUCER AGAINST EVERY CONSUMER.** Today's finding was the sweep query lacking a journal
+   the filter had just learned. **Whenever a term or journal list is changed anywhere, grep the repo for
+   every other list that must change with it.**
+4. **CHECK BEFORE ACTING.** A healthy index pass was killed on a misdiagnosed collision that one grep would
+   have refuted. The shared-scratch hazard is real only for two concurrent calls of the SAME helper.
+5. **`--alias` has not yet met a two-record work in production.** Today all five shortlisted DOIs had one
+   record each. **The gate is unproven on the case it was built for; keep running it.**
+
+**CARRIED FROM YESTERDAY, unchanged:** the underlying ISHLT social-support consensus statement; SCCM
+paediatric/neonatal end-of-life 2026 (named, undated, not in Europe PMC by title); audit of `TERMS` and
+`JOURNALS_*` against the full tracked-society list; every new network call to carry the `epmc.sh` retry
+contract; `claude/pmc-doi-map.txt` is PARTIAL (18 of 40) and must not be described as closing the
+identifier fault.
+
+**STILL OUTSTANDING:** November month audit at the start of December with the classifier fixes scored
+OUT-OF-SAMPLE, **Delphi false negative first**; lagged window 6 Nov – 5 Dec due ~10 December, do not defer;
+AHA/ACC re-check 11 December; title-stem check against the remaining named gaps; working ESPEN and IACTS
+URLs; the twelve revised/reaffirmed ASA statements of 20 October; ASA perioperative regional analgesia
+practice guideline not held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why
+the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028. **Pre-coverage backlog
+added 24 Nov (four): SFAR/SFA hypersensitivity, ESICM circulatory shock, SCCM heat stroke, SCCM/ASHP
+stress-related GI bleeding.**

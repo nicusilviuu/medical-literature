@@ -84,8 +84,14 @@ def load(path):
     d = json.load(open(path, encoding="utf-8"))
     return d if isinstance(d, list) else d.get("resultList", {}).get("result", [])
 
-# The five EACTS October consensus documents: the known true positives.
+# Known true positives the filter must keep. The five EACTS October consensus
+# documents were the original set; the ISHLT transplant-nursing statement was
+# added on 25 November because the 24 November miss proved the EACTS five
+# cannot detect a journal-list hole -- they are all in journals that were
+# already on the list, so the test passed while a tracked society was invisible.
+# A recall test only guards the journals its own fixtures name.
 EACTS_FIVE = ["ezag182", "ezag187", "ezag221", "ezag226", "ivag217"]
+MUST_KEEP = EACTS_FIVE + ["healun.2026.09.024"]
 
 # The recall test needs an input file, and until 24 November that file lived in
 # a scratch directory and was lost when the container was replaced -- so the
@@ -109,11 +115,14 @@ def main():
             sys.exit("recall test aborted: records carry no title — wrong resultType "
                      "(use lite or core, never idlist)")
         kept = [r for r in recs if in_scope(r, journals)]
-        found = {k for k in EACTS_FIVE
+        found = {k for k in MUST_KEEP
                  if any(k in (r.get("doi") or "") for r in kept)}
-        print(f"{len(recs)} -> {len(kept)}; EACTS documents retained "
-              f"{len(found)}/5: {sorted(found)}")
-        sys.exit(0 if len(found) == 5 else 1)
+        missing = sorted(set(MUST_KEEP) - found)
+        print(f"{len(recs)} -> {len(kept)}; known true positives retained "
+              f"{len(found)}/{len(MUST_KEEP)}")
+        if missing:
+            print("MISSING:", missing)
+        sys.exit(0 if not missing else 1)
     recs = load(args[0])
     kept = [r for r in recs if in_scope(r, journals)]
     json.dump(kept, open(args[1], "w", encoding="utf-8"))
