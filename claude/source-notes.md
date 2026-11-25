@@ -12539,3 +12539,41 @@ guideline. **SPILF produced nothing in any search.**
   infarction, `10.1093/ejcts/ezad415`, `Consensus Statement`, first published 1 February 2024** — two and a
   half years pre-coverage. **Backlog, not a miss.** Dated precisely because yesterday's corrections came
   from calling things gaps without checking.
+
+### 2026-11-25, LATE — THE PAGES DEPLOYMENT FAILED, AND THE ARCHIVE WAS A COMMIT BEHIND THE SITE
+
+**Commit `a774c8d` (the 25 November watch plus the two corrections to the 24 November page) pushed and
+verified, and THE SITE DID NOT UPDATE.** Diagnosis, in the order it was actually established:
+
+1. **`_config.yml` checked FIRST**, per the 19 November rule. The guidelines permalink is
+   `/guidelines/:path/`, and `guidelines/2026-11-24` returns 200 at exactly that form. **So the URL shape
+   was not the problem** — which is what it was on 19 November, when a singular/plural permalink error of
+   mine was misreported as a Pages outage after a 300-second poll.
+2. **Workflow run 202 for `a774c8d`: `build` job SUCCEEDED on every step; `deploy` job FAILED.** So the page
+   is well-formed and Jekyll rendered it. **Nothing in the content needed changing, and nothing was
+   changed** — editing a file whose build passed would be chasing a server-side error into the source.
+3. **The deploy log is explicit:** `Failed to create deployment (status: 502) ... Server error, is
+   githubstatus.com reporting a Pages outage? Please re-run the deployment at a later time.`
+4. **`rerun_failed_jobs` was issued. The re-run sat `queued` with `updated_at` frozen at 14:32:27 through
+   45 further poll attempts and never started.**
+5. **githubstatus.com was then checked rather than assumed: "All Systems Operational", ZERO open
+   incidents.** **So this is NOT attributable to a declared outage, and must not be called one.** The 502
+   is evidenced by the log; the cause is unknown.
+
+**WHAT THIS COST, stated plainly: for the duration, the published site was one commit behind the
+repository** — the 25 November entry was absent and **`guidelines/2026-11-24` still served the two false
+claims corrected in that commit.** A correction that is committed but not deployed is not a correction.
+
+**WHAT WAS NOT DONE:** no empty commit to kick the build, no edit to a page whose build had passed, and no
+open-ended polling beyond the point where it stopped being informative. **45 poll attempts against a
+deployment that had not yet been attempted was itself a waste**, and the lesson is to check the RUN STATUS
+before polling the URL, not after.
+
+**RULE ADDED: a 404 on a just-published page is diagnosed in this order — `_config.yml` permalink, then the
+workflow run's build job, then its deploy job, then githubstatus.com. Each step distinguishes a different
+cause, and the 19 November error was skipping straight to the last one.**
+
+**RULE ADDED: "pushed and verified" is NOT "published."** `git ls-remote` proves the commit landed; only a
+fetch of the rendered URL proves the page is live. **Both are now required before a URL is quoted, and a URL
+must never be quoted before the fetch returns 200** — which is exactly what happened in this session's
+reply, where the day's URL was given before the first poll came back 404.

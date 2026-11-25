@@ -7411,3 +7411,15 @@ infarction (`10.1093/ejcts/ezad415`, 1 Feb 2024).
 title); audit of `TERMS` and `JOURNALS_*` against the full tracked-society list; every new network call to
 carry the `epmc.sh` retry contract; `claude/pmc-doi-map.txt` is PARTIAL (18 of 40); watch per-day index
 shrinkage; resolve the partial-day disagreement; `--alias` still unproven on a two-record work.
+
+**OPEN AS OF 25 NOVEMBER, UNRESOLVED:** the Pages deployment for `a774c8d` failed with HTTP 502 and the
+re-run never left the queue, while githubstatus.com reported all systems operational and no incidents.
+**Verify that `guidelines/2026-11-25` returns 200 AND that `guidelines/2026-11-24` contains "CORRECTED
+25 November" before treating either as published.** A later successful deploy republishes the whole site,
+so tomorrow's commit should carry it; if it does not, the deployment is the fault and not the content,
+because build job 139276073375 passed every step.
+
+**RULES ADDED:**
+1. **Diagnose a 404 on a fresh page in this order:** `_config.yml` permalink → the run's `build` job → its
+   `deploy` job → githubstatus.com. Skipping to the last one is the 19 November error.
+2. **"Pushed and verified" is not "published."** Never quote a day's URL before a fetch of it returns 200.
