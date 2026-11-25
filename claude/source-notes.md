@@ -12454,3 +12454,88 @@ disagreement to watch, not resolved.**
 
 **Per-day counts today:** 21 Nov 7,841 @ 14:12:40 · 22 Nov 425 @ 14:13:10 · 23 Nov 5,239 @ 14:13:26 ·
 24 Nov 7,010 @ 14:14:07 · 25 Nov 6,431 @ 14:14:08 (partial).
+
+### 2026-11-25 GUIDELINES WATCH — ONE ITEM, AND TWO CORRECTIONS TO YESTERDAY'S OWN PAGE
+
+**pubType route** over `FIRST_IDATE:[2026-11-16 TO 2026-11-25]`: **30 records → scope filter kept 4 → 1 not
+previously reported.** The three already reported: `10.1016/j.athoracsur.2026.10.056` (20 Nov) and both
+ISHLT records from yesterday. **All 26 discards read by eye — now daily practice — and all 26 genuinely out
+of scope** (nine French AFU urology guidelines in one batch, plus nephrology, dermatology, endocrinology,
+neurology, gastroenterology, ACR appropriateness criteria, WHO malaria, immunisation schedules, two Chinese
+internal-medicine guidelines). **`--alias` passed the new item** (single record `43078310`, not in log).
+
+**ITEM:** `10.1016/j.redare.2026.502177`, SEDAR paediatric section, ratified by the SEDAR board,
+`Practice Guideline`, 24 Nov 2026. Narrative review plus consensus, **not GRADE**, and it does not claim to
+be. Specifies: **patient selection and centre-suitability criteria keyed to age, complexity AND ASA status
+together**; competence standards; minimum staffing and material resources; and separate recommendations for
+**theatre, remote-from-theatre locations, PACU and critical care units.** **NO numeric thresholds in the
+abstract (1,058 chars), so the architecture is reportable and the content is not.** As printed: the abstract
+is **bilingual by accident**, first sentence English then Spanish, beginning `En Spain persiste variabilidad`.
+
+### CORRECTION 17 — AN ABSENCE CLAIMED WIDER THAN THE SEARCH BEHIND IT
+
+Yesterday's entry: **"The phrase 'circulatory shock' returns nothing anywhere in this archive." FALSE.** It
+is in `_briefs/2026-08-24.md` line 91, an unrelated cohort of 1,010 ICU patients. **The search covered
+`_guidelines/` and `claude/*.md`, NOT `_briefs/`, while the sentence claimed the whole archive.**
+
+**Conclusion survives, re-verified across `_guidelines/` + `_briefs/` + `claude/*.md` with SEVEN strings:**
+`circulatory shock` · `choc circulatoire` · `haemodynamic monitoring` · `hemodynamic monitoring` ·
+`1971-2012` · `51(11)` · `shock and haemodynamic`. **The ESICM guideline is not held. Backlog stands; the
+sentence that justified it did not.** Page corrected in place.
+
+### CORRECTION 18 — THE ISHLT STATEMENT IS HELD, AND YESTERDAY INVENTED AN ACTION
+
+Yesterday said `10.1016/j.healun.2026.08.002` ("A Perspective on an ISHLT Expert Consensus Statement")
+**names an underlying statement "this archive does not hold"**, and made finding it the day's first action.
+
+**IT IS HELD.** `_guidelines/2026-10-10.md`, full item, **"Engagement of Social Support Systems in Patients
+Being Considered for and Following Advanced Heart and Lung Surgical Therapies: An ISHLT Expert Consensus
+Statement"**, 10 October 2026, abstract quoted, listing-criterion implication discussed. `_guidelines/
+2026-10-09.md` had tracked it as pending the day before.
+
+**THE DEDUPE LOG WAS RIGHT** — the perspective is a different work with a different DOI and genuinely was
+unreported. **The error was mine and it was an OMISSION: I searched for the commentary and never for its
+subject.** One grep of the statement's title would have settled it. **ACTION STRUCK, not carried.**
+
+**TWO RULES EARNED:**
+1. **An absence claim MUST NAME THE PATHS IT SEARCHED.** "Anywhere in this archive" requires the search to
+   have covered the whole archive, and the page must say which paths.
+2. **When a record is SECONDARY — perspective, commentary, editorial, correspondence about guidance —
+   SEARCH FOR THE UNDERLYING DOCUMENT BY ITS OWN TITLE before calling it a gap.** A commentary is evidence
+   a document EXISTS, not evidence it is missing here.
+
+**THREE DAYS RUNNING, THE SAME FAILURE MODE:** 24 Nov brief announced an identifier fix not run against the
+record it was built for; 24 Nov watch claimed an absence from a partial search AND inferred a second absence
+with no search at all. **In each case the work was sound and the CLAIM WAS WIDER THAN THE WORK.**
+
+### A NEAR-MISS OF THE SAME KIND, CAUGHT BEFORE PUBLICATION
+
+Checking the French societies, **`urgence vitale` returned nothing** — and the HAS-labelled SFAR guidance on
+intra-hospital vital emergencies (with SFMU and SRLF, posted 28 Sep 2026) is **INSIDE the coverage window**,
+so an absence would have been a real miss, not backlog. **It is held:** `_guidelines/2026-09-30.md`, four
+fields, GRADE grid, **36 recommendations** — filed under the acronym `UVIH` and the French expansion, not
+the phrase searched. **THE ARCHIVE'S OWN VOCABULARY IS A SEARCH HAZARD.** Third instance in one day, and the
+reason rule 2 above is phrased around titles rather than topics.
+
+### SCOPE DECISION NAMED RATHER THAN SILENTLY REPEATED
+
+`10.1159/000550985` **Paediatric Long-Term Home Respiratory Support: Recommendations of the Swiss Society of
+Paediatric Pulmonology** has been in the discard pile two days running. **EXCLUDED DELIBERATELY:** long-term
+home respiratory support is paediatric pulmonology; scope is anaesthesiology, intensive care, cardiology,
+cardiothoracic surgery. **Recorded so the decision is visible and reversible instead of re-made invisibly
+each morning.**
+
+### SOCIETIES, AND FOUR DOCUMENTS CHECKED BY NAME OVER THE WHOLE ARCHIVE
+
+**French: nothing new.** Searches surfaced only held or recorded documents — UVIH, adult airway management,
+SFAR/SOFMER life-sustaining treatment, the May 2026 SRLF and French Society of Cardiology cardiogenic shock
+guideline. **SPILF produced nothing in any search.**
+
+**ESC / EACTS / STS / ASA: nothing dated 24 or 25 November.** Four named documents checked across
+`_guidelines/` + `_briefs/` + `claude/*.md`:
+- **HELD:** EACTS/STS/AATS temporary mechanical circulatory support · EACTS Ross procedure statement ·
+  ESC 2026 cardiac rehabilitation · ESC 2026 CVD with CKD · 2025 ESC/EACTS valvular heart disease.
+- **NOT HELD, dated rather than assumed:** **EACTS expert consensus statement on perioperative myocardial
+  infarction, `10.1093/ejcts/ezad415`, `Consensus Statement`, first published 1 February 2024** — two and a
+  half years pre-coverage. **Backlog, not a miss.** Dated precisely because yesterday's corrections came
+  from calling things gaps without checking.

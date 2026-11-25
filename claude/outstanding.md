@@ -7384,3 +7384,30 @@ practice guideline not held (backlog 51); paediatric regional anaesthesia RFE ga
 the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028. **Pre-coverage backlog
 added 24 Nov (four): SFAR/SFA hypersensitivity, ESICM circulatory shock, SCCM heat stroke, SCCM/ASHP
 stress-related GI bleeding.**
+
+### 2026-11-25, guidelines watch
+
+**STRUCK, NOT CARRIED:** the hunt for the underlying ISHLT social-support consensus statement. **It is held**
+(`_guidelines/2026-10-10.md`, 10 October 2026). Yesterday's action was created without searching for it.
+
+**TWO RULES ADDED, both from corrections to yesterday's page:**
+1. **An absence claim must name the paths it searched.** A sentence saying "anywhere in this archive"
+   requires a search over `_guidelines/` AND `_briefs/` AND `claude/*.md`, and the page must say so.
+2. **For a SECONDARY record — perspective, commentary, editorial, correspondence about guidance — search
+   for the underlying document by its OWN TITLE before calling it a gap.** A commentary proves a document
+   exists; it proves nothing about this archive.
+
+**THE ARCHIVE'S OWN VOCABULARY IS A SEARCH HAZARD.** `urgence vitale` found nothing while the document is
+filed under `UVIH`; `circulatory shock` was searched over a subset. **Search by title and by acronym, and
+over all three paths.**
+
+**SCOPE DECISION, now explicit and reversible:** `10.1159/000550985` (Swiss paediatric long-term home
+respiratory support) is **excluded** — paediatric pulmonology, not intensive care. Do not re-litigate daily.
+
+**PRE-COVERAGE BACKLOG ADDED (one):** EACTS expert consensus statement on perioperative myocardial
+infarction (`10.1093/ejcts/ezad415`, 1 Feb 2024).
+
+**STANDING, unchanged:** SCCM paediatric/neonatal end-of-life 2026 (named, undated, not in Europe PMC by
+title); audit of `TERMS` and `JOURNALS_*` against the full tracked-society list; every new network call to
+carry the `epmc.sh` retry contract; `claude/pmc-doi-map.txt` is PARTIAL (18 of 40); watch per-day index
+shrinkage; resolve the partial-day disagreement; `--alias` still unproven on a two-record work.
