@@ -12577,3 +12577,133 @@ cause, and the 19 November error was skipping straight to the last one.**
 fetch of the rendered URL proves the page is live. **Both are now required before a URL is quoted, and a URL
 must never be quoted before the fetch returns 200** — which is exactly what happened in this session's
 reply, where the day's URL was given before the first poll came back 404.
+
+---
+
+## 2026-11-26 — A CLOSING PARENTHESIS, AND THE PARTIAL-DAY QUESTION ANSWERED
+
+**FIRST DAY BOTH DAILY INSTRUMENTS RAN FROM THE REPOSITORY** (`sweep_brief.sh`, `index_reading.sh`), not
+from scratch. Container survived.
+
+**SWEEP** over `FIRST_IDATE` 25 and 26 November: **155 · 26 · 418 · 55, all SHORTFALL 0.** 654 collected,
+625 unique, **623 after scope filter, 616 not previously reported.** Of the 7 deduped, **5 by identifier
+and 2 by title — and the title matches are what exposed the DOI fault below.**
+
+### THE DOI PATTERN EXCLUDED A CLOSING PARENTHESIS — LANCET DOIs WERE HARVESTED TRUNCATED
+
+**FISSH, published in YESTERDAY'S brief, came back today and was caught by TITLE, not identifier.**
+
+**Cause, verified before reporting.** `DOI = r'10\.\d{4,}/[^\s)"`\]<>]+'` excluded `)` so it would stop at a
+markdown link's closing bracket. **Lancet-family DOIs carry a parenthesised year.** So
+`10.1016/s2213-2600(26)00347-4` was harvested as `10.1016/s2213-2600(26` and **could never match.**
+**4 distinct Lancet-family DOIs already in the archive affected; today's sweep holds 4 more of that form**
+(`s0140-6736(26)01554-0`, `01605-3`, `01713-7`, `01766-6`).
+
+**FIX:** parens allowed inside the match; `clean_doi()` trims a trailing `)` **only when unbalanced**, which
+preserves the markdown behaviour the exclusion existed for. **Verified on 4 inputs:**
+`https://doi.org/10.1016/S2213-2600(26)00347-4"` → correct · `[x](https://doi.org/10.1234/abc)` → correct ·
+backticked plain DOI → unchanged · `see 10.1016/s0140-6736(26)01554-0.` → correct. **Log rebuilt; FISSH now
+matches by identifier.**
+
+**SAME SHAPE AS THE 22 NOVEMBER BACKTICK HOLE. Two of the three identifier faults in this archive have been
+punctuation excluded for the sake of the PAGE'S OWN SYNTAX.** **Rule: before excluding a character from an
+identifier pattern, check whether that character occurs inside real identifiers.**
+
+### `--alias` MET ITS FIRST TWO-RECORD WORK
+
+Yesterday's note: the gate was **unproven on the case it was built for.** Today
+`10.1186/s12877-026-08200-4` resolves to **TWO records: `43086653` and `PMC13798662`.** Neither in the log,
+so the paper is new — **but the mechanism has now run on a real two-record work.** Had that PMC record been
+reported earlier, the DOI alone would have missed it. **Open item closed.**
+
+### THE PARTIAL-DAY QUESTION IS ANSWERED: THERE IS NO STABLE FIGURE
+
+**25 Nov re-read: title route 144 (yesterday, ~14:05) → 155 (today, complete) = 92.9% COMPLETE at 14:05.**
+**24 Nov was 10.7% at 14:06.** **Two consecutive days, same clock hour, NINE-FOLD difference.**
+
+**So 10.7% is NOT a correction factor and yesterday's two disagreeing measures were not measuring a
+constant.** Whole-day count for 25 Nov: 6,431 @ 14:05 → 6,730 @ 14:09 = **95.6%**, against the title route's
+92.9% — **within three points.** **Yesterday the same two measures differed by a FACTOR OF TWO for 24 Nov.
+The disagreement was a property of one day.** **OPEN ITEM RESOLVED.**
+
+**Today's partial day: title route 418 @ 14:04, against 144 and 17 on the two previous days at the same
+hour — 24-FOLD RANGE.** Whole-day count **17,083**, against 6,431 and 1,615. **BATCH TIMING IS NO MORE A
+FUNCTION OF THE CLOCK THAN BATCH SIZE IS OF THE CALENDAR** — same conclusion as the 26 October calendar
+note, on a second axis. **Do not build a completeness correction.**
+
+### PER-DAY SHRINKAGE IS NOW A SERIES (second consecutive day)
+
+| Day | 24 Nov | 25 Nov | 26 Nov | Total |
+| --- | --- | --- | --- | --- |
+| 22 Nov | 428 | 425 | 408 | **−20** |
+| 23 Nov | 5,335 | 5,239 | 5,199 | **−136** |
+| 24 Nov | — | 7,010 | 7,007 | **−3** |
+
+**60 records gone today from three already-complete days, after 109 yesterday. Every settled day has moved
+ONLY DOWNWARD.** Direction matches `PMC` shedding on both days. **TWO OBSERVATIONS IS A SERIES, NOT A
+TREND** — the usable statement remains **a sweep is a snapshot, not an inventory.** **25 Nov is the
+exception that fits: +299, because it was still filling when first read.**
+
+**Journal route also shrank:** 25 Nov gave 27 yesterday, **26 today.** Shrinkage on a second route.
+
+### INDEX READING — DECOMPOSITION CLOSES EXACTLY FOR THE FIRST TIME THIS WEEK
+
+**Whole 49,321,209 @ 14:04:44; eleven buckets summing to 49,321,209; RESIDUAL 0.**
+`MED` 41,428,967 · `PMC` 1,011,353 · `PAT` 4,229,296 · `PPR` 1,298,430 · `AGR` 1,026,549 · `ETH` 176,799 ·
+`CBA` 142,377 · `CTX` 3,941 · `HIR` 2,868 · `NBK` 5 · `CIT` 624.
+
+**Day over day +8,042, and the decomposition CLOSES EXACTLY: `MED` +8,251 · `PMC` −1,516 · `PPR` +1,306 ·
+`CTX` +1 = +8,042.** Every other bucket identical. **A clean four-source account of a day's change.**
+
+**`PMC` shed on two consecutive days: −3,428 then −1,516. SUBTRACTION BOUND UNAVAILABLE FOR THE THIRD DAY
+RUNNING.** Gains: 92 · 571 · 2,314 · 5,592 · 7,493 · **8,042** · 8,275 · 15,011, bursts 23k–26k.
+
+**ONE PASS ONLY** — two-pass rule not met, no within-run comparison. (Yesterday's second pass existed only
+because of an aborted first one.)
+
+### ITEMS, with the arithmetic that was checked rather than quoted
+
+1. **TEACH** (`10.1001/jama.2026.25197`, JAMA, NCT05141396), cluster RCT, 12 Intermountain hospitals,
+   4,544 telehealth / 6,438 control / 1,789 baseline. Adherence **43.9% → 90.3% vs 77.6%**, OR 2.87,
+   absolute **+11.4% (8.8–14.3)**. **TESTED ONE-SIDED BY PRESPECIFICATION** ("1-sided 95% LCL 2.44") — name
+   it. **CONTROL ARM IMPROVED 33.7 POINTS ON AUDIT AND FEEDBACK ALONE**; telehealth adds 11.4 on top.
+   **VFD co-primary: MEDIAN 25 DAYS IN BOTH ARMS.** Difference is distributional (IQR 10–27 vs 1–27),
+   proportional-odds OR **1.21 (1.01–1.45), P = .04**, absolute **1.02 d (0.05–1.96)**. **A LOWER BOUND OF
+   0.05 DAYS IS 72 MINUTES.** Adherence strong, outcome marginal — **different claims.**
+2. **SOFA-2 vs SOFA-1** (`10.1186/s12877-026-08200-4`), MIMIC-IV 26,104 + eICU 53,697, ages 65–89 (>89
+   top-coded, in sensitivity analyses). **AUROC 0.749 vs 0.730, P < 0.001 — 0.019 ON 26,104 PATIENTS, where
+   significance is near-automatic.** **The trade points both ways: SOFA-2 higher sensitivity and NPV;
+   SOFA-1 higher specificity, PPV, positive LR.** **A more sensitive, less specific score is differently
+   calibrated, not improved.** **SOFA-2 seen twice this week from opposite directions** — Monday as the
+   criterion a study was built on, today as the instrument under test.
+3. **Sodium oxybate vs ketamine** (`10.1093/milmed/usag539`), 93 combat casualties, Role 2 Ukraine 2022–23,
+   45 vs 48. **TWA-MAP<65: 3.86 (3.05–4.71) vs 4.58 (3.61–5.69) mmHg, P = .004.** Noradrenaline use equal
+   (24.4% vs 29.2%) but exposure among users **7.05 vs 14.75 µg/kg, P < .001**. **Lactate clearance 15.88 ±
+   3.20% vs 0.71 ± 8.19%** — note the **dispersions**: SD 8.19 around a mean of 0.71 against 3.20 around
+   15.88. **THE AUTHORS' OWN CAVEAT GOVERNS THE PAPER: they cannot separate sodium oxybate from the ~10x
+   LOWER KETAMINE DOSE that came with it** (0.2 vs 1.5–2.0 mg/kg/h). **Not two hypnotics at equal
+   analgesia — two whole regimens.** Primary endpoint rests on **intermittent non-invasive BP**.
+4. **CEA antiplatelet** (`10.1016/j.jvs.2026.10.068`), VQI **195,619 patients**, 2003–2024, IPTW vs
+   aspirin-only. **Stroke/death lower with clopidogrel-only RR 0.81 (0.67–0.97) and DAPT RR 0.79
+   (0.72–0.87).** **Asymptomatic (no guideline exists): clopidogrel 0.69 (0.52–0.90), DAPT 0.73
+   (0.64–0.83). Symptomatic (guideline exists): DAPT only a trend, 0.88 (0.76–1.00).** **Bleeding higher
+   with DAPT, RR 1.49 (1.35–1.66).** **Benefit clearest where guidance is absent, weakest where it
+   exists.** Registry + propensity cannot establish that switching a patient would deliver it.
+5. **MIME** (`10.1186/s13054-026-06292-3`), 62 windows / 1,240 breaths / **18 patients**, within 48 h of
+   first transition to PSV. Pmus 7.5 (6.0–9.1) vs oesophageal 6.9 (5.9–8.9). **Breath-by-breath mean diff
+   0.4, LoA −3.4 to +4.2; averaged, 0.4 with LoA −2.2 to +3.0.** **THE LIMITS ARE THE RESULT, NOT THE
+   BIAS** — an 8 cmH2O band on a quantity ranging ~5–15. AUROC **0.83 high effort, 0.88 low**; vs ΔPocc,
+   **similar for low, ΔPocc better for high.**
+
+### ALSO SWEPT, NAMED NOT GIVEN A SLOT
+
+**Burns/landiolol** (`10.3390/ebj7040055`), 31 patients, mean TBSA 40.2%, ICU mortality 35.5%. **EXPOSURE
+PERFECTLY SEPARATED BY HEART RATE: every treated patient 111–140 bpm, every untreated <95.** All outcomes
+null, multiplicity-adjusted p ≥ 0.97. **With ZERO overlap in the indication a null is the only thing the
+design can produce.** Self-described preliminary and exploratory — accurate.
+
+**Spine resident absence** (`10.1016/j.spinee.2026.11.023`), 2024 South Korean walkout, 258 operations by
+one surgeon, 129 vs 129. **All null after adjustment** (op time +6.3 min, EBL +27.0 mL, stay +1.6 d,
+composite OR 0.99), no sensitivity analysis dissented. **BUT ASA 3 was 46.5% vs 25.6% and the surgeon's
+volume FELL 30%.** **A null on a cohort that got healthier and smaller is weaker than a null on an
+unchanged one.**

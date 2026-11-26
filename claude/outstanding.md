@@ -7423,3 +7423,38 @@ because build job 139276073375 passed every step.
 1. **Diagnose a 404 on a fresh page in this order:** `_config.yml` permalink → the run's `build` job → its
    `deploy` job → githubstatus.com. Skipping to the last one is the 19 November error.
 2. **"Pushed and verified" is not "published."** Never quote a day's URL before a fetch of it returns 200.
+
+---
+
+## 2026-11-26
+
+**RESOLVED:** the partial-day disagreement. **There is no stable completeness figure** — 24 Nov was 10.7%
+complete at 14:06 on the title route, 25 Nov was 92.9% at 14:05, and the scoped/whole-database gap that was
+a factor of two for 24 Nov is within three points for 25 Nov. **Do not build a completeness correction.**
+Batch timing is not a function of the clock, any more than batch size is of the calendar.
+
+**CLOSED:** `--alias` has now run on a real two-record work (`10.1186/s12877-026-08200-4` →
+`43086653` + `PMC13798662`). The mechanism is exercised, not merely written.
+
+**NEW RULE:** **before excluding a character from an identifier pattern, check whether it occurs inside real
+identifiers.** Two of three identifier faults in this archive have been punctuation excluded for the sake of
+the page's own markdown syntax — the backtick on 22 November, the closing parenthesis today.
+
+**CONTINUING, now a two-day series:** per-day index shrinkage. 22 Nov 428 → 425 → 408; 23 Nov 5,335 →
+5,239 → 5,199; 24 Nov 7,010 → 7,007. **60 records today after 109 yesterday, every settled day moving only
+downward**, direction matching `PMC` shedding (−3,428 then −1,516). **Keep recording every past day's count
+every day.** Two observations is a series, not a trend.
+
+**MIRROR LAG CLEARED TODAY:** `654348d` (the 25 November deployment write-up) was absent from the mirror and
+is picked up by today's refresh.
+
+**STILL OUTSTANDING:** November month audit at the start of December with the classifier fixes scored
+OUT-OF-SAMPLE, **Delphi false negative first**; lagged window 6 Nov – 5 Dec due ~10 December, do not defer;
+AHA/ACC re-check 11 December; SCCM paediatric/neonatal end-of-life 2026 (named, undated, not in Europe PMC
+by title); audit of `TERMS` and `JOURNALS_*` against the full tracked-society list; title-stem check against
+the remaining named gaps; working ESPEN and IACTS URLs; the twelve revised/reaffirmed ASA statements of
+20 October; ASA perioperative regional analgesia practice guideline not held (backlog 51); paediatric
+regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why the three JAMA trials indexed 19 October were missed;
+NCT07309393 expected ~2028. **`claude/pmc-doi-map.txt` remains PARTIAL (18 of 40).** **Pre-coverage backlog
+now five: SFAR/SFA hypersensitivity, ESICM circulatory shock, SCCM heat stroke, SCCM/ASHP stress-related GI
+bleeding, EACTS perioperative MI.**

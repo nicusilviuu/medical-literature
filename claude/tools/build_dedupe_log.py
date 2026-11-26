@@ -63,7 +63,24 @@ import glob, json, re, subprocess, sys, time
 # index. Measured on 22 November: 147 DOIs in this archive appear ONLY inside
 # backticks, so the dedupe log had a 147-record hole, including the record
 # cursorMark paging dropped on 20 November.
-DOI = re.compile(r'10\.\d{4,}/[^\s)"`\]<>]+')
+# Parentheses MUST be allowed inside the match, and the trailing one trimmed
+# only when it is unbalanced. The pattern excluded ")" outright until
+# 2026-11-26, to stop at a markdown link's closing bracket -- but Lancet-family
+# DOIs contain a parenthesised year, so "10.1016/s2213-2600(26)00347-4" was
+# harvested as "10.1016/s2213-2600(26" and could never match the index's DOI.
+# FISSH, published in yesterday's brief, came back today and was caught only by
+# the title fallback. Four distinct Lancet-family DOIs in this archive were
+# affected. Same shape as the 22 November backtick hole: a character excluded
+# for a markdown reason that legitimately occurs inside DOIs.
+DOI = re.compile(r'10\.\d{4,}/[^\s"`\]<>]+')
+
+
+def clean_doi(raw):
+    """Trim trailing punctuation, and a trailing ")" only when unbalanced."""
+    out = raw.rstrip('.,;:')
+    while out.endswith(')') and out.count('(') < out.count(')'):
+        out = out[:-1].rstrip('.,;:')
+    return out.lower()
 PMC = re.compile(r'\bPMC\d{5,}\b', re.I)
 PMID = re.compile(r'\bPMID[:\s]+(\d{6,})\b', re.I)
 TITLE_LINE = re.compile(r'^\s*-?\s*title:\s*"(.+)"\s*$', re.M)
@@ -90,7 +107,7 @@ def harvest():
         for path in sorted(glob.glob(pat)):
             text = open(path, encoding='utf-8').read()
             for m in DOI.findall(text):
-                ids.add(m.rstrip('.,);:`').lower())
+                ids.add(clean_doi(m))
             for m in PMC.findall(text):
                 ids.add(m.upper())
             for m in PMID.findall(text):
@@ -111,7 +128,7 @@ def harvest():
 def record_ids(r):
     out = set()
     if r.get('doi'):
-        out.add(r['doi'].rstrip('.,);:').lower())
+        out.add(clean_doi(r['doi']))
     rid = r.get('id') or ''
     if rid.upper().startswith('PMC'):
         out.add(rid.upper())
