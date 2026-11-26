@@ -7458,3 +7458,43 @@ regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why the three JAMA trials inde
 NCT07309393 expected ~2028. **`claude/pmc-doi-map.txt` remains PARTIAL (18 of 40).** **Pre-coverage backlog
 now five: SFAR/SFA hypersensitivity, ESICM circulatory shock, SCCM heat stroke, SCCM/ASHP stress-related GI
 bleeding, EACTS perioperative MI.**
+
+### 2026-11-26, guidelines watch
+
+**CLOSED:** working ESPEN URL (`https://www.espen.org/guidelines`, catalogue at
+`/guidelines/espen-scientific-guidelines-pdf-versions`, dated, stamp "Last Updated: 30 August 2026", all
+three in-scope documents already held). **CLOSED:** IACTS — `iacts.org.in` returns HTTP 000; `iacts.org`
+redirects to `https://www.iacts.org/`, HTTP 200, **and carries no guidance index at all.** Negative finding,
+not an open question.
+
+**NEW FIX-LIST ENTRY for the classifier (month audit):** **a SECONDARY document carrying a guidance pubType
+is classified PRIMARY.** Example: `10.1016/j.healun.2026.08.002`, "A Perspective on an ISHLT Expert
+Consensus Statement". **The pubType stage cannot distinguish guidance from commentary on guidance when the
+publisher tags both alike.** **Delphi false negative remains first on the list and got NO out-of-sample test
+today** — it lives in the title route and every record today was resolved by pubType.
+
+**NEW ACTIONS:**
+1. **Map `TERMS` against the field rather than extending it per incident.** `airway` was missing while
+   `intubation` and `extubation` were present. **Go through a standard anaesthesia/critical-care syllabus
+   and check each major domain has a term.**
+2. **Every tracked society's journal must be in `JOURNALS_GUIDANCE` by its own abbreviation, in its own
+   language.** Two misses in three days were a journal absent from the list
+   (`j heart lung transplant`, `rev esp anestesiol reanim`). **Carried from 24 November and still only
+   half-done — do the full audit.**
+3. **Ask of the SCARTD guideline how many of its recommendations came from Delphi rather than evidence.**
+   The abstract does not say; the full text would.
+
+**PROCESS RULES ADDED:**
+- **Check a background task's STATE, not just its artefacts.** Twice this week an unfinished task was read
+  as a broken one (today's pubType query; yesterday's index pass).
+- **Reading the discards by eye has found a filter miss on three days in three.** Keep it as a daily step,
+  and treat each find as a filter bug to fix, not as a win for the manual pass.
+
+**STILL OUTSTANDING:** November month audit at the start of December, classifier fixes scored OUT-OF-SAMPLE,
+**Delphi false negative first, now joined by the secondary-pubType fault**; lagged window 6 Nov – 5 Dec due
+~10 December, do not defer; AHA/ACC re-check 11 December; SCCM paediatric/neonatal end-of-life 2026 (named,
+undated, not in Europe PMC by title); title-stem check against the remaining named gaps; the twelve
+revised/reaffirmed ASA statements of 20 October; ASA perioperative regional analgesia practice guideline not
+held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why the three JAMA trials
+indexed 19 October were missed; NCT07309393 expected ~2028; per-day index shrinkage series; `pmc-doi-map.txt`
+PARTIAL (18 of 40). **Pre-coverage backlog five, unchanged.**

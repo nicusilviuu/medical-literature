@@ -33,14 +33,36 @@ Usage:  scope_filter.py IN.json OUT.json [--list brief|guidance]
 """
 import json, re, sys
 
+# 26 November: "airway" and "obstetric" were absent, and so was any non-English
+# stem for anaesthesia. The SCARTD guidelines on the difficult airway in
+# obstetric patients -- a Practice Guideline in Revista Espanola de
+# Anestesiologia y Reanimacion -- matched NOTHING here and nothing in the
+# journal list either, so both routes dropped it. "intubation" and "extubation"
+# were present while "airway" was not, which is the kind of gap a term list
+# accumulates by being written one incident at a time.
+#
+# The SEDAR paediatric paper of 25 November survived the same filter ONLY
+# because its title happened to carry the English word "anaesthesia". Same
+# journal, same society family, one kept and one dropped by title luck.
 TERMS = [
     "anaesthesia", "anesthesia", "anaesthetic", "anesthetic", "intensive care",
     "critical care", "critically ill", "resuscitation", "sepsis", "septic",
     "cardiac surgery", "thoracic surgery", "cardiothoracic", "perioperative",
     "postoperative", "icu", "ventilation", "ventilated", "intubation",
     "extubation", "analgesia", "sedation", "delirium", "cardiac arrest",
-    "ecmo", "nerve block",
+    "ecmo", "nerve block", "airway",
+    "anestesiologia", "anestesiologa", "anestesia", "reanimacion",
 ]
+
+# "obstetric" and "obstetrics" were added with "airway" and then REMOVED after
+# measuring the change: on the 35 guidance records of 26 November the wider list
+# recovered the SCARTD difficult-airway guideline and ALSO admitted an AOFOG
+# statement on optimising caesarean delivery rates, which is obstetric practice
+# and not anaesthesia or critical care. "airway" and the journal addition
+# recover SCARTD on their own, so the broader terms bought a false positive and
+# nothing else. Obstetric ANAESTHESIA reaches this archive through "anaesthesia",
+# "analgesia", "airway" and the anaesthesiology journals, which is the right
+# width.
 
 # Matched against the record's journal abbreviation, so these are written as
 # abbreviations. 24 November: "j heart lung transplant" was missing, and the
@@ -55,6 +77,7 @@ JOURNALS_GUIDANCE = [
     "ann thorac surg", "j thorac cardiovasc surg", "reg anesth pain med",
     "resuscitation", "j crit care", "crit care", "j heart lung transplant",
     "interact cardiovasc thorac surg", "eur heart j", "ann intensive care",
+    "rev esp anestesiol reanim",
 ]
 
 JOURNALS_BRIEF = JOURNALS_GUIDANCE + [

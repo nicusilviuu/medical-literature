@@ -12707,3 +12707,105 @@ one surgeon, 129 vs 129. **All null after adjustment** (op time +6.3 min, EBL +2
 composite OR 0.99), no sensitivity analysis dissented. **BUT ASA 3 was 46.5% vs 25.6% and the surgeon's
 volume FELL 30%.** **A null on a cohort that got healthier and smaller is weaker than a null on an
 unchanged one.**
+
+### 2026-11-26 GUIDELINES WATCH — THE WORD "AIRWAY" WAS NOT IN THE TERM LIST
+
+**pubType route** over `FIRST_IDATE:[2026-11-17 TO 2026-11-26]`: **35 records, hit count matching.** Scope
+filter as it stood this morning: **35 → 4, and the dedupe log recognised ALL FOUR as already reported.** On
+the tools alone, an empty day.
+
+**READING THE 31 DISCARDS BY EYE FOUND IT. THIRD DAY IN THREE.**
+`10.1016/j.redare.2026.502241` — **SCARTD (Societat Catalana d'Anestesiologia, Reanimació i Terapèutica del
+Dolor), Airway Division: clinical practice guidelines for comprehensive management of the DIFFICULT AIRWAY
+IN OBSTETRIC PATIENTS.** `Practice Guideline`, 25 Nov 2026, Rev Esp Anestesiol Reanim (Engl Ed), 1,332 chars.
+
+**BOTH ROUTES FAILED, EACH FOR A PLAIN REASON:**
+- **TERM route: `airway` WAS NOT IN `TERMS`.** `intubation`, `extubation`, `ventilation`, `sedation`,
+  `analgesia`, `nerve block` all were. **The word naming the domain all of those belong to was absent** —
+  what a term list looks like when written one incident at a time rather than by mapping the field.
+- **JOURNAL route: `rev esp anestesiol reanim` was not in `JOURNALS_GUIDANCE`**, which carries
+  `anesthesiology` in English; that does not match `Anestesiol`.
+
+**THE SHARP PART: yesterday's SEDAR consensus is in THE SAME JOURNAL and survived the same filter ONLY
+because its title happened to contain the English word "anaesthesia".** Same journal, same society family,
+**one kept and one dropped, decided by which language a title used. The filter was not working for that
+journal yesterday either — it was lucky.**
+
+**METHOD of the document itself, worth recording:** international obstetric-airway guidelines identified,
+**appraised with AGREE II** and the highest-quality selected; systematic review 2012–2025; **Delphi
+consensus wherever evidence was absent, limited, indirect or low quality.** **The abstract does not say how
+many recommendations came from each route — that is the number this archive wants.** Covers airway
+assessment, preparation and management in pregnancy, **advance airway planning, interdisciplinary
+communication, clinical simulation.** **No thresholds, counts or algorithms in the abstract.** Same
+organisational emphasis as the 30 September SFAR airway recommendations.
+
+### THE FIX, AND THE PART THAT WAS MEASURED AND WITHDRAWN
+
+**Added:** `airway` to `TERMS`; `rev esp anestesiol reanim` to `JOURNALS_GUIDANCE`; Spanish/Catalan stems
+`anestesiologia`, `anestesiologa`, `anestesia`, `reanimacion`.
+
+**Added, MEASURED, REMOVED: `obstetric` and `obstetrics`.** With them, the 35 records gave **6** kept, not
+4 — SCARTD **plus** `10.1111/jog.70582`, the **AOFOG statement on optimising caesarean delivery rates**,
+which is obstetric practice, not anaesthesia. **A false positive. And they recovered NOTHING extra, because
+the SCARTD title contains `airway`.** **One false positive, zero additional recall → withdrawn.** Obstetric
+ANAESTHESIA still arrives via `anaesthesia`, `analgesia`, `airway` and the anaesthesiology journals, which
+is how the ASA obstetric statements came in.
+
+**THREE CHECKS, ALL RUN:** recall test **6/6** on both journal lists · guidance kept **4 → 5**, the single
+addition being SCARTD · **brief-sweep scope 623 → 623, UNCHANGED** on today's 625 records. **That last one
+bounds the risk: `TERMS` is shared between routes and widening it admitted nothing on the brief side.**
+
+**`--alias` passed the item** (single record `43085577`, not in log).
+
+### NEW CLASSIFIER FAULT, WITH ITS EXAMPLE
+
+`classify_guidance.py` over today's five in-scope records: **5 PRIMARY, 0 SECONDARY, 0 OTHER**, all via the
+guidance-pubType stage.
+
+**`10.1016/j.healun.2026.08.002` is NOT primary guidance.** It is **"A Perspective on an ISHLT Expert
+Consensus Statement"** — a commentary ABOUT guidance, i.e. SECONDARY by this archive's own definition.
+**The classifier calls it PRIMARY because the PUBLISHER gave the commentary a guidance pubType, and the
+pubType stage cannot see the difference.** **NEW FIX-LIST ENTRY.** **This record has now caused TWO
+distinct faults: one in my reading (yesterday's correction) and one in the classifier.**
+
+**NO OUT-OF-SAMPLE TEST OF THE DELPHI FALSE NEGATIVE TODAY.** That fault lives in the TITLE route; all five
+records reached PRIMARY through pubType, so the title route never ran. **A day on which the first stage
+classifies everything correctly says nothing about the second.** Month-audit item stands.
+
+### TWO STANDING ACTIONS CLOSED
+
+**ESPEN — working URL found.** `espen.org/guidelines/espen-guidelines` (recorded 23 Nov, empty HTTP 202 then)
+**now returns HTTP 404.** Working: **`https://www.espen.org/guidelines`** HTTP 200 / 141,010 bytes; catalogue
+at **`/guidelines/espen-scientific-guidelines-pdf-versions`** HTTP 200 / 162,139 bytes, **fully dated, own
+stamp "Last Updated: 30 August 2026"** — so nothing published there in the trailing window, as EVIDENCE
+rather than an inference from an empty search. **Three in-scope documents on it, ALL ALREADY HELD:** ethical
+aspects of medical nutrition therapy, Clin Nutr 60 (2026) 106622 → entry of 18 Nov · clinical nutrition in
+surgery Update 2025, Clin Nutr 53 (2025) 222-261 → 5 Sep · clinical nutrition in the ICU, Clin Nutr 38
+(2019) 48-79 → 7 Sep and 8 Oct.
+
+**IACTS — readable, and carrying nothing.** `iacts.org.in` **returns HTTP 000, a connection failure, not a
+404.** `iacts.org` redirects to **`https://www.iacts.org/`**, HTTP 200 / 222,134 bytes. **Scanning for
+guideline / consensus / recommendation / position paper / statement returned ONE line: "Submission
+Guidelines", a journal author instruction.** **A society with no readable index was previously
+indistinguishable from one whose URL was wrong; for IACTS the URL was wrong AND there is nothing to read.**
+Closed with a negative finding.
+
+### FRENCH SOCIETIES — NOTHING NEW, four documents checked BY TITLE over all three paths
+
+**HELD:** adult airway management in theatre (SFAR + CARORL + CARO + FHS + SFORL, 3 Sep 2026) → 30 Sep
+entry, **27 recommendations, strong agreement on all 27, 1 GRADE 1, 13 GRADE 2, 13 expert opinion, 1
+question unanswerable** · in-hospital life-threatening emergencies (SFAR + SFMU + SRLF + five, 28 Sep HAS)
+→ held, 36 recommendations · limitation and withdrawal of life-sustaining treatment (SFAR + SOFMER,
+20-expert committee) → held · adult cardiogenic shock (SRLF + SFC with SFAR + SFCTCV, 1 Apr 2026) → held.
+**SPILF produced nothing in any search, second consecutive day.**
+
+### TWO PROCESS ERRORS OF MY OWN TODAY
+
+1. **I read a background task's output before it had finished writing and took the absence of a JSON file as
+   a failed query.** It had succeeded — `hitCount 35 returned 35` was in the output file; I had tailed four
+   lines and checked `ls` while the file was still being written, then launched a redundant second run.
+   **Second instance this week of "checked too early, read it as broken"** (yesterday: the index pass I
+   killed on a misdiagnosed collision). **CHECK THE TASK STATE, NOT JUST ITS ARTEFACTS.**
+2. **A stray `cat > file.tmp` with no input source prefixed the heredoc that writes the entry**, so the
+   command blocked on stdin for two minutes before being stopped. No damage; the stray file was removed and
+   the entry written cleanly. Recorded because it cost a command and would be invisible otherwise.
