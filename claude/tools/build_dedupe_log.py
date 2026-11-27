@@ -48,7 +48,9 @@ PMC records carry no DOI and no PMID at all, so there is nothing to resolve.
 --alias DOI... is the check that works. A DOI: query returns every record
 Europe PMC holds for that work, so a paper reported earlier under a PMC id with
 no DOI of its own is still recognised. Run it on the day's shortlist before
-publishing.
+publishing, and add --record to write the alias identifiers into
+claude/pmc-doi-map.txt so the next run matches them by identifier instead of
+depending on whether the page quoted them in prose.
 
 Usage:  build_dedupe_log.py [OUT]            # default /tmp/claude-0/known.txt
         build_dedupe_log.py --check IN.json  # report which records are new
@@ -180,7 +182,35 @@ def _search(query, page_size):
 # --alias uses that, and it is the actual check. See aliases() below.
 BATCH = 20
 
-def aliases(dois):
+def record_aliases(pairs):
+    """Append alias identifiers to PMC_DOI_MAP so the log holds every record
+    Europe PMC has for a work, not just the one the page happens to cite.
+
+    Written on 2026-11-27. The day before, PMC13798662 -- the second record of a
+    work whose PMC entry carries no DOI and no PMID -- deduped correctly ONLY
+    because its identifier happened to be quoted in the prose of that day's
+    page, which harvest() then picked up. That is luck, not a mechanism. Three
+    of the five papers shortlisted on 27 November are two-record works cited by
+    DOI alone, so without this their twins stay invisible to the identifier
+    route.
+    """
+    try:
+        existing = open(PMC_DOI_MAP, encoding='utf-8').read()
+    except FileNotFoundError:
+        existing = ('# PMC id -> DOI, for the dedupe log. Built by\n'
+                    '# build_dedupe_log.py --resolve-pmc and --alias --record.\n')
+    added = []
+    for pmcid, doi in pairs:
+        line = f'{pmcid} {doi}\n'
+        if pmcid not in existing:
+            existing += line
+            added.append(line.strip())
+    with open(PMC_DOI_MAP, 'w', encoding='utf-8') as fh:
+        fh.write(existing)
+    return added
+
+
+def aliases(dois, record=False):
     """For each DOI, print every Europe PMC record id for that work and say
     whether any of them is already in the dedupe log.
 
@@ -209,6 +239,11 @@ def aliases(dois):
                 if k in ids or ('PMID' + str(key)) in ids:
                     found.append(key)
         all_ids = [r.get('id') for r in recs]
+        if record:
+            pairs = [(r['pmcid'].upper(), doi.lower())
+                     for r in recs if r.get('pmcid')]
+            for line in record_aliases(pairs):
+                print('   recorded in', PMC_DOI_MAP + ':', line)
         if found:
             print(f'{doi}: ALREADY REPORTED as {sorted(set(found))} '
                   f'(records for this work: {all_ids})')
@@ -258,7 +293,8 @@ def main():
     if args and args[0] == '--resolve-pmc':
         return resolve_pmc()
     if args and args[0] == '--alias':
-        return aliases(args[1:])
+        rest = [a for a in args[1:] if a != '--record']
+        return aliases(rest, record='--record' in args[1:])
     ids, titles = harvest()
     if args and args[0] == '--check':
         recs = json.load(open(args[1], encoding='utf-8'))

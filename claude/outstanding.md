@@ -7498,3 +7498,38 @@ revised/reaffirmed ASA statements of 20 October; ASA perioperative regional anal
 held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why the three JAMA trials
 indexed 19 October were missed; NCT07309393 expected ~2028; per-day index shrinkage series; `pmc-doi-map.txt`
 PARTIAL (18 of 40). **Pre-coverage backlog five, unchanged.**
+
+---
+
+## 2026-11-27
+
+**DONE, not deferred:** `--alias --record` implemented and run. Appends alias identifiers to
+`claude/pmc-doi-map.txt` (now 25 pairs), so a two-record work matches by identifier whichever record the
+index offers, instead of depending on whether the page quoted the right string in prose. **Run it with
+`--record` on every shortlist from now on.**
+
+**CORRECTION 19:** yesterday's claim that per-day shrinkage "matches `PMC` shedding" is **withdrawn** —
+today `PMC` gained 1,067 while three settled days lost 250 records. **Shrinkage is real, cause unknown, and
+must not be re-attached to a source on two days of coincidence.**
+
+**RESOLVED FURTHER:** the partial-day question. Third measurement agrees within four points for the second
+consecutive day (26 Nov: 96.1% scoped vs 92.1% whole-day). **24 November, at 10.7% vs 23.0%, is the
+outlier.** No correction factor; the usual case is that a same-day sweep sees most of the day.
+
+**RECORDED:** the subtraction bound was **available and uninformative** today, the first availability in
+four days. Keep stating which of the two it is, so a run of unavailability is not mistaken for suppressed
+evidence.
+
+**SERIES TO KEEP RECORDING:** per-day counts for every past day, every day. Three consecutive days of
+settled-day losses: 23 Nov −137 cumulative, 24 Nov −7, 25 Nov −245 from peak.
+
+**STILL OUTSTANDING:** November month audit at the start of December, classifier fixes scored
+OUT-OF-SAMPLE, **Delphi false negative first, then the secondary-pubType fault**; **lagged window
+6 Nov – 5 Dec due ~10 December, DO NOT DEFER**; AHA/ACC re-check 11 December; `TERMS` to be mapped against a
+syllabus rather than extended per incident; full `JOURNALS_*` audit against every tracked society; SCCM
+paediatric/neonatal end-of-life 2026 (named, undated, not in Europe PMC by title); how many SCARTD
+recommendations came from Delphi rather than evidence; title-stem check against the remaining named gaps;
+the twelve revised/reaffirmed ASA statements of 20 October; ASA perioperative regional analgesia practice
+guideline not held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why the three
+JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028. **Pre-coverage backlog five,
+unchanged.**

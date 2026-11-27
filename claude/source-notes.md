@@ -12809,3 +12809,125 @@ question unanswerable** · in-hospital life-threatening emergencies (SFAR + SFMU
 2. **A stray `cat > file.tmp` with no input source prefixed the heredoc that writes the entry**, so the
    command blocked on stdin for two minutes before being stopped. No damage; the stray file was removed and
    the entry written cleanly. Recorded because it cost a command and would be invisible otherwise.
+
+---
+
+## 2026-11-27 — FIVE PAPERS THAT NAME THEIR OWN WORST PROBLEM, AND AN ACCIDENT THAT BECAME A MECHANISM
+
+**SWEEP** over `FIRST_IDATE` 26 and 27 November: **435 · 55 · 206 · 0, all SHORTFALL 0.** 696 collected,
+676 unique, **674 after the scope filter, 665 not previously reported.** Nine deduped: **six by identifier,
+three by title.**
+
+### THE ALIAS GATE IS NO LONGER UNPROVEN — THREE OF FIVE
+
+25 Nov: 0 of 5 shortlisted DOIs were two-record works. 26 Nov: 1 of 5. **27 Nov: THREE of 5.**
+- ECMO-bridged LVAD `10.3390/medicina62112213` → `43091610` + `PMC13805985`
+- Nebulised dexmedetomidine `10.7759/cureus.118635` → `PMC13803603` + `43095380`
+- Ketamine after cord clamping `10.3390/medicina62112228` → `43091624` + `PMC13806202`
+
+None of the six in the log, so all three papers genuinely new. **A far higher rate of two-record works than
+expected when the gate was built.**
+
+### YESTERDAY'S SECOND RECORD DEDUPED CORRECTLY — BY ACCIDENT, NOW MADE A MECHANISM
+
+`PMC13798662` (second record of the SOFA-2 paper) **carries no DOI and no PMID** — the exact shape that
+defeated the identifier route on 24 November. **It deduped today by identifier anyway, because I had quoted
+it in prose** at `_briefs/2026-11-26.md:224`, and `harvest()` reads PMC ids from the entries. **Luck, not a
+mechanism.**
+
+**IMPLEMENTED TODAY: `--alias --record`** appends alias identifiers to the committed
+`claude/pmc-doi-map.txt`, which `harvest()` already reads. **Run against today's three two-record works
+before the page was committed:** `PMC13805985` · `PMC13803603` · `PMC13806202`. Map now holds 25 pairs.
+**So the identifier route matches these works tomorrow whichever record the index offers.**
+
+### PER-DAY SHRINKAGE: THIRD DAY, AND YESTERDAY'S EXPLANATION IS FALSIFIED
+
+| Day | 24 Nov | 25 Nov | 26 Nov | 27 Nov | Net |
+| --- | --- | --- | --- | --- | --- |
+| 23 Nov | 5,335 | 5,239 | 5,199 | 5,198 | **−137** |
+| 24 Nov | — | 7,010 | 7,007 | 7,003 | **−7** |
+| 25 Nov | — | — | 6,730 | 6,485 | **−245 from peak** |
+
+**25 Nov rose 6,431 → 6,730 as it finished filling, then FELL 245 — a 3.6% loss from a day two days
+settled.**
+
+**CORRECTION 19: yesterday's entry said the shrinkage direction "matches `PMC` shedding on both days".
+TODAY `PMC` GAINED 1,067 AND THREE SETTLED DAYS STILL LOST 250 RECORDS.** **The association was coincidence
+across two days and is WITHDRAWN.** Shrinkage is real; its cause is unknown. **Do not re-attach it to a
+source without more than two days.**
+
+### INDEX READING — DECOMPOSITION CLOSES EXACTLY, SECOND DAY; BOUND AVAILABLE AND UNINFORMATIVE
+
+**Whole 49,331,358 @ 14:03:51; eleven buckets summing to 49,331,358; RESIDUAL 0.**
+`MED` 41,437,013 · `PMC` 1,012,420 · `PAT` 4,229,296 · `PPR` 1,299,466 · `AGR` 1,026,549 · `ETH` 176,799 ·
+`CBA` 142,377 · `CTX` 3,941 · `HIR` 2,868 · `NBK` 5 · `CIT` 624.
+
+**Day over day +10,149 — largest this week, first above 10,000 since 19 November's 15,011. Decomposition
+exact for the SECOND consecutive day: `MED` +8,046 · `PMC` +1,067 · `PPR` +1,036, and NOTHING else moved.**
+
+**NO SOURCE SHED → SUBTRACTION BOUND AVAILABLE for the first time in four days — AND IT YIELDS NOTHING.**
+Largest bucket gain `MED` +8,046 against whole +10,149, well inside it. **"Available and uninformative" is
+a different statement from "unavailable", and is recorded as such** so that three days of unavailability do
+not read as suppressed evidence rather than an absent precondition.
+
+Gains: 92 · 571 · 2,314 · 5,592 · 7,493 · 8,042 · 8,275 · **10,149** · 15,011, bursts 23k–26k. **One pass.**
+
+### PARTIAL-DAY, THIRD MEASUREMENT — 24 NOVEMBER IS THE OUTLIER
+
+| Day | Scoped title route | Whole-database count |
+| --- | --- | --- |
+| 24 Nov | 10.7% | 23.0% |
+| 25 Nov | 92.9% | 95.6% |
+| 26 Nov | **96.1%** (418 → 435) | **92.1%** (17,083 → 18,558) |
+
+**The two measures agree within four points for the second consecutive day.** **24 November is clearly the
+outlier, not the rule.** Conclusion of 26 November stands — **no stable figure, no correction factor** — but
+the usual case is that a same-day sweep sees most of the day. **One outlier in three days is not a
+characterised distribution.**
+
+### ITEMS — AND TODAY'S THEME: EACH NAMES ITS OWN PRINCIPAL LIMITATION
+
+1. **Remimazolam vs propofol, liver transplantation** (`10.21203/rs.3.rs-11441376/v1`, Research Square,
+   ITT N=120, 60/group). **PRS 16.7% (10/60) vs 25.0% (15/60), P = 0.264** — and **the abstract itself says
+   the post-hoc power did not meet expectations and the primary conclusion is inconclusive.** Rare and worth
+   the slot. **BUT: a post-hoc power calculation is not a defence of a null** — it answers "would this trial
+   have detected what it found", not "what can it exclude". **Candour real, device weak.** Prespecified
+   secondary: **induction hypotension 30.0% vs 50.0%, P = 0.025.** Exploratory: adrenaline within 5 min of
+   reperfusion P = 0.034; **subgroup interaction for portal vein occlusion time P = 0.016 — keep the
+   exploratory label on it.** No other secondary differed.
+2. **ECMO-bridged vs elective LVAD** (`10.3390/medicina62112213`, 97 recipients, 2012–2024, 38 bridged /
+   59 elective). ICU 33.6 vs 12.6 d (P = 0.029), hospital 58.1 vs 32.8 d (P = 0.041). **Crude mortality
+   31.6% (12/38) vs 55.9% (33/59) over 37.5 ± 23.9 vs 48.8 ± 38.0 months; KM log-rank P = 0.2310.** EQ-5D-5L
+   66.9 vs 65.2 (P = 0.879); PHQ-9 6.0 vs 5.4 (P = 0.676). **THE AUTHORS WROTE THE CRITICISM BETTER THAN I
+   WAS GOING TO:** acceptable outcomes **in selected survivors**, not equivalence of an intention-to-bridge
+   strategy, **because those who die on VA-ECMO before LVAD are not captured**; selection rather than
+   urgency drives outcomes. **Two limits they did NOT flag: crude mortality runs the other way on ELEVEN
+   FEWER MONTHS of follow-up, and QoL rests on 53/97 (54.6%) in a cohort with 46% mortality.**
+3. **NG tube insertion formulas** (`10.1016/j.ijnurstu.2026.105761`, 108 neurosurgical ICU adults,
+   Shenyang, Nov 2016 – Oct 2024, software-assisted curved-path radiographic reconstruction, CONTINUOUS
+   measurement). Mean nose-to-cardia **46.01 ± 4.48 cm**. **NO formula met all three criteria in every
+   patient.** NEX **54.6%** on target / **17.6%** under · forehead-xiphoid **51.9%** / **38.0%** under ·
+   forehead-umbilicus **no under-insertion but 95.4% OVER** · NEX+10 **none under, 90.7% OVER** · corrected
+   NEX intermediate. **Performance DEPENDED ON WHICH CRITERION WAS APPLIED** — the 3.8 cm tube-specific
+   side-hole threshold gave lower clearance than the 3 cm minimum-depth criterion, **especially for the two
+   that looked best.** **That is why this literature disagrees with itself.** **Not registered.**
+4. **Nebulised vs IV dexmedetomidine for AFOI** (`10.7759/cureus.118635`, 128 patients, 64/arm,
+   double-blind). Both arms nebulised 4% lignocaine 2.5 mL to 5 mL; one added IV dexmed 1 µg/kg, the other
+   nebulised dexmed 1 µg/kg + IV saline. Single fixed dose. **Comfort score better with nebulised (no
+   reaction 22 vs 6; heavy grimacing 6 vs 12), P = 0.008.** Coughing: none 37 vs 8; moderate-severe 4 vs 23.
+   **Ramsay showed the IV arm MORE deeply sedated — a disadvantage for an awake technique.**
+   **Postoperative sore throat ABSENT in 58/64 (90.6%) vs 16/64 (25.0%); present in 6 vs 48, P < .001.**
+   **A FIFTEEN-FOLD DIFFERENCE WITH NO MECHANISM OFFERED IN THE ABSTRACT.** Report the surprise, do not
+   invent a mechanism. **GAP: haemodynamics listed as a secondary objective; the conclusion asserts "stable
+   haemodynamic effects" and the abstract reports NO haemodynamic number.**
+5. **Ketamine / ketamine-midazolam after cord clamping** (`10.3390/medicina62112228`, 300 patients, 3 × 100,
+   **prospective NON-RANDOMISED, allocation BY the patient's own pain and anxiety**). Pain alone → ketamine
+   0.5 mg/kg; pain + anxiety → + midazolam 0.01 mg/kg; **neither → nothing, and that is the control group.**
+   **Positive EPDS (≥11) at week 4: 15% / 17% / 30%, P = 0.017**; group × time P = 0.0055; both lower after
+   adjustment for preoperative EPDS. Lower VAS at 2 and 4 h and longer to rescue (P < 0.001); 12 and 24 h
+   survives only for ketamine alone. **Authors state it: non-randomised, symptom-based selection,
+   confounding by indication, preliminary associations needing RCTs.** **WHAT MAKES IT MORE INTERESTING: THE
+   CONFOUNDING RUNS THE WRONG WAY — the control group had NEITHER pain NOR anxiety and had the HIGHEST
+   depression rate.** Not causal, but not simply the confounder in disguise. **AND THE HARM IS NOT SMALL:
+   HALLUCINATIONS 32% / 18% / 2%, P < 0.001.** Roughly one in three on ketamine alone hallucinated. No
+   statistically significant tolerability advantage for adding midazolam.
