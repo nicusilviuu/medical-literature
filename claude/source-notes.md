@@ -12931,3 +12931,68 @@ characterised distribution.**
    depression rate.** Not causal, but not simply the confounder in disguise. **AND THE HARM IS NOT SMALL:
    HALLUCINATIONS 32% / 18% / 2%, P < 0.001.** Roughly one in three on ketamine alone hallucinated. No
    statistically significant tolerability advantage for adding midazolam.
+
+### 2026-11-27 GUIDELINES WATCH — EMPTY DAY, AND THE JOURNAL AUDIT THAT WAS OWED
+
+**pubType route** over `FIRST_IDATE:[2026-11-18 TO 2026-11-27]`: **35 records, hit count matching. Scope
+filter kept 5. Dedupe log: 0 not previously reported.** All five already held (athoracsur delirium
+consensus, both ISHLT, SEDAR paediatric, SCARTD airway). **All 30 discards read individually — all 30
+genuinely out of scope.** **A genuine empty day; entry published with `items: []`.**
+
+### THE AUDIT: EVERY TRACKED SOCIETY AGAINST ITS GUIDANCE JOURNAL
+
+Standing action after **two misses in four days, both a journal absent from the list** (ISHLT 24 Nov,
+SCARTD 26 Nov). **Method: per society, query Europe PMC for guidance pubTypes in its journal since 2024 —
+confirming the journal carries guidance AND reading the index's own abbreviation — then check that string
+against the list.** Not from memory.
+
+**THREE MISSING:**
+
+| Society | Index abbreviation | Guidance records since 2024 | Since coverage began 17 Aug 2026 |
+| --- | --- | --- | --- |
+| SPILF | `Infect Dis Now` | 17 | **0** |
+| ESAIC | `Eur J Anaesthesiol` | 20 | **0** |
+| SEMICYUC | `Med Intensiva (Engl Ed)` | 3 | **0** |
+
+**THE ESAIC GAP IS THE WORST, AND NOT FOR ITS COUNT: `eur j anaesthesiol` WAS ALREADY IN `JOURNALS_BRIEF`
+AND ABSENT FROM `JOURNALS_GUIDANCE`.** An ESAIC guideline would have been **collected for the brief and
+dropped by the guidance filter** — the two routes disagreeing about one journal. **No single day's output
+reveals that; only comparing the two lists does.** Sample of what the journal carries: "Remifentanil
+patient-controlled analgesia for labour analgesia: guidance from…" and "Intra-operative haemodynamic
+monitoring and management of adults having noncardiac…" — **both in scope, and the first on a topic this
+archive covered from the ASA on 23 November.**
+
+**EXPOSURE MEASURED, AND IT IS ZERO.** 0 guidance records in all three since 17 Aug 2026. **Real, latent,
+realised nothing.** **State it that way: the archive has not missed an ESAIC guideline, it has been one
+guideline away from missing one for three months.**
+
+**Checks on the change: recall test 6/6 both lists · guidance kept 5 → 5 · brief scope 674 → 674.**
+**Zero effect on today's output, which is what a zero-exposure fix should look like.**
+
+### FOURTH BLIND-SPOT CLASS: A JOURNAL THE INDEX NEVER TAGS AS CARRYING GUIDANCE
+
+- **`Clinical nutrition` (ESPEN): 0 guidance pubType records since 2024.** Not zero in the window — zero in
+  nearly three years. **ESPEN guidelines are NOT tagged as guidance in Europe PMC, so ESPEN is invisible to
+  the pubType route however the journal list is written.** **This explains why no ESPEN guideline has ever
+  arrived by that route.** **The website route found yesterday is not a convenience for ESPEN; it is the
+  ONLY route.**
+- **`Indian journal of thoracic and cardiovascular surgery` (IACTS): 0 since 2024** — alongside yesterday's
+  finding that the IACTS website carries no guidance index. **IACTS is invisible BY BOTH ROUTES AT ONCE.**
+  **Honest status is not "watched" but "no readable source identified".**
+
+**The three classes already on record:** index does not type a document as guidance (15–18 Nov) · a journal
+series deposits no abstract (21 Nov) · a society publishes to its website not a journal (23 Nov).
+**THE FOURTH: a society's journal is in the index and is never tagged as carrying guidance — a journal-list
+fix cannot help, only the society's own page can.**
+
+### CORRECTION 20 — AN ARITHMETIC CLAIM CONTRADICTED BY ITS OWN NEXT SENTENCE
+
+Yesterday's entry: **"Third day in three that reading the discards has found something both routes missed"**
+and **"the manual backstop has justified itself three times in three days." BOTH WRONG.** It was **TWO finds
+in three days** (ISHLT 24 Nov, SCARTD 26 Nov; **25 Nov clean**).
+
+**The sentence immediately after the claim said so**: "On 25 November the discards were clean." **The
+evidence against the claim was sitting beside the claim.** Corrected in place with the original wording
+quoted. **With today's discards clean too, the running count is TWO FINDS IN FOUR DAYS.**
+
+**RULE: when writing a count of consecutive days, count the days listed in the same paragraph.**

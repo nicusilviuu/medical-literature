@@ -78,6 +78,20 @@ JOURNALS_GUIDANCE = [
     "resuscitation", "j crit care", "crit care", "j heart lung transplant",
     "interact cardiovasc thorac surg", "eur heart j", "ann intensive care",
     "rev esp anestesiol reanim",
+    # Added 27 November by auditing EVERY tracked society against the journal it
+    # publishes guidance in, rather than waiting for the next miss. Three were
+    # absent: Infect Dis Now (SPILF), Eur J Anaesthesiol (ESAIC) and
+    # Med Intensiva (SEMICYUC). Eur J Anaesthesiol was the worst of the three,
+    # because it was already in JOURNALS_BRIEF and not here -- so an ESAIC
+    # guideline would have been swept for the brief and dropped by the guidance
+    # filter, an asymmetry nothing would have surfaced except this audit.
+    #
+    # EXPOSURE MEASURED, AND IT IS ZERO. None of the three has had a guidance
+    # record indexed since coverage began on 17 August 2026 (Infect Dis Now 0,
+    # Eur J Anaesthesiol 0, Med Intensiva 0), though all three carry guidance
+    # records in the years before. The holes were real and latent; no document
+    # was lost to them.
+    "infect dis now", "eur j anaesthesiol", "med intensiva",
 ]
 
 JOURNALS_BRIEF = JOURNALS_GUIDANCE + [

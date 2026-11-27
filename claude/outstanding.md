@@ -7533,3 +7533,36 @@ the twelve revised/reaffirmed ASA statements of 20 October; ASA perioperative re
 guideline not held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why the three
 JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028. **Pre-coverage backlog five,
 unchanged.**
+
+### 2026-11-27, guidelines watch
+
+**No new guidelines from tracked societies.** Entry published with `items: []`.
+
+**CLOSED — the `JOURNALS_*` audit against every tracked society.** Three journals were missing and are now
+added: `infect dis now` (SPILF) · `eur j anaesthesiol` (ESAIC) · `med intensiva` (SEMICYUC). **ESAIC's was
+in `JOURNALS_BRIEF` and not `JOURNALS_GUIDANCE`** — the two routes disagreeing about one journal.
+**Exposure measured and zero: no guidance record in any of the three since 17 August 2026.**
+
+**NEW, FOURTH BLIND-SPOT CLASS:** a society's journal is in the index and **is never tagged as carrying
+guidance.** `Clinical nutrition` (ESPEN) and `Indian journal of thoracic and cardiovascular surgery`
+(IACTS) each have **0** guidance pubType records since 2024. **A journal-list fix cannot reach these; only
+the society's own page can.**
+- **ESPEN: the website route is the ONLY route.** Use `https://www.espen.org/guidelines/espen-scientific-guidelines-pdf-versions`
+  and watch its "Last Updated" stamp.
+- **IACTS: invisible by both routes. Status is "no readable source identified", not "watched".** Say so when
+  reporting coverage.
+
+**CORRECTION 20:** yesterday's "third day in three" and "three times in three days" were wrong — **two finds
+in three days**, contradicted by the next sentence of the same paragraph. Corrected in place.
+**RULE: when writing a count of consecutive days, count the days listed in the same paragraph.**
+
+**STILL OUTSTANDING:** November month audit at the start of December, classifier fixes scored
+OUT-OF-SAMPLE, **Delphi false negative first, then the secondary-pubType fault**; **lagged window
+6 Nov – 5 Dec due ~10 December, DO NOT DEFER**; AHA/ACC re-check 11 December; **`TERMS` still to be mapped
+against a syllabus** rather than extended per incident (the journal half of this is now done, the term half
+is not); SCCM paediatric/neonatal end-of-life 2026 (named, undated, not in Europe PMC by title); how many
+SCARTD recommendations came from Delphi rather than evidence; title-stem check against the remaining named
+gaps; the twelve revised/reaffirmed ASA statements of 20 October; ASA perioperative regional analgesia
+practice guideline not held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why
+the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028; per-day index shrinkage
+series. **Pre-coverage backlog five, unchanged.**
