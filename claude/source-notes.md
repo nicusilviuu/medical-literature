@@ -13114,3 +13114,77 @@ recorded for a single-record work.** Both behaviours correct; the line is ambigu
    **An OR per 0.1 µg/kg makes the effect look finely resolved across a range with at most a handful of
    cases per group.** **The authors state their OWN previous trial already confirmed the effect — this
    extends their positive result rather than testing it independently.**
+
+### 2026-11-28 GUIDELINES WATCH — EMPTY DAY, AND THE TERM LIST HAS NO RECALL GAP
+
+**pubType route** over `FIRST_IDATE:[2026-11-19 TO 2026-11-28]`: **33 records, filter kept 4, dedupe 0 new.**
+All four already held (SCARTD, SEDAR, athoracsur delirium, ISHLT nursing). **All 29 discards read
+individually — all out of scope.** **Empty day; `items: []`.**
+
+### THE TERM HALF OF THE SCOPE-FILTER AUDIT
+
+**27 candidates derived from a SYLLABUS before looking at any data** — airway and instruments, oxygenation
+and respiratory failure, shock and vasoactive support, bypass and resuscitation, neuro injury and cognitive
+outcome, pain and regional, infection and antimicrobials, kidney injury and replacement, transfusion and
+coagulation, monitoring, transplantation, perioperative phases. **Most obvious absence: `preoperative`,
+while `perioperative` and `postoperative` are both present — the same shape as the `airway` gap.**
+
+### THE FIRST TEST WAS WRONG, AND HOW IT WAS WRONG IS THE FINDING
+
+**Measured against the brief sweep, all 27 admitted NOTHING — 0 of 491 records would newly enter scope.**
+
+**THAT IS EVIDENCE ABOUT THE TEST, NOT THE TERM LIST. The brief sweep's collection query is built from the
+SAME term list the filter applies afterwards, so every record in it matches a term by construction and the
+filter keeps 490 of 491 — very nearly a no-op on its own output.** **The term route CANNOT be tested on
+brief-sweep data.** **Taken at face value it would have read "no gap" for the wrong reason — and the
+26 November SCARTD gap would have been invisible to it too, since that came through the guidance route.**
+
+### THE RIGHT TEST SET, AND THE RESULT
+
+**290 UNSCOPED guidance records, 1 Sep – 28 Nov** (collected by pubType, never touching the term list).
+Filter currently keeps **22**, rejects **268**.
+
+**22 of the 27 candidates admit NOTHING** — `preoperative`, `tracheostomy`, `oxygenation`, `ards`,
+`respiratory failure`, `weaning`, `shock`, `vasopressor`, `haemodynamic`, `cardiopulmonary bypass`, `cpr`,
+`cognitive dysfunction`, `epidural`, `opioid`, `antimicrobial`, `ventilator-associated`,
+`renal replacement`, `transfusion`, `capnography`, `echocardiography` and the rest.
+
+**The 5 that admit something:**
+
+| Term | Admitted | What they are |
+| --- | --- | --- |
+| `transplantation` | 9 | pretransplant infection, AI in organ transplant, chimerism post-HSCT — **transplant medicine, NOT cardiothoracic** |
+| `dialysis` | 3 | renal nutrition, haemodiafiltration — nephrology |
+| `brain injury` | 1 | EXTRACCT blast TBI guideline — **ALREADY HELD** |
+| `acute kidney injury` | 1 | Brazilian nephrology dialysis position statement |
+| `anticoagulation` | 1 | AF in advanced kidney disease |
+
+**The 9 transplantation records are the clearest case for leaving a term OUT: thoracic transplant guidance
+already arrives via `j heart lung transplant` (both ISHLT documents did). Adding `transplantation` would
+admit solid-organ and haematopoietic transplant medicine wholesale to catch nothing new.**
+
+**CONCLUSION: NO RECALL GAP in the term list on three months of unscoped guidance data. NOTHING ADDED
+TODAY.** **Better than adding 27 words on intuition — and it means the `airway` omission was a SPECIFIC
+HOLE, not a symptom of a systematically thin list.**
+
+### THE ONE CANDIDATE THAT NEEDED CHECKING, AND A CONFIRMED DESIGN LIMIT
+
+**`brain injury` admitted the EXTRACCT blast injury CPG** (`10.1002/wjs.70522`, World J Surg, **31 Aug 2026,
+INSIDE the coverage window**) — abstract covers initial assessment, **haemodynamic and airway management**,
+intracranial hypertension, noninvasive neuromonitoring, surgical decision-making, interfacility transport;
+AGREE II. **Unambiguously in scope. IT IS ALREADY HELD** — `_guidelines/2026-10-07.md`, referenced again
+`_guidelines/2026-11-12.md`. **Checked with SIX strings across all three archive paths BEFORE any claim**,
+per the 25 November rule.
+
+**BUT NEITHER FILTER ROUTE CAUGHT IT.** Title carries no scope term; `World J Surg` is not in the journal
+list. **It reached the archive by a different route entirely.**
+
+**DESIGN LIMIT CONFIRMED BY READING THE CODE, NOT INFERRED: `record_fields` returns ONLY the title and a
+journal name; `in_scope` tests terms against the TITLE ALONE. THE FILTER NEVER READS THE ABSTRACT.** The
+blast guideline's abstract names four scope terms or near-terms, **none of them in its title.** **So a
+document can be unambiguously in scope by content and invisible to BOTH filter routes at once.**
+
+**This is a deliberate trade, not a bug** — reading abstracts would widen recall and widen false positives
+badly, since a passing mention of sedation or ventilation is not scope. **Record it as the reason the
+NON-FILTER routes (society pages, manual discard read) are not redundant.** **Today's audit says the term
+list is sound; it does NOT say the filter sees everything.**

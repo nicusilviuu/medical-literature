@@ -7603,3 +7603,35 @@ remaining named gaps; the twelve revised/reaffirmed ASA statements of 20 October
 analgesia practice guideline not held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR,
 11 Sep 2026); why the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
 **ESPEN and IACTS: website-only and no-readable-source respectively.** **Pre-coverage backlog five.**
+
+### 2026-11-28, guidelines watch
+
+**No new guidelines from tracked societies.** Entry published with `items: []`.
+
+**CLOSED — the `TERMS` audit against a syllabus.** 27 candidates derived before looking at data, tested
+against **290 unscoped guidance records (1 Sep – 28 Nov)**: **22 admit nothing; the 5 that do admit
+transplant medicine, nephrology, or a trauma guideline already held. NO RECALL GAP. NOTHING ADDED.**
+**The `airway` omission was a specific hole, not a symptom.** Both halves of the scope-filter audit are now
+done.
+
+**STRUCTURAL FINDING — THE BRIEF SWEEP CANNOT TEST THE TERM LIST.** Its collection query is built from the
+same terms the filter applies, so the filter keeps 490 of 491 — a near no-op on its own output. **Any future
+term-list test must use the guidance route (pubType-collected, unscoped).** Taken at face value the
+brief-sweep measurement would have said "no gap" for the wrong reason.
+
+**DESIGN LIMIT, CONFIRMED FROM THE CODE: the filter reads TITLE and JOURNAL and NEVER the abstract.**
+Demonstrated by the EXTRACCT blast TBI guideline — four scope terms in its abstract, none in its title,
+`World J Surg` not in the journal list, caught by a non-filter route and already held. **Deliberate trade,
+not a bug. It is the reason the society pages and the manual discard read are not redundant.** **Do not
+"fix" it by reading abstracts without measuring the false-positive cost first.**
+
+**STILL OUTSTANDING:** November month audit at the start of December, classifier fixes scored
+OUT-OF-SAMPLE, **Delphi false negative first, then the secondary-pubType fault**; **lagged window
+6 Nov – 5 Dec due ~10 December, DO NOT DEFER**; AHA/ACC re-check 11 December; **tomorrow: compare the
+26 and 27 November per-source splits recorded today against tomorrow's reading and attribute the
+8,281-record loss if it recurs**; SCCM paediatric/neonatal end-of-life 2026; how many SCARTD recommendations
+came from Delphi rather than evidence; title-stem check against the remaining named gaps; the twelve
+revised/reaffirmed ASA statements of 20 October; ASA perioperative regional analgesia practice guideline not
+held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why the three JAMA trials
+indexed 19 October were missed; NCT07309393 expected ~2028; `--alias --record` output wording.
+**ESPEN website-only; IACTS no readable source. Pre-coverage backlog five.**
