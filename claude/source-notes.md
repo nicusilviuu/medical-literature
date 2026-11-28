@@ -12996,3 +12996,121 @@ evidence against the claim was sitting beside the claim.** Corrected in place wi
 quoted. **With today's discards clean too, the running count is TWO FINDS IN FOUR DAYS.**
 
 **RULE: when writing a count of consecutive days, count the days listed in the same paragraph.**
+
+---
+
+## 2026-11-28 — 26 NOVEMBER LOST 8,281 RECORDS, AND THE SPLIT TO ATTRIBUTE IT WAS NEVER RECORDED
+
+**SWEEP** over `FIRST_IDATE` 27 and 28 Nov: **308 · 46 · 145 · 17, all SHORTFALL 0.** 516 collected, 491
+unique, **490 after scope filter, 483 not previously reported.** 7 deduped.
+
+### THE LOSS
+
+**26 November: 18,558 records yesterday @ 14:09 → 10,277 today. LOSS 8,281 = 44.6% of a day two days
+settled.** Previous three days of shrinkage ran **1 to 245**. **Two orders of magnitude larger — treat as a
+different phenomenon until shown otherwise.**
+
+**`PMC` whole bucket 1,012,420 → 1,004,975 = −7,445 the same morning — SAME ORDER OF MAGNITUDE.** Points
+back at the association **withdrawn yesterday** (26 Nov recorded the match; 27 Nov falsified it when `PMC`
+gained 1,067 while three settled days lost 250). **Today both move together and large.**
+
+**ATTRIBUTION NOT AVAILABLE, BECAUSE ONLY DAY TOTALS WERE EVER RECORDED, NEVER THE SPLIT BY SOURCE.**
+Surviving split for 26 Nov, queried today: **MED 8,265 · PMC 692 · PPR 1,306** = 10,263 of 10,277.
+- For the loss to be PMC, that date's PMC would have been **~8,973 yesterday → 692 today, a 92% collapse in
+  one source on one date.** Possible (bulk deposit redated/withdrawn). **Unverifiable.**
+- For it to be MED: 26 Nov MED is 8,265 today; MEDLINE would have held ~16,500 on that date yesterday
+  **while its whole bucket GAINED 7,756 overnight.** Possible. **Unverifiable.**
+
+**HONEST STATEMENT: the loss is real, unprecedented in size here, coincides with a large `PMC` shed, and
+attribution is unavailable. The withdrawn association is BACK IN PLAY AND NOT RE-ESTABLISHED — one large
+coincidence after a falsification is not a finding.**
+
+**INSTRUMENT FIXED RATHER THAN CONCLUSION ASSERTED:** `index_reading.sh` now prints the **per-source split
+(MED/PMC/PPR) for EVERY day it counts**, not just the total. **The next loss of this kind is attributable.**
+
+**SECOND TIME IN FIVE DAYS A MISSING LEVEL COST AN ANSWER.** 24 Nov: no `PMC` delta computable because the
+note recorded a change and not a level. The rule written then — **record levels, not movements** — **was
+applied to the SOURCE BUCKETS and not to the PER-DAY COUNTS. The same partial fix, again.**
+
+### INDEX READING — NEAR-STALL, DECOMPOSITION EXACT FOR A THIRD DAY
+
+**Whole 49,332,744 @ 14:04:00; eleven buckets summing to 49,332,744; RESIDUAL 0.**
+`MED` 41,444,769 · `PMC` 1,004,975 · `PAT` 4,229,296 · `PPR` 1,300,541 · `AGR` 1,026,549 · `ETH` 176,799 ·
+`CBA` 142,377 · `CTX` 3,941 · `HIR` 2,868 · `NBK` 5 · `CIT` 624.
+
+**Day over day +1,386 ONLY — a near-stall. Decomposition exact for the THIRD consecutive day: `MED` +7,756 ·
+`PMC` −7,445 · `PPR` +1,075, nothing else moved.** **MEDLINE added 7,756 and PMC lost almost exactly as
+many.** **Second-smallest daily gain recorded, after +92 on 22 November.**
+
+**`PMC` shed → SUBTRACTION BOUND UNAVAILABLE**, one day after it was available and uninformative. Gains:
+**1,386** · 92 · 571 · 2,314 · 5,592 · 7,493 · 8,042 · 8,275 · 10,149 · 15,011, bursts 23k–26k. **One pass.**
+
+**Per-day:** 24 Nov 7,002 (−1) · 25 Nov 6,473 (−12) · **26 Nov 10,277 (−8,281)** · 27 Nov 13,123 ·
+28 Nov 5,609 (partial).
+
+### PARTIAL-DAY SERIES — YESTERDAY'S GLOSS WITHDRAWN
+
+**27 Nov: title route 206 yesterday @ ~14:04 → 308 today = 66.9% complete.**
+
+| Day | Completeness at ~14:05 |
+| --- | --- |
+| 24 Nov | 10.7% |
+| 25 Nov | 92.9% |
+| 26 Nov | 96.1% |
+| 27 Nov | **66.9%** |
+
+**CORRECTION 21: yesterday's gloss "the usual case is that a same-day sweep sees most of the day" was a
+fair reading of three days and is NOT a fair reading of four.** Four measurements span 10.7% to 96.1% with
+**nothing to cluster around.** **The 26 November conclusion — no stable figure, no correction factor —
+survives; the gloss is WITHDRAWN.** The two-day window is necessary, not redundant.
+
+### ALIAS GATE
+
+**Ran with `--record` on all five shortlisted papers. NONE was a two-record work today**, after 3 of 5
+yesterday — **but two new pairs were still written** (`PMC13811163` → `10.1186/s12879-026-14324-0`;
+`PMC13809536` → `10.3389/fimmu.2026.1902437`), map now **27 pairs**, **because `--record` writes a pair
+whenever any returned record carries a PMC identifier AS A FIELD, including single records.** **The map
+grows faster than the two-record count implies — the behaviour wanted.**
+
+**OUTPUT-CLARITY NOTE, recorded not tolerated:** the "records for this work" line lists record IDs while a
+recorded pair may come from a `pmcid` FIELD on one of them, **so the output can read as though a pair were
+recorded for a single-record work.** Both behaviours correct; the line is ambiguous.
+
+### ITEMS — a thin Saturday, read for what each paper's own limits allow
+
+1. **Perioperative VTE in visceral cancer surgery, scoping review** (`10.1007/s00423-026-04400-z`,
+   Langenbeck's, 27 Nov). Arksey/O'Malley + PRISMA-ScR, PubMed 2010–2025. **49 studies: 37 clinical (20
+   retrospective, 12 prospective, 4 meta-analyses, 1 RCT) + 12 experimental PAFC.** **VTE 0.2–28.2% · DVT
+   4.0–52% (the 52% from ONE screening-based cohort of 106) · PE 0.2–3.3%.** **THE FINDING IS AN ABSENCE:
+   NONE of the 37 clinical studies reported therapeutic management or monitoring after a CONFIRMED VTE** —
+   which its own introduction names as the hard problem (anticoagulation vs postoperative bleeding).
+   **Declared limits: no critical appraisal or risk-of-bias assessment; data charting by ONE reviewer.**
+   **Added limit: the title gives PAFC equal billing and that half is 12 experimental studies with NO
+   clinical data.**
+2. **CRBSI infection control, SR + MA of RCTs ONLY** (`10.1186/s12879-026-14324-0`, 4 databases
+   2000–2025, RoB 2.0). **28 trials, 19 effect sizes pooled.** **Catheter type/connector OR 0.75
+   (0.59–0.94) · dressings OR 0.52 (0.28–0.95) · bathing NS, OR 0.74 (0.38–1.41).** **AND THEN: "no
+   individual device technology effect was significant when analysed separately."** **Not a contradiction —
+   two readings with OPPOSITE implications: subgroups underpowered (likely), or the pooled estimate
+   averages genuinely different devices into a number describing none.** **The abstract does not
+   distinguish them.** Dressings at 0.52 is the most actionable number and has the widest interval.
+3. **Gelsolin in sepsis, MA** (`10.3389/fimmu.2026.1902437`, 6 databases to 26 Jul 2026, **8 studies**).
+   Survival (7 studies): **ROM 0.62 (0.53–0.73), P < 0.00001, I² 74%.** Diagnostic (3 studies): **sensitivity
+   0.81 (0.71–0.89), SPECIFICITY 0.61 (0.49–0.72), I² 90.6%.** **Specificity 0.61 flags ~2 in 5 without the
+   condition — near useless to rule in; 0.81 too low to rule out. Interesting, not usable.** **CREDIT: the
+   review calls its single-study 113.6 mg/L threshold EXPLORATORY and says it needs external validation —
+   the correct handling, more often done the other way.**
+4. **BIS variability and recovery** (`10.1186/s12871-026-04240-w`, 126 adults, ASA I–III, 18–65, elective
+   lap chole, BIS every minute). **SD rho −0.253 (−0.414 to −0.093, p = 0.004) · CV rho −0.240 (−0.404 to
+   −0.069, p = 0.007)**, both surviving adjustment. **MEAN BIS NOT consistently associated.** **rho −0.25 is
+   ~6% of shared variance; paper calls mechanisms SPECULATIVE; no association with Nu-DESC or NRS — the
+   signal is on ONE scale of three.** **The mean/variability contrast is the part worth carrying.**
+5. **Dexmedetomidine dose-response and POCD** (`10.3389/fnagi.2026.1807418`). **Retrospective cohort NESTED
+   in a prospective cohort**, four doses (0 / 0.4 / 0.6 / 0.8 µg/kg). **From 361 patients, 24 POCD cases
+   matched 1:2 with 48 controls.** IL-6, TNF-α, S100β, NSE down dose-dependently and BDNF up (p < 0.01) at
+   24 and 48 h; **high-dose independently protective, OR 0.82 per 0.1 µg/kg (0.74–0.91, p < 0.001)**;
+   mediation via early inflammation. **TWENTY-FOUR CASES CARRY four dose groups, five biomarkers, three
+   timepoints, a multivariable regression AND a bootstrap mediation analysis. Far more model than data.**
+   **An OR per 0.1 µg/kg makes the effect look finely resolved across a range with at most a handful of
+   cases per group.** **The authors state their OWN previous trial already confirmed the effect — this
+   extends their positive result rather than testing it independently.**

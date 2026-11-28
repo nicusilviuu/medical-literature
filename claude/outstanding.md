@@ -7566,3 +7566,40 @@ gaps; the twelve revised/reaffirmed ASA statements of 20 October; ASA perioperat
 practice guideline not held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR, 11 Sep 2026); why
 the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028; per-day index shrinkage
 series. **Pre-coverage backlog five, unchanged.**
+
+---
+
+## 2026-11-28
+
+**THE DAY'S PRINCIPAL ACTION, UNRESOLVED BY DESIGN:** 26 November lost **8,281 records (44.6%)** from a
+settled day, against 1–245 on the three previous days. `PMC` shed 7,445 the same morning. **Attribution
+unavailable** — only day totals had ever been recorded, never the per-source split. **`index_reading.sh` now
+records MED/PMC/PPR for every day it counts. TOMORROW: compare 26 and 27 November's splits against today's
+recorded values and attribute the loss if it recurs.** Today's splits, for that comparison:
+**26 Nov — MED 8,265 · PMC 692 · PPR 1,306** (total 10,277); **27 Nov — MED 11,372 · PMC 643** (total
+13,123; PPR not captured, the last query of the run did not print).
+
+**THE WITHDRAWN `PMC` ASSOCIATION IS BACK IN PLAY AND NOT RE-ESTABLISHED.** Do not re-assert it on one
+coincidence after a falsification.
+
+**RULE REINFORCED, SECOND FAILURE OF THE SAME KIND IN FIVE DAYS:** record **LEVELS, not movements** — and
+apply the rule **everywhere the quantity exists**, not just where it was first noticed. On 24 November it
+was applied to source buckets and not to per-day counts, which is why today's question has no answer.
+
+**CORRECTION 21:** yesterday's gloss that "the usual case is that a same-day sweep sees most of the day" is
+**withdrawn**. Four measurements now span 10.7%, 92.9%, 96.1%, 66.9% — no cluster. The 26 November
+conclusion (no stable figure, no correction factor) stands unglossed.
+
+**NOTED:** `--alias --record` writes a pair whenever any returned record carries a `pmcid` field, including
+single-record works, so the map grows faster than the two-record count implies (27 pairs). **Its "records
+for this work" line is ambiguous about this** — clarify the wording when next touching the tool.
+
+**STILL OUTSTANDING:** November month audit at the start of December, classifier fixes scored
+OUT-OF-SAMPLE, **Delphi false negative first, then the secondary-pubType fault**; **lagged window
+6 Nov – 5 Dec due ~10 December, DO NOT DEFER**; AHA/ACC re-check 11 December; **`TERMS` to be mapped against
+a syllabus** (the journal half is done, the term half is not); SCCM paediatric/neonatal end-of-life 2026;
+how many SCARTD recommendations came from Delphi rather than evidence; title-stem check against the
+remaining named gaps; the twelve revised/reaffirmed ASA statements of 20 October; ASA perioperative regional
+analgesia practice guideline not held (backlog 51); paediatric regional anaesthesia RFE gap (SFAR,
+11 Sep 2026); why the three JAMA trials indexed 19 October were missed; NCT07309393 expected ~2028.
+**ESPEN and IACTS: website-only and no-readable-source respectively.** **Pre-coverage backlog five.**

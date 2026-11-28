@@ -46,7 +46,18 @@ for s in MED PMC PAT PPR AGR ETH CBA CTX HIR NBK CIT; do
   v=$(tot "SRC:$s"); echo "$s $v"; S=$((S+v))
 done
 echo "SUM=$S RESIDUAL=$((W-S))"
+# PER-SOURCE SPLIT FOR EACH DAY, added 2026-11-28. On that day the count for
+# 26 November fell from 18,558 to 10,277 -- a loss of 8,281 records, 44.6%, from
+# a day already settled, two orders of magnitude larger than the 1 to 245 losses
+# recorded on the three previous days. The whole-database PMC bucket shed 7,445
+# the same morning, the same order of magnitude. THE QUESTION COULD NOT BE
+# ANSWERED, because only the DAY TOTAL had ever been recorded and not its split
+# by source, so there was nothing to compare the surviving 692 PMC records
+# against. Recording the split makes the next such loss attributable.
 for d in "${DATES[@]}"; do
   echo "idx $d: $(tot "FIRST_IDATE:$d") @ $(date -u +%H:%M:%S)"
+  for s in MED PMC PPR; do
+    echo "  idx $d $s: $(tot "FIRST_IDATE:$d AND SRC:$s")"
+  done
 done
 echo "$LABEL END $(date -u +%H:%M:%S)"
